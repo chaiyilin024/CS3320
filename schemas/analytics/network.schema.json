@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/analytics/network.schema.json",
+  "title": "PlayNetwork",
+  "description": "单剧本人物关系网络 — artifacts/analytics/plays/{script_id}/network.json",
+  "type": "object",
+  "required": ["script_id", "nodes", "links", "metrics"],
+  "additionalProperties": false,
+  "properties": {
+    "script_id": {
+      "$ref": "../common/definitions.schema.json#/$defs/scriptId"
+    },
+    "title": { "type": "string" },
+    "genre": {
+      "$ref": "../common/definitions.schema.json#/$defs/genre"
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "#/$defs/networkNode" }
+    },
+    "links": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "#/$defs/networkLink" }
+    },
+    "metrics": {
+      "$ref": "#/$defs/networkMetrics"
+    }
+  },
+  "$defs": {
+    "networkNode": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^c_",
+          "description": "与 character_id 一致"
+        },
+        "name": { "type": "string" },
+        "hangdang": {
+          "$ref": "../common/definitions.schema.json#/$defs/hangdang"
+        },
+        "hangdang_coarse": {
+          "$ref": "../common/definitions.schema.json#/$defs/hangdangCoarse"
+        },
+        "is_main": { "type": "boolean" },
+        "degree": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "加权度"
+        },
+        "betweenness": {
+          "type": "number",
+          "minimum": 0,
+          "description": "介数中心性"
+        },
+        "closeness": {
+          "type": "number",
+          "minimum": 0,
+          "description": "接近中心性（可选）"
+        },
+        "community_id": {
+          "type": "integer",
+          "description": "社区划分编号（可选）"
+        }
+      }
+    },
+    "networkLink": {
+      "type": "object",
+      "required": ["source", "target", "weight"],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "string", "pattern": "^c_" },
+        "target": { "type": "string", "pattern": "^c_" },
+        "weight": {
+          "type": "number",
+          "minimum": 0
+        },
+        "types": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/definitions.schema.json#/$defs/relationType"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "dialogue_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "networkMetrics": {
+      "type": "object",
+      "required": ["node_count", "edge_count"],
+      "additionalProperties": false,
+      "properties": {
+        "node_count": { "type": "integer", "minimum": 0 },
+        "edge_count": { "type": "integer", "minimum": 0 },
+        "density": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "avg_clustering": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "avg_degree": { "type": "number", "minimum": 0 },
+        "modularity": { "type": "number" },
+        "component_count": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

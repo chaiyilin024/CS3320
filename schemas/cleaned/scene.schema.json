@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/cleaned/scene.schema.json",
+  "title": "Scene",
+  "description": "场次/幕结构",
+  "type": "object",
+  "required": ["scene_id", "scene_index"],
+  "additionalProperties": false,
+  "properties": {
+    "scene_id": {
+      "$ref": "../common/definitions.schema.json#/$defs/entityId",
+      "pattern": "^s_",
+      "description": "场次 ID，建议格式 s_{scene_index}"
+    },
+    "scene_index": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "场次序号，从 1 开始"
+    },
+    "title": {
+      "type": "string",
+      "description": "场次标题，如「第一场」"
+    },
+    "location": {
+      "type": "string",
+      "description": "地点"
+    },
+    "time": {
+      "type": "string",
+      "description": "时间背景"
+    },
+    "block_range": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "type": "integer", "minimum": 0 },
+      "description": "闭区间 [start_block_index, end_block_index]"
+    },
+    "character_ids": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^c_" },
+      "uniqueItems": true,
+      "description": "本场出场人物"
+    }
+  }
+}

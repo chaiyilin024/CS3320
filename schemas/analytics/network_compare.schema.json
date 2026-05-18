@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/analytics/network_compare.schema.json",
+  "title": "GlobalNetworkCompare",
+  "description": "跨剧本/体裁网络对比 — artifacts/analytics/global/network_compare.json",
+  "type": "object",
+  "required": ["version", "generated_at", "by_genre", "by_collection"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "$ref": "../common/definitions.schema.json#/$defs/version"
+    },
+    "generated_at": {
+      "$ref": "../common/definitions.schema.json#/$defs/isoDateTime"
+    },
+    "by_genre": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/groupNetworkStats" }
+    },
+    "by_collection": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/groupNetworkStats" }
+    },
+    "plays": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/playNetworkSummary" },
+      "description": "单剧指标列表，供箱线图/散点图"
+    }
+  },
+  "$defs": {
+    "groupNetworkStats": {
+      "type": "object",
+      "required": ["group_key", "group_label", "play_count", "metrics"],
+      "additionalProperties": false,
+      "properties": {
+        "group_key": {
+          "type": "string",
+          "description": "分组键，如 genre=历史剧 或 collection_id=01000000"
+        },
+        "group_label": { "type": "string" },
+        "play_count": { "type": "integer", "minimum": 0 },
+        "metrics": {
+          "type": "object",
+          "required": ["density", "avg_degree", "avg_clustering"],
+          "properties": {
+            "density": { "$ref": "#/$defs/metricDistribution" },
+            "avg_degree": { "$ref": "#/$defs/metricDistribution" },
+            "avg_clustering": { "$ref": "#/$defs/metricDistribution" },
+            "modularity": { "$ref": "#/$defs/metricDistribution" }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "metricDistribution": {
+      "type": "object",
+      "properties": {
+        "mean": { "type": "number" },
+        "median": { "type": "number" },
+        "min": { "type": "number" },
+        "max": { "type": "number" },
+        "values": {
+          "type": "array",
+          "items": { "type": "number" },
+          "description": "原始值列表，用于箱线图"
+        }
+      },
+      "additionalProperties": false
+    },
+    "playNetworkSummary": {
+      "type": "object",
+      "required": ["script_id", "metrics"],
+      "additionalProperties": false,
+      "properties": {
+        "script_id": {
+          "$ref": "../common/definitions.schema.json#/$defs/scriptId"
+        },
+        "title": { "type": "string" },
+        "genre": {
+          "$ref": "../common/definitions.schema.json#/$defs/genre"
+        },
+        "collection_id": {
+          "$ref": "../common/definitions.schema.json#/$defs/collectionId"
+        },
+        "metrics": {
+          "$ref": "network.schema.json#/$defs/networkMetrics"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/cleaned/cooccurrence_edge.schema.json",
+  "title": "CooccurrenceEdge",
+  "description": "预处理阶段抽取的人物共现/对话边（供网络分析输入）",
+  "type": "object",
+  "required": ["source_id", "target_id", "weight"],
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^c_"
+    },
+    "target_id": {
+      "type": "string",
+      "pattern": "^c_"
+    },
+    "weight": {
+      "type": "number",
+      "minimum": 0,
+      "description": "共现或对话次数/加权强度"
+    },
+    "relation_types": {
+      "type": "array",
+      "items": { "$ref": "../common/definitions.schema.json#/$defs/relationType" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "dialogue_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "直接对话轮次"
+    },
+    "same_scene_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "同场次数"
+    }
+  }
+}

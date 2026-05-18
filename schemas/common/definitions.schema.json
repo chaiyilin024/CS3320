@@ -1,0 +1,170 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/common/definitions.schema.json",
+  "title": "CommonDefinitions",
+  "description": "京剧剧本可视化项目 — 跨层共享类型与枚举",
+  "$defs": {
+    "scriptId": {
+      "type": "string",
+      "pattern": "^\\d{8}$",
+      "description": "8 位剧本 ID，如 01001012",
+      "examples": ["01001012"]
+    },
+    "collectionId": {
+      "type": "string",
+      "pattern": "^\\d{8}$",
+      "description": "8 位集合 ID，与 zip 前缀一致，如 01000000",
+      "examples": ["01000000"]
+    },
+    "entityId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "description": "实体唯一 ID，建议前缀 c_/b_/s_/t_ 等"
+    },
+    "isoDateTime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 时间戳"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+(\\.\\d+)?$",
+      "description": "契约版本号",
+      "examples": ["1.0"]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "nonNegativeInt": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "positiveInt": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "hangdang": {
+      "type": "string",
+      "enum": [
+        "老生",
+        "小生",
+        "武生",
+        "红生",
+        "青衣",
+        "花旦",
+        "刀马旦",
+        "老旦",
+        "净",
+        "丑",
+        "文武丑",
+        "未知",
+        "其他"
+      ],
+      "description": "京剧行当（含细分与兜底值）"
+    },
+    "hangdangCoarse": {
+      "type": "string",
+      "enum": ["生", "旦", "净", "丑", "未知", "其他"],
+      "description": "行当四大类"
+    },
+    "blockType": {
+      "type": "string",
+      "enum": [
+        "dialogue",
+        "stage_direction",
+        "aria",
+        "recitation",
+        "action",
+        "combat",
+        "scene_heading",
+        "character_list",
+        "unknown"
+      ],
+      "description": "正文块类型"
+    },
+    "performanceTag": {
+      "type": "string",
+      "enum": ["唱", "念", "做", "打", "unknown"],
+      "description": "表演类别标记"
+    },
+    "relationType": {
+      "type": "string",
+      "enum": [
+        "对话",
+        "同场",
+        "唱和",
+        "冲突",
+        "命令",
+        "亲属",
+        "同盟",
+        "其他"
+      ],
+      "description": "人物关系边类型"
+    },
+    "genre": {
+      "type": "string",
+      "enum": [
+        "历史剧",
+        "家庭剧",
+        "公案剧",
+        "神话剧",
+        "爱情剧",
+        "战争剧",
+        "其他",
+        "未知"
+      ],
+      "description": "推断或标注的剧本体裁"
+    },
+    "plotStage": {
+      "type": "string",
+      "enum": ["铺垫", "发展", "冲突", "高潮", "结局", "其他"],
+      "description": "叙事阶段标签"
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["男", "女", "未知", "其他"]
+    },
+    "tags": {
+      "type": "object",
+      "description": "可扩展标签",
+      "additionalProperties": {
+        "oneOf": [
+          { "type": "string" },
+          { "type": "number" },
+          { "type": "boolean" },
+          { "type": "array", "items": { "type": "string" } }
+        ]
+      }
+    },
+    "traits": {
+      "type": "object",
+      "description": "人物特征（用于行当推断与可视化）",
+      "properties": {
+        "gender": { "$ref": "#/$defs/gender" },
+        "age": {
+          "type": "string",
+          "description": "如：少年、青年、中年、老年"
+        },
+        "identity": {
+          "type": "string",
+          "description": "社会身份，如：君主、将领、书生"
+        },
+        "personality": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "性格关键词列表"
+        },
+        "performance_cues": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/performanceTag" },
+          "uniqueItems": true,
+          "description": "表演侧重：唱念做打"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

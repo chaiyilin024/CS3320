@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/cleaned/catalog.schema.json",
+  "title": "Catalog",
+  "description": "全库剧本索引 — 预处理输出 artifacts/cleaned/catalog.json",
+  "type": "object",
+  "required": ["version", "generated_at", "plays"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "$ref": "../common/definitions.schema.json#/$defs/version"
+    },
+    "generated_at": {
+      "$ref": "../common/definitions.schema.json#/$defs/isoDateTime"
+    },
+    "pipeline": {
+      "type": "object",
+      "description": "生成流水线元信息",
+      "properties": {
+        "parse_version": { "type": "string" },
+        "source_root": { "type": "string" },
+        "play_count_total": { "type": "integer", "minimum": 0 },
+        "play_count_included": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": true
+    },
+    "plays": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/catalogEntry" },
+      "description": "已处理剧本条目列表"
+    }
+  },
+  "$defs": {
+    "catalogEntry": {
+      "type": "object",
+      "required": [
+        "script_id",
+        "title",
+        "collection_id",
+        "collection_name",
+        "source_pdf"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "script_id": {
+          "$ref": "../common/definitions.schema.json#/$defs/scriptId"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "collection_id": {
+          "$ref": "../common/definitions.schema.json#/$defs/collectionId"
+        },
+        "collection_name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "来源集合名称，如「戏考」"
+        },
+        "source_pdf": {
+          "type": "string",
+          "minLength": 1,
+          "description": "原始 PDF 文件名"
+        },
+        "page_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "char_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "全剧字符总数"
+        },
+        "character_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "block_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "scene_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "parse_quality": {
+          "$ref": "../common/definitions.schema.json#/$defs/confidence",
+          "description": "解析质量评分 0–1"
+        },
+        "tags": {
+          "allOf": [
+            { "$ref": "../common/definitions.schema.json#/$defs/tags" },
+            {
+              "properties": {
+                "genre_inferred": {
+                  "$ref": "../common/definitions.schema.json#/$defs/genre"
+                },
+                "era_inferred": {
+                  "type": "string",
+                  "description": "推断时代背景，如：三国、清代"
+                }
+              }
+            }
+          ]
+        },
+        "output_path": {
+          "type": "string",
+          "description": "相对 artifacts/cleaned 的 play JSON 路径",
+          "examples": ["plays/01001012.json"]
+        }
+      }
+    }
+  }
+}

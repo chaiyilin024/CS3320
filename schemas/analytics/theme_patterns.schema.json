@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/analytics/theme_patterns.schema.json",
+  "title": "GlobalThemePatterns",
+  "description": "跨剧本主题模式 — artifacts/analytics/global/theme_patterns.json",
+  "type": "object",
+  "required": ["version", "generated_at", "topic_labels", "play_topic_matrix"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "$ref": "../common/definitions.schema.json#/$defs/version"
+    },
+    "generated_at": {
+      "$ref": "../common/definitions.schema.json#/$defs/isoDateTime"
+    },
+    "topic_labels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["topic_id", "label"],
+        "properties": {
+          "topic_id": { "type": "integer", "minimum": 0 },
+          "label": { "type": "string" },
+          "keywords": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "全局主题词典"
+    },
+    "play_topic_matrix": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/playTopicRow" },
+      "description": "剧本×主题权重矩阵（热力图）"
+    },
+    "topic_cooccurrence": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/topicPair" },
+      "description": "主题共现/组合模式（弦图）"
+    },
+    "common_patterns": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/themePattern" },
+      "description": "典型主题组合，如「忠义+战争」"
+    }
+  },
+  "$defs": {
+    "playTopicRow": {
+      "type": "object",
+      "required": ["script_id", "weights"],
+      "additionalProperties": false,
+      "properties": {
+        "script_id": {
+          "$ref": "../common/definitions.schema.json#/$defs/scriptId"
+        },
+        "title": { "type": "string" },
+        "collection_id": {
+          "$ref": "../common/definitions.schema.json#/$defs/collectionId"
+        },
+        "genre": {
+          "$ref": "../common/definitions.schema.json#/$defs/genre"
+        },
+        "weights": {
+          "type": "array",
+          "items": { "type": "number", "minimum": 0, "maximum": 1 },
+          "description": "与 topic_labels 等长"
+        }
+      }
+    },
+    "topicPair": {
+      "type": "object",
+      "required": ["topic_a", "topic_b", "count"],
+      "additionalProperties": false,
+      "properties": {
+        "topic_a": { "type": "integer", "minimum": 0 },
+        "topic_b": { "type": "integer", "minimum": 0 },
+        "count": { "type": "integer", "minimum": 0 },
+        "pmi": { "type": "number" }
+      }
+    },
+    "themePattern": {
+      "type": "object",
+      "required": ["labels", "support", "play_count"],
+      "additionalProperties": false,
+      "properties": {
+        "labels": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 2,
+          "description": "组合中的主题标签"
+        },
+        "support": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "支持度"
+        },
+        "play_count": { "type": "integer", "minimum": 0 },
+        "example_script_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "../common/definitions.schema.json#/$defs/scriptId"
+          },
+          "maxItems": 10
+        }
+      }
+    }
+  }
+}

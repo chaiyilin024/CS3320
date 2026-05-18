@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/analytics/integrated.schema.json",
+  "title": "PlayIntegratedAnalysis",
+  "description": "单剧本跨维度综合关联 — artifacts/analytics/plays/{script_id}/integrated.json",
+  "type": "object",
+  "required": ["script_id", "correlations", "summary_insights"],
+  "additionalProperties": false,
+  "properties": {
+    "script_id": {
+      "$ref": "../common/definitions.schema.json#/$defs/scriptId"
+    },
+    "title": { "type": "string" },
+    "correlations": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "#/$defs/correlation" }
+    },
+    "summary_insights": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "面向展示的自然语言洞察摘要"
+    },
+    "character_topic_matrix": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/characterTopicCell" },
+      "description": "人物×主题关联矩阵（热力图）"
+    },
+    "stage_network_snapshots": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/stageNetworkSnapshot" },
+      "description": "各情节阶段的网络密度变化"
+    }
+  },
+  "$defs": {
+    "correlation": {
+      "type": "object",
+      "required": ["type", "strength"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "character_theme",
+            "network_stage",
+            "hangdang_narrative",
+            "theme_narrative",
+            "character_network",
+            "other"
+          ]
+        },
+        "strength": {
+          "$ref": "../common/definitions.schema.json#/$defs/confidence",
+          "description": "关联强度 0–1"
+        },
+        "character_id": { "type": "string", "pattern": "^c_" },
+        "character_name": { "type": "string" },
+        "topic_id": { "type": "integer", "minimum": 0 },
+        "topic_label": { "type": "string" },
+        "stage": {
+          "$ref": "../common/definitions.schema.json#/$defs/plotStage"
+        },
+        "hangdang": {
+          "$ref": "../common/definitions.schema.json#/$defs/hangdang"
+        },
+        "peak_block_index": { "type": "integer", "minimum": 0 },
+        "edge_density_delta": {
+          "type": "number",
+          "description": "相对前一阶段的网络密度变化"
+        },
+        "evidence": {
+          "type": "string",
+          "description": "关联依据简述"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "type": { "const": "character_theme" } },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["character_id", "topic_id"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "network_stage" } },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["stage"]
+          }
+        },
+        {
+          "if": {
+            "properties": { "type": { "const": "hangdang_narrative" } },
+            "required": ["type"]
+          },
+          "then": {
+            "required": ["hangdang", "peak_block_index"]
+          }
+        }
+      ]
+    },
+    "characterTopicCell": {
+      "type": "object",
+      "required": ["character_id", "topic_id", "strength"],
+      "additionalProperties": false,
+      "properties": {
+        "character_id": { "type": "string", "pattern": "^c_" },
+        "character_name": { "type": "string" },
+        "topic_id": { "type": "integer", "minimum": 0 },
+        "topic_label": { "type": "string" },
+        "strength": {
+          "$ref": "../common/definitions.schema.json#/$defs/confidence"
+        }
+      }
+    },
+    "stageNetworkSnapshot": {
+      "type": "object",
+      "required": ["stage", "block_range", "edge_density", "node_count"],
+      "additionalProperties": false,
+      "properties": {
+        "stage": {
+          "$ref": "../common/definitions.schema.json#/$defs/plotStage"
+        },
+        "block_range": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "integer", "minimum": 0 }
+        },
+        "edge_density": { "type": "number", "minimum": 0, "maximum": 1 },
+        "node_count": { "type": "integer", "minimum": 0 },
+        "edge_count": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

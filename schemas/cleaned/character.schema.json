@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/cleaned/character.schema.json",
+  "title": "Character",
+  "description": "单剧本人物实体",
+  "type": "object",
+  "required": ["character_id", "name"],
+  "additionalProperties": false,
+  "properties": {
+    "character_id": {
+      "$ref": "../common/definitions.schema.json#/$defs/entityId",
+      "pattern": "^c_",
+      "description": "人物 ID，建议格式 c_{姓名规范化}"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "description": "人物姓名"
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "default": [],
+      "description": "别名、字号等"
+    },
+    "hangdang_labeled": {
+      "oneOf": [
+        { "$ref": "../common/definitions.schema.json#/$defs/hangdang" },
+        { "type": "null" }
+      ],
+      "description": "剧本中明确标注的行当；无标注则为 null"
+    },
+    "hangdang_inferred": {
+      "oneOf": [
+        { "$ref": "../common/definitions.schema.json#/$defs/hangdang" },
+        { "type": "null" }
+      ],
+      "description": "预处理阶段占位，分析阶段可回填；预处理输出应为 null"
+    },
+    "hangdang_coarse": {
+      "oneOf": [
+        { "$ref": "../common/definitions.schema.json#/$defs/hangdangCoarse" },
+        { "type": "null" }
+      ],
+      "description": "四大类行当，可由 labeled/inferred 派生"
+    },
+    "traits": {
+      "$ref": "../common/definitions.schema.json#/$defs/traits"
+    },
+    "description_raw": {
+      "type": "string",
+      "description": "人物介绍原文（未清洗）"
+    },
+    "description_clean": {
+      "type": "string",
+      "description": "清洗后的人物介绍"
+    },
+    "first_appearance_block": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "首次出现的 block_index"
+    },
+    "line_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "对白/唱词块数量（预处理可统计）"
+    },
+    "is_main": {
+      "type": "boolean",
+      "description": "是否为主要人物（按出场与台词量规则判定）"
+    }
+  }
+}
