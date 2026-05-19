@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-19T06:30:06.209994+00:00",
+  "pipeline": {
+    "parse_version": "1.0",
+    "source_root": "/Users/chaiyilin/Desktop/visualize/CS3320/example",
+    "play_count_included": 1
+  },
+  "plays": [
+    {
+      "script_id": "01001012",
+      "title": "黄鹤楼",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001012_黄鹤楼.pdf",
+      "page_count": 9,
+      "char_count": 4589,
+      "character_count": 8,
+      "block_count": 419,
+      "scene_count": 5,
+      "parse_quality": 0.972,
+      "output_path": "plays/01001012.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    }
+  ]
+}

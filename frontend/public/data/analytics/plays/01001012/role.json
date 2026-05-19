@@ -1,0 +1,179 @@
+{
+  "script_id": "01001012",
+  "hangdang_distribution": {
+    "老生": 3,
+    "小生": 2,
+    "净": 1,
+    "未知": 2
+  },
+  "hangdang_coarse_distribution": {
+    "生": 5,
+    "净": 1,
+    "未知": 2
+  },
+  "characters": [
+    {
+      "character_id": "c_刘备",
+      "name": "刘备",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "performance_cues=念,唱",
+        "line_count=78"
+      ]
+    },
+    {
+      "character_id": "c_周瑜",
+      "name": "周瑜",
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_final": "小生",
+      "confidence": 0.95,
+      "top_features": [
+        "performance_cues=念,唱",
+        "line_count=65"
+      ]
+    },
+    {
+      "character_id": "c_赵云",
+      "name": "赵云",
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_final": "小生",
+      "confidence": 0.95,
+      "top_features": [
+        "performance_cues=念,唱",
+        "line_count=64"
+      ]
+    },
+    {
+      "character_id": "c_诸葛亮",
+      "name": "诸葛亮",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "performance_cues=念,唱",
+        "line_count=45"
+      ]
+    },
+    {
+      "character_id": "c_张飞",
+      "name": "张飞",
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_final": "净",
+      "confidence": 0.95,
+      "top_features": [
+        "performance_cues=念,唱",
+        "line_count=30"
+      ]
+    },
+    {
+      "character_id": "c_鲁肃",
+      "name": "鲁肃",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "performance_cues=念",
+        "line_count=21"
+      ]
+    },
+    {
+      "character_id": "c_甘宁",
+      "name": "甘宁",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "performance_cues=念",
+        "line_count=7"
+      ]
+    },
+    {
+      "character_id": "c_刘封",
+      "name": "刘封",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "performance_cues=念",
+        "line_count=4"
+      ]
+    }
+  ],
+  "trait_summary": [
+    {
+      "trait": "performance_cues=念,唱",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "performance_cues=念,唱",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "performance_cues=念",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "line_count=78",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count=65",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "line_count=64",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "line_count=45",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "performance_cues=念,唱",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "line_count=30",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "performance_cues=念",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count=21",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count=7",
+      "hangdang": "未知",
+      "count": 1
+    },
+    {
+      "trait": "line_count=4",
+      "hangdang": "未知",
+      "count": 1
+    }
+  ]
+}

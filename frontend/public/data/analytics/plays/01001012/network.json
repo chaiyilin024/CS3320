@@ -1,0 +1,272 @@
+{
+  "script_id": "01001012",
+  "title": "黄鹤楼",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_刘备",
+      "name": "刘备",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 176,
+      "betweenness": 0.4603,
+      "community_id": 0
+    },
+    {
+      "id": "c_周瑜",
+      "name": "周瑜",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 149,
+      "betweenness": 0.0317,
+      "community_id": 0
+    },
+    {
+      "id": "c_赵云",
+      "name": "赵云",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 112,
+      "betweenness": 0.4603,
+      "community_id": 0
+    },
+    {
+      "id": "c_诸葛亮",
+      "name": "诸葛亮",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 92,
+      "betweenness": 0.0,
+      "community_id": 0
+    },
+    {
+      "id": "c_鲁肃",
+      "name": "鲁肃",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 53,
+      "betweenness": 0.0,
+      "community_id": 0
+    },
+    {
+      "id": "c_甘宁",
+      "name": "甘宁",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 26,
+      "betweenness": 0.0,
+      "community_id": 0
+    },
+    {
+      "id": "c_张飞",
+      "name": "张飞",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 24,
+      "betweenness": 0.0,
+      "community_id": 0
+    },
+    {
+      "id": "c_刘封",
+      "name": "刘封",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 12,
+      "betweenness": 0.0,
+      "community_id": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "c_刘备",
+      "target": "c_刘封",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_周瑜",
+      "weight": 71.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 34
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_张飞",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_甘宁",
+      "weight": 4.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_诸葛亮",
+      "weight": 39.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 19
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_赵云",
+      "weight": 43.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 20
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_鲁肃",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4
+    },
+    {
+      "source": "c_刘封",
+      "target": "c_张飞",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0
+    },
+    {
+      "source": "c_刘封",
+      "target": "c_诸葛亮",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0
+    },
+    {
+      "source": "c_刘封",
+      "target": "c_赵云",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0
+    },
+    {
+      "source": "c_周瑜",
+      "target": "c_甘宁",
+      "weight": 19.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 8
+    },
+    {
+      "source": "c_周瑜",
+      "target": "c_赵云",
+      "weight": 24.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 11
+    },
+    {
+      "source": "c_周瑜",
+      "target": "c_鲁肃",
+      "weight": 35.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 17
+    },
+    {
+      "source": "c_张飞",
+      "target": "c_诸葛亮",
+      "weight": 21.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 10
+    },
+    {
+      "source": "c_张飞",
+      "target": "c_赵云",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0
+    },
+    {
+      "source": "c_甘宁",
+      "target": "c_赵云",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1
+    },
+    {
+      "source": "c_诸葛亮",
+      "target": "c_赵云",
+      "weight": 31.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 15
+    },
+    {
+      "source": "c_赵云",
+      "target": "c_鲁肃",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4
+    }
+  ],
+  "metrics": {
+    "node_count": 8,
+    "edge_count": 18,
+    "density": 0.6429,
+    "avg_clustering": 0.8601,
+    "avg_degree": 80.5,
+    "component_count": 1
+  }
+}

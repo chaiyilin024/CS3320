@@ -1,0 +1,92 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-19T11:08:42.649413+00:00",
+  "by_genre": [
+    {
+      "group_key": "genre=历史剧",
+      "group_label": "历史剧",
+      "play_count": 1,
+      "metrics": {
+        "density": {
+          "mean": 0.6429,
+          "median": 0.6429,
+          "min": 0.6429,
+          "max": 0.6429,
+          "values": [
+            0.6429
+          ]
+        },
+        "avg_degree": {
+          "mean": 80.5,
+          "median": 80.5,
+          "min": 80.5,
+          "max": 80.5,
+          "values": [
+            80.5
+          ]
+        },
+        "avg_clustering": {
+          "mean": 0.8601,
+          "median": 0.8601,
+          "min": 0.8601,
+          "max": 0.8601,
+          "values": [
+            0.8601
+          ]
+        }
+      }
+    }
+  ],
+  "by_collection": [
+    {
+      "group_key": "collection_id=01000000",
+      "group_label": "01000000",
+      "play_count": 1,
+      "metrics": {
+        "density": {
+          "mean": 0.6429,
+          "median": 0.6429,
+          "min": 0.6429,
+          "max": 0.6429,
+          "values": [
+            0.6429
+          ]
+        },
+        "avg_degree": {
+          "mean": 80.5,
+          "median": 80.5,
+          "min": 80.5,
+          "max": 80.5,
+          "values": [
+            80.5
+          ]
+        },
+        "avg_clustering": {
+          "mean": 0.8601,
+          "median": 0.8601,
+          "min": 0.8601,
+          "max": 0.8601,
+          "values": [
+            0.8601
+          ]
+        }
+      }
+    }
+  ],
+  "plays": [
+    {
+      "script_id": "01001012",
+      "title": "黄鹤楼",
+      "genre": "历史剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 8,
+        "edge_count": 18,
+        "density": 0.6429,
+        "avg_clustering": 0.8601,
+        "avg_degree": 80.5,
+        "component_count": 1
+      }
+    }
+  ]
+}

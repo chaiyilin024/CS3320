@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-05-19T11:08:42.649404+00:00",
+  "global_feature_hangdang_matrix": [
+    {
+      "feature": "performance_cues=念,唱",
+      "hangdang": "老生",
+      "count": 2,
+      "ratio": 0.125
+    },
+    {
+      "feature": "performance_cues=念,唱",
+      "hangdang": "小生",
+      "count": 2,
+      "ratio": 0.125
+    },
+    {
+      "feature": "performance_cues=念",
+      "hangdang": "未知",
+      "count": 2,
+      "ratio": 0.125
+    },
+    {
+      "feature": "line_count=78",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "line_count=65",
+      "hangdang": "小生",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "line_count=64",
+      "hangdang": "小生",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "line_count=45",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "performance_cues=念,唱",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "line_count=30",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "performance_cues=念",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "line_count=21",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "line_count=7",
+      "hangdang": "未知",
+      "count": 1,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "line_count=4",
+      "hangdang": "未知",
+      "count": 1,
+      "ratio": 0.0625
+    }
+  ],
+  "by_collection": [
+    {
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "hangdang_distribution": {
+        "老生": 3,
+        "小生": 2,
+        "净": 1,
+        "未知": 2
+      },
+      "trait_hangdang_links": [
+        {
+          "trait": "performance_cues=念,唱",
+          "hangdang": "老生",
+          "count": 2
+        },
+        {
+          "trait": "performance_cues=念,唱",
+          "hangdang": "小生",
+          "count": 2
+        },
+        {
+          "trait": "performance_cues=念",
+          "hangdang": "未知",
+          "count": 2
+        },
+        {
+          "trait": "line_count=78",
+          "hangdang": "老生",
+          "count": 1
+        },
+        {
+          "trait": "line_count=65",
+          "hangdang": "小生",
+          "count": 1
+        },
+        {
+          "trait": "line_count=64",
+          "hangdang": "小生",
+          "count": 1
+        },
+        {
+          "trait": "line_count=45",
+          "hangdang": "老生",
+          "count": 1
+        },
+        {
+          "trait": "performance_cues=念,唱",
+          "hangdang": "净",
+          "count": 1
+        },
+        {
+          "trait": "line_count=30",
+          "hangdang": "净",
+          "count": 1
+        },
+        {
+          "trait": "performance_cues=念",
+          "hangdang": "老生",
+          "count": 1
+        },
+        {
+          "trait": "line_count=21",
+          "hangdang": "老生",
+          "count": 1
+        },
+        {
+          "trait": "line_count=7",
+          "hangdang": "未知",
+          "count": 1
+        },
+        {
+          "trait": "line_count=4",
+          "hangdang": "未知",
+          "count": 1
+        }
+      ],
+      "play_count": 1
+    }
+  ],
+  "by_era_bucket": [
+    {
+      "era": "三国",
+      "hangdang_distribution": {
+        "老生": 3,
+        "小生": 2,
+        "净": 1,
+        "未知": 2
+      },
+      "play_count": 1
+    }
+  ],
+  "inference_results": []
+}

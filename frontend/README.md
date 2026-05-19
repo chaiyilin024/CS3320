@@ -251,7 +251,23 @@ interface FilterState {
 
 ---
 
-## 7. 技术栈与目录建议
+## 7. 本地运行（已实现）
+
+```bash
+# 1. 同步数据（预处理 + 分析完成后）
+bash scripts/sync_frontend_data.sh
+
+# 2. 安装依赖并启动
+cd frontend
+npm install
+npm run dev
+```
+
+浏览器打开 http://localhost:5173 。默认剧本 `01001012` 黄鹤楼。
+
+---
+
+## 8. 技术栈与目录建议
 
 ```
 frontend/
@@ -279,7 +295,7 @@ frontend/
 
 ---
 
-## 8. 分期交付建议
+## 9. 分期交付建议
 
 | 阶段 | 目标 | 数据 |
 |------|------|------|
@@ -290,7 +306,7 @@ frontend/
 
 ---
 
-## 9. 类型与 Schema 对照速查
+## 10. 类型与 Schema 对照速查
 
 在 `schemas/analytics/` 中打开对应文件即可查看完整字段与枚举；共享枚举（行当、体裁、情节阶段等）见 `schemas/common/definitions.schema.json`。
 
@@ -305,7 +321,7 @@ frontend/
 
 ---
 
-## 10. 参考样例剧本
+## 11. 参考样例剧本
 
 联调金样例：**`01001012` 黄鹤楼**（`example/01001012_黄鹤楼.pdf`）。  
 请分析组优先产出该 `script_id` 的全套 `plays/01001012/*.json`，前端据此做 mock 与录屏案例。
