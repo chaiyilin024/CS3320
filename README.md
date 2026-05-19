@@ -28,9 +28,8 @@ CS3320/
 │
 ├── backend/                      # 数据分析 + API（可两人协作）
 │   ├── preprocessing/            # 【分工1】预处理（见 backend/preprocessing/README.md）
-│   │   ├── README.md             # 读什么、产出什么、PDF 解析方法
-│   │   ├── ingest/ extract/ clean/ export/
-│   │   └── run_pipeline.py
+│   │   ├── run_pipeline.py       # CLI 入口
+│   │   └── ingest/ extract/ clean/ export/
 │   │
 │   ├── analytics/                # 【分工2】分析模型（见 backend/analytics/README.md）
 │   │   ├── README.md             # 读什么、产出什么、方法说明

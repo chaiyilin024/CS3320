@@ -81,9 +81,11 @@
         "combat",
         "scene_heading",
         "character_list",
+        "plot_summary",
+        "annotation",
         "unknown"
       ],
-      "description": "正文块类型"
+      "description": "正文块类型；plot_summary=情节梗概，annotation=注释说明"
     },
     "performanceTag": {
       "type": "string",

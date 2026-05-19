@@ -1,5 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
 /data
-*.txt
+/artifacts/cleaned/
+/artifacts/cache/
+/artifacts/samples/
 *.pdf
 *.docx
 *.doc

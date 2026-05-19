@@ -288,22 +288,32 @@ backend/preprocessing/
     └── quality.py         # parse_quality 计算
 ```
 
-**运行示例**：
+**安装与运行**：
 
 ```bash
+pip install -r backend/requirements.txt
+
 # 单剧金样例（联调）
-python backend/preprocessing/run_pipeline.py --pdf example/01001012_黄鹤楼.pdf \
+python backend/preprocessing/run_pipeline.py \
+  --pdf example/01001012_黄鹤楼.pdf \
   --collection-id 01000000
 
-# 指定 zip 内一批
-python backend/preprocessing/run_pipeline.py --zip data/京剧剧本/01000000.zip
+# 指定 zip 内前 5 本
+python backend/preprocessing/run_pipeline.py \
+  --zip data/京剧剧本/01000000.zip --limit 5
 
-# 按 pipeline.yaml 剧本 ID 列表
+# 按 pipeline.yaml 批处理
 python backend/preprocessing/run_pipeline.py --config configs/pipeline.yaml
 
 # 仅重建 catalog（plays 已存在）
 python backend/preprocessing/run_pipeline.py --catalog-only
+
+# 一键脚本（含复制到 samples）
+bash scripts/run_preprocess.sh
 ```
+
+**已实现模块**：`ingest/` · `extract/` · `clean/` · `export/` · `run_pipeline.py`  
+单元测试（无需 PDF）：`python3 tests/test_preprocessing.py` 或通过 `pytest tests/test_preprocessing.py`。
 
 ---
 

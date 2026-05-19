@@ -50,7 +50,17 @@
       "items": { "$ref": "../common/definitions.schema.json#/$defs/performanceTag" },
       "uniqueItems": true,
       "default": [],
-      "description": "表演类型标记"
+      "description": "归一化表演类别（唱/念/做/打），供统计与可视化"
+    },
+    "performance_cues_raw": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 64
+      },
+      "uniqueItems": true,
+      "description": "PDF 括号内原始表演提示原文，如 白、念、笑、西皮原板；无标注时省略"
     },
     "char_len": {
       "type": "integer",
