@@ -20,3 +20,7 @@ limit_per_zip: 0
 zip_files: []
 # zip_files:
 #   - "01000000.zip"
+
+analytics:
+  num_topics: 8
+  rhythm_window: 20

@@ -278,7 +278,9 @@ pytest tests/test_schemas.py
 
 ---
 
-## 5. 代码目录与运行方式
+## 5. 代码目录与运行方式（已实现）
+
+当前仓库已包含可运行实现；未安装 `scikit-learn` / `jieba` 时自动降级为 **keyword 主题模型** 与内置图算法（不依赖 networkx）。
 
 ```
 backend/analytics/
