@@ -86,6 +86,22 @@ class ThemeModel:
         return f"主题{topic_id}"
 
 
+def model_from_themes(themes_doc: dict) -> ThemeModel:
+    """将 LLM 产出的 themes.json 转为可给叙事模块用的静态主题模型。"""
+    topics = themes_doc.get("topics") or []
+    m = ThemeModel(num_topics=len(topics), method="llm")
+    m.trained_at = (themes_doc.get("model") or {}).get("trained_at", "")
+    seeds: list[tuple[str, list[str]]] = []
+    for t in topics:
+        tid = int(t["topic_id"])
+        kws = list(t.get("keywords") or [t.get("label", "")])
+        m.topic_words[tid] = [(k, float(i + 1)) for i, k in enumerate(kws)]
+        seeds.append((t.get("label", ""), kws))
+    m._vectorizer = seeds
+    m._nmf = None
+    return m
+
+
 def train_theme_model(
     plays: list[dict],
     num_topics: int = 8,

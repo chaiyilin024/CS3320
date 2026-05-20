@@ -211,6 +211,27 @@ pytest tests/test_schemas.py
 
 **依赖**：`jieba`, `gensim` 或 `sklearn`, `pandas`
 
+#### 可选：大模型主题分析（`theme/llm.py`）
+
+从 `cleaned` 的 `play.json` 抽样对白/唱段（带 `block_id`、说话人、表演提示），调用 **OpenAI 兼容 Chat API**，要求返回固定 JSON，再规范为 `themes.json`（`model.method = "llm"`）。
+
+```bash
+export OPENAI_API_KEY="sk-..."
+# 可选：国内中转 / Azure / DeepSeek 等
+export OPENAI_BASE_URL="https://api.openai.com/v1"
+export LLM_MODEL="gpt-4o-mini"
+
+# 方式一：环境变量
+export THEME_USE_LLM=1
+
+# 方式二：configs/pipeline.yaml 里 theme_use_llm: true
+
+python backend/analytics/run_analytics.py --script-id 01001012 --theme-llm
+```
+
+配置项见 `configs/pipeline.yaml` → `analytics.llm`（`num_topics`、`max_sample_chars`、`max_blocks`）。  
+API 失败或未配置密钥时**自动回退** NMF/keyword。叙事模块会用 LLM 主题的 `keywords` 做块级 `dominant_topic_id` 匹配。
+
 ---
 
 ### 任务四：叙事结构分析

@@ -20,7 +20,8 @@ from backend.analytics.network.compare import aggregate_network_compare
 from backend.analytics.role.aggregate import aggregate_role_analysis
 from backend.analytics.role.infer import analyze_play_role
 from backend.analytics.theme.export import aggregate_theme_patterns, build_play_themes
-from backend.analytics.theme.model import train_theme_model
+from backend.analytics.theme.llm import build_play_themes_llm
+from backend.analytics.theme.model import model_from_themes, train_theme_model
 from backend.analytics.utils.io import (
     iter_play_paths,
     load_catalog,
@@ -41,6 +42,19 @@ def _plays_meta(catalog: dict, script_ids: list[str]) -> list[dict]:
     return meta
 
 
+def _build_themes(play: dict, cfg: AnalyticsConfig, theme_model) -> tuple[dict, object]:
+    """返回 (themes.json 内容, 供叙事/综合使用的 theme_model)。"""
+    if cfg.llm_theme.enabled:
+        try:
+            themes = build_play_themes_llm(play, cfg.llm_theme)
+            print(f"  主题: LLM ({cfg.llm_theme.model})", file=sys.stderr)
+            return themes, model_from_themes(themes)
+        except Exception as e:
+            print(f"  WARN LLM 主题失败，回退 NMF/keyword: {e}", file=sys.stderr)
+    themes = build_play_themes(play, theme_model)
+    return themes, theme_model
+
+
 def run_play_analytics(
     play: dict,
     cfg: AnalyticsConfig,
@@ -49,9 +63,9 @@ def run_play_analytics(
 ) -> dict:
     role = analyze_play_role(play)
     network = analyze_play_network(play, role)
-    themes = build_play_themes(play, theme_model)
+    themes, theme_model_play = _build_themes(play, cfg, theme_model)
     narrative = analyze_play_narrative(
-        play, window=cfg.rhythm_window, theme_model=theme_model
+        play, window=cfg.rhythm_window, theme_model=theme_model_play
     )
     integrated = analyze_integrated(play, role, network, themes, narrative)
 
@@ -131,11 +145,21 @@ def main() -> int:
     parser.add_argument("--global-only", action="store_true", help="仅重算 global 聚合")
     parser.add_argument("--no-validate", action="store_true")
     parser.add_argument("--num-topics", type=int, default=None)
+    parser.add_argument(
+        "--theme-llm",
+        action="store_true",
+        help="使用大模型 API 生成主题（需 OPENAI_API_KEY）",
+    )
     args = parser.parse_args()
 
     cfg = AnalyticsConfig.load(ROOT)
     if args.num_topics:
         cfg.num_topics = args.num_topics
+    if args.theme_llm and cfg.llm_theme.api_key:
+        cfg.llm_theme.enabled = True
+        cfg.num_topics = cfg.llm_theme.num_topics
+    elif args.theme_llm:
+        print("WARN: --theme-llm 已指定但未设置 OPENAI_API_KEY", file=sys.stderr)
     validate = not args.no_validate
 
     try:
@@ -174,7 +198,9 @@ def main() -> int:
             except FileNotFoundError:
                 print(f"跳过 {sid}：缺少分析产物", file=sys.stderr)
         plays = [load_play(cfg.cleaned_dir / "plays" / f"{sid}.json") for sid in results]
-        theme_model = train_theme_model(plays, cfg.num_topics, cfg.random_seed)
+        theme_model = None if cfg.llm_theme.enabled else train_theme_model(
+            plays, cfg.num_topics, cfg.random_seed
+        )
         run_global(cfg, plays_meta, results, theme_model, validate)
         print(f"全局聚合完成（{len(results)} 剧）")
         return 0
@@ -190,8 +216,12 @@ def main() -> int:
     if not plays:
         return 1
 
-    print(f"训练主题模型（K={cfg.num_topics}，文档块数基于 {len(plays)} 剧）…")
-    theme_model = train_theme_model(plays, cfg.num_topics, cfg.random_seed)
+    theme_model = None
+    if cfg.llm_theme.enabled:
+        print(f"主题分析: LLM 模式（{cfg.llm_theme.model}，K={cfg.llm_theme.num_topics}）")
+    else:
+        print(f"训练主题模型（K={cfg.num_topics}，文档块数基于 {len(plays)} 剧）…")
+        theme_model = train_theme_model(plays, cfg.num_topics, cfg.random_seed)
 
     for play in plays:
         sid = play["script_id"]

@@ -71,19 +71,11 @@ def _representative_blocks(play: dict, model: ThemeModel, per_topic: int = 2) ->
 def aggregate_theme_patterns(
     plays_meta: list[dict],
     themes_by_script: dict[str, dict],
-    model: ThemeModel,
+    model: ThemeModel | None = None,
 ) -> dict:
     from ..utils.io import utc_now_iso
 
-    topic_labels = [
-        {
-            "topic_id": tid,
-            "label": model.topic_label(tid),
-            "keywords": [w for w, _ in model.topic_words.get(tid, [])[:10]],
-        }
-        for tid in range(model.num_topics)
-    ]
-    k = model.num_topics
+    topic_labels, k = _topic_labels_for_aggregate(themes_by_script, model)
     matrix = []
     threshold = 0.12
     cooccur: dict[tuple[int, int], int] = {}
@@ -160,3 +152,31 @@ def _common_patterns(matrix: list[dict], labels: list[dict]) -> list[dict]:
             }
         )
     return out
+
+
+def _topic_labels_for_aggregate(
+    themes_by_script: dict[str, dict],
+    model: ThemeModel | None,
+) -> tuple[list[dict], int]:
+    if model is not None:
+        labels = [
+            {
+                "topic_id": tid,
+                "label": model.topic_label(tid),
+                "keywords": [w for w, _ in model.topic_words.get(tid, [])[:10]],
+            }
+            for tid in range(model.num_topics)
+        ]
+        return labels, model.num_topics
+    first = next(iter(themes_by_script.values()), {})
+    topics = first.get("topics") or []
+    k = len(topics)
+    labels = [
+        {
+            "topic_id": int(t["topic_id"]),
+            "label": t.get("label", f"主题{t['topic_id']}"),
+            "keywords": (t.get("keywords") or [])[:10],
+        }
+        for t in sorted(topics, key=lambda x: int(x["topic_id"]))
+    ]
+    return labels, k

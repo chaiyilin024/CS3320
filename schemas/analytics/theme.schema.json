@@ -17,7 +17,7 @@
       "properties": {
         "method": {
           "type": "string",
-          "enum": ["lda", "nmf", "keyword", "other"],
+          "enum": ["lda", "nmf", "keyword", "llm", "other"],
           "description": "建模方法"
         },
         "num_topics_global": {
