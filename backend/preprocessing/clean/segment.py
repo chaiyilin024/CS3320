@@ -18,10 +18,81 @@ CHAR_LIST_HEADER_RE = re.compile(r"^(人物|角色|登场人物?|主要角色)[:
 CAST_SECTION_END_RE = re.compile(r"^(剧情|故事)")
 PLOT_HEADER_RE = re.compile(r"^情节\s*(.*)$")
 ANNOTATION_HEADER_RE = re.compile(r"^注释\s*(.*)$")
+# 京剧行当精细分类 → 粗分类 完整映射表
+COARSE_MAP = {
+    # ========== 生行 ==========
+    "生": "生",
+    "老生": "生",
+    "小生": "生",
+    "武生": "生",
+    "红生": "生",
+    "外": "生",
+    "娃娃生": "生",
+    "冠生": "生",
+    "巾生": "生",
+    "穷生": "生",
+    "翎子生": "生",
+    "袍带生": "生",
+    "箭衣生": "生",
+    "长靠武生": "生",
+    "短打武生": "生",
+    "把子生": "生",
+
+    # ========== 旦行 ==========
+    "旦": "旦",
+    "青衣": "旦",
+    "花旦": "旦",
+    "刀马旦": "旦",
+    "武旦": "旦",
+    "老旦": "旦",
+    "彩旦": "旦",
+    "闺门旦": "旦",
+    "花衫": "旦",
+    "泼辣旦": "旦",
+    "刺杀旦": "旦",
+    "贴旦": "旦",
+    "正旦": "旦",
+    "奴旦": "旦",
+    "疯旦": "旦",
+
+    # ========== 净行 ==========
+    "净": "净",
+    "正净": "净",
+    "副净": "净",
+    "武净": "净",
+    "铜锤花脸": "净",
+    "架子花脸": "净",
+    "摔打花脸": "净",
+    "黑净": "净",
+    "白净": "净",
+    "红净": "净",
+
+    # ========== 末行 ==========
+    "末": "末",
+    "正末": "末",
+    "副末": "末",
+    "冲末": "末",
+    "外末": "末",
+
+    # ========== 丑行 ==========
+    "丑": "丑",
+    "文丑": "丑",
+    "武丑": "丑",
+    "老丑": "丑",
+    "文武丑": "丑",
+    "茶衣丑": "丑",
+    "袍带丑": "丑",
+    "鞋皮丑": "丑",
+    "方巾丑": "丑",
+    "婆子丑": "丑",
+    "小丑": "丑"
+}
+
+# 按长度从长到短排序，确保长词优先匹配
+_HANGDANG_KEYS = "|".join(sorted(COARSE_MAP.keys(), key=len, reverse=True))
+
 CAST_LINE_RE = re.compile(
-    r"^([\u4e00-\u9fff·]{2,4})[：:]\s*"
-    r"(老生|小生|武生|红生|青衣|花旦|刀马旦|老旦|净|丑|文武丑)$"
-)
+    rf"^([\u4e00-\u9fff·]{{2,4}})[：:]\s*({_HANGDANG_KEYS})$")
 # 刘备 （白） 孤，刘备……
 ROLE_ACTION_RE = re.compile(
     r"^([\u4e00-\u9fff·]{2,4})\s+[（(]([^）)]+)[）)]\s*(.*)$"
@@ -64,22 +135,7 @@ STAGE_PAREN_HINTS = (
     "排队",
 )
 
-HANGDANG_PATTERN = re.compile(
-    r"(老生|小生|武生|红生|青衣|花旦|刀马旦|老旦|净|丑|文武丑)"
-)
-COARSE_MAP = {
-    "老生": "生",
-    "小生": "生",
-    "武生": "生",
-    "红生": "生",
-    "青衣": "旦",
-    "花旦": "旦",
-    "刀马旦": "旦",
-    "老旦": "旦",
-    "净": "净",
-    "丑": "丑",
-    "文武丑": "丑",
-}
+HANGDANG_PATTERN = re.compile(rf"({_HANGDANG_KEYS})")
 
 
 @dataclass
@@ -175,17 +231,26 @@ def segment_lines(
             continue
 
         if in_annotation:
-            blocks.append(
-                RawBlock(
-                    block_index=idx,
-                    type="annotation",
-                    text=line,
-                    page_no=page_no,
-                    scene_index=scene_index or None,
+            # 检查是否是对话行，如果是则退出注释模式并正常处理
+            m_role = ROLE_ACTION_RE.match(line)
+            m_dialogue = DIALOGUE_RE.match(line)
+            m_cue_cont = CUE_CONTINUATION_RE.match(line)
+            m_board = BOARD_CUE_RE.match(line)
+            
+            if m_role or m_dialogue or (m_cue_cont and last_speaker) or (m_board and _is_board_cue_label(m_board.group(1))):
+                in_annotation = False
+            else:
+                blocks.append(
+                    RawBlock(
+                        block_index=idx,
+                        type="annotation",
+                        text=line,
+                        page_no=page_no,
+                        scene_index=scene_index or None,
+                    )
                 )
-            )
-            idx += 1
-            continue
+                idx += 1
+                continue
 
         if CHAR_LIST_HEADER_RE.match(line):
             in_cast_section = True

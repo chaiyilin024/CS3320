@@ -17,3 +17,5 @@ venv/
 *.xlsx
 *.ppt
 *.pptx
+*.cmd
+*.zip
