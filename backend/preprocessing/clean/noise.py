@@ -37,6 +37,16 @@ NOT_A_PERSON = frozenset(
     }
 )
 
+# lyf：敬语类短语，不应作为角色名（如"启禀丞相"）
+NON_NAME_PREFIXES = (
+    "启禀",
+    "参见",
+    "启奏",
+    "禀报",
+    "参见",
+    "他言"
+)
+
 HANGDANG_WORDS = frozenset(
     {
         "老生",
@@ -84,6 +94,9 @@ def is_valid_character_name(name: str) -> bool:
     if NAME_FRAGMENT_RE.search(n):
         return False
     if n.endswith("同") and n not in {"同人"}:
+        return False
+    # 排除敬语类短语（如"启禀丞相"不应作为角色名）
+    if any(n.startswith(prefix) for prefix in NON_NAME_PREFIXES):
         return False
     if not VALID_CHARACTER_NAME_RE.match(n):
         return False

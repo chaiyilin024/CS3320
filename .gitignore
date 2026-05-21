@@ -20,3 +20,5 @@ frontend/dist/
 *.xlsx
 *.ppt
 *.pptx
+*.cmd
+*.zip
