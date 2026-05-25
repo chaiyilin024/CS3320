@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from collections import Counter, defaultdict
 
+from .traits_extract import extract_traits
+
 HANGDANG_LIST = [
     "老生",
     "小生",
@@ -33,50 +35,76 @@ COARSE_MAP = {
     "其他": "其他",
 }
 
-_IDENTITY_HANGDANG = {
-    "君主": "老生",
-    "将": "武生",
-    "将领": "武生",
-    "书生": "小生",
-    "谋士": "老生",
-    "妃": "青衣",
-    "后": "青衣",
+# identity → 可能行当（仅来自台词上下文抽出的 identity，不依赖人物姓名）
+_IDENTITY_HANGDANG: list[tuple[str, str, float]] = [
+    ("君主", "老生", 0.75),
+    ("谋士", "老生", 0.70),
+    ("将领", "武生", 0.60),
+    ("妃后", "青衣", 0.75),
+    ("公子", "小生", 0.70),
+    ("弟兄", "小生", 0.55),
+    ("书生", "小生", 0.70),
+    ("兵卒", "净", 0.50),
+]
+
+# 表演线索 → 行当倾向
+_PERF_HANGDANG: dict[str, tuple[str, float]] = {
+    "sing_dominant": ("老生", 0.65),
+    "action_dominant": ("武生", 0.65),
 }
+
+
+def _line_bucket(n: int) -> str:
+    if n >= 50:
+        return "high"
+    if n >= 15:
+        return "mid"
+    return "low"
 
 
 def analyze_play_role(play: dict) -> dict:
     script_id = play["script_id"]
     blocks = play.get("blocks") or []
     perf_by_char = _performance_profile(blocks)
+    traits_derived_all = extract_traits(play)
+
     characters_out: list[dict] = []
     dist: Counter[str] = Counter()
     coarse_dist: Counter[str] = Counter()
     trait_links: list[dict] = []
+    inferred_count = 0
+    labeled_count = 0
 
     for ch in play.get("characters") or []:
         cid = ch["character_id"]
         labeled = ch.get("hangdang_labeled")
-        inferred, confidence, top_features = _infer_hangdang(ch, perf_by_char.get(cid, {}))
-        final = labeled if labeled and labeled != "未知" else inferred
-        if not final:
-            final = "未知"
-        characters_out.append(
-            {
-                "character_id": cid,
-                "name": ch["name"],
-                "hangdang_labeled": labeled,
-                "hangdang_inferred": inferred if not labeled else None,
-                "hangdang_final": final,
-                "confidence": round(confidence, 3),
-                "top_features": top_features,
-            }
+        derived = traits_derived_all.get(cid) or {}
+        inferred, confidence, top_features = _infer_hangdang(
+            ch, perf_by_char.get(cid, {}), derived
         )
+        if labeled and labeled != "未知":
+            final = labeled
+            labeled_count += 1
+        else:
+            final = inferred or "未知"
+            if final and final != "未知":
+                inferred_count += 1
+        record: dict = {
+            "character_id": cid,
+            "name": ch["name"],
+            "hangdang_labeled": labeled,
+            "hangdang_inferred": inferred if not labeled else None,
+            "hangdang_final": final,
+            "confidence": round(confidence, 3),
+            "top_features": top_features,
+        }
+        if derived:
+            record["traits_derived"] = derived
+        characters_out.append(record)
         dist[final] += 1
         coarse_dist[COARSE_MAP.get(final, "未知")] += 1
         for feat in top_features:
-            trait_links.append(
-                {"trait": feat, "hangdang": final, "count": 1}
-            )
+            trait_links.append({"trait": feat, "hangdang": final, "count": 1})
 
     merged_traits = _merge_trait_links(trait_links)
     return {
@@ -85,6 +113,8 @@ def analyze_play_role(play: dict) -> dict:
         "hangdang_coarse_distribution": {k: coarse_dist[k] for k in coarse_dist},
         "characters": characters_out,
         "trait_summary": merged_traits[:30],
+        "labeled_count": labeled_count,
+        "inferred_count": inferred_count,
     }
 
 
@@ -103,53 +133,134 @@ def _performance_profile(blocks: list[dict]) -> dict[str, dict[str, int]]:
 
 
 def _infer_hangdang(
-    ch: dict, perf: dict[str, int]
+    ch: dict, perf: dict[str, int], derived: dict
 ) -> tuple[str | None, float, list[str]]:
+    """综合 traits_derived + 表演侧重 + 行数分箱，得出行当推断。
+
+    返回 (hangdang, confidence, top_features)。
+    top_features 是离散化后的 key=value 串，便于做 PMI 聚合。
+    """
     features: list[str] = []
     traits = ch.get("traits") or {}
-    if traits.get("gender"):
-        features.append(f"gender={traits['gender']}")
-    if traits.get("identity"):
-        features.append(f"identity={traits['identity']}")
-    if traits.get("age"):
-        features.append(f"age={traits['age']}")
-    cues = traits.get("performance_cues") or []
-    if cues:
-        features.append(f"performance_cues={','.join(cues)}")
     line_count = ch.get("line_count") or 0
-    features.append(f"line_count={line_count}")
+    bucket = _line_bucket(line_count)
+    features.append(f"line_count_bucket={bucket}")
 
-    labeled = ch.get("hangdang_labeled")
-    if labeled and labeled != "未知":
-        return None, 0.95, features[:5]
+    # traits_derived 特征
+    if derived.get("gender"):
+        features.append(f"gender={derived['gender']}")
+    if derived.get("age"):
+        features.append(f"age={derived['age']}")
+    if derived.get("identity"):
+        features.append(f"identity={derived['identity']}")
+    for pers in derived.get("personality") or []:
+        features.append(f"personality={pers}")
 
-    identity = traits.get("identity") or ""
-    for key, hd in _IDENTITY_HANGDANG.items():
-        if key in identity:
-            return hd, 0.72, features[:5]
+    # 表演线索：把 performance_cues 拆成 multi-hot
+    cues = (traits.get("performance_cues") or []) + (derived.get("performance_cues") or [])
+    for c in dict.fromkeys(cues):
+        features.append(f"cue={c}")
 
+    # 表演侧重比例
     sing = perf.get("唱", 0)
     nian = perf.get("念", 0)
-    total = sing + nian + perf.get("做", 0) + perf.get("打", 0) + perf.get("unknown", 0)
-    if total > 0:
-        sing_ratio = sing / total
-        if sing_ratio > 0.45 and line_count >= 30:
-            features.append("high_sing_ratio")
-            return "老生", 0.65, features[:5]
-        if sing_ratio < 0.15 and line_count >= 15:
-            return "丑", 0.55, features[:5]
+    zuo = perf.get("做", 0)
+    da = perf.get("打", 0)
+    total = sing + nian + zuo + da + perf.get("unknown", 0)
+    sing_ratio = sing / total if total else 0.0
+    action_ratio = (zuo + da) / total if total else 0.0
 
+    # 1) 已标注：features 已完整，直接返回（不再产生推断分支）
+    labeled = ch.get("hangdang_labeled")
+    if labeled and labeled != "未知":
+        return None, 0.95, _truncate(features, 8)
+
+    # 4) 决策树
+    gender = derived.get("gender") or "未知"
+    age = derived.get("age") or ""
+    identity = derived.get("identity") or ""
+    personality = derived.get("personality") or []
+
+    # 4a) 女性
+    if gender == "女":
+        if age == "老年":
+            return "老旦", 0.78, _truncate(features, 6)
+        if "勇猛" in personality or action_ratio > 0.2:
+            return "刀马旦", 0.7, _truncate(features, 6)
+        if sing_ratio > 0.3:
+            return "青衣", 0.72, _truncate(features, 6)
+        return "花旦", 0.65, _truncate(features, 6)
+
+    # 4b) 老年男性
+    if age == "老年" and gender != "女":
+        return "老生", 0.72, _truncate(features, 6)
+
+    # 4c) 身份倾向
+    for ident_key, hd, conf in _IDENTITY_HANGDANG:
+        if ident_key == identity:
+            features.append(f"matched_identity={ident_key}")
+            target_hd = hd
+            adj = 0.0
+            if hd == "老生" and "智谋" in personality:
+                adj += 0.05
+            if hd == "小生" and age == "少年":
+                adj += 0.08
+            # 将领的细分：唱多→老生，打多→武生，否则武生兜底
+            if ident_key == "将领":
+                if "勇猛" in personality or action_ratio > 0.2:
+                    target_hd = "武生"
+                    adj += 0.05
+                elif sing_ratio > 0.4 and bucket == "high":
+                    target_hd = "老生"
+                elif sing_ratio == 0 and bucket == "low":
+                    target_hd = "武生"
+            return target_hd, min(0.95, conf + adj), _truncate(features, 6)
+
+    # 4d) 表演侧重
+    if total > 0:
+        if sing_ratio > 0.45 and bucket != "low":
+            features.append("sing_dominant")
+            return "老生", 0.6, _truncate(features, 6)
+        if action_ratio > 0.25:
+            features.append("action_dominant")
+            return "武生", 0.6, _truncate(features, 6)
+        if sing_ratio < 0.15 and bucket != "low" and "诙谐" in personality:
+            return "丑", 0.6, _truncate(features, 6)
+
+    # 4e) 粗行当兜底（来自 cleaned）
     coarse = ch.get("hangdang_coarse")
     if coarse == "净":
-        return "净", 0.6, features[:5]
+        return "净", 0.55, _truncate(features, 6)
     if coarse == "旦":
-        return "花旦", 0.58, features[:5]
+        if age == "老年":
+            return "老旦", 0.55, _truncate(features, 6)
+        return "花旦", 0.5, _truncate(features, 6)
+    if coarse == "生":
+        if age == "少年":
+            return "小生", 0.55, _truncate(features, 6)
+        if bucket == "high":
+            return "老生", 0.5, _truncate(features, 6)
+        return "小生", 0.45, _truncate(features, 6)
 
-    if line_count >= 40:
-        return "老生", 0.5, features[:5]
-    if line_count >= 20:
-        return "小生", 0.45, features[:5]
-    return "未知", 0.3, features[:5]
+    # 4f) 仅靠台词体量
+    if bucket == "high":
+        return "老生", 0.4, _truncate(features, 6)
+    if bucket == "mid":
+        return "小生", 0.35, _truncate(features, 6)
+    return "未知", 0.3, _truncate(features, 6)
+
+
+def _truncate(features: list[str], n: int) -> list[str]:
+    seen: set[str] = set()
+    out: list[str] = []
+    for f in features:
+        if f in seen:
+            continue
+        seen.add(f)
+        out.append(f)
+        if len(out) >= n:
+            break
+    return out
 
 
 def _merge_trait_links(links: list[dict]) -> list[dict]:

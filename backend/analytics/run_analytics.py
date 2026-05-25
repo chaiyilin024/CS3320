@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""分析流水线入口：单剧 / 批量 / 仅全局聚合。"""
+"""分析流水线入口 — 单剧四任务（行当 / 网络 / 主题 / 叙事）。
+
+多剧本对比交由前端在拿到各剧 JSON 后做。
+"""
 from __future__ import annotations
 
 import argparse
@@ -11,39 +14,26 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from backend.analytics.config import AnalyticsConfig
-from backend.analytics.utils.jieba_env import configure_jieba
-from backend.analytics.integrated.correlate import analyze_integrated
 from backend.analytics.narrative.rhythm import analyze_play_narrative
-from backend.analytics.narrative.templates import aggregate_narrative_templates
 from backend.analytics.network.build_graph import analyze_play_network
-from backend.analytics.network.compare import aggregate_network_compare
-from backend.analytics.role.aggregate import aggregate_role_analysis
 from backend.analytics.role.infer import analyze_play_role
-from backend.analytics.theme.export import aggregate_theme_patterns, build_play_themes
+from backend.analytics.theme.export import build_play_themes
 from backend.analytics.theme.llm import build_play_themes_llm
 from backend.analytics.theme.model import model_from_themes, train_theme_model
-from backend.analytics.utils.io import (
-    iter_play_paths,
-    load_catalog,
-    load_play,
-    save_json,
-)
+from backend.analytics.utils.io import iter_play_paths, load_play, save_json
+from backend.analytics.utils.jieba_env import configure_jieba
 from backend.analytics.utils.schema import validate_analytics
 
-
-def _plays_meta(catalog: dict, script_ids: list[str]) -> list[dict]:
-    by_id = {p["script_id"]: p for p in catalog.get("plays") or []}
-    meta = []
-    for sid in script_ids:
-        if sid in by_id:
-            meta.append(by_id[sid])
-        else:
-            meta.append({"script_id": sid, "title": sid})
-    return meta
+SCHEMA_MAP = {
+    "role.json": "play_role.schema.json",
+    "network.json": "network.schema.json",
+    "themes.json": "theme.schema.json",
+    "narrative.json": "narrative.schema.json",
+}
 
 
-def _build_themes(play: dict, cfg: AnalyticsConfig, theme_model) -> tuple[dict, object]:
-    """返回 (themes.json 内容, 供叙事/综合使用的 theme_model)。"""
+def _build_themes(play: dict, cfg: AnalyticsConfig, theme_model):
+    """返回 (themes.json 内容, 供叙事使用的 theme_model)。"""
     if cfg.llm_theme.enabled:
         try:
             themes = build_play_themes_llm(play, cfg.llm_theme)
@@ -67,7 +57,6 @@ def run_play_analytics(
     narrative = analyze_play_narrative(
         play, window=cfg.rhythm_window, theme_model=theme_model_play
     )
-    integrated = analyze_integrated(play, role, network, themes, narrative)
 
     sid = play["script_id"]
     out_dir = cfg.analytics_dir / "plays" / sid
@@ -76,73 +65,20 @@ def run_play_analytics(
         "network.json": network,
         "themes.json": themes,
         "narrative.json": narrative,
-        "integrated.json": integrated,
-    }
-    schemas = {
-        "role.json": "play_role.schema.json",
-        "network.json": "network.schema.json",
-        "themes.json": "theme.schema.json",
-        "narrative.json": "narrative.schema.json",
-        "integrated.json": "integrated.schema.json",
     }
     for name, doc in outputs.items():
-        path = out_dir / name
-        save_json(path, doc)
+        save_json(out_dir / name, doc)
         if validate:
-            errs = validate_analytics(doc, schemas[name], cfg.root)
+            errs = validate_analytics(doc, SCHEMA_MAP[name], cfg.root)
             if errs:
                 print(f"  WARN {sid}/{name}: {errs[0]}", file=sys.stderr)
-    return {
-        "role": role,
-        "network": network,
-        "themes": themes,
-        "narrative": narrative,
-        "integrated": integrated,
-    }
-
-
-def run_global(
-    cfg: AnalyticsConfig,
-    plays_meta: list[dict],
-    results: dict[str, dict],
-    theme_model,
-    validate: bool,
-) -> None:
-    global_dir = cfg.analytics_dir / "global"
-    role_agg = aggregate_role_analysis(
-        plays_meta, {sid: results[sid]["role"] for sid in results}
-    )
-    net_cmp = aggregate_network_compare(
-        plays_meta, {sid: results[sid]["network"] for sid in results}
-    )
-    theme_pat = aggregate_theme_patterns(
-        plays_meta,
-        {sid: results[sid]["themes"] for sid in results},
-        theme_model,
-    )
-    narr_tpl = aggregate_narrative_templates(
-        plays_meta, {sid: results[sid]["narrative"] for sid in results}
-    )
-    globals_out = {
-        "role_analysis.json": (role_agg, "role_analysis.schema.json"),
-        "network_compare.json": (net_cmp, "network_compare.schema.json"),
-        "theme_patterns.json": (theme_pat, "theme_patterns.schema.json"),
-        "narrative_templates.json": (narr_tpl, "narrative_templates.schema.json"),
-    }
-    for fname, (doc, schema) in globals_out.items():
-        path = global_dir / fname
-        save_json(path, doc)
-        if validate:
-            errs = validate_analytics(doc, schema, cfg.root)
-            if errs:
-                print(f"  WARN global/{fname}: {errs[0]}", file=sys.stderr)
+    return outputs
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="京剧剧本分析流水线")
+    parser = argparse.ArgumentParser(description="京剧剧本单剧分析流水线")
     parser.add_argument("--script-id", action="append", dest="script_ids")
     parser.add_argument("--all", action="store_true", help="处理 cleaned/plays 下全部剧本")
-    parser.add_argument("--global-only", action="store_true", help="仅重算 global 聚合")
     parser.add_argument("--no-validate", action="store_true")
     parser.add_argument("--num-topics", type=int, default=None)
     parser.add_argument(
@@ -168,13 +104,10 @@ def main() -> int:
     except ImportError:
         pass
 
-    catalog = load_catalog(cfg.catalog_path)
     if args.all:
         script_ids = [sid for sid, _ in iter_play_paths(cfg.cleaned_dir)]
     elif args.script_ids:
         script_ids = args.script_ids
-    elif args.global_only:
-        script_ids = [sid for sid, _ in iter_play_paths(cfg.cleaned_dir)]
     else:
         script_ids = ["01001012"]
 
@@ -182,30 +115,7 @@ def main() -> int:
         print("未找到可分析的剧本，请先运行预处理。", file=sys.stderr)
         return 1
 
-    plays_meta = _plays_meta(catalog, script_ids)
-    results: dict[str, dict] = {}
-
-    if args.global_only:
-        for sid in script_ids:
-            play_dir = cfg.analytics_dir / "plays" / sid
-            try:
-                results[sid] = {
-                    "role": load_play(play_dir / "role.json"),
-                    "network": load_play(play_dir / "network.json"),
-                    "themes": load_play(play_dir / "themes.json"),
-                    "narrative": load_play(play_dir / "narrative.json"),
-                }
-            except FileNotFoundError:
-                print(f"跳过 {sid}：缺少分析产物", file=sys.stderr)
-        plays = [load_play(cfg.cleaned_dir / "plays" / f"{sid}.json") for sid in results]
-        theme_model = None if cfg.llm_theme.enabled else train_theme_model(
-            plays, cfg.num_topics, cfg.random_seed
-        )
-        run_global(cfg, plays_meta, results, theme_model, validate)
-        print(f"全局聚合完成（{len(results)} 剧）")
-        return 0
-
-    plays = []
+    plays: list[dict] = []
     for sid in script_ids:
         path = cfg.cleaned_dir / "plays" / f"{sid}.json"
         if not path.exists():
@@ -226,10 +136,9 @@ def main() -> int:
     for play in plays:
         sid = play["script_id"]
         print(f"分析 {sid} 《{play.get('title', '')}》…")
-        results[sid] = run_play_analytics(play, cfg, theme_model, validate)
+        run_play_analytics(play, cfg, theme_model, validate)
 
-    run_global(cfg, plays_meta, results, theme_model, validate)
-    print(f"完成：{len(results)} 剧 → {cfg.analytics_dir}")
+    print(f"完成：{len(plays)} 剧 → {cfg.analytics_dir}/plays")
     return 0
 
 

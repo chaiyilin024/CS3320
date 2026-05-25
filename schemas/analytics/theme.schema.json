@@ -101,6 +101,22 @@
           "maxLength": 500,
           "description": "截断后的代表性片段"
         },
+        "context_snippet": {
+          "type": "string",
+          "maxLength": 800,
+          "description": "拼接前后若干块的上下文片段"
+        },
+        "speaker_id": {
+          "oneOf": [
+            { "type": "string", "pattern": "^c_" },
+            { "type": "null" }
+          ],
+          "description": "代表块的说话人 ID（可为空）"
+        },
+        "speaker_name": {
+          "type": "string",
+          "description": "代表块的说话人姓名"
+        },
         "score": {
           "type": "number",
           "description": "该块属于此主题的概率/得分"
