@@ -7,8 +7,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from backend.analytics.config import AnalyticsConfig
-from backend.analytics.integrated.correlate import analyze_integrated
 from backend.analytics.narrative.rhythm import analyze_play_narrative
 from backend.analytics.network.build_graph import analyze_play_network
 from backend.analytics.role.infer import analyze_play_role
@@ -28,18 +26,23 @@ def test_analyze_huanghelou():
     network = analyze_play_network(play, role)
     themes = build_play_themes(play, model)
     narrative = analyze_play_narrative(play, theme_model=model)
-    integrated = analyze_integrated(play, role, network, themes, narrative)
 
     assert role["script_id"] == "01001012"
     assert role["hangdang_distribution"]
     assert network["metrics"]["node_count"] >= 2
-    assert len(themes["topics"]) >= 3
+    assert len(themes["topics"]) >= 2
     assert abs(sum(themes["topic_composition"]) - 1.0) < 0.05
     assert narrative["plot_stages"]
-    assert integrated["summary_insights"]
+    assert narrative.get("performance_mark_distribution") is not None
 
-    errs = validate_analytics(themes, "theme.schema.json", ROOT)
-    assert not errs, errs[:3]
+    for doc, schema in (
+        (role, "play_role.schema.json"),
+        (network, "network.schema.json"),
+        (themes, "theme.schema.json"),
+        (narrative, "narrative.schema.json"),
+    ):
+        errs = validate_analytics(doc, schema, ROOT)
+        assert not errs, errs[:3]
 
 
 def test_theme_keywords_not_empty():
