@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from ..utils.genre import normalize_genre
+from ..utils.hangdang import normalize_coarse, normalize_hangdang
 from .graph_math import (
     betweenness_simple,
     build_adjacency,
@@ -8,25 +10,11 @@ from .graph_math import (
     density,
 )
 
-COARSE_MAP = {
-    "老生": "生",
-    "小生": "生",
-    "武生": "生",
-    "红生": "生",
-    "青衣": "旦",
-    "花旦": "旦",
-    "刀马旦": "旦",
-    "老旦": "旦",
-    "净": "净",
-    "丑": "丑",
-    "文武丑": "丑",
-}
-
 
 def analyze_play_network(play: dict, role: dict | None = None) -> dict:
     script_id = play["script_id"]
     title = play.get("title", "")
-    genre = (play.get("tags") or {}).get("genre_inferred") or "未知"
+    genre = normalize_genre((play.get("tags") or {}).get("genre_inferred"))
     chars = {c["character_id"]: c for c in play.get("characters") or []}
     role_map = {}
     if role:
@@ -38,12 +26,11 @@ def analyze_play_network(play: dict, role: dict | None = None) -> dict:
         rf = role_map.get(cid) or {}
         if rf.get("hangdang_final"):
             hd = rf["hangdang_final"]
-        coarse = COARSE_MAP.get(hd) or ch.get("hangdang_coarse") or "未知"
-        if coarse not in ("生", "旦", "净", "丑", "未知", "其他"):
-            coarse = "未知"
+        hd = normalize_hangdang(hd) or "未知"
+        coarse = normalize_coarse(ch.get("hangdang_coarse"), hd)
         node_meta[cid] = {
             "name": ch["name"],
-            "hangdang": hd if hd else "未知",
+            "hangdang": hd,
             "hangdang_coarse": coarse,
             "is_main": bool(ch.get("is_main")),
         }

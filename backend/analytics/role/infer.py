@@ -2,6 +2,11 @@ from __future__ import annotations
 
 from collections import Counter, defaultdict
 
+from ..utils.hangdang import (
+    maybe_raw_feature,
+    normalize_coarse,
+    normalize_hangdang,
+)
 from .traits_extract import extract_traits
 
 HANGDANG_LIST = [
@@ -77,23 +82,28 @@ def analyze_play_role(play: dict) -> dict:
 
     for ch in play.get("characters") or []:
         cid = ch["character_id"]
-        labeled = ch.get("hangdang_labeled")
+        labeled_raw = ch.get("hangdang_labeled")
+        labeled = normalize_hangdang(labeled_raw) if labeled_raw else None
         derived = traits_derived_all.get(cid) or {}
         inferred, confidence, top_features = _infer_hangdang(
             ch, perf_by_char.get(cid, {}), derived
         )
+        inferred_norm = normalize_hangdang(inferred) if inferred else None
+        raw_feat = maybe_raw_feature(labeled_raw, labeled)
+        if raw_feat and raw_feat not in top_features:
+            top_features = [raw_feat, *top_features[:7]]
         if labeled and labeled != "未知":
             final = labeled
             labeled_count += 1
         else:
-            final = inferred or "未知"
+            final = inferred_norm or "未知"
             if final and final != "未知":
                 inferred_count += 1
         record: dict = {
             "character_id": cid,
             "name": ch["name"],
             "hangdang_labeled": labeled,
-            "hangdang_inferred": inferred if not labeled else None,
+            "hangdang_inferred": inferred_norm if not labeled_raw else None,
             "hangdang_final": final,
             "confidence": round(confidence, 3),
             "top_features": top_features,
@@ -102,7 +112,7 @@ def analyze_play_role(play: dict) -> dict:
             record["traits_derived"] = derived
         characters_out.append(record)
         dist[final] += 1
-        coarse_dist[COARSE_MAP.get(final, "未知")] += 1
+        coarse_dist[normalize_coarse(ch.get("hangdang_coarse"), final)] += 1
         for feat in top_features:
             trait_links.append({"trait": feat, "hangdang": final, "count": 1})
 
