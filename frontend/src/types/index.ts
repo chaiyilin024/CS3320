@@ -5,6 +5,9 @@ export interface CatalogPlay {
   collection_name: string
   character_count?: number
   block_count?: number
+  scene_count?: number
+  char_count?: number
+  page_count?: number
   parse_quality?: number
   tags?: { genre_inferred?: string; era_inferred?: string }
 }
@@ -17,6 +20,9 @@ export interface Catalog {
 export interface PlayRole {
   script_id: string
   hangdang_distribution: Record<string, number>
+  hangdang_coarse_distribution?: Record<string, number>
+  labeled_count?: number
+  inferred_count?: number
   characters: Array<{
     character_id: string
     name: string
@@ -25,6 +31,13 @@ export interface PlayRole {
     hangdang_final: string
     confidence: number
     top_features?: string[]
+    traits_derived?: {
+      gender?: string
+      age?: string
+      identity?: string
+      personality?: string[]
+      performance_cues?: string[]
+    }
   }>
   trait_summary?: Array<{ trait: string; hangdang: string; count: number }>
 }
@@ -37,8 +50,14 @@ export interface PlayNetwork {
     id: string
     name: string
     hangdang: string
+    hangdang_coarse?: string
     degree: number
+    weighted_degree?: number
     betweenness?: number
+    weighted_betweenness?: number
+    closeness?: number
+    eigenvector?: number
+    community_id?: number
     is_main?: boolean
   }>
   links: Array<{
@@ -46,24 +65,44 @@ export interface PlayNetwork {
     target: string
     weight: number
     types?: string[]
+    dialogue_count?: number
+    normalized_weight?: number
   }>
   metrics: {
     node_count: number
     edge_count: number
     density: number
     avg_clustering?: number
+    avg_weighted_clustering?: number
     avg_degree?: number
+    avg_weighted_degree?: number
+    modularity?: number
+    assortativity_hangdang?: number
+    component_count?: number
+    main_subgraph?: {
+      node_count: number
+      edge_count: number
+      density?: number
+      avg_clustering?: number
+      modularity?: number
+    }
   }
 }
 
 export interface PlayThemes {
   script_id: string
   title?: string
+  model?: {
+    method?: string
+    num_topics_global?: number
+    trained_at?: string
+  }
   topics: Array<{
     topic_id: number
     label: string
     weight: number
     keywords: string[]
+    keyword_weights?: number[]
   }>
   topic_composition: number[]
   representative_blocks?: Array<{
@@ -71,6 +110,9 @@ export interface PlayThemes {
     block_id: string
     block_index?: number
     text_snippet: string
+    context_snippet?: string
+    speaker_id?: string | null
+    speaker_name?: string
     score?: number
   }>
 }
@@ -103,6 +145,20 @@ export interface PlayNarrative {
   }>
 }
 
+export interface IntegratedCorrelation {
+  type: 'character_theme' | 'network_stage' | 'hangdang_narrative' | 'theme_narrative' | 'character_network' | 'other'
+  strength: number
+  character_id?: string
+  character_name?: string
+  topic_id?: number
+  topic_label?: string
+  stage?: string
+  hangdang?: string
+  peak_block_index?: number
+  edge_density_delta?: number
+  evidence?: string
+}
+
 export interface PlayIntegrated {
   script_id: string
   title?: string
@@ -121,7 +177,7 @@ export interface PlayIntegrated {
     node_count: number
     edge_count?: number
   }>
-  correlations?: Array<Record<string, unknown>>
+  correlations?: IntegratedCorrelation[]
 }
 
 export interface RoleAnalysisGlobal {

@@ -1,8 +1,22 @@
 import * as echarts from 'echarts/core'
-import { BarChart, GraphChart, HeatmapChart, LineChart, PieChart, SankeyChart } from 'echarts/charts'
 import {
+  BarChart,
+  GraphChart,
+  HeatmapChart,
+  LineChart,
+  PieChart,
+  SankeyChart,
+  ScatterChart,
+  TreemapChart,
+  RadarChart,
+} from 'echarts/charts'
+import {
+  DataZoomComponent,
   GridComponent,
   LegendComponent,
+  MarkAreaComponent,
+  PolarComponent,
+  RadarComponent,
   TitleComponent,
   TooltipComponent,
   VisualMapComponent,
@@ -16,11 +30,18 @@ echarts.use([
   GraphChart,
   HeatmapChart,
   SankeyChart,
+  ScatterChart,
+  TreemapChart,
+  RadarChart,
   GridComponent,
+  PolarComponent,
+  RadarComponent,
   TooltipComponent,
   LegendComponent,
   TitleComponent,
   VisualMapComponent,
+  DataZoomComponent,
+  MarkAreaComponent,
   CanvasRenderer,
 ])
 
@@ -44,4 +65,33 @@ export const HANGDANG_COLORS: Record<string, string> = {
 
 export function hangdangColor(h: string): string {
   return HANGDANG_COLORS[h] ?? '#888'
+}
+
+export const GENRE_COLORS: Record<string, string> = {
+  历史剧: '#8b2500',
+  家庭剧: '#c9a227',
+  爱情剧: '#d4537a',
+  侠义剧: '#1565c0',
+  公案剧: '#2e7d32',
+  神话剧: '#6a1b9a',
+  战争剧: '#bf360c',
+  其他: '#9e9e9e',
+  未知: '#bdbdbd',
+}
+
+export function genreColor(g: string): string {
+  return GENRE_COLORS[g] ?? '#888'
+}
+
+export const COARSE_COLORS: Record<string, string> = {
+  生: '#8b4513',
+  旦: '#d4537a',
+  净: '#1565c0',
+  丑: '#ff8f00',
+  未知: '#9e9e9e',
+  其他: '#757575',
+}
+
+export function coarseColor(c: string): string {
+  return COARSE_COLORS[c] ?? '#888'
 }

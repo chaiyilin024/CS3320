@@ -14,6 +14,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from backend.analytics.config import AnalyticsConfig
+from backend.analytics.integrated.aggregate import run_global_aggregation
 from backend.analytics.narrative.rhythm import analyze_play_narrative
 from backend.analytics.network.build_graph import analyze_play_network
 from backend.analytics.role.infer import analyze_play_role
@@ -29,6 +30,13 @@ SCHEMA_MAP = {
     "network.json": "network.schema.json",
     "themes.json": "theme.schema.json",
     "narrative.json": "narrative.schema.json",
+}
+
+GLOBAL_SCHEMA_MAP = {
+    "role_analysis.json": "role_analysis.schema.json",
+    "network_compare.json": "network_compare.schema.json",
+    "theme_patterns.json": "theme_patterns.schema.json",
+    "narrative_templates.json": "narrative_templates.schema.json",
 }
 
 
@@ -75,6 +83,28 @@ def run_play_analytics(
     return outputs
 
 
+def run_global_exports(cfg: AnalyticsConfig, validate: bool) -> int:
+    outputs = run_global_aggregation(cfg)
+    global_dir = cfg.analytics_dir / "global"
+    for name, doc in outputs.items():
+        save_json(global_dir / name, doc)
+        n = len(doc.get("play_topic_matrix") or doc.get("plays") or doc.get("templates") or [])
+        extra = ""
+        if name == "role_analysis.json":
+            extra = f", 特征格 {len(doc.get('global_feature_hangdang_matrix', []))}"
+        elif name == "theme_patterns.json":
+            extra = f", 剧本 {len(doc.get('play_topic_matrix', []))}"
+        elif name == "network_compare.json":
+            extra = f", 剧本 {len(doc.get('plays', []))}"
+        print(f"  global/{name}{extra or (', 条目 ' + str(n) if n else '')}")
+        if validate:
+            errs = validate_analytics(doc, GLOBAL_SCHEMA_MAP[name], cfg.root)
+            if errs:
+                print(f"  WARN global/{name}: {errs[0]}", file=sys.stderr)
+    print(f"全局聚合完成 → {global_dir}")
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="京剧剧本单剧分析流水线")
     parser.add_argument("--script-id", action="append", dest="script_ids")
@@ -85,6 +115,11 @@ def main() -> int:
         "--theme-llm",
         action="store_true",
         help="使用大模型 API 生成主题（需 OPENAI_API_KEY）",
+    )
+    parser.add_argument(
+        "--global-only",
+        action="store_true",
+        help="仅从已有 plays 分析产物聚合 global/*.json",
     )
     args = parser.parse_args()
 
@@ -97,6 +132,10 @@ def main() -> int:
     elif args.theme_llm:
         print("WARN: --theme-llm 已指定但未设置 OPENAI_API_KEY", file=sys.stderr)
     validate = not args.no_validate
+
+    if args.global_only:
+        print("聚合全局分析…")
+        return run_global_exports(cfg, validate)
 
     try:
         cache = configure_jieba(cfg.root)
@@ -139,6 +178,8 @@ def main() -> int:
         run_play_analytics(play, cfg, theme_model, validate)
 
     print(f"完成：{len(plays)} 剧 → {cfg.analytics_dir}/plays")
+    print("聚合全局分析…")
+    run_global_exports(cfg, validate)
     return 0
 
 

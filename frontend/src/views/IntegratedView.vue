@@ -4,205 +4,291 @@ import ChartCard from '@/components/ChartCard.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
-import type { PlayIntegrated, PlayNetwork, PlayNarrative } from '@/types'
-
+import {
+  buildCharacterCentralityBar,
+  buildCharacterTopicHeatmap,
+  buildCharacterTopicSankey,
+  buildCorrelationTypePie,
+  buildHangdangPeakBar,
+  buildKpis,
+  buildNetworkStageDeltaBar,
+  buildRhythmTensionOverlay,
+  buildStageNetworkEvolution,
+  buildThemeStageHeatmap,
+  buildTopCorrelationsBar,
+  buildTopicWeightMini,
+} from '@/utils/integratedCharts'
+import { buildForceGraph } from '@/utils/networkCharts'
+import type { EChartsOption } from 'echarts'
+import type { PlayIntegrated, PlayNarrative, PlayNetwork, PlayThemes } from '@/types'
 
 const store = useFilterStore()
-
-
-const data = ref<PlayIntegrated | null>(null)
+const integrated = ref<PlayIntegrated | null>(null)
 const network = ref<PlayNetwork | null>(null)
 const narrative = ref<PlayNarrative | null>(null)
+const themes = ref<PlayThemes | null>(null)
+const loading = ref(true)
 
+const corrPieEl = ref<HTMLElement | null>(null)
+const corrBarEl = ref<HTMLElement | null>(null)
+const charTopicHeatEl = ref<HTMLElement | null>(null)
+const charTopicSankeyEl = ref<HTMLElement | null>(null)
+const stageNetEl = ref<HTMLElement | null>(null)
+const stageDeltaEl = ref<HTMLElement | null>(null)
+const themeStageEl = ref<HTMLElement | null>(null)
+const hangdangPeakEl = ref<HTMLElement | null>(null)
+const rhythmOverlayEl = ref<HTMLElement | null>(null)
+const centralityEl = ref<HTMLElement | null>(null)
+const graphEl = ref<HTMLElement | null>(null)
+const topicBarEl = ref<HTMLElement | null>(null)
 
-const rolePieEl = ref<HTMLElement | null>(null)
-const networkEl = ref<HTMLElement | null>(null)
-const narrativeEl = ref<HTMLElement | null>(null)
+const selectedIds = computed(() => store.selectedCharacterIds)
+const kpis = computed(() => buildKpis(integrated.value, network.value, narrative.value))
 
-/**
- * 核心按需加载管线：完全复用组员封装的 api 客户端
- * 每次切换剧本时，只拉取当前剧本对应的 3 个精简轻量 JSON 分片
- */
-async function loadDashboardData() {
-  if (!store.scriptId) return
-  const id = store.scriptId
-  
-  // 并发请求后端正式产物，用完即释放，绝不盲读几千个
-  const [resData, resNetwork, resNarrative] = await Promise.all([
-    api.playIntegrated(id),
-    api.playNetwork(id),
-    api.playNarrative(id)
-  ])
-  
-  data.value = resData
-  network.value = resNetwork
-  narrative.value = resNarrative
+const corrPieOpt = computed(() => buildCorrelationTypePie(integrated.value))
+const corrBarOpt = computed(() => buildTopCorrelationsBar(integrated.value))
+const charTopicHeatOpt = computed(() =>
+  buildCharacterTopicHeatmap(integrated.value?.character_topic_matrix),
+)
+const charTopicSankeyOpt = computed(() =>
+  buildCharacterTopicSankey(integrated.value?.character_topic_matrix),
+)
+const stageNetOpt = computed(() =>
+  buildStageNetworkEvolution(integrated.value?.stage_network_snapshots),
+)
+const stageDeltaOpt = computed(() => buildNetworkStageDeltaBar(integrated.value))
+const themeStageOpt = computed(() => buildThemeStageHeatmap(integrated.value))
+const hangdangPeakOpt = computed(() => buildHangdangPeakBar(integrated.value))
+const rhythmOverlayOpt = computed(() =>
+  buildRhythmTensionOverlay(narrative.value, integrated.value?.stage_network_snapshots),
+)
+const centralityOpt = computed(() =>
+  buildCharacterCentralityBar(integrated.value, network.value),
+)
+const graphOpt = computed(() =>
+  network.value ? buildForceGraph(network.value, selectedIds.value) : ({} as EChartsOption),
+)
+const topicBarOpt = computed(() => buildTopicWeightMini(themes.value?.topics ?? []))
+
+function onGraphClick(params: unknown) {
+  const p = params as { dataType?: string; data?: { id?: string } }
+  if (p.dataType === 'node' && p.data?.id) store.toggleCharacter(p.data.id)
 }
 
-onMounted(loadDashboardData)
-watch(() => store.scriptId, loadDashboardData)
+const corrPieChart = useChart(corrPieEl, () => corrPieOpt.value as EChartsOption, [corrPieOpt])
+const corrBarChart = useChart(corrBarEl, () => corrBarOpt.value as EChartsOption, [corrBarOpt])
+const charTopicHeatChart = useChart(charTopicHeatEl, () => charTopicHeatOpt.value as EChartsOption, [charTopicHeatOpt])
+const charTopicSankeyChart = useChart(charTopicSankeyEl, () => charTopicSankeyOpt.value as EChartsOption, [charTopicSankeyOpt])
+const stageNetChart = useChart(stageNetEl, () => stageNetOpt.value as EChartsOption, [stageNetOpt])
+const stageDeltaChart = useChart(stageDeltaEl, () => stageDeltaOpt.value as EChartsOption, [stageDeltaOpt])
+const themeStageChart = useChart(themeStageEl, () => themeStageOpt.value as EChartsOption, [themeStageOpt])
+const hangdangPeakChart = useChart(hangdangPeakEl, () => hangdangPeakOpt.value as EChartsOption, [hangdangPeakOpt])
+const rhythmOverlayChart = useChart(rhythmOverlayEl, () => rhythmOverlayOpt.value as EChartsOption, [rhythmOverlayOpt])
+const centralityChart = useChart(centralityEl, () => centralityOpt.value as EChartsOption, [centralityOpt])
+const graphChart = useChart(
+  graphEl,
+  () => graphOpt.value as EChartsOption,
+  [graphOpt, selectedIds],
+  { click: onGraphClick },
+)
+const topicBarChart = useChart(topicBarEl, () => topicBarOpt.value as EChartsOption, [topicBarOpt])
 
-/**
- * 任务一：行当结构特征推断比例 (ECharts 极简数据流驱动)
- */
-const rolePieOpt = computed(() => {
-  const nodes = network.value?.nodes ?? []
-  
-  // 运行时动态统计当前剧本的行当分布
-  const counts = nodes.reduce((acc: Record<string, number>, node: any) => {
-    const hd = node.hangdang || '未推断'
-    acc[hd] = (acc[hd] || 0) + 1
-    return acc;
-  }, {})
+function refreshCharts() {
+  corrPieChart.render()
+  corrBarChart.render()
+  charTopicHeatChart.render()
+  charTopicSankeyChart.render()
+  stageNetChart.render()
+  stageDeltaChart.render()
+  themeStageChart.render()
+  hangdangPeakChart.render()
+  rhythmOverlayChart.render()
+  centralityChart.render()
+  graphChart.render()
+  topicBarChart.render()
+}
 
-  const pieData = Object.keys(counts).map(key => ({
-    name: key,
-    value: counts[key]
-  }))
-
-  return {
-    tooltip: { trigger: 'item', formatter: '{b}: {c}人 ({d}%)' },
-    legend: { orient: 'vertical', left: 'left', textStyle: { color: '#ccc' } },
-    series: [{
-      type: 'pie',
-      radius: ['40%', '70%'],
-      avoidLabelOverlap: false,
-      itemStyle: { borderRadius: 6 },
-      label: { show: true, color: '#fff' },
-      data: pieData
-    }]
+async function load() {
+  if (!store.scriptId) return
+  loading.value = true
+  try {
+    const id = store.scriptId
+    const [resIntegrated, resNetwork, resNarrative, resThemes] = await Promise.all([
+      api.playIntegrated(id),
+      api.playNetwork(id),
+      api.playNarrative(id),
+      api.playThemes(id),
+    ])
+    integrated.value = resIntegrated
+    network.value = resNetwork
+    narrative.value = resNarrative
+    themes.value = resThemes
+  } finally {
+    loading.value = false
+    refreshCharts()
   }
-})
+}
 
-/**
- * 任务二：人物互动网络演化 (完全契合组员现有的关系网高亮逻辑)
- */
-const networkOpt = computed(() => {
-  const n = network.value
-  if (!n) return {}
-  
-  return {
-    tooltip: {},
-    series: [{
-      type: 'graph',
-      layout: 'force',
-      roam: true,
-      label: { show: true, position: 'bottom', color: '#fff' },
-      symbolSize: (value: number, params: any) => {
-        // 根据台词密度或权重动态缩放节点大小
-        return Math.log(params.data.line_count || 10) * 5 + 10
-      },
-      data: n.nodes.map((node) => ({
-        id: node.id,
-        name: node.name,
-        line_count: node.line_count,
-        // 如果当前节点被选中，高亮显示为亮金色，否则保持古典棕
-        itemStyle: { 
-          color: store.selectedCharacterIds.includes(node.id) ? 'var(--accent-gold, #dfb96c)' : '#8b4513' 
-        },
-      })),
-      links: n.links.map((l) => ({
-        source: l.source,
-        target: l.target,
-        lineStyle: { width: Math.min(l.weight || 1, 5), opacity: 0.6 }
-      })),
-      force: { repulsion: 200, edgeLength: 100 },
-    }],
-  }
-})
-
-/**
- * 任务四：剧情演化与情感冲突浓度时序流
- */
-const narrativeOpt = computed(() => {
-  const snaps = data.value?.stage_network_snapshots ?? []
-  return {
-    tooltip: { trigger: 'axis' },
-    xAxis: { type: 'category', data: snaps.map((s) => s.stage), axisLabel: { color: '#ccc' } },
-    yAxis: { type: 'value', axisLabel: { color: '#ccc' } },
-    series: [{ 
-      name: '情感波动强度',
-      type: 'line', 
-      smooth: true,
-      data: snaps.map((s) => s.edge_density * 100), // 借用网络密度衍生情感浓度
-      lineStyle: { width: 3, color: '#dfb96c' },
-      areaStyle: { opacity: 0.1 }
-    }],
-  }
-})
-
-// 4. 直接使用组员编写的专属图表注册钩子，自动实现图表自适应和内存释放
-useChart(rolePieEl, () => rolePieOpt.value, [rolePieOpt])
-useChart(networkEl, () => networkOpt.value, [networkOpt, () => store.selectedCharacterIds])
-useChart(narrativeEl, () => narrativeOpt.value, [narrativeOpt])
+onMounted(load)
+watch(() => store.scriptId, load)
 </script>
 
 <template>
   <div class="page">
-    <!-- 头部横幅联动状态反馈 -->
-    <header class="dashboard-banner">
-      <h2 class="page-title">任务五 · 前端多维联调看板</h2>
-      <div class="badge-group">
-        <span class="badge">当前剧本ID: {{ store.scriptId || '未选择' }}</span>
-        <span v-if="store.selectedCharacterIds.length" class="badge active">
-          焦点角色ID: {{ store.selectedCharacterIds.join(', ') }}
-        </span>
-      </div>
+    <header class="page-head">
+      <h2 class="page-title">综合探索</h2>
+      <p class="page-desc">
+        {{ integrated?.title ?? '' }} · 跨行当、关系网、主题与叙事的关联洞察
+      </p>
     </header>
 
-    <div v-if="!data" class="loading">正在按需加载当前剧本工件...</div>
-    
-    <template v-else>
-      <!-- 上部双维并列看板 -->
-      <div class="grid-2">
-        <ChartCard title="任务一 · 行当自动推断结构分布">
-          <div ref="rolePieEl" class="chart" />
-        </ChartCard>
-        
-        <ChartCard title="任务二 · 人物互动关系网络 (动态高亮)">
-          <div ref="networkEl" class="chart" />
-        </ChartCard>
-      </div>
+    <div v-if="loading" class="loading">加载中…</div>
 
-      <!-- 下部时序故事演化大图 -->
-      <ChartCard title="任务四 · 剧情块结构演化与情感特征时序走势">
-        <div ref="narrativeEl" class="long-chart" />
-      </ChartCard>
+    <template v-else-if="integrated">
+      <section class="kpi-row">
+        <div v-for="k in kpis" :key="k.label" class="kpi-card">
+          <span class="kpi-value">{{ k.value }}</span>
+          <span class="kpi-label">{{ k.label }}</span>
+          <span v-if="k.hint" class="kpi-hint">{{ k.hint }}</span>
+        </div>
+      </section>
+
+      <section v-if="integrated.summary_insights?.length" class="insights">
+        <h3 class="section-title">自动洞察摘要</h3>
+        <ul>
+          <li v-for="(line, i) in integrated.summary_insights" :key="i">{{ line }}</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h3 class="section-title">关联规则总览</h3>
+        <div class="grid-2">
+          <ChartCard title="关联类型构成" subtitle="人物-主题 / 网络-阶段 / 行当-叙事等">
+            <div ref="corrPieEl" class="chart chart-md" />
+          </ChartCard>
+          <ChartCard title="Top 关联强度" subtitle="按 strength 排序，悬停查看依据">
+            <div ref="corrBarEl" class="chart chart-md" />
+          </ChartCard>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3 class="section-title">人物 ↔ 主题</h3>
+        <div class="grid-2">
+          <ChartCard title="人物×主题热力图" subtitle="台词与 LDA 主题的关联强度">
+            <div ref="charTopicHeatEl" class="chart chart-md" />
+          </ChartCard>
+          <ChartCard title="人物→主题桑基图" subtitle="主要人物与主导主题的流向">
+            <div ref="charTopicSankeyEl" class="chart chart-md" />
+          </ChartCard>
+        </div>
+        <div class="grid-2 section-gap">
+          <ChartCard title="主题权重" subtitle="本剧各主题占比">
+            <div ref="topicBarEl" class="chart chart-sm" />
+          </ChartCard>
+          <ChartCard title="主题×叙事阶段" subtitle="哪段情节对应哪类主题">
+            <div ref="themeStageEl" class="chart chart-sm" />
+          </ChartCard>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3 class="section-title">网络 ↔ 叙事阶段</h3>
+        <ChartCard title="阶段网络演化" subtitle="各情节阶段的同场密度、人物数与边数">
+          <div ref="stageNetEl" class="chart chart-tall" />
+        </ChartCard>
+        <div class="grid-2 section-gap">
+          <ChartCard title="阶段密度变化" subtitle="相对前一阶段的网络密度增减">
+            <div ref="stageDeltaEl" class="chart chart-md" />
+          </ChartCard>
+          <ChartCard title="张力 × 网络密度叠图" subtitle="叙事张力曲线 + 阶段网络密度（虚线）">
+            <div ref="rhythmOverlayEl" class="chart chart-md" />
+          </ChartCard>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3 class="section-title">人物网络与行当</h3>
+        <div class="grid-2">
+          <ChartCard
+            title="人物关系网络"
+            :subtitle="selectedIds.length ? `已选：${selectedIds.join('、')}（点击节点切换）` : '点击节点可联动其他页面'"
+          >
+            <div ref="graphEl" class="chart chart-tall" />
+          </ChartCard>
+          <div class="side-col">
+            <ChartCard title="核心人物中心性" subtitle="加权度 Top 人物">
+              <div ref="centralityEl" class="chart chart-md" />
+            </ChartCard>
+            <ChartCard title="行当情感峰值" subtitle="各行当在叙事中的情感高峰块位置">
+              <div ref="hangdangPeakEl" class="chart chart-sm" />
+            </ChartCard>
+          </div>
+        </div>
+      </section>
     </template>
   </div>
 </template>
 
 <style scoped>
-.dashboard-banner {
+.page { display: flex; flex-direction: column; gap: 1.25rem; }
+.page-head { margin-bottom: 0.25rem; }
+.page-title { margin: 0; font-family: var(--font-serif); font-size: 1.5rem; }
+.page-desc { margin: 0.35rem 0 0; font-size: 0.88rem; color: var(--text-muted); }
+.loading { color: var(--text-muted); padding: 2rem; text-align: center; }
+
+.section-title {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+}
+
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+.kpi-card {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.75rem 0.85rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-red, #8b2500);
 }
-.page-title { margin: 0; font-family: var(--font-serif); }
-.badge-group { display: flex; gap: 0.5rem; }
-.badge {
-  padding: 0.25rem 0.75rem;
-  background: var(--surface, #2c2c2c);
-  border: 1px solid var(--border, #333);
-  border-radius: 4px;
-  font-size: 0.85rem;
-  color: var(--text-muted, #aaa);
+.kpi-value { font-size: 1.35rem; font-weight: 700; font-family: var(--font-serif); }
+.kpi-label { font-size: 0.82rem; font-weight: 600; }
+.kpi-hint { font-size: 0.72rem; color: var(--text-muted); }
+
+.insights {
+  padding: 0.85rem 1rem;
+  background: #fff8ee;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
-.badge.active {
-  background: #dfb96c;
-  color: #111;
-  border-color: #dfb96c;
-  font-weight: bold;
-}
+.insights ul { margin: 0; padding-left: 1.2rem; }
+.insights li { font-size: 0.88rem; line-height: 1.55; color: var(--text); margin-bottom: 0.25rem; }
+
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-bottom: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
 }
-@media (max-width: 850px) { .grid-2 { grid-template-columns: 1fr; } }
-.chart { height: 300px; }
-.long-chart { height: 350px; }
-.loading { color: var(--text-muted); padding: 2rem 0; text-align: center; }
+.side-col { display: flex; flex-direction: column; gap: 0.85rem; }
+.section-gap { margin-top: 0.85rem; }
+
+.chart { width: 100%; display: block; }
+.chart-tall { height: 360px; }
+.chart-md { height: 300px; }
+.chart-sm { height: 240px; }
+
+@media (max-width: 1100px) {
+  .kpi-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 </style>

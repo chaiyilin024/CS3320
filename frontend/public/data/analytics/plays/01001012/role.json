@@ -2,14 +2,13 @@
   "script_id": "01001012",
   "hangdang_distribution": {
     "老生": 3,
-    "小生": 2,
-    "净": 1,
-    "未知": 2
+    "小生": 3,
+    "武生": 1,
+    "净": 1
   },
   "hangdang_coarse_distribution": {
-    "生": 5,
-    "净": 1,
-    "未知": 2
+    "生": 7,
+    "净": 1
   },
   "characters": [
     {
@@ -20,9 +19,24 @@
       "hangdang_final": "老生",
       "confidence": 0.95,
       "top_features": [
-        "performance_cues=念,唱",
-        "line_count=78"
-      ]
+        "line_count_bucket=high",
+        "gender=男",
+        "identity=君主",
+        "personality=诙谐",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "君主",
+        "personality": [
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
     },
     {
       "character_id": "c_周瑜",
@@ -32,9 +46,26 @@
       "hangdang_final": "小生",
       "confidence": 0.95,
       "top_features": [
-        "performance_cues=念,唱",
-        "line_count=65"
-      ]
+        "line_count_bucket=high",
+        "gender=男",
+        "identity=将领",
+        "personality=诙谐",
+        "personality=稳重",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "将领",
+        "personality": [
+          "诙谐",
+          "稳重"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
     },
     {
       "character_id": "c_赵云",
@@ -44,9 +75,28 @@
       "hangdang_final": "小生",
       "confidence": 0.95,
       "top_features": [
-        "performance_cues=念,唱",
-        "line_count=64"
-      ]
+        "line_count_bucket=high",
+        "gender=男",
+        "identity=将领",
+        "personality=勇猛",
+        "personality=忠义",
+        "personality=诙谐",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "将领",
+        "personality": [
+          "勇猛",
+          "忠义",
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
     },
     {
       "character_id": "c_诸葛亮",
@@ -56,9 +106,26 @@
       "hangdang_final": "老生",
       "confidence": 0.95,
       "top_features": [
-        "performance_cues=念,唱",
-        "line_count=45"
-      ]
+        "line_count_bucket=mid",
+        "gender=男",
+        "identity=谋士",
+        "personality=诙谐",
+        "personality=稳重",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "谋士",
+        "personality": [
+          "诙谐",
+          "稳重"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
     },
     {
       "character_id": "c_张飞",
@@ -68,9 +135,20 @@
       "hangdang_final": "净",
       "confidence": 0.95,
       "top_features": [
-        "performance_cues=念,唱",
-        "line_count=30"
-      ]
+        "line_count_bucket=mid",
+        "gender=男",
+        "identity=谋士",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "谋士",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
     },
     {
       "character_id": "c_鲁肃",
@@ -80,100 +158,218 @@
       "hangdang_final": "老生",
       "confidence": 0.95,
       "top_features": [
-        "performance_cues=念",
-        "line_count=21"
-      ]
+        "line_count_bucket=mid",
+        "gender=男",
+        "identity=将领",
+        "personality=诙谐",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "将领",
+        "personality": [
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念"
+        ]
+      }
     },
     {
       "character_id": "c_甘宁",
       "name": "甘宁",
       "hangdang_labeled": null,
-      "hangdang_inferred": "未知",
-      "hangdang_final": "未知",
-      "confidence": 0.3,
+      "hangdang_inferred": "武生",
+      "hangdang_final": "武生",
+      "confidence": 0.6,
       "top_features": [
-        "performance_cues=念",
-        "line_count=7"
-      ]
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=将领",
+        "cue=念",
+        "matched_identity=将领"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "将领",
+        "performance_cues": [
+          "念"
+        ]
+      }
     },
     {
       "character_id": "c_刘封",
       "name": "刘封",
       "hangdang_labeled": null,
-      "hangdang_inferred": "未知",
-      "hangdang_final": "未知",
-      "confidence": 0.3,
+      "hangdang_inferred": "小生",
+      "hangdang_final": "小生",
+      "confidence": 0.7,
       "top_features": [
-        "performance_cues=念",
-        "line_count=4"
-      ]
+        "line_count_bucket=low",
+        "identity=公子",
+        "cue=念",
+        "matched_identity=公子"
+      ],
+      "traits_derived": {
+        "identity": "公子",
+        "performance_cues": [
+          "念"
+        ]
+      }
     }
   ],
   "trait_summary": [
     {
-      "trait": "performance_cues=念,唱",
+      "trait": "gender=男",
+      "hangdang": "老生",
+      "count": 3
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "老生",
+      "count": 3
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "老生",
+      "count": 3
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "小生",
+      "count": 3
+    },
+    {
+      "trait": "cue=唱",
       "hangdang": "老生",
       "count": 2
     },
     {
-      "trait": "performance_cues=念,唱",
+      "trait": "line_count_bucket=high",
       "hangdang": "小生",
       "count": 2
     },
     {
-      "trait": "performance_cues=念",
-      "hangdang": "未知",
+      "trait": "gender=男",
+      "hangdang": "小生",
       "count": 2
     },
     {
-      "trait": "line_count=78",
+      "trait": "identity=将领",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=high",
       "hangdang": "老生",
       "count": 1
     },
     {
-      "trait": "line_count=65",
-      "hangdang": "小生",
-      "count": 1
-    },
-    {
-      "trait": "line_count=64",
-      "hangdang": "小生",
-      "count": 1
-    },
-    {
-      "trait": "line_count=45",
+      "trait": "identity=君主",
       "hangdang": "老生",
       "count": 1
     },
     {
-      "trait": "performance_cues=念,唱",
+      "trait": "personality=稳重",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "personality=勇猛",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "personality=忠义",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "identity=谋士",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "personality=稳重",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
       "hangdang": "净",
       "count": 1
     },
     {
-      "trait": "line_count=30",
+      "trait": "gender=男",
       "hangdang": "净",
       "count": 1
     },
     {
-      "trait": "performance_cues=念",
+      "trait": "identity=谋士",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "identity=将领",
       "hangdang": "老生",
       "count": 1
     },
     {
-      "trait": "line_count=21",
-      "hangdang": "老生",
+      "trait": "line_count_bucket=low",
+      "hangdang": "武生",
       "count": 1
     },
     {
-      "trait": "line_count=7",
-      "hangdang": "未知",
+      "trait": "gender=男",
+      "hangdang": "武生",
       "count": 1
     },
     {
-      "trait": "line_count=4",
-      "hangdang": "未知",
+      "trait": "identity=将领",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "matched_identity=将领",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "小生",
       "count": 1
     }
-  ]
+  ],
+  "labeled_count": 6,
+  "inferred_count": 2
 }

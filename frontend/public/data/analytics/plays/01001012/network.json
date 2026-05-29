@@ -9,8 +9,12 @@
       "hangdang": "老生",
       "hangdang_coarse": "生",
       "is_main": true,
-      "degree": 176,
-      "betweenness": 0.4603,
+      "degree": 7,
+      "weighted_degree": 176.0,
+      "betweenness": 0.2302,
+      "weighted_betweenness": 0.7143,
+      "closeness": 1.0,
+      "eigenvector": 0.6,
       "community_id": 0
     },
     {
@@ -19,8 +23,12 @@
       "hangdang": "小生",
       "hangdang_coarse": "生",
       "is_main": true,
-      "degree": 149,
-      "betweenness": 0.0317,
+      "degree": 4,
+      "weighted_degree": 149.0,
+      "betweenness": 0.0159,
+      "weighted_betweenness": 0.5238,
+      "closeness": 0.7,
+      "eigenvector": 0.53,
       "community_id": 0
     },
     {
@@ -29,9 +37,13 @@
       "hangdang": "小生",
       "hangdang_coarse": "生",
       "is_main": true,
-      "degree": 112,
-      "betweenness": 0.4603,
-      "community_id": 0
+      "degree": 7,
+      "weighted_degree": 112.0,
+      "betweenness": 0.2302,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.4274,
+      "community_id": 1
     },
     {
       "id": "c_诸葛亮",
@@ -39,9 +51,13 @@
       "hangdang": "老生",
       "hangdang_coarse": "生",
       "is_main": true,
-      "degree": 92,
+      "degree": 4,
+      "weighted_degree": 92.0,
       "betweenness": 0.0,
-      "community_id": 0
+      "weighted_betweenness": 0.2857,
+      "closeness": 0.7,
+      "eigenvector": 0.3192,
+      "community_id": 1
     },
     {
       "id": "c_鲁肃",
@@ -49,18 +65,26 @@
       "hangdang": "老生",
       "hangdang_coarse": "生",
       "is_main": false,
-      "degree": 53,
+      "degree": 3,
+      "weighted_degree": 53.0,
       "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6364,
+      "eigenvector": 0.2331,
       "community_id": 0
     },
     {
       "id": "c_甘宁",
       "name": "甘宁",
-      "hangdang": "未知",
-      "hangdang_coarse": "未知",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
       "is_main": false,
-      "degree": 26,
+      "degree": 3,
+      "weighted_degree": 26.0,
       "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6364,
+      "eigenvector": 0.1153,
       "community_id": 0
     },
     {
@@ -69,32 +93,30 @@
       "hangdang": "净",
       "hangdang_coarse": "净",
       "is_main": true,
-      "degree": 24,
+      "degree": 4,
+      "weighted_degree": 24.0,
       "betweenness": 0.0,
-      "community_id": 0
+      "weighted_betweenness": 0.0,
+      "closeness": 0.7,
+      "eigenvector": 0.0653,
+      "community_id": 1
     },
     {
       "id": "c_刘封",
       "name": "刘封",
-      "hangdang": "未知",
-      "hangdang_coarse": "未知",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
       "is_main": false,
-      "degree": 12,
+      "degree": 4,
+      "weighted_degree": 12.0,
       "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.7,
+      "eigenvector": 0.0521,
       "community_id": 0
     }
   ],
   "links": [
-    {
-      "source": "c_刘备",
-      "target": "c_刘封",
-      "weight": 9.0,
-      "types": [
-        "对话",
-        "同场"
-      ],
-      "dialogue_count": 4
-    },
     {
       "source": "c_刘备",
       "target": "c_周瑜",
@@ -103,36 +125,8 @@
         "对话",
         "同场"
       ],
-      "dialogue_count": 34
-    },
-    {
-      "source": "c_刘备",
-      "target": "c_张飞",
-      "weight": 1.0,
-      "types": [
-        "同场"
-      ],
-      "dialogue_count": 0
-    },
-    {
-      "source": "c_刘备",
-      "target": "c_甘宁",
-      "weight": 4.0,
-      "types": [
-        "对话",
-        "同场"
-      ],
-      "dialogue_count": 1
-    },
-    {
-      "source": "c_刘备",
-      "target": "c_诸葛亮",
-      "weight": 39.0,
-      "types": [
-        "对话",
-        "同场"
-      ],
-      "dialogue_count": 19
+      "dialogue_count": 34,
+      "normalized_weight": 1.0
     },
     {
       "source": "c_刘备",
@@ -142,64 +136,19 @@
         "对话",
         "同场"
       ],
-      "dialogue_count": 20
+      "dialogue_count": 20,
+      "normalized_weight": 0.6056
     },
     {
       "source": "c_刘备",
-      "target": "c_鲁肃",
-      "weight": 9.0,
-      "types": [
-        "对话",
-        "同场"
-      ],
-      "dialogue_count": 4
-    },
-    {
-      "source": "c_刘封",
-      "target": "c_张飞",
-      "weight": 1.0,
-      "types": [
-        "同场"
-      ],
-      "dialogue_count": 0
-    },
-    {
-      "source": "c_刘封",
       "target": "c_诸葛亮",
-      "weight": 1.0,
-      "types": [
-        "同场"
-      ],
-      "dialogue_count": 0
-    },
-    {
-      "source": "c_刘封",
-      "target": "c_赵云",
-      "weight": 1.0,
-      "types": [
-        "同场"
-      ],
-      "dialogue_count": 0
-    },
-    {
-      "source": "c_周瑜",
-      "target": "c_甘宁",
-      "weight": 19.0,
+      "weight": 39.0,
       "types": [
         "对话",
         "同场"
       ],
-      "dialogue_count": 8
-    },
-    {
-      "source": "c_周瑜",
-      "target": "c_赵云",
-      "weight": 24.0,
-      "types": [
-        "对话",
-        "同场"
-      ],
-      "dialogue_count": 11
+      "dialogue_count": 19,
+      "normalized_weight": 0.5493
     },
     {
       "source": "c_周瑜",
@@ -209,36 +158,8 @@
         "对话",
         "同场"
       ],
-      "dialogue_count": 17
-    },
-    {
-      "source": "c_张飞",
-      "target": "c_诸葛亮",
-      "weight": 21.0,
-      "types": [
-        "对话",
-        "同场"
-      ],
-      "dialogue_count": 10
-    },
-    {
-      "source": "c_张飞",
-      "target": "c_赵云",
-      "weight": 1.0,
-      "types": [
-        "同场"
-      ],
-      "dialogue_count": 0
-    },
-    {
-      "source": "c_甘宁",
-      "target": "c_赵云",
-      "weight": 3.0,
-      "types": [
-        "对话",
-        "同场"
-      ],
-      "dialogue_count": 1
+      "dialogue_count": 17,
+      "normalized_weight": 0.493
     },
     {
       "source": "c_诸葛亮",
@@ -248,7 +169,63 @@
         "对话",
         "同场"
       ],
-      "dialogue_count": 15
+      "dialogue_count": 15,
+      "normalized_weight": 0.4366
+    },
+    {
+      "source": "c_周瑜",
+      "target": "c_赵云",
+      "weight": 24.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 11,
+      "normalized_weight": 0.338
+    },
+    {
+      "source": "c_张飞",
+      "target": "c_诸葛亮",
+      "weight": 21.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 10,
+      "normalized_weight": 0.2958
+    },
+    {
+      "source": "c_周瑜",
+      "target": "c_甘宁",
+      "weight": 19.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 8,
+      "normalized_weight": 0.2676
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_刘封",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.1268
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_鲁肃",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.1268
     },
     {
       "source": "c_赵云",
@@ -258,7 +235,80 @@
         "对话",
         "同场"
       ],
-      "dialogue_count": 4
+      "dialogue_count": 4,
+      "normalized_weight": 0.1268
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_甘宁",
+      "weight": 4.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0563
+    },
+    {
+      "source": "c_甘宁",
+      "target": "c_赵云",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0423
+    },
+    {
+      "source": "c_刘备",
+      "target": "c_张飞",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0141
+    },
+    {
+      "source": "c_刘封",
+      "target": "c_张飞",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0141
+    },
+    {
+      "source": "c_刘封",
+      "target": "c_诸葛亮",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0141
+    },
+    {
+      "source": "c_刘封",
+      "target": "c_赵云",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0141
+    },
+    {
+      "source": "c_张飞",
+      "target": "c_赵云",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0141
     }
   ],
   "metrics": {
@@ -266,7 +316,18 @@
     "edge_count": 18,
     "density": 0.6429,
     "avg_clustering": 0.8601,
-    "avg_degree": 80.5,
-    "component_count": 1
+    "avg_degree": 4.5,
+    "avg_weighted_degree": 80.5,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.1561,
+    "modularity": 0.0785,
+    "assortativity_hangdang": -0.125,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 8,
+      "density": 0.8,
+      "avg_clustering": 0.2761,
+      "modularity": 0.06
+    }
   }
 }
