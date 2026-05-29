@@ -30,8 +30,9 @@ def test_schema_is_valid_draft7(schema_path: Path):
 
 
 def test_play_schema_references_resolve():
-  """play.schema.json 应能解析子 schema 引用。"""
-  play_path = SCHEMAS / "cleaned" / "play.schema.json"
-  with play_path.open(encoding="utf-8") as f:
-      play = json.load(f)
-  Draft7Validator.check_schema(play)
+    """play.schema.json 应能解析子 schema 引用。"""
+    from backend.preprocessing.utils.schema_validate import load_validator
+
+    play_path = SCHEMAS / "cleaned" / "play.schema.json"
+    validator = load_validator(play_path, ROOT)
+    Draft7Validator.check_schema(validator.schema, resolver=validator.resolver)

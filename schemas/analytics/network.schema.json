@@ -50,17 +50,32 @@
         "degree": {
           "type": "integer",
           "minimum": 0,
-          "description": "加权度"
+          "description": "无权度（拓扑相邻数）"
+        },
+        "weighted_degree": {
+          "type": "number",
+          "minimum": 0,
+          "description": "加权度（边权之和）"
         },
         "betweenness": {
           "type": "number",
           "minimum": 0,
-          "description": "介数中心性"
+          "description": "无权介数中心性"
+        },
+        "weighted_betweenness": {
+          "type": "number",
+          "minimum": 0,
+          "description": "带权介数中心性（按 weight 当距离倒数）"
         },
         "closeness": {
           "type": "number",
           "minimum": 0,
           "description": "接近中心性（可选）"
+        },
+        "eigenvector": {
+          "type": "number",
+          "minimum": 0,
+          "description": "特征向量中心性（可选）"
         },
         "community_id": {
           "type": "integer",
@@ -87,7 +102,13 @@
           "minItems": 1,
           "uniqueItems": true
         },
-        "dialogue_count": { "type": "integer", "minimum": 0 }
+        "dialogue_count": { "type": "integer", "minimum": 0 },
+        "normalized_weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "weight / max(weight)，便于前端线粗细映射"
+        }
       }
     },
     "networkMetrics": {
@@ -105,11 +126,43 @@
         "avg_clustering": {
           "type": "number",
           "minimum": 0,
-          "maximum": 1
+          "maximum": 1,
+          "description": "无权聚类系数（Watts-Strogatz）"
         },
-        "avg_degree": { "type": "number", "minimum": 0 },
+        "avg_weighted_clustering": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "带权聚类系数（Holme-Saramäki）"
+        },
+        "avg_degree": {
+          "type": "number",
+          "minimum": 0,
+          "description": "无权拓扑平均度 = 2m/n"
+        },
+        "avg_weighted_degree": {
+          "type": "number",
+          "minimum": 0,
+          "description": "带权平均度 = 边权之和×2 / n"
+        },
         "modularity": { "type": "number" },
-        "component_count": { "type": "integer", "minimum": 1 }
+        "assortativity_hangdang": {
+          "type": "number",
+          "description": "按 hangdang_coarse 的属性同配性 (-1 到 1)"
+        },
+        "component_count": { "type": "integer", "minimum": 1 },
+        "main_subgraph": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "仅保留 is_main=true 的子图指标",
+          "properties": {
+            "node_count": { "type": "integer", "minimum": 0 },
+            "edge_count": { "type": "integer", "minimum": 0 },
+            "density": { "type": "number", "minimum": 0, "maximum": 1 },
+            "avg_clustering": { "type": "number", "minimum": 0, "maximum": 1 },
+            "modularity": { "type": "number" }
+          }
+        }
       }
     }
   }

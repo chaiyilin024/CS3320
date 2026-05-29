@@ -1,5 +1,19 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
 /data
-*.txt
+/artifacts/cleaned/
+/artifacts/analytics/
+/artifacts/cache/
+/artifacts/samples/
+frontend/node_modules/
+frontend/dist/
+frontend/public
 *.pdf
 *.docx
 *.doc
@@ -7,3 +21,5 @@
 *.xlsx
 *.ppt
 *.pptx
+*.cmd
+*.zip
