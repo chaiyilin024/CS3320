@@ -171,6 +171,8 @@ def segment_lines(
     in_aria: bool = False
     last_aria_speaker: str | None = None
     idx = 0
+    # 跟踪是否遇到"根据《戏考》"，用于下一行退出情节梗概模式
+    pending_plot_exit = False
 
     for line_no, line in enumerate(lines):
         page_no = _page_for_line(line_no, page_boundaries)
@@ -218,17 +220,25 @@ def segment_lines(
             continue
 
         if in_plot_summary:
-            blocks.append(
-                RawBlock(
-                    block_index=idx,
-                    type="plot_summary",
-                    text=line,
-                    page_no=page_no,
-                    scene_index=scene_index or None,
+            # 如果上一行是"根据《戏考》"，则退出情节梗概模式
+            if pending_plot_exit:
+                in_plot_summary = False
+                pending_plot_exit = False
+            else:
+                blocks.append(
+                    RawBlock(
+                        block_index=idx,
+                        type="plot_summary",
+                        text=line,
+                        page_no=page_no,
+                        scene_index=scene_index or None,
+                    )
                 )
-            )
-            idx += 1
-            continue
+                idx += 1
+                # 检查当前行是否包含"根据《戏考》"，标记下一行退出
+                if "根据《戏考》" in line:
+                    pending_plot_exit = True
+                continue
 
         if in_annotation:
             # 检查是否是对话行，如果是则退出注释模式并正常处理

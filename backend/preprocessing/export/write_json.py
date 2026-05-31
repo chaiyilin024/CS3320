@@ -41,6 +41,22 @@ class PlayWriter:
         self.failed: list[dict] = []
 
     def write_play(self, play: dict) -> Path:
+        # 处理 blocks: 将 type=unknown 且 speaker_id=null 的块拼接到上一块
+        blocks = play.get("blocks", [])
+        if blocks:
+            # 创建新的 blocks 列表，跳过需要合并的块
+            new_blocks = []
+            for block in blocks:
+                # 检查是否需要合并到上一块
+                if block.get("type") == "unknown" and block.get("speaker_id") is None:
+                    if new_blocks:
+                        # 将当前块的 text 拼接到上一块
+                        new_blocks[-1]["text"] = (new_blocks[-1].get("text", "") + block.get("text", "")).strip()
+                    # 否则直接丢弃（没有上一块可合并）
+                else:
+                    new_blocks.append(block)
+            play["blocks"] = new_blocks
+
         if self.validate:
             errors = validate_play(play, self.root)
             if errors:
