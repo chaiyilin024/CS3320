@@ -236,7 +236,7 @@ def segment_lines(
                 )
                 idx += 1
                 # 检查当前行是否包含"根据《戏考》"，标记下一行退出
-                if "根据《戏考》" in line:
+                if "根据" in line and "整理" in line:
                     pending_plot_exit = True
                 continue
 
