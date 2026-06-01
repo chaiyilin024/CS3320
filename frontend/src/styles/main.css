@@ -1,0 +1,34 @@
+:root {
+  --bg: #f7f3ed;
+  --surface: #fffcf7;
+  --border: #e8dfd3;
+  --text: #2c1810;
+  --text-muted: #6d5c52;
+  --accent-red: #8b2500;
+  --accent-gold: #c9a227;
+  --shadow: 0 2px 12px rgba(44, 24, 16, 0.06);
+  --font-serif: 'Noto Serif SC', 'Songti SC', serif;
+  --font-sans: 'Noto Sans SC', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--accent-red);
+}

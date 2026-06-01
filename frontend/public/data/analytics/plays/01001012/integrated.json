@@ -1,0 +1,231 @@
+{
+  "script_id": "01001012",
+  "title": "黄鹤楼",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_刘备",
+      "character_name": "刘备",
+      "topic_id": 7,
+      "topic_label": "战争谋略",
+      "evidence": "刘备 台词与主题「战争谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_周瑜",
+      "character_name": "周瑜",
+      "topic_id": 3,
+      "topic_label": "战争谋略",
+      "evidence": "周瑜 台词与主题「战争谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.933,
+      "character_id": "c_赵云",
+      "character_name": "赵云",
+      "topic_id": 2,
+      "topic_label": "忠义君臣",
+      "evidence": "赵云 台词与主题「忠义君臣」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.867,
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "topic_id": 2,
+      "topic_label": "忠义君臣",
+      "evidence": "诸葛亮 台词与主题「忠义君臣」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.733,
+      "character_id": "c_鲁肃",
+      "character_name": "鲁肃",
+      "topic_id": 1,
+      "topic_label": "战争谋略",
+      "evidence": "鲁肃 台词与主题「战争谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.667,
+      "character_id": "c_张飞",
+      "character_name": "张飞",
+      "topic_id": 0,
+      "topic_label": "先生",
+      "evidence": "张飞 台词与主题「先生」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.6,
+      "character_id": "c_刘封",
+      "character_name": "刘封",
+      "topic_id": 0,
+      "topic_label": "先生",
+      "evidence": "刘封 台词与主题「先生」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.467,
+      "character_id": "c_甘宁",
+      "character_name": "甘宁",
+      "topic_id": 4,
+      "topic_label": "忠义君臣",
+      "evidence": "甘宁 台词与主题「忠义君臣」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.8,
+      "stage": "冲突",
+      "edge_density_delta": -0.2667,
+      "evidence": "「冲突」阶段人物同场网络密度变化 -0.27"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.8,
+      "stage": "高潮",
+      "edge_density_delta": 0.2667,
+      "evidence": "「高潮」阶段人物同场网络密度变化 +0.27"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.24,
+      "topic_id": 4,
+      "topic_label": "忠义君臣",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「忠义君臣」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 23,
+      "evidence": "老生 行当在 block 23 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_刘备",
+      "character_name": "刘备",
+      "evidence": "刘备 为关系网络核心（度=176）"
+    }
+  ],
+  "summary_insights": [
+    "《黄鹤楼》共 8 位主要人物、18 条关系边，网络密度 0.64。",
+    "主题构成以「忠义君臣、战争谋略」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [251, 334]。",
+    "刘备 与主题「战争谋略」关联最强（1.0）。",
+    "行当以老生为主（3 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_刘备",
+      "character_name": "刘备",
+      "topic_id": 7,
+      "topic_label": "战争谋略",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_周瑜",
+      "character_name": "周瑜",
+      "topic_id": 3,
+      "topic_label": "战争谋略",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_赵云",
+      "character_name": "赵云",
+      "topic_id": 2,
+      "topic_label": "忠义君臣",
+      "strength": 0.933
+    },
+    {
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "topic_id": 2,
+      "topic_label": "忠义君臣",
+      "strength": 0.867
+    },
+    {
+      "character_id": "c_鲁肃",
+      "character_name": "鲁肃",
+      "topic_id": 1,
+      "topic_label": "战争谋略",
+      "strength": 0.733
+    },
+    {
+      "character_id": "c_张飞",
+      "character_name": "张飞",
+      "topic_id": 0,
+      "topic_label": "先生",
+      "strength": 0.667
+    },
+    {
+      "character_id": "c_刘封",
+      "character_name": "刘封",
+      "topic_id": 0,
+      "topic_label": "先生",
+      "strength": 0.6
+    },
+    {
+      "character_id": "c_甘宁",
+      "character_name": "甘宁",
+      "topic_id": 4,
+      "topic_label": "忠义君臣",
+      "strength": 0.467
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        83
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        84,
+        167
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        168,
+        250
+      ],
+      "edge_density": 0.7333,
+      "node_count": 6,
+      "edge_count": 11
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        251,
+        334
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        335,
+        418
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    }
+  ]
+}

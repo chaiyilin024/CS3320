@@ -26,6 +26,16 @@
       "type": "array",
       "items": { "$ref": "#/$defs/traitHangdangLink" },
       "description": "本剧特征-行当关联（样本较少时可为空）"
+    },
+    "labeled_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "已带 hangdang_labeled 的角色数"
+    },
+    "inferred_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "通过分析推断出行当（非「未知」）的角色数"
     }
   },
   "$defs": {
@@ -78,6 +88,10 @@
           "items": { "type": "string" },
           "description": "如 identity=将、personality=诙谐",
           "examples": [["identity=将", "performance_cues=唱"]]
+        },
+        "traits_derived": {
+          "$ref": "../common/definitions.schema.json#/$defs/traits",
+          "description": "由分析侧从台词/上下文抽取的扩展特征"
         }
       }
     },
