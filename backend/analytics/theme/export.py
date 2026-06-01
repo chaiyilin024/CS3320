@@ -1,9 +1,13 @@
 from __future__ import annotations
 
-from .model import ThemeModel
+from collections import defaultdict
+
+from .model import ThemeModel, is_metadata_topic
 
 # 权重低于此值的 topic 视为噪音
 NOISE_WEIGHT_THRESHOLD = 0.03
+MAX_KEYWORDS = 15
+MAX_REP_BLOCKS_PER_TOPIC = 2
 
 
 def build_play_themes(play: dict, model: ThemeModel) -> dict:
@@ -25,10 +29,24 @@ def build_play_themes(play: dict, model: ThemeModel) -> dict:
             item["keyword_weights"] = kw_weights
         raw_topics.append(item)
 
-    # 过滤噪音 topic，但保留至少 K=2 以满足 schema minItems
-    survivors = [t for t in raw_topics if composition[t["topic_id"]] >= NOISE_WEIGHT_THRESHOLD]
+    # 过滤低权重与文献噪声 topic，保留至少 2 个以满足 schema
+    survivors = [
+        t
+        for t in raw_topics
+        if composition[t["topic_id"]] >= NOISE_WEIGHT_THRESHOLD
+        and not is_metadata_topic(t.get("keywords") or [])
+        and "京剧" not in (t.get("label") or "")
+    ]
     if len(survivors) < 2:
-        survivors = sorted(raw_topics, key=lambda t: -composition[t["topic_id"]])[:2]
+        candidates = [
+            t
+            for t in raw_topics
+            if not is_metadata_topic(t.get("keywords") or [])
+            and "京剧" not in (t.get("label") or "")
+        ]
+        survivors = sorted(
+            candidates or raw_topics, key=lambda t: -composition[t["topic_id"]]
+        )[: max(2, len(candidates))]
     kept_ids = {t["topic_id"] for t in survivors}
 
     # 重归一化保留下来的 topic 权重，保证 topic_composition 和 ≈ 1
@@ -38,7 +56,18 @@ def build_play_themes(play: dict, model: ThemeModel) -> dict:
     for t, w in zip(survivors, comp):
         t["weight"] = w
 
-    reps = _representative_blocks(play, model, kept_ids)
+    # 同一 label 的 NMF 子主题合并为一条（权重相加、关键词按权重去重取 Top）
+    merged_topics, old_to_new = _merge_topics_by_label(survivors)
+    comp = [t["weight"] for t in merged_topics]
+    # 修正四舍五入误差，保证 composition 之和为 1
+    drift = 1.0 - sum(comp)
+    if merged_topics and abs(drift) > 1e-6:
+        merged_topics[0]["weight"] = round(merged_topics[0]["weight"] + drift, 4)
+        comp[0] = merged_topics[0]["weight"]
+
+    reps = _representative_blocks(
+        play, model, kept_ids, old_to_new=old_to_new
+    )
     return {
         "script_id": script_id,
         "title": title,
@@ -47,14 +76,62 @@ def build_play_themes(play: dict, model: ThemeModel) -> dict:
             "num_topics_global": model.num_topics,
             "trained_at": model.trained_at,
         },
-        "topics": survivors,
+        "topics": merged_topics,
         "topic_composition": comp,
         "representative_blocks": reps,
     }
 
 
+def _merge_topics_by_label(
+    topics: list[dict],
+) -> tuple[list[dict], dict[int, int]]:
+    """按 label 合并 topic；返回 (合并后列表, 原 topic_id → 新 topic_id)。"""
+    if not topics:
+        return [], {}
+
+    groups: dict[str, list[dict]] = defaultdict(list)
+    for t in topics:
+        groups[t["label"]].append(t)
+
+    merged: list[dict] = []
+    old_to_new: dict[int, int] = {}
+    for new_id, (_label, group) in enumerate(
+        sorted(groups.items(), key=lambda x: -sum(t["weight"] for t in x[1]))
+    ):
+        total_w = sum(t["weight"] for t in group)
+        kw_scores: dict[str, float] = {}
+        for t in group:
+            kws = t.get("keywords") or []
+            weights = t.get("keyword_weights") or [1.0] * len(kws)
+            for kw, w in zip(kws, weights):
+                kw_scores[kw] = max(kw_scores.get(kw, 0.0), float(w))
+
+        ranked = sorted(kw_scores.items(), key=lambda x: -x[1])[:MAX_KEYWORDS]
+        keywords = [k for k, _ in ranked]
+        if not keywords:
+            keywords = [group[0].get("label", "主题")]
+
+        item: dict = {
+            "topic_id": new_id,
+            "label": _label,
+            "weight": round(total_w, 4),
+            "keywords": keywords,
+            "keyword_weights": [round(s, 4) for _, s in ranked],
+        }
+        merged.append(item)
+        for t in group:
+            old_to_new[t["topic_id"]] = new_id
+
+    return merged, old_to_new
+
+
 def _representative_blocks(
-    play: dict, model: ThemeModel, kept_ids: set[int] | None = None, per_topic: int = 2
+    play: dict,
+    model: ThemeModel,
+    kept_ids: set[int] | None = None,
+    *,
+    old_to_new: dict[int, int] | None = None,
+    per_topic: int = MAX_REP_BLOCKS_PER_TOPIC,
 ) -> list[dict]:
     rows = model.transform_blocks(play)
     if not rows:
@@ -65,14 +142,15 @@ def _representative_blocks(
 
     by_topic: dict[int, list[tuple[float, str, int, str]]] = {}
     for block_id, block_index, text, vec in rows:
-        tid = max(range(len(vec)), key=lambda i: vec[i])
-        if kept_ids is not None and tid not in kept_ids:
+        raw_tid = max(range(len(vec)), key=lambda i: vec[i])
+        if kept_ids is not None and raw_tid not in kept_ids:
             continue
-        score = vec[tid]
+        score = vec[raw_tid]
+        tid = old_to_new.get(raw_tid, raw_tid) if old_to_new else raw_tid
         by_topic.setdefault(tid, []).append((score, block_id, block_index, text))
 
     reps = []
-    for tid, items in by_topic.items():
+    for tid, items in sorted(by_topic.items()):
         for score, block_id, block_index, text in sorted(items, reverse=True)[:per_topic]:
             block = block_by_id.get(block_id) or {}
             speaker_id = block.get("speaker_id")

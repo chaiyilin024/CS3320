@@ -1,31 +1,80 @@
 from __future__ import annotations
 
 import re
+from functools import lru_cache
+from pathlib import Path
 
 TEXT_BLOCK_TYPES = frozenset({"dialogue", "aria", "recitation"})
 
-# 戏曲常见虚词/拟声词/称呼语/低区分对白套话
-STOPWORDS = frozenset(
-    """
-    的 了 在 是 我 你 他 她 它 这 那 有 与 及 而 也 就 都 还 又 之 其 此 所 因 但
-    一个 一位 一场 一名 一人 二人 三人 同 下 上 内 外 中 来 去 到 把 被 让 给 对 从
-    哈哈哈 哈哈 呵呵 呀 啊 哇 唉 哎 嗯 么 呢 吧 吗 哩 哟 嘿 嗨 嘞 噢 嘛
-    参见 遵命 少礼 恕罪 休要 岂敢 为何 不知 何不 这般 那般 这里 那里 当面 进帐
-    兄长 大人 哪里 看来 既是 倘若 既然 多少 一根 一边 一齐 一面
-    便是 就是 还有 没有 不曾 怎么 如何 何故 怎敢 莫非 难道 已是 乃是
-    本督 本帅 本将 本王 本宫 末将 在下 大胆
-    先请 请进 请坐 起来 起身 落座 退下 启奏
-    """.split()
+_THIS_DIR = Path(__file__).resolve().parent
+STOPWORDS_FILE = _THIS_DIR / "stopwords.txt"
+
+# 词性白名单：保留实义词，过滤代词/虚词/语气词等
+POS_WHITELIST = frozenset({
+    "n", "nr", "ns", "nt", "nz",
+    "v", "vn",
+    "a", "an", "ad",
+    "i", "l",
+})
+
+# 页眉/丛书/分册等文献噪声（与 preprocessing noise.py 对齐）
+_METADATA_BLOCK_RE = re.compile(
+    r"中国京剧|戏考\s*[《《]|《[^》》]{1,16}》\s*\d{0,3}\s*$|"
+    r"^\d{1,3}\s*$|scripts\.xikao",
+    re.IGNORECASE,
+)
+_INLINE_HEADER_RE = re.compile(
+    r"中国京剧\s*戏考|戏考\s*[《《][^》》]+[》》]\s*\d+"
 )
 
-# 京剧常见称呼 — 单独用作角色身份线索时由 traits_extract 提取，作为词袋特征时太通用，纳入停用
-TITLE_STOPWORDS = frozenset(
-    "皇叔 主公 都督 丞相 军师 元帅 王爷 千岁 万岁 圣上 公子 小姐 夫人 娘娘 老爷 太子 王子".split()
-)
+
+@lru_cache(maxsize=1)
+def _load_stopwords() -> frozenset[str]:
+    """加载 stopwords.txt；忽略 ; / # 注释行与空行。"""
+    out: set[str] = set()
+    if STOPWORDS_FILE.is_file():
+        for line in STOPWORDS_FILE.read_text(encoding="utf-8").splitlines():
+            s = line.strip()
+            if not s or s[0] in (";", "#"):
+                continue
+            out.add(s)
+    return frozenset(out)
+
+
+@lru_cache(maxsize=1)
+def _metadata_stopwords() -> frozenset[str]:
+    """文献/页眉专用停用词（也写在 stopwords.txt 第 13 节，此处作兜底）。"""
+    base = _load_stopwords()
+    extra = {
+        "中国京剧", "戏考", "中国", "京剧", "全本", "头本", "前本", "后本",
+        "二本", "三本", "四本", "五本", "六本", "七本", "八本", "九本",
+        "碧缘", "天宝", "九阳", "花田错",
+    }
+    return frozenset(w for w in extra if w not in base) | base
+
+
+def is_metadata_block(text: str) -> bool:
+    """整段是否为页眉/丛书说明，应从主题语料中剔除。"""
+    s = (text or "").strip()
+    if len(s) < 2:
+        return True
+    if _METADATA_BLOCK_RE.search(s):
+        return True
+    if len(s) <= 40 and _INLINE_HEADER_RE.search(s):
+        return True
+    return False
+
+
+def strip_inline_metadata(text: str) -> str:
+    """去掉行内残留的「中国京剧戏考 《剧名》 N」片段。"""
+    s = (text or "").strip()
+    s = _INLINE_HEADER_RE.sub("", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
 
 
 def build_dynamic_stopwords(play: dict | None) -> frozenset[str]:
-    """从剧本动态构造停用词：角色名 + 别名 + 标题字。"""
+    """从剧本动态构造停用词：角色名 + 别名 + 剧名 + 丛书名。"""
     if not play:
         return frozenset()
     extra: set[str] = set()
@@ -33,7 +82,6 @@ def build_dynamic_stopwords(play: dict | None) -> frozenset[str]:
         name = (ch.get("name") or "").strip()
         if name:
             extra.add(name)
-            # 单字姓名（如「飞」「亮」）信息量低，加入；多字姓名整体加入
             for c in name:
                 if "\u4e00" <= c <= "\u9fff":
                     extra.add(c)
@@ -44,10 +92,13 @@ def build_dynamic_stopwords(play: dict | None) -> frozenset[str]:
     title = (play.get("title") or "").strip()
     if title:
         extra.add(title)
-    for c in title:
-        if "\u4e00" <= c <= "\u9fff":
-            extra.add(c)
-    return frozenset(w for w in extra if len(w) >= 1)
+        for c in title:
+            if "\u4e00" <= c <= "\u9fff":
+                extra.add(c)
+    coll = (play.get("collection_name") or "").strip()
+    if coll:
+        extra.add(coll)
+    return frozenset(w for w in extra if w)
 
 
 def iter_text_blocks(play: dict) -> list[dict]:
@@ -55,10 +106,10 @@ def iter_text_blocks(play: dict) -> list[dict]:
     for b in play.get("blocks") or []:
         if b.get("type") not in TEXT_BLOCK_TYPES:
             continue
-        text = (b.get("text") or "").strip()
-        if len(text) < 2:
+        text = strip_inline_metadata((b.get("text") or "").strip())
+        if len(text) < 2 or is_metadata_block(text):
             continue
-        out.append(b)
+        out.append({**b, "text": text})
     return out
 
 
@@ -67,38 +118,48 @@ def play_document(play: dict) -> str:
 
 
 def tokenize(text: str, extra_stopwords: frozenset[str] | None = None) -> list[str]:
+    """带词性过滤的分词。
+
+    dict.txt 仅用于 jieba 分词边界，不绕过停用词。
+    """
     extra = extra_stopwords or frozenset()
+    base_stop = _metadata_stopwords()
+    text = strip_inline_metadata(text)
+    if not text:
+        return []
     try:
         from ..utils.jieba_env import ensure_jieba
 
         ensure_jieba()
-        import jieba
+        import jieba.posseg as pseg
     except ImportError:
-        return _fallback_tokenize(text, extra)
-    words = []
-    for w in jieba.lcut(text):
-        w = w.strip()
+        return _fallback_tokenize(text, base_stop, extra)
+
+    words: list[str] = []
+    for tok in pseg.cut(text):
+        w = (tok.word or "").strip()
+        flag = (tok.flag or "").lower()
         if len(w) < 2:
             continue
-        if w in STOPWORDS or w in TITLE_STOPWORDS or w in extra:
+        if w in base_stop or w in extra:
             continue
         if re.match(r"^[\W\d_]+$", w):
             continue
-        words.append(w)
+        if flag in POS_WHITELIST:
+            words.append(w)
+            continue
+        if flag and flag[0] in {"n", "v", "a", "i", "l"}:
+            words.append(w)
     return words
 
 
-def _fallback_tokenize(text: str, extra: frozenset[str]) -> list[str]:
-    words = re.findall(r"[\u4e00-\u9fff]{2,4}", text)
+def _fallback_tokenize(
+    text: str, base_stop: frozenset[str], extra: frozenset[str]
+) -> list[str]:
+    words = re.findall(r"[\u4e00-\u9fff]{2,8}", text)
     if words:
-        return [
-            w for w in words
-            if w not in STOPWORDS and w not in TITLE_STOPWORDS and w not in extra
-        ]
+        return [w for w in words if w not in base_stop and w not in extra]
     return [
         c for c in text
-        if "\u4e00" <= c <= "\u9fff"
-        and c not in STOPWORDS
-        and c not in TITLE_STOPWORDS
-        and c not in extra
+        if "\u4e00" <= c <= "\u9fff" and c not in base_stop and c not in extra
     ]
