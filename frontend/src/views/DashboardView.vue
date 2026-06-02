@@ -7,6 +7,7 @@ import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
 import { aggregateCatalog, filterPlays } from '@/utils/dashboardStats'
 import { genreColor } from '@/utils/charts'
+import { asChartOption } from '@/utils/chartOption'
 import type { EChartsOption } from 'echarts'
 import type { CatalogPlay } from '@/types'
 
@@ -133,11 +134,12 @@ const scatterOpt = computed(() => {
     byGenre.set(p.genre, list)
   }
 
-  return {
+  return asChartOption({
     tooltip: {
       trigger: 'item',
-      formatter: (p: { data: (typeof stats.value.scatter)[0] }) => {
-        const d = p.data
+      formatter: (p: unknown) => {
+        const d = (p as { data?: (typeof stats.value.scatter)[0] }).data
+        if (!d) return ''
         return [
           `<b>${d.title}</b>（${d.script_id}）`,
           `体裁：${d.genre}`,
@@ -190,7 +192,7 @@ const scatterOpt = computed(() => {
           : undefined,
       })),
     })),
-  }
+  });
 })
 
 const blockOpt = computed(() => ({

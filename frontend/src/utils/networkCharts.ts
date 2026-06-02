@@ -1,6 +1,7 @@
 import type { EChartsOption } from 'echarts'
 import type { NetworkCompareGlobal, PlayNetwork } from '@/types'
 import { hangdangColor } from '@/utils/charts'
+import { asChartOption } from './chartOption'
 
 type NetNode = PlayNetwork['nodes'][number]
 type NetLink = PlayNetwork['links'][number]
@@ -34,15 +35,16 @@ export function buildForceGraph(
   selectedIds: string[],
 ): EChartsOption {
   const sel = new Set(selectedIds)
-  return {
+  return asChartOption({
     tooltip: {
-      formatter: (p: { dataType?: string; data?: NetNode & { value?: number }; name?: string }) => {
-        if (p.dataType === 'edge') {
-          const d = p.data as { value?: number }
+      formatter: (p: unknown) => {
+        const item = p as { dataType?: string; data?: NetNode & { value?: number }; name?: string }
+        if (item.dataType === 'edge') {
+          const d = item.data as { value?: number }
           return `关系强度 ${d?.value ?? ''}`
         }
-        const n = net.nodes.find((x) => x.name === p.name)
-        if (!n) return p.name ?? ''
+        const n = net.nodes.find((x) => x.name === item.name)
+        if (!n) return item.name ?? ''
         return [
           `<b>${n.name}</b>（${n.hangdang}）`,
           `度 ${n.degree} · 加权度 ${(n.weighted_degree ?? 0).toFixed(1)}`,
@@ -82,7 +84,7 @@ export function buildForceGraph(
       force: { repulsion: 280, gravity: 0.08, edgeLength: [60, 140], friction: 0.6 },
       emphasis: { focus: 'adjacency', lineStyle: { width: 6 } },
     }],
-  }
+  })
 }
 
 export function buildCircularCommunityGraph(
@@ -318,11 +320,12 @@ export function buildAdjacencyHeatmap(net: PlayNetwork): EChartsOption {
     }
   }
   const max = Math.max(...data.map((d) => d[2]), 1)
-  return {
+  return asChartOption({
     tooltip: {
       position: 'top',
-      formatter: (p: { data: [number, number, number] }) => {
-        const [xi, yi, v] = p.data
+      formatter: (p: unknown) => {
+        const row = p as { data?: [number, number, number] }
+        const [xi, yi, v] = row.data ?? [0, 0, 0]
         return `${names[yi]} ↔ ${names[xi]}<br/>强度 ${v}`
       },
     },
@@ -344,7 +347,7 @@ export function buildAdjacencyHeatmap(net: PlayNetwork): EChartsOption {
       label: { show: max < 50, fontSize: 8 },
       emphasis: { itemStyle: { shadowBlur: 6 } },
     }],
-  }
+  })
 }
 
 export function buildCentralityScatter(nodes: NetNode[]): EChartsOption {
@@ -354,10 +357,11 @@ export function buildCentralityScatter(nodes: NetNode[]): EChartsOption {
     list.push(n)
     byHd.set(n.hangdang, list)
   })
-  return {
+  return asChartOption({
     tooltip: {
-      formatter: (p: { data: NetNode & { value: [number, number] } }) => {
-        const n = p.data
+      formatter: (p: unknown) => {
+        const n = (p as { data?: NetNode & { value: [number, number] } }).data
+        if (!n) return ''
         return `${n.name}<br/>度 ${n.degree} · 介数 ${(n.betweenness ?? 0).toFixed(3)}`
       },
     },
@@ -375,7 +379,7 @@ export function buildCentralityScatter(nodes: NetNode[]): EChartsOption {
         symbolSize: Math.max(8, 6 + (n.weighted_degree ?? n.degree) * 0.12),
       })),
     })),
-  }
+  })
 }
 
 export function buildMainVsSupportPie(nodes: NetNode[]): EChartsOption {

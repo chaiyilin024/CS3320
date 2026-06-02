@@ -1,5 +1,6 @@
 import type { EChartsOption } from 'echarts'
 import type { PlayThemeQuality, PlayThemes, ThemePatternsGlobal, ThemeQualityGlobal, ThemeTopicAssessment } from '@/types'
+import { asChartOption } from './chartOption'
 
 const TOPIC_PALETTE = [
   '#8b2500', '#c9a227', '#1565c0', '#2e7d32', '#6a1b9a', '#d4537a', '#bf360c', '#00838f',
@@ -96,11 +97,12 @@ export function buildKeywordHeatmap(topics: PlayThemes['topics']): EChartsOption
     })
   })
   const max = Math.max(...data.map((d) => d[2]), 1)
-  return {
+  return asChartOption({
     tooltip: {
       position: 'top',
-      formatter: (p: { data: [number, number, number] }) => {
-        const [xi, yi, v] = p.data
+      formatter: (p: unknown) => {
+        const row = p as { data?: [number, number, number] }
+        const [xi, yi, v] = row.data ?? [0, 0, 0]
         return `${rows[yi].label}<br/>${rows[yi].keywords[xi]} (${v})`
       },
     },
@@ -125,11 +127,16 @@ export function buildKeywordHeatmap(topics: PlayThemes['topics']): EChartsOption
       data,
       label: {
         show: true,
-        formatter: (p: { data: [number, number, number] }) => rows[p.data[1]]?.keywords[p.data[0]] ?? '',
+        formatter: (p: unknown) => {
+          const row = p as { data?: [number, number, number] }
+          const data = row.data
+          if (!data) return ''
+          return rows[data[1]]?.keywords[data[0]] ?? ''
+        },
         fontSize: 8,
       },
     }],
-  }
+  })
 }
 
 export function buildTopicTimeline(
@@ -146,10 +153,14 @@ export function buildTopicTimeline(
     list.push(b)
     byTopic.set(b.topic_id, list)
   })
-  return {
+  return asChartOption({
     tooltip: {
-      formatter: (p: { data: { block_index: number; snippet: string; speaker?: string } }) =>
-        `块 #${p.data.block_index}<br/>${p.data.speaker ?? ''}<br/>${p.data.snippet}`,
+      formatter: (p: unknown) => {
+        const row = p as { data?: { block_index: number; snippet: string; speaker?: string } }
+        const data = row.data
+        if (!data) return ''
+        return `块 #${data.block_index}<br/>${data.speaker ?? ''}<br/>${data.snippet}`
+      },
     },
     legend: { top: 0, textStyle: { fontSize: 10 }, data: [...byTopic.keys()].map((id) => labelMap.get(id) ?? `T${id}`) },
     grid: { left: 48, right: 16, top: 40, bottom: 40 },
@@ -169,7 +180,7 @@ export function buildTopicTimeline(
           speaker: b.speaker_name,
         })),
     })),
-  }
+  })
 }
 
 export function buildSpeakerTopicBar(
@@ -274,11 +285,12 @@ export function buildGlobalPlayHeatmap(
   }
   const vals = rows.flatMap((r) => r.weights)
   const max = Math.max(...vals, 0.01)
-  return {
+  return asChartOption({
     tooltip: {
       position: 'top',
-      formatter: (p: { data: [number, number, number] }) => {
-        const [xi, yi, v] = p.data
+      formatter: (p: unknown) => {
+        const row = p as { data?: [number, number, number] }
+        const [xi, yi, v] = row.data ?? [0, 0, 0]
         return `${rows[yi].title ?? rows[yi].script_id}<br/>${labels[xi]}: ${(v * 100).toFixed(1)}%`
       },
     },
@@ -305,7 +317,7 @@ export function buildGlobalPlayHeatmap(
       ),
       emphasis: { itemStyle: { shadowBlur: 6 } },
     }],
-  }
+  })
 }
 
 export function buildCooccurrenceHeatmap(patterns: ThemePatternsGlobal | null): EChartsOption {
@@ -327,10 +339,11 @@ export function buildCooccurrenceHeatmap(patterns: ThemePatternsGlobal | null): 
     })
   })
   const max = Math.max(...data.map((d) => d[2]), 1)
-  return {
+  return asChartOption({
     tooltip: {
-      formatter: (p: { data: [number, number, number] }) => {
-        const [xi, yi, v] = p.data
+      formatter: (p: unknown) => {
+        const row = p as { data?: [number, number, number] }
+        const [xi, yi, v] = row.data ?? [0, 0, 0]
         if (!v) return ''
         return `${labelMap.get(ids[yi])} ↔ ${labelMap.get(ids[xi])}<br/>共现 ${v}`
       },
@@ -356,7 +369,7 @@ export function buildCooccurrenceHeatmap(patterns: ThemePatternsGlobal | null): 
       inRange: { color: ['#f7f3ed', '#6a1b9a', '#3e0069'] },
     },
     series: [{ type: 'heatmap', data: data.filter((d) => d[2] > 0), label: { show: true, fontSize: 9 } }],
-  }
+  })
 }
 
 export function buildPlayVsGlobalRadar(
@@ -425,11 +438,10 @@ export function buildTopicSankey(topics: PlayThemes['topics']): EChartsOption {
     })
   })
   nodeSet.forEach((n) => nodes.push({ name: n }))
-  return {
+  return asChartOption({
     tooltip: { trigger: 'item' },
     series: [{
       type: 'sankey',
-      layout: 'none',
       emphasis: { focus: 'adjacency' },
       nodeAlign: 'left',
       lineStyle: { color: 'gradient', curveness: 0.5, opacity: 0.35 },
@@ -437,7 +449,7 @@ export function buildTopicSankey(topics: PlayThemes['topics']): EChartsOption {
       data: nodes,
       links,
     }],
-  }
+  })
 }
 
 const TIER_LABELS: Record<ThemeTopicAssessment['tier'], string> = {
@@ -475,7 +487,7 @@ export function buildTopicTierBar(quality: PlayThemeQuality | undefined): EChart
     return { title: { text: '暂无质量数据', left: 'center', top: 'middle', textStyle: { fontSize: 12, color: '#999' } } }
   }
   const sorted = [...rows].sort((a, b) => b.weight - a.weight)
-  return {
+  return asChartOption({
     tooltip: {
       trigger: 'axis',
       formatter: (p: unknown) => {
@@ -500,9 +512,14 @@ export function buildTopicTierBar(quality: PlayThemeQuality | undefined): EChart
         value: +(a.weight * 100).toFixed(1),
         itemStyle: { color: topicTierColor(a.tier) },
       })),
-      label: { show: true, position: 'right', formatter: (p: { dataIndex: number }) => topicTierLabel(sorted[p.dataIndex].tier), fontSize: 10 },
+      label: {
+        show: true,
+        position: 'right',
+        formatter: (p: unknown) => topicTierLabel(sorted[(p as { dataIndex: number }).dataIndex].tier),
+        fontSize: 10,
+      },
     }],
-  }
+  })
 }
 
 export function buildGlobalLabelDist(global: ThemeQualityGlobal | null): EChartsOption {
