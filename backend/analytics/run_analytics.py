@@ -21,6 +21,7 @@ from backend.analytics.narrative.rhythm import analyze_play_narrative
 from backend.analytics.network.build_graph import analyze_play_network
 from backend.analytics.role.infer import analyze_play_role
 from backend.analytics.theme.export import build_play_themes
+from backend.analytics.theme.quality import backfill_play_quality
 from backend.analytics.theme.llm import build_play_themes_llm
 from backend.analytics.theme.model import model_from_themes, train_theme_model
 from backend.analytics.utils.io import iter_play_paths, load_play, save_json
@@ -39,6 +40,7 @@ GLOBAL_SCHEMA_MAP = {
     "role_analysis.json": "role_analysis.schema.json",
     "network_compare.json": "network_compare.schema.json",
     "theme_patterns.json": "theme_patterns.schema.json",
+    "theme_quality.json": "theme_quality.schema.json",
     "narrative_templates.json": "narrative_templates.schema.json",
 }
 
@@ -130,6 +132,24 @@ def run_integrated_exports(
     return 0 if ok else 1
 
 
+def run_theme_quality_backfill(cfg: AnalyticsConfig) -> int:
+    plays_dir = cfg.analytics_dir / "plays"
+    if not plays_dir.is_dir():
+        print("未找到 analytics/plays 目录。", file=sys.stderr)
+        return 1
+    ok = 0
+    for play_dir in sorted(plays_dir.iterdir()):
+        if not play_dir.is_dir():
+            continue
+        path = play_dir / "themes.json"
+        if path.is_file() and backfill_play_quality(path):
+            ok += 1
+            if ok % 300 == 0:
+                print(f"  已回填 quality × {ok}…")
+    print(f"主题质量回填完成：{ok} 剧 themes.json")
+    return 0 if ok else 1
+
+
 def run_global_exports(cfg: AnalyticsConfig, validate: bool) -> int:
     outputs = run_global_aggregation(cfg)
     global_dir = cfg.analytics_dir / "global"
@@ -141,6 +161,8 @@ def run_global_exports(cfg: AnalyticsConfig, validate: bool) -> int:
             extra = f", 特征格 {len(doc.get('global_feature_hangdang_matrix', []))}"
         elif name == "theme_patterns.json":
             extra = f", 剧本 {len(doc.get('play_topic_matrix', []))}"
+        elif name == "theme_quality.json":
+            extra = f", 剧本 {len(doc.get('plays', []))}"
         elif name == "network_compare.json":
             extra = f", 剧本 {len(doc.get('plays', []))}"
         print(f"  global/{name}{extra or (', 条目 ' + str(n) if n else '')}")
@@ -173,6 +195,11 @@ def main() -> int:
         action="store_true",
         help="仅从已有四模块产物生成 plays/*/integrated.json",
     )
+    parser.add_argument(
+        "--theme-quality-only",
+        action="store_true",
+        help="为已有 themes.json 回填 quality 并聚合 global/theme_quality.json",
+    )
     args = parser.parse_args()
 
     cfg = AnalyticsConfig.load(ROOT)
@@ -184,6 +211,14 @@ def main() -> int:
     elif args.theme_llm:
         print("WARN: --theme-llm 已指定但未设置 OPENAI_API_KEY", file=sys.stderr)
     validate = not args.no_validate
+
+    if args.theme_quality_only:
+        print("回填单剧主题质量…")
+        code = run_theme_quality_backfill(cfg)
+        if code != 0:
+            return code
+        print("聚合全局主题质量…")
+        return run_global_exports(cfg, validate)
 
     if args.global_only:
         print("聚合全局分析…")

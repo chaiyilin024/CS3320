@@ -198,7 +198,7 @@ watch(() => store.scriptId, load)
         </h3>
         <div v-if="excerptsLoading" class="excerpt-loading">加载正文中…</div>
         <div v-else-if="!stageExcerpts.length" class="excerpt-loading">
-          暂无正文数据，请先运行 bash scripts/sync_frontend_data.sh 同步 play.json
+          暂无正文数据，请先运行 <code>python scripts/sync_frontend_data.py</code> 或 <code>npm run sync-data</code> 同步 play.json
         </div>
         <ul v-else class="snippets">
           <li

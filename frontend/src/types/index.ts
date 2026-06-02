@@ -89,6 +89,27 @@ export interface PlayNetwork {
   }
 }
 
+export interface ThemeTopicAssessment {
+  topic_id: number
+  label: string
+  tier: 'strong' | 'weak' | 'fallback' | 'noise'
+  label_score: number
+  keyword_signal: number
+  weight: number
+  issues?: string[]
+}
+
+export interface PlayThemeQuality {
+  score: number
+  labeled_weight: number
+  fallback_weight: number
+  keyword_signal_avg?: number
+  tier_counts?: Record<string, number>
+  method?: string
+  issues?: string[]
+  topic_assessments?: ThemeTopicAssessment[]
+}
+
 export interface PlayThemes {
   script_id: string
   title?: string
@@ -115,6 +136,7 @@ export interface PlayThemes {
     speaker_name?: string
     score?: number
   }>
+  quality?: PlayThemeQuality
 }
 
 export interface PlayBlock {
@@ -229,6 +251,35 @@ export interface ThemePatternsGlobal {
     labels: string[]
     support: number
     play_count: number
+  }>
+}
+
+export interface ThemeQualityGlobal {
+  summary: {
+    play_count: number
+    avg_score: number
+    low_quality_count?: number
+    low_quality_threshold?: number
+    fallback_label_share?: number
+    tier_totals?: Record<string, number>
+  }
+  label_distribution: Array<{ label: string; topic_count: number; weight_sum?: number }>
+  fallback_keywords?: Array<{ keyword: string; count: number }>
+  low_quality_plays?: Array<{
+    script_id: string
+    title?: string
+    score: number
+    fallback_weight?: number
+    issues?: string[]
+  }>
+  plays?: Array<{
+    script_id: string
+    title?: string
+    genre?: string
+    score: number
+    labeled_weight?: number
+    fallback_weight?: number
+    issues?: string[]
   }>
 }
 

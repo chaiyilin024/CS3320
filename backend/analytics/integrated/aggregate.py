@@ -433,6 +433,15 @@ def aggregate_narrative_templates(
     }
 
 
+def aggregate_theme_quality_report(
+    plays_dir: Path,
+    catalog_idx: dict[str, dict],
+) -> dict:
+    from ..theme.quality import aggregate_theme_quality
+
+    return aggregate_theme_quality(plays_dir, catalog_idx)
+
+
 def run_global_aggregation(cfg) -> dict[str, dict]:
     """聚合 artifacts/analytics/plays → global/*.json，返回各产出文档。"""
     plays_dir = cfg.analytics_dir / "plays"
@@ -446,6 +455,7 @@ def run_global_aggregation(cfg) -> dict[str, dict]:
         "role_analysis.json": aggregate_role_analysis(plays_dir, catalog_idx),
         "network_compare.json": aggregate_network_compare(plays_dir, catalog_idx),
         "theme_patterns.json": aggregate_theme_patterns(plays_dir, catalog_idx),
+        "theme_quality.json": aggregate_theme_quality_report(plays_dir, catalog_idx),
         "narrative_templates.json": aggregate_narrative_templates(plays_dir, catalog_idx),
     }
     return outputs

@@ -49,9 +49,69 @@
       "type": "array",
       "items": { "$ref": "#/$defs/representativeBlock" },
       "description": "各主题代表性文本片段"
+    },
+    "quality": {
+      "type": "object",
+      "description": "主题分析质量评估（可选）",
+      "additionalProperties": false,
+      "properties": {
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "综合质量分 0–1"
+        },
+        "labeled_weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "已识别主题权重占比"
+        },
+        "fallback_weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "未识别（其他情节等）权重占比"
+        },
+        "keyword_signal_avg": { "type": "number", "minimum": 0, "maximum": 1 },
+        "tier_counts": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
+        "method": { "type": "string" },
+        "issues": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "topic_assessments": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/topicAssessment" }
+        }
+      }
     }
   },
   "$defs": {
+    "topicAssessment": {
+      "type": "object",
+      "required": ["topic_id", "label", "tier", "label_score", "keyword_signal", "weight"],
+      "additionalProperties": false,
+      "properties": {
+        "topic_id": { "type": "integer", "minimum": 0 },
+        "label": { "type": "string" },
+        "tier": {
+          "type": "string",
+          "enum": ["strong", "weak", "fallback", "noise"],
+          "description": "strong=规则强命中, weak=弱命中, fallback=未识别, noise=文献噪声"
+        },
+        "label_score": { "type": "number", "minimum": 0 },
+        "keyword_signal": { "type": "number", "minimum": 0, "maximum": 1 },
+        "weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "issues": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
     "topic": {
       "type": "object",
       "required": ["topic_id", "label", "weight", "keywords"],

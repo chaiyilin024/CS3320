@@ -3,6 +3,7 @@ from __future__ import annotations
 from collections import defaultdict
 
 from .model import ThemeModel, is_metadata_topic
+from .quality import attach_quality
 
 # 权重低于此值的 topic 视为噪音
 NOISE_WEIGHT_THRESHOLD = 0.03
@@ -68,7 +69,7 @@ def build_play_themes(play: dict, model: ThemeModel) -> dict:
     reps = _representative_blocks(
         play, model, kept_ids, old_to_new=old_to_new
     )
-    return {
+    doc = {
         "script_id": script_id,
         "title": title,
         "model": {
@@ -80,6 +81,7 @@ def build_play_themes(play: dict, model: ThemeModel) -> dict:
         "topic_composition": comp,
         "representative_blocks": reps,
     }
+    return attach_quality(doc)
 
 
 def _merge_topics_by_label(

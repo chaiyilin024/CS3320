@@ -10,6 +10,8 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from typing import Any
 
+from .quality import attach_quality
+
 TEXT_TYPES = frozenset({"dialogue", "aria", "recitation"})
 
 THEME_JSON_SCHEMA_HINT = """
@@ -242,7 +244,7 @@ def normalize_llm_themes(
     if not reps_out:
         reps_out = _fallback_representative_blocks(play, topics_out)
 
-    return {
+    return attach_quality({
         "script_id": play["script_id"],
         "title": play.get("title", ""),
         "model": {
@@ -253,7 +255,7 @@ def normalize_llm_themes(
         "topics": topics_out,
         "topic_composition": comp,
         "representative_blocks": reps_out[: cfg.num_topics * 3],
-    }
+    })
 
 
 def _fallback_representative_blocks(

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
-    "sync-data": "bash ../scripts/sync_frontend_data.sh"
+    "sync-data": "python ../scripts/sync_frontend_data.py"
   },
   "dependencies": {
     "echarts": "^5.5.1",
