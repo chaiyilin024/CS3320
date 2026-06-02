@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """分析流水线入口 — 单剧四任务（行当 / 网络 / 主题 / 叙事）。
 
-多剧本对比由前端在拿到各剧 JSON 后做，此入口不再聚合 global。
+批处理结束后可聚合 global/*.json 供前端全库对比图使用。
 """
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -14,6 +15,8 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from backend.analytics.config import AnalyticsConfig
+from backend.analytics.integrated.correlate import analyze_integrated
+from backend.analytics.integrated.aggregate import run_global_aggregation
 from backend.analytics.narrative.rhythm import analyze_play_narrative
 from backend.analytics.network.build_graph import analyze_play_network
 from backend.analytics.role.infer import analyze_play_role
@@ -29,6 +32,14 @@ SCHEMA_MAP = {
     "network.json": "network.schema.json",
     "themes.json": "theme.schema.json",
     "narrative.json": "narrative.schema.json",
+    "integrated.json": "integrated.schema.json",
+}
+
+GLOBAL_SCHEMA_MAP = {
+    "role_analysis.json": "role_analysis.schema.json",
+    "network_compare.json": "network_compare.schema.json",
+    "theme_patterns.json": "theme_patterns.schema.json",
+    "narrative_templates.json": "narrative_templates.schema.json",
 }
 
 
@@ -66,6 +77,8 @@ def run_play_analytics(
         "themes.json": themes,
         "narrative.json": narrative,
     }
+    integrated = analyze_integrated(play, role, network, themes, narrative)
+    outputs["integrated.json"] = integrated
     for name, doc in outputs.items():
         save_json(out_dir / name, doc)
         if validate:
@@ -73,6 +86,70 @@ def run_play_analytics(
             if errs:
                 print(f"  WARN {sid}/{name}: {errs[0]}", file=sys.stderr)
     return outputs
+
+
+def _load_json(path: Path) -> dict | None:
+    if not path.exists():
+        return None
+    try:
+        with path.open(encoding="utf-8") as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def run_integrated_exports(
+    cfg: AnalyticsConfig,
+    script_ids: list[str],
+    validate: bool,
+) -> int:
+    ok = 0
+    for sid in script_ids:
+        play_path = cfg.cleaned_dir / "plays" / f"{sid}.json"
+        out_dir = cfg.analytics_dir / "plays" / sid
+        if not play_path.exists() or not out_dir.is_dir():
+            continue
+        role = _load_json(out_dir / "role.json")
+        network = _load_json(out_dir / "network.json")
+        themes = _load_json(out_dir / "themes.json")
+        narrative = _load_json(out_dir / "narrative.json")
+        if not all([role, network, themes, narrative]):
+            print(f"  跳过 {sid}：缺少四模块分析产物", file=sys.stderr)
+            continue
+        play = load_play(play_path)
+        integrated = analyze_integrated(play, role, network, themes, narrative)
+        save_json(out_dir / "integrated.json", integrated)
+        if validate:
+            errs = validate_analytics(integrated, SCHEMA_MAP["integrated.json"], cfg.root)
+            if errs:
+                print(f"  WARN {sid}/integrated.json: {errs[0]}", file=sys.stderr)
+        ok += 1
+        if ok % 200 == 0:
+            print(f"  已生成 integrated.json × {ok}…")
+    print(f"综合关联完成：{ok} 剧 → {cfg.analytics_dir}/plays/*/integrated.json")
+    return 0 if ok else 1
+
+
+def run_global_exports(cfg: AnalyticsConfig, validate: bool) -> int:
+    outputs = run_global_aggregation(cfg)
+    global_dir = cfg.analytics_dir / "global"
+    for name, doc in outputs.items():
+        save_json(global_dir / name, doc)
+        n = len(doc.get("play_topic_matrix") or doc.get("plays") or doc.get("templates") or [])
+        extra = ""
+        if name == "role_analysis.json":
+            extra = f", 特征格 {len(doc.get('global_feature_hangdang_matrix', []))}"
+        elif name == "theme_patterns.json":
+            extra = f", 剧本 {len(doc.get('play_topic_matrix', []))}"
+        elif name == "network_compare.json":
+            extra = f", 剧本 {len(doc.get('plays', []))}"
+        print(f"  global/{name}{extra or (', 条目 ' + str(n) if n else '')}")
+        if validate:
+            errs = validate_analytics(doc, GLOBAL_SCHEMA_MAP[name], cfg.root)
+            if errs:
+                print(f"  WARN global/{name}: {errs[0]}", file=sys.stderr)
+    print(f"全局聚合完成 → {global_dir}")
+    return 0
 
 
 def main() -> int:
@@ -86,6 +163,16 @@ def main() -> int:
         action="store_true",
         help="使用大模型 API 生成主题（需 OPENAI_API_KEY）",
     )
+    parser.add_argument(
+        "--global-only",
+        action="store_true",
+        help="仅从已有 plays 分析产物聚合 global/*.json",
+    )
+    parser.add_argument(
+        "--integrated-only",
+        action="store_true",
+        help="仅从已有四模块产物生成 plays/*/integrated.json",
+    )
     args = parser.parse_args()
 
     cfg = AnalyticsConfig.load(ROOT)
@@ -97,6 +184,24 @@ def main() -> int:
     elif args.theme_llm:
         print("WARN: --theme-llm 已指定但未设置 OPENAI_API_KEY", file=sys.stderr)
     validate = not args.no_validate
+
+    if args.global_only:
+        print("聚合全局分析…")
+        return run_global_exports(cfg, validate)
+
+    if args.integrated_only:
+        if args.all:
+            script_ids = [sid for sid, _ in iter_play_paths(cfg.cleaned_dir)]
+        elif args.script_ids:
+            script_ids = args.script_ids
+        else:
+            plays_dir = cfg.analytics_dir / "plays"
+            script_ids = sorted(p.name for p in plays_dir.iterdir() if p.is_dir())
+        if not script_ids:
+            print("未找到可生成 integrated 的剧本。", file=sys.stderr)
+            return 1
+        print(f"生成综合关联 integrated.json（{len(script_ids)} 剧）…")
+        return run_integrated_exports(cfg, script_ids, validate)
 
     try:
         cache = configure_jieba(cfg.root)
@@ -143,6 +248,8 @@ def main() -> int:
         run_play_analytics(play, cfg, theme_model, validate)
 
     print(f"完成：{len(plays)} 剧 → {cfg.analytics_dir}/plays")
+    print("聚合全局分析…")
+    run_global_exports(cfg, validate)
     return 0
 
 

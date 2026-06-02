@@ -61,3 +61,21 @@ CS3320/
     ├── test_schemas.py           # 校验 JSON 是否符合 schema
     └── fixtures/                 # 用 01001012 黄鹤楼 做金样例
 ```
+
+使用方法：
+1.下载全部数据
+/data 下放 “京剧剧本”文件夹即可
+2.数据处理
+```bash
+python backend/preprocessing/run_pipeline.py --config configs/pipeline.yaml
+```
+3.分析
+```bash
+python backend/analytics/run_analytics.py --all
+```
+4.前端
+```bash
+bash scripts/sync_frontend_data.sh
+cd frontend
+npm run dev
+```
