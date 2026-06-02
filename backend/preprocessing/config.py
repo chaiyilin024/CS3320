@@ -19,6 +19,7 @@ class PipelineConfig:
     script_ids: list[str] = field(default_factory=list)
     limit_per_zip: int = 0
     zip_files: list[str] = field(default_factory=list)
+    workers: int = 0
 
     @classmethod
     def load(cls, config_path: Path | None = None) -> PipelineConfig:
@@ -28,6 +29,7 @@ class PipelineConfig:
             raw = yaml.safe_load(f) or {}
 
         paths = raw.get("paths") or {}
+        parallel = raw.get("parallel") or {}
         return cls(
             parse_version=str(raw.get("parse_version", "1.0")),
             schema_version=str(raw.get("schema_version", "1.0")),
@@ -42,6 +44,7 @@ class PipelineConfig:
             script_ids=list(raw.get("script_ids") or []),
             limit_per_zip=int(raw.get("limit_per_zip") or 0),
             zip_files=list(raw.get("zip_files") or []),
+            workers=int(parallel.get("workers", 0)),
         )
 
 

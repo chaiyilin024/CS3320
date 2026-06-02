@@ -19,6 +19,7 @@ class AnalyticsConfig:
     num_topics: int = 8
     random_seed: int = 42
     rhythm_window: int = 20
+    workers: int = 0
     llm_theme: LlmThemeConfig = field(default_factory=LlmThemeConfig)
 
     @classmethod
@@ -26,6 +27,7 @@ class AnalyticsConfig:
         root = (root or ROOT).resolve()
         pipeline_path = root / "configs" / "pipeline.yaml"
         num_topics, rhythm_window = 8, 20
+        workers = 0
         cleaned = root / "artifacts" / "cleaned"
         analytics: dict = {}
         if pipeline_path.exists():
@@ -37,6 +39,8 @@ class AnalyticsConfig:
             analytics = cfg.get("analytics") or {}
             num_topics = int(analytics.get("num_topics", num_topics))
             rhythm_window = int(analytics.get("rhythm_window", rhythm_window))
+            parallel = cfg.get("parallel") or {}
+            workers = int(parallel.get("workers", 0))
         llm_cfg = LlmThemeConfig.from_env_and_yaml(analytics)
         if llm_cfg.enabled:
             num_topics = llm_cfg.num_topics
@@ -47,5 +51,6 @@ class AnalyticsConfig:
             catalog_path=cleaned / "catalog.json",
             num_topics=num_topics,
             rhythm_window=rhythm_window,
+            workers=workers,
             llm_theme=llm_cfg,
         )

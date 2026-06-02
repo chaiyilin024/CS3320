@@ -6,7 +6,6 @@
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 from pathlib import Path
 
@@ -21,12 +20,17 @@ from backend.analytics.narrative.rhythm import analyze_play_narrative
 from backend.analytics.network.build_graph import analyze_play_network
 from backend.analytics.role.infer import analyze_play_role
 from backend.analytics.theme.export import build_play_themes
-from backend.analytics.theme.quality import backfill_play_quality
 from backend.analytics.theme.llm import build_play_themes_llm
 from backend.analytics.theme.model import model_from_themes, train_theme_model
 from backend.analytics.utils.io import iter_play_paths, load_play, save_json
 from backend.analytics.utils.jieba_env import configure_jieba
 from backend.analytics.utils.schema import validate_analytics
+from backend.analytics.workers import (
+    analyze_play_task,
+    integrated_only_task,
+    theme_quality_task,
+)
+from backend.utils.parallel import resolve_workers, run_parallel
 
 SCHEMA_MAP = {
     "role.json": "play_role.schema.json",
@@ -90,62 +94,114 @@ def run_play_analytics(
     return outputs
 
 
-def _load_json(path: Path) -> dict | None:
-    if not path.exists():
-        return None
-    try:
-        with path.open(encoding="utf-8") as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError):
-        return None
+def _analytics_cfg_payload(cfg: AnalyticsConfig, validate: bool) -> dict:
+    llm = cfg.llm_theme
+    return {
+        "validate": validate,
+        "num_topics": cfg.num_topics,
+        "random_seed": cfg.random_seed,
+        "rhythm_window": cfg.rhythm_window,
+        "cleaned_rel": str(cfg.cleaned_dir.relative_to(cfg.root)),
+        "analytics_rel": str(cfg.analytics_dir.relative_to(cfg.root)),
+        "llm_theme": {
+            "enabled": llm.enabled,
+            "model": llm.model,
+            "base_url": llm.base_url,
+            "api_key": llm.api_key,
+            "num_topics": llm.num_topics,
+            "max_sample_chars": llm.max_sample_chars,
+            "max_blocks": llm.max_blocks,
+            "timeout_sec": llm.timeout_sec,
+        },
+    }
+
+
+def _run_plays_parallel(
+    script_ids: list[str],
+    cfg: AnalyticsConfig,
+    validate: bool,
+    workers: int,
+) -> tuple[int, int]:
+    w = resolve_workers(workers)
+    print(f"并行进程数: {w}，分析 {len(script_ids)} 部剧本…")
+    cfg_payload = _analytics_cfg_payload(cfg, validate)
+    tasks = [
+        {"root": str(cfg.root), "script_id": sid, "cfg": cfg_payload}
+        for sid in script_ids
+    ]
+
+    def _progress(done: int, total: int, _result: dict) -> None:
+        if done % 100 == 0 or done == total:
+            print(f"  … 已完成 {done}/{total}")
+
+    results = run_parallel(analyze_play_task, tasks, workers, progress=_progress)
+    ok = 0
+    for r in results:
+        print(r.get("log", ""))
+        for warn in r.get("warnings") or []:
+            print(f"  WARN {r.get('script_id')}/{warn}", file=sys.stderr)
+        if r.get("ok"):
+            ok += 1
+    return ok, len(script_ids)
 
 
 def run_integrated_exports(
     cfg: AnalyticsConfig,
     script_ids: list[str],
     validate: bool,
+    workers: int = 1,
 ) -> int:
+    w = resolve_workers(workers)
+    print(f"并行进程数: {w}，生成 integrated.json（{len(script_ids)} 剧）…")
+    tasks = [
+        {
+            "root": str(cfg.root),
+            "script_id": sid,
+            "cleaned_rel": str(cfg.cleaned_dir.relative_to(cfg.root)),
+            "analytics_rel": str(cfg.analytics_dir.relative_to(cfg.root)),
+            "validate": validate,
+        }
+        for sid in script_ids
+    ]
+
+    def _progress(done: int, total: int, _result: dict) -> None:
+        if done % 200 == 0 or done == total:
+            print(f"  … 已完成 {done}/{total}")
+
+    results = run_parallel(integrated_only_task, tasks, workers, progress=_progress)
     ok = 0
-    for sid in script_ids:
-        play_path = cfg.cleaned_dir / "plays" / f"{sid}.json"
-        out_dir = cfg.analytics_dir / "plays" / sid
-        if not play_path.exists() or not out_dir.is_dir():
-            continue
-        role = _load_json(out_dir / "role.json")
-        network = _load_json(out_dir / "network.json")
-        themes = _load_json(out_dir / "themes.json")
-        narrative = _load_json(out_dir / "narrative.json")
-        if not all([role, network, themes, narrative]):
-            print(f"  跳过 {sid}：缺少四模块分析产物", file=sys.stderr)
-            continue
-        play = load_play(play_path)
-        integrated = analyze_integrated(play, role, network, themes, narrative)
-        save_json(out_dir / "integrated.json", integrated)
-        if validate:
-            errs = validate_analytics(integrated, SCHEMA_MAP["integrated.json"], cfg.root)
-            if errs:
-                print(f"  WARN {sid}/integrated.json: {errs[0]}", file=sys.stderr)
-        ok += 1
-        if ok % 200 == 0:
-            print(f"  已生成 integrated.json × {ok}…")
+    for r in results:
+        if r.get("log"):
+            if not r.get("ok") and "跳过" not in r["log"]:
+                print(r["log"], file=sys.stderr)
+        for warn in r.get("warnings") or []:
+            print(f"  WARN {r.get('script_id')}/integrated.json: {warn}", file=sys.stderr)
+        if r.get("ok"):
+            ok += 1
     print(f"综合关联完成：{ok} 剧 → {cfg.analytics_dir}/plays/*/integrated.json")
     return 0 if ok else 1
 
 
-def run_theme_quality_backfill(cfg: AnalyticsConfig) -> int:
+def run_theme_quality_backfill(cfg: AnalyticsConfig, workers: int = 1) -> int:
     plays_dir = cfg.analytics_dir / "plays"
     if not plays_dir.is_dir():
         print("未找到 analytics/plays 目录。", file=sys.stderr)
         return 1
-    ok = 0
-    for play_dir in sorted(plays_dir.iterdir()):
-        if not play_dir.is_dir():
-            continue
-        path = play_dir / "themes.json"
-        if path.is_file() and backfill_play_quality(path):
-            ok += 1
-            if ok % 300 == 0:
-                print(f"  已回填 quality × {ok}…")
+    paths = sorted(
+        play_dir / "themes.json"
+        for play_dir in plays_dir.iterdir()
+        if play_dir.is_dir() and (play_dir / "themes.json").is_file()
+    )
+    w = resolve_workers(workers)
+    print(f"并行进程数: {w}，回填主题质量 {len(paths)} 剧…")
+    tasks = [{"path": str(p)} for p in paths]
+
+    def _progress(done: int, total: int, _result: dict) -> None:
+        if done % 300 == 0 or done == total:
+            print(f"  … 已完成 {done}/{total}")
+
+    results = run_parallel(theme_quality_task, tasks, workers, progress=_progress)
+    ok = sum(1 for r in results if r.get("ok"))
     print(f"主题质量回填完成：{ok} 剧 themes.json")
     return 0 if ok else 1
 
@@ -200,21 +256,30 @@ def main() -> int:
         action="store_true",
         help="为已有 themes.json 回填 quality 并聚合 global/theme_quality.json",
     )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=None,
+        help="并行进程数（0=自动 min(CPU,8)，1=串行）",
+    )
     args = parser.parse_args()
 
     cfg = AnalyticsConfig.load(ROOT)
     if args.num_topics:
         cfg.num_topics = args.num_topics
+    if args.workers is not None:
+        cfg.workers = args.workers
     if args.theme_llm and cfg.llm_theme.api_key:
         cfg.llm_theme.enabled = True
         cfg.num_topics = cfg.llm_theme.num_topics
     elif args.theme_llm:
         print("WARN: --theme-llm 已指定但未设置 OPENAI_API_KEY", file=sys.stderr)
     validate = not args.no_validate
+    workers = cfg.workers
 
     if args.theme_quality_only:
         print("回填单剧主题质量…")
-        code = run_theme_quality_backfill(cfg)
+        code = run_theme_quality_backfill(cfg, workers)
         if code != 0:
             return code
         print("聚合全局主题质量…")
@@ -235,14 +300,18 @@ def main() -> int:
         if not script_ids:
             print("未找到可生成 integrated 的剧本。", file=sys.stderr)
             return 1
-        print(f"生成综合关联 integrated.json（{len(script_ids)} 剧）…")
-        return run_integrated_exports(cfg, script_ids, validate)
+        return run_integrated_exports(cfg, script_ids, validate, workers)
 
-    try:
-        cache = configure_jieba(cfg.root)
-        print(f"jieba 缓存: {cache}")
-    except ImportError:
-        pass
+    if cfg.llm_theme.enabled and resolve_workers(workers) > 1:
+        print("WARN: LLM 主题模式使用串行（--workers 1）", file=sys.stderr)
+        workers = 1
+
+    if resolve_workers(workers) == 1:
+        try:
+            cache = configure_jieba(cfg.root)
+            print(f"jieba 缓存: {cache}")
+        except ImportError:
+            pass
 
     if args.all:
         script_ids = [sid for sid, _ in iter_play_paths(cfg.cleaned_dir)]
@@ -255,34 +324,23 @@ def main() -> int:
         print("未找到可分析的剧本，请先运行预处理。", file=sys.stderr)
         return 1
 
-    plays: list[dict] = []
+    # 过滤不存在的剧本
+    valid_ids: list[str] = []
     for sid in script_ids:
         path = cfg.cleaned_dir / "plays" / f"{sid}.json"
         if not path.exists():
             print(f"跳过 {sid}：{path} 不存在", file=sys.stderr)
             continue
-        plays.append(load_play(path))
+        valid_ids.append(sid)
 
-    if not plays:
+    if not valid_ids:
         return 1
 
-    use_llm = cfg.llm_theme.enabled
-    if use_llm:
+    if cfg.llm_theme.enabled:
         print(f"主题分析: LLM 模式（{cfg.llm_theme.model}，K={cfg.llm_theme.num_topics}）")
 
-    for play in plays:
-        sid = play["script_id"]
-        print(f"分析 {sid} 《{play.get('title', '')}》…")
-        if use_llm:
-            theme_model = None
-        else:
-            # 每剧单独训练 NMF，避免全库共用一个 topic 词表（否则每剧 keywords 相同）
-            theme_model = train_theme_model(
-                [play], cfg.num_topics, cfg.random_seed
-            )
-        run_play_analytics(play, cfg, theme_model, validate)
-
-    print(f"完成：{len(plays)} 剧 → {cfg.analytics_dir}/plays")
+    ok, total = _run_plays_parallel(valid_ids, cfg, validate, workers)
+    print(f"完成：{ok}/{total} 剧 → {cfg.analytics_dir}/plays")
     print("聚合全局分析…")
     run_global_exports(cfg, validate)
     return 0

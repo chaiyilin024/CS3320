@@ -21,6 +21,10 @@ zip_files: []
 # zip_files:
 #   - "01000000.zip"
 
+# 并行：0=自动（min(CPU, 8)），1=串行；CPU 密集型任务使用多进程
+parallel:
+  workers: 0
+
 analytics:
   num_topics: 8
   rhythm_window: 20

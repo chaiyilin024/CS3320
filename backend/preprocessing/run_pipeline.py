@@ -5,6 +5,7 @@
   python backend/preprocessing/run_pipeline.py --pdf example/01001012_黄鹤楼.pdf
   python backend/preprocessing/run_pipeline.py --zip data/京剧剧本/01000000.zip --limit 5
   python backend/preprocessing/run_pipeline.py --config configs/pipeline.yaml
+  python backend/preprocessing/run_pipeline.py --config configs/pipeline.yaml --workers 4
 """
 from __future__ import annotations
 
@@ -18,75 +19,61 @@ if str(_ROOT) not in sys.path:
     sys.path.insert(0, str(_ROOT))
 
 from backend.preprocessing.config import PipelineConfig, load_collections
-from backend.preprocessing.clean.pipeline import (
-    process_extract_result_to_play,
-    process_text_to_play,
-)
 from backend.preprocessing.export.write_json import PlayWriter, build_catalog_entry
-from backend.preprocessing.extract.pdf_text import extract_pdf_pages
 from backend.preprocessing.ingest.index import PdfSource, list_pdfs_in_zip, list_single_pdf
-from backend.preprocessing.ingest.unzip import extract_zip_member
-from backend.preprocessing.utils.paths import get_project_root
+from backend.preprocessing.workers import preprocess_source_task, source_to_payload
+from backend.utils.parallel import resolve_workers, run_parallel
 
 
-def _collection_name(collections: dict, collection_id: str) -> str:
-    info = collections.get(collection_id) or {}
-    return info.get("name") or collection_id
+def _cfg_payload(cfg: PipelineConfig, *, validate: bool) -> dict:
+    return {
+        "parse_version": cfg.parse_version,
+        "output_cleaned": str(cfg.output_cleaned),
+        "pdf_cache": str(cfg.pdf_cache),
+        "validate": validate,
+    }
 
 
-def _resolve_pdf_path(source: PdfSource, cache_dir: Path) -> Path:
-    if source.pdf_path and source.pdf_path.exists():
-        return source.pdf_path
-    if source.zip_path and source.zip_member:
-        return extract_zip_member(
-            source.zip_path,
-            source.zip_member,
-            cache_dir / source.collection_id,
-            decoded_name=source.meta.source_pdf,
-        )
-    raise FileNotFoundError(f"无法定位 PDF: {source.meta.source_pdf}")
-
-
-def process_source(
-    source: PdfSource,
+def _run_sources(
+    sources: list[PdfSource],
     *,
     cfg: PipelineConfig,
     collections: dict,
     writer: PlayWriter,
-    cache_dir: Path,
-) -> bool:
-    try:
-        pdf_path = _resolve_pdf_path(source, cache_dir)
-        extracted = extract_pdf_pages(pdf_path)
-        play = process_extract_result_to_play(
-            extracted,
-            script_id=source.meta.script_id,
-            title=source.meta.title,
-            collection_id=source.collection_id,
-            collection_name=_collection_name(collections, source.collection_id),
-            source_pdf=source.meta.source_pdf,
-            parse_version=cfg.parse_version,
-        )
-        writer.write_play(play)
-        print(f"  OK {source.meta.script_id} {source.meta.title} "
-              f"(blocks={len(play['blocks'])}, quality={play['metadata']['parse_quality']})")
-        return True
-    except Exception as exc:
-        writer.failed.append(
-            {
-                "script_id": source.meta.script_id,
-                "source_pdf": source.meta.source_pdf,
-                "reason": str(exc),
-            }
-        )
-        print(f"  FAIL {source.meta.script_id}: {exc}")
-        return False
+    validate: bool,
+    workers: int,
+) -> int:
+    if not sources:
+        return 0
+    w = resolve_workers(workers)
+    print(f"并行进程数: {w}，待处理 {len(sources)} 个剧本 → {cfg.output_cleaned}")
+    payload = _cfg_payload(cfg, validate=validate)
+    tasks = [
+        {"source": source_to_payload(s), "cfg": payload, "collections": collections}
+        for s in sources
+    ]
+
+    def _progress(done: int, total: int, _result: dict) -> None:
+        if done % 100 == 0 or done == total:
+            print(f"  … 已完成 {done}/{total}")
+
+    results = run_parallel(preprocess_source_task, tasks, workers, progress=_progress)
+    ok = 0
+    for r in results:
+        print(r.get("log", ""))
+        if r.get("catalog_entry"):
+            writer.entries.append(r["catalog_entry"])
+        if r.get("failed"):
+            writer.failed.append(r["failed"])
+        if r.get("ok"):
+            ok += 1
+    return ok
 
 
-def run_from_config(cfg: PipelineConfig, *, catalog_only: bool = False) -> None:
-    root = get_project_root()
+def run_from_config(cfg: PipelineConfig, *, catalog_only: bool = False, workers: int | None = None) -> None:
     collections = load_collections(cfg.collections_config)
     writer = PlayWriter(cfg.output_cleaned, validate=True)
+    w = workers if workers is not None else cfg.workers
 
     if catalog_only:
         for path in sorted((cfg.output_cleaned / "plays").glob("*.json")):
@@ -130,11 +117,14 @@ def run_from_config(cfg: PipelineConfig, *, catalog_only: bool = False) -> None:
             trimmed.extend(by_zip[cid][: cfg.limit_per_zip])
         sources = trimmed
 
-    print(f"待处理 {len(sources)} 个剧本 → {cfg.output_cleaned}")
-    ok = 0
-    for source in sources:
-        if process_source(source, cfg=cfg, collections=collections, writer=writer, cache_dir=cfg.pdf_cache):
-            ok += 1
+    ok = _run_sources(
+        sources,
+        cfg=cfg,
+        collections=collections,
+        writer=writer,
+        validate=True,
+        workers=w,
+    )
 
     writer.write_catalog(
         schema_version=cfg.schema_version,
@@ -156,6 +146,12 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=0, help="限制处理数量")
     parser.add_argument("--catalog-only", action="store_true", help="仅从已有 plays 重建 catalog")
     parser.add_argument("--no-validate", action="store_true", help="跳过 jsonschema 校验")
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=None,
+        help="并行进程数（0=自动 min(CPU,8)，1=串行）",
+    )
     args = parser.parse_args()
 
     cfg = PipelineConfig.load(args.config)
@@ -165,15 +161,23 @@ def main() -> None:
     collections = load_collections(cfg.collections_config)
     writer = PlayWriter(cfg.output_cleaned, validate=not args.no_validate)
     cfg.pdf_cache.mkdir(parents=True, exist_ok=True)
+    workers = args.workers if args.workers is not None else cfg.workers
 
     if args.catalog_only:
-        run_from_config(cfg, catalog_only=True)
+        run_from_config(cfg, catalog_only=True, workers=workers)
         return
 
     if args.pdf:
         pdf_path = args.pdf if args.pdf.is_absolute() else _ROOT / args.pdf
         source = list_single_pdf(pdf_path.resolve(), args.collection_id)
-        process_source(source, cfg=cfg, collections=collections, writer=writer, cache_dir=cfg.pdf_cache)
+        _run_sources(
+            [source],
+            cfg=cfg,
+            collections=collections,
+            writer=writer,
+            validate=not args.no_validate,
+            workers=workers,
+        )
         writer.write_catalog(
             schema_version=cfg.schema_version,
             parse_version=cfg.parse_version,
@@ -188,8 +192,14 @@ def main() -> None:
         if cfg.limit_per_zip or args.limit:
             limit = args.limit or cfg.limit_per_zip
             sources = sources[:limit]
-        for source in sources:
-            process_source(source, cfg=cfg, collections=collections, writer=writer, cache_dir=cfg.pdf_cache)
+        _run_sources(
+            sources,
+            cfg=cfg,
+            collections=collections,
+            writer=writer,
+            validate=not args.no_validate,
+            workers=workers,
+        )
         writer.write_catalog(
             schema_version=cfg.schema_version,
             parse_version=cfg.parse_version,
@@ -197,7 +207,7 @@ def main() -> None:
         )
         return
 
-    run_from_config(cfg)
+    run_from_config(cfg, workers=workers)
 
 
 if __name__ == "__main__":
