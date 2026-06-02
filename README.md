@@ -75,7 +75,7 @@ python backend/analytics/run_analytics.py --all
 ```
 4.前端
 ```bash
-bash scripts/sync_frontend_data.sh
+bash scripts/sync_frontend_data.sh   # 含 catalog、analytics、正文 play.json
 cd frontend
 npm run dev
 ```

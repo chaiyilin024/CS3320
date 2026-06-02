@@ -3,7 +3,15 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 DEST="$ROOT/frontend/public/data"
-mkdir -p "$DEST/analytics/global" "$DEST/analytics/plays"
+mkdir -p "$DEST/analytics/global" "$DEST/analytics/plays" "$DEST/plays"
+
+if [[ -d "$ROOT/artifacts/cleaned/plays" ]]; then
+  for f in "$ROOT/artifacts/cleaned/plays"/*.json; do
+    [[ -f "$f" ]] || continue
+    cp "$f" "$DEST/plays/$(basename "$f")"
+  done
+  echo "OK plays (cleaned 正文)"
+fi
 
 if [[ -f "$ROOT/artifacts/cleaned/catalog.json" ]]; then
   cp "$ROOT/artifacts/cleaned/catalog.json" "$DEST/catalog.json"

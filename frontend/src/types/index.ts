@@ -117,6 +117,23 @@ export interface PlayThemes {
   }>
 }
 
+export interface PlayBlock {
+  block_id: string
+  block_index: number
+  type: string
+  speaker_id?: string | null
+  speaker_name_raw?: string
+  text: string
+  performance_tags?: string[]
+}
+
+export interface PlayCleaned {
+  script_id: string
+  title?: string
+  characters: Array<{ character_id: string; name: string }>
+  blocks: PlayBlock[]
+}
+
 export interface PlayNarrative {
   script_id: string
   title?: string
