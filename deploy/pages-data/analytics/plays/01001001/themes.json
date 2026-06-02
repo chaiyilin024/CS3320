@@ -1,0 +1,166 @@
+{
+  "script_id": "01001001",
+  "title": "空城计",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:27.442141+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "守城攻防",
+      "weight": 0.802,
+      "keywords": [
+        "西城",
+        "再探",
+        "复夺",
+        "街亭",
+        "司马",
+        "大兵",
+        "失守",
+        "马谡",
+        "众将官",
+        "山人",
+        "路径",
+        "咽喉",
+        "四门",
+        "回营",
+        "先帝"
+      ],
+      "keyword_weights": [
+        1.4293,
+        1.4136,
+        0.4019,
+        0.3924,
+        0.2818,
+        0.2637,
+        0.2226,
+        0.1934,
+        0.1787,
+        0.1382,
+        0.1369,
+        0.1369,
+        0.1277,
+        0.1234,
+        0.1101
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "行军调度",
+      "weight": 0.198,
+      "keywords": [
+        "空城",
+        "司马",
+        "实城",
+        "诸葛孔明",
+        "众将官",
+        "四门",
+        "收兵",
+        "琴童",
+        "回营",
+        "无有",
+        "美酒",
+        "坐在",
+        "埋伏",
+        "得令",
+        "你去看看"
+      ],
+      "keyword_weights": [
+        1.2419,
+        0.4113,
+        0.3042,
+        0.1303,
+        0.093,
+        0.0609,
+        0.0469,
+        0.0143,
+        0.0093,
+        0.0078,
+        0.0076,
+        0.0074,
+        0.0066,
+        0.0002,
+        0.0
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.802,
+    0.198
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_98",
+      "block_index": 98,
+      "text_snippet": "那马谡失街亭令人可恨，这时候倒叫我难以调停。",
+      "context_snippet": "（二童儿引诸葛亮同上。）  /  » 那马谡失街亭令人可恨，这时候倒叫我难以调停。",
+      "speaker_id": "c_诸葛亮",
+      "speaker_name": "诸葛亮",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_85",
+      "block_index": 85,
+      "text_snippet": "我用兵数十年从来谨慎，",
+      "context_snippet": "天呀，天哪！汉室兴败就在我这空城一计也！  /  » 我用兵数十年从来谨慎，  /  悔不该差马谡无用之人。",
+      "speaker_id": "c_诸葛亮",
+      "speaker_name": "诸葛亮",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_84",
+      "block_index": 84,
+      "text_snippet": "天呀，天哪！汉室兴败就在我这空城一计也！",
+      "context_snippet": "遵命。  /  » 天呀，天哪！汉室兴败就在我这空城一计也！  /  我用兵数十年从来谨慎，",
+      "speaker_id": "c_诸葛亮",
+      "speaker_name": "诸葛亮",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_218",
+      "block_index": 218,
+      "text_snippet": "呸呸！我说是实城，你们说是空城。那赵云从天上掉下来的不成？",
+      "context_snippet": "（四龙套、司马懿、司马师、司马昭同上。）  /  » 呸呸！我说是实城，你们说是空城。那赵云从天上掉下来的不成？  /  我等哪里知道。",
+      "speaker_id": "c_司马懿",
+      "speaker_name": "司马懿",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 1.0,
+    "labeled_weight": 1.0,
+    "fallback_weight": 0.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "strong": 2
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "守城攻防",
+        "tier": "strong",
+        "label_score": 23.0,
+        "keyword_signal": 1.0,
+        "weight": 0.802,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "行军调度",
+        "tier": "strong",
+        "label_score": 15.0,
+        "keyword_signal": 1.0,
+        "weight": 0.198,
+        "issues": []
+      }
+    ],
+    "issues": []
+  }
+}

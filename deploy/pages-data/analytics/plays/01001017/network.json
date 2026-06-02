@@ -1,0 +1,592 @@
+{
+  "script_id": "01001017",
+  "title": "清官册",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_寇准",
+      "name": "寇准",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 11,
+      "weighted_degree": 202.0,
+      "betweenness": 0.2455,
+      "weighted_betweenness": 0.8727,
+      "closeness": 1.0,
+      "eigenvector": 0.6535,
+      "community_id": 0
+    },
+    {
+      "id": "c_潘洪",
+      "name": "潘洪",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 81.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.2909,
+      "closeness": 0.5789,
+      "eigenvector": 0.3706,
+      "community_id": 1
+    },
+    {
+      "id": "c_马牌子",
+      "name": "马牌子",
+      "hangdang": "丑",
+      "hangdang_coarse": "丑",
+      "is_main": true,
+      "degree": 10,
+      "weighted_degree": 80.0,
+      "betweenness": 0.1273,
+      "weighted_betweenness": 0.2,
+      "closeness": 0.9167,
+      "eigenvector": 0.2832,
+      "community_id": 1
+    },
+    {
+      "id": "c_太监",
+      "name": "太监",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 7,
+      "weighted_degree": 62.0,
+      "betweenness": 0.0455,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.7333,
+      "eigenvector": 0.3916,
+      "community_id": 0
+    },
+    {
+      "id": "c_赵德芳",
+      "name": "赵德芳",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 6,
+      "weighted_degree": 60.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6875,
+      "eigenvector": 0.3848,
+      "community_id": 0
+    },
+    {
+      "id": "c_驿丞官",
+      "name": "驿丞官",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 6,
+      "weighted_degree": 26.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6875,
+      "eigenvector": 0.1054,
+      "community_id": 1
+    },
+    {
+      "id": "c_夫人",
+      "name": "夫人",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": false,
+      "degree": 5,
+      "weighted_degree": 23.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6471,
+      "eigenvector": 0.1396,
+      "community_id": 0
+    },
+    {
+      "id": "c_四青袍",
+      "name": "四青袍",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 6,
+      "weighted_degree": 22.0,
+      "betweenness": 0.0182,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6875,
+      "eigenvector": 0.1004,
+      "community_id": 2
+    },
+    {
+      "id": "c_宋王",
+      "name": "宋王",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 6,
+      "weighted_degree": 16.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6875,
+      "eigenvector": 0.091,
+      "community_id": 0
+    },
+    {
+      "id": "c_家院",
+      "name": "家院",
+      "hangdang": "老旦",
+      "hangdang_coarse": "旦",
+      "is_main": false,
+      "degree": 9,
+      "weighted_degree": 15.0,
+      "betweenness": 0.0727,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.8462,
+      "eigenvector": 0.0541,
+      "community_id": 1
+    },
+    {
+      "id": "c_金牌官",
+      "name": "金牌官",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 5,
+      "weighted_degree": 11.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6471,
+      "eigenvector": 0.0438,
+      "community_id": 2
+    },
+    {
+      "id": "c_衙役",
+      "name": "衙役",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 2,
+      "weighted_degree": 2.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.55,
+      "eigenvector": 0.0113,
+      "community_id": 3
+    }
+  ],
+  "links": [
+    {
+      "source": "c_太监",
+      "target": "c_寇准",
+      "weight": 51.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 24,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_寇准",
+      "target": "c_赵德芳",
+      "weight": 50.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 24,
+      "normalized_weight": 0.9804
+    },
+    {
+      "source": "c_潘洪",
+      "target": "c_马牌子",
+      "weight": 43.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 21,
+      "normalized_weight": 0.8431
+    },
+    {
+      "source": "c_寇准",
+      "target": "c_潘洪",
+      "weight": 33.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 16,
+      "normalized_weight": 0.6471
+    },
+    {
+      "source": "c_夫人",
+      "target": "c_寇准",
+      "weight": 19.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 9,
+      "normalized_weight": 0.3725
+    },
+    {
+      "source": "c_马牌子",
+      "target": "c_驿丞官",
+      "weight": 15.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 7,
+      "normalized_weight": 0.2941
+    },
+    {
+      "source": "c_宋王",
+      "target": "c_寇准",
+      "weight": 11.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 5,
+      "normalized_weight": 0.2157
+    },
+    {
+      "source": "c_寇准",
+      "target": "c_马牌子",
+      "weight": 11.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.2157
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_寇准",
+      "weight": 10.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.1961
+    },
+    {
+      "source": "c_寇准",
+      "target": "c_驿丞官",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.1373
+    },
+    {
+      "source": "c_太监",
+      "target": "c_赵德芳",
+      "weight": 6.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.1176
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_潘洪",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.098
+    },
+    {
+      "source": "c_寇准",
+      "target": "c_金牌官",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.098
+    },
+    {
+      "source": "c_家院",
+      "target": "c_寇准",
+      "weight": 4.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0784
+    },
+    {
+      "source": "c_家院",
+      "target": "c_马牌子",
+      "weight": 4.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0784
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_金牌官",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0588
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_马牌子",
+      "weight": 2.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0392
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_夫人",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_家院",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_太监",
+      "target": "c_宋王",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_太监",
+      "target": "c_家院",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_太监",
+      "target": "c_衙役",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_太监",
+      "target": "c_马牌子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_太监",
+      "target": "c_驿丞官",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_夫人",
+      "target": "c_家院",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_夫人",
+      "target": "c_金牌官",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_夫人",
+      "target": "c_马牌子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_宋王",
+      "target": "c_家院",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_宋王",
+      "target": "c_赵德芳",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_宋王",
+      "target": "c_马牌子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_宋王",
+      "target": "c_驿丞官",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_家院",
+      "target": "c_赵德芳",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_家院",
+      "target": "c_金牌官",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_家院",
+      "target": "c_驿丞官",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_寇准",
+      "target": "c_衙役",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_赵德芳",
+      "target": "c_马牌子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_赵德芳",
+      "target": "c_驿丞官",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    },
+    {
+      "source": "c_金牌官",
+      "target": "c_马牌子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0196
+    }
+  ],
+  "metrics": {
+    "node_count": 12,
+    "edge_count": 38,
+    "density": 0.5758,
+    "avg_clustering": 0.8581,
+    "avg_degree": 6.33,
+    "avg_weighted_degree": 50.0,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.0801,
+    "modularity": 0.2009,
+    "assortativity_hangdang": -0.1197,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 8,
+      "density": 0.8,
+      "avg_clustering": 0.2607,
+      "modularity": 0.212
+    }
+  }
+}

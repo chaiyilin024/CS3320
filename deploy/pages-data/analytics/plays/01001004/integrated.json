@@ -1,0 +1,169 @@
+{
+  "script_id": "01001004",
+  "title": "乌盆计【后本】",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 0.933,
+      "character_id": "c_张别古",
+      "character_name": "张别古",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "张别古 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.6,
+      "character_id": "c_包拯",
+      "character_name": "包拯",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "包拯 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.533,
+      "character_id": "c_刘世昌",
+      "character_name": "刘世昌",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "刘世昌 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.4,
+      "character_id": "c_二衙役",
+      "character_name": "二衙役",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "二衙役 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_赵大",
+      "character_name": "赵大",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "赵大 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.648,
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「公案侠义」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "丑",
+      "peak_block_index": 0,
+      "evidence": "丑 行当在 block 0 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_张别古",
+      "character_name": "张别古",
+      "evidence": "张别古 为关系网络核心（度=4）"
+    }
+  ],
+  "summary_insights": [
+    "《乌盆计【后本】》共 5 位主要人物、8 条关系边，网络密度 0.80。",
+    "主题构成以「公案侠义、神话天命」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [242, 305]。",
+    "张别古 与主题「公案侠义」关联最强（0.933）。",
+    "行当以老生为主（2 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_张别古",
+      "character_name": "张别古",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.933
+    },
+    {
+      "character_id": "c_包拯",
+      "character_name": "包拯",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.6
+    },
+    {
+      "character_id": "c_刘世昌",
+      "character_name": "刘世昌",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.533
+    },
+    {
+      "character_id": "c_二衙役",
+      "character_name": "二衙役",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.4
+    },
+    {
+      "character_id": "c_赵大",
+      "character_name": "赵大",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.333
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        79
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        80,
+        148
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        149,
+        241
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        242,
+        305
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        306,
+        368
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+{
+  "script_id": "01001013",
+  "title": "天水关",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_诸葛亮",
+      "name": "诸葛亮",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 9,
+      "weighted_degree": 63.0,
+      "betweenness": 0.103,
+      "weighted_betweenness": 0.6545,
+      "closeness": 0.8462,
+      "eigenvector": 0.5181,
+      "community_id": 0
+    },
+    {
+      "id": "c_姜维",
+      "name": "姜维",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 8,
+      "weighted_degree": 45.0,
+      "betweenness": 0.103,
+      "weighted_betweenness": 0.3273,
+      "closeness": 0.7857,
+      "eigenvector": 0.3806,
+      "community_id": 2
+    },
+    {
+      "id": "c_张苞",
+      "name": "张苞",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 8,
+      "weighted_degree": 39.0,
+      "betweenness": 0.0061,
+      "weighted_betweenness": 0.2364,
+      "closeness": 0.7857,
+      "eigenvector": 0.3289,
+      "community_id": 1
+    },
+    {
+      "id": "c_赵云",
+      "name": "赵云",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 8,
+      "weighted_degree": 39.0,
+      "betweenness": 0.0061,
+      "weighted_betweenness": 0.1818,
+      "closeness": 0.7857,
+      "eigenvector": 0.3799,
+      "community_id": 0
+    },
+    {
+      "id": "c_马遵",
+      "name": "马遵",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 35.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.1818,
+      "closeness": 0.55,
+      "eigenvector": 0.2996,
+      "community_id": 2
+    },
+    {
+      "id": "c_魏延",
+      "name": "魏延",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 10,
+      "weighted_degree": 32.0,
+      "betweenness": 0.1939,
+      "weighted_betweenness": 0.0545,
+      "closeness": 0.9167,
+      "eigenvector": 0.2575,
+      "community_id": 1
+    },
+    {
+      "id": "c_刘禅",
+      "name": "刘禅",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 8,
+      "weighted_degree": 29.0,
+      "betweenness": 0.0667,
+      "weighted_betweenness": 0.1818,
+      "closeness": 0.7857,
+      "eigenvector": 0.2911,
+      "community_id": 0
+    },
+    {
+      "id": "c_马岱",
+      "name": "马岱",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 8,
+      "weighted_degree": 25.0,
+      "betweenness": 0.0061,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.7857,
+      "eigenvector": 0.1913,
+      "community_id": 1
+    },
+    {
+      "id": "c_关兴",
+      "name": "关兴",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 8,
+      "weighted_degree": 25.0,
+      "betweenness": 0.0061,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.7857,
+      "eigenvector": 0.1977,
+      "community_id": 1
+    },
+    {
+      "id": "c_太监",
+      "name": "太监",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 7,
+      "weighted_degree": 11.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.7333,
+      "eigenvector": 0.0972,
+      "community_id": 0
+    },
+    {
+      "id": "c_报子",
+      "name": "报子",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 3,
+      "weighted_degree": 9.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.55,
+      "eigenvector": 0.0743,
+      "community_id": 2
+    },
+    {
+      "id": "c_内侍",
+      "name": "内侍",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 2,
+      "weighted_degree": 6.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.5,
+      "eigenvector": 0.052,
+      "community_id": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "c_姜维",
+      "target": "c_马遵",
+      "weight": 28.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 13,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_刘禅",
+      "target": "c_诸葛亮",
+      "weight": 18.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 8,
+      "normalized_weight": 0.6429
+    },
+    {
+      "source": "c_诸葛亮",
+      "target": "c_赵云",
+      "weight": 18.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 8,
+      "normalized_weight": 0.6429
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_魏延",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.3214
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_赵云",
+      "weight": 8.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.2857
+    },
+    {
+      "source": "c_关兴",
+      "target": "c_张苞",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.25
+    },
+    {
+      "source": "c_关兴",
+      "target": "c_马岱",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.25
+    },
+    {
+      "source": "c_姜维",
+      "target": "c_诸葛亮",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.25
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_诸葛亮",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.25
+    },
+    {
+      "source": "c_马岱",
+      "target": "c_魏延",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.25
+    },
+    {
+      "source": "c_报子",
+      "target": "c_马遵",
+      "weight": 6.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.2143
+    },
+    {
+      "source": "c_内侍",
+      "target": "c_刘禅",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.1786
+    },
+    {
+      "source": "c_太监",
+      "target": "c_赵云",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.1786
+    },
+    {
+      "source": "c_诸葛亮",
+      "target": "c_魏延",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.1786
+    },
+    {
+      "source": "c_关兴",
+      "target": "c_诸葛亮",
+      "weight": 3.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.1071
+    },
+    {
+      "source": "c_关兴",
+      "target": "c_魏延",
+      "weight": 3.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.1071
+    },
+    {
+      "source": "c_姜维",
+      "target": "c_张苞",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.1071
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_马岱",
+      "weight": 3.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.1071
+    },
+    {
+      "source": "c_诸葛亮",
+      "target": "c_马岱",
+      "weight": 3.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.1071
+    },
+    {
+      "source": "c_关兴",
+      "target": "c_赵云",
+      "weight": 2.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0714
+    },
+    {
+      "source": "c_姜维",
+      "target": "c_报子",
+      "weight": 2.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0714
+    },
+    {
+      "source": "c_姜维",
+      "target": "c_魏延",
+      "weight": 2.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0714
+    },
+    {
+      "source": "c_赵云",
+      "target": "c_马岱",
+      "weight": 2.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0714
+    },
+    {
+      "source": "c_赵云",
+      "target": "c_魏延",
+      "weight": 2.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0714
+    },
+    {
+      "source": "c_关兴",
+      "target": "c_刘禅",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_关兴",
+      "target": "c_太监",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_关兴",
+      "target": "c_姜维",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_内侍",
+      "target": "c_诸葛亮",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_刘禅",
+      "target": "c_太监",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_刘禅",
+      "target": "c_张苞",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_刘禅",
+      "target": "c_赵云",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_刘禅",
+      "target": "c_马岱",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_刘禅",
+      "target": "c_魏延",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_太监",
+      "target": "c_张苞",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_太监",
+      "target": "c_诸葛亮",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_太监",
+      "target": "c_马岱",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_太监",
+      "target": "c_魏延",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_姜维",
+      "target": "c_赵云",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_姜维",
+      "target": "c_马岱",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_报子",
+      "target": "c_魏延",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    },
+    {
+      "source": "c_马遵",
+      "target": "c_魏延",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0357
+    }
+  ],
+  "metrics": {
+    "node_count": 12,
+    "edge_count": 41,
+    "density": 0.6212,
+    "avg_clustering": 0.8781,
+    "avg_degree": 6.83,
+    "avg_weighted_degree": 29.83,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.1042,
+    "modularity": 0.3346,
+    "assortativity_hangdang": -0.1662,
+    "main_subgraph": {
+      "node_count": 6,
+      "edge_count": 10,
+      "density": 0.6667,
+      "avg_clustering": 0.1241,
+      "modularity": 0.3435
+    }
+  }
+}

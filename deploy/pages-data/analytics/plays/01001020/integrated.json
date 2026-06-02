@@ -1,0 +1,153 @@
+{
+  "script_id": "01001020",
+  "title": "宋江闹院",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_宋江",
+      "character_name": "宋江",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "宋江 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.933,
+      "character_id": "c_阎惜姣",
+      "character_name": "阎惜姣",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "阎惜姣 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.867,
+      "character_id": "c_张文远",
+      "character_name": "张文远",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "张文远 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_众人",
+      "character_name": "众人",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "众人 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 1.0,
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「其他情节」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 15,
+      "evidence": "老生 行当在 block 15 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_阎惜姣",
+      "character_name": "阎惜姣",
+      "evidence": "阎惜姣 为关系网络核心（度=3）"
+    }
+  ],
+  "summary_insights": [
+    "《宋江闹院》共 4 位主要人物、6 条关系边，网络密度 1.00。",
+    "主题构成以「其他情节」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [128, 161]。",
+    "宋江 与主题「其他情节」关联最强（1.0）。",
+    "行当以老生为主（1 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_宋江",
+      "character_name": "宋江",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_阎惜姣",
+      "character_name": "阎惜姣",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.933
+    },
+    {
+      "character_id": "c_张文远",
+      "character_name": "张文远",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.867
+    },
+    {
+      "character_id": "c_众人",
+      "character_name": "众人",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.333
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        12,
+        67
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        68,
+        117
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        118,
+        127
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        128,
+        161
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        162,
+        383
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    }
+  ]
+}

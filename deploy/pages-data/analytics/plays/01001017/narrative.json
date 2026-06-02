@@ -1,0 +1,3225 @@
+{
+  "script_id": "01001017",
+  "title": "清官册",
+  "plot_stages": [
+    {
+      "stage": "铺垫",
+      "label": "引入·激战",
+      "block_range": [
+        0,
+        97
+      ],
+      "summary": "牌子、金牌、进京、但愿、青袍（以念为主 62%）"
+    },
+    {
+      "stage": "发展",
+      "label": "推进",
+      "block_range": [
+        98,
+        271
+      ],
+      "summary": "审问、进京、官事、圣旨、公公（以念为主 65%）"
+    },
+    {
+      "stage": "冲突",
+      "label": "对峙·对峙",
+      "block_range": [
+        272,
+        281
+      ],
+      "summary": "御史、圣旨、胡儿、犯官、告进（以念为主 80%）"
+    },
+    {
+      "stage": "高潮",
+      "label": "激战·唱抒",
+      "block_range": [
+        282,
+        332
+      ],
+      "summary": "杨老、老贼、保官、胡儿、擂台（以念为主 58%）"
+    },
+    {
+      "stage": "结局",
+      "label": "收束·低谷",
+      "block_range": [
+        333,
+        365
+      ],
+      "summary": "青袍、同谋、铁链、老贼、口供（以念为主 61%）"
+    }
+  ],
+  "rhythm_series": [
+    {
+      "block_index": 0,
+      "window": 20,
+      "dialogue_density": 0.6364,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2727,
+      "emotion_score": 0.74,
+      "tension_score": 0.2384
+    },
+    {
+      "block_index": 13,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.25,
+      "emotion_score": 0.74,
+      "tension_score": 0.2293
+    },
+    {
+      "block_index": 14,
+      "window": 20,
+      "dialogue_density": 0.6923,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2308,
+      "emotion_score": 0.74,
+      "tension_score": 0.255
+    },
+    {
+      "block_index": 15,
+      "window": 20,
+      "dialogue_density": 0.6429,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.74,
+      "tension_score": 0.2698
+    },
+    {
+      "block_index": 16,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2667,
+      "emotion_score": 0.74,
+      "tension_score": 0.2627
+    },
+    {
+      "block_index": 17,
+      "window": 20,
+      "dialogue_density": 0.625,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.3125,
+      "emotion_score": 0.74,
+      "tension_score": 0.2752
+    },
+    {
+      "block_index": 18,
+      "window": 20,
+      "dialogue_density": 0.6471,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2941,
+      "emotion_score": 0.74,
+      "tension_score": 0.2685
+    },
+    {
+      "block_index": 19,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2778,
+      "emotion_score": 0.74,
+      "tension_score": 0.2682
+    },
+    {
+      "block_index": 20,
+      "window": 20,
+      "dialogue_density": 0.6316,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.3158,
+      "emotion_score": 0.74,
+      "tension_score": 0.2785
+    },
+    {
+      "block_index": 21,
+      "window": 20,
+      "dialogue_density": 0.65,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.3,
+      "emotion_score": 0.7667,
+      "tension_score": 0.2883
+    },
+    {
+      "block_index": 22,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.6714,
+      "tension_score": 0.2448
+    },
+    {
+      "block_index": 23,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6,
+      "tension_score": 0.2019
+    },
+    {
+      "block_index": 24,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6,
+      "tension_score": 0.2352
+    },
+    {
+      "block_index": 25,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.6,
+      "tension_score": 0.221
+    },
+    {
+      "block_index": 26,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.6,
+      "tension_score": 0.221
+    },
+    {
+      "block_index": 27,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5571,
+      "tension_score": 0.2038
+    },
+    {
+      "block_index": 28,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.42,
+      "tension_score": 0.2463
+    },
+    {
+      "block_index": 29,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.42,
+      "tension_score": 0.2463
+    },
+    {
+      "block_index": 30,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.42,
+      "tension_score": 0.2415
+    },
+    {
+      "block_index": 31,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.42,
+      "tension_score": 0.2082
+    },
+    {
+      "block_index": 32,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.42,
+      "tension_score": 0.2082
+    },
+    {
+      "block_index": 33,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.42,
+      "tension_score": 0.2082
+    },
+    {
+      "block_index": 34,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.42,
+      "tension_score": 0.2177
+    },
+    {
+      "block_index": 35,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.42,
+      "tension_score": 0.2225
+    },
+    {
+      "block_index": 36,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.42,
+      "tension_score": 0.2082
+    },
+    {
+      "block_index": 37,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.42,
+      "tension_score": 0.2225
+    },
+    {
+      "block_index": 38,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.42,
+      "tension_score": 0.2082
+    },
+    {
+      "block_index": 39,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.42,
+      "tension_score": 0.2225
+    },
+    {
+      "block_index": 40,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.42,
+      "tension_score": 0.2225
+    },
+    {
+      "block_index": 41,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5,
+      "tension_score": 0.1762
+    },
+    {
+      "block_index": 42,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.42,
+      "tension_score": 0.2225
+    },
+    {
+      "block_index": 43,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.1905
+    },
+    {
+      "block_index": 44,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6333,
+      "tension_score": 0.2438
+    },
+    {
+      "block_index": 45,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.6333,
+      "tension_score": 0.2248
+    },
+    {
+      "block_index": 46,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.6333,
+      "tension_score": 0.2248
+    },
+    {
+      "block_index": 47,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.6333,
+      "tension_score": 0.239
+    },
+    {
+      "block_index": 48,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.6333,
+      "tension_score": 0.239
+    },
+    {
+      "block_index": 49,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.381,
+      "emotion_score": 0.6333,
+      "tension_score": 0.22
+    },
+    {
+      "block_index": 50,
+      "window": 20,
+      "dialogue_density": 0.2857,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.381,
+      "emotion_score": 0.6333,
+      "tension_score": 0.22
+    },
+    {
+      "block_index": 54,
+      "window": 20,
+      "dialogue_density": 0.2381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.4286,
+      "emotion_score": 0.6333,
+      "tension_score": 0.2343
+    },
+    {
+      "block_index": 58,
+      "window": 20,
+      "dialogue_density": 0.2381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.4286,
+      "emotion_score": 0.6333,
+      "tension_score": 0.2676
+    },
+    {
+      "block_index": 59,
+      "window": 20,
+      "dialogue_density": 0.2381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.4286,
+      "emotion_score": 0.6333,
+      "tension_score": 0.2676
+    },
+    {
+      "block_index": 60,
+      "window": 20,
+      "dialogue_density": 0.2381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.4286,
+      "emotion_score": 0.6333,
+      "tension_score": 0.3057
+    },
+    {
+      "block_index": 65,
+      "window": 20,
+      "dialogue_density": 0.2857,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.381,
+      "emotion_score": 0.7,
+      "tension_score": 0.3514
+    },
+    {
+      "block_index": 66,
+      "window": 20,
+      "dialogue_density": 0.2857,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.381,
+      "emotion_score": 0.7,
+      "tension_score": 0.3514
+    },
+    {
+      "block_index": 68,
+      "window": 20,
+      "dialogue_density": 0.2857,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.381,
+      "emotion_score": 0.7,
+      "tension_score": 0.38
+    },
+    {
+      "block_index": 69,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.7,
+      "tension_score": 0.399
+    },
+    {
+      "block_index": 70,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.7,
+      "tension_score": 0.399
+    },
+    {
+      "block_index": 71,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.7,
+      "tension_score": 0.3848
+    },
+    {
+      "block_index": 73,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.58,
+      "tension_score": 0.3368
+    },
+    {
+      "block_index": 74,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.5,
+      "tension_score": 0.319
+    },
+    {
+      "block_index": 75,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5,
+      "tension_score": 0.3048
+    },
+    {
+      "block_index": 76,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5,
+      "tension_score": 0.3048
+    },
+    {
+      "block_index": 77,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.5,
+      "tension_score": 0.319
+    },
+    {
+      "block_index": 78,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5,
+      "tension_score": 0.3048
+    },
+    {
+      "block_index": 79,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5,
+      "tension_score": 0.3
+    },
+    {
+      "block_index": 80,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.2857
+    },
+    {
+      "block_index": 81,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.2857
+    },
+    {
+      "block_index": 82,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.2857
+    },
+    {
+      "block_index": 83,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.2857
+    },
+    {
+      "block_index": 84,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.2857
+    },
+    {
+      "block_index": 85,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.2857
+    },
+    {
+      "block_index": 87,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.2857
+    },
+    {
+      "block_index": 88,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.2857
+    },
+    {
+      "block_index": 89,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.4371,
+      "tension_score": 0.3251
+    },
+    {
+      "block_index": 90,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5476,
+      "tension_score": 0.319
+    },
+    {
+      "block_index": 91,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.5476,
+      "tension_score": 0.3333
+    },
+    {
+      "block_index": 92,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.5508,
+      "tension_score": 0.3346
+    },
+    {
+      "block_index": 93,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.381,
+      "emotion_score": 0.5508,
+      "tension_score": 0.3489
+    },
+    {
+      "block_index": 94,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.381,
+      "emotion_score": 0.5508,
+      "tension_score": 0.3203
+    },
+    {
+      "block_index": 95,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.4286,
+      "emotion_score": 0.6167,
+      "tension_score": 0.3229
+    },
+    {
+      "block_index": 96,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.381,
+      "emotion_score": 0.6167,
+      "tension_score": 0.3086
+    },
+    {
+      "block_index": 97,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.381,
+      "emotion_score": 0.68,
+      "tension_score": 0.3739
+    },
+    {
+      "block_index": 98,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.381,
+      "emotion_score": 0.68,
+      "tension_score": 0.3739
+    },
+    {
+      "block_index": 102,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.381,
+      "emotion_score": 0.68,
+      "tension_score": 0.3739
+    },
+    {
+      "block_index": 103,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.381,
+      "emotion_score": 0.7448,
+      "tension_score": 0.3665
+    },
+    {
+      "block_index": 107,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.381,
+      "emotion_score": 0.7545,
+      "tension_score": 0.4037
+    },
+    {
+      "block_index": 108,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.381,
+      "emotion_score": 0.7545,
+      "tension_score": 0.4371
+    },
+    {
+      "block_index": 114,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.381,
+      "emotion_score": 0.7545,
+      "tension_score": 0.4704
+    },
+    {
+      "block_index": 115,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.7545,
+      "tension_score": 0.4561
+    },
+    {
+      "block_index": 116,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.7,
+      "tension_score": 0.4343
+    },
+    {
+      "block_index": 117,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.7,
+      "tension_score": 0.42
+    },
+    {
+      "block_index": 118,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.74,
+      "tension_score": 0.417
+    },
+    {
+      "block_index": 125,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.74,
+      "tension_score": 0.4074
+    },
+    {
+      "block_index": 126,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.8,
+      "tension_score": 0.4314
+    },
+    {
+      "block_index": 127,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.8,
+      "tension_score": 0.4505
+    },
+    {
+      "block_index": 139,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.7667,
+      "tension_score": 0.4371
+    },
+    {
+      "block_index": 140,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.7667,
+      "tension_score": 0.4276
+    },
+    {
+      "block_index": 141,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.75,
+      "tension_score": 0.421
+    },
+    {
+      "block_index": 142,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.75,
+      "tension_score": 0.4067
+    },
+    {
+      "block_index": 143,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.75,
+      "tension_score": 0.4067
+    },
+    {
+      "block_index": 144,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.6619,
+      "tension_score": 0.3571
+    },
+    {
+      "block_index": 145,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.6619,
+      "tension_score": 0.3571
+    },
+    {
+      "block_index": 146,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.5686,
+      "tension_score": 0.2798
+    },
+    {
+      "block_index": 147,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.5686,
+      "tension_score": 0.275
+    },
+    {
+      "block_index": 148,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.5743,
+      "tension_score": 0.263
+    },
+    {
+      "block_index": 149,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.18,
+      "tension_score": 0.3613
+    },
+    {
+      "block_index": 150,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.22,
+      "tension_score": 0.3596
+    },
+    {
+      "block_index": 151,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.35,
+      "tension_score": 0.3076
+    },
+    {
+      "block_index": 152,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.35,
+      "tension_score": 0.3219
+    },
+    {
+      "block_index": 153,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.35,
+      "tension_score": 0.3219
+    },
+    {
+      "block_index": 154,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3135
+    },
+    {
+      "block_index": 155,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3088
+    },
+    {
+      "block_index": 156,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3088
+    },
+    {
+      "block_index": 157,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3135
+    },
+    {
+      "block_index": 158,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3278
+    },
+    {
+      "block_index": 159,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3278
+    },
+    {
+      "block_index": 160,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3278
+    },
+    {
+      "block_index": 161,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3278
+    },
+    {
+      "block_index": 163,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6083,
+      "tension_score": 0.3338
+    },
+    {
+      "block_index": 164,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6429,
+      "tension_score": 0.3476
+    },
+    {
+      "block_index": 165,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6919,
+      "tension_score": 0.3672
+    },
+    {
+      "block_index": 166,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.755,
+      "tension_score": 0.3925
+    },
+    {
+      "block_index": 168,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.755,
+      "tension_score": 0.3925
+    },
+    {
+      "block_index": 169,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.755,
+      "tension_score": 0.3925
+    },
+    {
+      "block_index": 170,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.755,
+      "tension_score": 0.3925
+    },
+    {
+      "block_index": 171,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.7,
+      "tension_score": 0.3705
+    },
+    {
+      "block_index": 172,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.7545,
+      "tension_score": 0.3923
+    },
+    {
+      "block_index": 173,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.7545,
+      "tension_score": 0.378
+    },
+    {
+      "block_index": 174,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.74,
+      "tension_score": 0.3674
+    },
+    {
+      "block_index": 175,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.74,
+      "tension_score": 0.3531
+    },
+    {
+      "block_index": 176,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.7545,
+      "tension_score": 0.359
+    },
+    {
+      "block_index": 177,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.7545,
+      "tension_score": 0.3447
+    },
+    {
+      "block_index": 178,
+      "window": 20,
+      "dialogue_density": 0.9048,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.7545,
+      "tension_score": 0.3447
+    },
+    {
+      "block_index": 179,
+      "window": 20,
+      "dialogue_density": 0.9048,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.7545,
+      "tension_score": 0.3447
+    },
+    {
+      "block_index": 180,
+      "window": 20,
+      "dialogue_density": 0.9048,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.7545,
+      "tension_score": 0.3399
+    },
+    {
+      "block_index": 181,
+      "window": 20,
+      "dialogue_density": 0.9524,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.7252,
+      "tension_score": 0.3139
+    },
+    {
+      "block_index": 182,
+      "window": 20,
+      "dialogue_density": 0.9048,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.6786,
+      "tension_score": 0.2952
+    },
+    {
+      "block_index": 184,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.6786,
+      "tension_score": 0.2952
+    },
+    {
+      "block_index": 185,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.6786,
+      "tension_score": 0.2952
+    },
+    {
+      "block_index": 186,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.6152,
+      "tension_score": 0.2842
+    },
+    {
+      "block_index": 187,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.585,
+      "tension_score": 0.2721
+    },
+    {
+      "block_index": 188,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5,
+      "tension_score": 0.2524
+    },
+    {
+      "block_index": 189,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5,
+      "tension_score": 0.2571
+    },
+    {
+      "block_index": 190,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5,
+      "tension_score": 0.2714
+    },
+    {
+      "block_index": 191,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4524,
+      "tension_score": 0.2905
+    },
+    {
+      "block_index": 192,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4524,
+      "tension_score": 0.2905
+    },
+    {
+      "block_index": 193,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4371,
+      "tension_score": 0.2966
+    },
+    {
+      "block_index": 195,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4371,
+      "tension_score": 0.2966
+    },
+    {
+      "block_index": 196,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4371,
+      "tension_score": 0.2966
+    },
+    {
+      "block_index": 197,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4371,
+      "tension_score": 0.2966
+    },
+    {
+      "block_index": 198,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4371,
+      "tension_score": 0.2966
+    },
+    {
+      "block_index": 199,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.35,
+      "tension_score": 0.2648
+    },
+    {
+      "block_index": 200,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4371,
+      "tension_score": 0.1966
+    },
+    {
+      "block_index": 202,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5,
+      "tension_score": 0.1714
+    },
+    {
+      "block_index": 203,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5,
+      "tension_score": 0.1905
+    },
+    {
+      "block_index": 205,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5,
+      "tension_score": 0.1571
+    },
+    {
+      "block_index": 206,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5,
+      "tension_score": 0.1381
+    },
+    {
+      "block_index": 207,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.6333,
+      "tension_score": 0.2248
+    },
+    {
+      "block_index": 208,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5571,
+      "tension_score": 0.1943
+    },
+    {
+      "block_index": 209,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5571,
+      "tension_score": 0.1943
+    },
+    {
+      "block_index": 210,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5571,
+      "tension_score": 0.18
+    },
+    {
+      "block_index": 211,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5571,
+      "tension_score": 0.18
+    },
+    {
+      "block_index": 212,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5571,
+      "tension_score": 0.18
+    },
+    {
+      "block_index": 213,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5,
+      "tension_score": 0.1905
+    },
+    {
+      "block_index": 214,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.5,
+      "tension_score": 0.2095
+    },
+    {
+      "block_index": 215,
+      "window": 20,
+      "dialogue_density": 0.9048,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.5629,
+      "tension_score": 0.268
+    },
+    {
+      "block_index": 216,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5629,
+      "tension_score": 0.2823
+    },
+    {
+      "block_index": 217,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5629,
+      "tension_score": 0.2823
+    },
+    {
+      "block_index": 218,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.5629,
+      "tension_score": 0.2823
+    },
+    {
+      "block_index": 219,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5629,
+      "tension_score": 0.2966
+    },
+    {
+      "block_index": 220,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5629,
+      "tension_score": 0.2966
+    },
+    {
+      "block_index": 221,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5629,
+      "tension_score": 0.2918
+    },
+    {
+      "block_index": 222,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.5686,
+      "tension_score": 0.2941
+    },
+    {
+      "block_index": 223,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.5,
+      "tension_score": 0.281
+    },
+    {
+      "block_index": 224,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.3933,
+      "tension_score": 0.3236
+    },
+    {
+      "block_index": 225,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.3933,
+      "tension_score": 0.3236
+    },
+    {
+      "block_index": 226,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.3933,
+      "tension_score": 0.3236
+    },
+    {
+      "block_index": 227,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.3933,
+      "tension_score": 0.3093
+    },
+    {
+      "block_index": 228,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.2,
+      "tension_score": 0.3867
+    },
+    {
+      "block_index": 229,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.2333,
+      "tension_score": 0.3733
+    },
+    {
+      "block_index": 230,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.2333,
+      "tension_score": 0.3876
+    },
+    {
+      "block_index": 231,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.2333,
+      "tension_score": 0.3876
+    },
+    {
+      "block_index": 232,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.2333,
+      "tension_score": 0.3876
+    },
+    {
+      "block_index": 233,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.2333,
+      "tension_score": 0.3876
+    },
+    {
+      "block_index": 234,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.85,
+      "tension_score": 0.421
+    },
+    {
+      "block_index": 235,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.85,
+      "tension_score": 0.421
+    },
+    {
+      "block_index": 236,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.8,
+      "tension_score": 0.4057
+    },
+    {
+      "block_index": 237,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.6067,
+      "tension_score": 0.3141
+    },
+    {
+      "block_index": 238,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6067,
+      "tension_score": 0.3284
+    },
+    {
+      "block_index": 239,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6067,
+      "tension_score": 0.3284
+    },
+    {
+      "block_index": 240,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6067,
+      "tension_score": 0.3284
+    },
+    {
+      "block_index": 241,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.6067,
+      "tension_score": 0.3284
+    },
+    {
+      "block_index": 242,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.6067,
+      "tension_score": 0.3427
+    },
+    {
+      "block_index": 243,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5933,
+      "tension_score": 0.304
+    },
+    {
+      "block_index": 244,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5933,
+      "tension_score": 0.304
+    },
+    {
+      "block_index": 246,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5933,
+      "tension_score": 0.304
+    },
+    {
+      "block_index": 247,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.5933,
+      "tension_score": 0.3421
+    },
+    {
+      "block_index": 248,
+      "window": 20,
+      "dialogue_density": 0.2857,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.5933,
+      "tension_score": 0.3564
+    },
+    {
+      "block_index": 249,
+      "window": 20,
+      "dialogue_density": 0.2857,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.5933,
+      "tension_score": 0.3278
+    },
+    {
+      "block_index": 250,
+      "window": 20,
+      "dialogue_density": 0.3333,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.5,
+      "tension_score": 0.3238
+    },
+    {
+      "block_index": 252,
+      "window": 20,
+      "dialogue_density": 0.381,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.3333,
+      "emotion_score": 0.4371,
+      "tension_score": 0.389
+    },
+    {
+      "block_index": 253,
+      "window": 20,
+      "dialogue_density": 0.4286,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.4371,
+      "tension_score": 0.3794
+    },
+    {
+      "block_index": 254,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.4371,
+      "tension_score": 0.3794
+    },
+    {
+      "block_index": 255,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.4371,
+      "tension_score": 0.3794
+    },
+    {
+      "block_index": 257,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.4371,
+      "tension_score": 0.3651
+    },
+    {
+      "block_index": 258,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.26,
+      "tension_score": 0.436
+    },
+    {
+      "block_index": 259,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.26,
+      "tension_score": 0.436
+    },
+    {
+      "block_index": 260,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.35,
+      "tension_score": 0.4352
+    },
+    {
+      "block_index": 261,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.4067,
+      "tension_score": 0.4126
+    },
+    {
+      "block_index": 262,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3983
+    },
+    {
+      "block_index": 263,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.4067,
+      "tension_score": 0.4078
+    },
+    {
+      "block_index": 264,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3935
+    },
+    {
+      "block_index": 265,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.4067,
+      "tension_score": 0.3935
+    },
+    {
+      "block_index": 266,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.38,
+      "tension_score": 0.3899
+    },
+    {
+      "block_index": 267,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.38,
+      "tension_score": 0.3899
+    },
+    {
+      "block_index": 268,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.38,
+      "tension_score": 0.3899
+    },
+    {
+      "block_index": 269,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.3667,
+      "tension_score": 0.3952
+    },
+    {
+      "block_index": 270,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.3667,
+      "tension_score": 0.3952
+    },
+    {
+      "block_index": 271,
+      "window": 20,
+      "dialogue_density": 0.9048,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.2667,
+      "tension_score": 0.501
+    },
+    {
+      "block_index": 272,
+      "window": 20,
+      "dialogue_density": 0.9048,
+      "aria_ratio": 0.0,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3914,
+      "tension_score": 0.451
+    },
+    {
+      "block_index": 273,
+      "window": 20,
+      "dialogue_density": 0.8571,
+      "aria_ratio": 0.0476,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.4035,
+      "tension_score": 0.4814
+    },
+    {
+      "block_index": 274,
+      "window": 20,
+      "dialogue_density": 0.8095,
+      "aria_ratio": 0.0952,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3988,
+      "tension_score": 0.4433
+    },
+    {
+      "block_index": 275,
+      "window": 20,
+      "dialogue_density": 0.7619,
+      "aria_ratio": 0.1429,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3663,
+      "tension_score": 0.4963
+    },
+    {
+      "block_index": 276,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3663,
+      "tension_score": 0.4963
+    },
+    {
+      "block_index": 277,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3663,
+      "tension_score": 0.4963
+    },
+    {
+      "block_index": 278,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3663,
+      "tension_score": 0.4963
+    },
+    {
+      "block_index": 279,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3663,
+      "tension_score": 0.4963
+    },
+    {
+      "block_index": 280,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3663,
+      "tension_score": 0.4963
+    },
+    {
+      "block_index": 281,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.3479,
+      "tension_score": 0.518
+    },
+    {
+      "block_index": 282,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.3458,
+      "tension_score": 0.5188
+    },
+    {
+      "block_index": 283,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.3438,
+      "tension_score": 0.5196
+    },
+    {
+      "block_index": 289,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3438,
+      "tension_score": 0.5054
+    },
+    {
+      "block_index": 291,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3438,
+      "tension_score": 0.5054
+    },
+    {
+      "block_index": 297,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3438,
+      "tension_score": 0.5054
+    },
+    {
+      "block_index": 298,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3479,
+      "tension_score": 0.5037
+    },
+    {
+      "block_index": 299,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.3479,
+      "tension_score": 0.5037
+    },
+    {
+      "block_index": 300,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.3479,
+      "tension_score": 0.4894
+    },
+    {
+      "block_index": 301,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.35,
+      "tension_score": 0.4886
+    },
+    {
+      "block_index": 303,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.3479,
+      "tension_score": 0.4894
+    },
+    {
+      "block_index": 304,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.3618,
+      "tension_score": 0.4838
+    },
+    {
+      "block_index": 305,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.3385,
+      "tension_score": 0.4932
+    },
+    {
+      "block_index": 306,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.3015,
+      "tension_score": 0.508
+    },
+    {
+      "block_index": 307,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.3222,
+      "tension_score": 0.4997
+    },
+    {
+      "block_index": 308,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.15,
+      "tension_score": 0.4086
+    },
+    {
+      "block_index": 309,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.15,
+      "tension_score": 0.4086
+    },
+    {
+      "block_index": 310,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.14,
+      "tension_score": 0.4126
+    },
+    {
+      "block_index": 311,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.1,
+      "tension_score": 0.4286
+    },
+    {
+      "block_index": 312,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.1,
+      "tension_score": 0.4286
+    },
+    {
+      "block_index": 313,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.1,
+      "tension_score": 0.4286
+    },
+    {
+      "block_index": 314,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.0,
+      "emotion_score": 0.1,
+      "tension_score": 0.4143
+    },
+    {
+      "block_index": 315,
+      "window": 20,
+      "dialogue_density": 0.7143,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.0,
+      "emotion_score": 0.14,
+      "tension_score": 0.3983
+    },
+    {
+      "block_index": 316,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0,
+      "emotion_score": 0.18,
+      "tension_score": 0.3823
+    },
+    {
+      "block_index": 317,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.18,
+      "tension_score": 0.3966
+    },
+    {
+      "block_index": 318,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.18,
+      "tension_score": 0.3966
+    },
+    {
+      "block_index": 319,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.18,
+      "tension_score": 0.3966
+    },
+    {
+      "block_index": 320,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0476,
+      "emotion_score": 0.18,
+      "tension_score": 0.3966
+    },
+    {
+      "block_index": 321,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.18,
+      "tension_score": 0.3709
+    },
+    {
+      "block_index": 322,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.1667,
+      "tension_score": 0.381
+    },
+    {
+      "block_index": 323,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.1667,
+      "tension_score": 0.381
+    },
+    {
+      "block_index": 324,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.2,
+      "tension_score": 0.3676
+    },
+    {
+      "block_index": 325,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.2,
+      "tension_score": 0.3676
+    },
+    {
+      "block_index": 326,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.381,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.22,
+      "tension_score": 0.3549
+    },
+    {
+      "block_index": 327,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.4286,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.25,
+      "tension_score": 0.3429
+    },
+    {
+      "block_index": 328,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.4286,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.25,
+      "tension_score": 0.3429
+    },
+    {
+      "block_index": 329,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.4286,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.25,
+      "tension_score": 0.3429
+    },
+    {
+      "block_index": 330,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.25,
+      "tension_score": 0.3571
+    },
+    {
+      "block_index": 331,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.3,
+      "tension_score": 0.3419
+    },
+    {
+      "block_index": 332,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.3667,
+      "tension_score": 0.3152
+    },
+    {
+      "block_index": 333,
+      "window": 20,
+      "dialogue_density": 0.4762,
+      "aria_ratio": 0.381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.26,
+      "tension_score": 0.3579
+    },
+    {
+      "block_index": 334,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.3333,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.26,
+      "tension_score": 0.3579
+    },
+    {
+      "block_index": 335,
+      "window": 20,
+      "dialogue_density": 0.5238,
+      "aria_ratio": 0.2857,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.26,
+      "tension_score": 0.3722
+    },
+    {
+      "block_index": 336,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.26,
+      "tension_score": 0.3722
+    },
+    {
+      "block_index": 337,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.26,
+      "tension_score": 0.3722
+    },
+    {
+      "block_index": 338,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.26,
+      "tension_score": 0.3579
+    },
+    {
+      "block_index": 339,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.26,
+      "tension_score": 0.3579
+    },
+    {
+      "block_index": 340,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.26,
+      "tension_score": 0.3579
+    },
+    {
+      "block_index": 341,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.2333,
+      "tension_score": 0.3686
+    },
+    {
+      "block_index": 342,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.2333,
+      "tension_score": 0.3543
+    },
+    {
+      "block_index": 343,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.0952,
+      "emotion_score": 0.26,
+      "tension_score": 0.3436
+    },
+    {
+      "block_index": 344,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.26,
+      "tension_score": 0.3579
+    },
+    {
+      "block_index": 345,
+      "window": 20,
+      "dialogue_density": 0.619,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1429,
+      "emotion_score": 0.26,
+      "tension_score": 0.3579
+    },
+    {
+      "block_index": 346,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.2381,
+      "action_intensity": 0.1905,
+      "emotion_score": 0.26,
+      "tension_score": 0.3722
+    },
+    {
+      "block_index": 347,
+      "window": 20,
+      "dialogue_density": 0.5714,
+      "aria_ratio": 0.1905,
+      "action_intensity": 0.2381,
+      "emotion_score": 0.26,
+      "tension_score": 0.3865
+    },
+    {
+      "block_index": 348,
+      "window": 20,
+      "dialogue_density": 0.6,
+      "aria_ratio": 0.15,
+      "action_intensity": 0.25,
+      "emotion_score": 0.26,
+      "tension_score": 0.391
+    },
+    {
+      "block_index": 349,
+      "window": 20,
+      "dialogue_density": 0.6316,
+      "aria_ratio": 0.1053,
+      "action_intensity": 0.2632,
+      "emotion_score": 0.26,
+      "tension_score": 0.396
+    },
+    {
+      "block_index": 350,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0556,
+      "action_intensity": 0.2778,
+      "emotion_score": 0.26,
+      "tension_score": 0.4016
+    },
+    {
+      "block_index": 358,
+      "window": 20,
+      "dialogue_density": 0.7059,
+      "aria_ratio": 0.0588,
+      "action_intensity": 0.2353,
+      "emotion_score": 0.26,
+      "tension_score": 0.3901
+    },
+    {
+      "block_index": 359,
+      "window": 20,
+      "dialogue_density": 0.6875,
+      "aria_ratio": 0.0625,
+      "action_intensity": 0.25,
+      "emotion_score": 0.26,
+      "tension_score": 0.396
+    },
+    {
+      "block_index": 360,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0667,
+      "action_intensity": 0.2667,
+      "emotion_score": 0.26,
+      "tension_score": 0.4027
+    },
+    {
+      "block_index": 361,
+      "window": 20,
+      "dialogue_density": 0.6429,
+      "aria_ratio": 0.0714,
+      "action_intensity": 0.2857,
+      "emotion_score": 0.3667,
+      "tension_score": 0.3676
+    },
+    {
+      "block_index": 362,
+      "window": 20,
+      "dialogue_density": 0.6154,
+      "aria_ratio": 0.0769,
+      "action_intensity": 0.3077,
+      "emotion_score": 0.3667,
+      "tension_score": 0.3764
+    },
+    {
+      "block_index": 364,
+      "window": 20,
+      "dialogue_density": 0.6667,
+      "aria_ratio": 0.0833,
+      "action_intensity": 0.25,
+      "emotion_score": 0.3667,
+      "tension_score": 0.3617
+    },
+    {
+      "block_index": 365,
+      "window": 20,
+      "dialogue_density": 0.6364,
+      "aria_ratio": 0.0909,
+      "action_intensity": 0.2727,
+      "emotion_score": 0.3667,
+      "tension_score": 0.3715
+    }
+  ],
+  "performance_mark_distribution": {
+    "唱": 47,
+    "念": 196,
+    "做": 36,
+    "打": 3,
+    "unknown": 24
+  },
+  "performance_by_stage": [
+    {
+      "stage": "铺垫",
+      "distribution": {
+        "唱": 6,
+        "念": 49,
+        "做": 16,
+        "打": 0,
+        "unknown": 7
+      }
+    },
+    {
+      "stage": "发展",
+      "distribution": {
+        "唱": 22,
+        "念": 99,
+        "做": 17,
+        "打": 1,
+        "unknown": 12
+      }
+    },
+    {
+      "stage": "冲突",
+      "distribution": {
+        "唱": 0,
+        "念": 8,
+        "做": 1,
+        "打": 1,
+        "unknown": 0
+      }
+    },
+    {
+      "stage": "高潮",
+      "distribution": {
+        "唱": 14,
+        "念": 24,
+        "做": 0,
+        "打": 1,
+        "unknown": 2
+      }
+    },
+    {
+      "stage": "结局",
+      "distribution": {
+        "唱": 5,
+        "念": 16,
+        "做": 2,
+        "打": 0,
+        "unknown": 3
+      }
+    }
+  ],
+  "block_annotations": [
+    {
+      "block_index": 0,
+      "block_id": "b_0",
+      "stage": "铺垫",
+      "emotion_score": 0.74
+    },
+    {
+      "block_index": 16,
+      "block_id": "b_16",
+      "stage": "铺垫",
+      "emotion_score": 0.74,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 21,
+      "block_id": "b_21",
+      "stage": "铺垫",
+      "emotion_score": 0.7667
+    },
+    {
+      "block_index": 28,
+      "block_id": "b_28",
+      "stage": "铺垫",
+      "emotion_score": 0.42,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 41,
+      "block_id": "b_41",
+      "stage": "铺垫",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 43,
+      "block_id": "b_43",
+      "stage": "铺垫",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 50,
+      "block_id": "b_50",
+      "stage": "铺垫",
+      "emotion_score": 0.6333,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 54,
+      "block_id": "b_54",
+      "stage": "铺垫",
+      "emotion_score": 0.6333,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 69,
+      "block_id": "b_69",
+      "stage": "铺垫",
+      "emotion_score": 0.7
+    },
+    {
+      "block_index": 71,
+      "block_id": "b_71",
+      "stage": "铺垫",
+      "emotion_score": 0.7,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 78,
+      "block_id": "b_78",
+      "stage": "铺垫",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 79,
+      "block_id": "b_79",
+      "stage": "铺垫",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 90,
+      "block_id": "b_90",
+      "stage": "铺垫",
+      "emotion_score": 0.5476,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 92,
+      "block_id": "b_92",
+      "stage": "铺垫",
+      "emotion_score": 0.5508,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 98,
+      "block_id": "b_98",
+      "stage": "发展",
+      "emotion_score": 0.68,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 108,
+      "block_id": "b_108",
+      "stage": "发展",
+      "emotion_score": 0.7545,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 118,
+      "block_id": "b_118",
+      "stage": "发展",
+      "emotion_score": 0.74,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 125,
+      "block_id": "b_125",
+      "stage": "发展",
+      "emotion_score": 0.74,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 140,
+      "block_id": "b_140",
+      "stage": "发展",
+      "emotion_score": 0.7667,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 141,
+      "block_id": "b_141",
+      "stage": "发展",
+      "emotion_score": 0.75,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 147,
+      "block_id": "b_147",
+      "stage": "发展",
+      "emotion_score": 0.5686,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 148,
+      "block_id": "b_148",
+      "stage": "发展",
+      "emotion_score": 0.5743,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 150,
+      "block_id": "b_150",
+      "stage": "发展",
+      "emotion_score": 0.22,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 151,
+      "block_id": "b_151",
+      "stage": "发展",
+      "emotion_score": 0.35,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 153,
+      "block_id": "b_153",
+      "stage": "发展",
+      "emotion_score": 0.35,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 154,
+      "block_id": "b_154",
+      "stage": "发展",
+      "emotion_score": 0.4067,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 157,
+      "block_id": "b_157",
+      "stage": "发展",
+      "emotion_score": 0.4067,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 158,
+      "block_id": "b_158",
+      "stage": "发展",
+      "emotion_score": 0.4067,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 166,
+      "block_id": "b_166",
+      "stage": "发展",
+      "emotion_score": 0.755,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 169,
+      "block_id": "b_169",
+      "stage": "发展",
+      "emotion_score": 0.755,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 173,
+      "block_id": "b_173",
+      "stage": "发展",
+      "emotion_score": 0.7545,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 174,
+      "block_id": "b_174",
+      "stage": "发展",
+      "emotion_score": 0.74,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 177,
+      "block_id": "b_177",
+      "stage": "发展",
+      "emotion_score": 0.7545,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 178,
+      "block_id": "b_178",
+      "stage": "发展",
+      "emotion_score": 0.7545,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 184,
+      "block_id": "b_184",
+      "stage": "发展",
+      "emotion_score": 0.6786,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 185,
+      "block_id": "b_185",
+      "stage": "发展",
+      "emotion_score": 0.6786,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 187,
+      "block_id": "b_187",
+      "stage": "发展",
+      "emotion_score": 0.585,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 188,
+      "block_id": "b_188",
+      "stage": "发展",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 195,
+      "block_id": "b_195",
+      "stage": "发展",
+      "emotion_score": 0.4371,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 196,
+      "block_id": "b_196",
+      "stage": "发展",
+      "emotion_score": 0.4371,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 205,
+      "block_id": "b_205",
+      "stage": "发展",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 209,
+      "block_id": "b_209",
+      "stage": "发展",
+      "emotion_score": 0.5571,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 212,
+      "block_id": "b_212",
+      "stage": "发展",
+      "emotion_score": 0.5571,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 214,
+      "block_id": "b_214",
+      "stage": "发展",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 218,
+      "block_id": "b_218",
+      "stage": "发展",
+      "emotion_score": 0.5629,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 219,
+      "block_id": "b_219",
+      "stage": "发展",
+      "emotion_score": 0.5629,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 224,
+      "block_id": "b_224",
+      "stage": "发展",
+      "emotion_score": 0.3933,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 225,
+      "block_id": "b_225",
+      "stage": "发展",
+      "emotion_score": 0.3933,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 228,
+      "block_id": "b_228",
+      "stage": "发展",
+      "emotion_score": 0.2,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 231,
+      "block_id": "b_231",
+      "stage": "发展",
+      "emotion_score": 0.2333,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 234,
+      "block_id": "b_234",
+      "stage": "发展",
+      "emotion_score": 0.85,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 239,
+      "block_id": "b_239",
+      "stage": "发展",
+      "emotion_score": 0.6067,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 244,
+      "block_id": "b_244",
+      "stage": "发展",
+      "emotion_score": 0.5933,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 246,
+      "block_id": "b_246",
+      "stage": "发展",
+      "emotion_score": 0.5933,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 248,
+      "block_id": "b_248",
+      "stage": "发展",
+      "emotion_score": 0.5933,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 250,
+      "block_id": "b_250",
+      "stage": "发展",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 258,
+      "block_id": "b_258",
+      "stage": "发展",
+      "emotion_score": 0.26,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 263,
+      "block_id": "b_263",
+      "stage": "发展",
+      "emotion_score": 0.4067,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 266,
+      "block_id": "b_266",
+      "stage": "发展",
+      "emotion_score": 0.38,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 267,
+      "block_id": "b_267",
+      "stage": "发展",
+      "emotion_score": 0.38,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 269,
+      "block_id": "b_269",
+      "stage": "发展",
+      "emotion_score": 0.3667,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 270,
+      "block_id": "b_270",
+      "stage": "发展",
+      "emotion_score": 0.3667,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 272,
+      "block_id": "b_272",
+      "stage": "冲突",
+      "emotion_score": 0.3914,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 273,
+      "block_id": "b_273",
+      "stage": "冲突",
+      "emotion_score": 0.4035
+    },
+    {
+      "block_index": 276,
+      "block_id": "b_276",
+      "stage": "冲突",
+      "emotion_score": 0.3663,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 277,
+      "block_id": "b_277",
+      "stage": "冲突",
+      "emotion_score": 0.3663,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 282,
+      "block_id": "b_282",
+      "stage": "高潮",
+      "emotion_score": 0.3458,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 283,
+      "block_id": "b_283",
+      "stage": "高潮",
+      "emotion_score": 0.3438,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 311,
+      "block_id": "b_311",
+      "stage": "高潮",
+      "emotion_score": 0.1,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 320,
+      "block_id": "b_320",
+      "stage": "高潮",
+      "emotion_score": 0.18,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 332,
+      "block_id": "b_332",
+      "stage": "高潮",
+      "emotion_score": 0.3667,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 333,
+      "block_id": "b_333",
+      "stage": "结局",
+      "emotion_score": 0.26,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 338,
+      "block_id": "b_338",
+      "stage": "结局",
+      "emotion_score": 0.26,
+      "dominant_topic_id": 1
+    },
+    {
+      "block_index": 339,
+      "block_id": "b_339",
+      "stage": "结局",
+      "emotion_score": 0.26,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 342,
+      "block_id": "b_342",
+      "stage": "结局",
+      "emotion_score": 0.2333,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 343,
+      "block_id": "b_343",
+      "stage": "结局",
+      "emotion_score": 0.26,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 358,
+      "block_id": "b_358",
+      "stage": "结局",
+      "emotion_score": 0.26,
+      "dominant_topic_id": 2
+    },
+    {
+      "block_index": 359,
+      "block_id": "b_359",
+      "stage": "结局",
+      "emotion_score": 0.26,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 361,
+      "block_id": "b_361",
+      "stage": "结局",
+      "emotion_score": 0.3667
+    },
+    {
+      "block_index": 362,
+      "block_id": "b_362",
+      "stage": "结局",
+      "emotion_score": 0.3667,
+      "dominant_topic_id": 1
+    }
+  ]
+}

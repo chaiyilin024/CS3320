@@ -1,0 +1,209 @@
+{
+  "script_id": "01001018",
+  "hangdang_distribution": {
+    "老生": 1,
+    "小生": 1,
+    "丑": 1,
+    "未知": 1
+  },
+  "hangdang_coarse_distribution": {
+    "生": 2,
+    "丑": 1,
+    "未知": 1
+  },
+  "characters": [
+    {
+      "character_id": "c_徐策",
+      "name": "徐策",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=男",
+        "age=少年",
+        "identity=将领",
+        "personality=诙谐",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "将领",
+        "age": "少年",
+        "personality": [
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_薛蛟",
+      "name": "薛蛟",
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_final": "小生",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=mid",
+        "gender=男",
+        "age=少年",
+        "identity=君主",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "君主",
+        "age": "少年",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_书童",
+      "name": "书童",
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_final": "丑",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=mid",
+        "gender=男",
+        "personality=诙谐",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "personality": [
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_家院",
+      "name": "家院",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    }
+  ],
+  "trait_summary": [
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "age=少年",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "identity=将领",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "age=少年",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "identity=君主",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "未知",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "未知",
+      "count": 1
+    }
+  ],
+  "labeled_count": 3,
+  "inferred_count": 0
+}

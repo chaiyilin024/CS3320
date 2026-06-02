@@ -1,0 +1,97 @@
+{
+  "script_id": "01001002",
+  "title": "洪羊洞",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:27.867289+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "神话天命",
+      "weight": 1.0,
+      "keywords": [
+        "尸骨",
+        "北国",
+        "望乡台",
+        "尸骸",
+        "骸骨",
+        "不由",
+        "催动",
+        "叫程",
+        "回程",
+        "宋营",
+        "托兆",
+        "鬼魂",
+        "板斧",
+        "乾坤",
+        "保定"
+      ],
+      "keyword_weights": [
+        1.1475,
+        0.6301,
+        0.4999,
+        0.3397,
+        0.2064,
+        0.1694,
+        0.1248,
+        0.0933,
+        0.0895,
+        0.0886,
+        0.079,
+        0.0772,
+        0.0704,
+        0.0523,
+        0.0358
+      ]
+    }
+  ],
+  "topic_composition": [
+    1.0
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_90",
+      "block_index": 90,
+      "text_snippet": "在北国洪羊洞望乡台第三层，那才是真。",
+      "context_snippet": "真的呢？  /  » 在北国洪羊洞望乡台第三层，那才是真。  /  起过了。元帅元帅，这就是你的不是。想我弟兄二人，焦不离孟，孟不离焦。为何今日差他一人前去？我自有道理。家院，倘若元帅要问，就说我染病在床。",
+      "speaker_id": "c_家院",
+      "speaker_name": "家院",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_76",
+      "block_index": 76,
+      "text_snippet": "但愿盗得尸骨转，",
+      "context_snippet": "行走哪怕路途难。  /  » 但愿盗得尸骨转，  /  凌烟阁上美名传。",
+      "speaker_id": "c_杨延昭",
+      "speaker_name": "杨延昭",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 1.0,
+    "labeled_weight": 1.0,
+    "fallback_weight": 0.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "strong": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "神话天命",
+        "tier": "strong",
+        "label_score": 30.0,
+        "keyword_signal": 1.0,
+        "weight": 1.0,
+        "issues": []
+      }
+    ],
+    "issues": []
+  }
+}

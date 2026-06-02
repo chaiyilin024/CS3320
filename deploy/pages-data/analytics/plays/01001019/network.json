@@ -1,0 +1,284 @@
+{
+  "script_id": "01001019",
+  "title": "柴桑口",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_诸葛亮",
+      "name": "诸葛亮",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 6,
+      "weighted_degree": 77.0,
+      "betweenness": 0.1778,
+      "weighted_betweenness": 0.7333,
+      "closeness": 1.0,
+      "eigenvector": 0.6262,
+      "community_id": 0
+    },
+    {
+      "id": "c_鲁肃",
+      "name": "鲁肃",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 6,
+      "weighted_degree": 71.0,
+      "betweenness": 0.1778,
+      "weighted_betweenness": 0.3333,
+      "closeness": 1.0,
+      "eigenvector": 0.6234,
+      "community_id": 0
+    },
+    {
+      "id": "c_周循",
+      "name": "周循",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 43.0,
+      "betweenness": 0.0444,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.8571,
+      "eigenvector": 0.4285,
+      "community_id": 0
+    },
+    {
+      "id": "c_庞统",
+      "name": "庞统",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 14.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.75,
+      "eigenvector": 0.1422,
+      "community_id": 0
+    },
+    {
+      "id": "c_四吴将",
+      "name": "四吴将",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 2,
+      "weighted_degree": 8.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6,
+      "eigenvector": 0.0886,
+      "community_id": 0
+    },
+    {
+      "id": "c_张飞",
+      "name": "张飞",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 8.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.75,
+      "eigenvector": 0.0697,
+      "community_id": 0
+    },
+    {
+      "id": "c_赵云",
+      "name": "赵云",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 3,
+      "weighted_degree": 5.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6667,
+      "eigenvector": 0.052,
+      "community_id": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "c_诸葛亮",
+      "target": "c_鲁肃",
+      "weight": 41.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 19,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_周循",
+      "target": "c_鲁肃",
+      "weight": 20.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 9,
+      "normalized_weight": 0.4878
+    },
+    {
+      "source": "c_周循",
+      "target": "c_诸葛亮",
+      "weight": 18.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 8,
+      "normalized_weight": 0.439
+    },
+    {
+      "source": "c_庞统",
+      "target": "c_诸葛亮",
+      "weight": 11.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 5,
+      "normalized_weight": 0.2683
+    },
+    {
+      "source": "c_四吴将",
+      "target": "c_鲁肃",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.1707
+    },
+    {
+      "source": "c_周循",
+      "target": "c_张飞",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0732
+    },
+    {
+      "source": "c_张飞",
+      "target": "c_诸葛亮",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0732
+    },
+    {
+      "source": "c_诸葛亮",
+      "target": "c_赵云",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0732
+    },
+    {
+      "source": "c_周循",
+      "target": "c_庞统",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0244
+    },
+    {
+      "source": "c_周循",
+      "target": "c_赵云",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0244
+    },
+    {
+      "source": "c_四吴将",
+      "target": "c_诸葛亮",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0244
+    },
+    {
+      "source": "c_庞统",
+      "target": "c_张飞",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0244
+    },
+    {
+      "source": "c_庞统",
+      "target": "c_鲁肃",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0244
+    },
+    {
+      "source": "c_张飞",
+      "target": "c_鲁肃",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0244
+    },
+    {
+      "source": "c_赵云",
+      "target": "c_鲁肃",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0244
+    }
+  ],
+  "metrics": {
+    "node_count": 7,
+    "edge_count": 15,
+    "density": 0.7143,
+    "avg_clustering": 0.8571,
+    "avg_degree": 4.29,
+    "avg_weighted_degree": 32.29,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.1074,
+    "modularity": 0.0,
+    "assortativity_hangdang": -0.1538,
+    "main_subgraph": {
+      "node_count": 6,
+      "edge_count": 12,
+      "density": 0.8,
+      "avg_clustering": 0.1295,
+      "modularity": 0.0
+    }
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "script_id": "01001016",
+  "title": "牧羊卷",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_朱春登",
+      "character_name": "朱春登",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "朱春登 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_朱春科",
+      "character_name": "朱春科",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "朱春科 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.933,
+      "character_id": "c_赵锦堂",
+      "character_name": "赵锦堂",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "赵锦堂 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.4,
+      "character_id": "c_中军",
+      "character_name": "中军",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "中军 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_朱母",
+      "character_name": "朱母",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "朱母 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_衙役甲",
+      "character_name": "衙役甲",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "衙役甲 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_宋氏",
+      "character_name": "宋氏",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "宋氏 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.267,
+      "character_id": "c_衙役乙",
+      "character_name": "衙役乙",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "衙役乙 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 1.0,
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「其他情节」相对应"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_朱春登",
+      "character_name": "朱春登",
+      "evidence": "朱春登 为关系网络核心（度=9）"
+    }
+  ],
+  "summary_insights": [
+    "《牧羊卷》共 10 位主要人物、45 条关系边，网络密度 1.00。",
+    "主题构成以「其他情节」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [241, 312]。",
+    "朱春登 与主题「其他情节」关联最强（1.0）。",
+    "行当以未知为主（3 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_朱春登",
+      "character_name": "朱春登",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_朱春科",
+      "character_name": "朱春科",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_赵锦堂",
+      "character_name": "赵锦堂",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.933
+    },
+    {
+      "character_id": "c_中军",
+      "character_name": "中军",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.4
+    },
+    {
+      "character_id": "c_朱母",
+      "character_name": "朱母",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_衙役甲",
+      "character_name": "衙役甲",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_宋氏",
+      "character_name": "宋氏",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_衙役乙",
+      "character_name": "衙役乙",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.267
+    },
+    {
+      "character_id": "c_二衙役",
+      "character_name": "二衙役",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.267
+    },
+    {
+      "character_id": "c_厨房",
+      "character_name": "厨房",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        90
+      ],
+      "edge_density": 1.0,
+      "node_count": 7,
+      "edge_count": 21
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        91,
+        163
+      ],
+      "edge_density": 1.0,
+      "node_count": 7,
+      "edge_count": 21
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        164,
+        240
+      ],
+      "edge_density": 1.0,
+      "node_count": 7,
+      "edge_count": 21
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        241,
+        312
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        313,
+        376
+      ],
+      "edge_density": 1.0,
+      "node_count": 6,
+      "edge_count": 15
+    }
+  ]
+}

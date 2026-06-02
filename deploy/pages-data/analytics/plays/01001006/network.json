@@ -1,0 +1,449 @@
+{
+  "script_id": "01001006",
+  "title": "捉放曹",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_曹操",
+      "name": "曹操",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 9,
+      "weighted_degree": 221.0,
+      "betweenness": 0.2407,
+      "weighted_betweenness": 0.5556,
+      "closeness": 1.0,
+      "eigenvector": 0.6821,
+      "community_id": 0
+    },
+    {
+      "id": "c_陈宫",
+      "name": "陈宫",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 9,
+      "weighted_degree": 219.0,
+      "betweenness": 0.2407,
+      "weighted_betweenness": 0.6111,
+      "closeness": 1.0,
+      "eigenvector": 0.6669,
+      "community_id": 0
+    },
+    {
+      "id": "c_吕伯奢",
+      "name": "吕伯奢",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 75.0,
+      "betweenness": 0.0185,
+      "weighted_betweenness": 0.2222,
+      "closeness": 0.6923,
+      "eigenvector": 0.2749,
+      "community_id": 0
+    },
+    {
+      "id": "c_班头甲",
+      "name": "班头甲",
+      "hangdang": "丑",
+      "hangdang_coarse": "丑",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 29.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.1944,
+      "closeness": 0.6923,
+      "eigenvector": 0.0929,
+      "community_id": 1
+    },
+    {
+      "id": "c_店家",
+      "name": "店家",
+      "hangdang": "丑",
+      "hangdang_coarse": "丑",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 17.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6,
+      "eigenvector": 0.0639,
+      "community_id": 0
+    },
+    {
+      "id": "c_家人",
+      "name": "家人",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 4,
+      "weighted_degree": 10.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6429,
+      "eigenvector": 0.0329,
+      "community_id": 0
+    },
+    {
+      "id": "c_班头乙",
+      "name": "班头乙",
+      "hangdang": "丑",
+      "hangdang_coarse": "丑",
+      "is_main": false,
+      "degree": 5,
+      "weighted_degree": 7.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6923,
+      "eigenvector": 0.0096,
+      "community_id": 1
+    },
+    {
+      "id": "c_门子",
+      "name": "门子",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 5,
+      "weighted_degree": 7.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6923,
+      "eigenvector": 0.0162,
+      "community_id": 0
+    },
+    {
+      "id": "c_童儿",
+      "name": "童儿",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 4,
+      "weighted_degree": 6.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6429,
+      "eigenvector": 0.0128,
+      "community_id": 0
+    },
+    {
+      "id": "c_四青袍",
+      "name": "四青袍",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 5,
+      "weighted_degree": 5.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6923,
+      "eigenvector": 0.0085,
+      "community_id": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "c_曹操",
+      "target": "c_陈宫",
+      "weight": 156.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 76,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_吕伯奢",
+      "target": "c_曹操",
+      "weight": 48.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 23,
+      "normalized_weight": 0.3077
+    },
+    {
+      "source": "c_班头甲",
+      "target": "c_陈宫",
+      "weight": 23.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 11,
+      "normalized_weight": 0.1474
+    },
+    {
+      "source": "c_吕伯奢",
+      "target": "c_陈宫",
+      "weight": 22.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 10,
+      "normalized_weight": 0.141
+    },
+    {
+      "source": "c_店家",
+      "target": "c_陈宫",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.0577
+    },
+    {
+      "source": "c_店家",
+      "target": "c_曹操",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.0449
+    },
+    {
+      "source": "c_家人",
+      "target": "c_曹操",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.0321
+    },
+    {
+      "source": "c_吕伯奢",
+      "target": "c_童儿",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0192
+    },
+    {
+      "source": "c_家人",
+      "target": "c_陈宫",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0192
+    },
+    {
+      "source": "c_班头乙",
+      "target": "c_班头甲",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0192
+    },
+    {
+      "source": "c_门子",
+      "target": "c_陈宫",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0192
+    },
+    {
+      "source": "c_吕伯奢",
+      "target": "c_家人",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_吕伯奢",
+      "target": "c_店家",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_曹操",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_班头乙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_班头甲",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_门子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_四青袍",
+      "target": "c_陈宫",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_家人",
+      "target": "c_童儿",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_曹操",
+      "target": "c_班头乙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_曹操",
+      "target": "c_班头甲",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_曹操",
+      "target": "c_童儿",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_曹操",
+      "target": "c_门子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_班头乙",
+      "target": "c_门子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_班头乙",
+      "target": "c_陈宫",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_班头甲",
+      "target": "c_门子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    },
+    {
+      "source": "c_童儿",
+      "target": "c_陈宫",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0064
+    }
+  ],
+  "metrics": {
+    "node_count": 10,
+    "edge_count": 27,
+    "density": 0.6,
+    "avg_clustering": 0.88,
+    "avg_degree": 5.4,
+    "avg_weighted_degree": 59.6,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.0295,
+    "modularity": 0.0184,
+    "assortativity_hangdang": -0.1629,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 8,
+      "density": 0.8,
+      "avg_clustering": 0.105,
+      "modularity": 0.0
+    }
+  }
+}

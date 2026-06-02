@@ -1,0 +1,256 @@
+{
+  "script_id": "01002001",
+  "hangdang_distribution": {
+    "老生": 2,
+    "青衣": 1,
+    "净": 1,
+    "未知": 2
+  },
+  "hangdang_coarse_distribution": {
+    "生": 2,
+    "净": 1,
+    "未知": 2,
+    "旦": 1
+  },
+  "characters": [
+    {
+      "character_id": "c_杨继业",
+      "name": "杨继业",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "personality=忠义",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "personality": [
+          "忠义"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_杨延昭",
+      "name": "杨延昭",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "hangdang_raw=末",
+        "line_count_bucket=low",
+        "gender=女",
+        "age=少年",
+        "identity=妃后",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "女",
+        "identity": "妃后",
+        "age": "少年",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_杨延嗣",
+      "name": "杨延嗣",
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_final": "净",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=low",
+        "age=少年",
+        "personality=忠义",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "age": "少年",
+        "personality": [
+          "忠义"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_四老军",
+      "name": "四老军",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_耶律休",
+      "name": "耶律休",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "青衣",
+      "hangdang_final": "青衣",
+      "confidence": 0.75,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=妃后",
+        "cue=念",
+        "matched_identity=妃后"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "妃后",
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_探子",
+      "name": "探子",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    }
+  ],
+  "trait_summary": [
+    {
+      "trait": "cue=念",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "personality=忠义",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "hangdang_raw=末",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "gender=女",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "age=少年",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "identity=妃后",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "age=少年",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "personality=忠义",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "identity=妃后",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "matched_identity=妃后",
+      "hangdang": "青衣",
+      "count": 1
+    }
+  ],
+  "labeled_count": 3,
+  "inferred_count": 1
+}

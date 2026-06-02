@@ -1,0 +1,245 @@
+{
+  "script_id": "01001001",
+  "title": "空城计",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "evidence": "诸葛亮 台词与主题「守城攻防」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_旗牌",
+      "character_name": "旗牌",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "evidence": "旗牌 台词与主题「守城攻防」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_童儿",
+      "character_name": "童儿",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "evidence": "童儿 台词与主题「守城攻防」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_众人",
+      "character_name": "众人",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "evidence": "众人 台词与主题「守城攻防」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.867,
+      "character_id": "c_司马懿",
+      "character_name": "司马懿",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "evidence": "司马懿 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.667,
+      "character_id": "c_二老军",
+      "character_name": "二老军",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "evidence": "二老军 台词与主题「守城攻防」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.667,
+      "character_id": "c_报子",
+      "character_name": "报子",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "evidence": "报子 台词与主题「守城攻防」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.467,
+      "character_id": "c_老军甲",
+      "character_name": "老军甲",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "evidence": "老军甲 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.333,
+      "stage": "结局",
+      "edge_density_delta": -0.1111,
+      "evidence": "「结局」阶段人物同场网络密度变化 -0.11"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.802,
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「守城攻防」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 210,
+      "evidence": "老生 行当在 block 210 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "evidence": "诸葛亮 为关系网络核心（度=10）"
+    }
+  ],
+  "summary_insights": [
+    "《空城计》共 12 位主要人物、46 条关系边，网络密度 0.70。",
+    "主题构成以「守城攻防、行军调度」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [53, 80]。",
+    "诸葛亮 与主题「守城攻防」关联最强（1.0）。",
+    "行当以老生为主（7 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_旗牌",
+      "character_name": "旗牌",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_童儿",
+      "character_name": "童儿",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_众人",
+      "character_name": "众人",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_司马懿",
+      "character_name": "司马懿",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.867
+    },
+    {
+      "character_id": "c_二老军",
+      "character_name": "二老军",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "strength": 0.667
+    },
+    {
+      "character_id": "c_报子",
+      "character_name": "报子",
+      "topic_id": 0,
+      "topic_label": "守城攻防",
+      "strength": 0.667
+    },
+    {
+      "character_id": "c_老军甲",
+      "character_name": "老军甲",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.467
+    },
+    {
+      "character_id": "c_老军乙",
+      "character_name": "老军乙",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_司马昭",
+      "character_name": "司马昭",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.267
+    },
+    {
+      "character_id": "c_赵云",
+      "character_name": "赵云",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        42
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        43,
+        46
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        47,
+        52
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        53,
+        80
+      ],
+      "edge_density": 1.0,
+      "node_count": 6,
+      "edge_count": 15
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        81,
+        222
+      ],
+      "edge_density": 0.8889,
+      "node_count": 10,
+      "edge_count": 40
+    }
+  ]
+}

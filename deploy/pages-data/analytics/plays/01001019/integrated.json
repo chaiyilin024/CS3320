@@ -1,0 +1,201 @@
+{
+  "script_id": "01001019",
+  "title": "柴桑口",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "诸葛亮 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.726,
+      "character_id": "c_张飞",
+      "character_name": "张飞",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "张飞 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.667,
+      "character_id": "c_鲁肃",
+      "character_name": "鲁肃",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "evidence": "鲁肃 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.533,
+      "character_id": "c_周循",
+      "character_name": "周循",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "evidence": "周循 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.533,
+      "character_id": "c_赵云",
+      "character_name": "赵云",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "赵云 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.467,
+      "character_id": "c_四吴将",
+      "character_name": "四吴将",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "evidence": "四吴将 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_庞统",
+      "character_name": "庞统",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "evidence": "庞统 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.526,
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「其他情节」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 37,
+      "evidence": "老生 行当在 block 37 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "evidence": "诸葛亮 为关系网络核心（度=6）"
+    }
+  ],
+  "summary_insights": [
+    "《柴桑口》共 7 位主要人物、15 条关系边，网络密度 0.71。",
+    "主题构成以「其他情节、行军调度」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [96, 123]。",
+    "诸葛亮 与主题「其他情节」关联最强（1.0）。",
+    "行当以老生为主（3 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_张飞",
+      "character_name": "张飞",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.726
+    },
+    {
+      "character_id": "c_鲁肃",
+      "character_name": "鲁肃",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.667
+    },
+    {
+      "character_id": "c_周循",
+      "character_name": "周循",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.533
+    },
+    {
+      "character_id": "c_赵云",
+      "character_name": "赵云",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.533
+    },
+    {
+      "character_id": "c_四吴将",
+      "character_name": "四吴将",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.467
+    },
+    {
+      "character_id": "c_庞统",
+      "character_name": "庞统",
+      "topic_id": 0,
+      "topic_label": "其他情节",
+      "strength": 0.333
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        37
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        38,
+        65
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        66,
+        95
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        96,
+        123
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        124,
+        150
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    }
+  ]
+}

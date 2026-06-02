@@ -1,0 +1,185 @@
+{
+  "script_id": "01002001",
+  "title": "李陵碑",
+  "genre": "家庭剧",
+  "nodes": [
+    {
+      "id": "c_杨延昭",
+      "name": "杨延昭",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 21.0,
+      "betweenness": 0.4,
+      "weighted_betweenness": 0.4,
+      "closeness": 0.7143,
+      "eigenvector": 0.6916,
+      "community_id": 0
+    },
+    {
+      "id": "c_杨继业",
+      "name": "杨继业",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 20.0,
+      "betweenness": 0.6,
+      "weighted_betweenness": 0.6,
+      "closeness": 0.8333,
+      "eigenvector": 0.6713,
+      "community_id": 0
+    },
+    {
+      "id": "c_耶律休",
+      "name": "耶律休",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 1,
+      "weighted_degree": 5.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.4545,
+      "eigenvector": 0.2132,
+      "community_id": 0
+    },
+    {
+      "id": "c_探子",
+      "name": "探子",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 2,
+      "weighted_degree": 4.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.5556,
+      "eigenvector": 0.1272,
+      "community_id": 0
+    },
+    {
+      "id": "c_杨延嗣",
+      "name": "杨延嗣",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 2,
+      "weighted_degree": 2.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.625,
+      "eigenvector": 0.084,
+      "community_id": 1
+    },
+    {
+      "id": "c_四老军",
+      "name": "四老军",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": true,
+      "degree": 2,
+      "weighted_degree": 2.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.5556,
+      "eigenvector": 0.0492,
+      "community_id": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "c_杨延昭",
+      "target": "c_杨继业",
+      "weight": 15.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 7,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_杨延昭",
+      "target": "c_耶律休",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.3333
+    },
+    {
+      "source": "c_探子",
+      "target": "c_杨继业",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.2
+    },
+    {
+      "source": "c_四老军",
+      "target": "c_探子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0667
+    },
+    {
+      "source": "c_四老军",
+      "target": "c_杨继业",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0667
+    },
+    {
+      "source": "c_杨延嗣",
+      "target": "c_杨延昭",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0667
+    },
+    {
+      "source": "c_杨延嗣",
+      "target": "c_杨继业",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0667
+    }
+  ],
+  "metrics": {
+    "node_count": 6,
+    "edge_count": 7,
+    "density": 0.4667,
+    "avg_clustering": 0.6111,
+    "avg_degree": 2.33,
+    "avg_weighted_degree": 9.0,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.0758,
+    "modularity": -0.0082,
+    "assortativity_hangdang": -0.1111,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 5,
+      "density": 0.5,
+      "avg_clustering": 0.0548,
+      "modularity": 0.0
+    }
+  }
+}

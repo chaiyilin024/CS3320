@@ -1,0 +1,259 @@
+{
+  "script_id": "01001002",
+  "title": "洪羊洞",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_杨延昭",
+      "character_name": "杨延昭",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "evidence": "杨延昭 台词与主题「神话天命」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_杨宗保",
+      "character_name": "杨宗保",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "evidence": "杨宗保 台词与主题「神话天命」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_佘太君",
+      "character_name": "佘太君",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "evidence": "佘太君 台词与主题「神话天命」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_柴夫人",
+      "character_name": "柴夫人",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "evidence": "柴夫人 台词与主题「神话天命」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_大太监",
+      "character_name": "大太监",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "evidence": "大太监 台词与主题「神话天命」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.8,
+      "character_id": "c_杨继业",
+      "character_name": "杨继业",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "evidence": "杨继业 台词与主题「神话天命」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.533,
+      "character_id": "c_焦赞",
+      "character_name": "焦赞",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "evidence": "焦赞 台词与主题「神话天命」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.4,
+      "character_id": "c_孟良",
+      "character_name": "孟良",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "evidence": "孟良 台词与主题「神话天命」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "发展",
+      "edge_density_delta": -0.8,
+      "evidence": "「发展」阶段人物同场网络密度变化 -0.80"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "高潮",
+      "edge_density_delta": 1.0,
+      "evidence": "「高潮」阶段人物同场网络密度变化 +1.00"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "结局",
+      "edge_density_delta": -0.5,
+      "evidence": "「结局」阶段人物同场网络密度变化 -0.50"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 1.0,
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「神话天命」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 205,
+      "evidence": "老生 行当在 block 205 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_杨延昭",
+      "character_name": "杨延昭",
+      "evidence": "杨延昭 为关系网络核心（度=8）"
+    }
+  ],
+  "summary_insights": [
+    "《洪羊洞》共 11 位主要人物、23 条关系边，网络密度 0.42。",
+    "主题构成以「神话天命」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [120, 196]。",
+    "杨延昭 与主题「神话天命」关联最强（1.0）。",
+    "行当以老生为主（2 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_杨延昭",
+      "character_name": "杨延昭",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_杨宗保",
+      "character_name": "杨宗保",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_佘太君",
+      "character_name": "佘太君",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_柴夫人",
+      "character_name": "柴夫人",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_大太监",
+      "character_name": "大太监",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_杨继业",
+      "character_name": "杨继业",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 0.8
+    },
+    {
+      "character_id": "c_焦赞",
+      "character_name": "焦赞",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 0.533
+    },
+    {
+      "character_id": "c_孟良",
+      "character_name": "孟良",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 0.4
+    },
+    {
+      "character_id": "c_程宣",
+      "character_name": "程宣",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_家院",
+      "character_name": "家院",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_赵德芳",
+      "character_name": "赵德芳",
+      "topic_id": 0,
+      "topic_label": "神话天命",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        101
+      ],
+      "edge_density": 0.8,
+      "node_count": 5,
+      "edge_count": 8
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        102,
+        110
+      ],
+      "edge_density": 0.0,
+      "node_count": 1,
+      "edge_count": 0
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        111,
+        119
+      ],
+      "edge_density": 0.0,
+      "node_count": 1,
+      "edge_count": 0
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        120,
+        196
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        197,
+        380
+      ],
+      "edge_density": 0.5,
+      "node_count": 8,
+      "edge_count": 14
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "script_id": "01001015",
+  "title": "战北原",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "evidence": "诸葛亮 台词与主题「计策谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.996,
+      "character_id": "c_旗牌",
+      "character_name": "旗牌",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "evidence": "旗牌 台词与主题「计策谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.996,
+      "character_id": "c_秦朗",
+      "character_name": "秦朗",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "evidence": "秦朗 台词与主题「计策谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.914,
+      "character_id": "c_郑文",
+      "character_name": "郑文",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "evidence": "郑文 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.467,
+      "character_id": "c_张苞",
+      "character_name": "张苞",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "evidence": "张苞 台词与主题「计策谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.467,
+      "character_id": "c_报子",
+      "character_name": "报子",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "evidence": "报子 台词与主题「计策谋略」关键词重合度较高"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.796,
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「计策谋略」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 78,
+      "evidence": "老生 行当在 block 78 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "evidence": "诸葛亮 为关系网络核心（度=5）"
+    }
+  ],
+  "summary_insights": [
+    "《战北原》共 6 位主要人物、15 条关系边，网络密度 1.00。",
+    "主题构成以「计策谋略、行军调度」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [139, 182]。",
+    "诸葛亮 与主题「计策谋略」关联最强（1.0）。",
+    "行当以武生为主（4 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_诸葛亮",
+      "character_name": "诸葛亮",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_旗牌",
+      "character_name": "旗牌",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "strength": 0.996
+    },
+    {
+      "character_id": "c_秦朗",
+      "character_name": "秦朗",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "strength": 0.996
+    },
+    {
+      "character_id": "c_郑文",
+      "character_name": "郑文",
+      "topic_id": 1,
+      "topic_label": "行军调度",
+      "strength": 0.914
+    },
+    {
+      "character_id": "c_张苞",
+      "character_name": "张苞",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "strength": 0.467
+    },
+    {
+      "character_id": "c_报子",
+      "character_name": "报子",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "strength": 0.467
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        80
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        81,
+        98
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        99,
+        138
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        139,
+        182
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        183,
+        203
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    }
+  ]
+}

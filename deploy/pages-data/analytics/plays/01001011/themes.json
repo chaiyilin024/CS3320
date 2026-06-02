@@ -1,0 +1,170 @@
+{
+  "script_id": "01001011",
+  "title": "文昭关",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:32.399921+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "公案侠义",
+      "weight": 0.9524,
+      "keywords": [
+        "皇甫",
+        "伍子胥",
+        "昭关",
+        "混出",
+        "庶民",
+        "吴国",
+        "出关",
+        "挂号",
+        "老汉",
+        "好友",
+        "受惊",
+        "东皋",
+        "谁知",
+        "西廊",
+        "捉拿"
+      ],
+      "keyword_weights": [
+        1.7248,
+        1.0765,
+        1.0235,
+        0.3135,
+        0.1768,
+        0.1577,
+        0.1423,
+        0.1415,
+        0.1264,
+        0.115,
+        0.1144,
+        0.111,
+        0.111,
+        0.109,
+        0.0956
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "才子佳人",
+      "weight": 0.0476,
+      "keywords": [
+        "吴国",
+        "东皋",
+        "借兵",
+        "高山峻岭",
+        "求见",
+        "指望",
+        "报仇",
+        "路可通",
+        "行至",
+        "老汉",
+        "扁鹊",
+        "逃出",
+        "含冤",
+        "满腹",
+        "启爷"
+      ],
+      "keyword_weights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.9524,
+    0.0476
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_81",
+      "block_index": 81,
+      "text_snippet": "愧煞男儿不丈夫！",
+      "context_snippet": "忠臣孝子当维护，  /  » 愧煞男儿不丈夫！  /  大丈夫！",
+      "speaker_id": "c_伍员",
+      "speaker_name": "伍员",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_60",
+      "block_index": 60,
+      "text_snippet": "迎接家爷。",
+      "context_snippet": "（童儿上。）  /  » 迎接家爷。  /  将马带进去。",
+      "speaker_id": "c_童儿",
+      "speaker_name": "童儿",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_83",
+      "block_index": 83,
+      "text_snippet": "惭愧！",
+      "context_snippet": "大丈夫！  /  » 惭愧！  /  （伍员、东皋公同下。）",
+      "speaker_id": "c_伍员",
+      "speaker_name": "伍员",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_76",
+      "block_index": 76,
+      "text_snippet": "若得如此，感恩非浅。",
+      "context_snippet": "将军不必悲伤，就在后花园中，暂住几日，慢慢定计，救你出关。  /  » 若得如此，感恩非浅。  /  请。",
+      "speaker_id": "c_伍员",
+      "speaker_name": "伍员",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.969,
+    "labeled_weight": 0.9524,
+    "fallback_weight": 0.0476,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "weak": 1,
+      "fallback": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "公案侠义",
+        "tier": "weak",
+        "label_score": 4.0,
+        "keyword_signal": 1.0,
+        "weight": 0.9524,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "才子佳人",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.0476,
+        "issues": [
+          "关键词与 theme.json 规则匹配度低",
+          "主题权重过低，可能是噪音"
+        ]
+      }
+    ],
+    "issues": []
+  }
+}

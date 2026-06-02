@@ -1,0 +1,153 @@
+{
+  "script_id": "01001018",
+  "title": "双狮图",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_徐策",
+      "character_name": "徐策",
+      "topic_id": 0,
+      "topic_label": "战争征伐",
+      "evidence": "徐策 台词与主题「战争征伐」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.919,
+      "character_id": "c_家院",
+      "character_name": "家院",
+      "topic_id": 0,
+      "topic_label": "战争征伐",
+      "evidence": "家院 台词与主题「战争征伐」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.8,
+      "character_id": "c_薛蛟",
+      "character_name": "薛蛟",
+      "topic_id": 1,
+      "topic_label": "其他情节",
+      "evidence": "薛蛟 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.533,
+      "character_id": "c_书童",
+      "character_name": "书童",
+      "topic_id": 1,
+      "topic_label": "其他情节",
+      "evidence": "书童 台词与主题「其他情节」关键词重合度较高"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.719,
+      "topic_id": 0,
+      "topic_label": "战争征伐",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「战争征伐」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 28,
+      "evidence": "老生 行当在 block 28 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_徐策",
+      "character_name": "徐策",
+      "evidence": "徐策 为关系网络核心（度=3）"
+    }
+  ],
+  "summary_insights": [
+    "《双狮图》共 4 位主要人物、6 条关系边，网络密度 1.00。",
+    "主题构成以「战争征伐、其他情节」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [121, 129]。",
+    "徐策 与主题「战争征伐」关联最强（1.0）。",
+    "行当以老生为主（1 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_徐策",
+      "character_name": "徐策",
+      "topic_id": 0,
+      "topic_label": "战争征伐",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_家院",
+      "character_name": "家院",
+      "topic_id": 0,
+      "topic_label": "战争征伐",
+      "strength": 0.919
+    },
+    {
+      "character_id": "c_薛蛟",
+      "character_name": "薛蛟",
+      "topic_id": 1,
+      "topic_label": "其他情节",
+      "strength": 0.8
+    },
+    {
+      "character_id": "c_书童",
+      "character_name": "书童",
+      "topic_id": 1,
+      "topic_label": "其他情节",
+      "strength": 0.533
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        96
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        97,
+        110
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        111,
+        120
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        121,
+        129
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        130,
+        200
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "script_id": "01001010",
+  "title": "黄金台",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:32.062485+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "冲突怒斥",
+      "weight": 0.7873,
+      "keywords": [
+        "公公",
+        "妇人",
+        "行走",
+        "金枝玉叶",
+        "小妹",
+        "校尉",
+        "驾到",
+        "扮得",
+        "世子",
+        "模样",
+        "保过",
+        "下官",
+        "夜静更深",
+        "事到如今",
+        "搜寻"
+      ],
+      "keyword_weights": [
+        1.7893,
+        1.2861,
+        0.8627,
+        0.2501,
+        0.2201,
+        0.1907,
+        0.1656,
+        0.1537,
+        0.1521,
+        0.1011,
+        0.0854,
+        0.0809,
+        0.0622,
+        0.0314,
+        0.0251
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "朝堂奏对",
+      "weight": 0.2127,
+      "keywords": [
+        "卿家",
+        "扮得",
+        "世子",
+        "校尉",
+        "犯夜",
+        "搜寻",
+        "东宫",
+        "如何是好",
+        "殿下",
+        "拿住",
+        "掌灯",
+        "夜静更深",
+        "御史",
+        "逃出",
+        "看住"
+      ],
+      "keyword_weights": [
+        1.4863,
+        0.1592,
+        0.0004,
+        0.0001,
+        0.0001,
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.7873,
+    0.2127
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_201",
+      "block_index": 201,
+      "text_snippet": "送公公。",
+      "context_snippet": "多讨校尉再搜查。  /  » 送公公。  /  哈哈，哈哈，哈哈。",
+      "speaker_id": "c_田单",
+      "speaker_name": "田单",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_183",
+      "block_index": 183,
+      "text_snippet": "待我看她行走如何。",
+      "context_snippet": "乳娘搀扶小妹，见过伊公公。  /  » 待我看她行走如何。  /  是，姑娘有礼。",
+      "speaker_id": "c_伊立",
+      "speaker_name": "伊立",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_89",
+      "block_index": 89,
+      "text_snippet": "与千岁改扮起来！",
+      "context_snippet": "（乳娘允。）  /  » 与千岁改扮起来！  /  是。",
+      "speaker_id": "c_田单",
+      "speaker_name": "田单",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_84",
+      "block_index": 84,
+      "text_snippet": "哎呀，卿家，你要救我一救！",
+      "context_snippet": "哎呀，千岁，今有伊立带领许多校尉，前来搜寻殿下。这便如何是好？  /  » 哎呀，卿家，你要救我一救！  /  哎呀，千岁，事到如今，并无别计：千岁扮做小妹模样，等那奸贼到来，混过一时，再作道理。",
+      "speaker_id": "c_田法章",
+      "speaker_name": "田法章",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.488,
+    "labeled_weight": 0.2127,
+    "fallback_weight": 0.7873,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 1,
+      "weak": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "冲突怒斥",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.7873,
+        "issues": [
+          "关键词与 theme.json 规则匹配度低"
+        ]
+      },
+      {
+        "topic_id": 1,
+        "label": "朝堂奏对",
+        "tier": "weak",
+        "label_score": 4.0,
+        "keyword_signal": 1.0,
+        "weight": 0.2127,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "79% 主题为未识别（其他情节/未知）",
+      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+    ]
+  }
+}

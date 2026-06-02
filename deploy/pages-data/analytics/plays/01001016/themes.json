@@ -1,0 +1,100 @@
+{
+  "script_id": "01001016",
+  "title": "牧羊卷",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 4,
+    "trained_at": "2026-06-02T04:42:34.383515+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "其他情节",
+      "weight": 1.0,
+      "keywords": [
+        "侯爷",
+        "婆媳",
+        "婶娘",
+        "讨饭",
+        "媳妇前去",
+        "有害",
+        "一贫",
+        "丈夫",
+        "为官",
+        "在外",
+        "贫妇",
+        "不由",
+        "自有",
+        "宋成",
+        "好像"
+      ],
+      "keyword_weights": [
+        1.9916,
+        1.1759,
+        0.7643,
+        0.3036,
+        0.2609,
+        0.2561,
+        0.221,
+        0.2102,
+        0.186,
+        0.1513,
+        0.1363,
+        0.1188,
+        0.1151,
+        0.1093,
+        0.0926
+      ]
+    }
+  ],
+  "topic_composition": [
+    1.0
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_97",
+      "block_index": 97,
+      "text_snippet": "害得我婆媳们无路可走，",
+      "context_snippet": "婆媳讨饭在外游。  /  » 害得我婆媳们无路可走，  /  但不知何日里才得出头。",
+      "speaker_id": "c_朱母",
+      "speaker_name": "朱母",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_68",
+      "block_index": 68,
+      "text_snippet": "你就穿戴起来吧。",
+      "context_snippet": "她婆媳么，无有福分的了。  /  » 你就穿戴起来吧。  /  （二衙役同上。〖大吹打〗。宋氏穿行头下。）",
+      "speaker_id": "c_朱春科",
+      "speaker_name": "朱春科",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.35,
+    "labeled_weight": 0.0,
+    "fallback_weight": 1.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 1.0,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "100% 主题为未识别（其他情节/未知）",
+      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+    ]
+  }
+}

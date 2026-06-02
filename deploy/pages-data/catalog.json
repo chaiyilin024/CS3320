@@ -1,0 +1,437 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-02T04:42:14.489639+00:00",
+  "pipeline": {
+    "parse_version": "1.0",
+    "source_root": "/Users/chaiyilin/Desktop/visualize/CS3320/data/京剧剧本",
+    "play_count_total": 1473,
+    "play_count_included": 1473
+  },
+  "plays": [
+    {
+      "script_id": "01001001",
+      "title": "空城计",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001001_空城计.pdf",
+      "page_count": 5,
+      "char_count": 2685,
+      "character_count": 12,
+      "block_count": 182,
+      "scene_count": 6,
+      "parse_quality": 0.936,
+      "output_path": "plays/01001001.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001002",
+      "title": "洪羊洞",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001002_洪羊洞.pdf",
+      "page_count": 8,
+      "char_count": 4248,
+      "character_count": 11,
+      "block_count": 317,
+      "scene_count": 10,
+      "parse_quality": 0.941,
+      "output_path": "plays/01001002.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "宋代"
+      }
+    },
+    {
+      "script_id": "01001003",
+      "title": "三娘教子",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001003_三娘教子.pdf",
+      "page_count": 5,
+      "char_count": 2901,
+      "character_count": 3,
+      "block_count": 199,
+      "scene_count": 1,
+      "parse_quality": 0.938,
+      "output_path": "plays/01001003.json",
+      "tags": {
+        "genre_inferred": "家庭剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001004",
+      "title": "乌盆计【后本】",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001004_乌盆计【后本】.pdf",
+      "page_count": 8,
+      "char_count": 4532,
+      "character_count": 5,
+      "block_count": 318,
+      "scene_count": 2,
+      "parse_quality": 0.952,
+      "output_path": "plays/01001004.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "宋代"
+      }
+    },
+    {
+      "script_id": "01001005",
+      "title": "打鼓骂曹",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001005_打鼓骂曹.pdf",
+      "page_count": 8,
+      "char_count": 4235,
+      "character_count": 11,
+      "block_count": 296,
+      "scene_count": 4,
+      "parse_quality": 0.923,
+      "output_path": "plays/01001005.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001006",
+      "title": "捉放曹",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001006_捉放曹.pdf",
+      "page_count": 10,
+      "char_count": 5604,
+      "character_count": 10,
+      "block_count": 413,
+      "scene_count": 4,
+      "parse_quality": 0.943,
+      "output_path": "plays/01001006.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001007",
+      "title": "桑园寄子",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001007_桑园寄子.pdf",
+      "page_count": 7,
+      "char_count": 3826,
+      "character_count": 7,
+      "block_count": 271,
+      "scene_count": 5,
+      "parse_quality": 0.958,
+      "output_path": "plays/01001007.json",
+      "tags": {
+        "genre_inferred": "家庭剧"
+      }
+    },
+    {
+      "script_id": "01001008",
+      "title": "取成都",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001008_取成都.pdf",
+      "page_count": 7,
+      "char_count": 3260,
+      "character_count": 12,
+      "block_count": 266,
+      "scene_count": 5,
+      "parse_quality": 0.938,
+      "output_path": "plays/01001008.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001009",
+      "title": "硃砂痣",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001009_硃砂痣.pdf",
+      "page_count": 9,
+      "char_count": 4726,
+      "character_count": 8,
+      "block_count": 364,
+      "scene_count": 6,
+      "parse_quality": 0.967,
+      "output_path": "plays/01001009.json",
+      "tags": {
+        "genre_inferred": "爱情剧"
+      }
+    },
+    {
+      "script_id": "01001010",
+      "title": "黄金台",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001010_黄金台.pdf",
+      "page_count": 5,
+      "char_count": 2669,
+      "character_count": 9,
+      "block_count": 219,
+      "scene_count": 2,
+      "parse_quality": 0.991,
+      "output_path": "plays/01001010.json",
+      "tags": {
+        "genre_inferred": "家庭剧"
+      }
+    },
+    {
+      "script_id": "01001011",
+      "title": "文昭关",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001011_文昭关.pdf",
+      "page_count": 7,
+      "char_count": 3572,
+      "character_count": 6,
+      "block_count": 284,
+      "scene_count": 7,
+      "parse_quality": 0.947,
+      "output_path": "plays/01001011.json",
+      "tags": {
+        "genre_inferred": "家庭剧"
+      }
+    },
+    {
+      "script_id": "01001012",
+      "title": "黄鹤楼",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001012_黄鹤楼.pdf",
+      "page_count": 9,
+      "char_count": 4589,
+      "character_count": 8,
+      "block_count": 385,
+      "scene_count": 5,
+      "parse_quality": 0.972,
+      "output_path": "plays/01001012.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001013",
+      "title": "天水关",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001013_天水关.pdf",
+      "page_count": 8,
+      "char_count": 3424,
+      "character_count": 12,
+      "block_count": 264,
+      "scene_count": 7,
+      "parse_quality": 0.925,
+      "output_path": "plays/01001013.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001014",
+      "title": "七星灯",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001014_七星灯.pdf",
+      "page_count": 7,
+      "char_count": 3319,
+      "character_count": 11,
+      "block_count": 253,
+      "scene_count": 5,
+      "parse_quality": 0.928,
+      "output_path": "plays/01001014.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001015",
+      "title": "战北原",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001015_战北原.pdf",
+      "page_count": 5,
+      "char_count": 2419,
+      "character_count": 6,
+      "block_count": 154,
+      "scene_count": 1,
+      "parse_quality": 0.914,
+      "output_path": "plays/01001015.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001016",
+      "title": "牧羊卷",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001016_牧羊卷.pdf",
+      "page_count": 8,
+      "char_count": 4725,
+      "character_count": 10,
+      "block_count": 322,
+      "scene_count": 1,
+      "parse_quality": 0.949,
+      "output_path": "plays/01001016.json",
+      "tags": {
+        "genre_inferred": "家庭剧"
+      }
+    },
+    {
+      "script_id": "01001017",
+      "title": "清官册",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001017_清官册.pdf",
+      "page_count": 8,
+      "char_count": 4832,
+      "character_count": 12,
+      "block_count": 296,
+      "scene_count": 5,
+      "parse_quality": 0.933,
+      "output_path": "plays/01001017.json",
+      "tags": {
+        "genre_inferred": "历史剧"
+      }
+    },
+    {
+      "script_id": "01001018",
+      "title": "双狮图",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001018_双狮图.pdf",
+      "page_count": 5,
+      "char_count": 2525,
+      "character_count": 4,
+      "block_count": 182,
+      "scene_count": 1,
+      "parse_quality": 0.967,
+      "output_path": "plays/01001018.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "唐代"
+      }
+    },
+    {
+      "script_id": "01001019",
+      "title": "柴桑口",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001019_柴桑口.pdf",
+      "page_count": 4,
+      "char_count": 2120,
+      "character_count": 7,
+      "block_count": 137,
+      "scene_count": 3,
+      "parse_quality": 0.968,
+      "output_path": "plays/01001019.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01001020",
+      "title": "宋江闹院",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01001020_宋江闹院.pdf",
+      "page_count": 8,
+      "char_count": 5220,
+      "character_count": 4,
+      "block_count": 376,
+      "scene_count": 2,
+      "parse_quality": 0.993,
+      "output_path": "plays/01001020.json",
+      "tags": {
+        "genre_inferred": "历史剧"
+      }
+    },
+    {
+      "script_id": "01002001",
+      "title": "李陵碑",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01002001_李陵碑.pdf",
+      "page_count": 4,
+      "char_count": 1742,
+      "character_count": 6,
+      "block_count": 118,
+      "scene_count": 5,
+      "parse_quality": 0.927,
+      "output_path": "plays/01002001.json",
+      "tags": {
+        "genre_inferred": "家庭剧",
+        "era_inferred": "神话"
+      }
+    },
+    {
+      "script_id": "01002003",
+      "title": "祭长江",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01002003_祭长江.pdf",
+      "page_count": 2,
+      "char_count": 871,
+      "character_count": 2,
+      "block_count": 47,
+      "scene_count": 2,
+      "parse_quality": 0.892,
+      "output_path": "plays/01002003.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "三国"
+      }
+    },
+    {
+      "script_id": "01002004",
+      "title": "探寒窑",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01002004_探寒窑.pdf",
+      "page_count": 5,
+      "char_count": 2522,
+      "character_count": 4,
+      "block_count": 151,
+      "scene_count": 1,
+      "parse_quality": 0.888,
+      "output_path": "plays/01002004.json",
+      "tags": {
+        "genre_inferred": "家庭剧",
+        "era_inferred": "神话"
+      }
+    },
+    {
+      "script_id": "01002005",
+      "title": "落花园",
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "source_pdf": "01002005_落花园.pdf",
+      "page_count": 3,
+      "char_count": 1640,
+      "character_count": 4,
+      "block_count": 117,
+      "scene_count": 1,
+      "parse_quality": 0.963,
+      "output_path": "plays/01002005.json",
+      "tags": {
+        "genre_inferred": "历史剧",
+        "era_inferred": "神话"
+      }
+    }
+  ]
+}

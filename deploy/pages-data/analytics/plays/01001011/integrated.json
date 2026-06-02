@@ -1,0 +1,213 @@
+{
+  "script_id": "01001011",
+  "title": "文昭关",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 0.933,
+      "character_id": "c_伍员",
+      "character_name": "伍员",
+      "topic_id": 1,
+      "topic_label": "才子佳人",
+      "evidence": "伍员 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.933,
+      "character_id": "c_东皋公",
+      "character_name": "东皋公",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "东皋公 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.867,
+      "character_id": "c_米南适",
+      "character_name": "米南适",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "米南适 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.6,
+      "character_id": "c_皇甫讷",
+      "character_name": "皇甫讷",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "皇甫讷 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.4,
+      "character_id": "c_四青袍",
+      "character_name": "四青袍",
+      "topic_id": 1,
+      "topic_label": "才子佳人",
+      "evidence": "四青袍 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.267,
+      "character_id": "c_童儿",
+      "character_name": "童儿",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "童儿 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "发展",
+      "edge_density_delta": 1.0,
+      "evidence": "「发展」阶段人物同场网络密度变化 +1.00"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.8,
+      "stage": "冲突",
+      "edge_density_delta": -0.2667,
+      "evidence": "「冲突」阶段人物同场网络密度变化 -0.27"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "高潮",
+      "edge_density_delta": -0.7333,
+      "evidence": "「高潮」阶段人物同场网络密度变化 -0.73"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "结局",
+      "edge_density_delta": 1.0,
+      "evidence": "「结局」阶段人物同场网络密度变化 +1.00"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.952,
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「公案侠义」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 0,
+      "evidence": "老生 行当在 block 0 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_东皋公",
+      "character_name": "东皋公",
+      "evidence": "东皋公 为关系网络核心（度=5）"
+    }
+  ],
+  "summary_insights": [
+    "《文昭关》共 6 位主要人物、11 条关系边，网络密度 0.73。",
+    "主题构成以「公案侠义、才子佳人」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [288, 291]。",
+    "伍员 与主题「才子佳人」关联最强（0.933）。",
+    "行当以老生为主（2 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_伍员",
+      "character_name": "伍员",
+      "topic_id": 1,
+      "topic_label": "才子佳人",
+      "strength": 0.933
+    },
+    {
+      "character_id": "c_东皋公",
+      "character_name": "东皋公",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.933
+    },
+    {
+      "character_id": "c_米南适",
+      "character_name": "米南适",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.867
+    },
+    {
+      "character_id": "c_皇甫讷",
+      "character_name": "皇甫讷",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.6
+    },
+    {
+      "character_id": "c_四青袍",
+      "character_name": "四青袍",
+      "topic_id": 1,
+      "topic_label": "才子佳人",
+      "strength": 0.4
+    },
+    {
+      "character_id": "c_童儿",
+      "character_name": "童儿",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        0
+      ],
+      "edge_density": 0.0,
+      "node_count": 0,
+      "edge_count": 0
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        12,
+        136
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        137,
+        287
+      ],
+      "edge_density": 0.7333,
+      "node_count": 6,
+      "edge_count": 11
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        288,
+        291
+      ],
+      "edge_density": 0.0,
+      "node_count": 1,
+      "edge_count": 0
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        292,
+        334
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    }
+  ]
+}

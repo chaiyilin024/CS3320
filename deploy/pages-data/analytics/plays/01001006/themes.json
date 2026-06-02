@@ -1,0 +1,307 @@
+{
+  "script_id": "01001006",
+  "title": "捉放曹",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 4,
+    "trained_at": "2026-06-02T04:42:29.965095+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "公案侠义",
+      "weight": 0.5227,
+      "keywords": [
+        "公台",
+        "释放",
+        "连累",
+        "陈名宫",
+        "天色已晚",
+        "大事",
+        "避祸",
+        "天下人",
+        "行刺",
+        "不成",
+        "一生一世",
+        "捉拿",
+        "老汉",
+        "中牟县",
+        "刺客"
+      ],
+      "keyword_weights": [
+        1.5402,
+        0.231,
+        0.1796,
+        0.1757,
+        0.1389,
+        0.1086,
+        0.1069,
+        0.0921,
+        0.062,
+        0.0551,
+        0.055,
+        0.0542,
+        0.0498,
+        0.047,
+        0.0458
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "宴饮场面",
+      "weight": 0.1978,
+      "keywords": [
+        "明公",
+        "杀死",
+        "睡着",
+        "赶路",
+        "得罪",
+        "书役",
+        "杀猪",
+        "款待",
+        "好心",
+        "流泪",
+        "忠孝",
+        "令尊",
+        "老汉",
+        "明公吓",
+        "追悔"
+      ],
+      "keyword_weights": [
+        1.7179,
+        0.1209,
+        0.1112,
+        0.1006,
+        0.0639,
+        0.0639,
+        0.0598,
+        0.0597,
+        0.0567,
+        0.0491,
+        0.0491,
+        0.046,
+        0.0128,
+        0.01,
+        0.0092
+      ]
+    },
+    {
+      "topic_id": 2,
+      "label": "冲突怒斥",
+      "weight": 0.1721,
+      "keywords": [
+        "言语",
+        "恍惚",
+        "井底之蛙",
+        "杀死",
+        "连累",
+        "将贼",
+        "好比",
+        "孟德",
+        "明公吓",
+        "追悔",
+        "上马",
+        "侄儿",
+        "斩草除根",
+        "岂肯",
+        "村庄"
+      ],
+      "keyword_weights": [
+        1.5506,
+        0.1486,
+        0.1447,
+        0.0957,
+        0.0923,
+        0.081,
+        0.0173,
+        0.0146,
+        0.0142,
+        0.0118,
+        0.0108,
+        0.0106,
+        0.0092,
+        0.007,
+        0.0061
+      ]
+    },
+    {
+      "topic_id": 3,
+      "label": "其他情节",
+      "weight": 0.1074,
+      "keywords": [
+        "宝剑",
+        "一家人",
+        "遭殃",
+        "将贼",
+        "下手",
+        "杀死",
+        "连累",
+        "声响",
+        "明公吓",
+        "追悔",
+        "斩草除根",
+        "侄儿",
+        "村庄",
+        "家眷",
+        "避祸"
+      ],
+      "keyword_weights": [
+        1.497,
+        0.3106,
+        0.1936,
+        0.1455,
+        0.02,
+        0.0085,
+        0.0083,
+        0.0023,
+        0.001,
+        0.0009,
+        0.0006,
+        0.0005,
+        0.0004,
+        0.0002,
+        0.0001
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.5227,
+    0.1978,
+    0.1721,
+    0.1074
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_59",
+      "block_index": 59,
+      "text_snippet": "公台，你可知朝中谁忠谁奸？",
+      "context_snippet": "管叫他弃县令随我逃脱。  /  » 公台，你可知朝中谁忠谁奸？  /  我在廉外为官，怎知朝内之事？",
+      "speaker_id": "c_曹操",
+      "speaker_name": "曹操",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_53",
+      "block_index": 53,
+      "text_snippet": "也非亲眼得见，现有董太师钧旨，捉拿与你，还敢强辩不成？",
+      "context_snippet": "我行刺董太师，可是你亲眼得见？  /  » 也非亲眼得见，现有董太师钧旨，捉拿与你，还敢强辩不成？  /  吓！",
+      "speaker_id": "c_陈宫",
+      "speaker_name": "陈宫",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_94",
+      "block_index": 94,
+      "text_snippet": "思一思想一想无计安妥，",
+      "context_snippet": "若不放又恐怕惹出风波。  /  » 思一思想一想无计安妥，  /  我就是放也说个言投意合。",
+      "speaker_id": "c_陈宫",
+      "speaker_name": "陈宫",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_485",
+      "block_index": 485,
+      "text_snippet": "——陈宫题。呀，他有意留诗在此，叫骂与我。陈宫吓，陈宫，我日后若不杀你，誓不为人也！吓，店家，房饭钱在此，俺赶路去了！",
+      "context_snippet": "“鼓打四更月正浓，心猿意马归旧宗。误杀吕家人数口，方知曹操是奸雄！”  /  » ——陈宫题。呀，他有意留诗在此，叫骂与我。陈宫吓，陈宫，我日后若不杀你，誓不为人也！吓，店家，房饭钱在此，俺赶路去了！",
+      "speaker_id": "c_曹操",
+      "speaker_name": "曹操",
+      "score": 1.0
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_84",
+      "block_index": 84,
+      "text_snippet": "捉虎难放虎易自己揣摩！",
+      "context_snippet": "擒住你反放你必定伤我，  /  » 捉虎难放虎易自己揣摩！  /  你将我解进京献与董卓，",
+      "speaker_id": "c_陈宫",
+      "speaker_name": "陈宫",
+      "score": 1.0
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_66",
+      "block_index": 66,
+      "text_snippet": "到如今收吕布做事太错，",
+      "context_snippet": "满朝中文共武木雕泥塑。  /  » 到如今收吕布做事太错，  /  一心要谋取那汉室山河。",
+      "speaker_id": "c_曹操",
+      "speaker_name": "曹操",
+      "score": 1.0
+    },
+    {
+      "topic_id": 3,
+      "block_id": "b_55",
+      "block_index": 55,
+      "text_snippet": "听他言唬得我心似刀割，",
+      "context_snippet": "吓！  /  » 听他言唬得我心似刀割，  /  心问口口问心自己揣摩。",
+      "speaker_id": "c_曹操",
+      "speaker_name": "曹操",
+      "score": 1.0
+    },
+    {
+      "topic_id": 3,
+      "block_id": "b_483",
+      "block_index": 483,
+      "text_snippet": "天已明了，陈宫为何不见？桌上现有诗句，待我看来：",
+      "context_snippet": "不见陈宫事有差。  /  » 天已明了，陈宫为何不见？桌上现有诗句，待我看来：  /  “鼓打四更月正浓，心猿意马归旧宗。误杀吕家人数口，方知曹操是奸雄！”",
+      "speaker_id": "c_曹操",
+      "speaker_name": "曹操",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.802,
+    "labeled_weight": 0.6948,
+    "fallback_weight": 0.3052,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "weak": 2,
+      "fallback": 2
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "公案侠义",
+        "tier": "weak",
+        "label_score": 4.0,
+        "keyword_signal": 1.0,
+        "weight": 0.5227,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "宴饮场面",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.1978,
+        "issues": [
+          "关键词与 theme.json 规则匹配度低"
+        ]
+      },
+      {
+        "topic_id": 2,
+        "label": "冲突怒斥",
+        "tier": "weak",
+        "label_score": 3.0,
+        "keyword_signal": 1.0,
+        "weight": 0.1721,
+        "issues": []
+      },
+      {
+        "topic_id": 3,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.1074,
+        "issues": []
+      }
+    ],
+    "issues": []
+  }
+}

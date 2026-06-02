@@ -1,0 +1,148 @@
+{
+  "script_id": "01001018",
+  "title": "双狮图",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_徐策",
+      "name": "徐策",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 123.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.6667,
+      "closeness": 1.0,
+      "eigenvector": 0.6527,
+      "community_id": 0
+    },
+    {
+      "id": "c_薛蛟",
+      "name": "薛蛟",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 119.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.6518,
+      "community_id": 0
+    },
+    {
+      "id": "c_书童",
+      "name": "书童",
+      "hangdang": "丑",
+      "hangdang_coarse": "丑",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 63.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.3839,
+      "community_id": 0
+    },
+    {
+      "id": "c_家院",
+      "name": "家院",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 7.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.0408,
+      "community_id": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "c_徐策",
+      "target": "c_薛蛟",
+      "weight": 87.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 43,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_书童",
+      "target": "c_徐策",
+      "weight": 31.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 15,
+      "normalized_weight": 0.3563
+    },
+    {
+      "source": "c_书童",
+      "target": "c_薛蛟",
+      "weight": 31.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 15,
+      "normalized_weight": 0.3563
+    },
+    {
+      "source": "c_家院",
+      "target": "c_徐策",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.0575
+    },
+    {
+      "source": "c_书童",
+      "target": "c_家院",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0115
+    },
+    {
+      "source": "c_家院",
+      "target": "c_薛蛟",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0115
+    }
+  ],
+  "metrics": {
+    "node_count": 4,
+    "edge_count": 6,
+    "density": 1.0,
+    "avg_clustering": 1.0,
+    "avg_degree": 3.0,
+    "avg_weighted_degree": 78.0,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.1719,
+    "modularity": 0.0,
+    "assortativity_hangdang": -0.3333,
+    "main_subgraph": {
+      "node_count": 4,
+      "edge_count": 6,
+      "density": 1.0,
+      "avg_clustering": 0.1719,
+      "modularity": 0.0
+    }
+  }
+}

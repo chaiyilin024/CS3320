@@ -1,0 +1,235 @@
+{
+  "script_id": "01002003",
+  "title": "祭长江",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:36.811392+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "兄弟情义",
+      "weight": 0.4642,
+      "keywords": [
+        "可叹",
+        "诸葛",
+        "全仗",
+        "桃园",
+        "死生",
+        "一贤伦",
+        "水镜",
+        "卧龙",
+        "徐庶",
+        "出身",
+        "被困",
+        "声名",
+        "黄巾",
+        "檀溪",
+        "我的夫"
+      ],
+      "keyword_weights": [
+        1.0884,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1592,
+        0.1227,
+        0.1227
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "朝堂奏对",
+      "weight": 0.4286,
+      "keywords": [
+        "皇叔",
+        "摆驾",
+        "珠泪",
+        "投江",
+        "东吴",
+        "养育之恩",
+        "拜谢",
+        "苦守",
+        "奴日",
+        "棒打鸳鸯",
+        "淋淋",
+        "清风",
+        "内侍",
+        "未亡人",
+        "归海"
+      ],
+      "keyword_weights": [
+        0.7966,
+        0.3604,
+        0.2276,
+        0.2045,
+        0.1951,
+        0.1951,
+        0.1951,
+        0.1951,
+        0.1373,
+        0.1373,
+        0.1373,
+        0.1373,
+        0.1373,
+        0.1373,
+        0.1373
+      ]
+    },
+    {
+      "topic_id": 2,
+      "label": "才子佳人",
+      "weight": 0.1072,
+      "keywords": [
+        "先主",
+        "圣寿",
+        "无疆",
+        "悲哀",
+        "夫妻",
+        "姻缘",
+        "告禀",
+        "祭礼",
+        "两厢",
+        "更换",
+        "举目",
+        "望西川",
+        "长江",
+        "梦魂",
+        "凭空"
+      ],
+      "keyword_weights": [
+        1.1881,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.4642,
+    0.4286,
+    0.1072
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_60",
+      "block_index": 60,
+      "text_snippet": "玉旨下，跪。",
+      "context_snippet": "（孙尚香上，四水旗引龙王同上。）  /  » 玉旨下，跪。  /  在。",
+      "speaker_id": "c_龙王",
+      "speaker_name": "龙王",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_32",
+      "block_index": 32,
+      "text_snippet": "可叹你当阳道夏口夜奔，",
+      "context_snippet": "可叹你水镜庄得一贤伦；  /  » 可叹你当阳道夏口夜奔，  /  可叹你全仗着诸葛先生；",
+      "speaker_id": "c_孙尚香",
+      "speaker_name": "孙尚香",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_65",
+      "block_index": 65,
+      "text_snippet": "众神将，保我朝见玉帝去者。",
+      "context_snippet": "（龙王下。孙尚香换衣。）  /  » 众神将，保我朝见玉帝去者。  /  （孙尚香、四水旗同下。）",
+      "speaker_id": "c_孙尚香",
+      "speaker_name": "孙尚香",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_62",
+      "block_index": 62,
+      "text_snippet": "听宣读。诏曰：孙尚香为夫投江，尽节一死，玉帝垂怜，封为枭姬娘娘。旨意读罢，望诏谢恩。",
+      "context_snippet": "在。  /  » 听宣读。诏曰：孙尚香为夫投江，尽节一死，玉帝垂怜，封为枭姬娘娘。旨意读罢，望诏谢恩。  /  圣寿无疆。",
+      "speaker_id": "c_龙王",
+      "speaker_name": "龙王",
+      "score": 1.0
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_22",
+      "block_index": 22,
+      "text_snippet": "夫君，先主！啊呀！",
+      "context_snippet": "孙尚香在江边心中酸疼，  /  » 夫君，先主！啊呀！  /  尊一声汉皇叔细听分明：",
+      "speaker_id": "c_孙尚香",
+      "speaker_name": "孙尚香",
+      "score": 1.0
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_19",
+      "block_index": 19,
+      "text_snippet": "夫君，先主！",
+      "context_snippet": "设祭长江岸，举目望西川。梦魂何日见，  /  » 夫君，先主！  /  空自珠泪涟。",
+      "speaker_id": "c_孙尚香",
+      "speaker_name": "孙尚香",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 1.0,
+    "labeled_weight": 1.0,
+    "fallback_weight": 0.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "weak": 3
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "兄弟情义",
+        "tier": "weak",
+        "label_score": 5.0,
+        "keyword_signal": 1.0,
+        "weight": 0.4642,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "朝堂奏对",
+        "tier": "weak",
+        "label_score": 4.0,
+        "keyword_signal": 1.0,
+        "weight": 0.4286,
+        "issues": []
+      },
+      {
+        "topic_id": 2,
+        "label": "才子佳人",
+        "tier": "weak",
+        "label_score": 5.0,
+        "keyword_signal": 1.0,
+        "weight": 0.1072,
+        "issues": []
+      }
+    ],
+    "issues": []
+  }
+}

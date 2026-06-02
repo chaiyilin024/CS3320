@@ -1,0 +1,269 @@
+{
+  "script_id": "01001015",
+  "title": "战北原",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_诸葛亮",
+      "name": "诸葛亮",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 83.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.7,
+      "closeness": 1.0,
+      "eigenvector": 0.6883,
+      "community_id": 0
+    },
+    {
+      "id": "c_郑文",
+      "name": "郑文",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 77.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.7,
+      "closeness": 1.0,
+      "eigenvector": 0.6816,
+      "community_id": 0
+    },
+    {
+      "id": "c_旗牌",
+      "name": "旗牌",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 17.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.1572,
+      "community_id": 0
+    },
+    {
+      "id": "c_张苞",
+      "name": "张苞",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 15.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.1363,
+      "community_id": 0
+    },
+    {
+      "id": "c_报子",
+      "name": "报子",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 13.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.115,
+      "community_id": 0
+    },
+    {
+      "id": "c_秦朗",
+      "name": "秦朗",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 5,
+      "weighted_degree": 9.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.0716,
+      "community_id": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "c_诸葛亮",
+      "target": "c_郑文",
+      "weight": 59.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 29,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_诸葛亮",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.1525
+    },
+    {
+      "source": "c_报子",
+      "target": "c_诸葛亮",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.1525
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_郑文",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.1525
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_诸葛亮",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.0847
+    },
+    {
+      "source": "c_秦朗",
+      "target": "c_郑文",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.0847
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_郑文",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0508
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_报子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0169
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_旗牌",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0169
+    },
+    {
+      "source": "c_张苞",
+      "target": "c_秦朗",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0169
+    },
+    {
+      "source": "c_报子",
+      "target": "c_旗牌",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0169
+    },
+    {
+      "source": "c_报子",
+      "target": "c_秦朗",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0169
+    },
+    {
+      "source": "c_报子",
+      "target": "c_郑文",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0169
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_秦朗",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0169
+    },
+    {
+      "source": "c_秦朗",
+      "target": "c_诸葛亮",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0169
+    }
+  ],
+  "metrics": {
+    "node_count": 6,
+    "edge_count": 15,
+    "density": 1.0,
+    "avg_clustering": 1.0,
+    "avg_degree": 5.0,
+    "avg_weighted_degree": 35.67,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.0643,
+    "modularity": 0.0,
+    "assortativity_hangdang": -0.2,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 10,
+      "density": 1.0,
+      "avg_clustering": 0.0891,
+      "modularity": 0.0
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "script_id": "01002005",
+  "title": "落花园",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_陈杏元",
+      "name": "陈杏元",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 59.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.6667,
+      "closeness": 1.0,
+      "eigenvector": 0.6579,
+      "community_id": 0
+    },
+    {
+      "id": "c_邹母",
+      "name": "邹母",
+      "hangdang": "老旦",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 45.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.5733,
+      "community_id": 0
+    },
+    {
+      "id": "c_邹云英",
+      "name": "邹云英",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 39.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.6667,
+      "closeness": 1.0,
+      "eigenvector": 0.485,
+      "community_id": 0
+    },
+    {
+      "id": "c_丫鬟",
+      "name": "丫鬟",
+      "hangdang": "花旦",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 5.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.0568,
+      "community_id": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "c_邹母",
+      "target": "c_陈杏元",
+      "weight": 33.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 16,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_邹云英",
+      "target": "c_陈杏元",
+      "weight": 25.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 12,
+      "normalized_weight": 0.7576
+    },
+    {
+      "source": "c_邹云英",
+      "target": "c_邹母",
+      "weight": 11.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 5,
+      "normalized_weight": 0.3333
+    },
+    {
+      "source": "c_丫鬟",
+      "target": "c_邹云英",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0909
+    },
+    {
+      "source": "c_丫鬟",
+      "target": "c_邹母",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0303
+    },
+    {
+      "source": "c_丫鬟",
+      "target": "c_陈杏元",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0303
+    }
+  ],
+  "metrics": {
+    "node_count": 4,
+    "edge_count": 6,
+    "density": 1.0,
+    "avg_clustering": 1.0,
+    "avg_degree": 3.0,
+    "avg_weighted_degree": 37.0,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.2386,
+    "modularity": 0.0,
+    "assortativity_hangdang": NaN,
+    "main_subgraph": {
+      "node_count": 4,
+      "edge_count": 6,
+      "density": 1.0,
+      "avg_clustering": 0.2386,
+      "modularity": 0.0
+    }
+  }
+}

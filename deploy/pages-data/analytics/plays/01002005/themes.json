@@ -1,0 +1,160 @@
+{
+  "script_id": "01002005",
+  "title": "落花园",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:37.296596+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "其他情节",
+      "weight": 0.8409,
+      "keywords": [
+        "梅花",
+        "花园",
+        "带路",
+        "妖怪",
+        "后堂",
+        "奴家",
+        "诰封",
+        "云英",
+        "现任",
+        "八府巡按",
+        "河南",
+        "看来",
+        "逍遥",
+        "诰命",
+        "落雁"
+      ],
+      "keyword_weights": [
+        1.4624,
+        0.6067,
+        0.6066,
+        0.3251,
+        0.3251,
+        0.277,
+        0.277,
+        0.277,
+        0.263,
+        0.263,
+        0.263,
+        0.2076,
+        0.2075,
+        0.1909,
+        0.0001
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "才子佳人",
+      "weight": 0.1591,
+      "keywords": [
+        "落难",
+        "贤妹",
+        "妖魔鬼怪",
+        "汪月英",
+        "根苗",
+        "一似",
+        "珠泪",
+        "同胞",
+        "你好",
+        "一母"
+      ],
+      "keyword_weights": [
+        1.2235,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.8409,
+    0.1591
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_97",
+      "block_index": 97,
+      "text_snippet": "奴家二九，占长了。",
+      "context_snippet": "一十六岁。  /  » 奴家二九，占长了。  /  长则长，幼则幼，二人在这绣楼前，当着老身一拜。",
+      "speaker_id": "c_陈杏元",
+      "speaker_name": "陈杏元",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_84",
+      "block_index": 84,
+      "text_snippet": "老身有意将你收留府下，做一位螟蛉义女，不知你意下如何？",
+      "context_snippet": "原来是一名诰命夫人，小女子不知，多多有罪。  /  » 老身有意将你收留府下，做一位螟蛉义女，不知你意下如何？  /  这……",
+      "speaker_id": "c_邹母",
+      "speaker_name": "邹母",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_61",
+      "block_index": 61,
+      "text_snippet": "细听我落难人叙说端详：",
+      "context_snippet": "尊夫人与小姐听奴言讲，  /  » 细听我落难人叙说端详：  /  家住在扬州郡江都小县，",
+      "speaker_id": null,
+      "speaker_name": "",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_38",
+      "block_index": 38,
+      "text_snippet": "她本是落难人来到我家，",
+      "context_snippet": "丫鬟带路。  /  » 她本是落难人来到我家，  /  不由我一阵阵心内如麻。",
+      "speaker_id": "c_邹云英",
+      "speaker_name": "邹云英",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.453,
+    "labeled_weight": 0.1591,
+    "fallback_weight": 0.8409,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 1,
+      "weak": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.8409,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "才子佳人",
+        "tier": "weak",
+        "label_score": 4.0,
+        "keyword_signal": 1.0,
+        "weight": 0.1591,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "84% 主题为未识别（其他情节/未知）",
+      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+    ]
+  }
+}

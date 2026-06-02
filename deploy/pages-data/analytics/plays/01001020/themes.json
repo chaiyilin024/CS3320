@@ -1,0 +1,100 @@
+{
+  "script_id": "01001020",
+  "title": "宋江闹院",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 4,
+    "trained_at": "2026-06-02T04:42:36.097173+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "其他情节",
+      "weight": 1.0,
+      "keywords": [
+        "大姐",
+        "宋大爷",
+        "私通",
+        "乌龙院",
+        "宋公明",
+        "走走",
+        "不到",
+        "阎婆惜",
+        "闲暇",
+        "不成",
+        "衙前",
+        "心事",
+        "夫妻",
+        "宋先生",
+        "师徒"
+      ],
+      "keyword_weights": [
+        2.2121,
+        1.9193,
+        1.6495,
+        1.5023,
+        0.6865,
+        0.2299,
+        0.1948,
+        0.1671,
+        0.1336,
+        0.1273,
+        0.1134,
+        0.1123,
+        0.1071,
+        0.1059,
+        0.0833
+      ]
+    }
+  ],
+  "topic_composition": [
+    1.0
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_99",
+      "block_index": 99,
+      "text_snippet": "哎，大姐什么事？",
+      "context_snippet": "（张文远上。）  /  » 哎，大姐什么事？  /  不好呢，你师父来了！",
+      "speaker_id": "c_张文远",
+      "speaker_name": "张文远",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_96",
+      "block_index": 96,
+      "text_snippet": "呀呸！快快到妈儿娘房中，将钥匙取来开门。快去！",
+      "context_snippet": "在我妈身上。你改日再来吧！  /  » 呀呸！快快到妈儿娘房中，将钥匙取来开门。快去！  /  晓得了，你等一会儿。三郎快来！",
+      "speaker_id": "c_宋江",
+      "speaker_name": "宋江",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.35,
+    "labeled_weight": 0.0,
+    "fallback_weight": 1.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 1.0,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "100% 主题为未识别（其他情节/未知）",
+      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "script_id": "01001009",
+  "title": "硃砂痣",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 4,
+    "trained_at": "2026-06-02T04:42:31.523465+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "家训教子",
+      "weight": 1.0,
+      "keywords": [
+        "亲生",
+        "银子",
+        "孩童",
+        "吴相公",
+        "老妈妈",
+        "娘子",
+        "夫妻",
+        "物件",
+        "妈妈",
+        "不卖",
+        "聘礼",
+        "父母",
+        "丈夫",
+        "教训",
+        "大娘"
+      ],
+      "keyword_weights": [
+        1.5075,
+        1.4756,
+        1.3513,
+        0.5383,
+        0.3783,
+        0.3273,
+        0.2057,
+        0.1619,
+        0.1619,
+        0.1608,
+        0.1592,
+        0.1525,
+        0.1505,
+        0.1482,
+        0.1316
+      ]
+    }
+  ],
+  "topic_composition": [
+    1.0
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_71",
+      "block_index": 71,
+      "text_snippet": "当面烧化了吧！",
+      "context_snippet": "但凭恩人。  /  » 当面烧化了吧！  /  多谢恩人。",
+      "speaker_id": "c_韩廷凤",
+      "speaker_name": "韩廷凤",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_69",
+      "block_index": 69,
+      "text_snippet": "你这婚书在此。",
+      "context_snippet": "是。  /  » 你这婚书在此。  /  但凭恩人。",
+      "speaker_id": "c_韩廷凤",
+      "speaker_name": "韩廷凤",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 1.0,
+    "labeled_weight": 1.0,
+    "fallback_weight": 0.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "weak": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "家训教子",
+        "tier": "weak",
+        "label_score": 5.0,
+        "keyword_signal": 1.0,
+        "weight": 1.0,
+        "issues": []
+      }
+    ],
+    "issues": []
+  }
+}

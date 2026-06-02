@@ -1,0 +1,259 @@
+{
+  "script_id": "01001017",
+  "title": "清官册",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_寇准",
+      "character_name": "寇准",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "evidence": "寇准 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.933,
+      "character_id": "c_赵德芳",
+      "character_name": "赵德芳",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "evidence": "赵德芳 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.755,
+      "character_id": "c_驿丞官",
+      "character_name": "驿丞官",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "evidence": "驿丞官 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.6,
+      "character_id": "c_宋王",
+      "character_name": "宋王",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "evidence": "宋王 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.533,
+      "character_id": "c_太监",
+      "character_name": "太监",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "evidence": "太监 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_潘洪",
+      "character_name": "潘洪",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "evidence": "潘洪 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_金牌官",
+      "character_name": "金牌官",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "evidence": "金牌官 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.267,
+      "character_id": "c_马牌子",
+      "character_name": "马牌子",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "evidence": "马牌子 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.655,
+      "stage": "发展",
+      "edge_density_delta": -0.2182,
+      "evidence": "「发展」阶段人物同场网络密度变化 -0.22"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "冲突",
+      "edge_density_delta": 0.3611,
+      "evidence": "「冲突」阶段人物同场网络密度变化 +0.36"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.555,
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「朝堂奏对」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 0,
+      "evidence": "老生 行当在 block 0 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_寇准",
+      "character_name": "寇准",
+      "evidence": "寇准 为关系网络核心（度=11）"
+    }
+  ],
+  "summary_insights": [
+    "《清官册》共 12 位主要人物、38 条关系边，网络密度 0.58。",
+    "主题构成以「朝堂奏对、公案侠义」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [282, 332]。",
+    "寇准 与主题「朝堂奏对」关联最强（1.0）。",
+    "行当以老生为主（6 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_寇准",
+      "character_name": "寇准",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_赵德芳",
+      "character_name": "赵德芳",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "strength": 0.933
+    },
+    {
+      "character_id": "c_驿丞官",
+      "character_name": "驿丞官",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "strength": 0.755
+    },
+    {
+      "character_id": "c_宋王",
+      "character_name": "宋王",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "strength": 0.6
+    },
+    {
+      "character_id": "c_太监",
+      "character_name": "太监",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "strength": 0.533
+    },
+    {
+      "character_id": "c_潘洪",
+      "character_name": "潘洪",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_金牌官",
+      "character_name": "金牌官",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_马牌子",
+      "character_name": "马牌子",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "strength": 0.267
+    },
+    {
+      "character_id": "c_夫人",
+      "character_name": "夫人",
+      "topic_id": 2,
+      "topic_label": "出使行程",
+      "strength": 0.267
+    },
+    {
+      "character_id": "c_四青袍",
+      "character_name": "四青袍",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "strength": 0.267
+    },
+    {
+      "character_id": "c_家院",
+      "character_name": "家院",
+      "topic_id": 0,
+      "topic_label": "朝堂奏对",
+      "strength": 0.267
+    },
+    {
+      "character_id": "c_衙役",
+      "character_name": "衙役",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        97
+      ],
+      "edge_density": 0.8571,
+      "node_count": 7,
+      "edge_count": 18
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        98,
+        271
+      ],
+      "edge_density": 0.6389,
+      "node_count": 9,
+      "edge_count": 23
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        272,
+        281
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        282,
+        332
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        333,
+        365
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    }
+  ]
+}

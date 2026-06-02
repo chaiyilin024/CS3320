@@ -1,0 +1,169 @@
+{
+  "script_id": "01002004",
+  "title": "探寒窑",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:36.968742+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "其他情节",
+      "weight": 0.6875,
+      "keywords": [
+        "老娘",
+        "相府",
+        "侥幸",
+        "情愿",
+        "荣华",
+        "车辆",
+        "宝钏",
+        "城南",
+        "击掌",
+        "精神",
+        "谈论",
+        "披麻戴孝",
+        "啼哭",
+        "平贵",
+        "重病"
+      ],
+      "keyword_weights": [
+        1.8665,
+        1.393,
+        0.2865,
+        0.2681,
+        0.1628,
+        0.1445,
+        0.1404,
+        0.0855,
+        0.0811,
+        0.076,
+        0.0683,
+        0.0605,
+        0.0505,
+        0.0299,
+        0.0259
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "家训教子",
+      "weight": 0.3125,
+      "keywords": [
+        "寒窑",
+        "击掌",
+        "探望",
+        "西凉",
+        "改嫁",
+        "魏虎",
+        "银米",
+        "衣裳",
+        "啼哭",
+        "侥幸",
+        "平贵",
+        "回府",
+        "母女",
+        "彩球",
+        "花郎"
+      ],
+      "keyword_weights": [
+        1.735,
+        0.1874,
+        0.1586,
+        0.0766,
+        0.0551,
+        0.0537,
+        0.0511,
+        0.0511,
+        0.0358,
+        0.0279,
+        0.0215,
+        0.0129,
+        0.0121,
+        0.012,
+        0.012
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.6875,
+    0.3125
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_95",
+      "block_index": 95,
+      "text_snippet": "背地里只把相国恨，三个女儿两看承。大女、二女我不爱，唯有冤家我心疼。老身今年六十九，瓦上霜来风前灯。今日见了娇儿面，好似枯木又逢春。",
+      "context_snippet": "» 背地里只把相国恨，三个女儿两看承。大女、二女我不爱，唯有冤家我心疼。老身今年六十九，瓦上霜来风前灯。今日见了娇儿面，好似枯木又逢春。",
+      "speaker_id": "c_陈氏",
+      "speaker_name": "陈氏",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_85",
+      "block_index": 85,
+      "text_snippet": "老娘不必两泪淋，",
+      "context_snippet": "叫娘心疼不心疼！  /  » 老娘不必两泪淋，  /  女儿言来听分明：大姐、二姐有福分，许配为官做宦人。惟有女儿命内苦，彩球单打花郎身。好的好来歹的歹，富的富来贫的贫。若人多想为官宦，谁做耕田种地人？",
+      "speaker_id": "c_王宝钏",
+      "speaker_name": "王宝钏",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_65",
+      "block_index": 65,
+      "text_snippet": "三女，宝钏儿吓！",
+      "context_snippet": "一见娇儿珠泪滚，  /  » 三女，宝钏儿吓！  /  手搀三女说分明：",
+      "speaker_id": "c_陈氏",
+      "speaker_name": "陈氏",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_47",
+      "block_index": 47,
+      "text_snippet": "忽听窑外有人声，想必是四邻探奴身。薛郎一去无音信，寒窑内哭坏女钗裙。",
+      "context_snippet": "（王宝钏上。）  /  » 忽听窑外有人声，想必是四邻探奴身。薛郎一去无音信，寒窑内哭坏女钗裙。",
+      "speaker_id": "c_王宝钏",
+      "speaker_name": "王宝钏",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.553,
+    "labeled_weight": 0.3125,
+    "fallback_weight": 0.6875,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 1,
+      "weak": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.6875,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "家训教子",
+        "tier": "weak",
+        "label_score": 5.0,
+        "keyword_signal": 1.0,
+        "weight": 0.3125,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "69% 主题为未识别（其他情节/未知）"
+    ]
+  }
+}

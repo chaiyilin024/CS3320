@@ -1,0 +1,245 @@
+{
+  "script_id": "01001005",
+  "title": "打鼓骂曹",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_张辽",
+      "character_name": "张辽",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "张辽 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_朝官甲",
+      "character_name": "朝官甲",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "朝官甲 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_朝官乙",
+      "character_name": "朝官乙",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "朝官乙 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_朝官丙",
+      "character_name": "朝官丙",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "朝官丙 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_朝官丁",
+      "character_name": "朝官丁",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "朝官丁 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.933,
+      "character_id": "c_祢衡",
+      "character_name": "祢衡",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "祢衡 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.6,
+      "character_id": "c_曹操",
+      "character_name": "曹操",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "曹操 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.533,
+      "character_id": "c_二旗牌",
+      "character_name": "二旗牌",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "二旗牌 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "发展",
+      "edge_density_delta": 1.0,
+      "evidence": "「发展」阶段人物同场网络密度变化 +1.00"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 1.0,
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「冲突怒斥」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 19,
+      "evidence": "老生 行当在 block 19 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_曹操",
+      "character_name": "曹操",
+      "evidence": "曹操 为关系网络核心（度=10）"
+    }
+  ],
+  "summary_insights": [
+    "《打鼓骂曹》共 11 位主要人物、48 条关系边，网络密度 0.87。",
+    "主题构成以「冲突怒斥」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [82, 127]。",
+    "张辽 与主题「冲突怒斥」关联最强（1.0）。",
+    "行当以老生为主（5 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_张辽",
+      "character_name": "张辽",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_朝官甲",
+      "character_name": "朝官甲",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_朝官乙",
+      "character_name": "朝官乙",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_朝官丙",
+      "character_name": "朝官丙",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_朝官丁",
+      "character_name": "朝官丁",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_祢衡",
+      "character_name": "祢衡",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.933
+    },
+    {
+      "character_id": "c_曹操",
+      "character_name": "曹操",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.6
+    },
+    {
+      "character_id": "c_二旗牌",
+      "character_name": "二旗牌",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.533
+    },
+    {
+      "character_id": "c_四朝官",
+      "character_name": "四朝官",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.4
+    },
+    {
+      "character_id": "c_孔融",
+      "character_name": "孔融",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.267
+    },
+    {
+      "character_id": "c_旗牌",
+      "character_name": "旗牌",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        26
+      ],
+      "edge_density": 0.0,
+      "node_count": 1,
+      "edge_count": 0
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        27,
+        71
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        72,
+        81
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        82,
+        127
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        128,
+        378
+      ],
+      "edge_density": 1.0,
+      "node_count": 10,
+      "edge_count": 45
+    }
+  ]
+}

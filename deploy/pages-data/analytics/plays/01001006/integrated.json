@@ -1,0 +1,245 @@
+{
+  "script_id": "01001006",
+  "title": "捉放曹",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_陈宫",
+      "character_name": "陈宫",
+      "topic_id": 1,
+      "topic_label": "宴饮场面",
+      "evidence": "陈宫 台词与主题「宴饮场面」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_曹操",
+      "character_name": "曹操",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "曹操 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.723,
+      "character_id": "c_店家",
+      "character_name": "店家",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "店家 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.723,
+      "character_id": "c_家人",
+      "character_name": "家人",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "家人 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.723,
+      "character_id": "c_班头乙",
+      "character_name": "班头乙",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "班头乙 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.723,
+      "character_id": "c_四青袍",
+      "character_name": "四青袍",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "四青袍 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.723,
+      "character_id": "c_门子",
+      "character_name": "门子",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "门子 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.723,
+      "character_id": "c_童儿",
+      "character_name": "童儿",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "童儿 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.6,
+      "stage": "发展",
+      "edge_density_delta": -0.2,
+      "evidence": "「发展」阶段人物同场网络密度变化 -0.20"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.6,
+      "stage": "冲突",
+      "edge_density_delta": 0.2,
+      "evidence": "「冲突」阶段人物同场网络密度变化 +0.20"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.523,
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「公案侠义」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 0,
+      "evidence": "老生 行当在 block 0 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_曹操",
+      "character_name": "曹操",
+      "evidence": "曹操 为关系网络核心（度=9）"
+    }
+  ],
+  "summary_insights": [
+    "《捉放曹》共 10 位主要人物、27 条关系边，网络密度 0.60。",
+    "主题构成以「公案侠义、宴饮场面」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [293, 386]。",
+    "陈宫 与主题「宴饮场面」关联最强（1.0）。",
+    "行当以老生为主（3 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_陈宫",
+      "character_name": "陈宫",
+      "topic_id": 1,
+      "topic_label": "宴饮场面",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_曹操",
+      "character_name": "曹操",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_店家",
+      "character_name": "店家",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.723
+    },
+    {
+      "character_id": "c_家人",
+      "character_name": "家人",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.723
+    },
+    {
+      "character_id": "c_班头乙",
+      "character_name": "班头乙",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.723
+    },
+    {
+      "character_id": "c_四青袍",
+      "character_name": "四青袍",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.723
+    },
+    {
+      "character_id": "c_门子",
+      "character_name": "门子",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.723
+    },
+    {
+      "character_id": "c_童儿",
+      "character_name": "童儿",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.723
+    },
+    {
+      "character_id": "c_吕伯奢",
+      "character_name": "吕伯奢",
+      "topic_id": 1,
+      "topic_label": "宴饮场面",
+      "strength": 0.533
+    },
+    {
+      "character_id": "c_班头甲",
+      "character_name": "班头甲",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        109
+      ],
+      "edge_density": 1.0,
+      "node_count": 5,
+      "edge_count": 10
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        110,
+        205
+      ],
+      "edge_density": 0.8,
+      "node_count": 5,
+      "edge_count": 8
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        206,
+        292
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        293,
+        386
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        387,
+        492
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    }
+  ]
+}

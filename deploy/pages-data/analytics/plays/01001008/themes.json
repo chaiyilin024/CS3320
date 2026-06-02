@@ -1,0 +1,166 @@
+{
+  "script_id": "01001008",
+  "title": "取成都",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:31.105151+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "让位归降",
+      "weight": 0.6545,
+      "keywords": [
+        "宗兄",
+        "蜀主",
+        "进都",
+        "怒气",
+        "须要",
+        "荆州",
+        "镇守",
+        "辞别",
+        "修书",
+        "子民",
+        "安身",
+        "执掌",
+        "同宗",
+        "事到如今",
+        "太平"
+      ],
+      "keyword_weights": [
+        2.0205,
+        1.4754,
+        0.3363,
+        0.1978,
+        0.1768,
+        0.1216,
+        0.1099,
+        0.0905,
+        0.0815,
+        0.0675,
+        0.0576,
+        0.0375,
+        0.0363,
+        0.0348,
+        0.0235
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "朝堂奏对",
+      "weight": 0.3455,
+      "keywords": [
+        "保驾",
+        "卿家",
+        "敌楼",
+        "王儿",
+        "平身",
+        "本奏",
+        "儿臣",
+        "摆驾",
+        "坐视不理",
+        "民房",
+        "放火",
+        "火炮",
+        "启奏",
+        "宗兄",
+        "见驾"
+      ],
+      "keyword_weights": [
+        1.5571,
+        0.2526,
+        0.0479,
+        0.0471,
+        0.0295,
+        0.0295,
+        0.012,
+        0.0091,
+        0.0067,
+        0.004,
+        0.0038,
+        0.0035,
+        0.0034,
+        0.0013,
+        0.0013
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.6545,
+    0.3455
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_70",
+      "block_index": 70,
+      "text_snippet": "君臣踌躇无计定，",
+      "context_snippet": "» 君臣踌躇无计定，  /  千岁等着，王累有本启奏。",
+      "speaker_id": "c_刘玉",
+      "speaker_name": "刘玉",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_317",
+      "block_index": 317,
+      "text_snippet": "宗兄上马泪纷纷，刘备倒做了无义人。众将后帐摆筵宴，款待新降众将军。",
+      "context_snippet": "（刘璋下。）  /  » 宗兄上马泪纷纷，刘备倒做了无义人。众将后帐摆筵宴，款待新降众将军。",
+      "speaker_id": "c_刘备",
+      "speaker_name": "刘备",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_92",
+      "block_index": 92,
+      "text_snippet": "老臣保驾随后跟。",
+      "context_snippet": "银安殿领了父王命，  /  » 老臣保驾随后跟。  /  卿家带路敌楼进，",
+      "speaker_id": "c_王累",
+      "speaker_name": "王累",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_85",
+      "block_index": 85,
+      "text_snippet": "卿家保驾，孤不忧也。",
+      "context_snippet": "老臣保驾。  /  » 卿家保驾，孤不忧也。  /  王儿敌楼把贼问，",
+      "speaker_id": "c_刘璋",
+      "speaker_name": "刘璋",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 1.0,
+    "labeled_weight": 1.0,
+    "fallback_weight": 0.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "strong": 2
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "让位归降",
+        "tier": "strong",
+        "label_score": 27.0,
+        "keyword_signal": 1.0,
+        "weight": 0.6545,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "朝堂奏对",
+        "tier": "strong",
+        "label_score": 34.0,
+        "keyword_signal": 1.0,
+        "weight": 0.3455,
+        "issues": []
+      }
+    ],
+    "issues": []
+  }
+}

@@ -1,0 +1,1996 @@
+{
+  "script_id": "01002001",
+  "title": "李陵碑",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01002001_李陵碑.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-02T04:33:27.073231+00:00",
+    "page_count": 4,
+    "char_count": 1742,
+    "parse_quality": 0.927,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_杨继业",
+      "name": "杨继业",
+      "aliases": [],
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 53,
+      "first_appearance_block": 25,
+      "is_main": true
+    },
+    {
+      "character_id": "c_杨延昭",
+      "name": "杨延昭",
+      "aliases": [],
+      "hangdang_labeled": "末",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "末",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 13,
+      "first_appearance_block": 34,
+      "is_main": true
+    },
+    {
+      "character_id": "c_杨延嗣",
+      "name": "杨延嗣",
+      "aliases": [],
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "净",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 12,
+      "first_appearance_block": 11,
+      "is_main": true
+    },
+    {
+      "character_id": "c_四老军",
+      "name": "四老军",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 3,
+      "first_appearance_block": 130,
+      "is_main": true
+    },
+    {
+      "character_id": "c_耶律休",
+      "name": "耶律休",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 2,
+      "first_appearance_block": 84,
+      "is_main": true
+    },
+    {
+      "character_id": "c_探子",
+      "name": "探子",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 1,
+      "first_appearance_block": 140,
+      "is_main": false
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "【第一场】",
+      "block_range": [
+        9,
+        22
+      ],
+      "character_ids": [
+        "c_杨延嗣"
+      ]
+    },
+    {
+      "scene_id": "s_2",
+      "scene_index": 2,
+      "title": "【第二场】",
+      "block_range": [
+        23,
+        81
+      ],
+      "character_ids": [
+        "c_杨延嗣",
+        "c_杨延昭",
+        "c_杨继业"
+      ]
+    },
+    {
+      "scene_id": "s_3",
+      "scene_index": 3,
+      "title": "【第三场】",
+      "block_range": [
+        82,
+        89
+      ],
+      "character_ids": [
+        "c_杨延昭",
+        "c_耶律休"
+      ]
+    },
+    {
+      "scene_id": "s_4",
+      "scene_index": 4,
+      "title": "【第四场】",
+      "block_range": [
+        90,
+        93
+      ],
+      "character_ids": [
+        "c_杨延昭"
+      ]
+    },
+    {
+      "scene_id": "s_5",
+      "scene_index": 5,
+      "title": "【第五场】",
+      "block_range": [
+        94,
+        148
+      ],
+      "character_ids": [
+        "c_四老军",
+        "c_探子",
+        "c_杨继业"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（一名：《两狼山》；一名：《苏武庙》）",
+      "performance_tags": [],
+      "char_len": 19,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "杨继业：老生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "杨延昭：末",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "杨延嗣：净",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "宋辽失和，使杨继业征之。杨继业兵困两狼山，遣子七郎求救于元帅潘洪。潘洪不发一兵，且杀七郎以报私仇。杨继业久困无援，夜梦七郎冤魂，醒后大疑。使子六郎突围出，己则单身杀至苏武庙，气力不加，见李",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "陵碑，大骂一场，竟撞碑死。",
+      "performance_tags": [],
+      "char_len": 13,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "根据《戏考》第二册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": "s_1",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第一场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延嗣上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_杨延嗣",
+      "text": "赤胆忠心，只落得，青史名标。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "杨延嗣",
+      "performance_cues_raw": [
+        "引子"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_杨延嗣",
+      "text": "我乃七郎阴魂是也。只因那日回朝颁兵，可恨潘洪将我射死芭蕉树上。不免前去与我父托兆。众鬼卒，宋营去者！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 41,
+      "speaker_name_raw": "杨延嗣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "我杨家保宋主忠心秉正，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "performance_cues_raw": [
+        "二黄导板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_15",
+      "block_index": 15,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "东西征南北剿哪得安宁。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "金沙滩打一仗父子被困，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_17",
+      "block_index": 17,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "老爹爹他命我回朝颁兵。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "潘洪贼想起了打子仇恨，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "他将我绑芭蕉乱箭穿身。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "叫鬼卒驾阴风宋营来进，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "见了那老爹爹细说分明。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延嗣下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": "s_2",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第二场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨继业上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "金乌坠玉免升黄昏时候，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "二黄导板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨继业",
+      "text": "盼姣儿不由人珠泪双流，我的儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "回龙"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "命七郎回大营颁兵求救，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "为什么此一去不见回头？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "莫不是潘仁美又下毒手，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "怕的是我的儿性命难留。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "含悲泪进宝帐双眉愁皱，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "西北风吹的我遍体飕飕。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延昭上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨延昭",
+      "text": "听谯楼打罢了二更时分，杨延昭倒做了巡营之人。迈步儿且把那宝帐来进，又只见老爹爹瞌睡沉沉。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延嗣上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_39",
+      "block_index": 39,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "听谯楼打罢了三更时分，半空中来了我七郎阴魂。叫鬼卒驾阴风宝帐来进，又只见老爹爹瞌睡沉沉。我这里将他的忠魂惊醒，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_44",
+      "block_index": 44,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "猛抬头又只见七郎姣生。我命你回大营颁兵求救，为什么哭啼啼头带雕翎？恨不得下位去将儿抱定，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_48",
+      "block_index": 48,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨延嗣",
+      "text": "老爹爹休贪睡细听分明：金沙滩打一仗父子被困，老爹爹命孩儿回朝颁兵。潘洪贼想起了打子仇恨，他将我绑芭蕉乱箭穿身。回头来又对六兄论，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延嗣",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "小弟言来听分明：高堂老母要你孝敬，莫学小弟不孝顺。我本当与六兄多谈多论，又恐怕天明亮难回天庭。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延嗣下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "适才间梦见了七郎来临，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "二黄导板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨继业",
+      "text": "呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "又只见六郎儿瞌睡沉沉。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨继业",
+      "text": "六郎儿醒来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨延昭",
+      "text": "适才间梦见了七弟来临，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "二黄导板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨延昭",
+      "text": "又只见老爹爹面前存。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨延昭",
+      "text": "爹爹，适才睡梦之中，观见七弟浑身是血，头带雕翎。不知是何缘故？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨继业",
+      "text": "为父亦得此兆。这才是“梦梦相同，必有凶险”。我亦有意，命你回朝探听七弟下落。不知我儿意下如何？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 47,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨延昭",
+      "text": "爹爹年迈，孩儿放心不下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨继业",
+      "text": "为父虽然年迈，倒也康健，只管前去。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨延昭",
+      "text": "孩儿不去！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨继业",
+      "text": "儿吓，为父倒有父子之情，难道你无手足之义么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨延昭",
+      "text": "爹爹不必如此，孩儿去就是了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_73",
+      "block_index": 73,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨延昭",
+      "text": "辞别爹爹跨金蹬，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨延昭",
+      "text": "不分昼夜去颁兵。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "杨延昭",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_杨延昭",
+      "text": "爹爹，我父，啊呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延昭下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "六郎上了马能行，好不叫人痛伤心。悲悲切切大营进，父子相会再等来生。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨继业下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": "s_3",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第三场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（耶律休上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_84",
+      "block_index": 84,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_耶律休",
+      "text": "俺奉太后之命，巡营了哨。就此前往。呔！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "耶律休",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_85",
+      "block_index": 85,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延昭上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_86",
+      "block_index": 86,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_杨延昭",
+      "text": "何人挡住某家去路？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_87",
+      "block_index": 87,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_耶律休",
+      "text": "俺乃耶律休，要你的狗命！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "耶律休",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_88",
+      "block_index": 88,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_杨延昭",
+      "text": "一派胡言！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_89",
+      "block_index": 89,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延昭、耶律休同开打，耶律休败下，杨延昭下。）",
+      "performance_tags": [
+        "打",
+        "做"
+      ],
+      "char_len": 24,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_90",
+      "block_index": 90,
+      "scene_id": "s_4",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第四场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_91",
+      "block_index": 91,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延昭上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_92",
+      "block_index": 92,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_杨延昭",
+      "text": "且住，且喜逃出虎口，不免回朝便了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "杨延昭",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_93",
+      "block_index": 93,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨延昭下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_94",
+      "block_index": 94,
+      "scene_id": "s_5",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第五场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨继业、四老军同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_96",
+      "block_index": 96,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "叹杨家秉忠心大宋扶保，到如今只落得瓦解冰消。恨胡儿打来了连环战表，他要夺我主爷锦绣龙朝。贼潘洪在金殿挂了招讨，我父子倒做了马前英豪。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "反二黄慢板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_102",
+      "block_index": 102,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "金沙滩双龙会一战败了，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "反二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "只杀得血成河鬼哭神号。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "我的大郎儿吓，替宋王把忠尽了，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_105",
+      "block_index": 105,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "二郎儿短剑下命赴阴曹。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_106",
+      "block_index": 106,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "杨三郎被马踏尸骨难找，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_107",
+      "block_index": 107,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "四、八郎在番邦无有下梢。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_108",
+      "block_index": 108,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "五郎儿在五台修真学道，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "七郎儿被潘洪箭射芭蕉。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "只剩下六郎儿东征西剿，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "可怜他又尽忠，又尽孝，身披盔甲、马不停蹄，东荡西剿，昼夜杀砍，为国勤劳。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 36,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "可怜我八个子把四子丧了，我把四子丧了，我的儿吓！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "一家人只落得死无下梢。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "恨萧营报前仇又打战表，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "请我主赴两狼摆一摆枪刀。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "这潘洪二次里挂了招讨，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "我父子做先行逢山开路，遇水安桥。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "黄道日不发兵不把贼剿，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "黑道日命父子去把兵交。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "为国家哪顾得黄道黑道，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "我父子一马当先杀进了贼巢。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "头一阵得了胜回营禀报，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_123",
+      "block_index": 123,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "狗奸贼将人马扎定了城濠。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_124",
+      "block_index": 124,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "传一令将胡儿斩杀尽了，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_125",
+      "block_index": 125,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "斩不尽杀不绝不许回朝。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_126",
+      "block_index": 126,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "二次里闯贼巢入了圈套，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_127",
+      "block_index": 127,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "我父子困焦牙入了笼牢。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "我也曾命六郎回营去了，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "可怜我为国家，秉忠心，年迈苍苍，困两狼，里无粮，外无草，盼兵不到、盼子不归，我这老残生，就不能还朝！我的儿吓！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 55,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_130",
+      "block_index": 130,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_四老军",
+      "text": "饿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "四老军",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_131",
+      "block_index": 131,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "饥饿了你就该战马斩倒，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "反二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_四老军",
+      "text": "冷吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "四老军",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_133",
+      "block_index": 133,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "身冷了拆帐篷用布裹包。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "反二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_134",
+      "block_index": 134,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_四老军",
+      "text": "雁来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "四老军",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_135",
+      "block_index": 135,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨继业射雁。）",
+      "performance_tags": [],
+      "char_len": 8,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_136",
+      "block_index": 136,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_杨继业",
+      "text": "啊呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "宝雕弓打不着空中飞鸟，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "反二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_138",
+      "block_index": 138,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "弓折弦断为的是哪条？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "杨继业",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_139",
+      "block_index": 139,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（探子上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_140",
+      "block_index": 140,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_探子",
+      "text": "胡儿把战马绞倒！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "探子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_141",
+      "block_index": 141,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_杨继业",
+      "text": "再探！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_142",
+      "block_index": 142,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（探子下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_143",
+      "block_index": 143,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_杨继业",
+      "text": "恨胡儿把我的战马绞倒，下由我年迈人怒上眉梢。叫老军抬过了定宋刀，忙把路找。寻一个避风所再作计较。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "杨继业",
+      "performance_cues_raw": [
+        "反二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_147",
+      "block_index": 147,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（杨继业、四老军同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_148",
+      "block_index": 148,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 3
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_四老军",
+      "target_id": "c_探子",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_四老军",
+      "target_id": "c_杨继业",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_探子",
+      "target_id": "c_杨继业",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_杨延嗣",
+      "target_id": "c_杨延昭",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_杨延嗣",
+      "target_id": "c_杨继业",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_杨延昭",
+      "target_id": "c_杨继业",
+      "weight": 15.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 7,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_杨延昭",
+      "target_id": "c_耶律休",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "家庭剧",
+    "era_inferred": "神话"
+  }
+}

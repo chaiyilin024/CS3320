@@ -1,0 +1,336 @@
+{
+  "script_id": "01001006",
+  "hangdang_distribution": {
+    "老生": 3,
+    "净": 1,
+    "丑": 3,
+    "未知": 3
+  },
+  "hangdang_coarse_distribution": {
+    "生": 3,
+    "净": 1,
+    "丑": 3,
+    "未知": 3
+  },
+  "characters": [
+    {
+      "character_id": "c_陈宫",
+      "name": "陈宫",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=男",
+        "age=老年",
+        "personality=诙谐",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "age": "老年",
+        "personality": [
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_曹操",
+      "name": "曹操",
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_final": "净",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=男",
+        "age=少年",
+        "identity=弟兄",
+        "personality=诙谐",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "弟兄",
+        "age": "少年",
+        "personality": [
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_吕伯奢",
+      "name": "吕伯奢",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "hangdang_raw=末",
+        "line_count_bucket=mid",
+        "gender=男",
+        "personality=勇猛",
+        "personality=稳重",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "personality": [
+          "勇猛",
+          "稳重"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_班头甲",
+      "name": "班头甲",
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_final": "丑",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_店家",
+      "name": "店家",
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_final": "丑",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_家人",
+      "name": "家人",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_班头乙",
+      "name": "班头乙",
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_final": "丑",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_四青袍",
+      "name": "四青袍",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_门子",
+      "name": "门子",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "老生",
+      "hangdang_final": "老生",
+      "confidence": 0.72,
+      "top_features": [
+        "line_count_bucket=low",
+        "age=老年",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "age": "老年",
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_童儿",
+      "name": "童儿",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    }
+  ],
+  "trait_summary": [
+    {
+      "trait": "cue=念",
+      "hangdang": "老生",
+      "count": 3
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "丑",
+      "count": 3
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "丑",
+      "count": 3
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "未知",
+      "count": 3
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "未知",
+      "count": 3
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "age=老年",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "age=少年",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "identity=弟兄",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "hangdang_raw=末",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "personality=勇猛",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "personality=稳重",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "老生",
+      "count": 1
+    }
+  ],
+  "labeled_count": 6,
+  "inferred_count": 1
+}

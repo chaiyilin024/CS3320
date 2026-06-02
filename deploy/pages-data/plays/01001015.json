@@ -1,0 +1,2698 @@
+{
+  "script_id": "01001015",
+  "title": "战北原",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01001015_战北原.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-02T04:33:25.755517+00:00",
+    "page_count": 5,
+    "char_count": 2419,
+    "parse_quality": 0.914,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_诸葛亮",
+      "name": "诸葛亮",
+      "aliases": [],
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 58,
+      "first_appearance_block": 10,
+      "is_main": true
+    },
+    {
+      "character_id": "c_郑文",
+      "name": "郑文",
+      "aliases": [],
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "净",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 47,
+      "first_appearance_block": 45,
+      "is_main": true
+    },
+    {
+      "character_id": "c_张苞",
+      "name": "张苞",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 6,
+      "first_appearance_block": 30,
+      "is_main": true
+    },
+    {
+      "character_id": "c_报子",
+      "name": "报子",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 4,
+      "first_appearance_block": 21,
+      "is_main": true
+    },
+    {
+      "character_id": "c_旗牌",
+      "name": "旗牌",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 4,
+      "first_appearance_block": 179,
+      "is_main": true
+    },
+    {
+      "character_id": "c_秦朗",
+      "name": "秦朗",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 1,
+      "first_appearance_block": 98,
+      "is_main": false
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "全剧",
+      "block_range": [
+        0,
+        203
+      ],
+      "character_ids": [
+        "c_张苞",
+        "c_报子",
+        "c_旗牌",
+        "c_秦朗",
+        "c_诸葛亮",
+        "c_郑文"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（一名：《斩郑文》）",
+      "performance_tags": [],
+      "char_len": 10,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "诸葛亮：老生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "郑文：净",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "三国，司马懿使郑文至蜀营诈降，假说司马懿用人不公：郑文艺出秦朗上，而司马懿反使秦朗为先锋，因此愤恨来降。言犹未毕，秦朗来挑战。诸葛亮使郑文出战，暗随其后。只一合，郑文即斩秦朗于马下。诸葛亮",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "乃知其诈，回营时言司马懿营中有几个秦朗，郑文语塞。诸葛亮大怒，欲斩之。郑文以直告。诸葛亮命郑文修书诱司马懿劫寨。司马懿得书，审为郑文之亲笔，欣然欲往。其子司马昭精细，劝父勿出，先使秦朗往探",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "虚实，果中计。魏兵大败，秦朗死于乱军之中。",
+      "performance_tags": [],
+      "char_len": 21,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "根据《戏考》第一册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四红龙套同上，诸葛亮上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 14,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "想当初在隆中排分八卦，闲无事听鸟音观看山花。驾孤舟游廊院许多潇洒，甚比那红尘中富贵荣华。先帝爷三请我才把山下，论阴阳如反掌扶保汉家。这几日未出兵未把仗打，司马懿他笑我必然怕他。选一个黄道日发动人马，定中原扫北魏归复汉家。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮慢板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（报子上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_报子",
+      "text": "启禀丞相：司马营中来了一将，名唤郑文，前来投降。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "报子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "再探！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_报子",
+      "text": "遵命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "报子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（报子下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "来！四红龙套 （同白） 有。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "传众将进帐。四红龙套 （同白） 众位将军进帐。赵云、马岱、关兴、",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_张苞",
+      "text": "来也！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "张苞",
+      "performance_cues_raw": [
+        "内同白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、马岱、关兴、张苞同上。）赵云、马岱、关兴、",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 16,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_张苞",
+      "text": "参见丞相。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "张苞",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "众位将军少礼。赵云、马岱、关兴、",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_张苞",
+      "text": "丞相唤末将等进帐，有何军情议论？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "张苞",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "适才探子报到，司马懿营中来了一将，名唤郑文，前来投降。他是何人？赵云、马岱、关兴、",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_39",
+      "block_index": 39,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_张苞",
+      "text": "闻得那司马懿营中，新收一将，名唤郑文。此人武艺高强，丞相须要小心一二。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "张苞",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_40",
+      "block_index": 40,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "原来如此。来！四红龙套 （同白） 有。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_43",
+      "block_index": 43,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "击鼓升帐。传郑文进帐。四红龙套 （同白） 传郑文进帐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_45",
+      "block_index": 45,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "来也！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_46",
+      "block_index": 46,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（郑文上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_47",
+      "block_index": 47,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "昔日里伍子胥临潼会下，都只为杀父难奔走天涯。到后来将平王鞭尸亡下，可算得奇男子做事不差。来至在汉营地离鞍下马，营门外摆刀枪剑戟如麻。我这里将腰中宝剑摘下，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "郑文告进！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_55",
+      "block_index": 55,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "他那里问一言再把话答。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_56",
+      "block_index": 56,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "赵云、马岱、关兴、",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "郑文",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_张苞",
+      "text": "生将跪帐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "张苞",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "见一将跪帐前身体高大，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（郑文哭。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "两眼中止不住珠泪如麻。问来将因甚事反背司马，表你的名和姓哪里有家？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "丞相吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "家住在山西地太山脚下，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "我的名叫郑文幼习枪法。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "都只为劝司马反被责打，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "功劳簿勾了名不用某家。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "望丞相开大恩收留帐下，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "俺郑文秉忠心答报汉家。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "人道那司马懿才学高大，看起来英雄辈把事做差。见过我蜀营将请坐叙话，待山人奏幼主定把功加。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（报子上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_报子",
+      "text": "启禀丞相：司马懿营中又来一将，名叫秦朗，前来讨战。单要郑将军出马，特来报知。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 38,
+      "speaker_name_raw": "报子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "再探！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_报子",
+      "text": "得令。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "报子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_78",
+      "block_index": 78,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（报子下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_79",
+      "block_index": 79,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "郑将军。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_80",
+      "block_index": 80,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "丞相。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "司马懿营中又来一将，名叫秦朗，他是何人？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "启禀丞相，此人乃司马懿营中前部先锋，武艺高强，丞相不可轻敌于他。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "原来如此。待山人差一能将前去对敌。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_84",
+      "block_index": 84,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "丞相且慢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_85",
+      "block_index": 85,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "郑将军为何阻令？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_86",
+      "block_index": 86,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "末将蒙丞相收留，未有尺寸之功。丞相发下一令，待末将生擒秦朗进帐，以为进身之功。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 39,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_87",
+      "block_index": 87,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "好，就让郑将军立一头功。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_88",
+      "block_index": 88,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "多谢丞相！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_89",
+      "block_index": 89,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、马岱、关兴、张苞同喝，郑文下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 20,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_90",
+      "block_index": 90,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_91",
+      "block_index": 91,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "看起来我主爷洪福天大，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_92",
+      "block_index": 92,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "收此将好一比猛虎长牙。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_93",
+      "block_index": 93,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "待山人观阵图众将退下，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_94",
+      "block_index": 94,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、马岱、关兴、张苞同下。车夫上，车夫推诸葛亮上山。车夫下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 33,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "看郑文与秦朗怎样杀法。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_96",
+      "block_index": 96,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（郑文、秦朗自两边分上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 13,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_97",
+      "block_index": 97,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "胆大秦朗，赶来则甚？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_98",
+      "block_index": 98,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_秦朗",
+      "text": "奉了都督将令，前来取尔的首级！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "秦朗",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_99",
+      "block_index": 99,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "看枪！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_100",
+      "block_index": 100,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（秦朗死。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_101",
+      "block_index": 101,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "哗啦啦金枪如戏耍，无知匹夫染黄沙。下马来将尔的人头割下，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（郑文下马，杀头。秦朗下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 14,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_105",
+      "block_index": 105,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "见了那诸葛亮定把功加。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_106",
+      "block_index": 106,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（郑文下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_107",
+      "block_index": 107,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "啊！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_108",
+      "block_index": 108,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "他二人见了面双枪并架，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "未战那三两合就把他杀。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "莫不是司马懿叫他行诈？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "不错，是的。回营。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（车夫上。车夫推诸葛亮下山。车夫下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 19,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "等郑文回营来仔细盘查。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（郑文上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "斩来秦朗首级献上。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "郑将军头功，号令辕门。请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "谢坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "郑将军，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "丞相。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "司马懿营中，有几个秦朗？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "司马懿营中一个秦朗，被末将斩首，并无第二。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_123",
+      "block_index": 123,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "吓，并无第二。哈哈哈……郑将军，你这何苦吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_124",
+      "block_index": 124,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "我本是卧龙岗一道家，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_125",
+      "block_index": 125,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "凭阴阳和八卦扶保汉家。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_126",
+      "block_index": 126,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "适才间斩秦朗多有劳驾，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_127",
+      "block_index": 127,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "我在那祁山下活活地笑煞。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "有郑文在帐中躬身叙话，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": null,
+      "text": "尊一声老丞相细听根芽：小秦朗他虽然武艺高大，将在谋，哪在勇，我将他来杀。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "你道那小秦朗武艺高大，未战那三两合就把他杀。莫不是司马懿叫你来行诈，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_135",
+      "block_index": 135,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "如何？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_136",
+      "block_index": 136,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "瞒得过我诸葛亮瞒不过他。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "丞相，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_138",
+      "block_index": 138,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "斩了那小秦朗功劳甚大，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_139",
+      "block_index": 139,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "进帐来你为何苦苦的盘查？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "郑文",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_140",
+      "block_index": 140,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "大胆！哼哼哼……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_141",
+      "block_index": 141,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、马岱、关兴、张苞自两边分上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 19,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_142",
+      "block_index": 142,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "在帐中说与你一派好话，谁叫你满口中胡言乱答。这几天在营中未把仗打，我把那司马懿当作小娃。诸葛亮兴人马谁人不怕，许多的有名将俱被我杀。我劝你在此间说了实话，待山人奏幼主定把你功加；你若是满口中胡言乱答，一霎时传将令定把你的头杀。谁不知诸葛亮会算八卦，我服尔的好大胆，敢在那虎口拔牙！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮二六板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_154",
+      "block_index": 154,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "真真的大胆！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_155",
+      "block_index": 155,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_156",
+      "block_index": 156,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "听他言唬得我心中害怕，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_157",
+      "block_index": 157,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "猜破了苦肉计胆战如麻。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_158",
+      "block_index": 158,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "早知道诸葛亮会算八卦，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_159",
+      "block_index": 159,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "些小的诈降计怎能瞒他？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_160",
+      "block_index": 160,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "到如今顾不得老将司马，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_161",
+      "block_index": 161,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "司马懿，我顾不得你了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_162",
+      "block_index": 162,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "尊一声老丞相细听根芽：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_163",
+      "block_index": 163,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "适才间斩秦朗俱都是假，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_164",
+      "block_index": 164,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_郑文",
+      "text": "望丞相开大恩免去斩杀。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "郑文",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_165",
+      "block_index": 165,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "郑将军你既然讲了实话，待山人奏幼主定把功加。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_167",
+      "block_index": 167,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "郑将军，你与司马懿定下何计，前来诈降？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_168",
+      "block_index": 168,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "我与司马懿定下苦肉之计。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_169",
+      "block_index": 169,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "何为苦肉之计？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_170",
+      "block_index": 170,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "恐丞相见疑，将某责打，赶出不用，前来诈降。丞相若是重用，修书一封，下在司马懿营中，叫他三更时分前来偷营劫寨。某将作一内应，杀丞相一个里应外合。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 71,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_171",
+      "block_index": 171,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "我们何不与他个计上加计？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_172",
+      "block_index": 172,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "何为计上加计？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_173",
+      "block_index": 173,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "就烦郑将军修书一封，叫他三更时分前来偷营劫寨。我营早作一准备，纵然擒不住司马懿，也要杀他个片甲不归。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 50,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_174",
+      "block_index": 174,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "这个……末将愿写。“郑文顿首拜”……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_176",
+      "block_index": 176,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（〖牌子〗。郑文写信。）",
+      "performance_tags": [],
+      "char_len": 12,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_177",
+      "block_index": 177,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "传旗牌。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_178",
+      "block_index": 178,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（旗牌上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_179",
+      "block_index": 179,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_旗牌",
+      "text": "参见丞相。有何差遣？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "旗牌",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_180",
+      "block_index": 180,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "郑将军有差。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_181",
+      "block_index": 181,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_旗牌",
+      "text": "郑将军有何差遣？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "旗牌",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_182",
+      "block_index": 182,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "这有书信一封，命你到司马懿营中，叫他照书行事。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_183",
+      "block_index": 183,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_旗牌",
+      "text": "遵命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "旗牌",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_184",
+      "block_index": 184,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "我今吩咐你，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_185",
+      "block_index": 185,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_旗牌",
+      "text": "怎敢步迟埃！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "旗牌",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_186",
+      "block_index": 186,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（旗牌下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_187",
+      "block_index": 187,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "来！赵云、马岱、关兴、",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_189",
+      "block_index": 189,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_张苞",
+      "text": "有。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "张苞",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_190",
+      "block_index": 190,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "将他绑了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_191",
+      "block_index": 191,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、马岱、关兴、张苞同绑郑文。）",
+      "performance_tags": [],
+      "char_len": 18,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_192",
+      "block_index": 192,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "丞相为何将末将绑了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_193",
+      "block_index": 193,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "郑将军暂受一时捆绑，等山人擒住那司马懿，再来发放于你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 27,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_194",
+      "block_index": 194,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_郑文",
+      "text": "诸葛亮吓，诸葛孔明！你好狠毒也！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "郑文",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_195",
+      "block_index": 195,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "押下去。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_196",
+      "block_index": 196,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、马岱、关兴、张苞押郑文同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 19,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_197",
+      "block_index": 197,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_198",
+      "block_index": 198,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "人道司马有才学，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_199",
+      "block_index": 199,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "做事全然不揣摩。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_200",
+      "block_index": 200,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "诈降之计错又错，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_201",
+      "block_index": 201,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "须小计怎瞒得我南阳诸葛？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_202",
+      "block_index": 202,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四红龙套、诸葛亮同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 13,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_203",
+      "block_index": 203,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 4
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_张苞",
+      "target_id": "c_报子",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张苞",
+      "target_id": "c_旗牌",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张苞",
+      "target_id": "c_秦朗",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张苞",
+      "target_id": "c_诸葛亮",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张苞",
+      "target_id": "c_郑文",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_报子",
+      "target_id": "c_旗牌",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_报子",
+      "target_id": "c_秦朗",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_报子",
+      "target_id": "c_诸葛亮",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_报子",
+      "target_id": "c_郑文",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_旗牌",
+      "target_id": "c_秦朗",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_旗牌",
+      "target_id": "c_诸葛亮",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_旗牌",
+      "target_id": "c_郑文",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_秦朗",
+      "target_id": "c_诸葛亮",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_秦朗",
+      "target_id": "c_郑文",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_诸葛亮",
+      "target_id": "c_郑文",
+      "weight": 59.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 29,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "历史剧",
+    "era_inferred": "三国"
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "script_id": "01001010",
+  "title": "黄金台",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_田单",
+      "character_name": "田单",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "田单 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.6,
+      "character_id": "c_伊立",
+      "character_name": "伊立",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "伊立 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.533,
+      "character_id": "c_田法章",
+      "character_name": "田法章",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "田法章 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.4,
+      "character_id": "c_衙役甲",
+      "character_name": "衙役甲",
+      "topic_id": 1,
+      "topic_label": "朝堂奏对",
+      "evidence": "衙役甲 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.4,
+      "character_id": "c_家院",
+      "character_name": "家院",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "家院 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_衙役乙",
+      "character_name": "衙役乙",
+      "topic_id": 1,
+      "topic_label": "朝堂奏对",
+      "evidence": "衙役乙 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_乳娘",
+      "character_name": "乳娘",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "evidence": "乳娘 台词与主题「冲突怒斥」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.333,
+      "character_id": "c_二衙役",
+      "character_name": "二衙役",
+      "topic_id": 1,
+      "topic_label": "朝堂奏对",
+      "evidence": "二衙役 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.857,
+      "stage": "发展",
+      "edge_density_delta": -0.2857,
+      "evidence": "「发展」阶段人物同场网络密度变化 -0.29"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.857,
+      "stage": "冲突",
+      "edge_density_delta": 0.2857,
+      "evidence": "「冲突」阶段人物同场网络密度变化 +0.29"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.787,
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「冲突怒斥」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 0,
+      "evidence": "老生 行当在 block 0 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_田单",
+      "character_name": "田单",
+      "evidence": "田单 为关系网络核心（度=8）"
+    }
+  ],
+  "summary_insights": [
+    "《黄金台》共 9 位主要人物、24 条关系边，网络密度 0.67。",
+    "主题构成以「冲突怒斥、朝堂奏对」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [132, 148]。",
+    "田单 与主题「冲突怒斥」关联最强（1.0）。",
+    "行当以老生为主（2 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_田单",
+      "character_name": "田单",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_伊立",
+      "character_name": "伊立",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.6
+    },
+    {
+      "character_id": "c_田法章",
+      "character_name": "田法章",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.533
+    },
+    {
+      "character_id": "c_衙役甲",
+      "character_name": "衙役甲",
+      "topic_id": 1,
+      "topic_label": "朝堂奏对",
+      "strength": 0.4
+    },
+    {
+      "character_id": "c_家院",
+      "character_name": "家院",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.4
+    },
+    {
+      "character_id": "c_衙役乙",
+      "character_name": "衙役乙",
+      "topic_id": 1,
+      "topic_label": "朝堂奏对",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_乳娘",
+      "character_name": "乳娘",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_二衙役",
+      "character_name": "二衙役",
+      "topic_id": 1,
+      "topic_label": "朝堂奏对",
+      "strength": 0.333
+    },
+    {
+      "character_id": "c_四校尉",
+      "character_name": "四校尉",
+      "topic_id": 0,
+      "topic_label": "冲突怒斥",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        47
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        48,
+        118
+      ],
+      "edge_density": 0.7143,
+      "node_count": 7,
+      "edge_count": 15
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        119,
+        131
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        132,
+        148
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        149,
+        224
+      ],
+      "edge_density": 1.0,
+      "node_count": 5,
+      "edge_count": 10
+    }
+  ]
+}

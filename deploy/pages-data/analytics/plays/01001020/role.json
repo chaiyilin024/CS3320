@@ -1,0 +1,219 @@
+{
+  "script_id": "01001020",
+  "hangdang_distribution": {
+    "老生": 1,
+    "花旦": 1,
+    "丑": 1,
+    "未知": 1
+  },
+  "hangdang_coarse_distribution": {
+    "生": 1,
+    "旦": 1,
+    "丑": 1,
+    "未知": 1
+  },
+  "characters": [
+    {
+      "character_id": "c_宋江",
+      "name": "宋江",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=女",
+        "identity=谋士",
+        "personality=勇猛",
+        "personality=诙谐",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "女",
+        "identity": "谋士",
+        "personality": [
+          "勇猛",
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_阎惜姣",
+      "name": "阎惜姣",
+      "hangdang_labeled": "花旦",
+      "hangdang_inferred": null,
+      "hangdang_final": "花旦",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "age=老年",
+        "identity=谋士",
+        "personality=勇猛",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "identity": "谋士",
+        "age": "老年",
+        "personality": [
+          "勇猛"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_张文远",
+      "name": "张文远",
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_final": "丑",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=mid",
+        "gender=男",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_众人",
+      "name": "众人",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "personality=诙谐",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "personality": [
+          "诙谐"
+        ],
+        "performance_cues": [
+          "念"
+        ]
+      }
+    }
+  ],
+  "trait_summary": [
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "gender=女",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "identity=谋士",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "personality=勇猛",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "花旦",
+      "count": 1
+    },
+    {
+      "trait": "age=老年",
+      "hangdang": "花旦",
+      "count": 1
+    },
+    {
+      "trait": "identity=谋士",
+      "hangdang": "花旦",
+      "count": 1
+    },
+    {
+      "trait": "personality=勇猛",
+      "hangdang": "花旦",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "花旦",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "花旦",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "未知",
+      "count": 1
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "未知",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "未知",
+      "count": 1
+    }
+  ],
+  "labeled_count": 3,
+  "inferred_count": 0
+}

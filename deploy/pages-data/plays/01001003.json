@@ -1,0 +1,3321 @@
+{
+  "script_id": "01001003",
+  "title": "三娘教子",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01001003_三娘教子.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-02T04:33:22.812218+00:00",
+    "page_count": 5,
+    "char_count": 2901,
+    "parse_quality": 0.938,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_王春娥",
+      "name": "王春娥",
+      "aliases": [],
+      "hangdang_labeled": "旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 69,
+      "first_appearance_block": 14,
+      "is_main": true
+    },
+    {
+      "character_id": "c_薛保",
+      "name": "薛保",
+      "aliases": [],
+      "hangdang_labeled": "外",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 63,
+      "first_appearance_block": 37,
+      "is_main": true
+    },
+    {
+      "character_id": "c_薛倚哥",
+      "name": "薛倚哥",
+      "aliases": [],
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 42,
+      "first_appearance_block": 29,
+      "is_main": true
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "全剧",
+      "block_range": [
+        0,
+        241
+      ],
+      "character_ids": [
+        "c_王春娥",
+        "c_薛保",
+        "c_薛倚哥"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（《双官诰》【前本】）",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "王春娥：旦",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "薛保：外",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "薛倚哥：小生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "明代，儒生薛广，往镇江营业。家中有妻张氏，妾刘氏、王氏。刘氏生一子，乳名倚哥。又有老仆薛保。薛广在镇江，适遇同乡人，以白金五百两，托带回家。不料其人吞没白金，购一空棺，停厝荒郊，以为薛广灵",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "柩，回乡报知张氏等，举室嚎啕，使薛保运回灵柩安葬。后家渐衰落，张、刘不能耐贫，先后改嫁。三娘王氏深鄙之，誓与薛保茹苦含辛，抚养倚哥，送之入学，己则织布以易升斗之栗。倚哥在学堂被同学讥为无母",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "之儿，气愤回家，遂不认三娘为母，语语挺撞，三娘怒不可遏，将刀立断机布，以示决绝。幸薛保竭诚劝导，",
+      "performance_tags": [],
+      "char_len": 48,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "母子始和好如初。",
+      "performance_tags": [],
+      "char_len": 8,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "注释",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "前在丹桂听孙菊仙小子和小黎青合唱此剧，唱做俱妙，无懈可击，生平最为惬意。孙菊仙去薛保，白口至“三娘”二字，声若洪钟，有石破天惊之概。",
+      "performance_tags": [],
+      "char_len": 66,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "根据《戏考》第一册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_13",
+      "block_index": 13,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "（王春娥上。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "守冰霜贞节为本，效寡居教子成名。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "引子"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_15",
+      "block_index": 15,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "可叹儿夫丧镇江，每日织机度日光。但愿我儿龙虎榜，留下美名万古扬。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "奴家，王氏春娥。配夫薛广，去往镇江贸易，不想命丧镇江，多亏薛保搬尸回来，可恨张、刘二氏，见儿夫一死，一个个另行改嫁。是我对天洪誓大愿，永不改嫁，抚养前房之子，取名倚哥，南学攻书去了。我不免机房织绢便了。正是：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 102,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "云雾不知天早晚，雪深哪知路高低。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "王春娥坐草堂自思自叹，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄慢板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "思想起我儿夫好不惨然。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "遭不幸薛郎夫镇江命染，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "多亏了老薛保搬尸回还。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "奴好比南来雁失群无伴，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "奴好比破梨花不能团圆。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "薛倚儿好一似无弓之箭，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "老薛保好一似浪里舟船。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "将身儿来至在机房织绢，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "等候了我的儿转回家园。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "走吓。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（薛倚哥上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛倚哥",
+      "text": "有薛倚在学中来把书念，怀抱着圣贤书转回家园。众学友一个个说长道短，他道我无娘亲好不惨然。因此上回家去——",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（薛保上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "这般时候，还不见东人回来，待老奴外面看来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛倚哥",
+      "text": "与母争辩，又只见老薛保站立门前。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_40",
+      "block_index": 40,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "参见薛保。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_41",
+      "block_index": 41,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "东人回来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_42",
+      "block_index": 42,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "回来呢。我妈呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_43",
+      "block_index": 43,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "你母亲在机房织绢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_44",
+      "block_index": 44,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "带我去见。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_45",
+      "block_index": 45,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "且慢，随老奴后面用饭。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_46",
+      "block_index": 46,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "见过我妈，再吃饭。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_47",
+      "block_index": 47,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "你就要来吓。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_48",
+      "block_index": 48,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_49",
+      "block_index": 49,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "就来的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_50",
+      "block_index": 50,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（薛保下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛倚哥",
+      "text": "听说是我母亲机房织绢，走上前施一礼儿见母安。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_53",
+      "block_index": 53,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "参见母亲。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "罢了。儿吓，回来了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_55",
+      "block_index": 55,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "回来呢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_56",
+      "block_index": 56,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "为何今日下学甚早？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "先生不在学中，故而回来甚早。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "那书来背。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "妈吓，吃完了饭在背书。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "背了书再去用饭。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "要背就得背。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "将脸朝外。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "背吓。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "妈吓，我忘了书尾。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "自有忘了书头，哪有忘了书尾的道理？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "不错，忘了书头了。妈吓，你提我一句。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "“曾子曰：‘吾日三省吾身。’”",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "“曾子曰：‘吾日三省吾身。’”",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "“为……”",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "妈吓，咱们家里为什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "“为人谋面不忠乎？”",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_73",
+      "block_index": 73,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "哦，“为人谋面不忠乎？”唬唬唬，香炉瓦灯唤唤呵唬。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 25,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "往下背。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "往下背。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "叫你往下背。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "叫你往下背。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_78",
+      "block_index": 78,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "咀。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_79",
+      "block_index": 79,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "咀。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_80",
+      "block_index": 80,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "指望儿在学中攻读，谁想儿在外面贪顽，贪顽不知紧要，岂不误了儿的青春年少。还不与我跪了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 43,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "要跪就得跪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "畜生吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "畜生吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_84",
+      "block_index": 84,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "小奴才不读书把娘气坏，有几个年幼人儿且听来。秦甘罗十二岁身为太宰，石敬塘十三岁拜帅登台。三国中周公瑾名扬四海，七岁上学道法人称将才。十三岁在东吴挂印为帅，烧曹兵八十三无处葬埋。那都是父母养非神下降，难道说小奴才禽兽投胎？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_94",
+      "block_index": 94,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "也罢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "手执家法将儿来打，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_96",
+      "block_index": 96,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛倚哥",
+      "text": "你打别人孩儿好不害羞。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_97",
+      "block_index": 97,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "妈吓，你要打，生一个打，养一个打。你打别人的孩儿，好不害羞，好不害臊。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_98",
+      "block_index": 98,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "儿吓，这两句话，哪个教道与你？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_99",
+      "block_index": 99,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "饭也会吃，书也会念，这两句话，还不会说么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_100",
+      "block_index": 100,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "话倒是两句好话，可惜儿太讲迟了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_101",
+      "block_index": 101,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "你今天不打我，我还不说呢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_102",
+      "block_index": 102,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "哎，天吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "哎，地吓！白相去哉。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "小奴才一言问住了我，闭口无言王氏春娥。叫一声薛郎夫阴曹等我，等候了你的妻同见阎罗，我那薛郎夫吓……",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（薛保上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "小东人下学来机房闯祸，好一似火上又把油泼。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（王春娥哭。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "哎呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "三主母在机房啼哭闷坐，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "转面来问一声东人一个。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "东人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "干什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "你的母教训你非为之过，为什么将好言当作了恶说，东人哪……",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "你少管我们家里闲事。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "嗳……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_123",
+      "block_index": 123,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "这才是养子不教父之过，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_124",
+      "block_index": 124,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "教不严来师之惰。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛保",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_125",
+      "block_index": 125,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "老薛保进机房双膝跪落，双膝跪落，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "薛保",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_126",
+      "block_index": 126,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘吓……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_127",
+      "block_index": 127,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "问三娘发雷霆却是为何？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "老薛保你不必苦苦哀告，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": null,
+      "text": "三娘言来细听根苗：自古道养娇儿终身有靠，又谁知小奴才平日无故，半路途中，跌了奴一跤。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "劝三娘休得要珠泪双掉，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_133",
+      "block_index": 133,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": null,
+      "text": "老奴言来细听根苗：千看万看，看东人年纪小，望三娘念东人下世早，只留下这一根苗，必须要轻打轻责，饶恕他一遭，下次不饶。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "你道他年纪小，心不小，说出话来雅赛铜刀。自古道，人无有千日好，花开哪有百日姣？织什么机来把什么子教，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_142",
+      "block_index": 142,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "也罢，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_143",
+      "block_index": 143,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘忍耐了吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_144",
+      "block_index": 144,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "割断了机头两开交。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_145",
+      "block_index": 145,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（王春娥哭。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_146",
+      "block_index": 146,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "哎呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_147",
+      "block_index": 147,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "见三娘怒冲冲把机头割断，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_148",
+      "block_index": 148,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "吓得我老薛保胆战心寒。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_149",
+      "block_index": 149,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "走上前来好言相劝，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "薛保",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_150",
+      "block_index": 150,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": null,
+      "text": "尊一声三主母细听根源：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_151",
+      "block_index": 151,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "都只为老东人镇江命染，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_152",
+      "block_index": 152,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "是老奴千山万水，万水千山，搬尸回还。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "薛保",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_153",
+      "block_index": 153,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "老奴好恨！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_154",
+      "block_index": 154,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "恨着何来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_155",
+      "block_index": 155,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_156",
+      "block_index": 156,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "恨只恨张、刘二氏，他把心肠改变，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_157",
+      "block_index": 157,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "一个个反穿罗裙另嫁夫郎。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "薛保",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_158",
+      "block_index": 158,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "哎呀……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_159",
+      "block_index": 159,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "老奴好喜！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_160",
+      "block_index": 160,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "喜从何来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_161",
+      "block_index": 161,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_162",
+      "block_index": 162,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "喜只喜三主母发下洪誓大愿，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_163",
+      "block_index": 163,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "你言道永不改嫁教训儿郎。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "薛保",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_164",
+      "block_index": 164,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "哎呀……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_165",
+      "block_index": 165,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘不言，老奴明白了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_166",
+      "block_index": 166,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "明白何来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_167",
+      "block_index": 167,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_168",
+      "block_index": 168,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "莫不是见那张、刘二氏心肠改变，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_169",
+      "block_index": 169,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "你也要反穿罗裙另嫁夫郎？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "薛保",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_170",
+      "block_index": 170,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "哎呀……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_171",
+      "block_index": 171,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘你要走只管走，你要嫁只管嫁。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_172",
+      "block_index": 172,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "哎呀……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_173",
+      "block_index": 173,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "留下了老的老，小的小，在沿门讨饭，我也要扶养他薛门中后代香烟，哦，哦，哦，好不明白的三娘吓……",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_176",
+      "block_index": 176,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "我哭，哭一声老薛保，叫，叫一声老掌家。都只为小奴才下学甚早，我叫他拿书来背，他一字也不晓。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_180",
+      "block_index": 180,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘就该打。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_181",
+      "block_index": 181,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "手执家法未曾打下，他，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_183",
+      "block_index": 183,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "他讲些什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_184",
+      "block_index": 184,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "他，他，他，他言道我不是他的亲娘。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_185",
+      "block_index": 185,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘忍耐了吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_186",
+      "block_index": 186,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "啊啊啊……老掌家……",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_187",
+      "block_index": 187,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "哦。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_188",
+      "block_index": 188,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "听罢言来才知情，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_189",
+      "block_index": 189,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "回头埋怨小东人。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛保",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_190",
+      "block_index": 190,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "东人这里来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_191",
+      "block_index": 191,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "干什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_192",
+      "block_index": 192,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "这就是你的不是了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_193",
+      "block_index": 193,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "你们两个人唱的半天，怎么我的不是？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_194",
+      "block_index": 194,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "你下学回来，一言冒犯你母亲，就该上前，领责才是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_195",
+      "block_index": 195,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "什么叫“领责”？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_196",
+      "block_index": 196,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "就是挨打。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_197",
+      "block_index": 197,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "挨打疼不疼？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_198",
+      "block_index": 198,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "焉有不疼之理？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_199",
+      "block_index": 199,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "你晓得疼，你替我去挨罢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_200",
+      "block_index": 200,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "哎呀，东人哪，去与不去，但凭与你。将老奴推倒在地，倘有不测，看你母子怎生得了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 39,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_201",
+      "block_index": 201,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "哦吓，你的唱功不好，做功倒不错。你不要哭，我去就是了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 27,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_202",
+      "block_index": 202,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "待老奴教道于你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_203",
+      "block_index": 203,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "你教于我。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_204",
+      "block_index": 204,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "现有家法在此，顶在头上，跪在你母亲面前，你就言道：“母亲吓母亲，孩儿下学回来，一言冒犯母亲，现有家法在此，望母亲高高举起，轻轻落下；打儿一下，如同十下；打儿十下，如同百下；打在儿身，痛在娘心。”你母亲有爱子之意，她就不打你了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 102,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_206",
+      "block_index": 206,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "这两句话我会呢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_207",
+      "block_index": 207,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "东人回来。你母亲问你，就说你自己讲的，不要说老奴教道于你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 29,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_208",
+      "block_index": 208,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "我晓得了。孩儿下学回来，一言冒犯母亲，现有家法在此，望母亲高高举起，轻轻落下；打儿一下，如同十下；打儿十下，如同百下；打在儿身，痛在娘心。娘吓，你饶了我吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_211",
+      "block_index": 211,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "儿吓，你早有这两句话，免得为娘一场恶气。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_212",
+      "block_index": 212,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛倚哥",
+      "text": "娘吓，这话不是我会说的，是老薛保教与我的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "薛倚哥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_213",
+      "block_index": 213,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘，老奴跪下了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_214",
+      "block_index": 214,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "老薛保你莫跪一旁立站，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄快三眼"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_215",
+      "block_index": 215,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "多谢三娘。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_216",
+      "block_index": 216,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "骂一声小奴才细听娘言：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄快三眼"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_217",
+      "block_index": 217,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "遭不幸儿的父镇江命染，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_218",
+      "block_index": 218,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "多亏了老薛保搬尸回还。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_219",
+      "block_index": 219,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "有为娘不改嫁为的哪个？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_220",
+      "block_index": 220,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "都只为儿年小，他年老，儿小他老，他老儿小，无依无靠，娘心不安。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "王春娥",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_221",
+      "block_index": 221,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "也罢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_222",
+      "block_index": 222,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘教训了罢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_223",
+      "block_index": 223,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "手执家法将儿来管，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄慢板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_224",
+      "block_index": 224,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "老薛保向前忙遮拦。你要打将老奴责打几下，你，你，你，你要打我的小东人，老奴心酸。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_227",
+      "block_index": 227,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_228",
+      "block_index": 228,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "老薛保只哭得我心好惨，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_229",
+      "block_index": 229,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "他主仆的恩情重如山。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王春娥",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_230",
+      "block_index": 230,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "走上前来用手搀，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王春娥",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_231",
+      "block_index": 231,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "儿吓，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_232",
+      "block_index": 232,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "从今后读书不要贪玩。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_233",
+      "block_index": 233,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "着吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_234",
+      "block_index": 234,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "我的儿好好的把书来念，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_235",
+      "block_index": 235,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "要做高官有何难？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_236",
+      "block_index": 236,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王春娥",
+      "text": "但愿得我的儿鳌头来占，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_237",
+      "block_index": 237,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_薛保",
+      "text": "三娘，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_238",
+      "block_index": 238,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_薛保",
+      "text": "三娘教子万古传。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "薛保",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_239",
+      "block_index": 239,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王春娥",
+      "text": "薛保，我儿，来吓。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "王春娥",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_240",
+      "block_index": 240,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（王春娥、薛保、薛倚哥同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 15,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_241",
+      "block_index": 241,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 5
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_王春娥",
+      "target_id": "c_薛保",
+      "weight": 41.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 20,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_王春娥",
+      "target_id": "c_薛倚哥",
+      "weight": 79.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 39,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_薛保",
+      "target_id": "c_薛倚哥",
+      "weight": 55.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 27,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "家庭剧",
+    "era_inferred": "三国"
+  }
+}

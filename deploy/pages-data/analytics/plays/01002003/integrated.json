@@ -1,0 +1,121 @@
+{
+  "script_id": "01002003",
+  "title": "祭长江",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_孙尚香",
+      "character_name": "孙尚香",
+      "topic_id": 0,
+      "topic_label": "兄弟情义",
+      "evidence": "孙尚香 台词与主题「兄弟情义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.267,
+      "character_id": "c_龙王",
+      "character_name": "龙王",
+      "topic_id": 1,
+      "topic_label": "朝堂奏对",
+      "evidence": "龙王 台词与主题「朝堂奏对」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "结局",
+      "edge_density_delta": 1.0,
+      "evidence": "「结局」阶段人物同场网络密度变化 +1.00"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.464,
+      "topic_id": 0,
+      "topic_label": "兄弟情义",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「兄弟情义」相对应"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_孙尚香",
+      "character_name": "孙尚香",
+      "evidence": "孙尚香 为关系网络核心（度=1）"
+    }
+  ],
+  "summary_insights": [
+    "《祭长江》共 2 位主要人物、1 条关系边，网络密度 1.00。",
+    "主题构成以「兄弟情义、朝堂奏对」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [28, 34]。",
+    "孙尚香 与主题「兄弟情义」关联最强（1.0）。",
+    "行当以青衣为主（2 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_孙尚香",
+      "character_name": "孙尚香",
+      "topic_id": 0,
+      "topic_label": "兄弟情义",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_龙王",
+      "character_name": "龙王",
+      "topic_id": 1,
+      "topic_label": "朝堂奏对",
+      "strength": 0.267
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        0
+      ],
+      "edge_density": 0.0,
+      "node_count": 0,
+      "edge_count": 0
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        7,
+        25
+      ],
+      "edge_density": 0.0,
+      "node_count": 1,
+      "edge_count": 0
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        26,
+        27
+      ],
+      "edge_density": 0.0,
+      "node_count": 1,
+      "edge_count": 0
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        28,
+        34
+      ],
+      "edge_density": 0.0,
+      "node_count": 1,
+      "edge_count": 0
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        35,
+        67
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    }
+  ]
+}

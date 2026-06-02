@@ -1,0 +1,148 @@
+{
+  "script_id": "01002004",
+  "title": "探寒窑",
+  "genre": "家庭剧",
+  "nodes": [
+    {
+      "id": "c_陈氏",
+      "name": "陈氏",
+      "hangdang": "老旦",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 85.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.6667,
+      "closeness": 1.0,
+      "eigenvector": 0.696,
+      "community_id": 0
+    },
+    {
+      "id": "c_王宝钏",
+      "name": "王宝钏",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 69.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.6667,
+      "closeness": 1.0,
+      "eigenvector": 0.6562,
+      "community_id": 0
+    },
+    {
+      "id": "c_家院",
+      "name": "家院",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 29.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.2881,
+      "community_id": 0
+    },
+    {
+      "id": "c_丫鬟",
+      "name": "丫鬟",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 5.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.044,
+      "community_id": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "c_王宝钏",
+      "target": "c_陈氏",
+      "weight": 61.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 30,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_家院",
+      "target": "c_陈氏",
+      "weight": 23.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 11,
+      "normalized_weight": 0.377
+    },
+    {
+      "source": "c_家院",
+      "target": "c_王宝钏",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.082
+    },
+    {
+      "source": "c_丫鬟",
+      "target": "c_王宝钏",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0492
+    },
+    {
+      "source": "c_丫鬟",
+      "target": "c_家院",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0164
+    },
+    {
+      "source": "c_丫鬟",
+      "target": "c_陈氏",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0164
+    }
+  ],
+  "metrics": {
+    "node_count": 4,
+    "edge_count": 6,
+    "density": 1.0,
+    "avg_clustering": 1.0,
+    "avg_degree": 3.0,
+    "avg_weighted_degree": 47.0,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.1235,
+    "modularity": 0.0,
+    "assortativity_hangdang": -0.3333,
+    "main_subgraph": {
+      "node_count": 4,
+      "edge_count": 6,
+      "density": 1.0,
+      "avg_clustering": 0.1235,
+      "modularity": 0.0
+    }
+  }
+}

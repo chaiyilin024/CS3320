@@ -1,0 +1,777 @@
+{
+  "script_id": "01002003",
+  "title": "祭长江",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01002003_祭长江.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-02T04:33:27.184518+00:00",
+    "page_count": 2,
+    "char_count": 871,
+    "parse_quality": 0.892,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_孙尚香",
+      "name": "孙尚香",
+      "aliases": [],
+      "hangdang_labeled": "正旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 27,
+      "first_appearance_block": 8,
+      "is_main": true
+    },
+    {
+      "character_id": "c_龙王",
+      "name": "龙王",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 2,
+      "first_appearance_block": 60,
+      "is_main": true
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "【第一场】",
+      "block_range": [
+        7,
+        57
+      ],
+      "character_ids": [
+        "c_孙尚香"
+      ]
+    },
+    {
+      "scene_id": "s_2",
+      "scene_index": 2,
+      "title": "【第二场】",
+      "block_range": [
+        58,
+        67
+      ],
+      "character_ids": [
+        "c_孙尚香",
+        "c_龙王"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（一名：《祭江》）",
+      "performance_tags": [],
+      "char_len": 9,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "孙尚香：正旦",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "赵云截江夺斗后，孙夫人独居江东。后关羽、张飞遇害，刘先主兴师大伐东吴，被陆逊用火攻之计，连营七百余里尽付一炬，先主仅以身免，赖赵云救往白帝城暂避。孙夫人在吴闻信，误谓先主已死，不胜悲痛，乃",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "请于国太，欲往江边祭奠，以尽夫妇之谊，国太允之。夫人至江边，易白衣冠望西号哭，竟投江而死。后人相传孙夫人投江后，上帝嘉其贞洁，封为枭姬。",
+      "performance_tags": [],
+      "char_len": 68,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "根据《戏考》第二册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": "s_1",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第一场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "摆驾。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四太监、四御林军、二宫女、孙尚香同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 21,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "曾记得当年来辞君，棒打鸳鸯两离分。叹皇叔遭不幸龙归海境，不由奴日夜里珠泪淋淋。内侍臣摆驾江边来进，清风一去未亡人。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "二黄慢板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "祭礼摆下，着衣更换，两厢退下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_17",
+      "block_index": 17,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四太监、四御林军同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 13,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "设祭长江岸，举目望西川。梦魂何日见，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "夫君，先主！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "空自珠泪涟。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "孙尚香在江边心中酸疼，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "二黄导板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "夫君，先主！啊呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "三叫头"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "尊一声汉皇叔细听分明：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "回龙"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "好夫妻恶姻缘悲哀告禀，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "反二黄慢板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "凭空中便见听一点心诚。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你大英雄出身被困，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你结桃园义共死生；",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你破黄巾声名未重，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你虎牢关方显成名；",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你舍徐庶卧龙三请，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你水镜庄得一贤伦；",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你当阳道夏口夜奔，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你全仗着诸葛先生；",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你跳檀溪险些丧命，我的夫吓！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "孙尚香",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_35",
+      "block_index": 35,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（下锣。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "可叹你入虎穴东吴招亲。为报仇在猇亭遇见陆逊，又谁知那小贼果有才能。你不该七百里连营扎定，烧死了众儿郎百万雄兵。人报道你在白帝城丧命，那时节得凶信魂魄离身。实指望破奸曹狼烟扫尽，又谁知天不助命归天庭。我本当得此信寻个自尽，又恐怕我母亲不放离分。叹人生在世间如同照镜，夫已死我岂肯独自贪生。因此上备祭礼江边来进，但愿你魂灵儿早归天庭。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "反二黄慢板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "且住。想皇叔一死，我在东吴苦守无益。不免拜谢母后养育之恩，投江自尽了吧。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 36,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_52",
+      "block_index": 52,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "江水滔滔波浪滚，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "反二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_53",
+      "block_index": 53,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四水旗同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 8,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_孙尚香",
+      "text": "尚香拜别养育恩。辞别了老母后寻自尽，不如一死见夫君。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "反二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（孙尚香、四水旗同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": "s_2",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第二场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（孙尚香上，四水旗引龙王同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 16,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_龙王",
+      "text": "玉旨下，跪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "龙王",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "在。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_龙王",
+      "text": "听宣读。诏曰：孙尚香为夫投江，尽节一死，玉帝垂怜，封为枭姬娘娘。旨意读罢，望诏谢恩。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 42,
+      "speaker_name_raw": "龙王",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "圣寿无疆。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（龙王下。孙尚香换衣。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_孙尚香",
+      "text": "众神将，保我朝见玉帝去者。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "孙尚香",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（孙尚香、四水旗同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 2
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_孙尚香",
+      "target_id": "c_龙王",
+      "weight": 7.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "历史剧",
+    "era_inferred": "三国"
+  }
+}

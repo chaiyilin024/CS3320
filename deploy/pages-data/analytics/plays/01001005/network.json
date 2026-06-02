@@ -1,0 +1,679 @@
+{
+  "script_id": "01001005",
+  "title": "打鼓骂曹",
+  "genre": "历史剧",
+  "nodes": [
+    {
+      "id": "c_曹操",
+      "name": "曹操",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 10,
+      "weighted_degree": 158.0,
+      "betweenness": 0.0519,
+      "weighted_betweenness": 0.7556,
+      "closeness": 1.0,
+      "eigenvector": 0.6644,
+      "community_id": 0
+    },
+    {
+      "id": "c_祢衡",
+      "name": "祢衡",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 10,
+      "weighted_degree": 96.0,
+      "betweenness": 0.0519,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.5245,
+      "community_id": 0
+    },
+    {
+      "id": "c_四朝官",
+      "name": "四朝官",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 9,
+      "weighted_degree": 73.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.5111,
+      "closeness": 0.9091,
+      "eigenvector": 0.423,
+      "community_id": 0
+    },
+    {
+      "id": "c_张辽",
+      "name": "张辽",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 10,
+      "weighted_degree": 42.0,
+      "betweenness": 0.0519,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.2396,
+      "community_id": 0
+    },
+    {
+      "id": "c_孔融",
+      "name": "孔融",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 27.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.5882,
+      "eigenvector": 0.1791,
+      "community_id": 0
+    },
+    {
+      "id": "c_朝官甲",
+      "name": "朝官甲",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 9,
+      "weighted_degree": 19.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.4556,
+      "closeness": 0.9091,
+      "eigenvector": 0.0528,
+      "community_id": 1
+    },
+    {
+      "id": "c_旗牌",
+      "name": "旗牌",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 9,
+      "weighted_degree": 17.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.9091,
+      "eigenvector": 0.0794,
+      "community_id": 0
+    },
+    {
+      "id": "c_二旗牌",
+      "name": "二旗牌",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 9,
+      "weighted_degree": 15.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.9091,
+      "eigenvector": 0.0646,
+      "community_id": 0
+    },
+    {
+      "id": "c_朝官乙",
+      "name": "朝官乙",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 9,
+      "weighted_degree": 13.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0778,
+      "closeness": 0.9091,
+      "eigenvector": 0.0253,
+      "community_id": 1
+    },
+    {
+      "id": "c_朝官丙",
+      "name": "朝官丙",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 9,
+      "weighted_degree": 13.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0111,
+      "closeness": 0.9091,
+      "eigenvector": 0.0247,
+      "community_id": 1
+    },
+    {
+      "id": "c_朝官丁",
+      "name": "朝官丁",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 9,
+      "weighted_degree": 13.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0778,
+      "closeness": 0.9091,
+      "eigenvector": 0.0253,
+      "community_id": 1
+    }
+  ],
+  "links": [
+    {
+      "source": "c_曹操",
+      "target": "c_祢衡",
+      "weight": 58.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 28,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_四朝官",
+      "target": "c_曹操",
+      "weight": 47.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 23,
+      "normalized_weight": 0.8103
+    },
+    {
+      "source": "c_张辽",
+      "target": "c_曹操",
+      "weight": 22.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 10,
+      "normalized_weight": 0.3793
+    },
+    {
+      "source": "c_孔融",
+      "target": "c_曹操",
+      "weight": 15.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 7,
+      "normalized_weight": 0.2586
+    },
+    {
+      "source": "c_孔融",
+      "target": "c_祢衡",
+      "weight": 11.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 5,
+      "normalized_weight": 0.1897
+    },
+    {
+      "source": "c_四朝官",
+      "target": "c_祢衡",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.1552
+    },
+    {
+      "source": "c_张辽",
+      "target": "c_祢衡",
+      "weight": 8.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.1379
+    },
+    {
+      "source": "c_四朝官",
+      "target": "c_朝官甲",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.1207
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_曹操",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.1207
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_曹操",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.0862
+    },
+    {
+      "source": "c_四朝官",
+      "target": "c_张辽",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.0862
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_祢衡",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0517
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_祢衡",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0517
+    },
+    {
+      "source": "c_朝官丁",
+      "target": "c_朝官丙",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0517
+    },
+    {
+      "source": "c_朝官丁",
+      "target": "c_朝官甲",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0517
+    },
+    {
+      "source": "c_朝官丙",
+      "target": "c_朝官乙",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0517
+    },
+    {
+      "source": "c_朝官乙",
+      "target": "c_朝官甲",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0517
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_四朝官",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_张辽",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_旗牌",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_朝官丁",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_朝官丙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_朝官乙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_二旗牌",
+      "target": "c_朝官甲",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_四朝官",
+      "target": "c_旗牌",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_四朝官",
+      "target": "c_朝官丁",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_四朝官",
+      "target": "c_朝官丙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_四朝官",
+      "target": "c_朝官乙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_孔融",
+      "target": "c_张辽",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_张辽",
+      "target": "c_旗牌",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_张辽",
+      "target": "c_朝官丁",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_张辽",
+      "target": "c_朝官丙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_张辽",
+      "target": "c_朝官乙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_张辽",
+      "target": "c_朝官甲",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_朝官丁",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_朝官丙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_朝官乙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_旗牌",
+      "target": "c_朝官甲",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_曹操",
+      "target": "c_朝官丁",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_曹操",
+      "target": "c_朝官丙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_曹操",
+      "target": "c_朝官乙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_曹操",
+      "target": "c_朝官甲",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_朝官丁",
+      "target": "c_朝官乙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_朝官丁",
+      "target": "c_祢衡",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_朝官丙",
+      "target": "c_朝官甲",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_朝官丙",
+      "target": "c_祢衡",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_朝官乙",
+      "target": "c_祢衡",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    },
+    {
+      "source": "c_朝官甲",
+      "target": "c_祢衡",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0172
+    }
+  ],
+  "metrics": {
+    "node_count": 11,
+    "edge_count": 48,
+    "density": 0.8727,
+    "avg_clustering": 0.9576,
+    "avg_degree": 8.73,
+    "avg_weighted_degree": 44.18,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.0571,
+    "modularity": 0.0867,
+    "assortativity_hangdang": -0.0827,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 9,
+      "density": 0.9,
+      "avg_clustering": 0.2352,
+      "modularity": 0.0
+    }
+  }
+}

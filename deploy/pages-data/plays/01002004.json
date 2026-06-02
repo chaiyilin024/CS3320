@@ -1,0 +1,2553 @@
+{
+  "script_id": "01002004",
+  "title": "探寒窑",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01002004_探寒窑.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-02T04:33:27.356396+00:00",
+    "page_count": 5,
+    "char_count": 2522,
+    "parse_quality": 0.888,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_陈氏",
+      "name": "陈氏",
+      "aliases": [],
+      "hangdang_labeled": "老旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 79,
+      "first_appearance_block": 12,
+      "is_main": true
+    },
+    {
+      "character_id": "c_王宝钏",
+      "name": "王宝钏",
+      "aliases": [],
+      "hangdang_labeled": "正旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 40,
+      "first_appearance_block": 45,
+      "is_main": true
+    },
+    {
+      "character_id": "c_家院",
+      "name": "家院",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 9,
+      "first_appearance_block": 18,
+      "is_main": true
+    },
+    {
+      "character_id": "c_丫鬟",
+      "name": "丫鬟",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 1,
+      "first_appearance_block": 109,
+      "is_main": true
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "全剧",
+      "block_range": [
+        0,
+        221
+      ],
+      "character_ids": [
+        "c_丫鬟",
+        "c_家院",
+        "c_王宝钏",
+        "c_陈氏"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（一名：《母女会》）",
+      "performance_tags": [],
+      "char_len": 10,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "陈氏：老旦",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "王宝钏：正旦",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "王允官居首相，有少女名宝钏，彩楼择配，球中丐者薛平贵。王允以为耻，逐薛平贵。女愤，出从薛平贵居寒窑。临行与父三击掌为誓：不富贵，无相见。薛平贵从军西去，女独居寒窑十七年，备受艰苦。有魏虎者，",
+      "performance_tags": [],
+      "char_len": 95,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "女之姊婿也，自西域归，诡称平贵已死。王宝钏闻耗，悲忧成疾。相府老仆告知老夫人，夫人携婢捧银，",
+      "performance_tags": [],
+      "char_len": 46,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "亲至寒窑探病，则见败瓦颓垣，菜羹粗粝，较之相府画栋雕梁，珍馐美味，不胜苦乐之感。王宝钏形容憔悴，",
+      "performance_tags": [],
+      "char_len": 48,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "见母大哭。夫人劝以同回相府，王宝钏坚执不允，夫人爱怜之极欲与女同居寒窑。王宝钏无奈，假允同归。",
+      "performance_tags": [],
+      "char_len": 47,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "诳夫人出窑紧闭双门，以示决绝。夫人叹息而去。",
+      "performance_tags": [],
+      "char_len": 22,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "根据《戏考》第二册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（丫鬟引陈氏同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 10,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "鹤发皓首，两鬓如霜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "引子"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_13",
+      "block_index": 13,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "夫为相国伴皇家，妻沾雨露享荣华。终朝只把娇儿叹，哪得周全喜生花。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "老身陈氏，配夫王允。膝下无儿，所生三女：长女金钏，许配苏龙；次女银钏，许配魏虎；三女宝钏，配夫平贵。可恨三女性情高傲，居住城南，老身百般相劝，执意不肯回府。今早也曾命家院去往城南，探望三女度日光景如何。这时候怎么还不见回来？丫鬟伺候了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_17",
+      "block_index": 17,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "有事即来报，无事不乱言。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "参见老夫人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "罢了，起来。命你打听三姑娘，光景如何？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "三姑娘在窑中身染重病。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "你待怎讲？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "三姑娘身染重病！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "哎呀，儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "听得家院一声禀，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "烈性的三女病缠身。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "陈氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "眼望城南高声叫，我的儿吓……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "怎能够到寒窑探望儿身。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "老夫人不必啼哭，何不多带银米衣裳，去往寒窑探望三姑娘。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 27,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "言之有理。家院、丫鬟，多带银米衣裳与你三姑娘。家院，吩咐外面车辆伺候。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "车辆走上。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "叫家院你与我前把路引，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮慢板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_35",
+      "block_index": 35,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "想从前大不该彩楼结亲。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "为宝钏把我的精神用尽，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "为女儿与相国吵闹相争；",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "为宝钏常忧闷神昏不定，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_39",
+      "block_index": 39,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "为女儿哭得我头闷眼昏。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_40",
+      "block_index": 40,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "实可叹薛平郎西凉丧命，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_41",
+      "block_index": 41,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "宝钏儿受凄凉一十七春。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_42",
+      "block_index": 42,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "老夫人，此地已是寒窑。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_43",
+      "block_index": 43,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "前去叫门。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_44",
+      "block_index": 44,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "三姑娘开门来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_45",
+      "block_index": 45,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_46",
+      "block_index": 46,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（王宝钏上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_47",
+      "block_index": 47,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "忽听窑外有人声，想必是四邻探奴身。薛郎一去无音信，寒窑内哭坏女钗裙。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "三姑娘开门来，老夫人来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_52",
+      "block_index": 52,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "哎呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_53",
+      "block_index": 53,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "老娘来到城南郡，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮流水板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "好一似钢刀刺在心。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "王宝钏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_55",
+      "block_index": 55,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "儿夫西凉丧了命，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_56",
+      "block_index": 56,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "这回怎见老娘亲？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（王宝钏开窑，出窑。）",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "母亲！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "宝钏！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "老娘！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "我儿！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "老娘亲吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "哎呀，儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "一见娇儿珠泪滚，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮导板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "三女，宝钏儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "手搀三女说分明：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮流水板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "儿在相府多侥幸，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "乖巧伶俐甚聪明。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "闲来绣阁挑花朵，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "闷来花园散精神。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "多少侍女来陪伴，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "许多丫鬟随后跟。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_73",
+      "block_index": 73,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "自从我儿出相府，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "母女分别十七春。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "从前娇容如嫩笋，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "今朝我儿变了形。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "面黄肌瘦容颜改，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_78",
+      "block_index": 78,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "忍饥受饱不回心。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_79",
+      "block_index": 79,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "日见无人来谈论，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_80",
+      "block_index": 80,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "晚来好似一孤灯。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "寒风冷凉儿受尽，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "破窑怎藏儿的身？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "你本是宰相千金女，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_84",
+      "block_index": 84,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "叫娘心疼不心疼！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_85",
+      "block_index": 85,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "老娘不必两泪淋，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮二六板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_86",
+      "block_index": 86,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": null,
+      "text": "女儿言来听分明：大姐、二姐有福分，许配为官做宦人。惟有女儿命内苦，彩球单打花郎身。好的好来歹的歹，富的富来贫的贫。若人多想为官宦，谁做耕田种地人？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "背地里只把相国恨，三个女儿两看承。大女、二女我不爱，唯有冤家我心疼。老身今年六十九，瓦上霜来风前灯。今日见了娇儿面，好似枯木又逢春。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮流水板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "母亲请上，待女儿拜见。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "儿不要拜了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_105",
+      "block_index": 105,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "儿久离膝下，少奉甘旨，望母亲恕罪！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_106",
+      "block_index": 106,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "我儿起来。家院、丫鬟，见过你三姑娘。家院、",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_丫鬟",
+      "text": "参见三姑娘！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "丫鬟",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "罢了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "母亲不在相府，来至寒窑则甚？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "家院回府：报道吾儿身染重病。此病从何而起？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "多因魏虎打从寒窑经过，言道儿丈夫命丧西凉，爹爹又差人前来劝奴改嫁，儿闻此言，因此身体十分病重。今日母亲到此，该是儿的病，好了一半了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 66,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "哦，我把你这老天杀的，常常逼我儿改嫁，此番回去，又要与他吵闹一场！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 33,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "吓，母亲，为了女儿，不要伤了你二老的和气。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "儿吓，为娘看在我儿分上，不与你父吵闹就是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "多谢母亲。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "儿吓，为娘要进窑内看看，我儿的度日光景如何？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "寒窑窄小，不看也罢了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "咳，我儿住了一十七载，难道为娘就进去不得么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "如此待女儿打扫打扫。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "不用打扫，与为娘带路进窑，儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_123",
+      "block_index": 123,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "雕梁画阁儿不住，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_124",
+      "block_index": 124,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "寒窑怎存我儿身？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_125",
+      "block_index": 125,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "哎，母亲请用。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_126",
+      "block_index": 126,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "哎呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_127",
+      "block_index": 127,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "珍馐海味儿不用，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "罐内稀饭怎度光阴？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "陈氏",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "王宝钏、",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "陈氏",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_130",
+      "block_index": 130,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "（母亲）（宝钏）！（老娘）（我儿）！哎吓，（老娘亲）（儿吓）！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "同三叫头"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_131",
+      "block_index": 131,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "哭一声王宝钏！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "叫一声老娘亲！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_133",
+      "block_index": 133,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "想当年在相府何等侥幸，到如今住寒窑娘好心痛。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_135",
+      "block_index": 135,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "只当孩儿伤了命，何劳娘亲挂在心？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "儿随为娘回相府，只享荣华不愁贫。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_139",
+      "block_index": 139,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "儿与爹爹三击掌，饿死寒窑不进相府门。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_141",
+      "block_index": 141,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "王宝钏……",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_142",
+      "block_index": 142,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "老娘亲……陈氏、",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_143",
+      "block_index": 143,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "呀吓呀吓！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "同哭板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_144",
+      "block_index": 144,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "我的儿吓……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_145",
+      "block_index": 145,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "老娘亲吓……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_146",
+      "block_index": 146,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "老娘亲请上容儿拜禀，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮导板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_147",
+      "block_index": 147,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "我儿不必拜了，一旁坐了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_148",
+      "block_index": 148,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院、丫鬟同暗下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_149",
+      "block_index": 149,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "母女们在寒窑叙一叙苦情：都只为老娘亲身染重病，女儿在后花园把香来焚。许愿降香三年整，后宫娘娘得知情。恩赐五彩花绒线，绣成了彩球定终身。实指望打中宦门后，谁知单打在花郎身。夫妻二人相府进，老爹爹一见怒气升。前门赶出薛平贵，后门赶出女儿身。夫妻二人无投奔，破瓦寒窑把身存。渠江河内妖魔显，红鬃烈马乱伤人。平贵擒了红鬃马，唐王驾前去讨封。西凉贼子造了反，平贵倒做马先行。一去不觉十七载，儿比孤雁失了群。老娘回府对父论，休把孩儿挂在心。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮慢板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_174",
+      "block_index": 174,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "我儿不必心烦闷，不要啼哭费精神。不要听你父的话，不要牵挂平郎身。儿随为娘回相府，跟娘坐来随娘行。倘若你父有谈论，舍生忘死拼他人。若是为娘归泉路，儿就是披麻戴孝人。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_184",
+      "block_index": 184,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "老娘亲不必两泪淋，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_185",
+      "block_index": 185,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": null,
+      "text": "女儿言来听分明：倘若老娘身亡故，儿是披麻戴孝人；倘若爹爹身亡故，女儿不去哭半声。宝钏烧香把佛敬，儿要修修来世身。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_192",
+      "block_index": 192,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "立志守节拿得稳，皇天不负你这苦心人。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_194",
+      "block_index": 194,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院、丫鬟同暗上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_195",
+      "block_index": 195,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "家院、丫鬟，将银米衣裳，交与你三姑娘。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_196",
+      "block_index": 196,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "且慢，相府之物，一概不要。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_197",
+      "block_index": 197,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "儿吓，你不收下，岂不辜负为娘一片好心？儿吓，收下罢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_198",
+      "block_index": 198,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "多谢母亲！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_199",
+      "block_index": 199,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "这便才是。家院、丫鬟，你们暂且回去，老身在此陪伴你三姑娘一宵，明日回府。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_201",
+      "block_index": 201,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "吓，母亲，寒窑肮脏得紧，母亲焉能得住？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_202",
+      "block_index": 202,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "我儿住得，难道为娘就住不得么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_203",
+      "block_index": 203,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "且住，母亲不回相府，这便如何是好？我自有道理。吓，母亲，女儿情愿回转相府去了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_205",
+      "block_index": 205,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "好，我儿情愿回得相府了！家院吩咐车辆搭上。我儿开了窑门。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_208",
+      "block_index": 208,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_209",
+      "block_index": 209,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（陈氏、家院、丫鬟同出窑，王宝钏关窑门。）",
+      "performance_tags": [],
+      "char_len": 21,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_210",
+      "block_index": 210,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_陈氏",
+      "text": "儿吓，为何将窑门紧闭？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_211",
+      "block_index": 211,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王宝钏",
+      "text": "啊吓，母亲哪！儿与爹爹三击掌，饿在寒窑……也是不回去的了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 29,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_212",
+      "block_index": 212,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "儿吓，狠心的儿，不把娘来送！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_213",
+      "block_index": 213,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "娘吓，儿跪寒窑送娘亲。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_214",
+      "block_index": 214,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "娘哭儿来天地震！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_215",
+      "block_index": 215,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "儿哭娘来泪成冰！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_216",
+      "block_index": 216,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "我那狠心的王三姐！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_217",
+      "block_index": 217,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "我那疼儿的老娘亲……吓……",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_218",
+      "block_index": 218,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_陈氏",
+      "text": "啊……啊……啊……啊……我的儿吓……",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "陈氏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_219",
+      "block_index": 219,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_王宝钏",
+      "text": "啊吓……儿的老娘亲吓……吓……吓……吓……",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "王宝钏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_220",
+      "block_index": 220,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_221",
+      "block_index": 221,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 5
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_丫鬟",
+      "target_id": "c_家院",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_丫鬟",
+      "target_id": "c_王宝钏",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_丫鬟",
+      "target_id": "c_陈氏",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_家院",
+      "target_id": "c_王宝钏",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_家院",
+      "target_id": "c_陈氏",
+      "weight": 23.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 11,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_王宝钏",
+      "target_id": "c_陈氏",
+      "weight": 61.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 30,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "家庭剧",
+    "era_inferred": "神话"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "script_id": "01001019",
+  "title": "柴桑口",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-02T04:42:35.782131+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "其他情节",
+      "weight": 0.5263,
+      "keywords": [
+        "可怜",
+        "夭亡",
+        "不幸",
+        "伏维尚",
+        "公谨",
+        "相商",
+        "蒸尝",
+        "抛得",
+        "悲伤",
+        "雄兵",
+        "生平",
+        "明君",
+        "不负",
+        "足下",
+        "投一"
+      ],
+      "keyword_weights": [
+        1.339,
+        0.287,
+        0.0805,
+        0.0619,
+        0.0467,
+        0.0392,
+        0.0352,
+        0.0127,
+        0.0059,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "行军调度",
+      "weight": 0.4737,
+      "keywords": [
+        "吊祭",
+        "孔明",
+        "过江",
+        "诸葛",
+        "谢孝",
+        "跟随",
+        "悲伤",
+        "抛得",
+        "蒸尝",
+        "不幸",
+        "相商",
+        "伏维尚",
+        "夭亡",
+        "公谨",
+        "报仇"
+      ],
+      "keyword_weights": [
+        1.1803,
+        0.4845,
+        0.4351,
+        0.3716,
+        0.2274,
+        0.1729,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.5263,
+    0.4737
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_47",
+      "block_index": 47,
+      "text_snippet": "可怜你忙碌碌半世奔忙。",
+      "context_snippet": "可怜你兢业业一生空禳，  /  » 可怜你忙碌碌半世奔忙。  /  实指望灭曹瞒安乐共享，",
+      "speaker_id": "c_诸葛亮",
+      "speaker_name": "诸葛亮",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_46",
+      "block_index": 46,
+      "text_snippet": "可怜你兢业业一生空禳，",
+      "context_snippet": "可怜你美英雄一旦夭亡。  /  » 可怜你兢业业一生空禳，  /  可怜你忙碌碌半世奔忙。",
+      "speaker_id": "c_诸葛亮",
+      "speaker_name": "诸葛亮",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_99",
+      "block_index": 99,
+      "text_snippet": "且慢，那孔明用兵如神，又有赵云跟随，若是动手，又恐他变。",
+      "context_snippet": "待我将他赶上！  /  » 且慢，那孔明用兵如神，又有赵云跟随，若是动手，又恐他变。  /  不必拦阻，众将官，追！",
+      "speaker_id": "c_鲁肃",
+      "speaker_name": "鲁肃",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_94",
+      "block_index": 94,
+      "text_snippet": "为何不将他拿下，与我父报仇？",
+      "context_snippet": "诸葛先生前来吊祭。  /  » 为何不将他拿下，与我父报仇？  /  他祭了又哭，哭了又祭。",
+      "speaker_id": "c_周循",
+      "speaker_name": "周循",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.658,
+    "labeled_weight": 0.4737,
+    "fallback_weight": 0.5263,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 1,
+      "weak": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.5263,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "行军调度",
+        "tier": "weak",
+        "label_score": 5.0,
+        "keyword_signal": 1.0,
+        "weight": 0.4737,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "53% 主题为未识别（其他情节/未知）"
+    ]
+  }
+}
