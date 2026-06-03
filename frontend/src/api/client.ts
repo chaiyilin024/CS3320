@@ -13,7 +13,7 @@ import type {
   ThemeQualityGlobal,
 } from '@/types'
 
-const BASE = `${import.meta.env.BASE_URL}data`.replace(/([^:]\/)\/+/g, '$1')
+const BASE = '/data'
 
 async function getJson<T>(path: string): Promise<T> {
   const res = await fetch(`${BASE}${path}`)
