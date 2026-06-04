@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cs3320.local/schemas/analytics/theme_quality.schema.json",
+  "title": "GlobalThemeQuality",
+  "description": "全库主题质量报告 — artifacts/analytics/global/theme_quality.json",
+  "type": "object",
+  "required": ["version", "generated_at", "summary", "label_distribution", "plays"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "$ref": "../common/definitions.schema.json#/$defs/version"
+    },
+    "generated_at": {
+      "$ref": "../common/definitions.schema.json#/$defs/isoDateTime"
+    },
+    "summary": {
+      "type": "object",
+      "required": ["play_count", "avg_score"],
+      "additionalProperties": false,
+      "properties": {
+        "play_count": { "type": "integer", "minimum": 0 },
+        "avg_score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "low_quality_count": { "type": "integer", "minimum": 0 },
+        "low_quality_threshold": { "type": "number", "minimum": 0, "maximum": 1 },
+        "fallback_label_share": { "type": "number", "minimum": 0, "maximum": 1 },
+        "tier_totals": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "label_distribution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "topic_count"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string" },
+          "topic_count": { "type": "integer", "minimum": 0 },
+          "weight_sum": { "type": "number", "minimum": 0 }
+        }
+      }
+    },
+    "fallback_keywords": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["keyword", "count"],
+        "additionalProperties": false,
+        "properties": {
+          "keyword": { "type": "string" },
+          "count": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "low_quality_plays": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/playQualityRow" }
+    },
+    "plays": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/playQualityRow" }
+    }
+  },
+  "$defs": {
+    "playQualityRow": {
+      "type": "object",
+      "required": ["script_id", "score"],
+      "additionalProperties": false,
+      "properties": {
+        "script_id": {
+          "$ref": "../common/definitions.schema.json#/$defs/scriptId"
+        },
+        "title": { "type": "string" },
+        "genre": { "type": "string" },
+        "score": { "type": "number", "minimum": 0, "maximum": 1 },
+        "labeled_weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "fallback_weight": { "type": "number", "minimum": 0, "maximum": 1 },
+        "tier_counts": {
+          "type": "object",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
+        "issues": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
