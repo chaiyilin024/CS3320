@@ -114,7 +114,7 @@ async function load() {
   try {
     const id = store.scriptId
     const [resIntegrated, resNetwork, resNarrative, resThemes] = await Promise.all([
-      api.playIntegrated(id),
+      api.playIntegrated(id).catch(() => null),
       api.playNetwork(id),
       api.playNarrative(id),
       api.playThemes(id),
@@ -144,7 +144,11 @@ watch(() => store.scriptId, load)
 
     <div v-if="loading" class="loading">加载中…</div>
 
-    <template v-else-if="integrated">
+    <div v-else-if="!integrated && !network" class="loading">
+      暂无综合数据，请先运行分析生成 integrated.json
+    </div>
+
+    <template v-else>
       <section class="kpi-row">
         <div v-for="k in kpis" :key="k.label" class="kpi-card">
           <span class="kpi-value">{{ k.value }}</span>
@@ -153,10 +157,10 @@ watch(() => store.scriptId, load)
         </div>
       </section>
 
-      <section v-if="integrated.summary_insights?.length" class="insights">
+      <section v-if="integrated?.summary_insights?.length" class="insights">
         <h3 class="section-title">自动洞察摘要</h3>
         <ul>
-          <li v-for="(line, i) in integrated.summary_insights" :key="i">{{ line }}</li>
+          <li v-for="(line, i) in integrated!.summary_insights" :key="i">{{ line }}</li>
         </ul>
       </section>
 

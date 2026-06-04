@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import math
 import statistics
 from collections import Counter, defaultdict
 from itertools import combinations
@@ -48,17 +49,33 @@ def _load_json(path: Path) -> dict | None:
 
 
 def _metric_distribution(values: list[float]) -> dict:
-    if not values:
+    clean = [float(v) for v in values if isinstance(v, (int, float)) and math.isfinite(float(v))]
+    if not clean:
         return {"mean": 0.0, "median": 0.0, "min": 0.0, "max": 0.0, "values": []}
-    s = sorted(values)
-    n = len(s)
+    s = sorted(clean)
+    n = len(clean)
     return {
-        "mean": round(statistics.fmean(values), 4),
-        "median": round(statistics.median(values), 4),
+        "mean": round(statistics.fmean(clean), 4),
+        "median": round(statistics.median(clean), 4),
         "min": round(s[0], 4),
         "max": round(s[-1], 4),
-        "values": [round(v, 4) for v in values],
+        "values": [round(v, 4) for v in clean],
     }
+
+
+def _sanitize_metrics(metrics: dict) -> dict:
+    """移除 NaN/Inf，保证输出 JSON 可被浏览器 JSON.parse 解析。"""
+    out: dict = {}
+    for key, val in metrics.items():
+        if isinstance(val, float):
+            if math.isfinite(val):
+                out[key] = val
+            continue
+        if isinstance(val, dict):
+            out[key] = _sanitize_metrics(val)
+            continue
+        out[key] = val
+    return out
 
 
 def _catalog_index(catalog: dict) -> dict[str, dict]:
@@ -216,7 +233,7 @@ def aggregate_network_compare(
             "title": net.get("title") or meta.get("title"),
             "genre": genre,
             "collection_id": collection_id,
-            "metrics": metrics,
+            "metrics": _sanitize_metrics(metrics),
         }
         play_summaries.append(summary)
         by_genre[genre].append(summary)
@@ -416,6 +433,15 @@ def aggregate_narrative_templates(
     }
 
 
+def aggregate_theme_quality_report(
+    plays_dir: Path,
+    catalog_idx: dict[str, dict],
+) -> dict:
+    from ..theme.quality import aggregate_theme_quality
+
+    return aggregate_theme_quality(plays_dir, catalog_idx)
+
+
 def run_global_aggregation(cfg) -> dict[str, dict]:
     """聚合 artifacts/analytics/plays → global/*.json，返回各产出文档。"""
     plays_dir = cfg.analytics_dir / "plays"
@@ -429,6 +455,7 @@ def run_global_aggregation(cfg) -> dict[str, dict]:
         "role_analysis.json": aggregate_role_analysis(plays_dir, catalog_idx),
         "network_compare.json": aggregate_network_compare(plays_dir, catalog_idx),
         "theme_patterns.json": aggregate_theme_patterns(plays_dir, catalog_idx),
+        "theme_quality.json": aggregate_theme_quality_report(plays_dir, catalog_idx),
         "narrative_templates.json": aggregate_narrative_templates(plays_dir, catalog_idx),
     }
     return outputs

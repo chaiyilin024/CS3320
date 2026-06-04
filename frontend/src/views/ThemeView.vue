@@ -4,10 +4,13 @@ import ChartCard from '@/components/ChartCard.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
-import { topicColor } from '@/utils/themeCharts'
 import {
+  assessmentForTopic,
   buildCooccurrenceHeatmap,
+  buildFallbackKeywordBar,
+  buildGlobalLabelDist,
   buildGlobalPlayHeatmap,
+  buildGlobalTierPie,
   buildKeywordBar,
   buildKeywordHeatmap,
   buildPlayVsGlobalRadar,
@@ -15,15 +18,20 @@ import {
   buildSpeakerTopicBar,
   buildTopicRose,
   buildTopicSankey,
+  buildTopicTierBar,
   buildTopicTimeline,
   buildTopicWeightBar,
+  topicColor,
+  topicTierColor,
+  topicTierLabel,
 } from '@/utils/themeCharts'
 import type { EChartsOption } from 'echarts'
-import type { PlayThemes, ThemePatternsGlobal } from '@/types'
+import type { PlayThemes, ThemePatternsGlobal, ThemeQualityGlobal } from '@/types'
 
 const store = useFilterStore()
 const themes = ref<PlayThemes | null>(null)
 const patterns = ref<ThemePatternsGlobal | null>(null)
+const themeQuality = ref<ThemeQualityGlobal | null>(null)
 const loading = ref(true)
 
 const roseEl = ref<HTMLElement | null>(null)
@@ -37,6 +45,10 @@ const sankeyEl = ref<HTMLElement | null>(null)
 const globalHeatEl = ref<HTMLElement | null>(null)
 const cooccurEl = ref<HTMLElement | null>(null)
 const radarEl = ref<HTMLElement | null>(null)
+const tierEl = ref<HTMLElement | null>(null)
+const globalLabelEl = ref<HTMLElement | null>(null)
+const globalTierEl = ref<HTMLElement | null>(null)
+const fallbackKwEl = ref<HTMLElement | null>(null)
 
 const selectedTopic = computed(() => {
   const id = store.selectedTopicIds[0]
@@ -67,6 +79,13 @@ const cooccurOpt = computed(() => buildCooccurrenceHeatmap(patterns.value))
 const radarOpt = computed(() =>
   themes.value ? buildPlayVsGlobalRadar(themes.value, patterns.value) : ({} as EChartsOption),
 )
+const tierOpt = computed(() => buildTopicTierBar(themes.value?.quality))
+const globalLabelOpt = computed(() => buildGlobalLabelDist(themeQuality.value))
+const globalTierOpt = computed(() => buildGlobalTierPie(themeQuality.value))
+const fallbackKwOpt = computed(() => buildFallbackKeywordBar(themeQuality.value))
+
+const qualityScore = computed(() => themes.value?.quality?.score)
+const qualityIssues = computed(() => themes.value?.quality?.issues ?? [])
 
 const roseChart = useChart(roseEl, () => roseOpt.value as EChartsOption, [roseOpt])
 const weightChart = useChart(weightEl, () => weightOpt.value as EChartsOption, [weightOpt])
@@ -79,6 +98,10 @@ const sankeyChart = useChart(sankeyEl, () => sankeyOpt.value as EChartsOption, [
 const globalHeatChart = useChart(globalHeatEl, () => globalHeatOpt.value as EChartsOption, [globalHeatOpt])
 const cooccurChart = useChart(cooccurEl, () => cooccurOpt.value as EChartsOption, [cooccurOpt])
 const radarChart = useChart(radarEl, () => radarOpt.value as EChartsOption, [radarOpt])
+const tierChart = useChart(tierEl, () => tierOpt.value as EChartsOption, [tierOpt])
+const globalLabelChart = useChart(globalLabelEl, () => globalLabelOpt.value as EChartsOption, [globalLabelOpt])
+const globalTierChart = useChart(globalTierEl, () => globalTierOpt.value as EChartsOption, [globalTierOpt])
+const fallbackKwChart = useChart(fallbackKwEl, () => fallbackKwOpt.value as EChartsOption, [fallbackKwOpt])
 
 function refreshCharts() {
   roseChart.render()
@@ -92,6 +115,10 @@ function refreshCharts() {
   globalHeatChart.render()
   cooccurChart.render()
   radarChart.render()
+  tierChart.render()
+  globalLabelChart.render()
+  globalTierChart.render()
+  fallbackKwChart.render()
 }
 
 async function load() {
@@ -103,6 +130,11 @@ async function load() {
       patterns.value = await api.globalThemes()
     } catch {
       patterns.value = null
+    }
+    try {
+      themeQuality.value = await api.globalThemeQuality()
+    } catch {
+      themeQuality.value = null
     }
   } finally {
     loading.value = false
@@ -149,6 +181,42 @@ function selectTopic(id: number) {
           <span class="num">{{ themes.representative_blocks?.length ?? 0 }}</span>
           <span class="lbl">代表片段</span>
         </div>
+        <div class="kpi" :class="{ warn: qualityScore != null && qualityScore < 0.55 }">
+          <span class="num">{{ qualityScore != null ? (qualityScore * 100).toFixed(0) : '—' }}</span>
+          <span class="lbl">主题质量分</span>
+        </div>
+        <div class="kpi">
+          <span class="num">{{ themes.quality ? `${(themes.quality.labeled_weight * 100).toFixed(0)}%` : '—' }}</span>
+          <span class="lbl">已识别占比</span>
+        </div>
+      </section>
+
+      <section v-if="qualityIssues.length" class="quality-alert">
+        <strong>质量提示：</strong>{{ qualityIssues.join('；') }}
+      </section>
+
+      <section class="section">
+        <h3 class="section-title">主题质量检查</h3>
+        <p class="section-hint">
+          「未识别」对应标签为「其他情节」等未能匹配 theme.json 规则的主题；可据此判断是否需要扩展主题词典或改进分词。
+        </p>
+        <div class="grid-2">
+          <ChartCard title="本剧主题分层" subtitle="强识别 / 弱识别 / 未识别 · 按权重">
+            <div ref="tierEl" class="chart chart-md" />
+          </ChartCard>
+          <ChartCard
+            title="全库识别分层"
+            :subtitle="`共 ${themeQuality?.summary.play_count ?? 0} 部 · 均分 ${themeQuality ? (themeQuality.summary.avg_score * 100).toFixed(0) : '—'}`"
+          >
+            <div ref="globalTierEl" class="chart chart-md" />
+          </ChartCard>
+          <ChartCard title="全库标签分布" subtitle="「其他情节」为未能自动命名的主题">
+            <div ref="globalLabelEl" class="chart chart-md" />
+          </ChartCard>
+          <ChartCard title="未识别主题高频词" subtitle="出现在 fallback 主题 Top 关键词中的词">
+            <div ref="fallbackKwEl" class="chart chart-md" />
+          </ChartCard>
+        </div>
       </section>
 
       <section class="section">
@@ -177,6 +245,13 @@ function selectTopic(id: number) {
             @click="selectTopic(t.topic_id)"
           >
             <span class="tid">T{{ t.topic_id }}</span>
+            <span
+              v-if="assessmentForTopic(themes.quality, t.topic_id)"
+              class="tier-badge"
+              :style="{ color: topicTierColor(assessmentForTopic(themes.quality, t.topic_id)!.tier), borderColor: topicTierColor(assessmentForTopic(themes.quality, t.topic_id)!.tier) }"
+            >
+              {{ topicTierLabel(assessmentForTopic(themes.quality, t.topic_id)!.tier) }}
+            </span>
             <h4>{{ t.label }}</h4>
             <p class="w">{{ (t.weight * 100).toFixed(1) }}%</p>
             <p class="kw">{{ t.keywords.slice(0, 6).join(' · ') }}</p>
@@ -270,7 +345,30 @@ function selectTopic(id: number) {
   text-align: center;
 }
 .kpi .num { display: block; font-size: 1.35rem; font-weight: 700; color: var(--accent-red); }
+.kpi.warn .num { color: #bf360c; }
 .kpi .lbl { font-size: 0.75rem; color: var(--text-muted); }
+
+.quality-alert {
+  padding: 0.65rem 0.85rem;
+  background: #fff8e8;
+  border: 1px solid #e8d4a8;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  color: #6d4c00;
+}
+.section-hint {
+  margin: -0.35rem 0 0.65rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.tier-badge {
+  float: right;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid;
+  border-radius: 4px;
+}
 
 .section-title {
   margin: 0 0 0.65rem;

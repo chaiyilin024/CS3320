@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import math
+
 from ..utils.genre import normalize_genre
 from ..utils.hangdang import normalize_coarse, normalize_hangdang
 from .graph_math import (
@@ -130,9 +132,9 @@ def analyze_play_network(play: dict, role: dict | None = None) -> dict:
     }
     if weighted_clustering is not None:
         metrics["avg_weighted_clustering"] = round(float(weighted_clustering), 4)
-    if modularity is not None:
+    if modularity is not None and math.isfinite(float(modularity)):
         metrics["modularity"] = round(float(modularity), 4)
-    if assortativity is not None:
+    if assortativity is not None and math.isfinite(float(assortativity)):
         metrics["assortativity_hangdang"] = round(float(assortativity), 4)
 
     # 主角子图指标

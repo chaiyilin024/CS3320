@@ -1,5 +1,6 @@
 import type { EChartsOption } from 'echarts'
 import type { NarrativeTemplatesGlobal, PlayNarrative } from '@/types'
+import { asChartOption } from './chartOption'
 
 export const STAGE_COLORS: Record<string, string> = {
   铺垫: '#c9a227',
@@ -49,7 +50,7 @@ export function buildRhythmLine(
 ): EChartsOption {
   const s = narrative.rhythm_series ?? []
   if (!s.length) {
-    return { title: { text: '暂无节奏数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+    return asChartOption({ title: { text: '暂无节奏数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } })
   }
   const markArea = selectedRange
     ? {
@@ -81,7 +82,7 @@ export function buildRhythmLine(
     { name: '张力', key: 'tension_score' as const, color: '#6a1b9a' },
   ]
 
-  return {
+  return asChartOption({
     tooltip: {
       trigger: 'axis',
       formatter: (params: unknown) => {
@@ -110,7 +111,7 @@ export function buildRhythmLine(
       data: s.map((p) => [p.block_index, p[cfg.key] ?? 0]),
       markArea: i === 0 ? markArea : undefined,
     })),
-  }
+  })
 }
 
 export function buildStageProportionPie(plotStages: PlayNarrative['plot_stages']): EChartsOption {
@@ -223,10 +224,13 @@ export function buildEmotionTimeline(
         ]],
       }
     : undefined
-  return {
+  return asChartOption({
     tooltip: {
-      formatter: (p: { data: [number, number, string] }) => {
-        const [x, y, stage] = p.data
+      formatter: (p: unknown) => {
+        const row = p as { data?: [number, number, string] }
+        const data = row.data
+        if (!data) return ''
+        const [x, y, stage] = data
         return `块 #${x}<br/>${stage}<br/>情感 ${y.toFixed(3)}`
       },
     },
@@ -249,7 +253,7 @@ export function buildEmotionTimeline(
       data: rows.map((a) => [a.block_index, a.emotion_score ?? 0, a.stage ?? '']),
       markArea,
     }],
-  }
+  })
 }
 
 export function buildGlobalStageCompare(

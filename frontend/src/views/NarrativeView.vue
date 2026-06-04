@@ -15,14 +15,19 @@ import {
   rangesEqual,
   stageColor,
 } from '@/utils/narrativeCharts'
+import { buildStageExcerpts, type StageExcerpt } from '@/utils/narrativeExcerpts'
 import type { EChartsOption } from 'echarts'
-import type { NarrativeTemplatesGlobal, PlayNarrative } from '@/types'
+import type { NarrativeTemplatesGlobal, PlayCleaned, PlayNarrative } from '@/types'
 
 const store = useFilterStore()
 const narrative = ref<PlayNarrative | null>(null)
 const globalNarr = ref<NarrativeTemplatesGlobal | null>(null)
+const playText = ref<PlayCleaned | null>(null)
 const loading = ref(true)
+const excerptsLoading = ref(false)
 const selectedStage = ref<string | null>(null)
+const stageExcerpts = ref<StageExcerpt[]>([])
+const excerptTotal = ref(0)
 
 const rhythmEl = ref<HTMLElement | null>(null)
 const stagePieEl = ref<HTMLElement | null>(null)
@@ -84,13 +89,42 @@ function isStageActive(st: PlayNarrative['plot_stages'][number]) {
   return selectedStage.value === st.stage && rangesEqual(selectedRange.value, st.block_range)
 }
 
-function pickStage(st: PlayNarrative['plot_stages'][number]) {
+async function ensurePlayText(id: string) {
+  if (playText.value?.script_id === id) return playText.value
+  playText.value = await api.playCleaned(id)
+  return playText.value
+}
+
+async function loadStageExcerpts(st: PlayNarrative['plot_stages'][number] | null) {
+  if (!st || !store.scriptId) {
+    stageExcerpts.value = []
+    excerptTotal.value = 0
+    return
+  }
+  excerptsLoading.value = true
+  try {
+    const play = await ensurePlayText(store.scriptId)
+    const { items, total } = buildStageExcerpts(play, st.block_range)
+    stageExcerpts.value = items
+    excerptTotal.value = total
+  } catch {
+    stageExcerpts.value = []
+    excerptTotal.value = 0
+  } finally {
+    excerptsLoading.value = false
+  }
+}
+
+async function pickStage(st: PlayNarrative['plot_stages'][number]) {
   if (isStageActive(st)) {
     selectedStage.value = null
     store.narrativeBlockRange = null
+    stageExcerpts.value = []
+    excerptTotal.value = 0
   } else {
     selectedStage.value = st.stage
     store.narrativeBlockRange = [st.block_range[0], st.block_range[1]]
+    await loadStageExcerpts(st)
   }
   refreshCharts()
 }
@@ -100,6 +134,9 @@ async function load() {
   loading.value = true
   selectedStage.value = null
   store.narrativeBlockRange = null
+  stageExcerpts.value = []
+  excerptTotal.value = 0
+  playText.value = null
   try {
     narrative.value = await api.playNarrative(store.scriptId)
     try {
@@ -122,7 +159,7 @@ watch(() => store.scriptId, load)
     <header class="page-head">
       <h2 class="page-title">叙事结构</h2>
       <p class="page-desc">
-        {{ narrative?.title ?? '' }} · 点击情节阶段按钮，节奏曲线与情感散点将高亮对应区间
+        {{ narrative?.title ?? '' }} · 点击情节阶段查看原文片段，节奏曲线同步高亮
       </p>
     </header>
 
@@ -149,6 +186,33 @@ watch(() => store.scriptId, load)
             <p v-if="st.summary" class="summary">{{ st.summary }}</p>
           </button>
         </div>
+      </section>
+
+      <section v-if="selectedStage" class="excerpt-section">
+        <h3 class="section-title">
+          「{{ selectedStage }}」原文片段
+          <span v-if="excerptTotal" class="excerpt-count">
+            （块 {{ selectedRange?.[0] }}–{{ selectedRange?.[1] }}，共 {{ excerptTotal }} 段
+            <template v-if="excerptTotal > stageExcerpts.length">，展示前 {{ stageExcerpts.length }} 段</template>）
+          </span>
+        </h3>
+        <div v-if="excerptsLoading" class="excerpt-loading">加载正文中…</div>
+        <div v-else-if="!stageExcerpts.length" class="excerpt-loading">
+          暂无正文数据，请先运行 <code>python scripts/sync_frontend_data.py</code> 或 <code>npm run sync-data</code> 同步 play.json
+        </div>
+        <ul v-else class="snippets">
+          <li
+            v-for="ex in stageExcerpts"
+            :key="ex.block_index"
+            :style="{ borderLeftColor: stageColor(selectedStage) }"
+          >
+            <span class="meta">
+              块 #{{ ex.block_index }} · {{ ex.typeLabel }}
+              <template v-if="ex.speaker"> · {{ ex.speaker }}</template>
+            </span>
+            {{ ex.text }}
+          </li>
+        </ul>
       </section>
 
       <section class="section">
@@ -243,6 +307,40 @@ watch(() => store.scriptId, load)
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.excerpt-section {
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.excerpt-count {
+  font-size: 0.78rem;
+  font-weight: normal;
+  color: var(--text-muted);
+}
+.excerpt-loading {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  padding: 0.5rem 0;
+}
+.excerpt-loading code {
+  font-size: 0.8rem;
+  background: #f5f0e8;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+.snippets { margin: 0; padding: 0; list-style: none; font-size: 0.86rem; line-height: 1.55; max-height: 420px; overflow-y: auto; }
+.snippets li {
+  padding: 0.55rem 0.65rem 0.55rem 0.75rem;
+  margin-bottom: 0.4rem;
+  border-left: 3px solid #ccc;
+  background: #fdfaf5;
+  border-radius: 0 6px 6px 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.meta { display: block; font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.2rem; }
 
 .grid-2 {
   display: grid;

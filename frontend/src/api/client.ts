@@ -2,6 +2,7 @@ import type {
   Catalog,
   NarrativeTemplatesGlobal,
   NetworkCompareGlobal,
+  PlayCleaned,
   PlayIntegrated,
   PlayNarrative,
   PlayNetwork,
@@ -9,6 +10,7 @@ import type {
   PlayThemes,
   RoleAnalysisGlobal,
   ThemePatternsGlobal,
+  ThemeQualityGlobal,
 } from '@/types'
 
 const BASE = '/data'
@@ -25,9 +27,11 @@ export const api = {
   playNetwork: (id: string) => getJson<PlayNetwork>(`/analytics/plays/${id}/network.json`),
   playThemes: (id: string) => getJson<PlayThemes>(`/analytics/plays/${id}/themes.json`),
   playNarrative: (id: string) => getJson<PlayNarrative>(`/analytics/plays/${id}/narrative.json`),
+  playCleaned: (id: string) => getJson<PlayCleaned>(`/plays/${id}.json`),
   playIntegrated: (id: string) => getJson<PlayIntegrated>(`/analytics/plays/${id}/integrated.json`),
   globalRole: () => getJson<RoleAnalysisGlobal>('/analytics/global/role_analysis.json'),
   globalNetwork: () => getJson<NetworkCompareGlobal>('/analytics/global/network_compare.json'),
   globalThemes: () => getJson<ThemePatternsGlobal>('/analytics/global/theme_patterns.json'),
+  globalThemeQuality: () => getJson<ThemeQualityGlobal>('/analytics/global/theme_quality.json'),
   globalNarrative: () => getJson<NarrativeTemplatesGlobal>('/analytics/global/narrative_templates.json'),
 }

@@ -1,28 +1,96 @@
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass, field
+from functools import lru_cache
+from pathlib import Path
 
-from .corpus import build_dynamic_stopwords, iter_text_blocks, play_document, tokenize
+from .corpus import (
+    _metadata_stopwords,
+    build_dynamic_stopwords,
+    iter_text_blocks,
+    play_document,
+    tokenize,
+)
 
-# (种子词, label) — 全词命中权重 1，子串命中权重 0.5，叠加 ≥ THRESHOLD 才赋名
-LABEL_RULES: list[tuple[list[str], str]] = [
-    (["忠心", "为臣", "君臣", "万岁", "圣上", "保驾", "尽忠", "义气", "忠义"], "忠义君臣"),
-    (["厮杀", "破敌", "曹兵", "出兵", "鏖兵", "杀敌", "战事"], "战争厮杀"),
-    (["妙计", "谋略", "中计", "识破", "调遣", "差遣", "巧计", "奸计", "命箭", "令箭"], "计策调度"),
-    (["锦囊", "出宝", "竹节", "八卦", "暗有", "埋伏", "无虚", "打开", "妙策"], "锦囊设防"),
-    (["回朝", "进宫", "退朝", "上朝", "朝堂", "金殿", "圣旨", "面奏"], "宫廷议政"),
-    (["拜见", "参见", "少礼", "恭迎", "失敬", "请坐", "有请", "免礼"], "礼仪问答"),
-    (["佳人", "良缘", "婚配", "夫妻", "妻房", "姻缘", "情深", "爱慕"], "情感姻缘"),
-    (["饮宴", "宴尝", "把盏", "酒席", "举杯", "赴宴"], "宴饮场面"),
-    (["怒喝", "怒目", "羞恼", "争执", "厉声", "动怒", "拍案"], "冲突怒斥"),
-    (["哈哈", "嬉笑", "戏言", "恭喜", "诙谐", "玩笑"], "喜庆诙谐"),
-    (["天意", "天命", "神明", "龙颜", "苍天", "上苍"], "神话天命"),
-    (["过江", "登程", "出使", "迎接", "护送", "起兵", "回营", "下楼", "上路"], "出使行程"),
-    (["保驾", "护驾", "前去", "护卫", "无妨", "敢死", "防备", "防计"], "护驾防计"),
-    (["结拜", "义气", "手足", "兄长", "贤弟", "结义"], "兄弟情义"),
-]
-# label 命中阈值：全词得 1.0，子串得 0.5；总分 ≥ THRESHOLD 赋名
-LABEL_HIT_THRESHOLD = 1.0
+# 主题标签规则统一从 theme.json 读取，py 中不再硬编码关键词。
+THEME_RULES_FILE = Path(__file__).resolve().parent / "theme.json"
+
+
+@dataclass(frozen=True)
+class LabelRule:
+    """单个主题标签规则。
+
+    评分：sum(keywords[w] if w in topic_words) + sum(neg_keywords[w] if w in topic_words)
+    （neg_keywords 的 weight 通常为负，命中会减分）
+    """
+
+    label: str
+    keywords: dict[str, float]
+    neg_keywords: dict[str, float]
+
+
+@lru_cache(maxsize=1)
+def _load_label_rules() -> tuple[tuple[LabelRule, ...], float, int, float]:
+    """从 theme.json 加载 (规则, hit_threshold, min_keyword_hits, fallback_threshold)。"""
+    if not THEME_RULES_FILE.is_file():
+        return tuple(), 4.0, 2, 1.0
+    try:
+        doc = json.loads(THEME_RULES_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return tuple(), 4.0, 2, 1.0
+
+    meta = doc.get("_meta") or {}
+    threshold = float(meta.get("hit_threshold", 4.0))
+    min_hits = int(meta.get("min_keyword_hits", 2))
+    fallback_threshold = float(meta.get("fallback_threshold", 1.0))
+
+    raw_labels = doc.get("labels") or doc.get("themes") or {}
+    rules: list[LabelRule] = []
+    for label, body in raw_labels.items():
+        if not isinstance(body, dict):
+            continue
+        kw = {str(k): float(v) for k, v in (body.get("keywords") or {}).items()}
+        neg = {
+            str(k): float(v)
+            for k, v in (body.get("neg_keywords") or {}).items()
+        }
+        if kw or neg:
+            rules.append(LabelRule(label=label, keywords=kw, neg_keywords=neg))
+    return tuple(rules), threshold, min_hits, fallback_threshold
+
+
+def _is_noise_keyword(word: str) -> bool:
+    w = (word or "").strip()
+    if not w or len(w) < 2:
+        return True
+    if w in _metadata_stopwords():
+        return True
+    if "京剧" in w or w in {"戏考", "全本", "头本", "后本", "前本"}:
+        return True
+    return False
+
+
+def is_metadata_topic(keywords: list[str]) -> bool:
+    """判断该 topic 是否为页眉/丛书噪声（应从输出中剔除）。"""
+    if not keywords:
+        return True
+    top = keywords[:8]
+    noise = sum(1 for w in top if _is_noise_keyword(w))
+    return noise >= 2 or (top and _is_noise_keyword(top[0]))
+
+
+def _sanitize_topic_word_list(
+    pairs: list[tuple[str, float]],
+) -> list[tuple[str, float]]:
+    clean = [(w, s) for w, s in pairs if not _is_noise_keyword(w)]
+    return clean if clean else pairs[:3]
+
+
+def _score_label(rule: LabelRule, word_set: frozenset[str]) -> float:
+    pos = sum(w for k, w in rule.keywords.items() if k in word_set)
+    neg = sum(w for k, w in rule.neg_keywords.items() if k in word_set)
+    return pos + neg
 
 
 @dataclass
@@ -88,50 +156,52 @@ class ThemeModel:
         return [s / total for s in sums]
 
     def assign_unique_labels(self) -> None:
-        """全局算一次：全词命中 1.0 + 子串命中 0.5，总分 ≥ THRESHOLD 才赋 LABEL；
-        同名时追加判别关键词后缀。命中失败时 fallback 用 top-2 keyword 拼接。"""
-        raw: dict[int, str] = {}
-        for tid in range(self.num_topics):
-            words = [w for w, _ in self.topic_words.get(tid, [])[:15]]
-            word_set = set(words)
-            text_join = "".join(words)
-            best_label, best_score = None, 0.0
-            for seeds, lab in LABEL_RULES:
-                whole = sum(1 for s in seeds if s in word_set)
-                substr = sum(
-                    0.5 for s in seeds if s not in word_set and s in text_join
-                )
-                score = whole + substr
-                if score > best_score:
-                    best_label, best_score = lab, score
-            if best_label and best_score >= LABEL_HIT_THRESHOLD:
-                raw[tid] = best_label
-            else:
-                # fallback: 用前两个长度 >=2 的 keyword 拼接，比单词更有信息量
-                informative = [w for w in words if len(w) >= 2][:2]
-                if len(informative) >= 2:
-                    raw[tid] = f"{informative[0]}·{informative[1]}"
-                elif informative:
-                    raw[tid] = informative[0][:6]
-                else:
-                    raw[tid] = f"主题{tid}"
+        """根据 theme.json 规则给每个主题打标签。
 
-        seen: dict[str, list[int]] = {}
-        for tid, lab in raw.items():
-            seen.setdefault(lab, []).append(tid)
+        优先级：
+          1) score ≥ hit_threshold 且命中 ≥ min_keyword_hits（或单词 score≥8）→ 直接用 best_label
+          2) score ≥ fallback_threshold → 仍用 best_label（最接近的主题，弱命中）
+          3) 都不满足 → 「其他情节」（不再用「词A·词B」拼接，避免毫无意义的标签）
+
+        同名解歧：在多 topic 命中同一 label 时，追加命中关键词中的次级词作后缀（来自
+        theme.json 本身，不会出现噪声词）。
+        """
+        rules, threshold, min_hits, fb_threshold = _load_label_rules()
+
+        topic_hits: dict[int, dict] = {}
+        for tid in range(self.num_topics):
+            words = [w for w, _ in self.topic_words.get(tid, [])[:20]]
+            word_set = frozenset(words)
+            scored: list[tuple[str, float, list[str]]] = []
+            for rule in rules:
+                score = _score_label(rule, word_set)
+                hits = [k for k in rule.keywords if k in word_set]
+                scored.append((rule.label, score, hits))
+            scored.sort(key=lambda x: -x[1])
+            best = scored[0] if scored else ("", 0.0, [])
+            topic_hits[tid] = {
+                "words": words,
+                "best_label": best[0],
+                "best_score": best[1],
+                "best_hits": best[2],
+                "scored": scored,
+            }
+
         final: dict[int, str] = {}
-        all_seed_words = {s for seeds, _ in LABEL_RULES for s in seeds}
-        for lab, tids in seen.items():
-            if len(tids) == 1:
-                final[tids[0]] = lab
+        for tid, info in topic_hits.items():
+            score = info["best_score"]
+            hits = info["best_hits"]
+            label = info["best_label"]
+            if is_metadata_topic(info["words"]):
+                final[tid] = "其他情节"
                 continue
-            for tid in tids:
-                words = [w for w, _ in self.topic_words.get(tid, [])[:6]]
-                discriminator = next(
-                    (w for w in words if w not in all_seed_words and len(w) >= 2),
-                    words[0] if words else "",
-                )
-                final[tid] = f"{lab}·{discriminator}" if discriminator else f"{lab}#{tid}"
+            strong = bool(label) and score >= threshold and (
+                len(hits) >= min_hits or score >= 8.0
+            )
+            weak = bool(label) and score >= fb_threshold
+            # 不再追加 "·xxx" 区分词：schema 允许多个 topic 同 label，
+            # 它们的差异由各自的 keywords 与 representative_blocks 体现。
+            final[tid] = label if (strong or weak) else "其他情节"
         self._label_cache = final
 
     def topic_label(self, topic_id: int) -> str:
@@ -140,11 +210,17 @@ class ThemeModel:
         if topic_id in self._label_cache:
             return self._label_cache[topic_id]
         words = [w for w, _ in self.topic_words.get(topic_id, [])[:12]]
-        for keys, label in LABEL_RULES:
-            if any(k in "".join(words) for k in keys):
-                return label
+        rules, _, _, _ = _load_label_rules()
+        word_set = frozenset(words)
+        best_label, best_score = None, 0.0
+        for rule in rules:
+            score = _score_label(rule, word_set)
+            if score > best_score:
+                best_label, best_score = rule.label, score
+        if best_label:
+            return best_label
         if words:
-            return words[0][:6]
+            return words[0][:8]
         return f"主题{topic_id}"
 
 
@@ -250,31 +326,29 @@ def _train_nmf_model(
 
     for tid in range(num_topics):
         row = H[tid]
-        top_idx = row.argsort()[::-1][:20]
-        model.topic_words[tid] = [
+        top_idx = row.argsort()[::-1][:30]
+        pairs = [
             (model.feature_names[i], float(row[i]))
             for i in top_idx
             if row[i] > 0 and np.isfinite(row[i])
         ]
+        model.topic_words[tid] = _sanitize_topic_word_list(pairs)[:20]
     if not any(model.topic_words.values()):
         return _train_keyword_model(plays, num_topics, random_seed)
     return model
 
 
-SEED_TOPICS: list[tuple[str, list[str]]] = [
-    ("忠义君臣", ["忠", "义", "臣", "君臣", "万岁", "圣上", "保驾"]),
-    ("战争厮杀", ["战", "兵", "杀", "敌", "营", "阵", "厮杀", "破敌"]),
-    ("计策调度", ["计", "谋", "智", "破", "中计", "令箭", "调兵", "差遣"]),
-    ("宫廷议政", ["朝", "殿", "议", "奏", "旨", "回朝", "进宫"]),
-    ("礼仪问答", ["请", "拜见", "失敬", "恭迎"]),
-    ("情感姻缘", ["情", "爱", "妻", "郎", "婚", "佳人"]),
-    ("宴饮场面", ["酒", "宴", "楼", "席", "杯", "饮宴"]),
-    ("冲突怒斥", ["怒", "恨", "骂", "吓", "羞恼"]),
-    ("喜庆诙谐", ["笑", "喜", "贺", "恭喜"]),
-    ("神话天命", ["天", "神", "仙", "龙", "命", "天意"]),
-    ("行旅行程", ["行", "路", "走", "过江", "船", "登程"]),
-    ("兄弟情义", ["兄", "弟", "结拜", "义气", "手足"]),
-]
+def _seed_topics_from_theme_rules() -> list[tuple[str, list[str]]]:
+    """从 theme.json 派生 (label, seed_words) — 关键词模型的种子。"""
+    rules, _, _, _ = _load_label_rules()
+    if not rules:
+        return [("通用主题", ["主公", "将军", "出兵", "回朝"])]
+    out: list[tuple[str, list[str]]] = []
+    for rule in rules:
+        seeds = sorted(rule.keywords.keys(), key=lambda w: -rule.keywords[w])[:12]
+        if seeds:
+            out.append((rule.label, seeds))
+    return out
 
 
 def _train_keyword_model(
@@ -287,7 +361,8 @@ def _train_keyword_model(
     model.trained_at = datetime.now(timezone.utc).isoformat()
     model.method = "keyword"
 
-    seeds = SEED_TOPICS[:num_topics]
+    all_seeds = _seed_topics_from_theme_rules()
+    seeds = all_seeds[:num_topics]
     model.num_topics = len(seeds)
     corpus_words: Counter[str] = Counter()
     topic_counters: list[Counter[str]] = [Counter() for _ in seeds]
@@ -301,7 +376,7 @@ def _train_keyword_model(
             tid = max(range(len(scores)), key=lambda i: scores[i])
             topic_counters[tid].update(words)
 
-    for tid, (label, seed) in enumerate(seeds):
+    for tid, (_label, seed) in enumerate(seeds):
         top = [w for w, _ in topic_counters[tid].most_common(15)]
         if not top:
             top = list(seed)[:10]

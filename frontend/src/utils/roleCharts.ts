@@ -1,6 +1,7 @@
 import type { EChartsOption } from 'echarts'
 import type { PlayRole, RoleAnalysisGlobal } from '@/types'
 import { coarseColor, hangdangColor } from '@/utils/charts'
+import { asChartOption } from './chartOption'
 
 type Character = PlayRole['characters'][number]
 
@@ -214,11 +215,10 @@ export function buildTraitSankey(
       color: hangdangColor(name) !== '#888' ? hangdangColor(name) : '#b8956a',
     },
   }))
-  return {
+  return asChartOption({
     tooltip: { trigger: 'item', triggerOn: 'mousemove' },
     series: [{
       type: 'sankey',
-      layout: 'none',
       emphasis: { focus: 'adjacency' },
       nodeAlign: 'left',
       lineStyle: { color: 'gradient', curveness: 0.5, opacity: 0.35 },
@@ -230,7 +230,7 @@ export function buildTraitSankey(
         value: l.count,
       })),
     }],
-  }
+  })
 }
 
 export function buildGlobalHeatmap(
@@ -254,11 +254,12 @@ export function buildGlobalHeatmap(
     if (xi >= 0 && yi >= 0) data.push([xi, yi, c.count])
   })
   const max = Math.max(...data.map((d) => d[2]), 1)
-  return {
+  return asChartOption({
     tooltip: {
       position: 'top',
-      formatter: (p: { data: [number, number, number] }) => {
-        const [xi, yi, v] = p.data
+      formatter: (p: unknown) => {
+        const row = p as { data?: [number, number, number] }
+        const [xi, yi, v] = row.data ?? [0, 0, 0]
         return `${features[xi]} → ${hangdangs[yi]}<br/>共现 ${v} 次`
       },
     },
@@ -284,7 +285,7 @@ export function buildGlobalHeatmap(
       label: { show: max <= 30, fontSize: 9 },
       emphasis: { itemStyle: { shadowBlur: 8, shadowColor: 'rgba(0,0,0,0.2)' } },
     }],
-  }
+  })
 }
 
 export function buildCharacterRadar(char: Character | null): EChartsOption {
