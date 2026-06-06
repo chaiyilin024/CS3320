@@ -21,6 +21,26 @@ function norm(values: number[]): number[] {
   return values.map((v) => Math.round((v / max) * 100))
 }
 
+function linkStyle(l: NetLink): { color: string; type?: 'solid' | 'dashed' } {
+  const hasD = l.types?.includes('对话')
+  const hasS = l.types?.includes('同场')
+  if (hasD && hasS) return { color: '#8b2500' }
+  if (hasD) return { color: '#c9a227' }
+  return { color: '#1565c0', type: 'dashed' }
+}
+
+function boxStats(values: number[]): [number, number, number, number, number] {
+  const s = [...values].sort((a, b) => a - b)
+  if (!s.length) return [0, 0, 0, 0, 0]
+  const q = (p: number) => {
+    const idx = (s.length - 1) * p
+    const lo = Math.floor(idx)
+    const hi = Math.ceil(idx)
+    return s[lo] + (s[hi] - s[lo]) * (idx - lo)
+  }
+  return [s[0], q(0.25), q(0.5), q(0.75), s[s.length - 1]]
+}
+
 function linkWeightMap(links: NetLink[]): Map<string, number> {
   const m = new Map<string, number>()
   for (const l of links) {
@@ -33,8 +53,12 @@ function linkWeightMap(links: NetLink[]): Map<string, number> {
 export function buildForceGraph(
   net: PlayNetwork,
   selectedIds: string[],
+  subset?: { nodes: NetNode[]; links: NetLink[] },
 ): EChartsOption {
   const sel = new Set(selectedIds)
+  const nodes = subset?.nodes ?? net.nodes
+  const links = subset?.links ?? net.links
+  const inactive = subset ? new Set(net.nodes.filter((n) => !nodes.some((x) => x.id === n.id)).map((n) => n.id)) : new Set<string>()
   return asChartOption({
     tooltip: {
       formatter: (p: unknown) => {
@@ -43,14 +67,16 @@ export function buildForceGraph(
           const d = item.data as { value?: number }
           return `关系强度 ${d?.value ?? ''}`
         }
-        const n = net.nodes.find((x) => x.name === item.name)
+        const n = nodes.find((x) => x.name === item.name) ?? net.nodes.find((x) => x.name === item.name)
         if (!n) return item.name ?? ''
+        const types = net.links.find((l) => l.source === n.id || l.target === n.id)?.types?.join('/') ?? ''
         return [
           `<b>${n.name}</b>（${n.hangdang}）`,
           `度 ${n.degree} · 加权度 ${(n.weighted_degree ?? 0).toFixed(1)}`,
           `介数 ${(n.betweenness ?? 0).toFixed(3)} · 接近 ${(n.closeness ?? 0).toFixed(3)}`,
           n.is_main ? '主要人物' : '配角',
-        ].join('<br/>')
+          types ? `关系：${types}` : '',
+        ].filter(Boolean).join('<br/>')
       },
     },
     series: [{
@@ -58,12 +84,13 @@ export function buildForceGraph(
       layout: 'force',
       roam: true,
       draggable: true,
-      data: net.nodes.map((node) => ({
+      data: nodes.map((node) => ({
         id: node.id,
         name: node.name,
         symbolSize: Math.max(14, 10 + (node.weighted_degree ?? node.degree) * 0.15),
         itemStyle: {
           color: hangdangColor(node.hangdang),
+          opacity: inactive.has(node.id) ? 0.35 : 1,
           borderWidth: sel.has(node.id) ? 3 : node.is_main ? 2 : 0,
           borderColor: sel.has(node.id) ? '#c9a227' : '#fff',
           shadowBlur: sel.has(node.id) ? 12 : 0,
@@ -71,16 +98,21 @@ export function buildForceGraph(
         },
         label: { show: true, fontSize: 11, fontWeight: node.is_main ? 'bold' : 'normal' },
       })),
-      links: net.links.map((l) => ({
-        source: l.source,
-        target: l.target,
-        value: l.weight,
-        lineStyle: {
-          width: Math.max(1, (l.normalized_weight ?? l.weight / 80) * 6),
-          opacity: 0.35 + (l.normalized_weight ?? 0.3) * 0.5,
-          curveness: 0.15,
-        },
-      })),
+      links: links.map((l) => {
+        const st = linkStyle(l)
+        return {
+          source: l.source,
+          target: l.target,
+          value: l.weight,
+          lineStyle: {
+            width: Math.max(1, (l.normalized_weight ?? l.weight / 80) * 6),
+            opacity: 0.35 + (l.normalized_weight ?? 0.3) * 0.5,
+            curveness: 0.15,
+            color: st.color,
+            type: st.type,
+          },
+        }
+      }),
       force: { repulsion: 280, gravity: 0.08, edgeLength: [60, 140], friction: 0.6 },
       emphasis: { focus: 'adjacency', lineStyle: { width: 6 } },
     }],
@@ -398,6 +430,122 @@ export function buildMainVsSupportPie(nodes: NetNode[]): EChartsOption {
       itemStyle: { borderRadius: 6, borderColor: '#fffcf7', borderWidth: 2 },
     }],
   }
+}
+
+type MetricKey = 'density' | 'avg_clustering' | 'avg_degree' | 'modularity'
+
+const METRIC_LABELS: Record<MetricKey, string> = {
+  density: '密度',
+  avg_clustering: '聚类系数',
+  avg_degree: '平均度',
+  modularity: '模块度',
+}
+
+export function buildMetricBoxplot(
+  global: NetworkCompareGlobal | null,
+  groupKey: 'by_genre' | 'by_collection',
+  metric: MetricKey,
+  highlightLabel?: string | null,
+  currentValue?: number | null,
+): EChartsOption {
+  const groups = global?.[groupKey] ?? []
+  if (!groups.length) {
+    return { title: { text: '暂无分组网络数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+  }
+  const labels = groups.map((g) => g.group_label)
+  const boxData = groups.map((g) => {
+    const vals = g.metrics[metric]?.values ?? []
+    return vals.length ? boxStats(vals) : [0, 0, 0, 0, 0]
+  })
+  const scatter: Array<{ value: [number, number]; itemStyle: { color: string } }> = []
+  if (highlightLabel) {
+    const idx = labels.indexOf(highlightLabel)
+    if (idx >= 0 && currentValue != null) {
+      scatter.push({ value: [idx, currentValue], itemStyle: { color: '#8b2500' } })
+    }
+  }
+  return asChartOption({
+    tooltip: {
+      trigger: 'item',
+      formatter: (p: unknown) => {
+        const item = p as { seriesType?: string; dataIndex?: number; value?: number | [number, number] }
+        const gi = item.dataIndex ?? 0
+        const g = groups[gi]
+        const m = g?.metrics[metric]
+        if (item.seriesType === 'scatter') {
+          return `${g?.group_label}<br/>本剧 ${METRIC_LABELS[metric]}: ${Number(item.value).toFixed(4)}`
+        }
+        const box = boxData[gi]
+        return [
+          g?.group_label,
+          `剧本数 ${g?.play_count}`,
+          `均值 ${(m?.mean ?? 0).toFixed(4)}`,
+          `中位 ${box[2].toFixed(4)}`,
+        ].join('<br/>')
+      },
+    },
+    grid: { left: 48, right: 16, top: 28, bottom: 56 },
+    xAxis: {
+      type: 'category',
+      data: labels,
+      axisLabel: { rotate: 30, fontSize: 9, interval: 0 },
+    },
+    yAxis: { type: 'value', name: METRIC_LABELS[metric] },
+    series: [
+      {
+        name: '分布',
+        type: 'boxplot',
+        data: boxData,
+        itemStyle: { color: '#c9a227', borderColor: '#8b2500' },
+      },
+      ...(scatter.length
+        ? [{
+            name: '本剧',
+            type: 'scatter' as const,
+            symbolSize: 12,
+            data: scatter,
+          }]
+        : []),
+    ],
+  })
+}
+
+export function buildPlaysMetricScatter(
+  global: NetworkCompareGlobal | null,
+  metricX: MetricKey = 'density',
+  metricY: MetricKey = 'avg_clustering',
+  highlightScriptId?: string | null,
+): EChartsOption {
+  const plays = global?.plays ?? []
+  if (!plays.length) {
+    return { title: { text: '暂无单剧网络指标', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+  }
+  return asChartOption({
+    tooltip: {
+      formatter: (p: unknown) => {
+        const d = (p as { data?: { title?: string; script_id: string; x: number; y: number } }).data
+        if (!d) return ''
+        return `${d.title ?? d.script_id}<br/>${METRIC_LABELS[metricX]} ${d.x.toFixed(3)}<br/>${METRIC_LABELS[metricY]} ${d.y.toFixed(3)}`
+      },
+    },
+    grid: { left: 52, right: 16, top: 16, bottom: 44 },
+    xAxis: { name: METRIC_LABELS[metricX], splitLine: { lineStyle: { type: 'dashed', opacity: 0.3 } } },
+    yAxis: { name: METRIC_LABELS[metricY], splitLine: { lineStyle: { type: 'dashed', opacity: 0.3 } } },
+    series: [{
+      type: 'scatter',
+      symbolSize: 10,
+      data: plays.map((p) => ({
+        script_id: p.script_id,
+        title: p.title,
+        value: [p.metrics[metricX] ?? 0, p.metrics[metricY] ?? 0],
+        symbolSize: p.script_id === highlightScriptId ? 16 : 8,
+        itemStyle: {
+          color: p.script_id === highlightScriptId ? '#8b2500' : '#1565c0',
+          opacity: 0.8,
+        },
+      })),
+    }],
+  })
 }
 
 export function buildGenreCompareBar(

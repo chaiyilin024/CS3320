@@ -5,6 +5,7 @@ import ChartCard from '@/components/ChartCard.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
+import { filterCatalogPlays } from '@/utils/catalogFilter'
 import { aggregateCatalog, filterPlays } from '@/utils/dashboardStats'
 import { genreColor } from '@/utils/charts'
 import { asChartOption } from '@/utils/chartOption'
@@ -23,7 +24,14 @@ const scatterEl = ref<HTMLElement | null>(null)
 const blockEl = ref<HTMLElement | null>(null)
 const qualityEl = ref<HTMLElement | null>(null)
 
-const stats = computed(() => aggregateCatalog(plays.value))
+const filteredCatalog = computed(() =>
+  filterCatalogPlays(plays.value, {
+    genre: store.genre,
+    collectionId: store.collectionId,
+  }),
+)
+
+const stats = computed(() => aggregateCatalog(filteredCatalog.value))
 
 const currentPlay = computed(() =>
   plays.value.find((p) => p.script_id === store.scriptId) ?? null,

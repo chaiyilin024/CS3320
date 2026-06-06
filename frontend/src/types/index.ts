@@ -285,11 +285,24 @@ export interface ThemeQualityGlobal {
 
 export interface NetworkCompareGlobal {
   by_genre: Array<{
+    group_key?: string
     group_label: string
     play_count: number
-    metrics: Record<string, { mean?: number; values?: number[] }>
+    metrics: Record<string, { mean?: number; median?: number; values?: number[] }>
   }>
-  plays?: Array<{ script_id: string; title?: string; metrics: PlayNetwork['metrics'] }>
+  by_collection?: Array<{
+    group_key?: string
+    group_label: string
+    play_count: number
+    metrics: Record<string, { mean?: number; median?: number; values?: number[] }>
+  }>
+  plays?: Array<{
+    script_id: string
+    title?: string
+    genre?: string
+    collection_id?: string
+    metrics: PlayNetwork['metrics']
+  }>
 }
 
 export interface NarrativeTemplatesGlobal {

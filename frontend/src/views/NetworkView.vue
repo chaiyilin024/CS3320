@@ -14,18 +14,24 @@ import {
   buildGenreCompareBar,
   buildHangdangNodePie,
   buildMainVsSupportPie,
+  buildMetricBoxplot,
   buildMetricsBar,
+  buildPlaysMetricScatter,
   buildRelationTypePie,
   buildWeightHistogram,
   buildWeightedDegreeBar,
 } from '@/utils/networkCharts'
+import { buildStageSubgraph } from '@/utils/stageNetwork'
 import type { EChartsOption } from 'echarts'
-import type { NetworkCompareGlobal, PlayNetwork } from '@/types'
+import type { NetworkCompareGlobal, PlayCleaned, PlayNetwork } from '@/types'
 
 const store = useFilterStore()
 const net = ref<PlayNetwork | null>(null)
 const globalNet = ref<NetworkCompareGlobal | null>(null)
+const playText = ref<PlayCleaned | null>(null)
 const loading = ref(true)
+const compareGroup = ref<'by_genre' | 'by_collection'>('by_genre')
+const boxMetric = ref<'density' | 'avg_clustering' | 'avg_degree'>('density')
 
 const graphEl = ref<HTMLElement | null>(null)
 const circleEl = ref<HTMLElement | null>(null)
@@ -39,11 +45,21 @@ const weightEl = ref<HTMLElement | null>(null)
 const heatEl = ref<HTMLElement | null>(null)
 const scatterEl = ref<HTMLElement | null>(null)
 const compareEl = ref<HTMLElement | null>(null)
+const boxEl = ref<HTMLElement | null>(null)
+const playsScatterEl = ref<HTMLElement | null>(null)
 
 const selectedIds = computed(() => store.selectedCharacterIds)
+const blockRange = computed(() => store.narrativeBlockRange)
+
+const graphSubset = computed(() => {
+  if (!net.value || !playText.value || !blockRange.value) return null
+  return buildStageSubgraph(playText.value, net.value, blockRange.value)
+})
 
 const graphOpt = computed(() =>
-  net.value ? buildForceGraph(net.value, selectedIds.value) : ({} as EChartsOption),
+  net.value
+    ? buildForceGraph(net.value, selectedIds.value, graphSubset.value ?? undefined)
+    : ({} as EChartsOption),
 )
 const circleOpt = computed(() =>
   net.value ? buildCircularCommunityGraph(net.value, selectedIds.value) : ({} as EChartsOption),
@@ -63,6 +79,19 @@ const heatOpt = computed(() =>
 const scatterOpt = computed(() => buildCentralityScatter(net.value?.nodes ?? []))
 const compareOpt = computed(() =>
   net.value ? buildGenreCompareBar(net.value, globalNet.value) : ({} as EChartsOption),
+)
+const boxOpt = computed(() => {
+  if (!net.value) return {} as EChartsOption
+  const highlight = compareGroup.value === 'by_genre' ? net.value.genre : undefined
+  const cur = boxMetric.value === 'density'
+    ? net.value.metrics.density
+    : boxMetric.value === 'avg_clustering'
+      ? net.value.metrics.avg_clustering
+      : net.value.metrics.avg_degree
+  return buildMetricBoxplot(globalNet.value, compareGroup.value, boxMetric.value, highlight ?? null, cur ?? null)
+})
+const playsScatterOpt = computed(() =>
+  buildPlaysMetricScatter(globalNet.value, 'density', 'avg_clustering', store.scriptId),
 )
 
 function onGraphClick(params: unknown) {
@@ -87,6 +116,8 @@ const weightChart = useChart(weightEl, () => weightOpt.value as EChartsOption, [
 const heatChart = useChart(heatEl, () => heatOpt.value as EChartsOption, [heatOpt])
 const scatterChart = useChart(scatterEl, () => scatterOpt.value as EChartsOption, [scatterOpt])
 const compareChart = useChart(compareEl, () => compareOpt.value as EChartsOption, [compareOpt])
+const boxChart = useChart(boxEl, () => boxOpt.value as EChartsOption, [boxOpt, compareGroup, boxMetric])
+const playsScatterChart = useChart(playsScatterEl, () => playsScatterOpt.value as EChartsOption, [playsScatterOpt])
 
 function refreshCharts() {
   graphChart.render()
@@ -101,13 +132,21 @@ function refreshCharts() {
   heatChart.render()
   scatterChart.render()
   compareChart.render()
+  boxChart.render()
+  playsScatterChart.render()
 }
 
 async function load() {
   if (!store.scriptId) return
   loading.value = true
   try {
-    net.value = await api.playNetwork(store.scriptId)
+    const id = store.scriptId
+    net.value = await api.playNetwork(id)
+    try {
+      playText.value = await api.playCleaned(id)
+    } catch {
+      playText.value = null
+    }
     try {
       globalNet.value = await api.globalNetwork()
     } catch {
@@ -121,6 +160,7 @@ async function load() {
 
 onMounted(load)
 watch(() => store.scriptId, load)
+watch(blockRange, () => graphChart.render())
 </script>
 
 <template>
@@ -130,7 +170,8 @@ watch(() => store.scriptId, load)
       <p class="page-desc">
         {{ net?.title ?? '' }}
         <template v-if="net?.genre"> · {{ net.genre }}</template>
-        · 点击力导向图节点可高亮人物
+        · 点击节点高亮人物
+        <template v-if="blockRange"> · 叙事块 {{ blockRange[0] }}–{{ blockRange[1] }} 子网络</template>
       </p>
     </header>
 
@@ -148,7 +189,7 @@ watch(() => store.scriptId, load)
       <section class="section">
         <h3 class="section-title">网络拓扑</h3>
         <div class="grid-graph">
-          <ChartCard title="力导向关系图" subtitle="节点大小=加权度 · 线宽=关系强度 · 颜色=行当">
+          <ChartCard title="力导向关系图" subtitle="红=对话+同场 · 金=对话 · 蓝虚线=同场 · 叙事页选阶段可滤子网">
             <div ref="graphEl" class="chart chart-tall" />
           </ChartCard>
           <ChartCard title="社区环形布局" subtitle="按 community_id 着色 · 观察派系结构">
@@ -207,6 +248,25 @@ watch(() => store.scriptId, load)
         >
           <div ref="compareEl" class="chart chart-sm" />
         </ChartCard>
+      </section>
+
+      <section v-if="globalNet" class="section">
+        <h3 class="section-title">跨剧结构对比</h3>
+        <div class="tab-row">
+          <button type="button" class="tab" :class="{ active: compareGroup === 'by_genre' }" @click="compareGroup = 'by_genre'">按体裁</button>
+          <button type="button" class="tab" :class="{ active: compareGroup === 'by_collection' }" @click="compareGroup = 'by_collection'">按集合</button>
+          <button type="button" class="tab" :class="{ active: boxMetric === 'density' }" @click="boxMetric = 'density'">密度</button>
+          <button type="button" class="tab" :class="{ active: boxMetric === 'avg_clustering' }" @click="boxMetric = 'avg_clustering'">聚类</button>
+          <button type="button" class="tab" :class="{ active: boxMetric === 'avg_degree' }" @click="boxMetric = 'avg_degree'">平均度</button>
+        </div>
+        <div class="grid-2">
+          <ChartCard title="网络指标箱线图" subtitle="各分组全库分布 · 红点=本剧（体裁模式）">
+            <div ref="boxEl" class="chart chart-md" />
+          </ChartCard>
+          <ChartCard title="全库散点" subtitle="密度 × 聚类 · 高亮当前剧本">
+            <div ref="playsScatterEl" class="chart chart-md" />
+          </ChartCard>
+        </div>
       </section>
 
       <ChartCard title="节点明细" subtitle="点击行与力导向图联动高亮">
@@ -300,6 +360,16 @@ th, td { padding: 0.5rem; border-bottom: 1px solid var(--border); text-align: le
 tr { cursor: pointer; transition: background 0.12s; }
 tr.hl, tr:hover { background: #fff8e8; }
 .tag { color: #fff; padding: 0.12rem 0.45rem; border-radius: 4px; font-size: 0.78rem; }
+.tab-row { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.65rem; }
+.tab {
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+.tab.active { background: var(--accent-gold); border-color: var(--accent-gold); font-weight: 600; }
 
 @media (max-width: 1100px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }

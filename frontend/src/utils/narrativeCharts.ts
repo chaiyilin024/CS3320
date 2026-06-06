@@ -1,5 +1,6 @@
 import type { EChartsOption } from 'echarts'
 import type { NarrativeTemplatesGlobal, PlayNarrative } from '@/types'
+import { topicColor } from '@/utils/themeCharts'
 import { asChartOption } from './chartOption'
 
 export const STAGE_COLORS: Record<string, string> = {
@@ -47,6 +48,8 @@ export function buildRhythmLine(
   narrative: PlayNarrative,
   selectedRange: [number, number] | null,
   selectedStage: string | null,
+  selectedTopicIds: number[] = [],
+  enableBrush = true,
 ): EChartsOption {
   const s = narrative.rhythm_series ?? []
   if (!s.length) {
@@ -82,6 +85,17 @@ export function buildRhythmLine(
     { name: '张力', key: 'tension_score' as const, color: '#6a1b9a' },
   ]
 
+  const topicMarks = (narrative.block_annotations ?? [])
+    .filter((a) => selectedTopicIds.length === 0 || selectedTopicIds.includes(a.dominant_topic_id ?? -1))
+    .filter((a) => a.dominant_topic_id != null)
+    .map((a) => ({
+      coord: [a.block_index, 0] as [number, number],
+      symbol: 'pin',
+      symbolSize: 28,
+      itemStyle: { color: topicColor(a.dominant_topic_id!) },
+      label: { show: false },
+    }))
+
   return asChartOption({
     tooltip: {
       trigger: 'axis',
@@ -97,20 +111,41 @@ export function buildRhythmLine(
         return lines.join('<br/>')
       },
     },
-    legend: { data: series.map((x) => x.name), bottom: 0, textStyle: { fontSize: 10 } },
-    grid: { left: 48, right: 20, top: 28, bottom: 52 },
+    legend: { data: series.map((x) => x.name), bottom: enableBrush ? 36 : 0, textStyle: { fontSize: 10 } },
+    grid: { left: 48, right: 20, top: 28, bottom: enableBrush ? 88 : 52 },
     xAxis: { type: 'value', name: '正文块序号', splitLine: { show: false } },
     yAxis: { type: 'value', max: 1, splitLine: { lineStyle: { type: 'dashed', opacity: 0.35 } } },
-    series: series.map((cfg, i) => ({
-      name: cfg.name,
-      type: 'line',
-      smooth: true,
-      showSymbol: false,
-      lineStyle: { width: i === 0 ? 2.5 : 1.5, color: cfg.color },
-      itemStyle: { color: cfg.color },
-      data: s.map((p) => [p.block_index, p[cfg.key] ?? 0]),
-      markArea: i === 0 ? markArea : undefined,
-    })),
+    dataZoom: enableBrush
+      ? [
+          { type: 'inside', xAxisIndex: 0, filterMode: 'none' },
+          { type: 'slider', xAxisIndex: 0, height: 22, bottom: 8, filterMode: 'none' },
+        ]
+      : undefined,
+    series: [
+      ...series.map((cfg, i) => ({
+        name: cfg.name,
+        type: 'line' as const,
+        smooth: true,
+        showSymbol: false,
+        lineStyle: { width: i === 0 ? 2.5 : 1.5, color: cfg.color },
+        itemStyle: { color: cfg.color },
+        data: s.map((p) => [p.block_index, p[cfg.key] ?? 0]),
+        markArea: i === 0 ? markArea : undefined,
+      })),
+      ...(selectedTopicIds.length && topicMarks.length
+        ? [{
+            name: '主题标记',
+            type: 'scatter' as const,
+            symbol: 'pin',
+            symbolSize: 22,
+            data: topicMarks.map((m) => {
+              const ann = narrative.block_annotations?.find((a) => a.block_index === m.coord[0])
+              return [m.coord[0], ann?.emotion_score ?? 0.5]
+            }),
+            itemStyle: { color: '#6a1b9a' },
+          }]
+        : []),
+    ],
   })
 }
 
@@ -319,4 +354,107 @@ export function buildPerformancePie(dist: Record<string, number>): EChartsOption
 
 export function rangesEqual(a: [number, number] | null, b: [number, number]): boolean {
   return !!a && a[0] === b[0] && a[1] === b[1]
+}
+
+export function buildBlockStrip(
+  narrative: PlayNarrative,
+  selectedRange: [number, number] | null,
+): EChartsOption {
+  const rows = narrative.block_annotations ?? []
+  if (!rows.length) {
+    return { title: { text: '暂无块级条带数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+  }
+  const markArea = selectedRange
+    ? {
+        silent: true,
+        itemStyle: { color: 'rgba(201, 162, 39, 0.15)' },
+        data: [[{ xAxis: selectedRange[0] }, { xAxis: selectedRange[1] }]],
+      }
+    : undefined
+  return asChartOption({
+    tooltip: {
+      formatter: (p: unknown) => {
+        const d = (p as { data?: [number, number, string] }).data
+        if (!d) return ''
+        return `块 #${d[0]}<br/>阶段 ${d[2]}`
+      },
+    },
+    grid: { left: 48, right: 16, top: 8, bottom: 28 },
+    xAxis: { type: 'value', name: '正文块', min: 'dataMin', max: 'dataMax' },
+    yAxis: { type: 'category', data: ['阶段'], show: false },
+    series: [{
+      type: 'scatter',
+      symbolSize: 6,
+      data: rows.map((a) => [a.block_index, 0, a.stage ?? '']),
+      itemStyle: {
+        color: (p: unknown) => stageColor((p as { data?: [number, number, string] }).data?.[2] ?? ''),
+      },
+      markArea,
+    }],
+  })
+}
+
+export function buildTemplateStageCompare(
+  narrative: PlayNarrative,
+  global: NarrativeTemplatesGlobal | null,
+  templateId: string,
+): EChartsOption {
+  const tpl = global?.templates.find((t) => t.template_id === templateId)
+  if (!tpl?.stage_proportions) {
+    return { title: { text: '暂无模板数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+  }
+  const cur = stageLengths(narrative.plot_stages)
+  const total = cur.reduce((s, r) => s + r.length, 0) || 1
+  const curProps = Object.fromEntries(cur.map((r) => [r.stage, +(r.length / total).toFixed(4)]))
+  const stages = [...new Set([...Object.keys(curProps), ...Object.keys(tpl.stage_proportions)])]
+  return {
+    tooltip: { trigger: 'axis' },
+    legend: { top: 0, textStyle: { fontSize: 10 } },
+    grid: { left: 48, right: 16, top: 36, bottom: 28 },
+    xAxis: { type: 'category', data: stages, axisLabel: { fontSize: 10 } },
+    yAxis: { type: 'value', name: '阶段占比', max: 1 },
+    series: [
+      { name: '本剧', type: 'bar', data: stages.map((st) => curProps[st] ?? 0), itemStyle: { color: '#8b2500' } },
+      { name: tpl.label, type: 'bar', data: stages.map((st) => tpl.stage_proportions?.[st] ?? 0), itemStyle: { color: '#c9a227' } },
+    ],
+  }
+}
+
+export function buildGenreRhythmOverlay(
+  narrative: PlayNarrative,
+  global: NarrativeTemplatesGlobal | null,
+  genre: string | null | undefined,
+): EChartsOption {
+  const cur = narrative.rhythm_series ?? []
+  const gRow = global?.by_genre?.find((g) => g.genre === genre)
+  const ref = gRow?.avg_rhythm_curve ?? []
+  if (!cur.length) {
+    return { title: { text: '暂无节奏数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+  }
+  const metric = 'tension_score' as const
+  return asChartOption({
+    tooltip: { trigger: 'axis' },
+    legend: { top: 0, textStyle: { fontSize: 10 } },
+    grid: { left: 48, right: 16, top: 36, bottom: 28 },
+    xAxis: { type: 'value', name: '叙事进度%' },
+    yAxis: { type: 'value', max: 1, name: '张力' },
+    series: [
+      {
+        name: '本剧',
+        type: 'line',
+        smooth: true,
+        showSymbol: false,
+        lineStyle: { color: '#8b2500', width: 2.5 },
+        data: cur.map((p, idx) => [idx / Math.max(cur.length - 1, 1) * 100, p[metric] ?? 0]),
+      },
+      {
+        name: `${genre ?? '同体裁'}均值`,
+        type: 'line',
+        smooth: true,
+        showSymbol: false,
+        lineStyle: { color: '#c9a227', width: 2, type: 'dashed' },
+        data: ref.map((p, idx) => [idx / Math.max(ref.length - 1, 1) * 100, p[metric] ?? 0]),
+      },
+    ],
+  })
 }

@@ -1,8 +1,10 @@
 import type { EChartsOption } from 'echarts'
-import type { IntegratedCorrelation, PlayIntegrated, PlayNarrative, PlayNetwork } from '@/types'
+import type { IntegratedCorrelation, PlayCleaned, PlayIntegrated, PlayNarrative, PlayNetwork } from '@/types'
 import { hangdangColor } from '@/utils/charts'
+import { buildStageSubgraph } from '@/utils/stageNetwork'
 import { stageColor } from '@/utils/narrativeCharts'
 import { topicColor } from '@/utils/themeCharts'
+import { asChartOption } from './chartOption'
 
 export const CORRELATION_TYPE_LABELS: Record<IntegratedCorrelation['type'], string> = {
   character_theme: '人物 ↔ 主题',
@@ -26,7 +28,7 @@ function correlations(data: PlayIntegrated | null): IntegratedCorrelation[] {
   return data?.correlations ?? []
 }
 
-function correlationLabel(c: IntegratedCorrelation): string {
+export function correlationLabel(c: IntegratedCorrelation): string {
   switch (c.type) {
     case 'character_theme':
       return `${c.character_name ?? c.character_id} → ${c.topic_label ?? `T${c.topic_id}`}`
@@ -503,6 +505,50 @@ export interface IntegratedKpi {
   label: string
   value: string
   hint?: string
+}
+
+export function sortedCorrelations(data: PlayIntegrated | null): IntegratedCorrelation[] {
+  return [...correlations(data)].sort((a, b) => b.strength - a.strength)
+}
+
+export function buildStageMiniNetwork(
+  play: PlayCleaned | null,
+  net: PlayNetwork | null,
+  blockRange: [number, number] | null,
+  stageLabel?: string,
+): EChartsOption {
+  if (!play || !net || !blockRange) {
+    return empty('选择阶段查看子网络')
+  }
+  const sub = buildStageSubgraph(play, net, blockRange)
+  if (!sub.nodes.length) return empty('该阶段无活跃人物')
+  return asChartOption({
+    title: {
+      text: stageLabel ? `${stageLabel} · 块 ${blockRange[0]}–${blockRange[1]}` : '',
+      left: 'center',
+      top: 4,
+      textStyle: { fontSize: 11, color: '#6d5c52', fontWeight: 'normal' },
+    },
+    tooltip: { formatter: '{b}' },
+    series: [{
+      type: 'graph',
+      layout: 'circular',
+      circular: { rotateLabel: true },
+      roam: false,
+      symbolSize: 18,
+      label: { show: true, fontSize: 9 },
+      data: sub.nodes.map((n) => ({
+        id: n.id,
+        name: n.name,
+        itemStyle: { color: hangdangColor(n.hangdang) },
+      })),
+      links: sub.links.map((l) => ({
+        source: l.source,
+        target: l.target,
+        lineStyle: { opacity: 0.4, width: Math.max(1, l.weight * 0.05) },
+      })),
+    }],
+  })
 }
 
 export function buildKpis(

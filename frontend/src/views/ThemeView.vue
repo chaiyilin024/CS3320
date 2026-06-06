@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
+import { useRouter } from 'vue-router'
 import ChartCard from '@/components/ChartCard.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
@@ -7,10 +8,13 @@ import { useFilterStore } from '@/stores/filter'
 import {
   assessmentForTopic,
   buildCooccurrenceHeatmap,
+  buildCommonPatternsBar,
   buildFallbackKeywordBar,
+  matchPlaysForPattern,
   buildGlobalLabelDist,
   buildGlobalPlayHeatmap,
   buildGlobalTierPie,
+  resolveGlobalHeatmapRows,
   buildKeywordBar,
   buildKeywordHeatmap,
   buildPlayVsGlobalRadar,
@@ -29,7 +33,9 @@ import type { EChartsOption } from 'echarts'
 import type { PlayThemes, ThemePatternsGlobal, ThemeQualityGlobal } from '@/types'
 
 const store = useFilterStore()
+const router = useRouter()
 const themes = ref<PlayThemes | null>(null)
+const selectedPattern = ref<string[] | null>(null)
 const patterns = ref<ThemePatternsGlobal | null>(null)
 const themeQuality = ref<ThemeQualityGlobal | null>(null)
 const loading = ref(true)
@@ -49,6 +55,7 @@ const tierEl = ref<HTMLElement | null>(null)
 const globalLabelEl = ref<HTMLElement | null>(null)
 const globalTierEl = ref<HTMLElement | null>(null)
 const fallbackKwEl = ref<HTMLElement | null>(null)
+const patternEl = ref<HTMLElement | null>(null)
 
 const selectedTopic = computed(() => {
   const id = store.selectedTopicIds[0]
@@ -83,6 +90,12 @@ const tierOpt = computed(() => buildTopicTierBar(themes.value?.quality))
 const globalLabelOpt = computed(() => buildGlobalLabelDist(themeQuality.value))
 const globalTierOpt = computed(() => buildGlobalTierPie(themeQuality.value))
 const fallbackKwOpt = computed(() => buildFallbackKeywordBar(themeQuality.value))
+const patternOpt = computed(() => buildCommonPatternsBar(patterns.value))
+
+const patternPlays = computed(() => {
+  if (!selectedPattern.value) return []
+  return matchPlaysForPattern(patterns.value, selectedPattern.value)
+})
 
 const qualityScore = computed(() => themes.value?.quality?.score)
 const qualityIssues = computed(() => themes.value?.quality?.issues ?? [])
@@ -95,13 +108,28 @@ const timelineChart = useChart(timelineEl, () => timelineOpt.value as EChartsOpt
 const speakerChart = useChart(speakerEl, () => speakerOpt.value as EChartsOption, [speakerOpt])
 const scoreChart = useChart(scoreEl, () => scoreOpt.value as EChartsOption, [scoreOpt])
 const sankeyChart = useChart(sankeyEl, () => sankeyOpt.value as EChartsOption, [sankeyOpt])
-const globalHeatChart = useChart(globalHeatEl, () => globalHeatOpt.value as EChartsOption, [globalHeatOpt])
+function onHeatmapClick(params: unknown) {
+  const p = params as { componentType?: string; data?: [number, number, number] }
+  if (p.componentType !== 'series' || !p.data || !patterns.value) return
+  const yi = p.data[1]
+  const rows = resolveGlobalHeatmapRows(patterns.value, store.scriptId)
+  const row = rows[yi]
+  if (row?.script_id) store.setScriptId(row.script_id)
+}
+
+const globalHeatChart = useChart(
+  globalHeatEl,
+  () => globalHeatOpt.value as EChartsOption,
+  [globalHeatOpt],
+  { click: onHeatmapClick },
+)
 const cooccurChart = useChart(cooccurEl, () => cooccurOpt.value as EChartsOption, [cooccurOpt])
 const radarChart = useChart(radarEl, () => radarOpt.value as EChartsOption, [radarOpt])
 const tierChart = useChart(tierEl, () => tierOpt.value as EChartsOption, [tierOpt])
 const globalLabelChart = useChart(globalLabelEl, () => globalLabelOpt.value as EChartsOption, [globalLabelOpt])
 const globalTierChart = useChart(globalTierEl, () => globalTierOpt.value as EChartsOption, [globalTierOpt])
 const fallbackKwChart = useChart(fallbackKwEl, () => fallbackKwOpt.value as EChartsOption, [fallbackKwOpt])
+const patternChart = useChart(patternEl, () => patternOpt.value as EChartsOption, [patternOpt])
 
 function refreshCharts() {
   roseChart.render()
@@ -119,6 +147,7 @@ function refreshCharts() {
   globalLabelChart.render()
   globalTierChart.render()
   fallbackKwChart.render()
+  patternChart.render()
 }
 
 async function load() {
@@ -148,6 +177,15 @@ watch(() => store.scriptId, load)
 function selectTopic(id: number) {
   store.toggleTopic(id)
   keywordChart.render()
+}
+
+function selectPattern(labels: string[]) {
+  selectedPattern.value = selectedPattern.value?.join('|') === labels.join('|') ? null : labels
+}
+
+function goToNarrativeBlock(blockIndex: number) {
+  store.setNarrativeBlockRange([blockIndex, blockIndex + 20])
+  router.push({ path: '/narrative', query: { script: store.scriptId ?? undefined } })
 }
 </script>
 
@@ -291,7 +329,7 @@ function selectTopic(id: number) {
         <div class="grid-2">
           <ChartCard
             title="跨剧主题热力"
-            :subtitle="`剧本×主题权重（全库 ${patterns?.play_topic_matrix.length ?? 0} 部，展示 Top48）`"
+            :subtitle="`点击行切换剧本（全库 ${patterns?.play_topic_matrix.length ?? 0} 部，Top48）`"
           >
             <div ref="globalHeatEl" class="chart chart-md" />
           </ChartCard>
@@ -302,6 +340,34 @@ function selectTopic(id: number) {
         <ChartCard title="本剧 vs 全库" subtitle="主题向量雷达对比">
           <div ref="radarEl" class="chart chart-sm" />
         </ChartCard>
+        <ChartCard title="主题组合模式" subtitle="频繁主题套餐 · 点击卡片筛选范例剧本">
+          <div ref="patternEl" class="chart chart-sm" />
+        </ChartCard>
+        <div v-if="patterns?.common_patterns?.length" class="pattern-cards">
+          <button
+            v-for="(pat, i) in patterns.common_patterns.slice(0, 8)"
+            :key="i"
+            type="button"
+            class="pattern-card"
+            :class="{ active: selectedPattern?.join('|') === pat.labels.join('|') }"
+            @click="selectPattern(pat.labels)"
+          >
+            <span class="labels">{{ pat.labels.join(' + ') }}</span>
+            <span class="meta">支持度 {{ (pat.support * 100).toFixed(0) }}% · {{ pat.play_count }} 部</span>
+          </button>
+        </div>
+        <div v-if="patternPlays.length" class="pattern-plays">
+          <span class="plays-label">匹配剧本：</span>
+          <button
+            v-for="p in patternPlays"
+            :key="p.script_id"
+            type="button"
+            class="play-chip"
+            @click="store.setScriptId(p.script_id)"
+          >
+            {{ p.title ?? p.script_id }}
+          </button>
+        </div>
       </section>
 
       <ChartCard v-if="themes.representative_blocks?.length" title="代表片段原文" subtitle="各主题最具代表性的台词">
@@ -310,6 +376,8 @@ function selectTopic(id: number) {
             v-for="(r, i) in themes.representative_blocks.slice(0, 10)"
             :key="i"
             :style="{ borderLeftColor: topicColor(r.topic_id) }"
+            class="snippet-click"
+            @click="r.block_index != null && goToNarrativeBlock(r.block_index)"
           >
             <span class="meta">
               T{{ r.topic_id }}
@@ -420,6 +488,37 @@ function selectTopic(id: number) {
   border-radius: 0 6px 6px 0;
 }
 .meta { display: block; font-size: 0.72rem; color: var(--text-muted); margin-bottom: 0.2rem; }
+.snippet-click { cursor: pointer; }
+.snippet-click:hover { background: #fff8e8; }
+.pattern-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+.pattern-card {
+  text-align: left;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  cursor: pointer;
+  font-family: inherit;
+}
+.pattern-card.active { border-color: #6a1b9a; background: #f3e5f5; }
+.pattern-card .labels { display: block; font-size: 0.82rem; font-weight: 600; }
+.pattern-card .meta { font-size: 0.72rem; color: var(--text-muted); }
+.pattern-plays { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; margin-top: 0.5rem; }
+.plays-label { font-size: 0.8rem; color: var(--text-muted); }
+.play-chip {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff8ee;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.play-chip:hover { border-color: var(--accent-gold); }
 
 @media (max-width: 1100px) { .grid-3 { grid-template-columns: 1fr; } }
 @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }

@@ -257,6 +257,30 @@ export function buildSnippetScoreBar(
   }
 }
 
+export function resolveGlobalHeatmapRows(
+  patterns: ThemePatternsGlobal | null,
+  highlightScriptId?: string | null,
+  maxRows = 48,
+): ThemePatternsGlobal['play_topic_matrix'] {
+  if (!patterns?.play_topic_matrix.length) return []
+  let rows = [...patterns.play_topic_matrix]
+  if (rows.length <= maxRows) return rows
+  const hi = highlightScriptId
+    ? rows.find((r) => r.script_id === highlightScriptId)
+    : null
+  const scored = rows.map((r) => ({
+    row: r,
+    score: r.weights.reduce((s, w) => s + w * w, 0),
+  }))
+  scored.sort((a, b) => b.score - a.score)
+  const picked = scored.slice(0, maxRows - (hi ? 1 : 0)).map((x) => x.row)
+  if (hi && !picked.some((r) => r.script_id === hi.script_id)) {
+    picked.pop()
+    picked.unshift(hi)
+  }
+  return picked
+}
+
 export function buildGlobalPlayHeatmap(
   patterns: ThemePatternsGlobal | null,
   highlightScriptId?: string | null,
@@ -266,23 +290,7 @@ export function buildGlobalPlayHeatmap(
     return { title: { text: '暂无跨剧数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
   }
   const labels = patterns.topic_labels.map((l) => l.label)
-  let rows = [...patterns.play_topic_matrix]
-  if (rows.length > maxRows) {
-    const hi = highlightScriptId
-      ? rows.find((r) => r.script_id === highlightScriptId)
-      : null
-    const scored = rows.map((r) => ({
-      row: r,
-      score: r.weights.reduce((s, w) => s + w * w, 0),
-    }))
-    scored.sort((a, b) => b.score - a.score)
-    const picked = scored.slice(0, maxRows - (hi ? 1 : 0)).map((x) => x.row)
-    if (hi && !picked.some((r) => r.script_id === hi.script_id)) {
-      picked.pop()
-      picked.unshift(hi)
-    }
-    rows = picked
-  }
+  const rows = resolveGlobalHeatmapRows(patterns, highlightScriptId, maxRows)
   const vals = rows.flatMap((r) => r.weights)
   const max = Math.max(...vals, 0.01)
   return asChartOption({
@@ -564,6 +572,57 @@ export function buildFallbackKeywordBar(global: ThemeQualityGlobal | null): ECha
       type: 'bar',
       data: rows.map((r) => r.count).reverse(),
       itemStyle: { color: '#bdbdbd' },
+    }],
+  }
+}
+
+export function matchPlaysForPattern(
+  patterns: ThemePatternsGlobal | null,
+  labels: string[],
+  minWeight = 0.08,
+): Array<{ script_id: string; title?: string }> {
+  if (!patterns?.play_topic_matrix.length || !labels.length) return []
+  const labelToIdx = new Map(patterns.topic_labels.map((l) => [l.label, l.topic_id]))
+  const idxs = labels.map((lb) => labelToIdx.get(lb)).filter((i): i is number => i != null)
+  if (!idxs.length) return []
+  return patterns.play_topic_matrix
+    .filter((row) => idxs.every((i) => (row.weights[i] ?? 0) >= minWeight))
+    .map((row) => ({ script_id: row.script_id, title: row.title }))
+    .slice(0, 24)
+}
+
+export function buildCommonPatternsBar(patterns: ThemePatternsGlobal | null): EChartsOption {
+  const rows = [...(patterns?.common_patterns ?? [])].sort((a, b) => b.support - a.support).slice(0, 12)
+  if (!rows.length) {
+    return { title: { text: '暂无主题组合模式', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+  }
+  return {
+    tooltip: {
+      trigger: 'axis',
+      formatter: (p: unknown) => {
+        const item = (p as { dataIndex: number }[])[0]
+        const r = rows[item.dataIndex]
+        return [
+          r.labels.join(' + '),
+          `支持度 ${(r.support * 100).toFixed(1)}%`,
+          `剧本数 ${r.play_count}`,
+        ].join('<br/>')
+      },
+    },
+    grid: { left: 140, right: 24, top: 12, bottom: 24 },
+    xAxis: { type: 'value', name: '支持度', max: 1 },
+    yAxis: {
+      type: 'category',
+      data: rows.map((r) => r.labels.join(' · ')),
+      axisLabel: { fontSize: 9, width: 130, overflow: 'truncate' },
+    },
+    series: [{
+      type: 'bar',
+      data: rows.map((r) => ({
+        value: +r.support.toFixed(3),
+        itemStyle: { color: '#6a1b9a', borderRadius: [0, 6, 6, 0] },
+      })),
+      barMaxWidth: 16,
     }],
   }
 }

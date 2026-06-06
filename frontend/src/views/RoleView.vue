@@ -10,9 +10,11 @@ import {
   buildCoarseRose,
   buildConfidenceBar,
   buildCueStacked,
+  buildEvolutionStacked,
   buildGlobalHeatmap,
   buildHangdangPie,
   buildIdentityBar,
+  buildLabeledInferredHeatmap,
   buildPersonalityBar,
   buildSourcePie,
   buildTraitSankey,
@@ -35,6 +37,9 @@ const personalityEl = ref<HTMLElement | null>(null)
 const sankeyEl = ref<HTMLElement | null>(null)
 const radarEl = ref<HTMLElement | null>(null)
 const heatEl = ref<HTMLElement | null>(null)
+const eraEl = ref<HTMLElement | null>(null)
+const agreeEl = ref<HTMLElement | null>(null)
+const evolutionMode = ref<'era' | 'collection'>('era')
 
 const selectedChar = computed(() => {
   const id = store.selectedCharacterIds[0]
@@ -63,8 +68,49 @@ const radarOpt = computed(() => buildCharacterRadar(selectedChar.value))
 const heatOpt = computed(() =>
   buildGlobalHeatmap(globalRole.value?.global_feature_hangdang_matrix ?? []),
 )
+const eraOpt = computed(() => {
+  const g = globalRole.value
+  if (!g) return buildEvolutionStacked([])
+  if (evolutionMode.value === 'collection') {
+    return buildEvolutionStacked(
+      (g.by_collection ?? []).map((b) => ({
+        label: b.collection_name,
+        hangdang_distribution: b.hangdang_distribution,
+        play_count: b.play_count,
+      })),
+    )
+  }
+  return buildEvolutionStacked(
+    (g.by_era_bucket ?? []).map((b) => ({
+      label: b.era,
+      hangdang_distribution: b.hangdang_distribution,
+      play_count: b.play_count,
+    })),
+  )
+})
+const agreeOpt = computed(() => buildLabeledInferredHeatmap(role.value?.characters ?? []))
 
-const pieChart = useChart(pieEl, () => pieOpt.value as EChartsOption, [pieOpt])
+const filteredChars = computed(() => {
+  const chars = role.value?.characters ?? []
+  const hd = store.filterHangdang
+  if (!hd) return chars
+  return chars.filter((c) => c.hangdang_final === hd)
+})
+
+const lowConfidenceChars = computed(() =>
+  (role.value?.characters ?? [])
+    .filter((c) => !c.hangdang_labeled && c.confidence < 0.55)
+    .sort((a, b) => a.confidence - b.confidence),
+)
+
+function onPieClick(params: unknown) {
+  const p = params as { name?: string }
+  if (p.name) {
+    store.setFilterHangdang(store.filterHangdang === p.name ? null : p.name)
+  }
+}
+
+const pieChart = useChart(pieEl, () => pieOpt.value as EChartsOption, [pieOpt], { click: onPieClick })
 const coarseChart = useChart(coarseEl, () => coarseOpt.value as EChartsOption, [coarseOpt])
 const sourceChart = useChart(sourceEl, () => sourceOpt.value as EChartsOption, [sourceOpt])
 const confChart = useChart(confEl, () => confOpt.value as EChartsOption, [confOpt])
@@ -74,6 +120,8 @@ const personalityChart = useChart(personalityEl, () => personalityOpt.value as E
 const sankeyChart = useChart(sankeyEl, () => sankeyOpt.value as EChartsOption, [sankeyOpt])
 const radarChart = useChart(radarEl, () => radarOpt.value as EChartsOption, [radarOpt])
 const heatChart = useChart(heatEl, () => heatOpt.value as EChartsOption, [heatOpt])
+const eraChart = useChart(eraEl, () => eraOpt.value as EChartsOption, [eraOpt, evolutionMode])
+const agreeChart = useChart(agreeEl, () => agreeOpt.value as EChartsOption, [agreeOpt])
 
 function refreshCharts() {
   pieChart.render()
@@ -86,6 +134,8 @@ function refreshCharts() {
   sankeyChart.render()
   radarChart.render()
   heatChart.render()
+  eraChart.render()
+  agreeChart.render()
 }
 
 async function load() {
@@ -113,7 +163,13 @@ watch(selectedChar, () => radarChart.render())
   <div class="page">
     <header class="page-head">
       <h2 class="page-title">人物与行当</h2>
-      <p class="page-desc">本剧行当构成、表演线索与特征推断 · 点击人物表可查看雷达画像</p>
+      <p class="page-desc">
+        本剧行当构成、表演线索与特征推断 · 点击饼图过滤人物表 · 点击人物行查看雷达画像
+        <span v-if="store.filterHangdang" class="filter-tag">
+          行当筛选：{{ store.filterHangdang }}
+          <button type="button" @click="store.setFilterHangdang(null)">×</button>
+        </span>
+      </p>
     </header>
 
     <div v-if="loading" class="loading">加载中…</div>
@@ -140,7 +196,7 @@ watch(selectedChar, () => radarChart.render())
       <section class="section">
         <h3 class="section-title">本剧行当概览</h3>
         <div class="grid-3">
-          <ChartCard title="细分行当分布" subtitle="各行当人物占比">
+          <ChartCard title="细分行当分布" subtitle="点击扇区过滤下方人物表">
             <div ref="pieEl" class="chart chart-md" />
           </ChartCard>
           <ChartCard title="生旦净丑" subtitle="粗行当极坐标柱图">
@@ -173,6 +229,58 @@ watch(selectedChar, () => radarChart.render())
         </div>
       </section>
 
+      <section v-if="globalRole?.by_era_bucket?.length || globalRole?.by_collection?.length" class="section">
+        <h3 class="section-title">跨时代 / 来源演化</h3>
+        <div class="tab-row">
+          <button
+            type="button"
+            class="tab"
+            :class="{ active: evolutionMode === 'era' }"
+            @click="evolutionMode = 'era'"
+          >
+            按时代
+          </button>
+          <button
+            type="button"
+            class="tab"
+            :class="{ active: evolutionMode === 'collection' }"
+            @click="evolutionMode = 'collection'"
+          >
+            按集合
+          </button>
+        </div>
+        <ChartCard
+          :title="evolutionMode === 'era' ? '时代 × 行当占比' : '集合 × 行当占比'"
+          subtitle="生旦净丑堆叠 · 纵轴为各行当占该组人物比例"
+        >
+          <div ref="eraEl" class="chart chart-md" />
+        </ChartCard>
+      </section>
+
+      <section class="section">
+        <h3 class="section-title">推断校验</h3>
+        <div class="grid-2">
+          <ChartCard title="标注 vs 最终行当" subtitle="戏考标注与推断结果混淆矩阵">
+            <div ref="agreeEl" class="chart chart-md" />
+          </ChartCard>
+          <ChartCard title="低置信度人物" subtitle="无标注且置信度 &lt; 55%，建议人工复核">
+            <ul v-if="lowConfidenceChars.length" class="low-conf-list">
+              <li
+                v-for="c in lowConfidenceChars"
+                :key="c.character_id"
+                @click="store.toggleCharacter(c.character_id)"
+              >
+                <strong>{{ c.name }}</strong>
+                <span class="tag" :style="{ background: hangdangColor(c.hangdang_final) }">{{ c.hangdang_final }}</span>
+                <span class="pct">{{ (c.confidence * 100).toFixed(0) }}%</span>
+                <span class="feat">{{ (c.top_features ?? []).slice(0, 3).join(' · ') }}</span>
+              </li>
+            </ul>
+            <p v-else class="empty-hint">本剧低置信度人物较少</p>
+          </ChartCard>
+        </div>
+      </section>
+
       <section class="section">
         <h3 class="section-title">特征与关联</h3>
         <div class="grid-wide">
@@ -197,7 +305,7 @@ watch(selectedChar, () => radarChart.render())
           </thead>
           <tbody>
             <tr
-              v-for="c in role.characters"
+              v-for="c in filteredChars"
               :key="c.character_id"
               :class="{ hl: store.selectedCharacterIds.includes(c.character_id) }"
               @click="store.toggleCharacter(c.character_id)"
@@ -294,6 +402,50 @@ tr.hl, tr:hover { background: #fff8e8; }
 }
 .conf-fill { position: absolute; left: 0; top: 0; bottom: 0; opacity: 0.55; }
 .conf-txt { position: relative; z-index: 1; padding: 0 0.35rem; font-size: 0.75rem; font-weight: 600; }
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.45rem;
+  background: #fff8e8;
+  border: 1px solid var(--accent-gold);
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+.filter-tag button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--text-muted);
+}
+.tab-row { display: flex; gap: 0.35rem; margin-bottom: 0.65rem; }
+.tab {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+.tab.active { background: var(--accent-gold); border-color: var(--accent-gold); font-weight: 600; }
+.low-conf-list { margin: 0; padding: 0; list-style: none; max-height: 280px; overflow-y: auto; }
+.low-conf-list li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 0.35rem 0.5rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 0.84rem;
+}
+.low-conf-list li:hover { background: #fff8e8; }
+.low-conf-list .feat { grid-column: 1 / -1; font-size: 0.72rem; color: var(--text-muted); }
+.low-conf-list .pct { font-weight: 600; color: #bf360c; }
+.empty-hint { color: var(--text-muted); font-size: 0.86rem; padding: 1rem 0; text-align: center; }
 
 @media (max-width: 1100px) {
   .grid-3 { grid-template-columns: 1fr; }

@@ -5,13 +5,16 @@ import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
 import {
+  buildBlockStrip,
   buildEmotionTimeline,
+  buildGenreRhythmOverlay,
   buildGlobalStageCompare,
   buildPerformancePie,
   buildPerformanceStacked,
   buildRhythmLine,
   buildStageProportionPie,
   buildStageRadar,
+  buildTemplateStageCompare,
   rangesEqual,
   stageColor,
 } from '@/utils/narrativeCharts'
@@ -36,12 +39,24 @@ const perfPieEl = ref<HTMLElement | null>(null)
 const radarEl = ref<HTMLElement | null>(null)
 const emotionEl = ref<HTMLElement | null>(null)
 const compareEl = ref<HTMLElement | null>(null)
+const stripEl = ref<HTMLElement | null>(null)
+const templateEl = ref<HTMLElement | null>(null)
+const genreRhythmEl = ref<HTMLElement | null>(null)
+const selectedTemplateId = ref('classic_five_act')
+const playGenre = ref<string | null>(null)
 
 const selectedRange = computed(() => store.narrativeBlockRange)
+const selectedTopicIds = computed(() => store.selectedTopicIds)
 
 const rhythmOpt = computed(() =>
   narrative.value
-    ? buildRhythmLine(narrative.value, selectedRange.value, selectedStage.value)
+    ? buildRhythmLine(
+        narrative.value,
+        selectedRange.value,
+        selectedStage.value,
+        selectedTopicIds.value,
+        true,
+      )
     : ({} as EChartsOption),
 )
 const stagePieOpt = computed(() =>
@@ -66,14 +81,45 @@ const compareOpt = computed(() =>
     ? buildGlobalStageCompare(narrative.value, globalNarr.value)
     : ({} as EChartsOption),
 )
+const stripOpt = computed(() =>
+  narrative.value ? buildBlockStrip(narrative.value, selectedRange.value) : ({} as EChartsOption),
+)
+const templateOpt = computed(() =>
+  narrative.value
+    ? buildTemplateStageCompare(narrative.value, globalNarr.value, selectedTemplateId.value)
+    : ({} as EChartsOption),
+)
+const genreRhythmOpt = computed(() =>
+  narrative.value
+    ? buildGenreRhythmOverlay(narrative.value, globalNarr.value, playGenre.value)
+    : ({} as EChartsOption),
+)
 
-const rhythmChart = useChart(rhythmEl, () => rhythmOpt.value as EChartsOption, [rhythmOpt, selectedRange, selectedStage])
+function onRhythmDataZoom(params: unknown) {
+  const p = params as { batch?: Array<{ startValue?: number; endValue?: number }> }
+  const batch = p.batch?.[0]
+  if (batch?.startValue != null && batch?.endValue != null) {
+    const lo = Math.floor(batch.startValue)
+    const hi = Math.ceil(batch.endValue)
+    store.setNarrativeBlockRange([lo, hi])
+  }
+}
+
+const rhythmChart = useChart(
+  rhythmEl,
+  () => rhythmOpt.value as EChartsOption,
+  [rhythmOpt, selectedRange, selectedStage, selectedTopicIds],
+  { datazoom: onRhythmDataZoom },
+)
 const stagePieChart = useChart(stagePieEl, () => stagePieOpt.value as EChartsOption, [stagePieOpt])
 const perfStackChart = useChart(perfStackEl, () => perfStackOpt.value as EChartsOption, [perfStackOpt])
 const perfPieChart = useChart(perfPieEl, () => perfPieOpt.value as EChartsOption, [perfPieOpt])
 const radarChart = useChart(radarEl, () => radarOpt.value as EChartsOption, [radarOpt, selectedStage])
 const emotionChart = useChart(emotionEl, () => emotionOpt.value as EChartsOption, [emotionOpt, selectedRange])
 const compareChart = useChart(compareEl, () => compareOpt.value as EChartsOption, [compareOpt])
+const stripChart = useChart(stripEl, () => stripOpt.value as EChartsOption, [stripOpt, selectedRange])
+const templateChart = useChart(templateEl, () => templateOpt.value as EChartsOption, [templateOpt, selectedTemplateId])
+const genreRhythmChart = useChart(genreRhythmEl, () => genreRhythmOpt.value as EChartsOption, [genreRhythmOpt])
 
 function refreshCharts() {
   rhythmChart.render()
@@ -83,6 +129,9 @@ function refreshCharts() {
   radarChart.render()
   emotionChart.render()
   compareChart.render()
+  stripChart.render()
+  templateChart.render()
+  genreRhythmChart.render()
 }
 
 function isStageActive(st: PlayNarrative['plot_stages'][number]) {
@@ -138,9 +187,19 @@ async function load() {
   excerptTotal.value = 0
   playText.value = null
   try {
-    narrative.value = await api.playNarrative(store.scriptId)
+    const id = store.scriptId
+    narrative.value = await api.playNarrative(id)
+    try {
+      const cat = await api.catalog()
+      playGenre.value = cat.plays.find((p) => p.script_id === id)?.tags?.genre_inferred ?? null
+    } catch {
+      playGenre.value = null
+    }
     try {
       globalNarr.value = await api.globalNarrative()
+      if (!globalNarr.value?.templates.some((t) => t.template_id === selectedTemplateId.value)) {
+        selectedTemplateId.value = globalNarr.value?.templates[0]?.template_id ?? 'classic_five_act'
+      }
     } catch {
       globalNarr.value = null
     }
@@ -159,7 +218,8 @@ watch(() => store.scriptId, load)
     <header class="page-head">
       <h2 class="page-title">叙事结构</h2>
       <p class="page-desc">
-        {{ narrative?.title ?? '' }} · 点击情节阶段查看原文片段，节奏曲线同步高亮
+        {{ narrative?.title ?? '' }} · 拖动节奏图滑块框选块区间 · 主题页选主题可在此标记
+        <template v-if="store.selectedTopicIds.length"> · 已选主题 {{ store.selectedTopicIds.join(',') }}</template>
       </p>
     </header>
 
@@ -219,9 +279,12 @@ watch(() => store.scriptId, load)
         <h3 class="section-title">节奏与情感</h3>
         <ChartCard
           title="叙事节奏曲线"
-          :subtitle="selectedStage ? `已高亮：${selectedStage}（块 ${selectedRange?.[0]}–${selectedRange?.[1]}）` : '点击上方阶段按钮高亮区间'"
+          :subtitle="selectedRange ? `块 ${selectedRange[0]}–${selectedRange[1]}` : '拖动底部滑块或点击阶段按钮'"
         >
           <div ref="rhythmEl" class="chart chart-tall" />
+        </ChartCard>
+        <ChartCard title="块级阶段条带" subtitle="与节奏图共享横轴 · 颜色=情节阶段">
+          <div ref="stripEl" class="chart chart-sm" />
         </ChartCard>
         <div class="grid-2">
           <ChartCard title="块级情感散点" subtitle="颜色=情感强度 · 选中阶段区间高亮">
@@ -249,6 +312,26 @@ watch(() => store.scriptId, load)
         <ChartCard title="本剧 vs 全库阶段占比" subtitle="与「起承转合型」模板均值对比">
           <div ref="compareEl" class="chart chart-sm" />
         </ChartCard>
+        <div v-if="globalNarr?.templates.length" class="template-tabs">
+          <button
+            v-for="tpl in globalNarr.templates"
+            :key="tpl.template_id"
+            type="button"
+            class="tab"
+            :class="{ active: selectedTemplateId === tpl.template_id }"
+            @click="selectedTemplateId = tpl.template_id"
+          >
+            {{ tpl.label }}（{{ tpl.play_count }}）
+          </button>
+        </div>
+        <div class="grid-2 section-gap">
+          <ChartCard title="叙事模板对比" subtitle="本剧 vs 所选模板阶段占比">
+            <div ref="templateEl" class="chart chart-sm" />
+          </ChartCard>
+          <ChartCard title="体裁节奏对比" :subtitle="`${playGenre ?? '体裁'}平均张力曲线 vs 本剧`">
+            <div ref="genreRhythmEl" class="chart chart-sm" />
+          </ChartCard>
+        </div>
       </section>
     </template>
   </div>
@@ -357,6 +440,18 @@ watch(() => store.scriptId, load)
 .chart-tall { height: 380px; }
 .chart-md { height: 300px; }
 .chart-sm { height: 260px; }
+
+.template-tabs { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.65rem 0; }
+.tab {
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.78rem;
+}
+.tab.active { background: var(--accent-gold); font-weight: 600; }
+.section-gap { margin-top: 0.85rem; }
 
 @media (max-width: 1100px) { .grid-3 { grid-template-columns: 1fr; } }
 @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }

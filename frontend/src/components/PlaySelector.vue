@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { api } from '@/api/client'
 import { useFilterStore } from '@/stores/filter'
+import { filterCatalogPlays } from '@/utils/catalogFilter'
 import type { CatalogPlay } from '@/types'
 
 const store = useFilterStore()
@@ -23,9 +24,24 @@ onMounted(async () => {
   }
 })
 
-const current = computed(() =>
-  plays.value.find((p) => p.script_id === store.scriptId),
+const filteredPlays = computed(() =>
+  filterCatalogPlays(plays.value, {
+    genre: store.genre,
+    collectionId: store.collectionId,
+  }),
 )
+
+const current = computed(() =>
+  filteredPlays.value.find((p) => p.script_id === store.scriptId)
+    ?? plays.value.find((p) => p.script_id === store.scriptId),
+)
+
+watch(filteredPlays, (list) => {
+  if (!list.length) return
+  if (!store.scriptId || !list.some((p) => p.script_id === store.scriptId)) {
+    store.setScriptId(list[0].script_id)
+  }
+})
 </script>
 
 <template>
@@ -37,7 +53,7 @@ const current = computed(() =>
       class="select"
       @change="store.setScriptId(($event.target as HTMLSelectElement).value)"
     >
-      <option v-for="p in plays" :key="p.script_id" :value="p.script_id">
+      <option v-for="p in filteredPlays" :key="p.script_id" :value="p.script_id">
         {{ p.title }}（{{ p.script_id }}）
       </option>
     </select>

@@ -329,6 +329,137 @@ export function buildCharacterRadar(char: Character | null): EChartsOption {
   }
 }
 
+const COARSE_HANGDANG = ['生', '旦', '净', '丑', '未知', '其他'] as const
+
+function toCoarseHangdang(hd: string): string {
+  if (COARSE_HANGDANG.includes(hd as (typeof COARSE_HANGDANG)[number])) return hd
+  if (hd.includes('生')) return '生'
+  if (hd.includes('旦')) return '旦'
+  if (hd.includes('净')) return '净'
+  if (hd.includes('丑')) return '丑'
+  if (hd === '未知') return '未知'
+  return '其他'
+}
+
+function normalizeDist(dist: Record<string, number>, coarse = true): Record<string, number> {
+  const out: Record<string, number> = {}
+  for (const [hd, n] of Object.entries(dist)) {
+    const key = coarse ? toCoarseHangdang(hd) : hd
+    out[key] = (out[key] ?? 0) + n
+  }
+  return out
+}
+
+export function buildEvolutionStacked(
+  buckets: Array<{
+    label: string
+    hangdang_distribution: Record<string, number>
+    play_count?: number
+  }>,
+  coarse = true,
+): EChartsOption {
+  if (!buckets.length) {
+    return { title: { text: '暂无跨时代/集合数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+  }
+  const cats = coarse
+    ? [...COARSE_HANGDANG]
+    : [...new Set(buckets.flatMap((b) => Object.keys(b.hangdang_distribution)))]
+  const xLabels = buckets.map((b) =>
+    b.play_count != null ? `${b.label}（${b.play_count}部）` : b.label,
+  )
+  const series = cats.map((hd) => ({
+    name: hd,
+    type: 'bar' as const,
+    stack: 'hangdang',
+    emphasis: { focus: 'series' as const },
+    itemStyle: { color: coarse ? coarseColor(hd) : hangdangColor(hd) },
+    data: buckets.map((b) => {
+      const dist = normalizeDist(b.hangdang_distribution, coarse)
+      const total = Object.values(dist).reduce((s, v) => s + v, 0) || 1
+      return +((dist[hd] ?? 0) / total * 100).toFixed(1)
+    }),
+  })).filter((s) => s.data.some((v) => v > 0))
+
+  return {
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: { type: 'shadow' },
+      formatter: (params: unknown) => {
+        const items = params as Array<{ seriesName: string; value: number; axisValue: string }>
+        if (!items.length) return ''
+        const lines = [items[0].axisValue]
+        items.forEach((it) => {
+          if (it.value > 0) lines.push(`${it.seriesName}: ${it.value}%`)
+        })
+        return lines.join('<br/>')
+      },
+    },
+    legend: { type: 'scroll', top: 0, textStyle: { fontSize: 10 } },
+    grid: { left: 48, right: 16, top: 40, bottom: 48 },
+    xAxis: { type: 'category', data: xLabels, axisLabel: { rotate: 25, fontSize: 10 } },
+    yAxis: { type: 'value', name: '占比%', max: 100 },
+    series,
+  }
+}
+
+export function buildLabeledInferredHeatmap(chars: Character[]): EChartsOption {
+  const labeled = chars.filter((c) => c.hangdang_labeled)
+  if (!labeled.length) {
+    return { title: { text: '暂无戏考标注可对比', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
+  }
+  const rowLabels = [...new Set(labeled.map((c) => c.hangdang_labeled!))].sort()
+  const colLabels = [...new Set(labeled.map((c) => c.hangdang_final))].sort()
+  const counts = new Map<string, number>()
+  labeled.forEach((c) => {
+    const k = `${c.hangdang_labeled}|${c.hangdang_final}`
+    counts.set(k, (counts.get(k) ?? 0) + 1)
+  })
+  const data: [number, number, number][] = []
+  rowLabels.forEach((row, yi) => {
+    colLabels.forEach((col, xi) => {
+      const v = counts.get(`${row}|${col}`) ?? 0
+      if (v > 0) data.push([xi, yi, v])
+    })
+  })
+  const max = Math.max(...data.map((d) => d[2]), 1)
+  const agree = labeled.filter((c) => c.hangdang_labeled === c.hangdang_final).length
+  const rate = ((agree / labeled.length) * 100).toFixed(0)
+  return asChartOption({
+    title: {
+      text: `标注一致率 ${rate}%（${agree}/${labeled.length}）`,
+      left: 'center',
+      top: 0,
+      textStyle: { fontSize: 11, color: '#6d5c52', fontWeight: 'normal' },
+    },
+    tooltip: {
+      position: 'top',
+      formatter: (p: unknown) => {
+        const row = p as { data?: [number, number, number] }
+        const [xi, yi, v] = row.data ?? [0, 0, 0]
+        return `标注 ${rowLabels[yi]} → 最终 ${colLabels[xi]}<br/>${v} 人`
+      },
+    },
+    grid: { left: 72, right: 16, bottom: 56, top: 32 },
+    xAxis: { type: 'category', data: colLabels, name: '最终行当', axisLabel: { fontSize: 10 } },
+    yAxis: { type: 'category', data: rowLabels, name: '戏考标注', axisLabel: { fontSize: 10 } },
+    visualMap: {
+      min: 0,
+      max,
+      calculable: true,
+      orient: 'horizontal',
+      left: 'center',
+      bottom: 0,
+      inRange: { color: ['#fff8ee', '#c9a227', '#2e7d32'] },
+      show: false,
+    },
+    series: [{
+      type: 'heatmap',
+      data,
+      label: { show: true, fontSize: 10 },
+    }],
+  })
+}
+
 export function buildPersonalityBar(chars: Character[]): EChartsOption {
   const counts = new Map<string, number>()
   for (const c of chars) {

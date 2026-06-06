@@ -9,9 +9,32 @@ export const useFilterStore = defineStore('filter', () => {
   const selectedCharacterIds = ref<string[]>([])
   const selectedTopicIds = ref<number[]>([])
   const narrativeBlockRange = ref<[number, number] | null>(null)
+  const filterHangdang = ref<string | null>(null)
 
   function setScriptId(id: string | null) {
     scriptId.value = id
+  }
+
+  function setGenre(g: string | null) {
+    genre.value = g
+  }
+
+  function setCollectionId(id: string | null) {
+    collectionId.value = id
+  }
+
+  function setNarrativeBlockRange(range: [number, number] | null) {
+    narrativeBlockRange.value = range
+  }
+
+  function setFilterHangdang(hd: string | null) {
+    filterHangdang.value = hd
+  }
+
+  function clearGlobalFilters() {
+    genre.value = null
+    collectionId.value = null
+    filterHangdang.value = null
   }
 
   function toggleCharacter(id: string) {
@@ -39,7 +62,13 @@ export const useFilterStore = defineStore('filter', () => {
     selectedCharacterIds,
     selectedTopicIds,
     narrativeBlockRange,
+    filterHangdang,
     setScriptId,
+    setGenre,
+    setCollectionId,
+    setNarrativeBlockRange,
+    setFilterHangdang,
+    clearGlobalFilters,
     toggleCharacter,
     toggleTopic,
     clearSelection,

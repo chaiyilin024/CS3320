@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView, useRoute } from 'vue-router'
+import GlobalFilterBar from './GlobalFilterBar.vue'
 import PlaySelector from './PlaySelector.vue'
 import { useFilterStore } from '@/stores/filter'
 
@@ -34,6 +35,7 @@ const nav = [
           {{ item.label }}
         </RouterLink>
       </nav>
+      <GlobalFilterBar />
       <PlaySelector />
     </header>
     <main class="main">

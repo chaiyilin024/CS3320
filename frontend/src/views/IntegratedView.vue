@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
+import { useRouter } from 'vue-router'
 import ChartCard from '@/components/ChartCard.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
@@ -9,25 +10,33 @@ import {
   buildCharacterTopicHeatmap,
   buildCharacterTopicSankey,
   buildCorrelationTypePie,
+  CORRELATION_TYPE_LABELS,
   buildHangdangPeakBar,
   buildKpis,
   buildNetworkStageDeltaBar,
   buildRhythmTensionOverlay,
+  buildStageMiniNetwork,
   buildStageNetworkEvolution,
   buildThemeStageHeatmap,
   buildTopCorrelationsBar,
   buildTopicWeightMini,
+  correlationLabel,
+  sortedCorrelations,
 } from '@/utils/integratedCharts'
 import { buildForceGraph } from '@/utils/networkCharts'
 import type { EChartsOption } from 'echarts'
-import type { PlayIntegrated, PlayNarrative, PlayNetwork, PlayThemes } from '@/types'
+import type { IntegratedCorrelation, PlayCleaned, PlayIntegrated, PlayNarrative, PlayNetwork, PlayThemes } from '@/types'
 
 const store = useFilterStore()
+const router = useRouter()
 const integrated = ref<PlayIntegrated | null>(null)
 const network = ref<PlayNetwork | null>(null)
 const narrative = ref<PlayNarrative | null>(null)
 const themes = ref<PlayThemes | null>(null)
+const playText = ref<PlayCleaned | null>(null)
 const loading = ref(true)
+const corrTypeFilter = ref<IntegratedCorrelation['type'] | 'all'>('all')
+const selectedStageIdx = ref(0)
 
 const corrPieEl = ref<HTMLElement | null>(null)
 const corrBarEl = ref<HTMLElement | null>(null)
@@ -41,8 +50,24 @@ const rhythmOverlayEl = ref<HTMLElement | null>(null)
 const centralityEl = ref<HTMLElement | null>(null)
 const graphEl = ref<HTMLElement | null>(null)
 const topicBarEl = ref<HTMLElement | null>(null)
+const miniNetEl = ref<HTMLElement | null>(null)
 
 const selectedIds = computed(() => store.selectedCharacterIds)
+const corrRows = computed(() => {
+  const rows = sortedCorrelations(integrated.value)
+  if (corrTypeFilter.value === 'all') return rows
+  return rows.filter((c) => c.type === corrTypeFilter.value)
+})
+const stageSnapshots = computed(() => integrated.value?.stage_network_snapshots ?? [])
+const activeSnapshot = computed(() => stageSnapshots.value[selectedStageIdx.value] ?? null)
+const miniNetOpt = computed(() =>
+  buildStageMiniNetwork(
+    playText.value,
+    network.value,
+    activeSnapshot.value?.block_range ?? null,
+    activeSnapshot.value?.stage,
+  ),
+)
 const kpis = computed(() => buildKpis(integrated.value, network.value, narrative.value))
 
 const corrPieOpt = computed(() => buildCorrelationTypePie(integrated.value))
@@ -75,9 +100,35 @@ function onGraphClick(params: unknown) {
   if (p.dataType === 'node' && p.data?.id) store.toggleCharacter(p.data.id)
 }
 
+function onCharTopicClick(params: unknown) {
+  const p = params as { data?: [number, number, number] }
+  if (!p.data || !integrated.value?.character_topic_matrix) return
+  const [topicXi, charYi] = p.data
+  const cells = integrated.value.character_topic_matrix
+  const charOrder = [...new Set(cells.map((c) => c.character_name ?? c.character_id))]
+  const topicOrder = [...new Set(cells.map((c) => c.topic_label ?? `T${c.topic_id}`))]
+  const charName = charOrder[charYi]
+  const topicName = topicOrder[topicXi]
+  const cell = cells.find(
+    (c) => (c.character_name ?? c.character_id) === charName
+      && (c.topic_label ?? `T${c.topic_id}`) === topicName,
+  )
+  if (cell?.character_id) store.toggleCharacter(cell.character_id)
+  if (cell?.topic_id != null) store.toggleTopic(cell.topic_id)
+}
+
+function goToTask(path: string) {
+  router.push({ path, query: { script: store.scriptId ?? undefined } })
+}
+
 const corrPieChart = useChart(corrPieEl, () => corrPieOpt.value as EChartsOption, [corrPieOpt])
 const corrBarChart = useChart(corrBarEl, () => corrBarOpt.value as EChartsOption, [corrBarOpt])
-const charTopicHeatChart = useChart(charTopicHeatEl, () => charTopicHeatOpt.value as EChartsOption, [charTopicHeatOpt])
+const charTopicHeatChart = useChart(
+  charTopicHeatEl,
+  () => charTopicHeatOpt.value as EChartsOption,
+  [charTopicHeatOpt],
+  { click: onCharTopicClick },
+)
 const charTopicSankeyChart = useChart(charTopicSankeyEl, () => charTopicSankeyOpt.value as EChartsOption, [charTopicSankeyOpt])
 const stageNetChart = useChart(stageNetEl, () => stageNetOpt.value as EChartsOption, [stageNetOpt])
 const stageDeltaChart = useChart(stageDeltaEl, () => stageDeltaOpt.value as EChartsOption, [stageDeltaOpt])
@@ -92,6 +143,7 @@ const graphChart = useChart(
   { click: onGraphClick },
 )
 const topicBarChart = useChart(topicBarEl, () => topicBarOpt.value as EChartsOption, [topicBarOpt])
+const miniNetChart = useChart(miniNetEl, () => miniNetOpt.value as EChartsOption, [miniNetOpt, selectedStageIdx])
 
 function refreshCharts() {
   corrPieChart.render()
@@ -106,6 +158,7 @@ function refreshCharts() {
   centralityChart.render()
   graphChart.render()
   topicBarChart.render()
+  miniNetChart.render()
 }
 
 async function load() {
@@ -113,16 +166,19 @@ async function load() {
   loading.value = true
   try {
     const id = store.scriptId
-    const [resIntegrated, resNetwork, resNarrative, resThemes] = await Promise.all([
+    const [resIntegrated, resNetwork, resNarrative, resThemes, resPlay] = await Promise.all([
       api.playIntegrated(id).catch(() => null),
       api.playNetwork(id),
       api.playNarrative(id),
       api.playThemes(id),
+      api.playCleaned(id).catch(() => null),
     ])
     integrated.value = resIntegrated
     network.value = resNetwork
     narrative.value = resNarrative
     themes.value = resThemes
+    playText.value = resPlay
+    selectedStageIdx.value = 0
   } finally {
     loading.value = false
     refreshCharts()
@@ -174,12 +230,69 @@ watch(() => store.scriptId, load)
             <div ref="corrBarEl" class="chart chart-md" />
           </ChartCard>
         </div>
+        <ChartCard title="关联明细表" subtitle="可按类型筛选 · 点击跳转对应任务页">
+          <div class="corr-filters">
+            <button
+              type="button"
+              class="tab"
+              :class="{ active: corrTypeFilter === 'all' }"
+              @click="corrTypeFilter = 'all'"
+            >全部</button>
+            <button
+              v-for="(label, type) in CORRELATION_TYPE_LABELS"
+              :key="type"
+              type="button"
+              class="tab"
+              :class="{ active: corrTypeFilter === type }"
+              @click="corrTypeFilter = type as IntegratedCorrelation['type']"
+            >{{ label }}</button>
+          </div>
+          <table class="corr-table">
+            <thead>
+              <tr><th>类型</th><th>描述</th><th>强度</th><th>依据</th><th>跳转</th></tr>
+            </thead>
+            <tbody>
+              <tr v-for="(c, i) in corrRows.slice(0, 20)" :key="i">
+                <td>{{ CORRELATION_TYPE_LABELS[c.type] }}</td>
+                <td>{{ correlationLabel(c) }}</td>
+                <td>{{ c.strength.toFixed(3) }}</td>
+                <td class="evidence">{{ c.evidence ?? '—' }}</td>
+                <td>
+                  <button
+                    v-if="c.type === 'character_theme' || c.type === 'character_network'"
+                    type="button"
+                    class="link-btn"
+                    @click="goToTask('/role')"
+                  >行当</button>
+                  <button
+                    v-if="c.type === 'network_stage' || c.type === 'character_network'"
+                    type="button"
+                    class="link-btn"
+                    @click="goToTask('/network')"
+                  >网络</button>
+                  <button
+                    v-if="c.type === 'character_theme' || c.type === 'theme_narrative'"
+                    type="button"
+                    class="link-btn"
+                    @click="goToTask('/theme')"
+                  >主题</button>
+                  <button
+                    v-if="c.type === 'hangdang_narrative' || c.type === 'theme_narrative' || c.type === 'network_stage'"
+                    type="button"
+                    class="link-btn"
+                    @click="goToTask('/narrative')"
+                  >叙事</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </ChartCard>
       </section>
 
       <section class="section">
         <h3 class="section-title">人物 ↔ 主题</h3>
         <div class="grid-2">
-          <ChartCard title="人物×主题热力图" subtitle="台词与 LDA 主题的关联强度">
+          <ChartCard title="人物×主题热力图" subtitle="点击单元格同时高亮人物与主题">
             <div ref="charTopicHeatEl" class="chart chart-md" />
           </ChartCard>
           <ChartCard title="人物→主题桑基图" subtitle="主要人物与主导主题的流向">
@@ -200,6 +313,21 @@ watch(() => store.scriptId, load)
         <h3 class="section-title">网络 ↔ 叙事阶段</h3>
         <ChartCard title="阶段网络演化" subtitle="各情节阶段的同场密度、人物数与边数">
           <div ref="stageNetEl" class="chart chart-tall" />
+        </ChartCard>
+        <div v-if="stageSnapshots.length" class="stage-tabs">
+          <button
+            v-for="(snap, i) in stageSnapshots"
+            :key="snap.stage"
+            type="button"
+            class="tab"
+            :class="{ active: selectedStageIdx === i }"
+            @click="selectedStageIdx = i"
+          >
+            {{ snap.stage }}（{{ snap.node_count }}人）
+          </button>
+        </div>
+        <ChartCard title="阶段迷你子网络" subtitle="该阶段出场人物的同场关系（环形布局）">
+          <div ref="miniNetEl" class="chart chart-md" />
         </ChartCard>
         <div class="grid-2 section-gap">
           <ChartCard title="阶段密度变化" subtitle="相对前一阶段的网络密度增减">
@@ -291,6 +419,34 @@ watch(() => store.scriptId, load)
 @media (max-width: 1100px) {
   .kpi-row { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+.corr-filters, .stage-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.65rem;
+}
+.tab {
+  padding: 0.28rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.tab.active { background: var(--accent-gold); font-weight: 600; }
+.corr-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.corr-table th, .corr-table td { padding: 0.45rem; border-bottom: 1px solid var(--border); text-align: left; }
+.evidence { font-size: 0.75rem; color: var(--text-muted); max-width: 220px; }
+.link-btn {
+  margin-right: 0.25rem;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff8ee;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
 @media (max-width: 900px) {
   .grid-2 { grid-template-columns: 1fr; }
   .kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
