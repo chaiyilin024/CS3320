@@ -44,37 +44,3 @@ python scripts/sync_frontend_data.py
 cd frontend
 npm run dev
 ```
-
----
-
-## GitHub Pages 在线演示（约 10 部示例剧本）
-
-全库 1473 部体积过大，仓库内提交裁剪后的 **`demo-data/`**（约 2MB），用于公开网页演示。
-
-### 本地预览演示版
-
-```bash
-# 若已跑完全库分析，可重新生成 demo-data（可选）
-python scripts/build_demo_data.py
-
-# 复制 demo-data → frontend/public/data
-cd frontend
-npm run prepare-data
-npm run dev
-```
-
-### 部署到 GitHub Pages
-
-1. 将 `demo-data/` 与代码推送到 GitHub（仓库名假设为 `CS3320`）
-2. 仓库 **Settings → Pages → Build and deployment → Source** 选 **GitHub Actions**
-3. 推送 `main` 分支后，Actions 工作流 `.github/workflows/deploy-pages.yml` 会自动构建并发布
-4. 访问：`https://<你的用户名>.github.io/CS3320/`
-
-修改示例剧本列表：编辑 `configs/demo_plays.json` 后执行 `python scripts/build_demo_data.py`，再提交 `demo-data/`。
-
-### 全库本地开发（可选）
-
-```bash
-python scripts/sync_frontend_data.py   # 同步全部 artifacts → frontend/public/data
-cd frontend && npm run dev
-```
