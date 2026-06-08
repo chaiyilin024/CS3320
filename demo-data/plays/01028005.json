@@ -1,0 +1,4787 @@
+{
+  "script_id": "01028005",
+  "title": "磨房产子",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01028005_磨房产子.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-04T08:59:17.434136+00:00",
+    "page_count": 8,
+    "char_count": 4336,
+    "parse_quality": 0.918,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_李三娘",
+      "name": "李三娘",
+      "aliases": [],
+      "hangdang_labeled": "正旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 87,
+      "first_appearance_block": 79,
+      "is_main": true
+    },
+    {
+      "character_id": "c_刘智远",
+      "name": "刘智远",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 58,
+      "first_appearance_block": 19,
+      "is_main": true
+    },
+    {
+      "character_id": "c_窦有功",
+      "name": "窦有功",
+      "aliases": [],
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 30,
+      "first_appearance_block": 270,
+      "is_main": true
+    },
+    {
+      "character_id": "c_刘氏",
+      "name": "刘氏",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 29,
+      "first_appearance_block": 123,
+      "is_main": true
+    },
+    {
+      "character_id": "c_中军",
+      "name": "中军",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 6,
+      "first_appearance_block": 328,
+      "is_main": true
+    },
+    {
+      "character_id": "c_送子观音",
+      "name": "送子观音",
+      "aliases": [],
+      "hangdang_labeled": "旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 5,
+      "first_appearance_block": 165,
+      "is_main": false
+    },
+    {
+      "character_id": "c_妖精",
+      "name": "妖精",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 2,
+      "first_appearance_block": 38,
+      "is_main": false
+    },
+    {
+      "character_id": "c_张仙",
+      "name": "张仙",
+      "aliases": [],
+      "hangdang_labeled": "生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 2,
+      "first_appearance_block": 167,
+      "is_main": false
+    },
+    {
+      "character_id": "c_护法",
+      "name": "护法",
+      "aliases": [],
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 2,
+      "first_appearance_block": 171,
+      "is_main": false
+    },
+    {
+      "character_id": "c_二衙役",
+      "name": "二衙役",
+      "aliases": [],
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "丑",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 1,
+      "first_appearance_block": 338,
+      "is_main": false
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "【第一场】",
+      "block_range": [
+        17,
+        267
+      ],
+      "character_ids": [
+        "c_刘智远",
+        "c_刘氏",
+        "c_妖精",
+        "c_张仙",
+        "c_护法",
+        "c_李三娘",
+        "c_送子观音"
+      ]
+    },
+    {
+      "scene_id": "s_2",
+      "scene_index": 2,
+      "title": "【第二场】",
+      "block_range": [
+        268,
+        325
+      ],
+      "character_ids": [
+        "c_李三娘",
+        "c_窦有功"
+      ]
+    },
+    {
+      "scene_id": "s_3",
+      "scene_index": 3,
+      "title": "【第三场】",
+      "block_range": [
+        326,
+        361
+      ],
+      "character_ids": [
+        "c_中军",
+        "c_二衙役",
+        "c_刘智远",
+        "c_窦有功"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "李三娘：正旦",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "刘智远：正生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "刘氏：丑旦",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "窦有功：老生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "送子观音：旦",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "张仙：生",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "护法：小生",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "二衙役：丑",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "刘智远（即五代时之后汉高祖）生有膂力，出身贫苦，少年时为李氏赘婿。妻名三娘，性极柔懦。夫妇二人，",
+      "performance_tags": [],
+      "char_len": 48,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "互相敬爱。依李氏为生活。自岳父母去世后，合家遂加白眼。其内嫂刘氏，尤为悍妬泼辣，外号人称一丈青。执掌家务，屡嫌刘智远夫妇坐食，忿不能平。适刘智远于后园石匣内，夺得妖魔守护之金盔金甲，并梅",
+      "performance_tags": [],
+      "char_len": 93,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "花点钢枪，乃往邠州投军，以图远大事业。李三娘一人在家，刘氏更无忌惮，虐待殊甚。一切奴婢应为之事，",
+      "performance_tags": [],
+      "char_len": 48,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_13",
+      "block_index": 13,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "均以李三娘任之。每日工作之外，又欲磨面粉若干，稍有不足，鞭打立至。明知李三娘受孕，亦不肯放松一步。日复一日，李三娘腹中震动，在磨房内产生一子。凡初生者，必有脐带牵连，不得剪刀，用齿咬断",
+      "performance_tags": [],
+      "char_len": 92,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "（后为隐帝小说家所称咬脐郎是也）。刘氏一见，毒念顿萌，定欲绝其根株。遂于李三娘怀中，偷去小孩，抛弃后园池畔。幸遇邻居窦老救起，密告李三娘。亲送至邠州。其时刘智远立有军功，趋升显职。窦老将李三",
+      "performance_tags": [],
+      "char_len": 95,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_15",
+      "block_index": 15,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "娘所遭困厄，略陈梗概。刘智远莫名感谢，厚待窦老焉。",
+      "performance_tags": [],
+      "char_len": 25,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "根据《戏考》第二十八册整理",
+      "performance_tags": [],
+      "char_len": 13,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_17",
+      "block_index": 17,
+      "scene_id": "s_1",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第一场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘智远上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "胸藏治国安邦，生来秉心高强。力大敢伏虎豹，临高能招龙降。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "在下刘高，表字智远。自从李员外招俺为婿，不幸岳父母陡然去世。妻兄李洪信，倒也待俺罢了，内嫂心怀嫉妬，治家不良，将俺夫妻眼下看待。思想起来，好恼人也！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 69,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "时运不至闷胸怀，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "浮云遮住栋梁材。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "得时狸猫胜如虎，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "失时蛟龙不抱怀。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "运去行舟走逆水，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "时来铁树把花开。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "几朝天子兴和废，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "几朝君王盛与衰。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "言来难尽旁人语，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "慢步来在后花园。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "时当三秋天凉爽，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "五色篱菊闹咳咳。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "行至花亭将下坐，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_35",
+      "block_index": 35,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "一件奇事在眼前。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "日色平西，假山之下，见一怪物将至，待我拔剑斩它。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（妖精上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_妖精",
+      "text": "咱家本非一精灵，多年狐狸变成形。也能呼风并唤雨，也能撒豆与成兵。只因上方朝玉帝，受了天皇旨一封。后花园看守刘高盔和甲，今年今日将宝献。一阵狂风到亭下，只听刘高问一言。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "妖精",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_48",
+      "block_index": 48,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "何方妖魔，在此何事？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_49",
+      "block_index": 49,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_妖精",
+      "text": "妖魔妖魔，将你吃落。三天化成脓，七天无影踪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "妖精",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_50",
+      "block_index": 50,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "好孽畜，吃我一剑！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "妖魔一见回头跑，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_52",
+      "block_index": 52,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "后面跟随勇刘高。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_53",
+      "block_index": 53,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "前跑风帆船下水，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "后跟弩箭怎离弓。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_55",
+      "block_index": 55,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "一个好如脱箭鸟，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_56",
+      "block_index": 56,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "一个好如捉鬼鹰。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "妖魔来到茶蘼架，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "一幌身影无形踪。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "手提宝剑将身站，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "见一石匣在路中。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "原来是一石匣。待我打开一覻。好一副鲜明盔甲，俺来穿戴起来，看看如何？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "浑身披挂已停当，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "耀目生明起亮光。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "古来匠艺真奇巧，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "打造成练似银装。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "一杆银枪八尺五，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "纯钢利刃起锋芒。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "亭前拉过银鬃马，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "扳鞍上马抖丝缰。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "花园宽敞跑几次，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "舞动梨花杆战枪。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_73",
+      "block_index": 73,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "刘高马上多欢喜，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "离鞍弃蹬解戎装。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "连忙包起盔和甲，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "来见妻子李三娘。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "三娘在哪里？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_78",
+      "block_index": 78,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_79",
+      "block_index": 79,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "我夫今日有何事，为何行色甚匆匆？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "刘高便把贤妻叫，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "丈夫言来听端详：只为花园得了盔和甲，要往邠州去投军。倘得荣华回故里，夫妻团圆再相逢。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_87",
+      "block_index": 87,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "三娘闻言珠泪滚，我夫此去要早回程。荣华富贵虽要紧，莫忘夫妻结发情。夫妻说到伤心处，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_92",
+      "block_index": 92,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘智远",
+      "text": "叹坏刘高英雄心。自今邠州去投军，要相逢一十八年还有零。辞别我妻跨金蹬，不分昼夜赶路程。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_97",
+      "block_index": 97,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "三娘！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_98",
+      "block_index": 98,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "高郎！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_99",
+      "block_index": 99,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "我妻！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_100",
+      "block_index": 100,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "夫吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_101",
+      "block_index": 101,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘智远下。李三娘哭，进门关门。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 17,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_102",
+      "block_index": 102,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "进得磨房闷悠悠，十人一见九人愁。虽然不是监牢狱，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘哭。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "受苦三娘在里头。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_105",
+      "block_index": 105,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "奴家李三娘，配夫刘高。可怜我一双爹娘，下世去了，家中只有哥嫂二人。不想他夫妇，新生嫉妬，命我丈夫看守瓜园。那花园里面，出了一个妖怪。谁想丈夫气高力强，来到花园，将妖打死，得了盔甲银枪。他一心心要往邠州，投军去了。留奴一人在此，日间汲水，夜间挨磨。受此折磨，不知何日方得出头？咳！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 102,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_108",
+      "block_index": 108,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "既在矮檐下，怎敢不低头。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "李三娘扶磨棍珠泪盈盈，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮慢板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "埋怨着哥和嫂实在无情。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "一双爹娘逝世去，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "流落恶人毒手中。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "逼迫奴日间里井台汲水，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "夜来挨磨五更终。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "受不尽日夜里千般万苦，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "恼怒在心不中用。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "又想起刘高郎瓜园分别，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "不知在何日里再得相逢？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "李三娘瓜房内空嗟感叹，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "要团圆除非那得在梦中。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "也罢！挨了多时，身体困倦，不免坐在磨盘之下，歇息片刻便了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 29,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘氏上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_123",
+      "block_index": 123,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "日念心经数篇，南无阿弥陀佛。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_124",
+      "block_index": 124,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "吾乃刘氏，乳名一丈青，嫁与李洪信为妻。我丈夫叫我管理家务。哈哈哈！幸喜一双公婆，尽皆亡故。家中只有小姑一人，名唤三娘。她的丈夫刘高，已经出外去了。常言道得好，出嫁女儿，娘家留住。她在家专管吃的穿的，不是个",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 102,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_125",
+      "block_index": 125,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "道理。我叫她白日汲水，黑夜推磨，当为下贱使唤。正是：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 26,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_126",
+      "block_index": 126,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "眼前便宜莫错过，不管旁人说短长。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_127",
+      "block_index": 127,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "这时候已不早了，看看那贱人推磨什么样了，成不成？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "行行去去，去去行行。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "来此已是磨房，怎么不见动静？待俺叫门。三娘开门！三娘开门来！怎么不听见？好贱人，我来拨进去！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘氏进门，怒。）",
+      "performance_tags": [],
+      "char_len": 9,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_133",
+      "block_index": 133,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "好贱人，不与我推磨，在此盹睡。吃我一个耳把子！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_134",
+      "block_index": 134,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘哭。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_135",
+      "block_index": 135,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "嫂嫂息怒，待我推磨就是了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_136",
+      "block_index": 136,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "贱人呀贱人！限你明日早晨，麸面俱全。若是不然，管叫你死在眼前！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘氏出，听，下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 10,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_138",
+      "block_index": 138,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "李三娘受挨磨伤心落泪，又恐怕恶嫂嫂在外窃听。战战兢兢心内惊，暗地伤悲不敢声。想起我夫刘智远，你在邠州怎知情？奴意欲带悬梁高挂自尽，都只为身怀孕十月有零。没奈何终日里身受苦楚，等候那分娩时另生别情。若然是生下了一个婴儿，我即当差他人送至邠城。要是生下一女子，那时任便我意行。三娘说到伤心处，忽听门外有人声。吓得满身答极战，手扶棍磨不放松。上前急行用力推，两腿酸痛腹内疼。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮慢板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_158",
+      "block_index": 158,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘捧腹。）",
+      "performance_tags": [],
+      "char_len": 8,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_159",
+      "block_index": 159,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "哎呀，苦吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_160",
+      "block_index": 160,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "降生不在别时间，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮慢板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_161",
+      "block_index": 161,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "偏偏只在今夜中。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_162",
+      "block_index": 162,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "说着说着身体重，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_163",
+      "block_index": 163,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "不免坐在地流中。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_164",
+      "block_index": 164,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四神兵、张仙、护法引送子观音同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 19,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_165",
+      "block_index": 165,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_送子观音",
+      "text": "吾乃慈航道人送子观音是也。今奉玉帝敕旨，紫薇垣内巨星高降。有一朝人王帝主之分，命吾送与刘高为子，他妻李三娘，魔难将满，今夜降生之期，不免送去便了。张仙！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 73,
+      "speaker_name_raw": "送子观音",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_167",
+      "block_index": 167,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张仙",
+      "text": "在。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "张仙",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_168",
+      "block_index": 168,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_送子观音",
+      "text": "将此子怀抱，送往沙陀村去。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "送子观音",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_169",
+      "block_index": 169,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张仙",
+      "text": "领法旨。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "张仙",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_170",
+      "block_index": 170,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_送子观音",
+      "text": "护法！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "送子观音",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_171",
+      "block_index": 171,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_护法",
+      "text": "菩萨。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "护法",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_172",
+      "block_index": 172,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_送子观音",
+      "text": "引路者。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "送子观音",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_173",
+      "block_index": 173,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_护法",
+      "text": "领法旨。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "护法",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_174",
+      "block_index": 174,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（〖吹打〗。四神兵、张仙、护法、送子观音同行，同上绕坞。）",
+      "performance_tags": [
+        "打",
+        "做"
+      ],
+      "char_len": 29,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_175",
+      "block_index": 175,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_送子观音",
+      "text": "善哉善哉，大慈悲，救苦难，渡迷津，离苦海。犹晓的，观音如在。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 30,
+      "speaker_name_raw": "送子观音",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_176",
+      "block_index": 176,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘内哭，即降生，抱子上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 16,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_177",
+      "block_index": 177,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "昏迷醒来时梦间，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮导板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_178",
+      "block_index": 178,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "磨房产下小儿郎。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_179",
+      "block_index": 179,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "虽然是喜身受苦，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_180",
+      "block_index": 180,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "只见脐带又牵连。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_181",
+      "block_index": 181,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "婴儿不住呱呱哭，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_182",
+      "block_index": 182,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "哭得三娘不奈烦。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_183",
+      "block_index": 183,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "无奈高声把嫂嫂叫，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_184",
+      "block_index": 184,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "嫂嫂吓！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_185",
+      "block_index": 185,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "叫了十声九不相干。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_186",
+      "block_index": 186,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "只喊得口干舌燥无有力，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_187",
+      "block_index": 187,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "忽听门外怒声喧。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_188",
+      "block_index": 188,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘氏上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_189",
+      "block_index": 189,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "好贱人！不给我推磨，在此怪声怪气干甚么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_190",
+      "block_index": 190,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "你妹妹产下婴儿在磨道下，与我剪刀将脐剪。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_192",
+      "block_index": 192,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "你这贱人活不做，还养儿子哩？哪里有剪刀与你剪那鳖种羔子！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_193",
+      "block_index": 193,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "听此言越添悲痛，不由人心更悽惨。哭一声爹娘你在哪厢？啊啊啊，爹娘吓！骂声嫂嫂你心太狠，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_198",
+      "block_index": 198,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "我狠，狠你把我怎么样？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_199",
+      "block_index": 199,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "不念我生死在眼前。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_200",
+      "block_index": 200,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "你这贱人死了，我才欢喜哩！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_201",
+      "block_index": 201,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "罢罢罢，无奈何将脐带来咬断，提起名儿唤你咬脐男。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_203",
+      "block_index": 203,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "你那是胡说！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_204",
+      "block_index": 204,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "咬脐儿谁知我母子苦楚，你爹爹在邠州哪知道这样事端。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_206",
+      "block_index": 206,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "你养了鳖羔子，这还想你那汉子吗？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_207",
+      "block_index": 207,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "我丈夫他与我非是一载，常言道夫妻情如同地天。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_209",
+      "block_index": 209,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "哦哦！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_210",
+      "block_index": 210,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "一丈青听此言心中大怒，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_211",
+      "block_index": 211,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "你那里把为嫂当作何人？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_212",
+      "block_index": 212,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "不过是嫂嫂。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_213",
+      "block_index": 213,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "养孩子你这里又想汉子，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_214",
+      "block_index": 214,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "俺是夫妻，岂有不想？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_215",
+      "block_index": 215,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "他已做別乡鬼无有信音。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_216",
+      "block_index": 216,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "他总有回家一日。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_217",
+      "block_index": 217,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "无廉耻在我家做些什么？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_218",
+      "block_index": 218,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "是我爹娘家的，不妨事。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_219",
+      "block_index": 219,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "专管吃又管穿不知事情。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_220",
+      "block_index": 220,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "爹娘撇下来得。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_221",
+      "block_index": 221,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "你不过汲水推磨，他不难为与你，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_222",
+      "block_index": 222,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "应受折磨。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_223",
+      "block_index": 223,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "你还道你嫂嫂是个恶人。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_224",
+      "block_index": 224,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "本来不善。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_225",
+      "block_index": 225,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "怒一怒急将这鳖羔子夺过，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_226",
+      "block_index": 226,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "哎吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_227",
+      "block_index": 227,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘、刘氏同夺。李三娘哭。）",
+      "performance_tags": [],
+      "char_len": 16,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_228",
+      "block_index": 228,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "我将他抛在那花园池内。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_229",
+      "block_index": 229,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "苦呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_230",
+      "block_index": 230,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "李三娘上前来双膝跪下，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_231",
+      "block_index": 231,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "尊一声贤嫂嫂细听根原：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_232",
+      "block_index": 232,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "千不是万不是是我不是，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_233",
+      "block_index": 233,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "望求你将婴儿狗命保全。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_234",
+      "block_index": 234,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "你当是发慈悲救苦救难，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_235",
+      "block_index": 235,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "尤比那佛面前诵经拜念。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_236",
+      "block_index": 236,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "听此言不由我心中发怒，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_237",
+      "block_index": 237,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "骂一声小贱人你听我言：你今晚要孩子万万不能，耽误了我的面你命休也。我说的言和语牢牢紧记，我今日有事情且赴花园。鳖羔子要抛在花园池内，省得你昼夜里受尽牵连。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_244",
+      "block_index": 244,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "叫嫂嫂你把那婴儿留下，你就是我父母重生一般。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_246",
+      "block_index": 246,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘氏",
+      "text": "你爹娘在地下想着你，要你一块儿去哩！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_247",
+      "block_index": 247,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "你若是救我的母子苦难，那时间我夫还一同叩谢。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_249",
+      "block_index": 249,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "不提起你汉子当还由可，提起来我心中更把怒添！道是你死爹娘招的好女婿，吃俺的穿俺的不把事管。最不该将我的瓜园毁坏，失了羞没有脸逃走在外。我越思越想越动怒，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_256",
+      "block_index": 256,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘氏行，李三娘扯住刘氏，刘氏推倒李三娘。）",
+      "performance_tags": [],
+      "char_len": 22,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_257",
+      "block_index": 257,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘氏",
+      "text": "一丈青走上前忙来溜烟。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘氏",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_258",
+      "block_index": 258,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘氏下。李三娘醒。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_259",
+      "block_index": 259,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "苦吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_260",
+      "block_index": 260,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "见嫂嫂此一去儿无性命，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_261",
+      "block_index": 261,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "不由的悲切切叫声天爷！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_262",
+      "block_index": 262,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "咬脐儿今何在母泪不干，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_263",
+      "block_index": 263,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "不想到我的儿同遭此难。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_264",
+      "block_index": 264,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "我丈夫在邠州身得自在，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_265",
+      "block_index": 265,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "你妻儿遭灾难何日见青天？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "李三娘",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_266",
+      "block_index": 266,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "苦吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "哭"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_267",
+      "block_index": 267,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_268",
+      "block_index": 268,
+      "scene_id": "s_2",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第二场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_269",
+      "block_index": 269,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（窦有功上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_270",
+      "block_index": 270,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "浮生空碌碌，光阴箭离弦。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "引子"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_271",
+      "block_index": 271,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（窦有功坐。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_272",
+      "block_index": 272,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "月过十五光明少，人生七十古来稀。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_273",
+      "block_index": 273,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "老汉窦有功，沙陀村人氏。年已八旬，村中称为窦老，这也不在话下。只因隔壁李三娘，与她嫂嫂吵闹，又听得婴儿啼哭声。我想那婴儿，必是三娘所生，她嫂嫂生心嫉妬，定有别故。为此暗往她家花园，探听动静。不料这恶妇，适将婴儿，掠在这花池内，要害他性命。那时老汉暗暗潜伏池畔，将他救出。因此趁早站立门首，等候三娘出来，说明端的。一言未了，三娘来也。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 68,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_275",
+      "block_index": 275,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_276",
+      "block_index": 276,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "三娘汲水赴泉台，肩挑水桶哭哀哀。产生婴儿无人救，将他一命赴黄泉。悲悲切切往前走，只见窦老在门前。忍泪走向前旁去，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_283",
+      "block_index": 283,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_窦有功",
+      "text": "有老汉上前来细问根言。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_284",
+      "block_index": 284,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "三娘哪里去？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_285",
+      "block_index": 285,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "井台汲水。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_286",
+      "block_index": 286,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "不要汲水。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_287",
+      "block_index": 287,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "有恐嫂嫂见怪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_288",
+      "block_index": 288,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "不妨。老汉着人代你汲水便了。到我家中，有言相问。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_289",
+      "block_index": 289,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "是。如此请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_290",
+      "block_index": 290,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（窦有功、李三娘同进门。）",
+      "performance_tags": [],
+      "char_len": 13,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_291",
+      "block_index": 291,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "窦伯伯，有何话说。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_292",
+      "block_index": 292,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "老汉夜来，听你姑嫂吵闹，婴儿啼哭，究为何事？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_293",
+      "block_index": 293,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘哭。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_294",
+      "block_index": 294,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "窦伯伯吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_295",
+      "block_index": 295,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "三娘一听窦老问，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_296",
+      "block_index": 296,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "不由心中苦万分。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_297",
+      "block_index": 297,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "不必如此，说来我听。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_298",
+      "block_index": 298,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "身遭折磨不胜诉，昨夜生下一婴儿。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_300",
+      "block_index": 300,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "叫人可喜！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_301",
+      "block_index": 301,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "一见嫂嫂嫉妬生，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_302",
+      "block_index": 302,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "叫人可恨！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_303",
+      "block_index": 303,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "夺婴儿要将他命来害。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_304",
+      "block_index": 304,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "可怜吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_305",
+      "block_index": 305,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "因此上吵闹得邻舍不安，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_306",
+      "block_index": 306,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_窦有功",
+      "text": "听此言不由我可恨又可悲。又喜得刘贵人有了后代，叫三娘你只管把心放开。婴儿的性命不能害，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_310",
+      "block_index": 310,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "现在哪里？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_311",
+      "block_index": 311,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_窦有功",
+      "text": "且等着自然与你抱出来。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_312",
+      "block_index": 312,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（窦有功抱婴儿见李三娘。）",
+      "performance_tags": [],
+      "char_len": 13,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_313",
+      "block_index": 313,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "叫人可喜可怜又可哀哉，救命之恩难报答。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_315",
+      "block_index": 315,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_窦有功",
+      "text": "我潜伏花园将他救，竟要送他往邠州寨。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_317",
+      "block_index": 317,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "如此说来，感恩不尽。窦伯伯受奴一拜！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_318",
+      "block_index": 318,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "老汉当不起。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_319",
+      "block_index": 319,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "救命之恩比天高，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_320",
+      "block_index": 320,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_窦有功",
+      "text": "不辞劳苦走一遭。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_321",
+      "block_index": 321,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_李三娘",
+      "text": "若得他父子来相见，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_322",
+      "block_index": 322,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_窦有功",
+      "text": "要是洩漏事难成。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_323",
+      "block_index": 323,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "三娘子万不可洩漏了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_324",
+      "block_index": 324,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_李三娘",
+      "text": "是，晓得。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "李三娘",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_325",
+      "block_index": 325,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（李三娘、窦有功同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_326",
+      "block_index": 326,
+      "scene_id": "s_3",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第三场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_327",
+      "block_index": 327,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（中军上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_328",
+      "block_index": 328,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_中军",
+      "text": "常在虎帐立，专听号令行。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "中军",
+      "performance_cues_raw": [
+        "引子"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_329",
+      "block_index": 329,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_中军",
+      "text": "俺邠州节度使中军是也。今值升帐之期，只在此间伺候。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 25,
+      "speaker_name_raw": "中军",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_330",
+      "block_index": 330,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（窦有功上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_331",
+      "block_index": 331,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "特地来送子，不辞千里繁。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_332",
+      "block_index": 332,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "来此已是辕门。门上哪位在？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_334",
+      "block_index": 334,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_中军",
+      "text": "哪里来的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "中军",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_335",
+      "block_index": 335,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "沛国沙陀村来的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_336",
+      "block_index": 336,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_中军",
+      "text": "原来是大老爷的乡亲。来，伺候着。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "中军",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_337",
+      "block_index": 337,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（二衙役同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 8,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_338",
+      "block_index": 338,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_二衙役",
+      "text": "晓得。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "二衙役",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_339",
+      "block_index": 339,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_中军",
+      "text": "启禀大老爷：辕门外有大老爷乡亲求见。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "中军",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_340",
+      "block_index": 340,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘智远上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_341",
+      "block_index": 341,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "万事皆由命，半点不由人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_342",
+      "block_index": 342,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "下官刘高。顷闻中军，禀称有沙陀村乡亲求见。中军吩咐出去，有请！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_344",
+      "block_index": 344,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_中军",
+      "text": "有请！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "中军",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_345",
+      "block_index": 345,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "贵人请上，待老汉拜见！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_346",
+      "block_index": 346,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "不敢。请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_347",
+      "block_index": 347,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "告坐了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_348",
+      "block_index": 348,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "窦伯伯因何到此？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_349",
+      "block_index": 349,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "老汉不辞千里之远，特为贵人送子而来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_350",
+      "block_index": 350,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "多谢了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_351",
+      "block_index": 351,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "好说。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_352",
+      "block_index": 352,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "家中大小可好么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_353",
+      "block_index": 353,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "俱好。惟三娘事情繁杂，不可胜诉。日后贵人回家，便知端的。老汉告辞了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_354",
+      "block_index": 354,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "既是如此，受下官一拜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_355",
+      "block_index": 355,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "老汉不敢当的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_356",
+      "block_index": 356,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "多谢千里送子情，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_357",
+      "block_index": 357,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "不辞跋涉积功阴。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_358",
+      "block_index": 358,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘智远",
+      "text": "恩似邱山同一般，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘智远",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_359",
+      "block_index": 359,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦有功",
+      "text": "不知何日再相逢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦有功",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_360",
+      "block_index": 360,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘智远、窦有功同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_361",
+      "block_index": 361,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 7
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_中军",
+      "target_id": "c_二衙役",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_中军",
+      "target_id": "c_刘智远",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_中军",
+      "target_id": "c_窦有功",
+      "weight": 7.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_二衙役",
+      "target_id": "c_刘智远",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_二衙役",
+      "target_id": "c_窦有功",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘智远",
+      "target_id": "c_刘氏",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘智远",
+      "target_id": "c_妖精",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘智远",
+      "target_id": "c_张仙",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘智远",
+      "target_id": "c_护法",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘智远",
+      "target_id": "c_李三娘",
+      "weight": 7.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘智远",
+      "target_id": "c_窦有功",
+      "weight": 29.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 14,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘智远",
+      "target_id": "c_送子观音",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘氏",
+      "target_id": "c_妖精",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘氏",
+      "target_id": "c_张仙",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘氏",
+      "target_id": "c_护法",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘氏",
+      "target_id": "c_李三娘",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘氏",
+      "target_id": "c_送子观音",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_妖精",
+      "target_id": "c_张仙",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_妖精",
+      "target_id": "c_护法",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_妖精",
+      "target_id": "c_李三娘",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_妖精",
+      "target_id": "c_送子观音",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张仙",
+      "target_id": "c_护法",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张仙",
+      "target_id": "c_李三娘",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张仙",
+      "target_id": "c_送子观音",
+      "weight": 7.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_护法",
+      "target_id": "c_李三娘",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_护法",
+      "target_id": "c_送子观音",
+      "weight": 7.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_李三娘",
+      "target_id": "c_窦有功",
+      "weight": 19.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 9,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_李三娘",
+      "target_id": "c_送子观音",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "神话剧",
+    "era_inferred": "神话"
+  }
+}

@@ -1,0 +1,2133 @@
+{
+  "script_id": "01002006",
+  "title": "探阴山",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01002006_探阴山.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-04T08:59:05.673084+00:00",
+    "page_count": 3,
+    "char_count": 1610,
+    "parse_quality": 0.994,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_包拯",
+      "name": "包拯",
+      "aliases": [],
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "净",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 63,
+      "first_appearance_block": 9,
+      "is_main": true
+    },
+    {
+      "character_id": "c_油流鬼",
+      "name": "油流鬼",
+      "aliases": [],
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "丑",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 25,
+      "first_appearance_block": 36,
+      "is_main": true
+    },
+    {
+      "character_id": "c_柳金蝉",
+      "name": "柳金蝉",
+      "aliases": [],
+      "hangdang_labeled": "旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 15,
+      "first_appearance_block": 81,
+      "is_main": true
+    },
+    {
+      "character_id": "c_王朝",
+      "name": "王朝",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 1,
+      "first_appearance_block": 31,
+      "is_main": true
+    },
+    {
+      "character_id": "c_马汉",
+      "name": "马汉",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 1,
+      "first_appearance_block": 33,
+      "is_main": true
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "全剧",
+      "block_range": [
+        0,
+        122
+      ],
+      "character_ids": [
+        "c_包拯",
+        "c_柳金蝉",
+        "c_油流鬼",
+        "c_王朝",
+        "c_马汉"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "包拯：净",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "油流鬼：丑",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "柳金蝉：旦",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "宋仁宗大放花灯，与民同乐。有女子柳金蝉随家人逛灯中途失散，踽踽独行，被无赖李保诱至家中，强奸逼死，移尸颜查散门首卸祸。地方不察，逮颜查散于案。包拯审问时，颜查散极口呼冤。包拯以颜查散书生，",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "不类杀人者，乃下阴曹，令判官查生死簿。簿上注明柳金蝉因看灯为颜查散奸毙。包拯终不信，私访至阴山，",
+      "performance_tags": [],
+      "char_len": 48,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "得柳金蝉冤魂而问之，始知凶手为李保，而判官为李保之母舅，徇私舞弊，擅改生死簿。包拯大怒，立令判官改正。判官不认，竞至与阎罗相骂，包拯怒铡之。回至阳世，释颜查散，铡李保了案。",
+      "performance_tags": [],
+      "char_len": 86,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "根据《戏考》第二册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "扶大宋锦华夷赤心肝胆，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "内二黄导板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（包拯上，四青袍、王朝、马汉、张龙、赵虎同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 24,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "坐开封无一日心不忧烦。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "回龙"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "多只为那柳金蝉屈死凄惨，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_13",
+      "block_index": 13,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "错断了颜查散年幼儿男。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "我且到望乡台亲自查看，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_15",
+      "block_index": 15,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（包拯上台子。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 8,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "又只见：大鬼卒、小鬼判、牛头马面，押定了去世的亡魂项带铁链，悲惨惨，阴风绕，遍体冷，我心胆皆寒。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄垛板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "站立在望乡台用目观看：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "望开封那就是自己的家园。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "牙床上睡一人蓬头铁面，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "有王朝和马汉睡卧在两边。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "可怜他初为官定远小县，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "可怜他审赵大又被人参。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "可怜他断日光又把君谏，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "可怜他为查散，下阴曹，游七殿，一殿一殿哪得安然！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "观东方一阵明一阵发暗，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "那就是受罪处名叫阴山。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "屈死鬼一定在那厢受难，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "俺包拯要入那虎穴龙潭。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "叫王朝，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "包拯",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_王朝",
+      "text": "有。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "王朝",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "和马汉，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_马汉",
+      "text": "有。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "马汉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "阴山去看，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_35",
+      "block_index": 35,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（包拯下台子。油流鬼上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 13,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "何方冤鬼，少往前进！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "唔！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "山谷中缘何有一鬼孤单？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_39",
+      "block_index": 39,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "何方冤鬼，在此摆来摆去？待我油流鬼将你们拿下！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_40",
+      "block_index": 40,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "唔，你为何叫做油流鬼？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_41",
+      "block_index": 41,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "各殿灯油，多是我添，故而叫做油流鬼。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_42",
+      "block_index": 42,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "你在此作甚？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_43",
+      "block_index": 43,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "在此看守冤鬼。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_44",
+      "block_index": 44,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "唔，你这里也有冤鬼么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_45",
+      "block_index": 45,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "冤鬼多得很，你问他干什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_46",
+      "block_index": 46,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "哦，老夫就是那龙图阁大学士兼理开封，包拯。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_47",
+      "block_index": 47,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "原来是包大人，小鬼不知，多有得罪！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_48",
+      "block_index": 48,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "罢了，起来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_49",
+      "block_index": 49,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "多谢大人！不在阳间来到阴山作甚？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_50",
+      "block_index": 50,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "老夫只为一桩奇冤，亲下阴曹。你在此看守，多是些什么冤鬼？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "内有一女鬼，名叫柳氏金蝉。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_52",
+      "block_index": 52,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "那柳金蝉……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_53",
+      "block_index": 53,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "正是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "得何病症而死？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_55",
+      "block_index": 55,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "因李保图财害命，用绳索勒死的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_56",
+      "block_index": 56,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "这就不对了。老夫在五殿也曾看过生死簿：“颜查散谋死表妹柳金蝉”，怎么说是李保？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 39,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "你要说颜查散谋害人命，这就屈枉死好人！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "怎见得？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "那旁有一太湖石，你且坐下，待我慢慢儿的讲来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "慢慢讲来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "只因正月十五日大放花灯，忽然狂风一阵，将灯吹灭。来了一只猛虎，将柳小姐背到喜鹊桥边。来了恶人李保，图财害命，用绳索勒死的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 61,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "那柳金蝉为何不到阎君那里控告于他？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "想她前去控告，那李保乃是我家判爷的外甥，将柳小姐藏在阴山，将生死簿改移了“颜查散谋死表妹柳金蝉”。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 49,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "他改移生死簿难道上面无有墨迹么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "他撕了一篇，写上一篇，哪里来的墨迹！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "他撕了一篇，放在何处？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "他揉了纸揉，订了生死簿。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "你待怎讲？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "订了生死簿。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "好判官！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "好一个大胆无知判官，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "改移了生死簿讲我遮瞒。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_73",
+      "block_index": 73,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "五阎君依仗你是阴曹的障暗，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "包拯",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "油流鬼有一事还要你仔细详参。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "包拯",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "油流鬼，柳金蝉的阴魂今在何处？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "现在阴山背后石桥底下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "带路，老夫观看。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_78",
+      "block_index": 78,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "待我唤她一声，听她讲些什么。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_79",
+      "block_index": 79,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "但凭于你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_80",
+      "block_index": 80,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "柳金蝉，阎君查看阴山，你可要听好了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_柳金蝉",
+      "text": "苦吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "在阳间哪知道阴世路远，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "内二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "柳金蝉这冤仇总有万千。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_84",
+      "block_index": 84,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "那判爷与李保骨肉亲眷，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_85",
+      "block_index": 85,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "但不知何日里得见青天？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_86",
+      "block_index": 86,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "你听见没有？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_87",
+      "block_index": 87,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "嗳！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_88",
+      "block_index": 88,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "耳听得哭声高如同眼见，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_89",
+      "block_index": 89,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "方信那油流鬼话不虚传。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_90",
+      "block_index": 90,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "带上了柳金蝉老夫判断，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_91",
+      "block_index": 91,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "我家判爷厉害！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_92",
+      "block_index": 92,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "唔，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_93",
+      "block_index": 93,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "谁不知包青天法律森严？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_94",
+      "block_index": 94,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "柳金蝉走动！哈！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "忽听得油流鬼一声呼唤，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "内二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_96",
+      "block_index": 96,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（柳金蝉上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_97",
+      "block_index": 97,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "问鬼哥呼唤我请为哪般？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_98",
+      "block_index": 98,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_柳金蝉",
+      "text": "鬼哥唤我何事？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_99",
+      "block_index": 99,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "包大人查看阴山。有什么冤枉前去申诉。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_100",
+      "block_index": 100,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_柳金蝉",
+      "text": "有劳了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_101",
+      "block_index": 101,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "听说是包大人查看阴山，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_102",
+      "block_index": 102,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "不由得柳金蝉喜在心间。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "哭啼啼走上前开恩一线！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "哭啼啼哀告我有什么奇冤？我问你名和姓家住在哪县？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_106",
+      "block_index": 106,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "家住在汴梁城柳氏金蝉。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_107",
+      "block_index": 107,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "是何人谋害你身遭大难？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_108",
+      "block_index": 108,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "被李保谋害我命丧黄泉。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "下阴曹到五殿可投案卷？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_柳金蝉",
+      "text": "被判爷他将我藏在阴山。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "柳金蝉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "好判官呐！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "到如今我才得真供一篇，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "尽都是小判官诡计多端。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "将金蝉五刑法俱已宽免，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": "c_包拯",
+      "text": "在阴山且停候天子传言。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "油流鬼，将柳金蝉交付与你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_油流鬼",
+      "text": "遵命！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "油流鬼",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "带下去。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（油流鬼、柳金蝉下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": null,
+      "type": "dialogue",
+      "speaker_id": "c_包拯",
+      "text": "王朝、马汉，打道五殿！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "包拯",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 3
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_包拯",
+      "target_id": "c_柳金蝉",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_包拯",
+      "target_id": "c_油流鬼",
+      "weight": 89.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 44,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_包拯",
+      "target_id": "c_王朝",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_包拯",
+      "target_id": "c_马汉",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_柳金蝉",
+      "target_id": "c_油流鬼",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_柳金蝉",
+      "target_id": "c_王朝",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_柳金蝉",
+      "target_id": "c_马汉",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_油流鬼",
+      "target_id": "c_王朝",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_油流鬼",
+      "target_id": "c_马汉",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_王朝",
+      "target_id": "c_马汉",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "公案剧",
+    "era_inferred": "宋代"
+  }
+}

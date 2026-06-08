@@ -1,0 +1,354 @@
+{
+  "script_id": "01001009",
+  "hangdang_distribution": {
+    "老生": 2,
+    "小生": 2,
+    "青衣": 1,
+    "老旦": 1,
+    "未知": 2
+  },
+  "hangdang_coarse_distribution": {
+    "生": 4,
+    "旦": 2,
+    "未知": 2
+  },
+  "characters": [
+    {
+      "character_id": "c_韩廷凤",
+      "name": "韩廷凤",
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_final": "小生",
+      "confidence": 0.95,
+      "top_features": [
+        "hangdang_raw=外",
+        "line_count_bucket=high",
+        "gender=男",
+        "age=老年",
+        "identity=谋士",
+        "personality=忠义",
+        "personality=诙谐",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "谋士",
+        "age": "老年",
+        "personality": [
+          "忠义",
+          "诙谐"
+        ],
+        "performance_cues": [
+          "唱",
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_吴惠泉",
+      "name": "吴惠泉",
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_final": "老生",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=男",
+        "age=老年",
+        "identity=弟兄",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "弟兄",
+        "age": "老年",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_金氏",
+      "name": "金氏",
+      "hangdang_labeled": "老旦",
+      "hangdang_inferred": null,
+      "hangdang_final": "老旦",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=mid",
+        "gender=女",
+        "age=老年",
+        "identity=妃后",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "女",
+        "identity": "妃后",
+        "age": "老年",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_韩遇运",
+      "name": "韩遇运",
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_final": "小生",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=mid",
+        "gender=男",
+        "age=老年",
+        "identity=谋士",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "谋士",
+        "age": "老年",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_江氏",
+      "name": "江氏",
+      "hangdang_labeled": "青衣",
+      "hangdang_inferred": null,
+      "hangdang_final": "青衣",
+      "confidence": 0.95,
+      "top_features": [
+        "hangdang_raw=旦",
+        "line_count_bucket=mid",
+        "gender=女",
+        "age=老年",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "女",
+        "age": "老年",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_媒婆",
+      "name": "媒婆",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_家院",
+      "name": "家院",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "老生",
+      "hangdang_final": "老生",
+      "confidence": 0.72,
+      "top_features": [
+        "line_count_bucket=low",
+        "age=老年",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "age": "老年",
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_丫鬟",
+      "name": "丫鬟",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    }
+  ],
+  "trait_summary": [
+    {
+      "trait": "gender=男",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "age=老年",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "identity=谋士",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "age=老年",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "老生",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "hangdang_raw=外",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "personality=忠义",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "identity=弟兄",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "老生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "老旦",
+      "count": 1
+    },
+    {
+      "trait": "gender=女",
+      "hangdang": "老旦",
+      "count": 1
+    },
+    {
+      "trait": "age=老年",
+      "hangdang": "老旦",
+      "count": 1
+    },
+    {
+      "trait": "identity=妃后",
+      "hangdang": "老旦",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "老旦",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "老旦",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "hangdang_raw=旦",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "gender=女",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "age=老年",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "青衣",
+      "count": 1
+    }
+  ],
+  "labeled_count": 5,
+  "inferred_count": 1
+}

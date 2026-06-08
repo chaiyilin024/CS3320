@@ -14,6 +14,7 @@ onMounted(async () => {
   try {
     const cat = await api.catalog()
     plays.value = cat.plays
+    store.setCatalogMeta(!!cat.demo, cat.demo_note)
     if (!store.scriptId && plays.value[0]) {
       store.setScriptId(plays.value[0].script_id)
     }
@@ -58,7 +59,7 @@ watch(filteredPlays, (list) => {
       </option>
     </select>
     <span v-else-if="loading" class="hint">加载中…</span>
-    <span v-else class="hint error">{{ error || '无剧本数据，请运行 npm run sync-data' }}</span>
+    <span v-else class="hint error">{{ error || '无剧本数据，请运行 npm run prepare-data' }}</span>
     <span v-if="current" class="meta">
       {{ current.collection_name }} · {{ current.tags?.genre_inferred ?? '未知体裁' }}
     </span>

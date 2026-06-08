@@ -1,0 +1,100 @@
+{
+  "script_id": "01001007",
+  "title": "桑园寄子",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-04T09:00:32.922929+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "其他情节",
+      "weight": 1.0,
+      "keywords": [
+        "儿吓",
+        "贼兵",
+        "我父",
+        "爹爹吓",
+        "血书",
+        "不到",
+        "兄弟吓",
+        "如何是好",
+        "杀死",
+        "听说",
+        "行走",
+        "侄儿",
+        "逃走",
+        "写下",
+        "哥哥"
+      ],
+      "keyword_weights": [
+        1.6266,
+        1.4906,
+        0.3183,
+        0.3183,
+        0.1924,
+        0.1852,
+        0.1713,
+        0.1493,
+        0.1457,
+        0.1424,
+        0.1135,
+        0.1008,
+        0.0978,
+        0.0964,
+        0.0874
+      ]
+    }
+  ],
+  "topic_composition": [
+    1.0
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_99",
+      "block_index": 99,
+      "text_snippet": "今有黑水国造反，逢州夺州，遇县抢县，看看杀到我庄来了！",
+      "context_snippet": "何事惊慌？  /  » 今有黑水国造反，逢州夺州，遇县抢县，看看杀到我庄来了！  /  不好了！",
+      "speaker_id": "c_邓伯道",
+      "speaker_name": "邓伯道",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_87",
+      "block_index": 87,
+      "text_snippet": "今有黑水国造反，逢州夺州，遇县抢县，看看杀到我庄来了！",
+      "context_snippet": "何事惊慌？  /  » 今有黑水国造反，逢州夺州，遇县抢县，看看杀到我庄来了！  /  哎呀，这才是福不双降，祸不单行！儿吓，犹恐你母亲在家悬望，我们快快回去吧！",
+      "speaker_id": "c_二家院",
+      "speaker_name": "二家院",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.35,
+    "labeled_weight": 0.0,
+    "fallback_weight": 1.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 1
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 1.0,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "100% 主题为未识别（其他情节/未知）",
+      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+    ]
+  }
+}

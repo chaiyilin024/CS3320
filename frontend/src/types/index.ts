@@ -14,6 +14,8 @@ export interface CatalogPlay {
 
 export interface Catalog {
   version: string
+  demo?: boolean
+  demo_note?: string
   plays: CatalogPlay[]
 }
 

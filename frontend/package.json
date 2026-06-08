@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:demo": "python ../scripts/copy_demo_to_public.py && vite",
+    "prepare-data": "python ../scripts/copy_demo_to_public.py",
     "build": "vue-tsc -b && vite build",
+    "build:demo": "python ../scripts/copy_demo_to_public.py && vue-tsc -b && vite build",
     "preview": "vite preview",
     "sync-data": "python ../scripts/sync_frontend_data.py"
   },

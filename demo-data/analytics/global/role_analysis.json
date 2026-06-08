@@ -1,0 +1,1346 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-08T13:46:01.672261+00:00",
+  "global_feature_hangdang_matrix": [
+    {
+      "feature": "cue=念",
+      "hangdang": "老生",
+      "count": 22,
+      "ratio": 0.1964
+    },
+    {
+      "feature": "line_count_bucket=low",
+      "hangdang": "未知",
+      "count": 15,
+      "ratio": 0.4545
+    },
+    {
+      "feature": "cue=念",
+      "hangdang": "未知",
+      "count": 15,
+      "ratio": 0.4545
+    },
+    {
+      "feature": "cue=念",
+      "hangdang": "小生",
+      "count": 14,
+      "ratio": 0.1707
+    },
+    {
+      "feature": "identity=谋士",
+      "hangdang": "老生",
+      "count": 13,
+      "ratio": 0.1161
+    },
+    {
+      "feature": "gender=男",
+      "hangdang": "老生",
+      "count": 12,
+      "ratio": 0.1071
+    },
+    {
+      "feature": "line_count_bucket=low",
+      "hangdang": "老生",
+      "count": 11,
+      "ratio": 0.0982
+    },
+    {
+      "feature": "age=老年",
+      "hangdang": "老生",
+      "count": 8,
+      "ratio": 0.0714
+    },
+    {
+      "feature": "cue=唱",
+      "hangdang": "老生",
+      "count": 8,
+      "ratio": 0.0714
+    },
+    {
+      "feature": "cue=唱",
+      "hangdang": "小生",
+      "count": 8,
+      "ratio": 0.0976
+    },
+    {
+      "feature": "gender=男",
+      "hangdang": "小生",
+      "count": 8,
+      "ratio": 0.0976
+    },
+    {
+      "feature": "personality=诙谐",
+      "hangdang": "老生",
+      "count": 7,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "matched_identity=谋士",
+      "hangdang": "老生",
+      "count": 7,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "cue=念",
+      "hangdang": "丑",
+      "count": 6,
+      "ratio": 0.2857
+    },
+    {
+      "feature": "line_count_bucket=low",
+      "hangdang": "小生",
+      "count": 6,
+      "ratio": 0.0732
+    },
+    {
+      "feature": "cue=念",
+      "hangdang": "青衣",
+      "count": 6,
+      "ratio": 0.2069
+    },
+    {
+      "feature": "line_count_bucket=high",
+      "hangdang": "老生",
+      "count": 6,
+      "ratio": 0.0536
+    },
+    {
+      "feature": "line_count_bucket=mid",
+      "hangdang": "老生",
+      "count": 5,
+      "ratio": 0.0446
+    },
+    {
+      "feature": "cue=念",
+      "hangdang": "净",
+      "count": 5,
+      "ratio": 0.1562
+    },
+    {
+      "feature": "cue=唱",
+      "hangdang": "净",
+      "count": 5,
+      "ratio": 0.1562
+    },
+    {
+      "feature": "hangdang_raw=旦",
+      "hangdang": "青衣",
+      "count": 5,
+      "ratio": 0.1724
+    },
+    {
+      "feature": "cue=唱",
+      "hangdang": "青衣",
+      "count": 5,
+      "ratio": 0.1724
+    },
+    {
+      "feature": "age=少年",
+      "hangdang": "小生",
+      "count": 5,
+      "ratio": 0.061
+    },
+    {
+      "feature": "personality=诙谐",
+      "hangdang": "小生",
+      "count": 5,
+      "ratio": 0.061
+    },
+    {
+      "feature": "line_count_bucket=mid",
+      "hangdang": "小生",
+      "count": 5,
+      "ratio": 0.061
+    },
+    {
+      "feature": "line_count_bucket=low",
+      "hangdang": "丑",
+      "count": 4,
+      "ratio": 0.1905
+    },
+    {
+      "feature": "gender=女",
+      "hangdang": "青衣",
+      "count": 4,
+      "ratio": 0.1379
+    },
+    {
+      "feature": "line_count_bucket=high",
+      "hangdang": "小生",
+      "count": 4,
+      "ratio": 0.0488
+    },
+    {
+      "feature": "gender=男",
+      "hangdang": "净",
+      "count": 4,
+      "ratio": 0.125
+    },
+    {
+      "feature": "personality=稳重",
+      "hangdang": "小生",
+      "count": 3,
+      "ratio": 0.0366
+    },
+    {
+      "feature": "identity=谋士",
+      "hangdang": "小生",
+      "count": 3,
+      "ratio": 0.0366
+    },
+    {
+      "feature": "line_count_bucket=high",
+      "hangdang": "净",
+      "count": 3,
+      "ratio": 0.0938
+    },
+    {
+      "feature": "gender=男",
+      "hangdang": "武生",
+      "count": 3,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "cue=念",
+      "hangdang": "武生",
+      "count": 3,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "line_count_bucket=mid",
+      "hangdang": "青衣",
+      "count": 3,
+      "ratio": 0.1034
+    },
+    {
+      "feature": "identity=公子",
+      "hangdang": "小生",
+      "count": 3,
+      "ratio": 0.0366
+    },
+    {
+      "feature": "matched_identity=公子",
+      "hangdang": "小生",
+      "count": 3,
+      "ratio": 0.0366
+    },
+    {
+      "feature": "line_count_bucket=mid",
+      "hangdang": "净",
+      "count": 2,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "age=少年",
+      "hangdang": "净",
+      "count": 2,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "identity=谋士",
+      "hangdang": "净",
+      "count": 2,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "personality=稳重",
+      "hangdang": "净",
+      "count": 2,
+      "ratio": 0.0625
+    },
+    {
+      "feature": "identity=谋士",
+      "hangdang": "丑",
+      "count": 2,
+      "ratio": 0.0952
+    },
+    {
+      "feature": "identity=将领",
+      "hangdang": "老生",
+      "count": 2,
+      "ratio": 0.0179
+    },
+    {
+      "feature": "line_count_bucket=high",
+      "hangdang": "青衣",
+      "count": 2,
+      "ratio": 0.069
+    },
+    {
+      "feature": "hangdang_raw=外",
+      "hangdang": "小生",
+      "count": 2,
+      "ratio": 0.0244
+    },
+    {
+      "feature": "personality=勇猛",
+      "hangdang": "老生",
+      "count": 2,
+      "ratio": 0.0179
+    },
+    {
+      "feature": "identity=将领",
+      "hangdang": "武生",
+      "count": 2,
+      "ratio": 0.1111
+    },
+    {
+      "feature": "cue=唱",
+      "hangdang": "武生",
+      "count": 2,
+      "ratio": 0.1111
+    },
+    {
+      "feature": "matched_identity=将领",
+      "hangdang": "武生",
+      "count": 2,
+      "ratio": 0.1111
+    },
+    {
+      "feature": "age=老年",
+      "hangdang": "小生",
+      "count": 2,
+      "ratio": 0.0244
+    },
+    {
+      "feature": "personality=忠义",
+      "hangdang": "小生",
+      "count": 2,
+      "ratio": 0.0244
+    },
+    {
+      "feature": "identity=将领",
+      "hangdang": "小生",
+      "count": 2,
+      "ratio": 0.0244
+    },
+    {
+      "feature": "line_count_bucket=mid",
+      "hangdang": "丑",
+      "count": 2,
+      "ratio": 0.0952
+    },
+    {
+      "feature": "gender=男",
+      "hangdang": "丑",
+      "count": 2,
+      "ratio": 0.0952
+    },
+    {
+      "feature": "identity=弟兄",
+      "hangdang": "小生",
+      "count": 2,
+      "ratio": 0.0244
+    },
+    {
+      "feature": "matched_identity=弟兄",
+      "hangdang": "小生",
+      "count": 2,
+      "ratio": 0.0244
+    },
+    {
+      "feature": "gender=男",
+      "hangdang": "未知",
+      "count": 2,
+      "ratio": 0.0606
+    },
+    {
+      "feature": "personality=智谋",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0312
+    },
+    {
+      "feature": "personality=诙谐",
+      "hangdang": "丑",
+      "count": 1,
+      "ratio": 0.0476
+    },
+    {
+      "feature": "line_count_bucket=low",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0312
+    },
+    {
+      "feature": "identity=谋士",
+      "hangdang": "青衣",
+      "count": 1,
+      "ratio": 0.0345
+    },
+    {
+      "feature": "gender=女",
+      "hangdang": "小生",
+      "count": 1,
+      "ratio": 0.0122
+    },
+    {
+      "feature": "personality=智谋",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "personality=诙谐",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0312
+    },
+    {
+      "feature": "line_count_bucket=mid",
+      "hangdang": "武生",
+      "count": 1,
+      "ratio": 0.0556
+    },
+    {
+      "feature": "age=少年",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "identity=公子",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "personality=忠义",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "identity=弟兄",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "line_count_bucket=mid",
+      "hangdang": "老旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "gender=女",
+      "hangdang": "老旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "age=老年",
+      "hangdang": "老旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "identity=妃后",
+      "hangdang": "老旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "cue=念",
+      "hangdang": "老旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "cue=唱",
+      "hangdang": "老旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "age=老年",
+      "hangdang": "青衣",
+      "count": 1,
+      "ratio": 0.0345
+    },
+    {
+      "feature": "identity=君主",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "personality=勇猛",
+      "hangdang": "小生",
+      "count": 1,
+      "ratio": 0.0122
+    },
+    {
+      "feature": "personality=稳重",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "identity=将领",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0312
+    },
+    {
+      "feature": "line_count_bucket=low",
+      "hangdang": "武生",
+      "count": 1,
+      "ratio": 0.0556
+    },
+    {
+      "feature": "gender=女",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "line_count_bucket=high",
+      "hangdang": "花旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "age=老年",
+      "hangdang": "花旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "identity=谋士",
+      "hangdang": "花旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "personality=勇猛",
+      "hangdang": "花旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "cue=念",
+      "hangdang": "花旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "cue=唱",
+      "hangdang": "花旦",
+      "count": 1,
+      "ratio": 0.1667
+    },
+    {
+      "feature": "cue=唱",
+      "hangdang": "丑",
+      "count": 1,
+      "ratio": 0.0476
+    },
+    {
+      "feature": "personality=诙谐",
+      "hangdang": "未知",
+      "count": 1,
+      "ratio": 0.0303
+    },
+    {
+      "feature": "identity=妃后",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0312
+    },
+    {
+      "feature": "personality=勇猛",
+      "hangdang": "丑",
+      "count": 1,
+      "ratio": 0.0476
+    },
+    {
+      "feature": "identity=君主",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0312
+    },
+    {
+      "feature": "personality=忠义",
+      "hangdang": "净",
+      "count": 1,
+      "ratio": 0.0312
+    },
+    {
+      "feature": "line_count_bucket=high",
+      "hangdang": "武生",
+      "count": 1,
+      "ratio": 0.0556
+    },
+    {
+      "feature": "identity=弟兄",
+      "hangdang": "武生",
+      "count": 1,
+      "ratio": 0.0556
+    },
+    {
+      "feature": "personality=诙谐",
+      "hangdang": "武生",
+      "count": 1,
+      "ratio": 0.0556
+    },
+    {
+      "feature": "personality=稳重",
+      "hangdang": "武生",
+      "count": 1,
+      "ratio": 0.0556
+    },
+    {
+      "feature": "identity=弟兄",
+      "hangdang": "丑",
+      "count": 1,
+      "ratio": 0.0476
+    },
+    {
+      "feature": "hangdang_raw=正旦",
+      "hangdang": "青衣",
+      "count": 1,
+      "ratio": 0.0345
+    },
+    {
+      "feature": "personality=刚烈",
+      "hangdang": "小生",
+      "count": 1,
+      "ratio": 0.0122
+    },
+    {
+      "feature": "line_count_bucket=low",
+      "hangdang": "青衣",
+      "count": 1,
+      "ratio": 0.0345
+    },
+    {
+      "feature": "hangdang_raw=生",
+      "hangdang": "老生",
+      "count": 1,
+      "ratio": 0.0089
+    },
+    {
+      "feature": "age=老年",
+      "hangdang": "丑",
+      "count": 1,
+      "ratio": 0.0476
+    }
+  ],
+  "by_collection": [
+    {
+      "collection_id": "01000000",
+      "collection_name": "戏考",
+      "hangdang_distribution": {
+        "老生": 22,
+        "净": 6,
+        "丑": 6,
+        "小生": 15,
+        "青衣": 6,
+        "武生": 3,
+        "未知": 15,
+        "老旦": 1,
+        "花旦": 1
+      },
+      "trait_hangdang_links": [
+        {
+          "trait": "cue=念",
+          "hangdang": "老生",
+          "count": 22
+        },
+        {
+          "trait": "line_count_bucket=low",
+          "hangdang": "未知",
+          "count": 15
+        },
+        {
+          "trait": "cue=念",
+          "hangdang": "未知",
+          "count": 15
+        },
+        {
+          "trait": "cue=念",
+          "hangdang": "小生",
+          "count": 14
+        },
+        {
+          "trait": "identity=谋士",
+          "hangdang": "老生",
+          "count": 13
+        },
+        {
+          "trait": "gender=男",
+          "hangdang": "老生",
+          "count": 12
+        },
+        {
+          "trait": "line_count_bucket=low",
+          "hangdang": "老生",
+          "count": 11
+        },
+        {
+          "trait": "age=老年",
+          "hangdang": "老生",
+          "count": 8
+        },
+        {
+          "trait": "cue=唱",
+          "hangdang": "老生",
+          "count": 8
+        },
+        {
+          "trait": "cue=唱",
+          "hangdang": "小生",
+          "count": 8
+        },
+        {
+          "trait": "gender=男",
+          "hangdang": "小生",
+          "count": 8
+        },
+        {
+          "trait": "personality=诙谐",
+          "hangdang": "老生",
+          "count": 7
+        },
+        {
+          "trait": "matched_identity=谋士",
+          "hangdang": "老生",
+          "count": 7
+        },
+        {
+          "trait": "cue=念",
+          "hangdang": "丑",
+          "count": 6
+        },
+        {
+          "trait": "line_count_bucket=low",
+          "hangdang": "小生",
+          "count": 6
+        },
+        {
+          "trait": "cue=念",
+          "hangdang": "青衣",
+          "count": 6
+        },
+        {
+          "trait": "line_count_bucket=high",
+          "hangdang": "老生",
+          "count": 6
+        },
+        {
+          "trait": "line_count_bucket=mid",
+          "hangdang": "老生",
+          "count": 5
+        },
+        {
+          "trait": "cue=念",
+          "hangdang": "净",
+          "count": 5
+        },
+        {
+          "trait": "cue=唱",
+          "hangdang": "净",
+          "count": 5
+        },
+        {
+          "trait": "hangdang_raw=旦",
+          "hangdang": "青衣",
+          "count": 5
+        },
+        {
+          "trait": "cue=唱",
+          "hangdang": "青衣",
+          "count": 5
+        },
+        {
+          "trait": "age=少年",
+          "hangdang": "小生",
+          "count": 5
+        },
+        {
+          "trait": "personality=诙谐",
+          "hangdang": "小生",
+          "count": 5
+        },
+        {
+          "trait": "line_count_bucket=mid",
+          "hangdang": "小生",
+          "count": 5
+        },
+        {
+          "trait": "line_count_bucket=low",
+          "hangdang": "丑",
+          "count": 4
+        },
+        {
+          "trait": "gender=女",
+          "hangdang": "青衣",
+          "count": 4
+        },
+        {
+          "trait": "line_count_bucket=high",
+          "hangdang": "小生",
+          "count": 4
+        },
+        {
+          "trait": "gender=男",
+          "hangdang": "净",
+          "count": 4
+        },
+        {
+          "trait": "personality=稳重",
+          "hangdang": "小生",
+          "count": 3
+        },
+        {
+          "trait": "identity=谋士",
+          "hangdang": "小生",
+          "count": 3
+        },
+        {
+          "trait": "line_count_bucket=high",
+          "hangdang": "净",
+          "count": 3
+        },
+        {
+          "trait": "gender=男",
+          "hangdang": "武生",
+          "count": 3
+        },
+        {
+          "trait": "cue=念",
+          "hangdang": "武生",
+          "count": 3
+        },
+        {
+          "trait": "line_count_bucket=mid",
+          "hangdang": "青衣",
+          "count": 3
+        },
+        {
+          "trait": "identity=公子",
+          "hangdang": "小生",
+          "count": 3
+        },
+        {
+          "trait": "matched_identity=公子",
+          "hangdang": "小生",
+          "count": 3
+        },
+        {
+          "trait": "line_count_bucket=mid",
+          "hangdang": "净",
+          "count": 2
+        },
+        {
+          "trait": "age=少年",
+          "hangdang": "净",
+          "count": 2
+        },
+        {
+          "trait": "identity=谋士",
+          "hangdang": "净",
+          "count": 2
+        }
+      ],
+      "play_count": 10
+    }
+  ],
+  "by_era_bucket": [
+    {
+      "era": "三国",
+      "hangdang_distribution": {
+        "老生": 15,
+        "净": 4,
+        "丑": 2,
+        "小生": 6,
+        "青衣": 1,
+        "武生": 2,
+        "未知": 4
+      },
+      "play_count": 4
+    },
+    {
+      "era": "未知",
+      "hangdang_distribution": {
+        "老生": 4,
+        "青衣": 2,
+        "小生": 7,
+        "未知": 7,
+        "老旦": 1,
+        "花旦": 1,
+        "丑": 2,
+        "净": 1,
+        "武生": 1
+      },
+      "play_count": 4
+    },
+    {
+      "era": "宋代",
+      "hangdang_distribution": {
+        "净": 1,
+        "丑": 1,
+        "青衣": 1,
+        "未知": 2
+      },
+      "play_count": 1
+    },
+    {
+      "era": "神话",
+      "hangdang_distribution": {
+        "青衣": 2,
+        "老生": 3,
+        "小生": 2,
+        "未知": 2,
+        "丑": 1
+      },
+      "play_count": 1
+    }
+  ],
+  "inference_results": [
+    {
+      "script_id": "01001001",
+      "character_id": "c_旗牌",
+      "name": "旗牌",
+      "hangdang_inferred": "老生",
+      "confidence": 0.72,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "age=老年",
+        "identity=谋士",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001001",
+      "character_id": "c_二老军",
+      "name": "二老军",
+      "hangdang_inferred": "老生",
+      "confidence": 0.72,
+      "top_features": [
+        "line_count_bucket=low",
+        "age=老年",
+        "identity=谋士",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001001",
+      "character_id": "c_报子",
+      "name": "报子",
+      "hangdang_inferred": "老生",
+      "confidence": 0.7,
+      "top_features": [
+        "line_count_bucket=low",
+        "identity=谋士",
+        "cue=念",
+        "matched_identity=谋士"
+      ]
+    },
+    {
+      "script_id": "01001001",
+      "character_id": "c_童儿",
+      "name": "童儿",
+      "hangdang_inferred": "老生",
+      "confidence": 0.7,
+      "top_features": [
+        "line_count_bucket=low",
+        "identity=谋士",
+        "cue=念",
+        "matched_identity=谋士"
+      ]
+    },
+    {
+      "script_id": "01001001",
+      "character_id": "c_众人",
+      "name": "众人",
+      "hangdang_inferred": "老生",
+      "confidence": 0.7,
+      "top_features": [
+        "line_count_bucket=low",
+        "identity=谋士",
+        "cue=念",
+        "matched_identity=谋士"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_四朝官",
+      "name": "四朝官",
+      "hangdang_inferred": "老生",
+      "confidence": 0.7,
+      "top_features": [
+        "line_count_bucket=mid",
+        "gender=男",
+        "identity=谋士",
+        "cue=念",
+        "matched_identity=谋士"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_张辽",
+      "name": "张辽",
+      "hangdang_inferred": "武生",
+      "confidence": 0.6,
+      "top_features": [
+        "line_count_bucket=mid",
+        "gender=男",
+        "identity=将领",
+        "cue=念",
+        "cue=唱",
+        "matched_identity=将领"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_孔融",
+      "name": "孔融",
+      "hangdang_inferred": "老生",
+      "confidence": 0.7,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=谋士",
+        "cue=念",
+        "matched_identity=谋士"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_二旗牌",
+      "name": "二旗牌",
+      "hangdang_inferred": "老生",
+      "confidence": 0.7,
+      "top_features": [
+        "line_count_bucket=low",
+        "identity=谋士",
+        "personality=诙谐",
+        "cue=念",
+        "matched_identity=谋士"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_朝官甲",
+      "name": "朝官甲",
+      "hangdang_inferred": "老生",
+      "confidence": 0.7,
+      "top_features": [
+        "line_count_bucket=low",
+        "identity=谋士",
+        "cue=念",
+        "matched_identity=谋士"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_旗牌",
+      "name": "旗牌",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_朝官乙",
+      "name": "朝官乙",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_朝官丙",
+      "name": "朝官丙",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "character_id": "c_朝官丁",
+      "name": "朝官丁",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001007",
+      "character_id": "c_邓元",
+      "name": "邓元",
+      "hangdang_inferred": "小生",
+      "confidence": 0.78,
+      "top_features": [
+        "line_count_bucket=mid",
+        "age=少年",
+        "identity=公子",
+        "cue=念",
+        "cue=唱",
+        "matched_identity=公子"
+      ]
+    },
+    {
+      "script_id": "01001007",
+      "character_id": "c_邓方",
+      "name": "邓方",
+      "hangdang_inferred": "小生",
+      "confidence": 0.35,
+      "top_features": [
+        "line_count_bucket=mid",
+        "age=少年",
+        "cue=念",
+        "cue=唱"
+      ]
+    },
+    {
+      "script_id": "01001007",
+      "character_id": "c_二家院",
+      "name": "二家院",
+      "hangdang_inferred": "小生",
+      "confidence": 0.78,
+      "top_features": [
+        "line_count_bucket=low",
+        "age=少年",
+        "identity=公子",
+        "cue=念",
+        "matched_identity=公子"
+      ]
+    },
+    {
+      "script_id": "01001007",
+      "character_id": "c_众家丁",
+      "name": "众家丁",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001007",
+      "character_id": "c_番王",
+      "name": "番王",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001009",
+      "character_id": "c_媒婆",
+      "name": "媒婆",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001009",
+      "character_id": "c_家院",
+      "name": "家院",
+      "hangdang_inferred": "老生",
+      "confidence": 0.72,
+      "top_features": [
+        "line_count_bucket=low",
+        "age=老年",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001009",
+      "character_id": "c_丫鬟",
+      "name": "丫鬟",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01001012",
+      "character_id": "c_甘宁",
+      "name": "甘宁",
+      "hangdang_inferred": "武生",
+      "confidence": 0.6,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=将领",
+        "cue=念",
+        "matched_identity=将领"
+      ]
+    },
+    {
+      "script_id": "01001012",
+      "character_id": "c_刘封",
+      "name": "刘封",
+      "hangdang_inferred": "小生",
+      "confidence": 0.7,
+      "top_features": [
+        "line_count_bucket=low",
+        "identity=公子",
+        "cue=念",
+        "matched_identity=公子"
+      ]
+    },
+    {
+      "script_id": "01001020",
+      "character_id": "c_众人",
+      "name": "众人",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "personality=诙谐",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01002006",
+      "character_id": "c_王朝",
+      "name": "王朝",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01002006",
+      "character_id": "c_马汉",
+      "name": "马汉",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01006009",
+      "character_id": "c_大头目",
+      "name": "大头目",
+      "hangdang_inferred": "小生",
+      "confidence": 0.55,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=弟兄",
+        "personality=稳重",
+        "cue=念",
+        "matched_identity=弟兄"
+      ]
+    },
+    {
+      "script_id": "01006009",
+      "character_id": "c_二头目",
+      "name": "二头目",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01006009",
+      "character_id": "c_众人",
+      "name": "众人",
+      "hangdang_inferred": "小生",
+      "confidence": 0.55,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=弟兄",
+        "cue=念",
+        "matched_identity=弟兄"
+      ]
+    },
+    {
+      "script_id": "01006009",
+      "character_id": "c_三头目",
+      "name": "三头目",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01028005",
+      "character_id": "c_刘智远",
+      "name": "刘智远",
+      "hangdang_inferred": "老生",
+      "confidence": 0.72,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=男",
+        "age=老年",
+        "cue=念",
+        "cue=唱"
+      ]
+    },
+    {
+      "script_id": "01028005",
+      "character_id": "c_刘氏",
+      "name": "刘氏",
+      "hangdang_inferred": "小生",
+      "confidence": 0.35,
+      "top_features": [
+        "line_count_bucket=mid",
+        "gender=男",
+        "personality=刚烈",
+        "personality=诙谐",
+        "cue=念",
+        "cue=唱"
+      ]
+    },
+    {
+      "script_id": "01028005",
+      "character_id": "c_中军",
+      "name": "中军",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "cue=念"
+      ]
+    },
+    {
+      "script_id": "01028005",
+      "character_id": "c_妖精",
+      "name": "妖精",
+      "hangdang_inferred": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "cue=念"
+      ]
+    }
+  ]
+}

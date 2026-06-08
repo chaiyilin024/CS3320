@@ -1,0 +1,613 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-08T13:46:01.672976+00:00",
+  "by_genre": [
+    {
+      "group_key": "genre=历史剧",
+      "group_label": "历史剧",
+      "play_count": 4,
+      "metrics": {
+        "density": {
+          "mean": 0.8032,
+          "median": 0.7849,
+          "min": 0.6429,
+          "max": 1.0,
+          "values": [
+            0.697,
+            0.8727,
+            0.6429,
+            1.0
+          ]
+        },
+        "avg_degree": {
+          "mean": 5.975,
+          "median": 6.085,
+          "min": 3.0,
+          "max": 8.73,
+          "values": [
+            7.67,
+            8.73,
+            4.5,
+            3.0
+          ]
+        },
+        "avg_clustering": {
+          "mean": 0.9112,
+          "median": 0.9088,
+          "min": 0.8272,
+          "max": 1.0,
+          "values": [
+            0.8272,
+            0.9576,
+            0.8601,
+            1.0
+          ]
+        },
+        "modularity": {
+          "mean": 0.1235,
+          "median": 0.0826,
+          "min": 0.0,
+          "max": 0.3289,
+          "values": [
+            0.3289,
+            0.0867,
+            0.0785,
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "group_key": "genre=家庭剧",
+      "group_label": "家庭剧",
+      "play_count": 2,
+      "metrics": {
+        "density": {
+          "mean": 0.8095,
+          "median": 0.8095,
+          "min": 0.619,
+          "max": 1.0,
+          "values": [
+            1.0,
+            0.619
+          ]
+        },
+        "avg_degree": {
+          "mean": 2.855,
+          "median": 2.855,
+          "min": 2.0,
+          "max": 3.71,
+          "values": [
+            2.0,
+            3.71
+          ]
+        },
+        "avg_clustering": {
+          "mean": 0.8857,
+          "median": 0.8857,
+          "min": 0.7714,
+          "max": 1.0,
+          "values": [
+            1.0,
+            0.7714
+          ]
+        },
+        "modularity": {
+          "mean": 0.0048,
+          "median": 0.0048,
+          "min": 0.0,
+          "max": 0.0096,
+          "values": [
+            0.0,
+            0.0096
+          ]
+        }
+      }
+    },
+    {
+      "group_key": "genre=爱情剧",
+      "group_label": "爱情剧",
+      "play_count": 1,
+      "metrics": {
+        "density": {
+          "mean": 0.6071,
+          "median": 0.6071,
+          "min": 0.6071,
+          "max": 0.6071,
+          "values": [
+            0.6071
+          ]
+        },
+        "avg_degree": {
+          "mean": 4.25,
+          "median": 4.25,
+          "min": 4.25,
+          "max": 4.25,
+          "values": [
+            4.25
+          ]
+        },
+        "avg_clustering": {
+          "mean": 0.7958,
+          "median": 0.7958,
+          "min": 0.7958,
+          "max": 0.7958,
+          "values": [
+            0.7958
+          ]
+        },
+        "modularity": {
+          "mean": 0.0226,
+          "median": 0.0226,
+          "min": 0.0226,
+          "max": 0.0226,
+          "values": [
+            0.0226
+          ]
+        }
+      }
+    },
+    {
+      "group_key": "genre=公案剧",
+      "group_label": "公案剧",
+      "play_count": 1,
+      "metrics": {
+        "density": {
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "values": [
+            1.0
+          ]
+        },
+        "avg_degree": {
+          "mean": 4.0,
+          "median": 4.0,
+          "min": 4.0,
+          "max": 4.0,
+          "values": [
+            4.0
+          ]
+        },
+        "avg_clustering": {
+          "mean": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "values": [
+            1.0
+          ]
+        },
+        "modularity": {
+          "mean": 0.0494,
+          "median": 0.0494,
+          "min": 0.0494,
+          "max": 0.0494,
+          "values": [
+            0.0494
+          ]
+        }
+      }
+    },
+    {
+      "group_key": "genre=侠义剧",
+      "group_label": "侠义剧",
+      "play_count": 1,
+      "metrics": {
+        "density": {
+          "mean": 0.5714,
+          "median": 0.5714,
+          "min": 0.5714,
+          "max": 0.5714,
+          "values": [
+            0.5714
+          ]
+        },
+        "avg_degree": {
+          "mean": 3.43,
+          "median": 3.43,
+          "min": 3.43,
+          "max": 3.43,
+          "values": [
+            3.43
+          ]
+        },
+        "avg_clustering": {
+          "mean": 0.6714,
+          "median": 0.6714,
+          "min": 0.6714,
+          "max": 0.6714,
+          "values": [
+            0.6714
+          ]
+        },
+        "modularity": {
+          "mean": 0.0,
+          "median": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "values": [
+            0.0
+          ]
+        }
+      }
+    },
+    {
+      "group_key": "genre=神话剧",
+      "group_label": "神话剧",
+      "play_count": 1,
+      "metrics": {
+        "density": {
+          "mean": 0.6222,
+          "median": 0.6222,
+          "min": 0.6222,
+          "max": 0.6222,
+          "values": [
+            0.6222
+          ]
+        },
+        "avg_degree": {
+          "mean": 5.6,
+          "median": 5.6,
+          "min": 5.6,
+          "max": 5.6,
+          "values": [
+            5.6
+          ]
+        },
+        "avg_clustering": {
+          "mean": 0.8956,
+          "median": 0.8956,
+          "min": 0.8956,
+          "max": 0.8956,
+          "values": [
+            0.8956
+          ]
+        },
+        "modularity": {
+          "mean": 0.2179,
+          "median": 0.2179,
+          "min": 0.2179,
+          "max": 0.2179,
+          "values": [
+            0.2179
+          ]
+        }
+      }
+    }
+  ],
+  "by_collection": [
+    {
+      "group_key": "collection_id=01000000",
+      "group_label": "01000000",
+      "play_count": 10,
+      "metrics": {
+        "density": {
+          "mean": 0.7632,
+          "median": 0.67,
+          "min": 0.5714,
+          "max": 1.0,
+          "values": [
+            0.697,
+            1.0,
+            0.8727,
+            0.619,
+            0.6071,
+            0.6429,
+            1.0,
+            1.0,
+            0.5714,
+            0.6222
+          ]
+        },
+        "avg_degree": {
+          "mean": 4.689,
+          "median": 4.125,
+          "min": 2.0,
+          "max": 8.73,
+          "values": [
+            7.67,
+            2.0,
+            8.73,
+            3.71,
+            4.25,
+            4.5,
+            3.0,
+            4.0,
+            3.43,
+            5.6
+          ]
+        },
+        "avg_clustering": {
+          "mean": 0.8779,
+          "median": 0.8779,
+          "min": 0.6714,
+          "max": 1.0,
+          "values": [
+            0.8272,
+            1.0,
+            0.9576,
+            0.7714,
+            0.7958,
+            0.8601,
+            1.0,
+            1.0,
+            0.6714,
+            0.8956
+          ]
+        },
+        "modularity": {
+          "mean": 0.0794,
+          "median": 0.036,
+          "min": 0.0,
+          "max": 0.3289,
+          "values": [
+            0.3289,
+            0.0,
+            0.0867,
+            0.0096,
+            0.0226,
+            0.0785,
+            0.0,
+            0.0494,
+            0.0,
+            0.2179
+          ]
+        }
+      }
+    }
+  ],
+  "plays": [
+    {
+      "script_id": "01001001",
+      "title": "空城计",
+      "genre": "历史剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 12,
+        "edge_count": 46,
+        "density": 0.697,
+        "avg_clustering": 0.8272,
+        "avg_degree": 7.67,
+        "avg_weighted_degree": 29.67,
+        "component_count": 2,
+        "avg_weighted_clustering": 0.0752,
+        "modularity": 0.3289,
+        "assortativity_hangdang": -0.1311,
+        "main_subgraph": {
+          "node_count": 6,
+          "edge_count": 14,
+          "density": 0.9333,
+          "avg_clustering": 0.1319,
+          "modularity": 0.2578
+        }
+      }
+    },
+    {
+      "script_id": "01001003",
+      "title": "三娘教子",
+      "genre": "家庭剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 3,
+        "edge_count": 3,
+        "density": 1.0,
+        "avg_clustering": 1.0,
+        "avg_degree": 2.0,
+        "avg_weighted_degree": 116.67,
+        "component_count": 1,
+        "avg_weighted_clustering": 0.7122,
+        "modularity": 0.0,
+        "assortativity_hangdang": -0.5,
+        "main_subgraph": {
+          "node_count": 3,
+          "edge_count": 3,
+          "density": 1.0,
+          "avg_clustering": 0.7122,
+          "modularity": 0.0
+        }
+      }
+    },
+    {
+      "script_id": "01001005",
+      "title": "打鼓骂曹",
+      "genre": "历史剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 11,
+        "edge_count": 48,
+        "density": 0.8727,
+        "avg_clustering": 0.9576,
+        "avg_degree": 8.73,
+        "avg_weighted_degree": 44.18,
+        "component_count": 1,
+        "avg_weighted_clustering": 0.0571,
+        "modularity": 0.0867,
+        "assortativity_hangdang": -0.0827,
+        "main_subgraph": {
+          "node_count": 5,
+          "edge_count": 9,
+          "density": 0.9,
+          "avg_clustering": 0.2352,
+          "modularity": 0.0
+        }
+      }
+    },
+    {
+      "script_id": "01001007",
+      "title": "桑园寄子",
+      "genre": "家庭剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 7,
+        "edge_count": 13,
+        "density": 0.619,
+        "avg_clustering": 0.7714,
+        "avg_degree": 3.71,
+        "avg_weighted_degree": 60.29,
+        "component_count": 2,
+        "avg_weighted_clustering": 0.12,
+        "modularity": 0.0096,
+        "assortativity_hangdang": -0.1447,
+        "main_subgraph": {
+          "node_count": 5,
+          "edge_count": 10,
+          "density": 1.0,
+          "avg_clustering": 0.1915,
+          "modularity": 0.0
+        }
+      }
+    },
+    {
+      "script_id": "01001009",
+      "title": "硃砂痣",
+      "genre": "爱情剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 8,
+        "edge_count": 17,
+        "density": 0.6071,
+        "avg_clustering": 0.7958,
+        "avg_degree": 4.25,
+        "avg_weighted_degree": 87.75,
+        "component_count": 1,
+        "avg_weighted_clustering": 0.1142,
+        "modularity": 0.0226,
+        "assortativity_hangdang": -0.0968,
+        "main_subgraph": {
+          "node_count": 5,
+          "edge_count": 7,
+          "density": 0.7,
+          "avg_clustering": 0.2809,
+          "modularity": 0.0
+        }
+      }
+    },
+    {
+      "script_id": "01001012",
+      "title": "黄鹤楼",
+      "genre": "历史剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 8,
+        "edge_count": 18,
+        "density": 0.6429,
+        "avg_clustering": 0.8601,
+        "avg_degree": 4.5,
+        "avg_weighted_degree": 80.5,
+        "component_count": 1,
+        "avg_weighted_clustering": 0.1561,
+        "modularity": 0.0785,
+        "assortativity_hangdang": -0.125,
+        "main_subgraph": {
+          "node_count": 5,
+          "edge_count": 8,
+          "density": 0.8,
+          "avg_clustering": 0.2761,
+          "modularity": 0.06
+        }
+      }
+    },
+    {
+      "script_id": "01001020",
+      "title": "宋江闹院",
+      "genre": "历史剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 4,
+        "edge_count": 6,
+        "density": 1.0,
+        "avg_clustering": 1.0,
+        "avg_degree": 3.0,
+        "avg_weighted_degree": 242.5,
+        "component_count": 1,
+        "avg_weighted_clustering": 0.0473,
+        "modularity": 0.0,
+        "assortativity_hangdang": -0.3333,
+        "main_subgraph": {
+          "node_count": 4,
+          "edge_count": 6,
+          "density": 1.0,
+          "avg_clustering": 0.0473,
+          "modularity": 0.0
+        }
+      }
+    },
+    {
+      "script_id": "01002006",
+      "title": "探阴山",
+      "genre": "公案剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 5,
+        "edge_count": 10,
+        "density": 1.0,
+        "avg_clustering": 1.0,
+        "avg_degree": 4.0,
+        "avg_weighted_degree": 43.2,
+        "component_count": 1,
+        "avg_weighted_clustering": 0.0323,
+        "modularity": 0.0494,
+        "assortativity_hangdang": -0.25,
+        "main_subgraph": {
+          "node_count": 5,
+          "edge_count": 10,
+          "density": 1.0,
+          "avg_clustering": 0.0323,
+          "modularity": 0.0679
+        }
+      }
+    },
+    {
+      "script_id": "01006009",
+      "title": "连环套【三本】",
+      "genre": "侠义剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 7,
+        "edge_count": 12,
+        "density": 0.5714,
+        "avg_clustering": 0.6714,
+        "avg_degree": 3.43,
+        "avg_weighted_degree": 77.43,
+        "component_count": 1,
+        "avg_weighted_clustering": 0.0178,
+        "modularity": 0.0,
+        "assortativity_hangdang": -0.1309,
+        "main_subgraph": {
+          "node_count": 5,
+          "edge_count": 6,
+          "density": 0.6,
+          "avg_clustering": 0.0263,
+          "modularity": 0.0
+        }
+      }
+    },
+    {
+      "script_id": "01028005",
+      "title": "磨房产子",
+      "genre": "神话剧",
+      "collection_id": "01000000",
+      "metrics": {
+        "node_count": 10,
+        "edge_count": 28,
+        "density": 0.6222,
+        "avg_clustering": 0.8956,
+        "avg_degree": 5.6,
+        "avg_weighted_degree": 21.6,
+        "component_count": 1,
+        "avg_weighted_clustering": 0.0753,
+        "modularity": 0.2179,
+        "assortativity_hangdang": -0.1691,
+        "main_subgraph": {
+          "node_count": 5,
+          "edge_count": 7,
+          "density": 0.7,
+          "avg_clustering": 0.1848,
+          "modularity": 0.0
+        }
+      }
+    }
+  ]
+}

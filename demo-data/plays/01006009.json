@@ -1,0 +1,3848 @@
+{
+  "script_id": "01006009",
+  "title": "连环套【三本】",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01006009_连环套【三本】.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-04T08:59:08.019961+00:00",
+    "page_count": 6,
+    "char_count": 3640,
+    "parse_quality": 0.982,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_窦尔敦",
+      "name": "窦尔敦",
+      "aliases": [],
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "净",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 86,
+      "first_appearance_block": 19,
+      "is_main": true
+    },
+    {
+      "character_id": "c_黄天霸",
+      "name": "黄天霸",
+      "aliases": [],
+      "hangdang_labeled": "武生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 71,
+      "first_appearance_block": 48,
+      "is_main": true
+    },
+    {
+      "character_id": "c_大头目",
+      "name": "大头目",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 7,
+      "first_appearance_block": 27,
+      "is_main": true
+    },
+    {
+      "character_id": "c_报子",
+      "name": "报子",
+      "aliases": [],
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "丑",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 4,
+      "first_appearance_block": 32,
+      "is_main": true
+    },
+    {
+      "character_id": "c_二头目",
+      "name": "二头目",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 3,
+      "first_appearance_block": 47,
+      "is_main": true
+    },
+    {
+      "character_id": "c_众人",
+      "name": "众人",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 2,
+      "first_appearance_block": 72,
+      "is_main": false
+    },
+    {
+      "character_id": "c_三头目",
+      "name": "三头目",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 1,
+      "first_appearance_block": 24,
+      "is_main": false
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "【第一场】",
+      "block_range": [
+        17,
+        44
+      ],
+      "character_ids": [
+        "c_三头目",
+        "c_大头目",
+        "c_报子",
+        "c_窦尔敦"
+      ]
+    },
+    {
+      "scene_id": "s_2",
+      "scene_index": 2,
+      "title": "【第二场】",
+      "block_range": [
+        45,
+        52
+      ],
+      "character_ids": [
+        "c_二头目",
+        "c_黄天霸"
+      ]
+    },
+    {
+      "scene_id": "s_3",
+      "scene_index": 3,
+      "title": "【第三场】",
+      "block_range": [
+        53,
+        63
+      ],
+      "character_ids": [
+        "c_大头目",
+        "c_窦尔敦",
+        "c_黄天霸"
+      ]
+    },
+    {
+      "scene_id": "s_4",
+      "scene_index": 4,
+      "title": "【第四场】",
+      "block_range": [
+        64,
+        217
+      ],
+      "character_ids": [
+        "c_众人",
+        "c_大头目",
+        "c_窦尔敦",
+        "c_黄天霸"
+      ]
+    },
+    {
+      "scene_id": "s_5",
+      "scene_index": 5,
+      "title": "【第五场】",
+      "block_range": [
+        218,
+        234
+      ],
+      "character_ids": [
+        "c_窦尔敦",
+        "c_黄天霸"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": null,
+      "text": "中国京剧戏考 《连环套》【三本】 1",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 18,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "aria",
+      "speaker_id": null,
+      "text": "【三本】",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（一名：《拜山》）",
+      "performance_tags": [],
+      "char_len": 9,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "窦尔敦：净",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "黄天霸：武生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "报子：丑",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "河北盗魁窦二敦，善使虎头双钩，自仗武力，横行齐鲁间。先是窦尔敦与飞镖黄三泰，在李家店地方，因角技被挫，从此江湖间窦尔敦之威名大损，遂恼羞成怒，暗与黄三泰结不解仇，继往关外占踞连环套山寨，日",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "夜图报复，后知梁千岁有钦赐千里驹一乘，遂故遣部下往盗之，且留书署明飞镖黄三泰，盖意欲藉此陷害黄三泰。初不知黄三泰已谢世也。时黄三泰子黄天霸，已得记名总兵之职，幸彭公知其为仇家诬陷，曲予成全，",
+      "performance_tags": [],
+      "char_len": 95,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "限期令黄天霸访拿，天霸探得为窦尔敦所盗，乃与朱光祖亲入虎口，侦缉证据，先生下山遇寇，既入连环套，投刺进谒，谈次，亦借献知宝马为言，以相餂取，窦尔敦果坠其计，尽将盗马始末根由和盘托出，黄天",
+      "performance_tags": [],
+      "char_len": 93,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "霸至此，复故作不信状，窦尔敦乃令部下牵马出，以证其实。黄天霸既探得御马之真凭据，及计陷其父黄三泰之真口供，乃始直告己名。窦尔敦闻语，赫然暴怒，立欲加害，黄天霸挺身受刀，容貌间绝无一毫惧怯，",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "且知窦尔敦以好汉自命，必不出此不武手段，以真害己，故复侃侃争辩，卒至约期比武，终盗得御马而归。",
+      "performance_tags": [],
+      "char_len": 47,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_13",
+      "block_index": 13,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "注释",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "前见杨小楼演此，从进见彭公做起，做至下山，其精细慷慨应变传神处，洵是得未曾有，非徒以白口工架声调等见长已也，从前潘月樵亦颇称拿手，然叫嚣跳荡，纯乎一团粗暴之气，以视杨氏，曾不可同日语矣。按",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_15",
+      "block_index": 15,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "曲本，仅为探山一段，盖此剧本以探山为菁华也，故近时演唱此剧者，大都皆不演全本，而仅演此一场。",
+      "performance_tags": [],
+      "char_len": 46,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "根据《戏考》第六册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_17",
+      "block_index": 17,
+      "scene_id": "s_1",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第一场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四红龙套引窦尔敦同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 13,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "想当年李家店比武较量，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "豪杰我一怒撇家乡。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "盗来了御马他就无处访，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "窦尔敦",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "要害三泰全家亡。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（三头目同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 8,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_三头目",
+      "text": "寨主，大头目下山被擒。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "三头目",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "哦，有这等事。来，一同下山。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（大头目上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_大头目",
+      "text": "吓，寨主！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "大头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "贤弟请坐，适才众位贤弟言道：你在山下被擒，因何得逃回来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_大头目",
+      "text": "适才山下被擒，提起寨主威名，将俺放回，少时还要上山拜望。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "大头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "哦，想当年某家霸占河间府的时节，那些保镖达官，在窦某手中，逃脱性命不少，今日闻听窦某在此为了寨主，上山拜望，也是他们保镖的规矩。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 64,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（报子上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_报子",
+      "text": "报。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "报子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人同允。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_报子",
+      "text": "镖客有帖拜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "报子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_35",
+      "block_index": 35,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "呈上来。“浙江绍兴府镖客黄。”啊，他人有多大年纪？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_报子",
+      "text": "三十上下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "报子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "吓，晚生下辈，叫他进来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_39",
+      "block_index": 39,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_大头目",
+      "text": "且慢，此人武艺超群，仁义过天，寨主赏他一个全脸。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "大头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_40",
+      "block_index": 40,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "中国京剧戏考 《连环套》【三本】 2",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 18,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_41",
+      "block_index": 41,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "看在贤弟份上，赏他一个全脸。喽罗的摆队相迎。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_43",
+      "block_index": 43,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_报子",
+      "text": "摆队相迎。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "报子",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_44",
+      "block_index": 44,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人同允，摆队，同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 13,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_45",
+      "block_index": 45,
+      "scene_id": "s_2",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第二场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_46",
+      "block_index": 46,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（黄天霸上，二头目自下场门上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 16,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_47",
+      "block_index": 47,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_二头目",
+      "text": "做什么的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "二头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_48",
+      "block_index": 48,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "俺乃你家寨主好友，上山拜望。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_49",
+      "block_index": 49,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_二头目",
+      "text": "可有腰牌？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "二头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_50",
+      "block_index": 50,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "请看。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_二头目",
+      "text": "请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "二头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_52",
+      "block_index": 52,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（黄天霸、二头目同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_53",
+      "block_index": 53,
+      "scene_id": "s_3",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第三场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（窦尔敦、三头目同上。黄天霸上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 17,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_55",
+      "block_index": 55,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_大头目",
+      "text": "吓，镖客，这就是寨主。寨主，这就是镖客。窦尔敦、",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "大头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "吓，（镖客）（寨主）。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "啊哈哈。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "同笑"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "镖客到此，请来进山。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "不敢，寨主请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "如此你我挽手而进。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": "s_4",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第四场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（窦尔敦、黄天霸、四头目同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 16,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "有坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "不知镖客到此，未曾远迎，当面恕罪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "岂敢，少来拜山，寨主恕罪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "岂敢，适才山下，多蒙镖客，不伤俺寨中之人，当面谢过。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "岂敢，适才山下，多蒙众位英雄，相让小弟，我这里当面谢过。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_众人",
+      "text": "嗳。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "众人",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_73",
+      "block_index": 73,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "适才众位贤弟言道，镖客武艺超群，何不就在山寨，共图大事。镖客断无推辞。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "待愚下将镖车护送关口，交代客商回来，还望众位英雄，携带小弟。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 30,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "想你我绿林之中，义气当先，说什么“携带”二字，镖客太谦了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 29,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "多谢寨主。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "镖客此番到此，还是路过荒山，还是特到草寨。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_78",
+      "block_index": 78,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "特到宝寨。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_79",
+      "block_index": 79,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "到此必有所为。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_80",
+      "block_index": 80,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "愚下一来拜山，一来有一桩好买卖，献与寨主。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "什么好买卖。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "乃是一宗宝贝。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "什么奇宝。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_84",
+      "block_index": 84,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "乃是一匹好马。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_85",
+      "block_index": 85,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "这好马。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_86",
+      "block_index": 86,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "正是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_87",
+      "block_index": 87,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "嗳，我连环套甚多，算不了什么好宝贝。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_88",
+      "block_index": 88,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "中国京剧戏考 《连环套》【三本】 3",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 18,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_89",
+      "block_index": 89,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "此马与众不同。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_90",
+      "block_index": 90,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "何不说来大家一听。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_91",
+      "block_index": 91,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "寨主要问，可将台坐升上一步，愚下亦好面禀。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_92",
+      "block_index": 92,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "喽罗的打坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_93",
+      "block_index": 93,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（黄天霸打坐。）",
+      "performance_tags": [
+        "打"
+      ],
+      "char_len": 8,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_94",
+      "block_index": 94,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "镖客请讲。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "寨主、众位英雄听禀。愚下保镖，路过马良关，观见一骑好马，此马生来头上有角，肋下生鳞，左右红光两朵，名为日月骕骦。金鞍玉缛，黄罗丝缰，赤金坠鐙，对对成双，登山越岭，如走平地，漫江过海，四蹄如飞，日行千里见日，夜走八百不明，你我绿林，若有能人，将此马盗来，可算得骑虎夺脆，鳌里夺尊，天下第一条英雄好汉！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 103,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_97",
+      "block_index": 97,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "好马吓，好马吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_98",
+      "block_index": 98,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_黄天霸",
+      "text": "豪杰路过马良关，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_99",
+      "block_index": 99,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_黄天霸",
+      "text": "观见此马心喜欢。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_100",
+      "block_index": 100,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_黄天霸",
+      "text": "空有大胆的英雄汉，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "黄天霸",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_101",
+      "block_index": 101,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_黄天霸",
+      "text": "不能到手也枉然。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "黄天霸",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_102",
+      "block_index": 102,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "好马吓，好马吓。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "忽听镖客讲一番，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "此马可算兽中元。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_105",
+      "block_index": 105,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "若论大胆的英雄汉，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "窦尔敦",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_106",
+      "block_index": 106,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "窦某可算胆包天。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_107",
+      "block_index": 107,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "镖客，此马出在什么地面？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_108",
+      "block_index": 108,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "马良关外。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "什么人家？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "大户人家。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "待俺窦某下山盗马。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "且慢，此马的主人，日间有三百名家丁，夜晚有五百校手，不分昼夜，轮流看守此马，寨主此去，岂能得盗。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 48,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "镖客此番上山，还是真心与俺窦某结交，还是假意？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "自然真心。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "既是真心，俺窦某实对你说了罢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "寨主请讲。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "今有太尉梁千岁，奉旨口外兴围，圣上恩赐御马，名为日月追风千里驹。俺窦某施展本领，将御马盗回。何况那大户人家，日间有三百名家丁，夜晚有五百校手，哪放在窦某心上！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 79,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "寨主，愚下讲的句句实言，寨主为何非言浮造？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "怎见得非言浮造？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "既是梁千岁奉旨口外兴围，必然是兵多将勇，如同铜墙铁壁一般，寨主慢说盗马，连马面也是不能得见。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 46,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "谅你也是不信。大贤弟。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_123",
+      "block_index": 123,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（大头目允。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_124",
+      "block_index": 124,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "去到槽头将御马牵来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_125",
+      "block_index": 125,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_大头目",
+      "text": "遵命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "大头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_126",
+      "block_index": 126,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（大头目下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_127",
+      "block_index": 127,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "吓，寨主，你言道御马有何为证？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "此马金鞍玉辔，黄罗丝缰，赤金坠鐙，对对成双，平等人家，焉能敢用？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "哦。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_130",
+      "block_index": 130,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（大头目牵马上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 9,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_131",
+      "block_index": 131,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_大头目",
+      "text": "御马在此。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "大头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "镖客请来观马。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_133",
+      "block_index": 133,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "哦，呵呀，果然是金鞍玉辔，黄罗丝缰，赤金坠镫，对对成双。见马如见主，愿太尉梁千岁千千岁！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_135",
+      "block_index": 135,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "中国京剧戏考 《连环套》【三本】 4",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 18,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_136",
+      "block_index": 136,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "原来是个乡下人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人同允。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_138",
+      "block_index": 138,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "吓，寨主，此马受了些清福，足下未必能行。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_139",
+      "block_index": 139,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "某家盗马时节，骑了一途，到有千里路程。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_140",
+      "block_index": 140,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "哦，有千里的路程？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_141",
+      "block_index": 141,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "千里路程。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_142",
+      "block_index": 142,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "快的紧？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_143",
+      "block_index": 143,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "快的紧。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_144",
+      "block_index": 144,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "待愚下乘骑。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_145",
+      "block_index": 145,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "带下去。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_146",
+      "block_index": 146,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（大头目带马下，上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_147",
+      "block_index": 147,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "镖客请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_148",
+      "block_index": 148,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "哦，寨主请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_149",
+      "block_index": 149,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "镖客可曾观见此马？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_150",
+      "block_index": 150,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "寨主你将此马盗来，是大大的废物了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_151",
+      "block_index": 151,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "怎见得是废物了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_152",
+      "block_index": 152,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "那梁千岁，失落御马，必差各府州县画影图形，找寻御马的下落，寨主不能出外乘骑，岂不是大大的废物了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 48,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_153",
+      "block_index": 153,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "我盗了此马，原不为乘骑。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_154",
+      "block_index": 154,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "不为乘骑，盗他何用？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_155",
+      "block_index": 155,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "只因绿林有一人，他是每每与某作对，我盗了此马，要报前仇。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_156",
+      "block_index": 156,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "寨主，仇人是哪个？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_157",
+      "block_index": 157,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "不是镖客提起，俺窦某到忘怀了，适才你那拜帖上面，俺那仇人，与镖客同乡。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_158",
+      "block_index": 158,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "哦，与愚下同乡？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_159",
+      "block_index": 159,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "而且还同姓。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_160",
+      "block_index": 160,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "哦，还同姓？倒巧得很。他叫什么名字？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_161",
+      "block_index": 161,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "就是那浙江绍兴府飞镖黄三泰。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_162",
+      "block_index": 162,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "哦，就是那三泰爷。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_163",
+      "block_index": 163,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "就是那老匹夫。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_164",
+      "block_index": 164,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "吓，寨主，你这仇报不成了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_165",
+      "block_index": 165,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "怎么报不成了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_166",
+      "block_index": 166,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "那三泰爷他归天去了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_167",
+      "block_index": 167,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "那老儿他死了么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_168",
+      "block_index": 168,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "归天去了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_169",
+      "block_index": 169,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "哎，还有他的满门大小！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_170",
+      "block_index": 170,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "吓，寨主，有道是人死不记仇。何不学个宽宏大量。将御马献出，救了他全家的性命，就是那三泰爷死在九泉，也感你的大恩大德。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 58,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_171",
+      "block_index": 171,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "啊，听你之言，你与三泰有亲。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_172",
+      "block_index": 172,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "有亲。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_173",
+      "block_index": 173,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "有故。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_174",
+      "block_index": 174,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "有故。非但有亲有故，我二人同盆净脸，同桌用饭，抵足而眠。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_175",
+      "block_index": 175,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "三泰是你什么人？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_176",
+      "block_index": 176,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "乃是俺家父。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_177",
+      "block_index": 177,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "你呢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_178",
+      "block_index": 178,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "他子天霸。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_179",
+      "block_index": 179,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "哇，呀呀！天霸，你好大的胆吓。天霸，我与你父结下山海冤仇，这“报仇”二字，应在尔的头上。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 44,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_180",
+      "block_index": 180,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "窦寨主，你与我父怎样结下冤仇？你若说得情通理顺，还则罢了；你若说得情推理亏，窦寨主，你算不得英雄好汉。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 51,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_181",
+      "block_index": 181,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "天霸听了。想当初你父命计全，与俺指镖借银，在黄土冈，被某家将他羞辱一场。他在你父跟前。搬动是非，我二人在李家店比武争论。他不胜某虎头双钩，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 69,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_182",
+      "block_index": 182,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "他就暗发了甩头一子。也是某一时大意，未曾提防，被他扳倒尘埃，众家英雄，纷纷言讲。道俺姓窦的，正在青春，不胜那五旬以外的老儿。那时某家弃中国京剧戏考 《连环套》【三本】 5脱了河间，求在这连环套。话也讲完，谅尔难逃公道。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 85,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_184",
+      "block_index": 184,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "原来为此。请问寨主。想我父当初指镖借银，为着何来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 25,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_185",
+      "block_index": 185,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "只为搭救三河县彭朋。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_186",
+      "block_index": 186,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "彭朋为官如何？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_187",
+      "block_index": 187,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "为官清正。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_188",
+      "block_index": 188,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "既然为官清正，为何罢职丢官？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_189",
+      "block_index": 189,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "被武文华所害。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_190",
+      "block_index": 190,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "后来呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_191",
+      "block_index": 191,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "反升河间知府。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_192",
+      "block_index": 192,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "那武文华？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_193",
+      "block_index": 193,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "三河正法。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_194",
+      "block_index": 194,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "如今彭朋何在？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_195",
+      "block_index": 195,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "当今一品，位列三台。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_196",
+      "block_index": 196,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "是忠是奸？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_197",
+      "block_index": 197,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "大大的忠臣。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_198",
+      "block_index": 198,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "忠臣？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_199",
+      "block_index": 199,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "忠臣。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_200",
+      "block_index": 200,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "着着。想我父当初指镖借银，亦非是为己，只为搭救忠良，想你我为绿林者，敬的是忠臣孝子义仆节妇，恨的是赃官污吏恶棍土豪。你就该拔刀相助，你反助强为恶，窦寨主，你就算不得英雄好汉。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_202",
+      "block_index": 202,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "住了，这连环套，岂是由你弄嘴卖舌之地！众位贤弟，将他拿下了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_204",
+      "block_index": 204,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_众人",
+      "text": "哦。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "众人",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_205",
+      "block_index": 205,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "住了！俺天霸今日上得山来，寸铁未带，你们依仗连环套的人多，是你们来来来，将俺天霸碎尸万段，若是皱一皱眉头，算不得黄门后代！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 61,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_206",
+      "block_index": 206,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "擒尔何用人多，待窦某独自擒你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_207",
+      "block_index": 207,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_大头目",
+      "text": "且慢，他今来此，山下必有余党，明日下山比武，一对一个，方算英雄好汉。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "大头目",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_208",
+      "block_index": 208,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "好吓。天霸，明日山下比武。一对一个，方算英雄好汉。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_210",
+      "block_index": 210,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "俺若不胜，情愿替父顶罪，万死不辞。寨主你呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_211",
+      "block_index": 211,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "俺若不胜，情愿将御马献出，随你们到官认罪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_212",
+      "block_index": 212,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "大丈夫一言。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_213",
+      "block_index": 213,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "岂能反悔。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_214",
+      "block_index": 214,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "告辞。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_215",
+      "block_index": 215,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "且慢，我接你上山，必须送你出寨。喽罗的，摆队送天霸！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_217",
+      "block_index": 217,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人同允，同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 10,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_218",
+      "block_index": 218,
+      "scene_id": "s_5",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第五场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_219",
+      "block_index": 219,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（窦尔敦、黄天霸、四头目同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 16,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_220",
+      "block_index": 220,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "来此山下，不能远送了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_221",
+      "block_index": 221,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_黄天霸",
+      "text": "告辞了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_222",
+      "block_index": 222,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_黄天霸",
+      "text": "多蒙寨主恩海量，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "黄天霸",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_223",
+      "block_index": 223,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_黄天霸",
+      "text": "送俺天霸下山岗。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "黄天霸",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_224",
+      "block_index": 224,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_黄天霸",
+      "text": "明日上山再拜望，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "黄天霸",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_225",
+      "block_index": 225,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_黄天霸",
+      "text": "看看谁胜哪家强。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "黄天霸",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_226",
+      "block_index": 226,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（黄天霸下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_227",
+      "block_index": 227,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_窦尔敦",
+      "text": "好汉子！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_228",
+      "block_index": 228,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "父是英雄儿好汉，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_229",
+      "block_index": 229,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "天霸独自来拜山。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_230",
+      "block_index": 230,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "喽罗与爷你把寨门掩，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "窦尔敦",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_231",
+      "block_index": 231,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_窦尔敦",
+      "text": "侠义英雄出少年。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "窦尔敦",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_232",
+      "block_index": 232,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "中国京剧戏考 《连环套》【三本】 6",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 18,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_233",
+      "block_index": 233,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_234",
+      "block_index": 234,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 5
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_三头目",
+      "target_id": "c_大头目",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_三头目",
+      "target_id": "c_报子",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_三头目",
+      "target_id": "c_窦尔敦",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_二头目",
+      "target_id": "c_黄天霸",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_众人",
+      "target_id": "c_大头目",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_众人",
+      "target_id": "c_窦尔敦",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_众人",
+      "target_id": "c_黄天霸",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_大头目",
+      "target_id": "c_报子",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_大头目",
+      "target_id": "c_窦尔敦",
+      "weight": 21.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 9,
+      "same_scene_count": 3
+    },
+    {
+      "source_id": "c_大头目",
+      "target_id": "c_黄天霸",
+      "weight": 2.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_报子",
+      "target_id": "c_窦尔敦",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_窦尔敦",
+      "target_id": "c_黄天霸",
+      "weight": 219.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 108,
+      "same_scene_count": 3
+    }
+  ],
+  "tags": {
+    "genre_inferred": "侠义剧"
+  }
+}

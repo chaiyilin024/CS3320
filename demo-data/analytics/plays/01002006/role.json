@@ -1,0 +1,189 @@
+{
+  "script_id": "01002006",
+  "hangdang_distribution": {
+    "青衣": 1,
+    "净": 1,
+    "丑": 1,
+    "未知": 2
+  },
+  "hangdang_coarse_distribution": {
+    "净": 1,
+    "丑": 1,
+    "旦": 1,
+    "未知": 2
+  },
+  "characters": [
+    {
+      "character_id": "c_包拯",
+      "name": "包拯",
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_final": "净",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=男",
+        "identity=妃后",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "妃后",
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_油流鬼",
+      "name": "油流鬼",
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_final": "丑",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=mid",
+        "personality=勇猛",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "personality": [
+          "勇猛"
+        ],
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_柳金蝉",
+      "name": "柳金蝉",
+      "hangdang_labeled": "青衣",
+      "hangdang_inferred": null,
+      "hangdang_final": "青衣",
+      "confidence": 0.95,
+      "top_features": [
+        "hangdang_raw=旦",
+        "line_count_bucket=mid",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_王朝",
+      "name": "王朝",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_马汉",
+      "name": "马汉",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    }
+  ],
+  "trait_summary": [
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "identity=妃后",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "personality=勇猛",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "hangdang_raw=旦",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=mid",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "青衣",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "青衣",
+      "count": 1
+    }
+  ],
+  "labeled_count": 3,
+  "inferred_count": 0
+}

@@ -1,0 +1,457 @@
+{
+  "script_id": "01028005",
+  "title": "磨房产子",
+  "genre": "神话剧",
+  "nodes": [
+    {
+      "id": "c_窦有功",
+      "name": "窦有功",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 56.0,
+      "betweenness": 0.0278,
+      "weighted_betweenness": 0.5,
+      "closeness": 0.6429,
+      "eigenvector": 0.6597,
+      "community_id": 0
+    },
+    {
+      "id": "c_刘智远",
+      "name": "刘智远",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 9,
+      "weighted_degree": 47.0,
+      "betweenness": 0.375,
+      "weighted_betweenness": 0.3889,
+      "closeness": 1.0,
+      "eigenvector": 0.5812,
+      "community_id": 0
+    },
+    {
+      "id": "c_李三娘",
+      "name": "李三娘",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 7,
+      "weighted_degree": 35.0,
+      "betweenness": 0.0694,
+      "weighted_betweenness": 0.1389,
+      "closeness": 0.8182,
+      "eigenvector": 0.4345,
+      "community_id": 0
+    },
+    {
+      "id": "c_送子观音",
+      "name": "送子观音",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": false,
+      "degree": 6,
+      "weighted_degree": 18.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0278,
+      "closeness": 0.75,
+      "eigenvector": 0.0435,
+      "community_id": 1
+    },
+    {
+      "id": "c_张仙",
+      "name": "张仙",
+      "hangdang": "老生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 6,
+      "weighted_degree": 12.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.75,
+      "eigenvector": 0.0385,
+      "community_id": 1
+    },
+    {
+      "id": "c_护法",
+      "name": "护法",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 6,
+      "weighted_degree": 12.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.75,
+      "eigenvector": 0.0385,
+      "community_id": 1
+    },
+    {
+      "id": "c_中军",
+      "name": "中军",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 11.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.2222,
+      "closeness": 0.6,
+      "eigenvector": 0.1346,
+      "community_id": 2
+    },
+    {
+      "id": "c_刘氏",
+      "name": "刘氏",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 6,
+      "weighted_degree": 10.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.75,
+      "eigenvector": 0.0749,
+      "community_id": 0
+    },
+    {
+      "id": "c_妖精",
+      "name": "妖精",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 6,
+      "weighted_degree": 10.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.75,
+      "eigenvector": 0.0894,
+      "community_id": 0
+    },
+    {
+      "id": "c_二衙役",
+      "name": "二衙役",
+      "hangdang": "丑",
+      "hangdang_coarse": "丑",
+      "is_main": false,
+      "degree": 3,
+      "weighted_degree": 5.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6,
+      "eigenvector": 0.0416,
+      "community_id": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "c_刘智远",
+      "target": "c_窦有功",
+      "weight": 29.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 14,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_李三娘",
+      "target": "c_窦有功",
+      "weight": 19.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 9,
+      "normalized_weight": 0.6552
+    },
+    {
+      "source": "c_中军",
+      "target": "c_窦有功",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.2414
+    },
+    {
+      "source": "c_刘智远",
+      "target": "c_李三娘",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.2414
+    },
+    {
+      "source": "c_张仙",
+      "target": "c_送子观音",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.2414
+    },
+    {
+      "source": "c_护法",
+      "target": "c_送子观音",
+      "weight": 7.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "normalized_weight": 0.2414
+    },
+    {
+      "source": "c_刘智远",
+      "target": "c_妖精",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.1724
+    },
+    {
+      "source": "c_刘氏",
+      "target": "c_李三娘",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.1724
+    },
+    {
+      "source": "c_中军",
+      "target": "c_二衙役",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.1034
+    },
+    {
+      "source": "c_中军",
+      "target": "c_刘智远",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_二衙役",
+      "target": "c_刘智远",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_二衙役",
+      "target": "c_窦有功",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_刘智远",
+      "target": "c_刘氏",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_刘智远",
+      "target": "c_张仙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_刘智远",
+      "target": "c_护法",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_刘智远",
+      "target": "c_送子观音",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_刘氏",
+      "target": "c_妖精",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_刘氏",
+      "target": "c_张仙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_刘氏",
+      "target": "c_护法",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_刘氏",
+      "target": "c_送子观音",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_妖精",
+      "target": "c_张仙",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_妖精",
+      "target": "c_护法",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_妖精",
+      "target": "c_李三娘",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_妖精",
+      "target": "c_送子观音",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_张仙",
+      "target": "c_护法",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_张仙",
+      "target": "c_李三娘",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_护法",
+      "target": "c_李三娘",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    },
+    {
+      "source": "c_李三娘",
+      "target": "c_送子观音",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0345
+    }
+  ],
+  "metrics": {
+    "node_count": 10,
+    "edge_count": 28,
+    "density": 0.6222,
+    "avg_clustering": 0.8956,
+    "avg_degree": 5.6,
+    "avg_weighted_degree": 21.6,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.0753,
+    "modularity": 0.2179,
+    "assortativity_hangdang": -0.1691,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 7,
+      "density": 0.7,
+      "avg_clustering": 0.1848,
+      "modularity": 0.0
+    }
+  }
+}

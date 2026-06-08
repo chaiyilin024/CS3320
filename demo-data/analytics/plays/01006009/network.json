@@ -1,0 +1,253 @@
+{
+  "script_id": "01006009",
+  "title": "连环套【三本】",
+  "genre": "侠义剧",
+  "nodes": [
+    {
+      "id": "c_窦尔敦",
+      "name": "窦尔敦",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 251.0,
+      "betweenness": 0.2,
+      "weighted_betweenness": 0.8,
+      "closeness": 0.8571,
+      "eigenvector": 0.7059,
+      "community_id": 0
+    },
+    {
+      "id": "c_黄天霸",
+      "name": "黄天霸",
+      "hangdang": "武生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 235.0,
+      "betweenness": 0.3333,
+      "weighted_betweenness": 0.6,
+      "closeness": 0.75,
+      "eigenvector": 0.7031,
+      "community_id": 0
+    },
+    {
+      "id": "c_大头目",
+      "name": "大头目",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": true,
+      "degree": 5,
+      "weighted_degree": 26.0,
+      "betweenness": 0.2,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.8571,
+      "eigenvector": 0.0738,
+      "community_id": 0
+    },
+    {
+      "id": "c_二头目",
+      "name": "二头目",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": true,
+      "degree": 1,
+      "weighted_degree": 9.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.4615,
+      "eigenvector": 0.0287,
+      "community_id": 0
+    },
+    {
+      "id": "c_众人",
+      "name": "众人",
+      "hangdang": "小生",
+      "hangdang_coarse": "生",
+      "is_main": false,
+      "degree": 3,
+      "weighted_degree": 9.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6667,
+      "eigenvector": 0.0259,
+      "community_id": 0
+    },
+    {
+      "id": "c_报子",
+      "name": "报子",
+      "hangdang": "丑",
+      "hangdang_coarse": "丑",
+      "is_main": true,
+      "degree": 3,
+      "weighted_degree": 7.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6,
+      "eigenvector": 0.0164,
+      "community_id": 0
+    },
+    {
+      "id": "c_三头目",
+      "name": "三头目",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": false,
+      "degree": 3,
+      "weighted_degree": 5.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 0.6,
+      "eigenvector": 0.01,
+      "community_id": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "c_窦尔敦",
+      "target": "c_黄天霸",
+      "weight": 219.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 108,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_大头目",
+      "target": "c_窦尔敦",
+      "weight": 21.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 9,
+      "normalized_weight": 0.0959
+    },
+    {
+      "source": "c_二头目",
+      "target": "c_黄天霸",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.0411
+    },
+    {
+      "source": "c_众人",
+      "target": "c_黄天霸",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.0228
+    },
+    {
+      "source": "c_报子",
+      "target": "c_窦尔敦",
+      "weight": 5.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "normalized_weight": 0.0228
+    },
+    {
+      "source": "c_三头目",
+      "target": "c_窦尔敦",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0137
+    },
+    {
+      "source": "c_众人",
+      "target": "c_窦尔敦",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0137
+    },
+    {
+      "source": "c_大头目",
+      "target": "c_黄天霸",
+      "weight": 2.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0091
+    },
+    {
+      "source": "c_三头目",
+      "target": "c_大头目",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0046
+    },
+    {
+      "source": "c_三头目",
+      "target": "c_报子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0046
+    },
+    {
+      "source": "c_众人",
+      "target": "c_大头目",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0046
+    },
+    {
+      "source": "c_大头目",
+      "target": "c_报子",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0046
+    }
+  ],
+  "metrics": {
+    "node_count": 7,
+    "edge_count": 12,
+    "density": 0.5714,
+    "avg_clustering": 0.6714,
+    "avg_degree": 3.43,
+    "avg_weighted_degree": 77.43,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.0178,
+    "modularity": 0.0,
+    "assortativity_hangdang": -0.1309,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 6,
+      "density": 0.6,
+      "avg_clustering": 0.0263,
+      "modularity": 0.0
+    }
+  }
+}

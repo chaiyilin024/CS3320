@@ -10,6 +10,13 @@ export const useFilterStore = defineStore('filter', () => {
   const selectedTopicIds = ref<number[]>([])
   const narrativeBlockRange = ref<[number, number] | null>(null)
   const filterHangdang = ref<string | null>(null)
+  const catalogDemo = ref(false)
+  const catalogDemoNote = ref<string | null>(null)
+
+  function setCatalogMeta(demo: boolean, note?: string | null) {
+    catalogDemo.value = demo
+    catalogDemoNote.value = note ?? null
+  }
 
   function setScriptId(id: string | null) {
     scriptId.value = id
@@ -63,11 +70,14 @@ export const useFilterStore = defineStore('filter', () => {
     selectedTopicIds,
     narrativeBlockRange,
     filterHangdang,
+    catalogDemo,
+    catalogDemoNote,
     setScriptId,
     setGenre,
     setCollectionId,
     setNarrativeBlockRange,
     setFilterHangdang,
+    setCatalogMeta,
     clearGlobalFilters,
     toggleCharacter,
     toggleTopic,

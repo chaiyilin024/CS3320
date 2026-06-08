@@ -11,7 +11,8 @@ import type {
   ThemePatternsGlobal,
 } from '@/types'
 
-const BASE = '/data'
+/** 与 vite base 对齐，GitHub Pages 下为 /CS3320/data */
+const BASE = `${import.meta.env.BASE_URL}data`.replace(/([^:]\/)\/+/g, '$1').replace(/\/$/, '')
 
 async function getJson<T>(path: string): Promise<T> {
   const res = await fetch(`${BASE}${path}`)

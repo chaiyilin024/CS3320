@@ -1,0 +1,368 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-08T13:46:01.679518+00:00",
+  "summary": {
+    "play_count": 10,
+    "avg_score": 0.722,
+    "low_quality_count": 4,
+    "low_quality_threshold": 0.55,
+    "fallback_label_share": 0.3125,
+    "tier_totals": {
+      "strong": 6,
+      "fallback": 7,
+      "weak": 3
+    }
+  },
+  "label_distribution": [
+    {
+      "label": "其他情节",
+      "topic_count": 5,
+      "weight_sum": 3.022
+    },
+    {
+      "label": "家训教子",
+      "topic_count": 2,
+      "weight_sum": 2.0
+    },
+    {
+      "label": "冲突怒斥",
+      "topic_count": 2,
+      "weight_sum": 1.601
+    },
+    {
+      "label": "守城攻防",
+      "topic_count": 1,
+      "weight_sum": 0.802
+    },
+    {
+      "label": "行军调度",
+      "topic_count": 1,
+      "weight_sum": 0.198
+    },
+    {
+      "label": "忠君奉旨",
+      "topic_count": 1,
+      "weight_sum": 0.512
+    },
+    {
+      "label": "宴饮场面",
+      "topic_count": 1,
+      "weight_sum": 0.305
+    },
+    {
+      "label": "出使行程",
+      "topic_count": 1,
+      "weight_sum": 0.182
+    },
+    {
+      "label": "神话天命",
+      "topic_count": 1,
+      "weight_sum": 0.729
+    },
+    {
+      "label": "公案侠义",
+      "topic_count": 1,
+      "weight_sum": 0.648
+    }
+  ],
+  "fallback_keywords": [
+    {
+      "keyword": "儿吓",
+      "count": 1
+    },
+    {
+      "keyword": "贼兵",
+      "count": 1
+    },
+    {
+      "keyword": "我父",
+      "count": 1
+    },
+    {
+      "keyword": "爹爹吓",
+      "count": 1
+    },
+    {
+      "keyword": "血书",
+      "count": 1
+    },
+    {
+      "keyword": "不到",
+      "count": 1
+    },
+    {
+      "keyword": "大姐",
+      "count": 1
+    },
+    {
+      "keyword": "宋大爷",
+      "count": 1
+    },
+    {
+      "keyword": "私通",
+      "count": 1
+    },
+    {
+      "keyword": "乌龙院",
+      "count": 1
+    },
+    {
+      "keyword": "宋公明",
+      "count": 1
+    },
+    {
+      "keyword": "走走",
+      "count": 1
+    },
+    {
+      "keyword": "油流",
+      "count": 1
+    },
+    {
+      "keyword": "冤鬼",
+      "count": 1
+    },
+    {
+      "keyword": "叫做",
+      "count": 1
+    },
+    {
+      "keyword": "呼唤",
+      "count": 1
+    },
+    {
+      "keyword": "看守",
+      "count": 1
+    },
+    {
+      "keyword": "阴曹",
+      "count": 1
+    },
+    {
+      "keyword": "连环套",
+      "count": 1
+    },
+    {
+      "keyword": "天霸",
+      "count": 1
+    },
+    {
+      "keyword": "比武",
+      "count": 1
+    },
+    {
+      "keyword": "喽罗",
+      "count": 1
+    },
+    {
+      "keyword": "上山",
+      "count": 1
+    },
+    {
+      "keyword": "算不得",
+      "count": 1
+    },
+    {
+      "keyword": "镖客",
+      "count": 1
+    }
+  ],
+  "low_quality_plays": [
+    {
+      "script_id": "01001007",
+      "title": "桑园寄子",
+      "genre": "家庭剧",
+      "score": 0.35,
+      "labeled_weight": 0.0,
+      "fallback_weight": 1.0,
+      "tier_counts": {
+        "fallback": 1
+      },
+      "issues": [
+        "100% 主题为未识别（其他情节/未知）",
+        "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+      ]
+    },
+    {
+      "script_id": "01001020",
+      "title": "宋江闹院",
+      "genre": "历史剧",
+      "score": 0.35,
+      "labeled_weight": 0.0,
+      "fallback_weight": 1.0,
+      "tier_counts": {
+        "fallback": 1
+      },
+      "issues": [
+        "100% 主题为未识别（其他情节/未知）",
+        "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+      ]
+    },
+    {
+      "script_id": "01006009",
+      "title": "连环套【三本】",
+      "genre": "侠义剧",
+      "score": 0.35,
+      "labeled_weight": 0.0,
+      "fallback_weight": 1.0,
+      "tier_counts": {
+        "fallback": 2
+      },
+      "issues": [
+        "100% 主题为未识别（其他情节/未知）",
+        "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+      ]
+    },
+    {
+      "script_id": "01028005",
+      "title": "磨房产子",
+      "genre": "神话剧",
+      "score": 0.35,
+      "labeled_weight": 0.0,
+      "fallback_weight": 1.0,
+      "tier_counts": {
+        "fallback": 2
+      },
+      "issues": [
+        "100% 主题为未识别（其他情节/未知）",
+        "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+      ]
+    }
+  ],
+  "plays": [
+    {
+      "script_id": "01001001",
+      "title": "空城计",
+      "genre": "历史剧",
+      "score": 1.0,
+      "labeled_weight": 1.0,
+      "fallback_weight": 0.0,
+      "tier_counts": {
+        "strong": 2
+      },
+      "issues": []
+    },
+    {
+      "script_id": "01001003",
+      "title": "三娘教子",
+      "genre": "家庭剧",
+      "score": 1.0,
+      "labeled_weight": 1.0,
+      "fallback_weight": 0.0,
+      "tier_counts": {
+        "strong": 1
+      },
+      "issues": []
+    },
+    {
+      "script_id": "01001005",
+      "title": "打鼓骂曹",
+      "genre": "历史剧",
+      "score": 1.0,
+      "labeled_weight": 1.0,
+      "fallback_weight": 0.0,
+      "tier_counts": {
+        "strong": 1
+      },
+      "issues": []
+    },
+    {
+      "script_id": "01001007",
+      "title": "桑园寄子",
+      "genre": "家庭剧",
+      "score": 0.35,
+      "labeled_weight": 0.0,
+      "fallback_weight": 1.0,
+      "tier_counts": {
+        "fallback": 1
+      },
+      "issues": [
+        "100% 主题为未识别（其他情节/未知）",
+        "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+      ]
+    },
+    {
+      "script_id": "01001009",
+      "title": "硃砂痣",
+      "genre": "爱情剧",
+      "score": 1.0,
+      "labeled_weight": 1.0,
+      "fallback_weight": 0.0,
+      "tier_counts": {
+        "weak": 1
+      },
+      "issues": []
+    },
+    {
+      "script_id": "01001012",
+      "title": "黄鹤楼",
+      "genre": "历史剧",
+      "score": 1.0,
+      "labeled_weight": 1.0,
+      "fallback_weight": 0.0,
+      "tier_counts": {
+        "strong": 1,
+        "weak": 2
+      },
+      "issues": []
+    },
+    {
+      "script_id": "01001020",
+      "title": "宋江闹院",
+      "genre": "历史剧",
+      "score": 0.35,
+      "labeled_weight": 0.0,
+      "fallback_weight": 1.0,
+      "tier_counts": {
+        "fallback": 1
+      },
+      "issues": [
+        "100% 主题为未识别（其他情节/未知）",
+        "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+      ]
+    },
+    {
+      "script_id": "01002006",
+      "title": "探阴山",
+      "genre": "公案剧",
+      "score": 0.824,
+      "labeled_weight": 0.7294,
+      "fallback_weight": 0.2706,
+      "tier_counts": {
+        "strong": 1,
+        "fallback": 1
+      },
+      "issues": []
+    },
+    {
+      "script_id": "01006009",
+      "title": "连环套【三本】",
+      "genre": "侠义剧",
+      "score": 0.35,
+      "labeled_weight": 0.0,
+      "fallback_weight": 1.0,
+      "tier_counts": {
+        "fallback": 2
+      },
+      "issues": [
+        "100% 主题为未识别（其他情节/未知）",
+        "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+      ]
+    },
+    {
+      "script_id": "01028005",
+      "title": "磨房产子",
+      "genre": "神话剧",
+      "score": 0.35,
+      "labeled_weight": 0.0,
+      "fallback_weight": 1.0,
+      "tier_counts": {
+        "fallback": 2
+      },
+      "issues": [
+        "100% 主题为未识别（其他情节/未知）",
+        "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+      ]
+    }
+  ]
+}

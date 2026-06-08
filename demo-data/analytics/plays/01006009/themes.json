@@ -1,0 +1,171 @@
+{
+  "script_id": "01006009",
+  "title": "连环套【三本】",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-04T09:00:38.150350+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "公案侠义",
+      "weight": 0.6479,
+      "keywords": [
+        "连环套",
+        "天霸",
+        "比武",
+        "喽罗",
+        "上山",
+        "算不得",
+        "方算",
+        "冤仇",
+        "结下",
+        "宝贝",
+        "摆队",
+        "指镖",
+        "河间",
+        "窦某",
+        "李家店"
+      ],
+      "keyword_weights": [
+        1.6407,
+        1.3856,
+        0.2287,
+        0.1933,
+        0.1676,
+        0.1567,
+        0.1533,
+        0.1441,
+        0.1441,
+        0.1438,
+        0.1388,
+        0.1093,
+        0.1064,
+        0.1041,
+        0.1009
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "其他情节",
+      "weight": 0.3521,
+      "keywords": [
+        "镖客",
+        "适才",
+        "请来",
+        "窦某",
+        "观见",
+        "恕罪",
+        "路过",
+        "武艺超群",
+        "上山",
+        "携带",
+        "绿林",
+        "浙江",
+        "绍兴",
+        "提起",
+        "仇人"
+      ],
+      "keyword_weights": [
+        1.7539,
+        0.2445,
+        0.1755,
+        0.1266,
+        0.0951,
+        0.0906,
+        0.0886,
+        0.0802,
+        0.0764,
+        0.0584,
+        0.0557,
+        0.0524,
+        0.0524,
+        0.0503,
+        0.0449
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.6479,
+    0.3521
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_92",
+      "block_index": 92,
+      "text_snippet": "喽罗的打坐。",
+      "context_snippet": "寨主要问，可将台坐升上一步，愚下亦好面禀。  /  » 喽罗的打坐。  /  （黄天霸打坐。）",
+      "speaker_id": "c_窦尔敦",
+      "speaker_name": "窦尔敦",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_88",
+      "block_index": 88,
+      "text_snippet": "《连环套》【三本】 3",
+      "context_snippet": "嗳，我连环套甚多，算不了什么好宝贝。  /  » 中国京剧戏考 《连环套》【三本】 3  /  此马与众不同。",
+      "speaker_id": null,
+      "speaker_name": "",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_99",
+      "block_index": 99,
+      "text_snippet": "观见此马心喜欢。",
+      "context_snippet": "豪杰路过马良关，  /  » 观见此马心喜欢。  /  空有大胆的英雄汉，",
+      "speaker_id": "c_黄天霸",
+      "speaker_name": "黄天霸",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_94",
+      "block_index": 94,
+      "text_snippet": "镖客请讲。",
+      "context_snippet": "（黄天霸打坐。）  /  » 镖客请讲。  /  寨主、众位英雄听禀。愚下保镖，路过马良关，观见一骑好马，此马生来头上有角，肋下生鳞，左右红光两朵，名为日月骕骦。金鞍玉缛，黄罗丝缰，赤金坠鐙，对对成双，登山越岭，如走平地，漫江过海，四蹄如飞，日行千里见日，夜走八百不明，你我绿林，若有能人，将此马盗来，可算得骑虎夺脆，鳌里夺尊，天下第一条英雄好汉！",
+      "speaker_id": "c_窦尔敦",
+      "speaker_name": "窦尔敦",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.35,
+    "labeled_weight": 0.0,
+    "fallback_weight": 1.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 2
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "公案侠义",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.6479,
+        "issues": [
+          "关键词与 theme.json 规则匹配度低"
+        ]
+      },
+      {
+        "topic_id": 1,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.3521,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "100% 主题为未识别（其他情节/未知）",
+      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+    ]
+  }
+}

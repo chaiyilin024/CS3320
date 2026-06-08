@@ -1,0 +1,201 @@
+{
+  "script_id": "01002006",
+  "title": "探阴山",
+  "genre": "公案剧",
+  "nodes": [
+    {
+      "id": "c_油流鬼",
+      "name": "油流鬼",
+      "hangdang": "丑",
+      "hangdang_coarse": "丑",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 100.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.1667,
+      "closeness": 1.0,
+      "eigenvector": 0.7064,
+      "community_id": 0
+    },
+    {
+      "id": "c_包拯",
+      "name": "包拯",
+      "hangdang": "净",
+      "hangdang_coarse": "净",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 92.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.7029,
+      "community_id": 0
+    },
+    {
+      "id": "c_柳金蝉",
+      "name": "柳金蝉",
+      "hangdang": "青衣",
+      "hangdang_coarse": "旦",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 12.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.0792,
+      "community_id": 0
+    },
+    {
+      "id": "c_王朝",
+      "name": "王朝",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 6.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.0172,
+      "community_id": 1
+    },
+    {
+      "id": "c_马汉",
+      "name": "马汉",
+      "hangdang": "未知",
+      "hangdang_coarse": "未知",
+      "is_main": true,
+      "degree": 4,
+      "weighted_degree": 6.0,
+      "betweenness": 0.0,
+      "weighted_betweenness": 0.0,
+      "closeness": 1.0,
+      "eigenvector": 0.0172,
+      "community_id": 1
+    }
+  ],
+  "links": [
+    {
+      "source": "c_包拯",
+      "target": "c_油流鬼",
+      "weight": 89.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 44,
+      "normalized_weight": 1.0
+    },
+    {
+      "source": "c_柳金蝉",
+      "target": "c_油流鬼",
+      "weight": 9.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "normalized_weight": 0.1011
+    },
+    {
+      "source": "c_王朝",
+      "target": "c_马汉",
+      "weight": 3.0,
+      "types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "normalized_weight": 0.0337
+    },
+    {
+      "source": "c_包拯",
+      "target": "c_柳金蝉",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0112
+    },
+    {
+      "source": "c_包拯",
+      "target": "c_王朝",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0112
+    },
+    {
+      "source": "c_包拯",
+      "target": "c_马汉",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0112
+    },
+    {
+      "source": "c_柳金蝉",
+      "target": "c_王朝",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0112
+    },
+    {
+      "source": "c_柳金蝉",
+      "target": "c_马汉",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0112
+    },
+    {
+      "source": "c_油流鬼",
+      "target": "c_王朝",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0112
+    },
+    {
+      "source": "c_油流鬼",
+      "target": "c_马汉",
+      "weight": 1.0,
+      "types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "normalized_weight": 0.0112
+    }
+  ],
+  "metrics": {
+    "node_count": 5,
+    "edge_count": 10,
+    "density": 1.0,
+    "avg_clustering": 1.0,
+    "avg_degree": 4.0,
+    "avg_weighted_degree": 43.2,
+    "component_count": 1,
+    "avg_weighted_clustering": 0.0323,
+    "modularity": 0.0494,
+    "assortativity_hangdang": -0.25,
+    "main_subgraph": {
+      "node_count": 5,
+      "edge_count": 10,
+      "density": 1.0,
+      "avg_clustering": 0.0323,
+      "modularity": 0.0679
+    }
+  }
+}

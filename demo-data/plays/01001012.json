@@ -1,0 +1,6497 @@
+{
+  "script_id": "01001012",
+  "title": "黄鹤楼",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01001012_黄鹤楼.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-04T08:59:05.387764+00:00",
+    "page_count": 9,
+    "char_count": 4589,
+    "parse_quality": 0.972,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_刘备",
+      "name": "刘备",
+      "aliases": [],
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 78,
+      "first_appearance_block": 20,
+      "is_main": true
+    },
+    {
+      "character_id": "c_周瑜",
+      "name": "周瑜",
+      "aliases": [],
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 65,
+      "first_appearance_block": 188,
+      "is_main": true
+    },
+    {
+      "character_id": "c_赵云",
+      "name": "赵云",
+      "aliases": [],
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 64,
+      "first_appearance_block": 56,
+      "is_main": true
+    },
+    {
+      "character_id": "c_诸葛亮",
+      "name": "诸葛亮",
+      "aliases": [],
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 45,
+      "first_appearance_block": 39,
+      "is_main": true
+    },
+    {
+      "character_id": "c_张飞",
+      "name": "张飞",
+      "aliases": [],
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "净",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 30,
+      "first_appearance_block": 135,
+      "is_main": true
+    },
+    {
+      "character_id": "c_鲁肃",
+      "name": "鲁肃",
+      "aliases": [],
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 21,
+      "first_appearance_block": 253,
+      "is_main": false
+    },
+    {
+      "character_id": "c_甘宁",
+      "name": "甘宁",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 7,
+      "first_appearance_block": 193,
+      "is_main": false
+    },
+    {
+      "character_id": "c_刘封",
+      "name": "刘封",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 4,
+      "first_appearance_block": 27,
+      "is_main": false
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "【第一场】",
+      "block_range": [
+        18,
+        185
+      ],
+      "character_ids": [
+        "c_刘备",
+        "c_刘封",
+        "c_张飞",
+        "c_诸葛亮",
+        "c_赵云"
+      ]
+    },
+    {
+      "scene_id": "s_2",
+      "scene_index": 2,
+      "title": "【第二场】",
+      "block_range": [
+        186,
+        206
+      ],
+      "character_ids": [
+        "c_周瑜",
+        "c_甘宁"
+      ]
+    },
+    {
+      "scene_id": "s_3",
+      "scene_index": 3,
+      "title": "【第三场】",
+      "block_range": [
+        207,
+        224
+      ],
+      "character_ids": [
+        "c_刘备",
+        "c_周瑜",
+        "c_甘宁",
+        "c_赵云"
+      ]
+    },
+    {
+      "scene_id": "s_4",
+      "scene_index": 4,
+      "title": "【第四场】",
+      "block_range": [
+        225,
+        250
+      ],
+      "character_ids": [
+        "c_刘备",
+        "c_周瑜",
+        "c_甘宁"
+      ]
+    },
+    {
+      "scene_id": "s_5",
+      "scene_index": 5,
+      "title": "【第五场】",
+      "block_range": [
+        251,
+        418
+      ],
+      "character_ids": [
+        "c_刘备",
+        "c_周瑜",
+        "c_赵云",
+        "c_鲁肃"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（一名：《过江赴宴》；一名：《竹中藏令》）",
+      "performance_tags": [],
+      "char_len": 21,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "刘备：老生",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "赵云：小生",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "周瑜：小生",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "诸葛亮：老生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "张飞：净",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "鲁肃：老生",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "刘备借据荆州，久假不归。周瑜愤甚，乃设宴黄鹤楼，遣甘宁往招刘备过江赴宴，拟以兵劫之，逼刘备交逼荆州。刘备得书，与诸葛亮计议，恐中周瑜计，欲辞之。诸葛亮力劝过江，以敦睦谊，谓之过虑，可使赵云",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "随往保护。赵云亦以众寡悬殊，恐遭不测，不敢应允。诸葛亮乃以竹节授赵云，谓“事急可开视之，内有妙计，可抵十万师也。”赵云乃随刘备过江。周瑜探知只有君臣二人过江，大喜，接入楼中。席间索还荆州，",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "刘备假作疾声，一味推诿。赵云挺身而出，谓“欲索荆州，须还我东风。”周瑜大怒，下令军士围困黄鹤楼，",
+      "performance_tags": [],
+      "char_len": 48,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "逼刘备立书还荆州字据，有不得将令而私释者，杀无赦。周瑜去。刘备、赵云困守楼中，闷甚，赵云乃劈竹节视之，见中藏一小旗，上有“水军都督周”字样，即前日南屏山借风时，诸葛亮索得之将令也。刘备大",
+      "performance_tags": [],
+      "char_len": 93,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_13",
+      "block_index": 13,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "喜，即持旗示围楼将士，谓“已得都督将令，许我回荆州。”诸将见都督有令，不敢阻拦，遂任其过江而去。",
+      "performance_tags": [],
+      "char_len": 48,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "及周瑜闻言，率兵追袭，而刘备、赵云已为荆州诸将接去，周瑜反损兵折将而回。",
+      "performance_tags": [],
+      "char_len": 36,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_15",
+      "block_index": 15,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "注释",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "此剧按之《三国演义》并无其事，惟情节曲折离奇，颇有可探处。不知为何人手笔。新舞台间演此剧，以夏月珊去赵云，颇觉别致。",
+      "performance_tags": [],
+      "char_len": 58,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_17",
+      "block_index": 17,
+      "scene_id": null,
+      "type": "annotation",
+      "speaker_id": null,
+      "text": "根据《戏考》第一册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": "s_1",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第一场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四红龙套引刘备同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "义得人和，灭孙曹，孤心安乐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "引子"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "日月重明照英雄，全仗卧龙建奇功。虽得土地观王化，未能遂意高祖风。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "孤，刘备，乃大树楼桑人氏。曾与关、张桃园结义，共破黄巾。弟兄三顾茅庐，请来诸葛先生，累建奇功。孤虽暂住荆州，与东吴未分明白，叫孤常常忧虑。正是：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "苍天遂孤意，重整汉帝基。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘封上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘封",
+      "text": "忙将东吴事，报与父王知。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "刘封",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘封",
+      "text": "参见父王。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "刘封",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "罢了，进帐何事？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘封",
+      "text": "东吴有书到来，父王请看。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "刘封",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "呈上来。东吴有书到来，待孤拆开观看。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（〖牌子〗。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "原来东吴太后，染病在床，请孤过江探病。来，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_35",
+      "block_index": 35,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘封允。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "有请诸葛先生。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘封",
+      "text": "有请诸葛先生。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "刘封",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘封下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_39",
+      "block_index": 39,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "哽哼。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_40",
+      "block_index": 40,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（诸葛亮上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_41",
+      "block_index": 41,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "东吴摆下杀人场，狸猫焉能胜虎狼。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_42",
+      "block_index": 42,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "参见主公。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_43",
+      "block_index": 43,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "先生少礼，请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_44",
+      "block_index": 44,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "谢坐。宣臣进帐，有何军情？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_45",
+      "block_index": 45,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "东吴有书到来，先生请看。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_46",
+      "block_index": 46,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "山人不必看书，也曾回复甘宁，道主公即刻过江。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_47",
+      "block_index": 47,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "此番过江，还是好意，还是奸计？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_48",
+      "block_index": 48,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "自然是奸计，有什么好意？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_49",
+      "block_index": 49,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "既是奸计，孤就不去了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_50",
+      "block_index": 50,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "主公不去，荆州又是他人的了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "去孤便去，必须多带能将保驾才是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_52",
+      "block_index": 52,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "山人自有道理。来，四红龙套 （同白） 有。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "请四将军进帐。四红龙套 （同白） 四将军进帐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_56",
+      "block_index": 56,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "来也！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "忆昔长坂建奇功，冲锋对垒气概雄。曹兵见俺皆丧胆，谁不闻名赵子龙。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "参见主公。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "四弟少礼，见过先生。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "参见先生。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "四将军少礼，请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "谢坐。宣臣进帐，有何军情？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "先生有差。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "先生有何差遣？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "主公过江饮宴，命你保驾前去。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "但不知赐我君臣多少人马？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "不带人马，就是你君臣二人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "这个……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "慢来，慢来，前番过江，乃是我君臣二人，险些命丧东吴；今番过江，又是我君臣二人。要去你去，孤是不去的了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 51,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "主公吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "自古道吉人有天相，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_73",
+      "block_index": 73,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "主公何必带愁肠？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "黄鹤楼上把宴尝，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "四将军保驾谅无妨。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "先生，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "先生把话错来讲，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_78",
+      "block_index": 78,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "休提起当年赴会在河梁。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘备",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_79",
+      "block_index": 79,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "孙刘结仇山海样，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_80",
+      "block_index": 80,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "孤岂肯把性命送入虎狼？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘备",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "呀，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "再三相劝主不往，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮流水板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "倒叫山人无主张。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_84",
+      "block_index": 84,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "回头激动常山将，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_85",
+      "block_index": 85,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "四将军，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_86",
+      "block_index": 86,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "先生。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_87",
+      "block_index": 87,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "难道你也怕周郎？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮流水板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_88",
+      "block_index": 88,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "先生，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_89",
+      "block_index": 89,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "百万军中独自闯，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_90",
+      "block_index": 90,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "当阳救主姓名扬。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_91",
+      "block_index": 91,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "主公但把宽心放，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_92",
+      "block_index": 92,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "为臣保驾谅无妨！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_93",
+      "block_index": 93,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "哦，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_94",
+      "block_index": 94,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "他二人把话一样讲，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "倒叫孤王无主张。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_96",
+      "block_index": 96,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "回言便与先生讲，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_97",
+      "block_index": 97,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "孤王言来听端详：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_98",
+      "block_index": 98,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "倘若我命东吴丧，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_99",
+      "block_index": 99,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "招孤灵魂入庙堂。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_100",
+      "block_index": 100,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "孤去便去，多带能将保驾才是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_101",
+      "block_index": 101,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "不用人马，就是你君臣二人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_102",
+      "block_index": 102,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "先生！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "叫头"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "不叫俺君臣多带人马，到了黄鹤楼上，倘若东吴暗有埋伏，难道叫俺拳打足踢不成？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 37,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "照吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_105",
+      "block_index": 105,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "四将军要退兵之计？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_106",
+      "block_index": 106,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "正是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_107",
+      "block_index": 107,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "来来来，这有竹节一根，带在身旁。倘遇不测，能当百万雄兵。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_108",
+      "block_index": 108,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "遵命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "四弟打开竹节一看，里面藏着多少人马？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "待臣看来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "且慢，看过就不灵了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "哪里是看过不灵，分明是孤的引魂幡！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "主公吓，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "竹节不过三尺长，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮流水板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "内藏兵将人难防。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "急难之中对它讲，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "放出人马退周郎。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "先生，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "先生八卦无虚谎，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "君臣何日转荆襄？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "本月十六日，迎接你君臣回朝。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "启禀主公，本月十六日，迎接我君臣回朝。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_123",
+      "block_index": 123,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "本月十六日，迎接孤的灵魂吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_124",
+      "block_index": 124,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "看衣衾更换。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_125",
+      "block_index": 125,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "好一个大胆诸葛亮，勒逼孤王过长江。龙潭虎穴孤去闯，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四红龙套同带马。四红龙套、赵云同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 20,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "送主公。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_130",
+      "block_index": 130,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "嗳，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_131",
+      "block_index": 131,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "你分明送孤去见阎王！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘备下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_133",
+      "block_index": 133,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "一见主公出宝帐，那旁来了翼德张。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_135",
+      "block_index": 135,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "走吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_136",
+      "block_index": 136,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（张飞上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "心中恼恨诸葛亮，做事不与某商量。怒气不息宝帐闯，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_140",
+      "block_index": 140,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "哎吓，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_141",
+      "block_index": 141,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "你快快还我大兄王！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_142",
+      "block_index": 142,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "可恼吓，可恼！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_143",
+      "block_index": 143,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "三将军怒气不息，为着谁来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_144",
+      "block_index": 144,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "我就为你来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_145",
+      "block_index": 145,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "为山人何来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_146",
+      "block_index": 146,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "俺大哥过江赴宴，怎么不叫俺老张知道？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_147",
+      "block_index": 147,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "叫你知道，也要前去；不叫你知道，也要前去。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_148",
+      "block_index": 148,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "咦，但不知兵带多少，大将几员？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_149",
+      "block_index": 149,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "不带人马，就是子龙一人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_150",
+      "block_index": 150,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "啊，我四弟一人，也能成功？待我赶他回来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_151",
+      "block_index": 151,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "且慢，赶他回来，也要前去；不赶他回来，也要前去。此时用你不着，出帐去吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 36,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_152",
+      "block_index": 152,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "诸葛亮吓，诸葛孔明！我弟兄三顾茅庐，请你下山，扶保汉室基业。到如今一事未成，将俺大哥送入虎口！诸葛亮吓，诸葛孔明！你好狠毒也！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 63,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_153",
+      "block_index": 153,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "孙刘结仇山海样，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_154",
+      "block_index": 154,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "诓我大哥过长江。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_155",
+      "block_index": 155,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "既去多带兵和将，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_156",
+      "block_index": 156,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "传下将令差老张。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_157",
+      "block_index": 157,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "手摸胸膛想一想，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_158",
+      "block_index": 158,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "你是人面兽心肠！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_159",
+      "block_index": 159,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "周郎请主把宴尝，将军何必带愁肠？子龙能敌千员将，准备十六转还乡。算定无虚准阴阳，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_164",
+      "block_index": 164,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "如若不准呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_165",
+      "block_index": 165,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "首级送到你营房。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_166",
+      "block_index": 166,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "好先生！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_167",
+      "block_index": 167,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "先生八卦无虚谎，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_168",
+      "block_index": 168,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "休怪老张语癫狂。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_169",
+      "block_index": 169,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "辞别先生出宝帐，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_170",
+      "block_index": 170,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "嗳，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_171",
+      "block_index": 171,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "想起大哥泪两旁。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "西皮流水板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_172",
+      "block_index": 172,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "小周郎他的韬略广，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_173",
+      "block_index": 173,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "一封书将俺大哥诓过江。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_174",
+      "block_index": 174,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "俺大哥若在东吴丧，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_175",
+      "block_index": 175,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "我带领着人马过长江。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_176",
+      "block_index": 176,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "要把那东吴俱扫荡，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_177",
+      "block_index": 177,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张飞",
+      "text": "周郎儿难逃爷的丈八枪！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "张飞",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_178",
+      "block_index": 178,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张飞",
+      "text": "走！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "张飞",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_179",
+      "block_index": 179,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（张飞下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_180",
+      "block_index": 180,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_诸葛亮",
+      "text": "欲害我主自损将，孙权屡次为荆襄。汉室基业汉执掌，你今只好笑一场。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_184",
+      "block_index": 184,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_诸葛亮",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "诸葛亮",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_185",
+      "block_index": 185,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（诸葛亮下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_186",
+      "block_index": 186,
+      "scene_id": "s_2",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第二场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_187",
+      "block_index": 187,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四白龙套引周瑜同上。）",
+      "performance_tags": [
+        "念",
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_188",
+      "block_index": 188,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "水军冲破长江浪，对对儿郎武艺强。刘备中计命必丧，讨回荆州取襄阳。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_192",
+      "block_index": 192,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（甘宁上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_193",
+      "block_index": 193,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_甘宁",
+      "text": "启都督：刘备过江来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "甘宁",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_194",
+      "block_index": 194,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哦，刘备过江来了。带领多少人马？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_195",
+      "block_index": 195,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_甘宁",
+      "text": "未带人马，只是子龙一人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "甘宁",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_196",
+      "block_index": 196,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哦，只有子龙一人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_197",
+      "block_index": 197,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哈哈，哈哈，哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "三笑"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_198",
+      "block_index": 198,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "刘备吓，刘备！此番过江，中了本督之计也！甘将军，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_199",
+      "block_index": 199,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_甘宁",
+      "text": "在。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "甘宁",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_200",
+      "block_index": 200,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "准备战船，江口伺候。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_201",
+      "block_index": 201,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_甘宁",
+      "text": "遵命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "甘宁",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_202",
+      "block_index": 202,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（甘宁下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_203",
+      "block_index": 203,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "众将官！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_204",
+      "block_index": 204,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四白龙套同允。）",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_205",
+      "block_index": 205,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "排队相迎。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_206",
+      "block_index": 206,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四白龙套排队同下，周瑜下。）",
+      "performance_tags": [
+        "念",
+        "做"
+      ],
+      "char_len": 15,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_207",
+      "block_index": 207,
+      "scene_id": "s_3",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第三场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_208",
+      "block_index": 208,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四红水手、船夫引赵云同上。四水手、船夫引甘宁自下场门同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 31,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_209",
+      "block_index": 209,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "有请主公。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_210",
+      "block_index": 210,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_甘宁",
+      "text": "有请都督。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "甘宁",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_211",
+      "block_index": 211,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘备、周瑜自两边分上。周瑜过船。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 18,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_212",
+      "block_index": 212,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "吓，皇叔过江来了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_213",
+      "block_index": 213,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "备过江来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_214",
+      "block_index": 214,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_215",
+      "block_index": 215,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_216",
+      "block_index": 216,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "皇叔请来过船。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_217",
+      "block_index": 217,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "不敢，都督请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_218",
+      "block_index": 218,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "皇叔请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_219",
+      "block_index": 219,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "不敢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_220",
+      "block_index": 220,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "你我挽手而行。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_221",
+      "block_index": 221,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘备、周瑜、赵云同过船。）",
+      "performance_tags": [],
+      "char_len": 14,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_222",
+      "block_index": 222,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "这是何人？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_223",
+      "block_index": 223,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "四弟子龙。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_224",
+      "block_index": 224,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（众人催船同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 9,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_225",
+      "block_index": 225,
+      "scene_id": "s_4",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第四场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_226",
+      "block_index": 226,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜、刘备、赵云、甘宁、四白龙套同上。）",
+      "performance_tags": [
+        "念",
+        "做"
+      ],
+      "char_len": 21,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_227",
+      "block_index": 227,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "皇叔请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_228",
+      "block_index": 228,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "有坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_229",
+      "block_index": 229,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "不知皇叔驾到，瑜未曾远迎，当面恕罪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_230",
+      "block_index": 230,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "岂敢，备少来问候，望都督恕罪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_231",
+      "block_index": 231,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "岂敢。看什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_232",
+      "block_index": 232,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "如何不见吴侯？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_233",
+      "block_index": 233,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "太后染病在床，吴侯不离左右，故而命瑜代劳。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_234",
+      "block_index": 234,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "告辞。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_235",
+      "block_index": 235,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哪里去？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_236",
+      "block_index": 236,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "进宫探病。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_237",
+      "block_index": 237,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "且慢，吴侯言道，皇叔到此，命瑜陪伴黄鹤楼上饮宴。宴罢之后，一同进宫。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_238",
+      "block_index": 238,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "遵命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_239",
+      "block_index": 239,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_甘宁",
+      "text": "宴齐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "甘宁",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_240",
+      "block_index": 240,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "甘将军，吩咐将宴摆在黄鹤楼上，命鲁大夫把盏。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_241",
+      "block_index": 241,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_甘宁",
+      "text": "遵命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "甘宁",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_242",
+      "block_index": 242,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（甘宁下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_243",
+      "block_index": 243,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "皇叔请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_244",
+      "block_index": 244,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "都督请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_245",
+      "block_index": 245,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "正是：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_246",
+      "block_index": 246,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "相逢花中锦，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_247",
+      "block_index": 247,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "知己叙衷肠。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_248",
+      "block_index": 248,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、周瑜同亮架子。刘备、赵云同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 20,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_249",
+      "block_index": 249,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哼哼哼……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_250",
+      "block_index": 250,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜、四白龙套同下。）",
+      "performance_tags": [
+        "念",
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_251",
+      "block_index": 251,
+      "scene_id": "s_5",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第五场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_252",
+      "block_index": 252,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（鲁肃上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_253",
+      "block_index": 253,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "摆宴。有请都督。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_254",
+      "block_index": 254,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（〖吹打〗。刘备、赵云、周瑜同上。）",
+      "performance_tags": [
+        "打",
+        "做"
+      ],
+      "char_len": 18,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_255",
+      "block_index": 255,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "皇叔过江来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_256",
+      "block_index": 256,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "备过江来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_257",
+      "block_index": 257,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_258",
+      "block_index": 258,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "皇叔请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_259",
+      "block_index": 259,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "都督请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_260",
+      "block_index": 260,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘备上楼，赵云拦周瑜。赵云上楼，周瑜上楼，鲁肃上楼。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 28,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_261",
+      "block_index": 261,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "鲁大夫下楼，料理军务去吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_262",
+      "block_index": 262,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "遵命。皇叔少刻奉陪。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_263",
+      "block_index": 263,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "请便。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_264",
+      "block_index": 264,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "请。正是：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_265",
+      "block_index": 265,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "黄鹤楼上酒一席，死在眼前还不知。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_266",
+      "block_index": 266,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "刘备吓，刘备，你这一下准死的了，哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_267",
+      "block_index": 267,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（鲁肃下。刘备、赵云、周瑜同亮架子。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 19,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_268",
+      "block_index": 268,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "皇叔请，皇叔请，嗳，皇叔请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_269",
+      "block_index": 269,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "嗳，都督请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_270",
+      "block_index": 270,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（〖牌子〗。赵云下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_271",
+      "block_index": 271,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "这……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_272",
+      "block_index": 272,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "啊啊啊，哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_273",
+      "block_index": 273,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "啊啊啊，哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_274",
+      "block_index": 274,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "吓，皇叔，瑜有一言奉告，只是难以启齿。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_275",
+      "block_index": 275,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "都督有何金言，当面请讲。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_276",
+      "block_index": 276,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "想当年赤壁鏖兵，火烧战船，耗费我国多少兵马钱粮。得来荆州，被皇叔借去，屯军养马，久借不还，是何道理？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_278",
+      "block_index": 278,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "这个……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_279",
+      "block_index": 279,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "嗳，快快还我国的荆州来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_280",
+      "block_index": 280,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "吓，都督吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_281",
+      "block_index": 281,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘备哭。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_282",
+      "block_index": 282,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哼哼哼……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_283",
+      "block_index": 283,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "刘备出世无根本，东闯西奔无安存。等我西川身安稳，依然还你荆襄城。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_287",
+      "block_index": 287,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "皇叔你此言差矣。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_288",
+      "block_index": 288,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "哦，我又差了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_289",
+      "block_index": 289,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "出言何不口问心，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_290",
+      "block_index": 290,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_291",
+      "block_index": 291,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "三番两次朦哄人。赤壁鏖兵俺临阵，你国何曾当雄兵？早还荆州免仇恨，不然玉石俱皆焚！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_296",
+      "block_index": 296,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "住口！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_297",
+      "block_index": 297,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "周郎休要言语蠢，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_298",
+      "block_index": 298,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "怎敢欺压我主君？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_299",
+      "block_index": 299,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "曹操百万江南进，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_300",
+      "block_index": 300,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "你国君臣害头痛。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_301",
+      "block_index": 301,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "我国军师阴阳准，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_302",
+      "block_index": 302,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "南屏山上借风云。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_303",
+      "block_index": 303,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "再要提起荆州郡，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_304",
+      "block_index": 304,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "休要怒恼赵将军！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_305",
+      "block_index": 305,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "住了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_306",
+      "block_index": 306,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "闻言怒发山摇动，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "西皮导板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_307",
+      "block_index": 307,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "开言大骂赵子龙：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_308",
+      "block_index": 308,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "羊入虎口把命送，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_309",
+      "block_index": 309,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "谅你插翅难腾空！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_310",
+      "block_index": 310,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、周瑜同比架子。）赵云、",
+      "performance_tags": [],
+      "char_len": 12,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_312",
+      "block_index": 312,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哼哼哼，哼哼哼……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "同白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_313",
+      "block_index": 313,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "呔，大胆，下站！都督吓，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_314",
+      "block_index": 314,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "四弟说话太莽撞，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_315",
+      "block_index": 315,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "恶言恶语把人伤。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_316",
+      "block_index": 316,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "周都督他倒有容人的量，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "刘备",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_317",
+      "block_index": 317,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "都督，我四弟言语冒犯，备这厢赔礼。都督，我四弟说话莽撞，备这厢赔礼。都督吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_319",
+      "block_index": 319,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "万事还要好商量。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_320",
+      "block_index": 320,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "主公，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_321",
+      "block_index": 321,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "主公休要学尧舜，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_322",
+      "block_index": 322,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "汉室基业谁敢争？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_323",
+      "block_index": 323,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "四百年来承天运，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_324",
+      "block_index": 324,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "周郎，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_325",
+      "block_index": 325,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "周郎小儿敢夺乾坤！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_326",
+      "block_index": 326,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "住了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_327",
+      "block_index": 327,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "我楼下兵多将你困，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_328",
+      "block_index": 328,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "猛虎岂怕犬一群！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_329",
+      "block_index": 329,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "将你君臣踏芥粉，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_330",
+      "block_index": 330,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "子龙将军胆包身！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_331",
+      "block_index": 331,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "刘备，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_332",
+      "block_index": 332,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "今日不还荆州郡，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_333",
+      "block_index": 333,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_周瑜",
+      "text": "谅你插翅难飞腾！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_334",
+      "block_index": 334,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "周郎，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_335",
+      "block_index": 335,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "你要荆州俺应允，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_336",
+      "block_index": 336,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "拿来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_337",
+      "block_index": 337,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "拿什么来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_338",
+      "block_index": 338,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "还俺的荆州来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_339",
+      "block_index": 339,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "拿来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_340",
+      "block_index": 340,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "拿什么来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_341",
+      "block_index": 341,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "拿我国的东风来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_342",
+      "block_index": 342,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "这个……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_343",
+      "block_index": 343,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "呸！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_344",
+      "block_index": 344,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "你东吴还有几美人？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_345",
+      "block_index": 345,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜气。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_346",
+      "block_index": 346,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "唗！下站！都督醒来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_348",
+      "block_index": 348,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜下楼。四白龙套自两边分上。）",
+      "performance_tags": [
+        "念",
+        "做"
+      ],
+      "char_len": 17,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_349",
+      "block_index": 349,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "众将官。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_350",
+      "block_index": 350,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四白龙套同允。）",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_351",
+      "block_index": 351,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "本督有令：叫那刘备写下腾国的文约，方许他君臣下楼；无有本督将令，不许他君臣逃走，违令者斩！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 45,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_352",
+      "block_index": 352,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四白龙套同允。）",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_353",
+      "block_index": 353,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "哈哈，哈哈，哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "三笑"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_354",
+      "block_index": 354,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜下。四白龙套同抄下。）",
+      "performance_tags": [
+        "念",
+        "做"
+      ],
+      "char_len": 14,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_355",
+      "block_index": 355,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "主公醒来，主公醒来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_356",
+      "block_index": 356,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "诸葛亮吓，诸葛孔明！你害死孤王了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_357",
+      "block_index": 357,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "勒逼孤王把酒饮，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_358",
+      "block_index": 358,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "黄鹤楼上遇杀星。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_359",
+      "block_index": 359,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "周郎苦苦的要孤命，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "刘备",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_360",
+      "block_index": 360,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_刘备",
+      "text": "叫孤退还荆州城。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "刘备",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_361",
+      "block_index": 361,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "哎吓，四弟吓，那周郎叫孤写下腾国文约，这便如何是好？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_362",
+      "block_index": 362,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "主公可记得，为臣在那长坂坡前，杀曹兵七进七出，何况周郎小儿乎？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_363",
+      "block_index": 363,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "他又是长坂坡！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_364",
+      "block_index": 364,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "长坂坡前威风凛，杀退曹瞒百万兵！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_366",
+      "block_index": 366,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "哎吓，四弟吓！你在长坂坡前，手中有枪，足下有马；来在这黄鹤楼上，难道你拳打足踢不成？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 42,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_367",
+      "block_index": 367,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "哎吓，主公临行之时，先生赐我竹节一根。到黄鹤楼上，暗有埋伏，打开竹节，能退周郎百万兵将。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_369",
+      "block_index": 369,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "那都是老道的谣言！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_370",
+      "block_index": 370,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "待臣看来！竹节吓，竹节，先生道你能退周郎百万兵将，今日我君臣在黄鹤楼上有难，你是怎的不言，怎的不语？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 50,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_371",
+      "block_index": 371,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "先生道你能指引，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_372",
+      "block_index": 372,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "为何今日不喊声？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_373",
+      "block_index": 373,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "捽开竹节如碎粉，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "赵云",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_374",
+      "block_index": 374,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "三笑"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_375",
+      "block_index": 375,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_赵云",
+      "text": "一支箭能挡他百万雄兵！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_376",
+      "block_index": 376,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "主公醒来，我君臣有救！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_377",
+      "block_index": 377,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "事到如今，救在哪里？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_378",
+      "block_index": 378,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "打开竹节，内藏周郎的令箭。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_379",
+      "block_index": 379,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "我却不信。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_380",
+      "block_index": 380,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "主公请看。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_381",
+      "block_index": 381,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_刘备",
+      "text": "“水军都督周”，哎吓吓，真乃是好阴阳，好八卦！四弟，接孤下楼。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "刘备",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_382",
+      "block_index": 382,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云、刘备同下楼。鲁肃上，四白龙套自两边分上。）",
+      "performance_tags": [
+        "念",
+        "做"
+      ],
+      "char_len": 25,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_383",
+      "block_index": 383,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "呔，你君臣敢是逃走？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_384",
+      "block_index": 384,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "你都督有令箭在此！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_385",
+      "block_index": 385,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "拿来我看！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_386",
+      "block_index": 386,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "拿去！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_387",
+      "block_index": 387,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_388",
+      "block_index": 388,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（刘备下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_389",
+      "block_index": 389,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_赵云",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "赵云",
+      "performance_cues_raw": [
+        "三笑"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_390",
+      "block_index": 390,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（赵云下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_391",
+      "block_index": 391,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "有请都督。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_392",
+      "block_index": 392,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_393",
+      "block_index": 393,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "孔明纵有千只手，刘备难下黄鹤楼。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_394",
+      "block_index": 394,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "吓，大夫，刘备可曾写下腾国文约？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_395",
+      "block_index": 395,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "刘备君臣，已经去远了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_396",
+      "block_index": 396,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "你如何放他逃走吓？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_397",
+      "block_index": 397,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "是都督放他走的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_398",
+      "block_index": 398,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "我何曾放他走吓？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_399",
+      "block_index": 399,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "现有都督令箭在此。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_400",
+      "block_index": 400,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "在哪里？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_401",
+      "block_index": 401,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "请看。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_402",
+      "block_index": 402,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "待我看来。“水军都督周”，嗳呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_403",
+      "block_index": 403,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜气。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_404",
+      "block_index": 404,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "都督醒来，都督醒来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_405",
+      "block_index": 405,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜醒。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_406",
+      "block_index": 406,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "既是都督放他走的，为何又要生气？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_407",
+      "block_index": 407,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "我何曾放他走的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_408",
+      "block_index": 408,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "既不是都督放他走的，这枝令箭，哪里来的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_409",
+      "block_index": 409,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "这个……哎吓，大夫吓！想当年赤壁鏖兵之时，我命孔明在南屏山，借东风的那枝令箭，东风一起，谁想他带箭而逃。不料至今，它，它，它还在吓！孔明吓，孔明！我不杀你，誓不为人！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 83,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_410",
+      "block_index": 410,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "料他君臣走之不远，都督何不起兵追赶？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_411",
+      "block_index": 411,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "好！众将官，起兵追赶刘备去者！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_413",
+      "block_index": 413,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（四白龙套同允。）",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_414",
+      "block_index": 414,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "都督此番要小心了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_415",
+      "block_index": 415,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_周瑜",
+      "text": "小心什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "周瑜",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_416",
+      "block_index": 416,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_鲁肃",
+      "text": "小心那枝令箭！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "鲁肃",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_417",
+      "block_index": 417,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（周瑜亮架子。众人同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 13,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_418",
+      "block_index": 418,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 8
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_刘备",
+      "target_id": "c_刘封",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘备",
+      "target_id": "c_周瑜",
+      "weight": 71.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 34,
+      "same_scene_count": 3
+    },
+    {
+      "source_id": "c_刘备",
+      "target_id": "c_张飞",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘备",
+      "target_id": "c_甘宁",
+      "weight": 4.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_刘备",
+      "target_id": "c_诸葛亮",
+      "weight": 39.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 19,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘备",
+      "target_id": "c_赵云",
+      "weight": 43.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 20,
+      "same_scene_count": 3
+    },
+    {
+      "source_id": "c_刘备",
+      "target_id": "c_鲁肃",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘封",
+      "target_id": "c_张飞",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘封",
+      "target_id": "c_诸葛亮",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_刘封",
+      "target_id": "c_赵云",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_周瑜",
+      "target_id": "c_甘宁",
+      "weight": 19.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 8,
+      "same_scene_count": 3
+    },
+    {
+      "source_id": "c_周瑜",
+      "target_id": "c_赵云",
+      "weight": 24.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 11,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_周瑜",
+      "target_id": "c_鲁肃",
+      "weight": 35.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 17,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张飞",
+      "target_id": "c_诸葛亮",
+      "weight": 21.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 10,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张飞",
+      "target_id": "c_赵云",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_甘宁",
+      "target_id": "c_赵云",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_诸葛亮",
+      "target_id": "c_赵云",
+      "weight": 31.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 15,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_赵云",
+      "target_id": "c_鲁肃",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "历史剧",
+    "era_inferred": "三国"
+  }
+}

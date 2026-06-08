@@ -37,6 +37,9 @@ const nav = [
       <GlobalFilterBar />
       <PlaySelector />
     </header>
+    <p v-if="store.catalogDemo" class="demo-banner">
+      {{ store.catalogDemoNote ?? '在线演示：仅含部分示例剧本' }}
+    </p>
     <main class="main">
       <RouterView />
     </main>
@@ -91,6 +94,15 @@ const nav = [
   background: var(--accent-gold);
   color: #1a0f0a;
   font-weight: 600;
+}
+.demo-banner {
+  margin: 0;
+  padding: 0.45rem 1.5rem;
+  font-size: 0.82rem;
+  text-align: center;
+  background: #fff8e8;
+  border-bottom: 1px solid var(--accent-gold);
+  color: #5c4a32;
 }
 .main {
   flex: 1;

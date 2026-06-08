@@ -1,0 +1,6200 @@
+{
+  "script_id": "01001009",
+  "title": "硃砂痣",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01001009_硃砂痣.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-04T08:59:05.344868+00:00",
+    "page_count": 9,
+    "char_count": 4726,
+    "parse_quality": 0.967,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_韩廷凤",
+      "name": "韩廷凤",
+      "aliases": [],
+      "hangdang_labeled": "外",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "唱",
+          "念"
+        ]
+      },
+      "line_count": 130,
+      "first_appearance_block": 15,
+      "is_main": true
+    },
+    {
+      "character_id": "c_吴惠泉",
+      "name": "吴惠泉",
+      "aliases": [],
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 66,
+      "first_appearance_block": 83,
+      "is_main": true
+    },
+    {
+      "character_id": "c_金氏",
+      "name": "金氏",
+      "aliases": [],
+      "hangdang_labeled": "老旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 35,
+      "first_appearance_block": 173,
+      "is_main": true
+    },
+    {
+      "character_id": "c_韩遇运",
+      "name": "韩遇运",
+      "aliases": [],
+      "hangdang_labeled": "小生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 34,
+      "first_appearance_block": 178,
+      "is_main": true
+    },
+    {
+      "character_id": "c_江氏",
+      "name": "江氏",
+      "aliases": [],
+      "hangdang_labeled": "旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 32,
+      "first_appearance_block": 40,
+      "is_main": true
+    },
+    {
+      "character_id": "c_媒婆",
+      "name": "媒婆",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 6,
+      "first_appearance_block": 19,
+      "is_main": false
+    },
+    {
+      "character_id": "c_家院",
+      "name": "家院",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 6,
+      "first_appearance_block": 59,
+      "is_main": false
+    },
+    {
+      "character_id": "c_丫鬟",
+      "name": "丫鬟",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 1,
+      "first_appearance_block": 32,
+      "is_main": false
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "【第一场】",
+      "block_range": [
+        13,
+        80
+      ],
+      "character_ids": [
+        "c_丫鬟",
+        "c_媒婆",
+        "c_家院",
+        "c_江氏",
+        "c_韩廷凤"
+      ]
+    },
+    {
+      "scene_id": "s_2",
+      "scene_index": 2,
+      "title": "【第二场】",
+      "block_range": [
+        81,
+        119
+      ],
+      "character_ids": [
+        "c_吴惠泉",
+        "c_家院",
+        "c_江氏"
+      ]
+    },
+    {
+      "scene_id": "s_3",
+      "scene_index": 3,
+      "title": "【第三场】",
+      "block_range": [
+        120,
+        170
+      ],
+      "character_ids": [
+        "c_吴惠泉",
+        "c_江氏",
+        "c_韩廷凤"
+      ]
+    },
+    {
+      "scene_id": "s_4",
+      "scene_index": 4,
+      "title": "【第四场】",
+      "block_range": [
+        171,
+        205
+      ],
+      "character_ids": [
+        "c_金氏",
+        "c_韩遇运"
+      ]
+    },
+    {
+      "scene_id": "s_5",
+      "scene_index": 5,
+      "title": "【第五场】",
+      "block_range": [
+        206,
+        259
+      ],
+      "character_ids": [
+        "c_吴惠泉",
+        "c_金氏",
+        "c_韩遇运"
+      ]
+    },
+    {
+      "scene_id": "s_6",
+      "scene_index": 6,
+      "title": "【第六场】",
+      "block_range": [
+        260,
+        401
+      ],
+      "character_ids": [
+        "c_吴惠泉",
+        "c_韩廷凤",
+        "c_韩遇运"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（一名：《行善得子》）",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "韩廷凤：外",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "吴惠泉：老生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "江氏：旦",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "金氏：老旦",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "媒婆：丑旦",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "韩遇运：小生",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "双州太守韩廷凤，因无子嗣，另娶江氏。新娘过门，啼泣甚哀，韩廷凤问起情由，始知江氏因夫贫病交加，",
+      "performance_tags": [],
+      "char_len": 47,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "不得已卖身救夫。韩廷凤怜之，赠银送其返家，夫妻又得团聚。江氏夫妇得知太守求子心切，为了报答，卖了一个孩童送给太守。韩廷凤问起孩童父母情况，并验得孩子左脚上有一颗硃砂痣，才认出就是十三年前，",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "因金兵作乱，走失的儿子韩遇运。父子又得重逢。",
+      "performance_tags": [],
+      "char_len": 22,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "根据《戏考》第一册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_13",
+      "block_index": 13,
+      "scene_id": "s_1",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第一场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（韩廷凤上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_15",
+      "block_index": 15,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "今夜晚前后厅灯光明亮，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_17",
+      "block_index": 17,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "我不想年半百又做新郎。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院上。媒婆上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 10,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_媒婆",
+      "text": "新人过门厅，媒钱自然增。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "媒婆",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_媒婆",
+      "text": "启老爷：新人已到。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "媒婆",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "将轿搭上堂来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_媒婆",
+      "text": "花轿搭上堂来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "媒婆",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（轿夫、丫鬟、江氏同上。江氏出轿，轿夫下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 22,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_24",
+      "block_index": 24,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_媒婆",
+      "text": "娘子见过老爷。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "媒婆",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_25",
+      "block_index": 25,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（江氏坐。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_媒婆",
+      "text": "小人们讨赏。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "媒婆",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "下面领赏。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_媒婆",
+      "text": "谢老爷。媒人一片苦心肠，一边欢喜一边伤。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "媒婆",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（媒婆下。家院下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 10,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "丫头！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_丫鬟",
+      "text": "有。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "丫鬟",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "掌灯，待我一观。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "借灯光暗地里细观姣娘，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄慢板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_35",
+      "block_index": 35,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "我看她与前妻一样风光。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（江氏哭。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哎呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "只见她愁眉皱泪流脸上，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄慢板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_39",
+      "block_index": 39,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "莫不是嫌我老难配鸾凰？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_40",
+      "block_index": 40,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "不是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_41",
+      "block_index": 41,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "要穿衣锦绣衫任你掉样，你有甚心中事细说端详，这有何妨？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_43",
+      "block_index": 43,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "大老爷启禀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_44",
+      "block_index": 44,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "未开言不由人泪如雨降，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_45",
+      "block_index": 45,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "尊一声大老爷细听端详：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_46",
+      "block_index": 46,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "奴丈夫病沉疴久卧床上，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_47",
+      "block_index": 47,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "因此上少银钱变卖妻房。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_48",
+      "block_index": 48,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "我岂肯贪富贵痴心妄想，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_49",
+      "block_index": 49,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "可怜我好夫妻两下离分。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_50",
+      "block_index": 50,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "大老爷开大恩将奴释放，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "纵死在九泉下瞑目不忘。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_52",
+      "block_index": 52,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_53",
+      "block_index": 53,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "听她言伊现有妇随夫唱，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "怎奈我两下里拆散鸳鸯。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_55",
+      "block_index": 55,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "再不要做恶事天在头上，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_56",
+      "block_index": 56,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "自情愿伴孤灯永守空房。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "院子哪里？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "老爷何事？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "你可将这女子送回，聘礼不要，再取银子一百两，送她到家，全她夫妻恩情，以完这女子贞节之名。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "晓得。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "既蒙老爷开恩仗义，不肯收留，又叨恩赐，容小妇人叩谢。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "不消了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "救命银是我夫重生父样，全贞节是难妇再世爹娘。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "回来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "你这婚书在此。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "但凭恩人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "当面烧化了吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "多谢恩人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_73",
+      "block_index": 73,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "积阴功救难妇放开罗网，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "回家去同丈夫答报商量。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院领江氏同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 10,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "她言道本丈夫染病在床，因此上卖了她好度日光。将他人比自己俱是一样，善与恶自有那天理昭彰。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_80",
+      "block_index": 80,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（韩廷凤下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": "s_2",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第二场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（吴惠泉上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "孤单单病奄奄坐卧病床，断送了好夫妇凤友鸾凰。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_85",
+      "block_index": 85,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院、江氏同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 10,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_86",
+      "block_index": 86,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "黑夜里蒙送我重归故道，好一似失群雁又来旧巢。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_88",
+      "block_index": 88,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "来此已是我家门首，请站一时。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_89",
+      "block_index": 89,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_90",
+      "block_index": 90,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "丈夫开门。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_91",
+      "block_index": 91,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_92",
+      "block_index": 92,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "猛听得叫丈夫轻言俊俏，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_93",
+      "block_index": 93,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "想是我梦魂中心神颠倒。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_94",
+      "block_index": 94,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "开门！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "这声音似我妻江氏多姣，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_96",
+      "block_index": 96,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（吴惠泉开门。）",
+      "performance_tags": [],
+      "char_len": 8,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_97",
+      "block_index": 97,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "叫得我寒毛凛胆战魂消。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_98",
+      "block_index": 98,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "官人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_99",
+      "block_index": 99,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "你怎样回来的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_100",
+      "block_index": 100,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "多蒙韩老爷查问情由，不忍拆散你我夫妻，将婚书烧化，聘礼不要；又赐银百两，以成奴之贞节，故而差人将奴送回。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 52,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_101",
+      "block_index": 101,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "哦，有这等事？何人送你回来的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_102",
+      "block_index": 102,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "韩管家送我回来的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "请他进来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "有请管家。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_105",
+      "block_index": 105,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院进。）",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_106",
+      "block_index": 106,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "啊，韩管家。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_107",
+      "block_index": 107,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "吓，吴相公。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_108",
+      "block_index": 108,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "你家员外怎样言道？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "我家员外言道，命我送大娘子回来，先前聘礼不要，再与银子百两，叫你保养病体。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 37,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "世界之上，哪有这样好人？谢天谢地！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "当谢天地！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "娘子你我夫妻，前去叩谢才是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "礼当如此。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_家院",
+      "text": "吴相公，你那贵恙才好，改日再去吧。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "家院",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_115",
+      "block_index": 115,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "吓，如今我有银子，病就好了。走吓。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "全夫妇正人伦恩当重报，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院、吴惠泉同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "仗大义舍资财送妇归巢。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（江氏下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": "s_3",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第三场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（韩廷凤上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "劝世人一个个须要学好，皆因是自有那天里昭昭。我当年为太守何等荣耀，遇兵荒妻和子无有下梢。也是我前世里未曾修道，我若是全不为我自逍自遥。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（家院上，吴惠泉上，江氏上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 15,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "我和你到他家双膝跪倒，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_130",
+      "block_index": 130,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "我夫妻特地来叩谢恩劳。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_131",
+      "block_index": 131,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哎呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "我救人的急，全人的危，遵古训教，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_133",
+      "block_index": 133,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "此小事何须要理顺和调。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_134",
+      "block_index": 134,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "尊二位将请起施礼还到，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_135",
+      "block_index": 135,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "全大节，全忠义，遵古天条。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 3
+    },
+    {
+      "block_id": "b_136",
+      "block_index": 136,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "大娘子，这是何人？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "这是我丈夫吴惠泉。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_138",
+      "block_index": 138,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "原来是吴相公，请坐请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_139",
+      "block_index": 139,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "大老爷在此，小人不敢坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_140",
+      "block_index": 140,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "有话叙谈，哪有不坐之理？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_141",
+      "block_index": 141,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "告坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_142",
+      "block_index": 142,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "大娘子你也坐下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_143",
+      "block_index": 143,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "谢坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_144",
+      "block_index": 144,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "吴相公，听大娘子之言，你有病在床，病体好了，再来不迟。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 27,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_145",
+      "block_index": 145,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "老爷有所不知，小人得了银钱，病就好了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_146",
+      "block_index": 146,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "吓，有了钱，你的病就好了。如此说来，银子是好物件！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 25,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_147",
+      "block_index": 147,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "好物件！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_148",
+      "block_index": 148,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "我救你的急，救你的难，救你的贫困，全你的节，全你的义，全你的婚姻。我无子也是我前生造定，我若是错婚姻，到后来留下了骂名。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄垛板"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_152",
+      "block_index": 152,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_153",
+      "block_index": 153,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "何不再娶一房，产得一子，也未可知。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_154",
+      "block_index": 154,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "子孙之事，前生造定；若是再娶，也就不必了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_155",
+      "block_index": 155,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "何不买上一个孩童，将来有靠。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_156",
+      "block_index": 156,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "这倒使得，只是本处孩子，有好些不便；或者远乡别处，饥寒贫苦的孩子，买他一个，教他成人。若不听教训，也是一番怄气。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 56,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_157",
+      "block_index": 157,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "小人前在四川贸易，有些账目未归，如今恩人所赐资本，目下就要起身。倘有合适小孩，买来一个，送与恩人，以表我夫妻之情。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 57,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_158",
+      "block_index": 158,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "那倒不消。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_159",
+      "block_index": 159,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "娘子你我辞别恩人去吧。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_160",
+      "block_index": 160,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_江氏",
+      "text": "是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_161",
+      "block_index": 161,
+      "scene_id": "s_3",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "你二人要去了，我不能远送了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_162",
+      "block_index": 162,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "辞别了大恩人犹如山海，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_163",
+      "block_index": 163,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（吴惠泉下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_164",
+      "block_index": 164,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_江氏",
+      "text": "到四川买一子报答恩来。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "江氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_165",
+      "block_index": 165,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（江氏下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_166",
+      "block_index": 166,
+      "scene_id": "s_3",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "他夫妻进门来双膝跪倒，口口声叫恩人珠泪双抛。我无子前世里未曾修道，作恶人总有子枉费心劳。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_170",
+      "block_index": 170,
+      "scene_id": "s_3",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（韩廷凤下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_171",
+      "block_index": 171,
+      "scene_id": "s_4",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第四场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_172",
+      "block_index": 172,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（金氏上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_173",
+      "block_index": 173,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "只说养儿得济，谁知到老养儿。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_174",
+      "block_index": 174,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "老身权在经之妻金氏。自从那匪贼作乱，中途拾得一子，取名天赐，抚养他长大。指望他养老，谁知丈夫去世，家业渐渐凋零。此子今年十二岁了，读书之外，哪里辨得一件事情。还是全靠老身养活与他。我今年迈，自身难保，哪里还有余资？倒不如将他卖了，留得几两银子，且作终身之靠。我儿哪里？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 102,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_177",
+      "block_index": 177,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（韩遇运上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_178",
+      "block_index": 178,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "天子重英豪，文章教尔曹。万般皆下品，惟有读书高。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_179",
+      "block_index": 179,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "读书高，读书高，家业一旦抛。米也无钱买，柴也没得烧。喝一口清凉水，还要我自己去挑。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_182",
+      "block_index": 182,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "候儿成人大，金榜把名标。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_183",
+      "block_index": 183,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "候你成人大，母子两边飘。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_184",
+      "block_index": 184,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "母亲放心，等儿长大成人，若作了官，你就是太夫人了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 25,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_185",
+      "block_index": 185,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "好大的口气！我对你言讲：看这年年荒旱，母子难度光阴，我有意将你卖在大户人家，你也有安身之处，我也有了活命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 53,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_186",
+      "block_index": 186,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "嗳，我是不卖的！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_187",
+      "block_index": 187,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "我对你讲了吧：你不是我亲生之子，自因那年金兵造反，四月初八日在青州路上拾来的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 39,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_188",
+      "block_index": 188,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "吓，你不是我的亲娘。哎呀，我的亲娘吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_189",
+      "block_index": 189,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "哎呀，我说他不是我的亲生儿子，他就要他的亲娘。我如今不卖他，日后长大成人，他还要卖我吓！儿吓，不必啼哭，坐在地下，听为娘道来：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 63,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_190",
+      "block_index": 190,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "农人家总只在耕田种地，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "二黄慢板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_191",
+      "block_index": 191,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "全靠着用气力当家穿衣。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_192",
+      "block_index": 192,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "读诗书千万卷难当柴米，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_193",
+      "block_index": 193,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "我看你这小娃难以成器。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_194",
+      "block_index": 194,
+      "scene_id": "s_4",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "母亲吓，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_195",
+      "block_index": 195,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_韩遇运",
+      "text": "休道我在书房不耕不艺，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_196",
+      "block_index": 196,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_韩遇运",
+      "text": "你孩儿志气高满腹经奇。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩遇运",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_197",
+      "block_index": 197,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_韩遇运",
+      "text": "且等到羽毛干鹏程万里，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩遇运",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_198",
+      "block_index": 198,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_韩遇运",
+      "text": "那时节戴乌纱身挂紫衣。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩遇运",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_199",
+      "block_index": 199,
+      "scene_id": "s_4",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "说什么羽毛干鹏程万里，看将来只怕是牛马不及。就是我亲生子也难养你，到今朝母子们一样分离。天赐儿随定娘将门紧闭，霎时间母子们各奔东西。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_205",
+      "block_index": 205,
+      "scene_id": "s_4",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（金氏、韩遇运同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_206",
+      "block_index": 206,
+      "scene_id": "s_5",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第五场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_207",
+      "block_index": 207,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（吴惠泉上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_208",
+      "block_index": 208,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "行一程又一程往回家奔，买一些送恩人方称我心。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_210",
+      "block_index": 210,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "在下吴惠泉，蒙恩人韩太守，助我银两，才得来到四川，讨取账目。且喜账目收齐，回家便了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 42,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_211",
+      "block_index": 211,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "一日离家一日深，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_212",
+      "block_index": 212,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "犹如孤雁宿寒林。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "吴惠泉",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_213",
+      "block_index": 213,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "人说在外风光好，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "吴惠泉",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_214",
+      "block_index": 214,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "还有思家一片心。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "吴惠泉",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_215",
+      "block_index": 215,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "走吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_216",
+      "block_index": 216,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（金氏、韩遇运同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 11,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_217",
+      "block_index": 217,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "叹冤家和债主休要怄气，如今后两投奔各自分离。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_219",
+      "block_index": 219,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "卖儿子，卖儿子！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_220",
+      "block_index": 220,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "你这妈妈手拿草标，还是人卖草，还是草卖人？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_221",
+      "block_index": 221,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "人卖草能值几何？自然是草卖人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_222",
+      "block_index": 222,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "卖的哪一个？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_223",
+      "block_index": 223,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "卖的就是这个孩童。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_224",
+      "block_index": 224,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "这孩童是老妈妈什么人？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_225",
+      "block_index": 225,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "乃是我的儿子。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_226",
+      "block_index": 226,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "多大年纪？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_227",
+      "block_index": 227,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "一十三岁。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_228",
+      "block_index": 228,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "老妈妈偌大年纪，哪有一十三岁的孩童？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_229",
+      "block_index": 229,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "他不是我的亲生儿子。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_230",
+      "block_index": 230,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "哦，如此要卖多少银子？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_231",
+      "block_index": 231,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "请问客官，还是为子，还是为仆？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_232",
+      "block_index": 232,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "自然是为子。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_233",
+      "block_index": 233,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "既然是为子，我是要五十两银子。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_234",
+      "block_index": 234,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "如数付给。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_235",
+      "block_index": 235,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（吴惠泉交银。）",
+      "performance_tags": [],
+      "char_len": 8,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_236",
+      "block_index": 236,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "妈妈，这是五十两银子，你母子分别分别，我们要赶路了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_237",
+      "block_index": 237,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "是是是。请问客官家中，可有大娘？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_238",
+      "block_index": 238,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "有大娘。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_239",
+      "block_index": 239,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "回去拜上大娘，就说这个孩童，不是我所生，就是我抚养，当打者骂他几句，当骂者说他几句。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_241",
+      "block_index": 241,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "是是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_242",
+      "block_index": 242,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "天赐我儿，你去到那里，不同在为娘膝下。他那里打你，也要受了；他那里骂你，也要受了。为娘一言，你且听道：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 51,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_243",
+      "block_index": 243,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "每日里必须要迟眠早起，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_244",
+      "block_index": 244,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "切莫要贪玩耍孝顺父母。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_245",
+      "block_index": 245,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "勤学业图上进休与人戏，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_246",
+      "block_index": 246,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "莫要学在我处姣性顽皮。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_247",
+      "block_index": 247,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "哎，儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_248",
+      "block_index": 248,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "要相逢只除非南柯梦里，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_249",
+      "block_index": 249,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "母亲请上，容孩儿一拜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_250",
+      "block_index": 250,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_韩遇运",
+      "text": "好叫人止不住珠泪双滴。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_251",
+      "block_index": 251,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "走了走了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_252",
+      "block_index": 252,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（吴惠泉拉韩遇运同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_253",
+      "block_index": 253,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "天赐，我儿，我的儿吓！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "哭板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_254",
+      "block_index": 254,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "我儿一去无踪影，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_255",
+      "block_index": 255,
+      "scene_id": "s_5",
+      "type": "aria",
+      "speaker_id": "c_金氏",
+      "text": "霎时母子两离分。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "金氏",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_256",
+      "block_index": 256,
+      "scene_id": "s_5",
+      "type": "dialogue",
+      "speaker_id": "c_金氏",
+      "text": "哎呀，且住。我老糊涂了，我如今将他卖了，哪一个养我的老，送我的终？待我叫他回来。哎，客官请回来，我的儿子是不卖的！银子还了你！吓，客官请回来吓，我的儿子不卖的！银子还了你！哎吓，好银子！哎，好儿子！哦，看在银子份上，将他卖了，哎，儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 40,
+      "speaker_name_raw": "金氏",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_259",
+      "block_index": 259,
+      "scene_id": "s_5",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（金氏下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_260",
+      "block_index": 260,
+      "scene_id": "s_6",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第六场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 5
+    },
+    {
+      "block_id": "b_261",
+      "block_index": 261,
+      "scene_id": "s_6",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（韩廷凤上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_262",
+      "block_index": 262,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "叹光阴去不归无限烦闷，似觉得人已老两鬓如银。清闲时看古书身体发困，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_265",
+      "block_index": 265,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哎！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_266",
+      "block_index": 266,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "也是我韩门中绝了后根。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_267",
+      "block_index": 267,
+      "scene_id": "s_6",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（吴惠泉、韩遇运同上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_268",
+      "block_index": 268,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_吴惠泉",
+      "text": "一路上看青山绿水长流，将此子献与他方遂心头。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_270",
+      "block_index": 270,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "小相公，来此以是，少站片时。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_271",
+      "block_index": 271,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_272",
+      "block_index": 272,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "参见大老爷。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_273",
+      "block_index": 273,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "吴相公回来了，请坐请坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_274",
+      "block_index": 274,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "谢坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_275",
+      "block_index": 275,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "闻你成都收账，可曾收齐？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_276",
+      "block_index": 276,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "大账已完，小账所欠些微。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_277",
+      "block_index": 277,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "发财了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_278",
+      "block_index": 278,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "托老爷的洪福。告便。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_279",
+      "block_index": 279,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "请。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_280",
+      "block_index": 280,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "小相公随我来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_281",
+      "block_index": 281,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_282",
+      "block_index": 282,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "过来见过大老爷。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_283",
+      "block_index": 283,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "参见大老爷。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_284",
+      "block_index": 284,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "罢了，罢了。一旁坐下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_285",
+      "block_index": 285,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "大老爷在此，哪有晚生坐位？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_286",
+      "block_index": 286,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "叫你坐，只管坐下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_287",
+      "block_index": 287,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "是吓，大老爷叫你坐，你只管坐下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_288",
+      "block_index": 288,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "谢坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_289",
+      "block_index": 289,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_290",
+      "block_index": 290,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哎，吴相公，看看小小孩童，颇知这大礼仪！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_291",
+      "block_index": 291,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "这是他父母教训的好。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_292",
+      "block_index": 292,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "是吓，小孩童原要父母教训。这小孩童，是哪里来的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_293",
+      "block_index": 293,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "乃是买来的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_294",
+      "block_index": 294,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "还是为子，还是为仆？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_295",
+      "block_index": 295,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "乃是送与大老爷的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_296",
+      "block_index": 296,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哦，乃是送与我的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_297",
+      "block_index": 297,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "正是。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_298",
+      "block_index": 298,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_299",
+      "block_index": 299,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "吴大哥你真真言而有信，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_300",
+      "block_index": 300,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "你与我谋后代这样殷勤。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_301",
+      "block_index": 301,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "多谢你这好心谨慎太胜，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_302",
+      "block_index": 302,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "吴大哥，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_303",
+      "block_index": 303,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "改一日我必当另外谢承！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_304",
+      "block_index": 304,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哈哈哈！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_305",
+      "block_index": 305,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "我如今有了儿子，我是不发愁的了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_306",
+      "block_index": 306,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "是是。有了儿子，还发什么愁？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_307",
+      "block_index": 307,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "请问大哥，此子是多少银子买的，待我奉价与的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_308",
+      "block_index": 308,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "老爷要提价，就不敢了。我夫妻二人，粉身碎骨，也难报洪恩于万分之一也！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_309",
+      "block_index": 309,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "如此破费了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_310",
+      "block_index": 310,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "告辞了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_311",
+      "block_index": 311,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "为何去心太急？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_312",
+      "block_index": 312,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "我离家日久，恐娘子在家悬望。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_313",
+      "block_index": 313,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "是吓，我也不必强留，改日我父子登门叩谢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_314",
+      "block_index": 314,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "岂敢岂敢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_315",
+      "block_index": 315,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿吓，送过你吴大叔！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_316",
+      "block_index": 316,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "送过吴大叔！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_317",
+      "block_index": 317,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "这倒不消。你在家中，听你爹爹教训，我要去了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_318",
+      "block_index": 318,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "吓，吴大哥转来！改日我父子登门叩谢！一定要来的！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_319",
+      "block_index": 319,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "这就不敢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_320",
+      "block_index": 320,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "一定要来的！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_321",
+      "block_index": 321,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "这就不敢！吓，大老爷转来！改日我夫妻二人，登门贺喜！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_322",
+      "block_index": 322,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "这就不敢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_323",
+      "block_index": 323,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "一定要来的！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_324",
+      "block_index": 324,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "这就不敢！吴大哥转来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_325",
+      "block_index": 325,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_吴惠泉",
+      "text": "大老爷何事？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "吴惠泉",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_326",
+      "block_index": 326,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "这，无有了。吴惠泉、",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_328",
+      "block_index": 328,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哈哈哈！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "同笑"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_329",
+      "block_index": 329,
+      "scene_id": "s_6",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（吴惠泉下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_330",
+      "block_index": 330,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "爹爹！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_331",
+      "block_index": 331,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "喂，哈哈哈……随为父进来，一旁坐下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_332",
+      "block_index": 332,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "谢坐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_333",
+      "block_index": 333,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "待为父细看一回。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_334",
+      "block_index": 334,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "我的儿礼从容端然坐定，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_335",
+      "block_index": 335,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "看形容不像个平等之人。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_336",
+      "block_index": 336,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "细看他各部位五官端正，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_337",
+      "block_index": 337,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "这两旁发开朗目秀眉清。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_338",
+      "block_index": 338,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿在家可读过圣贤书本，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_339",
+      "block_index": 339,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "问姣儿对为父细说分明。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_340",
+      "block_index": 340,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "孩儿在家，也曾读过诗书，只是未遇高明先生指教。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_341",
+      "block_index": 341,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哦！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_342",
+      "block_index": 342,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "他说话有方寸志慧聪敏，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_343",
+      "block_index": 343,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "倒像个宦门后不差毫分。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_344",
+      "block_index": 344,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "再问你何年月何日降生，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_345",
+      "block_index": 345,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "快说来好将你八字推评。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_346",
+      "block_index": 346,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "孩儿八字不知。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_347",
+      "block_index": 347,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "你母亲呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_348",
+      "block_index": 348,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "也不晓得。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_349",
+      "block_index": 349,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_350",
+      "block_index": 350,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "这孩童说此话令人不信，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_351",
+      "block_index": 351,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "哪有个不知道八字时辰。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_352",
+      "block_index": 352,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿父母年多大在与不在，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_353",
+      "block_index": 353,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "是何人得参钱卖与他人？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_354",
+      "block_index": 354,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "我爹爹死了五年，我母亲七十三岁，孩儿今年一十三岁。只因家业凋零，将孩儿卖于他人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 40,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_355",
+      "block_index": 355,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哦！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_356",
+      "block_index": 356,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "这其间又盘出种种奇情，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_357",
+      "block_index": 357,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "哪有个花甲后产育姣生？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_358",
+      "block_index": 358,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_359",
+      "block_index": 359,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "你不是那老娘亲生蒙混，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_360",
+      "block_index": 360,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿必定不是她自己所生。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_361",
+      "block_index": 361,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "孩儿想起来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_362",
+      "block_index": 362,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "想起什么来了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_363",
+      "block_index": 363,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "我母亲那日将我出卖之时，孩儿依依不舍，她说我不是她亲生之子。乃是那年金兵造反，四月初八日，在青州路上拾来的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 54,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_364",
+      "block_index": 364,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哈哈哈……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_365",
+      "block_index": 365,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "照这样说起来越讲越近，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_366",
+      "block_index": 366,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "想起了当年事越发是真。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_367",
+      "block_index": 367,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "龙飞年五十一成都上任，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_368",
+      "block_index": 368,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "四月里初八日路遇贼兵。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_369",
+      "block_index": 369,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "亲生子还在那娘怀抱定，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_370",
+      "block_index": 370,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "恨匪贼来冲散失落埃尘。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_371",
+      "block_index": 371,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "取菱花两下里照一照相品，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_372",
+      "block_index": 372,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_373",
+      "block_index": 373,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "半像我半像妻不差毫分！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄原板"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_374",
+      "block_index": 374,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "我的亲生孩儿，左脚之上，有一硃砂红痣，你可有？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_375",
+      "block_index": 375,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "孩儿有的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_376",
+      "block_index": 376,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "脱下来与为父观看！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_377",
+      "block_index": 377,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "遵命。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_378",
+      "block_index": 378,
+      "scene_id": "s_6",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（韩遇运脱鞋，韩廷凤看。）",
+      "performance_tags": [],
+      "char_len": 13,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_379",
+      "block_index": 379,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿吓，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_380",
+      "block_index": 380,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "你是我亲生子名叫遇运，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_381",
+      "block_index": 381,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "遇兵荒遭失散一十三春。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_382",
+      "block_index": 382,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "为姣儿只盼得咽喉气哽，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_383",
+      "block_index": 383,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "为姣儿昼夜里睡卧不宁。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_384",
+      "block_index": 384,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "为姣儿不做官告归故井，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_385",
+      "block_index": 385,
+      "scene_id": "s_6",
+      "type": "aria",
+      "speaker_id": "c_韩廷凤",
+      "text": "这才是老天爷弄假成真。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩廷凤",
+      "page_no": 8
+    },
+    {
+      "block_id": "b_386",
+      "block_index": 386,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "爹爹，我母亲哪里去了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_387",
+      "block_index": 387,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "你母亲命丧东平。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_388",
+      "block_index": 388,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "哎呀，母亲吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_389",
+      "block_index": 389,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿吓，不必啼哭，也曾命人前去搬柩。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_390",
+      "block_index": 390,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "爹爹明日差人接那老妈妈前来，同享荣华富贵。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_391",
+      "block_index": 391,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "待为父明日差人前去。正是：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_392",
+      "block_index": 392,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "北地南来西复东，谁知今日巧相逢。父子重把菱花照，只怕相逢在梦中。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_393",
+      "block_index": 393,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "爹爹，青天白日，不是做梦。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_394",
+      "block_index": 394,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "不是做梦，当真？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_395",
+      "block_index": 395,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "当真。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_396",
+      "block_index": 396,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "果然？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_397",
+      "block_index": 397,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩遇运",
+      "text": "果然。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "韩遇运",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_398",
+      "block_index": 398,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "哈哈哈！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "笑"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_399",
+      "block_index": 399,
+      "scene_id": "s_6",
+      "type": "dialogue",
+      "speaker_id": "c_韩廷凤",
+      "text": "儿吓，随为父来吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "韩廷凤",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_400",
+      "block_index": 400,
+      "scene_id": "s_6",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（韩廷凤、韩遇运同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_401",
+      "block_index": 401,
+      "scene_id": "s_6",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 8
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_丫鬟",
+      "target_id": "c_媒婆",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_丫鬟",
+      "target_id": "c_家院",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_丫鬟",
+      "target_id": "c_江氏",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_丫鬟",
+      "target_id": "c_韩廷凤",
+      "weight": 5.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 2,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_吴惠泉",
+      "target_id": "c_家院",
+      "weight": 11.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 5,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_吴惠泉",
+      "target_id": "c_江氏",
+      "weight": 26.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 12,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_吴惠泉",
+      "target_id": "c_金氏",
+      "weight": 41.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 20,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_吴惠泉",
+      "target_id": "c_韩廷凤",
+      "weight": 102.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 50,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_吴惠泉",
+      "target_id": "c_韩遇运",
+      "weight": 18.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 8,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_媒婆",
+      "target_id": "c_家院",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_媒婆",
+      "target_id": "c_江氏",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_媒婆",
+      "target_id": "c_韩廷凤",
+      "weight": 9.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_家院",
+      "target_id": "c_江氏",
+      "weight": 10.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 4,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_家院",
+      "target_id": "c_韩廷凤",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_江氏",
+      "target_id": "c_韩廷凤",
+      "weight": 28.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 13,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_金氏",
+      "target_id": "c_韩遇运",
+      "weight": 22.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 10,
+      "same_scene_count": 2
+    },
+    {
+      "source_id": "c_韩廷凤",
+      "target_id": "c_韩遇运",
+      "weight": 71.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 35,
+      "same_scene_count": 1
+    }
+  ],
+  "tags": {
+    "genre_inferred": "爱情剧"
+  }
+}

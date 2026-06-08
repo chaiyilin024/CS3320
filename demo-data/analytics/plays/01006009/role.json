@@ -1,0 +1,320 @@
+{
+  "script_id": "01006009",
+  "hangdang_distribution": {
+    "小生": 2,
+    "武生": 1,
+    "净": 1,
+    "丑": 1,
+    "未知": 2
+  },
+  "hangdang_coarse_distribution": {
+    "净": 1,
+    "生": 3,
+    "丑": 1,
+    "未知": 2
+  },
+  "characters": [
+    {
+      "character_id": "c_窦尔敦",
+      "name": "窦尔敦",
+      "hangdang_labeled": "净",
+      "hangdang_inferred": null,
+      "hangdang_final": "净",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=男",
+        "age=少年",
+        "identity=君主",
+        "personality=忠义",
+        "personality=稳重",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "君主",
+        "age": "少年",
+        "personality": [
+          "忠义",
+          "稳重"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_黄天霸",
+      "name": "黄天霸",
+      "hangdang_labeled": "武生",
+      "hangdang_inferred": null,
+      "hangdang_final": "武生",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=high",
+        "gender=男",
+        "identity=弟兄",
+        "personality=诙谐",
+        "personality=稳重",
+        "cue=念",
+        "cue=唱"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "弟兄",
+        "personality": [
+          "诙谐",
+          "稳重"
+        ],
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      }
+    },
+    {
+      "character_id": "c_大头目",
+      "name": "大头目",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "小生",
+      "hangdang_final": "小生",
+      "confidence": 0.55,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=弟兄",
+        "personality=稳重",
+        "cue=念",
+        "matched_identity=弟兄"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "弟兄",
+        "personality": [
+          "稳重"
+        ],
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_报子",
+      "name": "报子",
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_final": "丑",
+      "confidence": 0.95,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=弟兄",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "弟兄",
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_二头目",
+      "name": "二头目",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_众人",
+      "name": "众人",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "小生",
+      "hangdang_final": "小生",
+      "confidence": 0.55,
+      "top_features": [
+        "line_count_bucket=low",
+        "gender=男",
+        "identity=弟兄",
+        "cue=念",
+        "matched_identity=弟兄"
+      ],
+      "traits_derived": {
+        "gender": "男",
+        "identity": "弟兄",
+        "performance_cues": [
+          "念"
+        ]
+      }
+    },
+    {
+      "character_id": "c_三头目",
+      "name": "三头目",
+      "hangdang_labeled": null,
+      "hangdang_inferred": "未知",
+      "hangdang_final": "未知",
+      "confidence": 0.3,
+      "top_features": [
+        "line_count_bucket=low",
+        "cue=念"
+      ],
+      "traits_derived": {
+        "performance_cues": [
+          "念"
+        ]
+      }
+    }
+  ],
+  "trait_summary": [
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "identity=弟兄",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "matched_identity=弟兄",
+      "hangdang": "小生",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "未知",
+      "count": 2
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "age=少年",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "identity=君主",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "personality=忠义",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "personality=稳重",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "净",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=high",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "identity=弟兄",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "personality=诙谐",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "personality=稳重",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "cue=唱",
+      "hangdang": "武生",
+      "count": 1
+    },
+    {
+      "trait": "personality=稳重",
+      "hangdang": "小生",
+      "count": 1
+    },
+    {
+      "trait": "line_count_bucket=low",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "gender=男",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "identity=弟兄",
+      "hangdang": "丑",
+      "count": 1
+    },
+    {
+      "trait": "cue=念",
+      "hangdang": "丑",
+      "count": 1
+    }
+  ],
+  "labeled_count": 3,
+  "inferred_count": 2
+}

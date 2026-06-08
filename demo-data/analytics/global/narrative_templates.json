@@ -1,0 +1,2525 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-08T13:46:01.683771+00:00",
+  "total_play_count": 10,
+  "corpus_stage_proportions": {
+    "结局": 0.4183,
+    "高潮": 0.1491,
+    "冲突": 0.0826,
+    "铺垫": 0.1753,
+    "发展": 0.1748
+  },
+  "performance_distribution": {
+    "唱": 739,
+    "念": 1720,
+    "做": 194,
+    "打": 9,
+    "unknown": 109
+  },
+  "templates": [
+    {
+      "template_id": "classic_five_act",
+      "label": "起承转合型",
+      "play_count": 10,
+      "example_script_ids": [
+        "01001001",
+        "01001003",
+        "01001005",
+        "01001007",
+        "01001009",
+        "01001012",
+        "01001020",
+        "01002006",
+        "01006009",
+        "01028005"
+      ],
+      "stage_proportions": {
+        "结局": 0.4183,
+        "高潮": 0.1491,
+        "冲突": 0.0826,
+        "铺垫": 0.1753,
+        "发展": 0.1748
+      }
+    }
+  ],
+  "by_genre": [
+    {
+      "genre": "历史剧",
+      "play_count": 4,
+      "avg_stage_lengths": {
+        "结局": 0.4925,
+        "高潮": 0.0995,
+        "冲突": 0.0709,
+        "铺垫": 0.1646,
+        "发展": 0.1724
+      },
+      "avg_rhythm_curve": [
+        {
+          "block_index": 0,
+          "tension_score": 0.1717
+        },
+        {
+          "block_index": 1,
+          "tension_score": 0.2059
+        },
+        {
+          "block_index": 2,
+          "tension_score": 0.2194
+        },
+        {
+          "block_index": 3,
+          "tension_score": 0.2371
+        },
+        {
+          "block_index": 4,
+          "tension_score": 0.2512
+        },
+        {
+          "block_index": 5,
+          "tension_score": 0.293
+        },
+        {
+          "block_index": 6,
+          "tension_score": 0.2791
+        },
+        {
+          "block_index": 7,
+          "tension_score": 0.2911
+        },
+        {
+          "block_index": 8,
+          "tension_score": 0.2882
+        },
+        {
+          "block_index": 9,
+          "tension_score": 0.3307
+        },
+        {
+          "block_index": 10,
+          "tension_score": 0.3053
+        },
+        {
+          "block_index": 11,
+          "tension_score": 0.3141
+        },
+        {
+          "block_index": 12,
+          "tension_score": 0.2796
+        },
+        {
+          "block_index": 13,
+          "tension_score": 0.2764
+        },
+        {
+          "block_index": 14,
+          "tension_score": 0.31
+        },
+        {
+          "block_index": 15,
+          "tension_score": 0.3185
+        },
+        {
+          "block_index": 16,
+          "tension_score": 0.2937
+        },
+        {
+          "block_index": 17,
+          "tension_score": 0.3779
+        },
+        {
+          "block_index": 18,
+          "tension_score": 0.3655
+        },
+        {
+          "block_index": 19,
+          "tension_score": 0.3634
+        },
+        {
+          "block_index": 20,
+          "tension_score": 0.4005
+        },
+        {
+          "block_index": 21,
+          "tension_score": 0.4391
+        },
+        {
+          "block_index": 22,
+          "tension_score": 0.4437
+        },
+        {
+          "block_index": 23,
+          "tension_score": 0.4539
+        },
+        {
+          "block_index": 24,
+          "tension_score": 0.4613
+        },
+        {
+          "block_index": 25,
+          "tension_score": 0.4159
+        },
+        {
+          "block_index": 26,
+          "tension_score": 0.382
+        },
+        {
+          "block_index": 27,
+          "tension_score": 0.398
+        },
+        {
+          "block_index": 28,
+          "tension_score": 0.3782
+        },
+        {
+          "block_index": 29,
+          "tension_score": 0.3996
+        },
+        {
+          "block_index": 30,
+          "tension_score": 0.4185
+        },
+        {
+          "block_index": 31,
+          "tension_score": 0.4047
+        },
+        {
+          "block_index": 32,
+          "tension_score": 0.4064
+        },
+        {
+          "block_index": 33,
+          "tension_score": 0.3459
+        },
+        {
+          "block_index": 34,
+          "tension_score": 0.3151
+        },
+        {
+          "block_index": 35,
+          "tension_score": 0.3437
+        },
+        {
+          "block_index": 36,
+          "tension_score": 0.3271
+        },
+        {
+          "block_index": 37,
+          "tension_score": 0.336
+        },
+        {
+          "block_index": 38,
+          "tension_score": 0.3266
+        },
+        {
+          "block_index": 39,
+          "tension_score": 0.3125
+        },
+        {
+          "block_index": 40,
+          "tension_score": 0.2923
+        },
+        {
+          "block_index": 41,
+          "tension_score": 0.2747
+        },
+        {
+          "block_index": 42,
+          "tension_score": 0.3071
+        },
+        {
+          "block_index": 43,
+          "tension_score": 0.3177
+        },
+        {
+          "block_index": 44,
+          "tension_score": 0.3588
+        },
+        {
+          "block_index": 45,
+          "tension_score": 0.3567
+        },
+        {
+          "block_index": 46,
+          "tension_score": 0.3592
+        },
+        {
+          "block_index": 47,
+          "tension_score": 0.3432
+        },
+        {
+          "block_index": 48,
+          "tension_score": 0.3284
+        },
+        {
+          "block_index": 49,
+          "tension_score": 0.3266
+        },
+        {
+          "block_index": 50,
+          "tension_score": 0.3099
+        },
+        {
+          "block_index": 51,
+          "tension_score": 0.3375
+        },
+        {
+          "block_index": 52,
+          "tension_score": 0.3038
+        },
+        {
+          "block_index": 53,
+          "tension_score": 0.2997
+        },
+        {
+          "block_index": 54,
+          "tension_score": 0.2905
+        },
+        {
+          "block_index": 55,
+          "tension_score": 0.3403
+        },
+        {
+          "block_index": 56,
+          "tension_score": 0.3223
+        },
+        {
+          "block_index": 57,
+          "tension_score": 0.3075
+        },
+        {
+          "block_index": 58,
+          "tension_score": 0.3299
+        },
+        {
+          "block_index": 59,
+          "tension_score": 0.3091
+        },
+        {
+          "block_index": 60,
+          "tension_score": 0.2796
+        },
+        {
+          "block_index": 61,
+          "tension_score": 0.2646
+        },
+        {
+          "block_index": 62,
+          "tension_score": 0.2825
+        },
+        {
+          "block_index": 63,
+          "tension_score": 0.3086
+        },
+        {
+          "block_index": 64,
+          "tension_score": 0.2899
+        },
+        {
+          "block_index": 65,
+          "tension_score": 0.3227
+        },
+        {
+          "block_index": 66,
+          "tension_score": 0.348
+        },
+        {
+          "block_index": 67,
+          "tension_score": 0.354
+        },
+        {
+          "block_index": 68,
+          "tension_score": 0.3986
+        },
+        {
+          "block_index": 69,
+          "tension_score": 0.3308
+        },
+        {
+          "block_index": 70,
+          "tension_score": 0.311
+        },
+        {
+          "block_index": 71,
+          "tension_score": 0.3235
+        },
+        {
+          "block_index": 72,
+          "tension_score": 0.3389
+        },
+        {
+          "block_index": 73,
+          "tension_score": 0.3508
+        },
+        {
+          "block_index": 74,
+          "tension_score": 0.3564
+        },
+        {
+          "block_index": 75,
+          "tension_score": 0.3667
+        },
+        {
+          "block_index": 76,
+          "tension_score": 0.3465
+        },
+        {
+          "block_index": 77,
+          "tension_score": 0.344
+        },
+        {
+          "block_index": 78,
+          "tension_score": 0.3295
+        },
+        {
+          "block_index": 79,
+          "tension_score": 0.2748
+        },
+        {
+          "block_index": 80,
+          "tension_score": 0.2956
+        },
+        {
+          "block_index": 81,
+          "tension_score": 0.3095
+        },
+        {
+          "block_index": 82,
+          "tension_score": 0.343
+        },
+        {
+          "block_index": 83,
+          "tension_score": 0.3669
+        },
+        {
+          "block_index": 84,
+          "tension_score": 0.3695
+        },
+        {
+          "block_index": 85,
+          "tension_score": 0.3525
+        },
+        {
+          "block_index": 86,
+          "tension_score": 0.3858
+        },
+        {
+          "block_index": 87,
+          "tension_score": 0.3714
+        },
+        {
+          "block_index": 88,
+          "tension_score": 0.3703
+        },
+        {
+          "block_index": 89,
+          "tension_score": 0.3506
+        },
+        {
+          "block_index": 90,
+          "tension_score": 0.3518
+        },
+        {
+          "block_index": 91,
+          "tension_score": 0.3694
+        },
+        {
+          "block_index": 92,
+          "tension_score": 0.3682
+        },
+        {
+          "block_index": 93,
+          "tension_score": 0.3887
+        },
+        {
+          "block_index": 94,
+          "tension_score": 0.3811
+        },
+        {
+          "block_index": 95,
+          "tension_score": 0.4
+        },
+        {
+          "block_index": 96,
+          "tension_score": 0.4094
+        },
+        {
+          "block_index": 97,
+          "tension_score": 0.4031
+        },
+        {
+          "block_index": 98,
+          "tension_score": 0.3825
+        },
+        {
+          "block_index": 99,
+          "tension_score": 0.3914
+        }
+      ]
+    },
+    {
+      "genre": "家庭剧",
+      "play_count": 2,
+      "avg_stage_lengths": {
+        "结局": 0.3599,
+        "高潮": 0.1941,
+        "冲突": 0.0997,
+        "铺垫": 0.2364,
+        "发展": 0.11
+      },
+      "avg_rhythm_curve": [
+        {
+          "block_index": 0,
+          "tension_score": 0.1623
+        },
+        {
+          "block_index": 1,
+          "tension_score": 0.1664
+        },
+        {
+          "block_index": 2,
+          "tension_score": 0.1632
+        },
+        {
+          "block_index": 3,
+          "tension_score": 0.1648
+        },
+        {
+          "block_index": 4,
+          "tension_score": 0.1664
+        },
+        {
+          "block_index": 5,
+          "tension_score": 0.165
+        },
+        {
+          "block_index": 6,
+          "tension_score": 0.1245
+        },
+        {
+          "block_index": 7,
+          "tension_score": 0.1315
+        },
+        {
+          "block_index": 8,
+          "tension_score": 0.1511
+        },
+        {
+          "block_index": 9,
+          "tension_score": 0.2085
+        },
+        {
+          "block_index": 10,
+          "tension_score": 0.2286
+        },
+        {
+          "block_index": 11,
+          "tension_score": 0.1902
+        },
+        {
+          "block_index": 12,
+          "tension_score": 0.1833
+        },
+        {
+          "block_index": 13,
+          "tension_score": 0.2036
+        },
+        {
+          "block_index": 14,
+          "tension_score": 0.2038
+        },
+        {
+          "block_index": 15,
+          "tension_score": 0.2231
+        },
+        {
+          "block_index": 16,
+          "tension_score": 0.2137
+        },
+        {
+          "block_index": 17,
+          "tension_score": 0.207
+        },
+        {
+          "block_index": 18,
+          "tension_score": 0.2037
+        },
+        {
+          "block_index": 19,
+          "tension_score": 0.2298
+        },
+        {
+          "block_index": 20,
+          "tension_score": 0.254
+        },
+        {
+          "block_index": 21,
+          "tension_score": 0.2554
+        },
+        {
+          "block_index": 22,
+          "tension_score": 0.2904
+        },
+        {
+          "block_index": 23,
+          "tension_score": 0.336
+        },
+        {
+          "block_index": 24,
+          "tension_score": 0.3535
+        },
+        {
+          "block_index": 25,
+          "tension_score": 0.3443
+        },
+        {
+          "block_index": 26,
+          "tension_score": 0.336
+        },
+        {
+          "block_index": 27,
+          "tension_score": 0.3502
+        },
+        {
+          "block_index": 28,
+          "tension_score": 0.3873
+        },
+        {
+          "block_index": 29,
+          "tension_score": 0.3939
+        },
+        {
+          "block_index": 30,
+          "tension_score": 0.392
+        },
+        {
+          "block_index": 31,
+          "tension_score": 0.3807
+        },
+        {
+          "block_index": 32,
+          "tension_score": 0.3975
+        },
+        {
+          "block_index": 33,
+          "tension_score": 0.3798
+        },
+        {
+          "block_index": 34,
+          "tension_score": 0.3791
+        },
+        {
+          "block_index": 35,
+          "tension_score": 0.3839
+        },
+        {
+          "block_index": 36,
+          "tension_score": 0.3947
+        },
+        {
+          "block_index": 37,
+          "tension_score": 0.3985
+        },
+        {
+          "block_index": 38,
+          "tension_score": 0.4017
+        },
+        {
+          "block_index": 39,
+          "tension_score": 0.3965
+        },
+        {
+          "block_index": 40,
+          "tension_score": 0.3886
+        },
+        {
+          "block_index": 41,
+          "tension_score": 0.3876
+        },
+        {
+          "block_index": 42,
+          "tension_score": 0.3688
+        },
+        {
+          "block_index": 43,
+          "tension_score": 0.3693
+        },
+        {
+          "block_index": 44,
+          "tension_score": 0.3779
+        },
+        {
+          "block_index": 45,
+          "tension_score": 0.3443
+        },
+        {
+          "block_index": 46,
+          "tension_score": 0.3303
+        },
+        {
+          "block_index": 47,
+          "tension_score": 0.3239
+        },
+        {
+          "block_index": 48,
+          "tension_score": 0.3867
+        },
+        {
+          "block_index": 49,
+          "tension_score": 0.4215
+        },
+        {
+          "block_index": 50,
+          "tension_score": 0.4388
+        },
+        {
+          "block_index": 51,
+          "tension_score": 0.4254
+        },
+        {
+          "block_index": 52,
+          "tension_score": 0.4243
+        },
+        {
+          "block_index": 53,
+          "tension_score": 0.4513
+        },
+        {
+          "block_index": 54,
+          "tension_score": 0.4548
+        },
+        {
+          "block_index": 55,
+          "tension_score": 0.4217
+        },
+        {
+          "block_index": 56,
+          "tension_score": 0.3771
+        },
+        {
+          "block_index": 57,
+          "tension_score": 0.3568
+        },
+        {
+          "block_index": 58,
+          "tension_score": 0.3529
+        },
+        {
+          "block_index": 59,
+          "tension_score": 0.2934
+        },
+        {
+          "block_index": 60,
+          "tension_score": 0.2408
+        },
+        {
+          "block_index": 61,
+          "tension_score": 0.2832
+        },
+        {
+          "block_index": 62,
+          "tension_score": 0.2411
+        },
+        {
+          "block_index": 63,
+          "tension_score": 0.2386
+        },
+        {
+          "block_index": 64,
+          "tension_score": 0.2046
+        },
+        {
+          "block_index": 65,
+          "tension_score": 0.2187
+        },
+        {
+          "block_index": 66,
+          "tension_score": 0.2317
+        },
+        {
+          "block_index": 67,
+          "tension_score": 0.3469
+        },
+        {
+          "block_index": 68,
+          "tension_score": 0.3355
+        },
+        {
+          "block_index": 69,
+          "tension_score": 0.3173
+        },
+        {
+          "block_index": 70,
+          "tension_score": 0.3531
+        },
+        {
+          "block_index": 71,
+          "tension_score": 0.3802
+        },
+        {
+          "block_index": 72,
+          "tension_score": 0.425
+        },
+        {
+          "block_index": 73,
+          "tension_score": 0.4486
+        },
+        {
+          "block_index": 74,
+          "tension_score": 0.4441
+        },
+        {
+          "block_index": 75,
+          "tension_score": 0.4113
+        },
+        {
+          "block_index": 76,
+          "tension_score": 0.4096
+        },
+        {
+          "block_index": 77,
+          "tension_score": 0.419
+        },
+        {
+          "block_index": 78,
+          "tension_score": 0.4141
+        },
+        {
+          "block_index": 79,
+          "tension_score": 0.4157
+        },
+        {
+          "block_index": 80,
+          "tension_score": 0.3742
+        },
+        {
+          "block_index": 81,
+          "tension_score": 0.3181
+        },
+        {
+          "block_index": 82,
+          "tension_score": 0.309
+        },
+        {
+          "block_index": 83,
+          "tension_score": 0.3034
+        },
+        {
+          "block_index": 84,
+          "tension_score": 0.2848
+        },
+        {
+          "block_index": 85,
+          "tension_score": 0.2825
+        },
+        {
+          "block_index": 86,
+          "tension_score": 0.3087
+        },
+        {
+          "block_index": 87,
+          "tension_score": 0.3043
+        },
+        {
+          "block_index": 88,
+          "tension_score": 0.2915
+        },
+        {
+          "block_index": 89,
+          "tension_score": 0.263
+        },
+        {
+          "block_index": 90,
+          "tension_score": 0.2209
+        },
+        {
+          "block_index": 91,
+          "tension_score": 0.223
+        },
+        {
+          "block_index": 92,
+          "tension_score": 0.2418
+        },
+        {
+          "block_index": 93,
+          "tension_score": 0.2412
+        },
+        {
+          "block_index": 94,
+          "tension_score": 0.1924
+        },
+        {
+          "block_index": 95,
+          "tension_score": 0.1707
+        },
+        {
+          "block_index": 96,
+          "tension_score": 0.1532
+        },
+        {
+          "block_index": 97,
+          "tension_score": 0.1317
+        },
+        {
+          "block_index": 98,
+          "tension_score": 0.1353
+        },
+        {
+          "block_index": 99,
+          "tension_score": 0.1477
+        }
+      ]
+    },
+    {
+      "genre": "爱情剧",
+      "play_count": 1,
+      "avg_stage_lengths": {
+        "结局": 0.1741,
+        "发展": 0.204,
+        "高潮": 0.1915,
+        "冲突": 0.204,
+        "铺垫": 0.2264
+      },
+      "avg_rhythm_curve": [
+        {
+          "block_index": 0,
+          "tension_score": 0.1533
+        },
+        {
+          "block_index": 1,
+          "tension_score": 0.1704
+        },
+        {
+          "block_index": 2,
+          "tension_score": 0.1822
+        },
+        {
+          "block_index": 3,
+          "tension_score": 0.1831
+        },
+        {
+          "block_index": 4,
+          "tension_score": 0.1711
+        },
+        {
+          "block_index": 5,
+          "tension_score": 0.2192
+        },
+        {
+          "block_index": 6,
+          "tension_score": 0.2605
+        },
+        {
+          "block_index": 7,
+          "tension_score": 0.2184
+        },
+        {
+          "block_index": 8,
+          "tension_score": 0.2765
+        },
+        {
+          "block_index": 9,
+          "tension_score": 0.2705
+        },
+        {
+          "block_index": 10,
+          "tension_score": 0.2631
+        },
+        {
+          "block_index": 11,
+          "tension_score": 0.2499
+        },
+        {
+          "block_index": 12,
+          "tension_score": 0.1819
+        },
+        {
+          "block_index": 13,
+          "tension_score": 0.229
+        },
+        {
+          "block_index": 14,
+          "tension_score": 0.1985
+        },
+        {
+          "block_index": 15,
+          "tension_score": 0.2359
+        },
+        {
+          "block_index": 16,
+          "tension_score": 0.1856
+        },
+        {
+          "block_index": 17,
+          "tension_score": 0.2015
+        },
+        {
+          "block_index": 18,
+          "tension_score": 0.2489
+        },
+        {
+          "block_index": 19,
+          "tension_score": 0.2596
+        },
+        {
+          "block_index": 20,
+          "tension_score": 0.3731
+        },
+        {
+          "block_index": 21,
+          "tension_score": 0.3525
+        },
+        {
+          "block_index": 22,
+          "tension_score": 0.2829
+        },
+        {
+          "block_index": 23,
+          "tension_score": 0.3781
+        },
+        {
+          "block_index": 24,
+          "tension_score": 0.3543
+        },
+        {
+          "block_index": 25,
+          "tension_score": 0.3314
+        },
+        {
+          "block_index": 26,
+          "tension_score": 0.341
+        },
+        {
+          "block_index": 27,
+          "tension_score": 0.3494
+        },
+        {
+          "block_index": 28,
+          "tension_score": 0.3077
+        },
+        {
+          "block_index": 29,
+          "tension_score": 0.216
+        },
+        {
+          "block_index": 30,
+          "tension_score": 0.2513
+        },
+        {
+          "block_index": 31,
+          "tension_score": 0.2924
+        },
+        {
+          "block_index": 32,
+          "tension_score": 0.2045
+        },
+        {
+          "block_index": 33,
+          "tension_score": 0.1858
+        },
+        {
+          "block_index": 34,
+          "tension_score": 0.1885
+        },
+        {
+          "block_index": 35,
+          "tension_score": 0.1901
+        },
+        {
+          "block_index": 36,
+          "tension_score": 0.1765
+        },
+        {
+          "block_index": 37,
+          "tension_score": 0.1534
+        },
+        {
+          "block_index": 38,
+          "tension_score": 0.2318
+        },
+        {
+          "block_index": 39,
+          "tension_score": 0.2757
+        },
+        {
+          "block_index": 40,
+          "tension_score": 0.3454
+        },
+        {
+          "block_index": 41,
+          "tension_score": 0.3227
+        },
+        {
+          "block_index": 42,
+          "tension_score": 0.3113
+        },
+        {
+          "block_index": 43,
+          "tension_score": 0.2699
+        },
+        {
+          "block_index": 44,
+          "tension_score": 0.2514
+        },
+        {
+          "block_index": 45,
+          "tension_score": 0.2441
+        },
+        {
+          "block_index": 46,
+          "tension_score": 0.1381
+        },
+        {
+          "block_index": 47,
+          "tension_score": 0.1501
+        },
+        {
+          "block_index": 48,
+          "tension_score": 0.2502
+        },
+        {
+          "block_index": 49,
+          "tension_score": 0.3128
+        },
+        {
+          "block_index": 50,
+          "tension_score": 0.3018
+        },
+        {
+          "block_index": 51,
+          "tension_score": 0.2238
+        },
+        {
+          "block_index": 52,
+          "tension_score": 0.2329
+        },
+        {
+          "block_index": 53,
+          "tension_score": 0.2238
+        },
+        {
+          "block_index": 54,
+          "tension_score": 0.3068
+        },
+        {
+          "block_index": 55,
+          "tension_score": 0.4752
+        },
+        {
+          "block_index": 56,
+          "tension_score": 0.2891
+        },
+        {
+          "block_index": 57,
+          "tension_score": 0.4138
+        },
+        {
+          "block_index": 58,
+          "tension_score": 0.4334
+        },
+        {
+          "block_index": 59,
+          "tension_score": 0.4495
+        },
+        {
+          "block_index": 60,
+          "tension_score": 0.3424
+        },
+        {
+          "block_index": 61,
+          "tension_score": 0.2936
+        },
+        {
+          "block_index": 62,
+          "tension_score": 0.2643
+        },
+        {
+          "block_index": 63,
+          "tension_score": 0.2277
+        },
+        {
+          "block_index": 64,
+          "tension_score": 0.3298
+        },
+        {
+          "block_index": 65,
+          "tension_score": 0.2423
+        },
+        {
+          "block_index": 66,
+          "tension_score": 0.2571
+        },
+        {
+          "block_index": 67,
+          "tension_score": 0.2519
+        },
+        {
+          "block_index": 68,
+          "tension_score": 0.1883
+        },
+        {
+          "block_index": 69,
+          "tension_score": 0.3038
+        },
+        {
+          "block_index": 70,
+          "tension_score": 0.2512
+        },
+        {
+          "block_index": 71,
+          "tension_score": 0.2299
+        },
+        {
+          "block_index": 72,
+          "tension_score": 0.2213
+        },
+        {
+          "block_index": 73,
+          "tension_score": 0.2143
+        },
+        {
+          "block_index": 74,
+          "tension_score": 0.2306
+        },
+        {
+          "block_index": 75,
+          "tension_score": 0.2585
+        },
+        {
+          "block_index": 76,
+          "tension_score": 0.2476
+        },
+        {
+          "block_index": 77,
+          "tension_score": 0.2496
+        },
+        {
+          "block_index": 78,
+          "tension_score": 0.2881
+        },
+        {
+          "block_index": 79,
+          "tension_score": 0.3177
+        },
+        {
+          "block_index": 80,
+          "tension_score": 0.3486
+        },
+        {
+          "block_index": 81,
+          "tension_score": 0.2531
+        },
+        {
+          "block_index": 82,
+          "tension_score": 0.2146
+        },
+        {
+          "block_index": 83,
+          "tension_score": 0.1893
+        },
+        {
+          "block_index": 84,
+          "tension_score": 0.2401
+        },
+        {
+          "block_index": 85,
+          "tension_score": 0.2469
+        },
+        {
+          "block_index": 86,
+          "tension_score": 0.2869
+        },
+        {
+          "block_index": 87,
+          "tension_score": 0.3269
+        },
+        {
+          "block_index": 88,
+          "tension_score": 0.365
+        },
+        {
+          "block_index": 89,
+          "tension_score": 0.3429
+        },
+        {
+          "block_index": 90,
+          "tension_score": 0.3238
+        },
+        {
+          "block_index": 91,
+          "tension_score": 0.3232
+        },
+        {
+          "block_index": 92,
+          "tension_score": 0.2737
+        },
+        {
+          "block_index": 93,
+          "tension_score": 0.3074
+        },
+        {
+          "block_index": 94,
+          "tension_score": 0.245
+        },
+        {
+          "block_index": 95,
+          "tension_score": 0.2178
+        },
+        {
+          "block_index": 96,
+          "tension_score": 0.2957
+        },
+        {
+          "block_index": 97,
+          "tension_score": 0.2863
+        },
+        {
+          "block_index": 98,
+          "tension_score": 0.297
+        },
+        {
+          "block_index": 99,
+          "tension_score": 0.2594
+        }
+      ]
+    },
+    {
+      "genre": "公案剧",
+      "play_count": 1,
+      "avg_stage_lengths": {
+        "结局": 0.4825,
+        "发展": 0.0526,
+        "高潮": 0.2368,
+        "冲突": 0.0351,
+        "铺垫": 0.193
+      },
+      "avg_rhythm_curve": [
+        {
+          "block_index": 0,
+          "tension_score": 0.1916
+        },
+        {
+          "block_index": 1,
+          "tension_score": 0.1858
+        },
+        {
+          "block_index": 2,
+          "tension_score": 0.1848
+        },
+        {
+          "block_index": 3,
+          "tension_score": 0.1928
+        },
+        {
+          "block_index": 4,
+          "tension_score": 0.1712
+        },
+        {
+          "block_index": 5,
+          "tension_score": 0.1488
+        },
+        {
+          "block_index": 6,
+          "tension_score": 0.1462
+        },
+        {
+          "block_index": 7,
+          "tension_score": 0.1665
+        },
+        {
+          "block_index": 8,
+          "tension_score": 0.1684
+        },
+        {
+          "block_index": 9,
+          "tension_score": 0.1665
+        },
+        {
+          "block_index": 10,
+          "tension_score": 0.1618
+        },
+        {
+          "block_index": 11,
+          "tension_score": 0.1484
+        },
+        {
+          "block_index": 12,
+          "tension_score": 0.1371
+        },
+        {
+          "block_index": 13,
+          "tension_score": 0.1368
+        },
+        {
+          "block_index": 14,
+          "tension_score": 0.1695
+        },
+        {
+          "block_index": 15,
+          "tension_score": 0.1965
+        },
+        {
+          "block_index": 16,
+          "tension_score": 0.2038
+        },
+        {
+          "block_index": 17,
+          "tension_score": 0.3107
+        },
+        {
+          "block_index": 18,
+          "tension_score": 0.3107
+        },
+        {
+          "block_index": 19,
+          "tension_score": 0.3123
+        },
+        {
+          "block_index": 20,
+          "tension_score": 0.316
+        },
+        {
+          "block_index": 21,
+          "tension_score": 0.3131
+        },
+        {
+          "block_index": 22,
+          "tension_score": 0.3107
+        },
+        {
+          "block_index": 23,
+          "tension_score": 0.3758
+        },
+        {
+          "block_index": 24,
+          "tension_score": 0.4115
+        },
+        {
+          "block_index": 25,
+          "tension_score": 0.4147
+        },
+        {
+          "block_index": 26,
+          "tension_score": 0.46
+        },
+        {
+          "block_index": 27,
+          "tension_score": 0.46
+        },
+        {
+          "block_index": 28,
+          "tension_score": 0.4581
+        },
+        {
+          "block_index": 29,
+          "tension_score": 0.4552
+        },
+        {
+          "block_index": 30,
+          "tension_score": 0.3334
+        },
+        {
+          "block_index": 31,
+          "tension_score": 0.3083
+        },
+        {
+          "block_index": 32,
+          "tension_score": 0.3488
+        },
+        {
+          "block_index": 33,
+          "tension_score": 0.3219
+        },
+        {
+          "block_index": 34,
+          "tension_score": 0.3219
+        },
+        {
+          "block_index": 35,
+          "tension_score": 0.3122
+        },
+        {
+          "block_index": 36,
+          "tension_score": 0.2808
+        },
+        {
+          "block_index": 37,
+          "tension_score": 0.2789
+        },
+        {
+          "block_index": 38,
+          "tension_score": 0.2871
+        },
+        {
+          "block_index": 39,
+          "tension_score": 0.3007
+        },
+        {
+          "block_index": 40,
+          "tension_score": 0.3038
+        },
+        {
+          "block_index": 41,
+          "tension_score": 0.3038
+        },
+        {
+          "block_index": 42,
+          "tension_score": 0.3052
+        },
+        {
+          "block_index": 43,
+          "tension_score": 0.3035
+        },
+        {
+          "block_index": 44,
+          "tension_score": 0.3049
+        },
+        {
+          "block_index": 45,
+          "tension_score": 0.296
+        },
+        {
+          "block_index": 46,
+          "tension_score": 0.2922
+        },
+        {
+          "block_index": 47,
+          "tension_score": 0.294
+        },
+        {
+          "block_index": 48,
+          "tension_score": 0.294
+        },
+        {
+          "block_index": 49,
+          "tension_score": 0.2901
+        },
+        {
+          "block_index": 50,
+          "tension_score": 0.2844
+        },
+        {
+          "block_index": 51,
+          "tension_score": 0.2756
+        },
+        {
+          "block_index": 52,
+          "tension_score": 0.2838
+        },
+        {
+          "block_index": 53,
+          "tension_score": 0.2767
+        },
+        {
+          "block_index": 54,
+          "tension_score": 0.2766
+        },
+        {
+          "block_index": 55,
+          "tension_score": 0.2853
+        },
+        {
+          "block_index": 56,
+          "tension_score": 0.2928
+        },
+        {
+          "block_index": 57,
+          "tension_score": 0.2826
+        },
+        {
+          "block_index": 58,
+          "tension_score": 0.2628
+        },
+        {
+          "block_index": 59,
+          "tension_score": 0.2628
+        },
+        {
+          "block_index": 60,
+          "tension_score": 0.2628
+        },
+        {
+          "block_index": 61,
+          "tension_score": 0.2628
+        },
+        {
+          "block_index": 62,
+          "tension_score": 0.2564
+        },
+        {
+          "block_index": 63,
+          "tension_score": 0.2661
+        },
+        {
+          "block_index": 64,
+          "tension_score": 0.2947
+        },
+        {
+          "block_index": 65,
+          "tension_score": 0.2911
+        },
+        {
+          "block_index": 66,
+          "tension_score": 0.2897
+        },
+        {
+          "block_index": 67,
+          "tension_score": 0.2914
+        },
+        {
+          "block_index": 68,
+          "tension_score": 0.304
+        },
+        {
+          "block_index": 69,
+          "tension_score": 0.304
+        },
+        {
+          "block_index": 70,
+          "tension_score": 0.3073
+        },
+        {
+          "block_index": 71,
+          "tension_score": 0.3109
+        },
+        {
+          "block_index": 72,
+          "tension_score": 0.3577
+        },
+        {
+          "block_index": 73,
+          "tension_score": 0.2915
+        },
+        {
+          "block_index": 74,
+          "tension_score": 0.2589
+        },
+        {
+          "block_index": 75,
+          "tension_score": 0.2752
+        },
+        {
+          "block_index": 76,
+          "tension_score": 0.279
+        },
+        {
+          "block_index": 77,
+          "tension_score": 0.2933
+        },
+        {
+          "block_index": 78,
+          "tension_score": 0.2933
+        },
+        {
+          "block_index": 79,
+          "tension_score": 0.2848
+        },
+        {
+          "block_index": 80,
+          "tension_score": 0.2588
+        },
+        {
+          "block_index": 81,
+          "tension_score": 0.2502
+        },
+        {
+          "block_index": 82,
+          "tension_score": 0.2502
+        },
+        {
+          "block_index": 83,
+          "tension_score": 0.2502
+        },
+        {
+          "block_index": 84,
+          "tension_score": 0.2502
+        },
+        {
+          "block_index": 85,
+          "tension_score": 0.2502
+        },
+        {
+          "block_index": 86,
+          "tension_score": 0.2441
+        },
+        {
+          "block_index": 87,
+          "tension_score": 0.2437
+        },
+        {
+          "block_index": 88,
+          "tension_score": 0.2502
+        },
+        {
+          "block_index": 89,
+          "tension_score": 0.2604
+        },
+        {
+          "block_index": 90,
+          "tension_score": 0.2762
+        },
+        {
+          "block_index": 91,
+          "tension_score": 0.2798
+        },
+        {
+          "block_index": 92,
+          "tension_score": 0.3096
+        },
+        {
+          "block_index": 93,
+          "tension_score": 0.3023
+        },
+        {
+          "block_index": 94,
+          "tension_score": 0.239
+        },
+        {
+          "block_index": 95,
+          "tension_score": 0.2546
+        },
+        {
+          "block_index": 96,
+          "tension_score": 0.2703
+        },
+        {
+          "block_index": 97,
+          "tension_score": 0.2521
+        },
+        {
+          "block_index": 98,
+          "tension_score": 0.2451
+        },
+        {
+          "block_index": 99,
+          "tension_score": 0.1667
+        }
+      ]
+    },
+    {
+      "genre": "侠义剧",
+      "play_count": 1,
+      "avg_stage_lengths": {
+        "结局": 0.2941,
+        "发展": 0.4344,
+        "高潮": 0.2353,
+        "冲突": 0.0226,
+        "铺垫": 0.0136
+      },
+      "avg_rhythm_curve": [
+        {
+          "block_index": 0,
+          "tension_score": 0.18
+        },
+        {
+          "block_index": 1,
+          "tension_score": 0.2191
+        },
+        {
+          "block_index": 2,
+          "tension_score": 0.2854
+        },
+        {
+          "block_index": 3,
+          "tension_score": 0.2785
+        },
+        {
+          "block_index": 4,
+          "tension_score": 0.2907
+        },
+        {
+          "block_index": 5,
+          "tension_score": 0.3184
+        },
+        {
+          "block_index": 6,
+          "tension_score": 0.3386
+        },
+        {
+          "block_index": 7,
+          "tension_score": 0.3244
+        },
+        {
+          "block_index": 8,
+          "tension_score": 0.317
+        },
+        {
+          "block_index": 9,
+          "tension_score": 0.3305
+        },
+        {
+          "block_index": 10,
+          "tension_score": 0.3431
+        },
+        {
+          "block_index": 11,
+          "tension_score": 0.2771
+        },
+        {
+          "block_index": 12,
+          "tension_score": 0.184
+        },
+        {
+          "block_index": 13,
+          "tension_score": 0.1952
+        },
+        {
+          "block_index": 14,
+          "tension_score": 0.2361
+        },
+        {
+          "block_index": 15,
+          "tension_score": 0.2204
+        },
+        {
+          "block_index": 16,
+          "tension_score": 0.1878
+        },
+        {
+          "block_index": 17,
+          "tension_score": 0.1939
+        },
+        {
+          "block_index": 18,
+          "tension_score": 0.2043
+        },
+        {
+          "block_index": 19,
+          "tension_score": 0.1891
+        },
+        {
+          "block_index": 20,
+          "tension_score": 0.1095
+        },
+        {
+          "block_index": 21,
+          "tension_score": 0.081
+        },
+        {
+          "block_index": 22,
+          "tension_score": 0.073
+        },
+        {
+          "block_index": 23,
+          "tension_score": 0.0893
+        },
+        {
+          "block_index": 24,
+          "tension_score": 0.1568
+        },
+        {
+          "block_index": 25,
+          "tension_score": 0.2029
+        },
+        {
+          "block_index": 26,
+          "tension_score": 0.2029
+        },
+        {
+          "block_index": 27,
+          "tension_score": 0.1886
+        },
+        {
+          "block_index": 28,
+          "tension_score": 0.1809
+        },
+        {
+          "block_index": 29,
+          "tension_score": 0.1823
+        },
+        {
+          "block_index": 30,
+          "tension_score": 0.174
+        },
+        {
+          "block_index": 31,
+          "tension_score": 0.1737
+        },
+        {
+          "block_index": 32,
+          "tension_score": 0.2039
+        },
+        {
+          "block_index": 33,
+          "tension_score": 0.1997
+        },
+        {
+          "block_index": 34,
+          "tension_score": 0.2071
+        },
+        {
+          "block_index": 35,
+          "tension_score": 0.1789
+        },
+        {
+          "block_index": 36,
+          "tension_score": 0.1786
+        },
+        {
+          "block_index": 37,
+          "tension_score": 0.1963
+        },
+        {
+          "block_index": 38,
+          "tension_score": 0.2254
+        },
+        {
+          "block_index": 39,
+          "tension_score": 0.2318
+        },
+        {
+          "block_index": 40,
+          "tension_score": 0.259
+        },
+        {
+          "block_index": 41,
+          "tension_score": 0.2448
+        },
+        {
+          "block_index": 42,
+          "tension_score": 0.2281
+        },
+        {
+          "block_index": 43,
+          "tension_score": 0.2826
+        },
+        {
+          "block_index": 44,
+          "tension_score": 0.2912
+        },
+        {
+          "block_index": 45,
+          "tension_score": 0.4664
+        },
+        {
+          "block_index": 46,
+          "tension_score": 0.3536
+        },
+        {
+          "block_index": 47,
+          "tension_score": 0.3762
+        },
+        {
+          "block_index": 48,
+          "tension_score": 0.3971
+        },
+        {
+          "block_index": 49,
+          "tension_score": 0.4061
+        },
+        {
+          "block_index": 50,
+          "tension_score": 0.4007
+        },
+        {
+          "block_index": 51,
+          "tension_score": 0.3838
+        },
+        {
+          "block_index": 52,
+          "tension_score": 0.3564
+        },
+        {
+          "block_index": 53,
+          "tension_score": 0.3173
+        },
+        {
+          "block_index": 54,
+          "tension_score": 0.2801
+        },
+        {
+          "block_index": 55,
+          "tension_score": 0.2881
+        },
+        {
+          "block_index": 56,
+          "tension_score": 0.2939
+        },
+        {
+          "block_index": 57,
+          "tension_score": 0.269
+        },
+        {
+          "block_index": 58,
+          "tension_score": 0.3028
+        },
+        {
+          "block_index": 59,
+          "tension_score": 0.3021
+        },
+        {
+          "block_index": 60,
+          "tension_score": 0.3469
+        },
+        {
+          "block_index": 61,
+          "tension_score": 0.3998
+        },
+        {
+          "block_index": 62,
+          "tension_score": 0.3171
+        },
+        {
+          "block_index": 63,
+          "tension_score": 0.3109
+        },
+        {
+          "block_index": 64,
+          "tension_score": 0.2678
+        },
+        {
+          "block_index": 65,
+          "tension_score": 0.2653
+        },
+        {
+          "block_index": 66,
+          "tension_score": 0.2818
+        },
+        {
+          "block_index": 67,
+          "tension_score": 0.2845
+        },
+        {
+          "block_index": 68,
+          "tension_score": 0.2781
+        },
+        {
+          "block_index": 69,
+          "tension_score": 0.2713
+        },
+        {
+          "block_index": 70,
+          "tension_score": 0.254
+        },
+        {
+          "block_index": 71,
+          "tension_score": 0.258
+        },
+        {
+          "block_index": 72,
+          "tension_score": 0.2556
+        },
+        {
+          "block_index": 73,
+          "tension_score": 0.255
+        },
+        {
+          "block_index": 74,
+          "tension_score": 0.2691
+        },
+        {
+          "block_index": 75,
+          "tension_score": 0.261
+        },
+        {
+          "block_index": 76,
+          "tension_score": 0.2377
+        },
+        {
+          "block_index": 77,
+          "tension_score": 0.2273
+        },
+        {
+          "block_index": 78,
+          "tension_score": 0.2273
+        },
+        {
+          "block_index": 79,
+          "tension_score": 0.2289
+        },
+        {
+          "block_index": 80,
+          "tension_score": 0.2505
+        },
+        {
+          "block_index": 81,
+          "tension_score": 0.286
+        },
+        {
+          "block_index": 82,
+          "tension_score": 0.3221
+        },
+        {
+          "block_index": 83,
+          "tension_score": 0.259
+        },
+        {
+          "block_index": 84,
+          "tension_score": 0.2755
+        },
+        {
+          "block_index": 85,
+          "tension_score": 0.2764
+        },
+        {
+          "block_index": 86,
+          "tension_score": 0.2862
+        },
+        {
+          "block_index": 87,
+          "tension_score": 0.302
+        },
+        {
+          "block_index": 88,
+          "tension_score": 0.305
+        },
+        {
+          "block_index": 89,
+          "tension_score": 0.3171
+        },
+        {
+          "block_index": 90,
+          "tension_score": 0.3798
+        },
+        {
+          "block_index": 91,
+          "tension_score": 0.3153
+        },
+        {
+          "block_index": 92,
+          "tension_score": 0.2598
+        },
+        {
+          "block_index": 93,
+          "tension_score": 0.2709
+        },
+        {
+          "block_index": 94,
+          "tension_score": 0.2671
+        },
+        {
+          "block_index": 95,
+          "tension_score": 0.261
+        },
+        {
+          "block_index": 96,
+          "tension_score": 0.226
+        },
+        {
+          "block_index": 97,
+          "tension_score": 0.2162
+        },
+        {
+          "block_index": 98,
+          "tension_score": 0.224
+        },
+        {
+          "block_index": 99,
+          "tension_score": 0.2293
+        }
+      ]
+    },
+    {
+      "genre": "神话剧",
+      "play_count": 1,
+      "avg_stage_lengths": {
+        "结局": 0.542,
+        "发展": 0.1478,
+        "高潮": 0.0406,
+        "冲突": 0.0812,
+        "铺垫": 0.1884
+      },
+      "avg_rhythm_curve": [
+        {
+          "block_index": 0,
+          "tension_score": 0.1954
+        },
+        {
+          "block_index": 1,
+          "tension_score": 0.1494
+        },
+        {
+          "block_index": 2,
+          "tension_score": 0.1447
+        },
+        {
+          "block_index": 3,
+          "tension_score": 0.1485
+        },
+        {
+          "block_index": 4,
+          "tension_score": 0.2344
+        },
+        {
+          "block_index": 5,
+          "tension_score": 0.2619
+        },
+        {
+          "block_index": 6,
+          "tension_score": 0.2194
+        },
+        {
+          "block_index": 7,
+          "tension_score": 0.2216
+        },
+        {
+          "block_index": 8,
+          "tension_score": 0.2265
+        },
+        {
+          "block_index": 9,
+          "tension_score": 0.275
+        },
+        {
+          "block_index": 10,
+          "tension_score": 0.2923
+        },
+        {
+          "block_index": 11,
+          "tension_score": 0.2952
+        },
+        {
+          "block_index": 12,
+          "tension_score": 0.2208
+        },
+        {
+          "block_index": 13,
+          "tension_score": 0.1925
+        },
+        {
+          "block_index": 14,
+          "tension_score": 0.2025
+        },
+        {
+          "block_index": 15,
+          "tension_score": 0.2335
+        },
+        {
+          "block_index": 16,
+          "tension_score": 0.2895
+        },
+        {
+          "block_index": 17,
+          "tension_score": 0.271
+        },
+        {
+          "block_index": 18,
+          "tension_score": 0.3194
+        },
+        {
+          "block_index": 19,
+          "tension_score": 0.3026
+        },
+        {
+          "block_index": 20,
+          "tension_score": 0.3162
+        },
+        {
+          "block_index": 21,
+          "tension_score": 0.3008
+        },
+        {
+          "block_index": 22,
+          "tension_score": 0.3544
+        },
+        {
+          "block_index": 23,
+          "tension_score": 0.3619
+        },
+        {
+          "block_index": 24,
+          "tension_score": 0.3564
+        },
+        {
+          "block_index": 25,
+          "tension_score": 0.3571
+        },
+        {
+          "block_index": 26,
+          "tension_score": 0.3594
+        },
+        {
+          "block_index": 27,
+          "tension_score": 0.3017
+        },
+        {
+          "block_index": 28,
+          "tension_score": 0.2714
+        },
+        {
+          "block_index": 29,
+          "tension_score": 0.2299
+        },
+        {
+          "block_index": 30,
+          "tension_score": 0.2504
+        },
+        {
+          "block_index": 31,
+          "tension_score": 0.2649
+        },
+        {
+          "block_index": 32,
+          "tension_score": 0.4431
+        },
+        {
+          "block_index": 33,
+          "tension_score": 0.4555
+        },
+        {
+          "block_index": 34,
+          "tension_score": 0.451
+        },
+        {
+          "block_index": 35,
+          "tension_score": 0.5143
+        },
+        {
+          "block_index": 36,
+          "tension_score": 0.5294
+        },
+        {
+          "block_index": 37,
+          "tension_score": 0.5651
+        },
+        {
+          "block_index": 38,
+          "tension_score": 0.6077
+        },
+        {
+          "block_index": 39,
+          "tension_score": 0.5277
+        },
+        {
+          "block_index": 40,
+          "tension_score": 0.3184
+        },
+        {
+          "block_index": 41,
+          "tension_score": 0.28
+        },
+        {
+          "block_index": 42,
+          "tension_score": 0.3194
+        },
+        {
+          "block_index": 43,
+          "tension_score": 0.2389
+        },
+        {
+          "block_index": 44,
+          "tension_score": 0.3032
+        },
+        {
+          "block_index": 45,
+          "tension_score": 0.3863
+        },
+        {
+          "block_index": 46,
+          "tension_score": 0.3122
+        },
+        {
+          "block_index": 47,
+          "tension_score": 0.2969
+        },
+        {
+          "block_index": 48,
+          "tension_score": 0.3067
+        },
+        {
+          "block_index": 49,
+          "tension_score": 0.3042
+        },
+        {
+          "block_index": 50,
+          "tension_score": 0.3004
+        },
+        {
+          "block_index": 51,
+          "tension_score": 0.2877
+        },
+        {
+          "block_index": 52,
+          "tension_score": 0.2975
+        },
+        {
+          "block_index": 53,
+          "tension_score": 0.2705
+        },
+        {
+          "block_index": 54,
+          "tension_score": 0.2988
+        },
+        {
+          "block_index": 55,
+          "tension_score": 0.3353
+        },
+        {
+          "block_index": 56,
+          "tension_score": 0.3243
+        },
+        {
+          "block_index": 57,
+          "tension_score": 0.2703
+        },
+        {
+          "block_index": 58,
+          "tension_score": 0.2529
+        },
+        {
+          "block_index": 59,
+          "tension_score": 0.2429
+        },
+        {
+          "block_index": 60,
+          "tension_score": 0.2409
+        },
+        {
+          "block_index": 61,
+          "tension_score": 0.2783
+        },
+        {
+          "block_index": 62,
+          "tension_score": 0.341
+        },
+        {
+          "block_index": 63,
+          "tension_score": 0.3217
+        },
+        {
+          "block_index": 64,
+          "tension_score": 0.301
+        },
+        {
+          "block_index": 65,
+          "tension_score": 0.3706
+        },
+        {
+          "block_index": 66,
+          "tension_score": 0.3803
+        },
+        {
+          "block_index": 67,
+          "tension_score": 0.3876
+        },
+        {
+          "block_index": 68,
+          "tension_score": 0.3925
+        },
+        {
+          "block_index": 69,
+          "tension_score": 0.3899
+        },
+        {
+          "block_index": 70,
+          "tension_score": 0.3371
+        },
+        {
+          "block_index": 71,
+          "tension_score": 0.3127
+        },
+        {
+          "block_index": 72,
+          "tension_score": 0.3428
+        },
+        {
+          "block_index": 73,
+          "tension_score": 0.3146
+        },
+        {
+          "block_index": 74,
+          "tension_score": 0.2977
+        },
+        {
+          "block_index": 75,
+          "tension_score": 0.2953
+        },
+        {
+          "block_index": 76,
+          "tension_score": 0.309
+        },
+        {
+          "block_index": 77,
+          "tension_score": 0.2691
+        },
+        {
+          "block_index": 78,
+          "tension_score": 0.3012
+        },
+        {
+          "block_index": 79,
+          "tension_score": 0.273
+        },
+        {
+          "block_index": 80,
+          "tension_score": 0.2428
+        },
+        {
+          "block_index": 81,
+          "tension_score": 0.1905
+        },
+        {
+          "block_index": 82,
+          "tension_score": 0.2422
+        },
+        {
+          "block_index": 83,
+          "tension_score": 0.23
+        },
+        {
+          "block_index": 84,
+          "tension_score": 0.1911
+        },
+        {
+          "block_index": 85,
+          "tension_score": 0.2268
+        },
+        {
+          "block_index": 86,
+          "tension_score": 0.2134
+        },
+        {
+          "block_index": 87,
+          "tension_score": 0.2068
+        },
+        {
+          "block_index": 88,
+          "tension_score": 0.2223
+        },
+        {
+          "block_index": 89,
+          "tension_score": 0.4625
+        },
+        {
+          "block_index": 90,
+          "tension_score": 0.4258
+        },
+        {
+          "block_index": 91,
+          "tension_score": 0.4219
+        },
+        {
+          "block_index": 92,
+          "tension_score": 0.4506
+        },
+        {
+          "block_index": 93,
+          "tension_score": 0.4573
+        },
+        {
+          "block_index": 94,
+          "tension_score": 0.4483
+        },
+        {
+          "block_index": 95,
+          "tension_score": 0.4427
+        },
+        {
+          "block_index": 96,
+          "tension_score": 0.4187
+        },
+        {
+          "block_index": 97,
+          "tension_score": 0.3331
+        },
+        {
+          "block_index": 98,
+          "tension_score": 0.322
+        },
+        {
+          "block_index": 99,
+          "tension_score": 0.2794
+        }
+      ]
+    }
+  ]
+}

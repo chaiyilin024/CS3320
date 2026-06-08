@@ -1,0 +1,337 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-08T13:46:01.673600+00:00",
+  "topic_labels": [
+    {
+      "topic_id": 0,
+      "label": "家训教子",
+      "keywords": [
+        "根苗",
+        "不到",
+        "西城",
+        "再探",
+        "复夺",
+        "街亭",
+        "司马",
+        "大兵",
+        "失守",
+        "马谡"
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "其他情节",
+      "keywords": [
+        "空城",
+        "司马",
+        "实城",
+        "诸葛孔明",
+        "众将官",
+        "四门",
+        "收兵",
+        "琴童",
+        "回营",
+        "无有"
+      ]
+    },
+    {
+      "topic_id": 2,
+      "label": "出使行程",
+      "keywords": [
+        "皇叔",
+        "恕罪",
+        "请来",
+        "荆州",
+        "进宫",
+        "饮宴",
+        "赤壁鏖兵",
+        "战船",
+        "想当年",
+        "长江"
+      ]
+    },
+    {
+      "topic_id": 3,
+      "label": "主题3",
+      "keywords": []
+    },
+    {
+      "topic_id": 4,
+      "label": "主题4",
+      "keywords": []
+    },
+    {
+      "topic_id": 5,
+      "label": "主题5",
+      "keywords": []
+    },
+    {
+      "topic_id": 6,
+      "label": "主题6",
+      "keywords": []
+    },
+    {
+      "topic_id": 7,
+      "label": "主题7",
+      "keywords": []
+    }
+  ],
+  "play_topic_matrix": [
+    {
+      "script_id": "01001001",
+      "title": "空城计",
+      "collection_id": "01000000",
+      "genre": "历史剧",
+      "weights": [
+        0.802,
+        0.198,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01001003",
+      "title": "三娘教子",
+      "collection_id": "01000000",
+      "genre": "家庭剧",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01001005",
+      "title": "打鼓骂曹",
+      "collection_id": "01000000",
+      "genre": "历史剧",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01001007",
+      "title": "桑园寄子",
+      "collection_id": "01000000",
+      "genre": "家庭剧",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01001009",
+      "title": "硃砂痣",
+      "collection_id": "01000000",
+      "genre": "爱情剧",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01001012",
+      "title": "黄鹤楼",
+      "collection_id": "01000000",
+      "genre": "历史剧",
+      "weights": [
+        0.5123,
+        0.3053,
+        0.1824,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01001020",
+      "title": "宋江闹院",
+      "collection_id": "01000000",
+      "genre": "历史剧",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01002006",
+      "title": "探阴山",
+      "collection_id": "01000000",
+      "genre": "公案剧",
+      "weights": [
+        0.7294,
+        0.2706,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01006009",
+      "title": "连环套【三本】",
+      "collection_id": "01000000",
+      "genre": "侠义剧",
+      "weights": [
+        0.6479,
+        0.3521,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "script_id": "01028005",
+      "title": "磨房产子",
+      "collection_id": "01000000",
+      "genre": "神话剧",
+      "weights": [
+        0.6008,
+        0.3992,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "topic_cooccurrence": [
+    {
+      "topic_a": 0,
+      "topic_b": 1,
+      "count": 5
+    },
+    {
+      "topic_a": 0,
+      "topic_b": 2,
+      "count": 1
+    },
+    {
+      "topic_a": 1,
+      "topic_b": 2,
+      "count": 1
+    }
+  ],
+  "common_patterns": [
+    {
+      "labels": [
+        "守城攻防",
+        "行军调度"
+      ],
+      "support": 0.1,
+      "play_count": 1,
+      "example_script_ids": [
+        "01001001"
+      ]
+    },
+    {
+      "labels": [
+        "出使行程",
+        "宴饮场面"
+      ],
+      "support": 0.1,
+      "play_count": 1,
+      "example_script_ids": [
+        "01001012"
+      ]
+    },
+    {
+      "labels": [
+        "出使行程",
+        "忠君奉旨"
+      ],
+      "support": 0.1,
+      "play_count": 1,
+      "example_script_ids": [
+        "01001012"
+      ]
+    },
+    {
+      "labels": [
+        "宴饮场面",
+        "忠君奉旨"
+      ],
+      "support": 0.1,
+      "play_count": 1,
+      "example_script_ids": [
+        "01001012"
+      ]
+    },
+    {
+      "labels": [
+        "其他情节",
+        "神话天命"
+      ],
+      "support": 0.1,
+      "play_count": 1,
+      "example_script_ids": [
+        "01002006"
+      ]
+    },
+    {
+      "labels": [
+        "公案侠义",
+        "其他情节"
+      ],
+      "support": 0.1,
+      "play_count": 1,
+      "example_script_ids": [
+        "01006009"
+      ]
+    },
+    {
+      "labels": [
+        "其他情节",
+        "冲突怒斥"
+      ],
+      "support": 0.1,
+      "play_count": 1,
+      "example_script_ids": [
+        "01028005"
+      ]
+    }
+  ]
+}

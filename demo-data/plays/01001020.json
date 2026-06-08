@@ -1,0 +1,6311 @@
+{
+  "script_id": "01001020",
+  "title": "宋江闹院",
+  "collection_id": "01000000",
+  "collection_name": "戏考",
+  "metadata": {
+    "source_pdf": "01001020_宋江闹院.pdf",
+    "parse_version": "1.0",
+    "parsed_at": "2026-06-04T08:59:05.680729+00:00",
+    "page_count": 8,
+    "char_count": 5220,
+    "parse_quality": 0.993,
+    "ocr_used": false,
+    "warnings": []
+  },
+  "characters": [
+    {
+      "character_id": "c_宋江",
+      "name": "宋江",
+      "aliases": [],
+      "hangdang_labeled": "老生",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "生",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 161,
+      "first_appearance_block": 70,
+      "is_main": true
+    },
+    {
+      "character_id": "c_阎惜姣",
+      "name": "阎惜姣",
+      "aliases": [],
+      "hangdang_labeled": "花旦",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "旦",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 139,
+      "first_appearance_block": 21,
+      "is_main": true
+    },
+    {
+      "character_id": "c_张文远",
+      "name": "张文远",
+      "aliases": [],
+      "hangdang_labeled": "丑",
+      "hangdang_inferred": null,
+      "hangdang_coarse": "丑",
+      "traits": {
+        "performance_cues": [
+          "念",
+          "唱"
+        ]
+      },
+      "line_count": 40,
+      "first_appearance_block": 14,
+      "is_main": true
+    },
+    {
+      "character_id": "c_众人",
+      "name": "众人",
+      "aliases": [],
+      "hangdang_labeled": null,
+      "hangdang_inferred": null,
+      "hangdang_coarse": null,
+      "traits": {
+        "performance_cues": [
+          "念"
+        ]
+      },
+      "line_count": 2,
+      "first_appearance_block": 69,
+      "is_main": true
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "s_1",
+      "scene_index": 1,
+      "title": "【第一场】",
+      "block_range": [
+        12,
+        67
+      ],
+      "character_ids": [
+        "c_张文远",
+        "c_阎惜姣"
+      ]
+    },
+    {
+      "scene_id": "s_2",
+      "scene_index": 2,
+      "title": "【第二场】",
+      "block_range": [
+        68,
+        383
+      ],
+      "character_ids": [
+        "c_众人",
+        "c_宋江",
+        "c_张文远",
+        "c_阎惜姣"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "block_id": "b_0",
+      "block_index": 0,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "主要角色",
+      "performance_tags": [],
+      "char_len": 4,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_1",
+      "block_index": 1,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "宋江：老生",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_2",
+      "block_index": 2,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "阎惜姣：花旦",
+      "performance_tags": [],
+      "char_len": 6,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_3",
+      "block_index": 3,
+      "scene_id": null,
+      "type": "character_list",
+      "speaker_id": null,
+      "text": "张文远：丑",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_4",
+      "block_index": 4,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "情节",
+      "performance_tags": [],
+      "char_len": 2,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_5",
+      "block_index": 5,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "宋江为郓城县书吏，昵土娼阎惜姣，为营乌龙院以居其母女，给衣食。宋江有徒张文远，性佻健，喜冶游，",
+      "performance_tags": [],
+      "char_len": 47,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_6",
+      "block_index": 6,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "常乘间入院，与阎惜姣言笑取乐。阎惜姣亦爱张文远年少风流，遂与之通。久之，乐张文远而厌宋江。人言啧啧，宋江有所闻，责阎惜姣忘恩负心。阎惜姣不服，反唇相讥，宋江大受奚落。宋江在郓城，常勾结梁山",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_7",
+      "block_index": 7,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "大盗晁盖等，私相往还。一日，晁盖遣刘唐至宋江处下书赠金，宋江藏书金于招文袋。夜宿乌龙院，黎明即匆匆出门。至中途，忽悟招文袋遗失在院，大惊，急回院搜索不得，意必为阎惜姣所匿。问之，阎惜姣直认",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_8",
+      "block_index": 8,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "不讳。宋江哀恳再三，许尽与其金，而求将书掷还。阎惜姣掉头不允，逼宋江亲立笔据，许与张文远来往，",
+      "performance_tags": [],
+      "char_len": 47,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_9",
+      "block_index": 9,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "不准宋江再来院。宋江不得已允之。立据后，阎惜姣谓盗书当呈县令，论宋江当堂领取。宋江急甚，苦求不已，而阎惜姣置若罔闻。宋江怒不可遏，遂拔刀刺死阎惜姣，取书而去。阎婆见女为宋江所杀，即控宋江于",
+      "performance_tags": [],
+      "char_len": 94,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_10",
+      "block_index": 10,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "县。县令稔知宋江为人诚实宽厚，欲偏袒之。无奈张文远伤其所欢横罹惨酷，欲为之伸雪，坚执宋江罪，并嘱阎婆上控，以胁县令。县令乃科宋江以误杀罪，流至江州。后张文远为阎惜姣活捉去，亦不得善终云。",
+      "performance_tags": [],
+      "char_len": 93,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_11",
+      "block_index": 11,
+      "scene_id": null,
+      "type": "plot_summary",
+      "speaker_id": null,
+      "text": "根据《戏考》第一册整理",
+      "performance_tags": [],
+      "char_len": 11,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_12",
+      "block_index": 12,
+      "scene_id": "s_1",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第一场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_13",
+      "block_index": 13,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（张文远上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_14",
+      "block_index": 14,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "惜的的，爱的的，私通阎婆惜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_15",
+      "block_index": 15,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "在下张文远，今拜宋江门下为徒。我与那阎婆惜眉来眼去，两下苟合。今日闲暇无事，不免到乌龙院走走。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 47,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_16",
+      "block_index": 16,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "摇摇摆摆摆摆摇，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_17",
+      "block_index": 17,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "摇摇摆摆过小桥。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_18",
+      "block_index": 18,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "一步儿来至在乌龙院，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "张文远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_19",
+      "block_index": 19,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "叫声大姐快开门。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "page_no": 1
+    },
+    {
+      "block_id": "b_20",
+      "block_index": 20,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "大姐开门来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_21",
+      "block_index": 21,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_22",
+      "block_index": 22,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（阎惜姣上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_23",
+      "block_index": 23,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_阎惜姣",
+      "text": "忽听得双环响一声，不知来的是何人。用手儿开开了门两扇，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_26",
+      "block_index": 26,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（张文远进门。）",
+      "performance_tags": [],
+      "char_len": 8,
+      "page_no": 1
+    },
+    {
+      "block_id": "b_27",
+      "block_index": 27,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "妙啊，妙啊！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_28",
+      "block_index": 28,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "有劳大姐礼相迎。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_29",
+      "block_index": 29,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_阎惜姣",
+      "text": "搬一把椅儿三郎坐，",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_30",
+      "block_index": 30,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "大姐几日可安宁？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_31",
+      "block_index": 31,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_阎惜姣",
+      "text": "问三郎为何不到乌龙院？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_32",
+      "block_index": 32,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "衙前惧怕一个人。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_33",
+      "block_index": 33,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_阎惜姣",
+      "text": "问三郎怕的哪一个？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_34",
+      "block_index": 34,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "怕的师傅宋公明。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_35",
+      "block_index": 35,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_阎惜姣",
+      "text": "那宋江他是狼来他是虎？",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_36",
+      "block_index": 36,
+      "scene_id": "s_1",
+      "type": "aria",
+      "speaker_id": "c_张文远",
+      "text": "非狼非虎，惧怕他三分。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_37",
+      "block_index": 37,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "三郎你可好？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_38",
+      "block_index": 38,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "我好，大姐你可好?",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_39",
+      "block_index": 39,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我也好。三郎这几日，为何不到乌龙院中走走？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 21,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_40",
+      "block_index": 40,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "衙前有事，少来拜望。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_41",
+      "block_index": 41,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "这也难怪",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_42",
+      "block_index": 42,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "啊，大姐，手中拿的是什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_43",
+      "block_index": 43,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "红绣花鞋。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_44",
+      "block_index": 44,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "是哪个穿的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_45",
+      "block_index": 45,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我妈穿的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_46",
+      "block_index": 46,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "妈儿娘老大年纪，怎么穿红绣花鞋？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_47",
+      "block_index": 47,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "今天十四，明天十五，是我妈的生日。做双花鞋，与她老人家上寿的",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 30,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 1
+    },
+    {
+      "block_id": "b_48",
+      "block_index": 48,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "不是大姐提起，我倒忘怀了。如此说来，我明日礼到人不到。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 27,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_49",
+      "block_index": 49,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "是要你的人来。礼不来，不要紧的",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_50",
+      "block_index": 50,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "如此说来，我礼到人又来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_51",
+      "block_index": 51,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "这不结了吗！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_52",
+      "block_index": 52,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "啊，大姐，你可晓得我的来意？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_53",
+      "block_index": 53,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你要怎么样？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_54",
+      "block_index": 54,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "我要与你高兴高兴。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_55",
+      "block_index": 55,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你猜我呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_56",
+      "block_index": 56,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "大姐越发的要高兴高兴。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_57",
+      "block_index": 57,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我今天有点不高兴。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_58",
+      "block_index": 58,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "告辞。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_59",
+      "block_index": 59,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "三郎你回来。你上哪里去？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_60",
+      "block_index": 60,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "大姐今天不高兴，我等你高兴，我再来呀。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_61",
+      "block_index": 61,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我跟你闹着顽的",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_62",
+      "block_index": 62,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "你跟我闹着顽，唬了我一身的冷汗。正是：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_63",
+      "block_index": 63,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "东边日出西边雨，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_64",
+      "block_index": 64,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "大姐说我情来越有情。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_65",
+      "block_index": 65,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "三郎随我来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_66",
+      "block_index": 66,
+      "scene_id": "s_1",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_67",
+      "block_index": 67,
+      "scene_id": "s_1",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（张文远、阎惜姣同下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 12,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_68",
+      "block_index": 68,
+      "scene_id": "s_2",
+      "type": "scene_heading",
+      "speaker_id": null,
+      "text": "【第二场】",
+      "performance_tags": [],
+      "char_len": 5,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_69",
+      "block_index": 69,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_众人",
+      "text": "退堂呢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "众人",
+      "performance_cues_raw": [
+        "内同白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_70",
+      "block_index": 70,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "列位少陪了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "内白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_71",
+      "block_index": 71,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（宋江上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_72",
+      "block_index": 72,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "大老爷打罢了退堂鼓，衙前来了宋公明。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_74",
+      "block_index": 74,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "卑人宋江，在这郓城县，当了一名刑房。今日闲暇无事，不免到乌龙院中走走。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_75",
+      "block_index": 75,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "那一日打从在大街上，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_76",
+      "block_index": 76,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "偶遇好汉叫刘唐。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_77",
+      "block_index": 77,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "他把那实言对我讲，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_78",
+      "block_index": 78,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "请我梁山去为王。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_79",
+      "block_index": 79,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "一步儿来至在大街上，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_80",
+      "block_index": 80,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_众人",
+      "text": "啊，列位，你们来看前面走的张文远，后面跟的宋公明。师徒二人，同走一条道，令人好笑，哈哈哈！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 45,
+      "speaker_name_raw": "众人",
+      "performance_cues_raw": [
+        "内同白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_81",
+      "block_index": 81,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "又听得那邻舍说短道长。",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_82",
+      "block_index": 82,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎呀，且住。听他们街坊邻舍言道：“前面走的张文远，后面跟随宋公明。师徒二人，同走一条道路。”莫非张文远这小奴才，也到乌龙院中走走。嗳，是非终朝有，不听自然无。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 79,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_83",
+      "block_index": 83,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "自古道是非终朝有，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_84",
+      "block_index": 84,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "耳不听来自然无。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_85",
+      "block_index": 85,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "一步儿来至在乌龙院，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_86",
+      "block_index": 86,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "青天白日把门关。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 2
+    },
+    {
+      "block_id": "b_87",
+      "block_index": 87,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "啊？青天白日为何将门紧闭？待我上前叫门。大姐开门来。呔！大姐开门来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_88",
+      "block_index": 88,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（阎惜姣上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_89",
+      "block_index": 89,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "什么人？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_90",
+      "block_index": 90,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "啊？宋大爷声音，难道听不出来了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_91",
+      "block_index": 91,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哎，宋大爷来呢。你今天来得不凑巧。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_92",
+      "block_index": 92,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "怎么来得不凑巧？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_93",
+      "block_index": 93,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "钥匙不在我身上。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_94",
+      "block_index": 94,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "在哪一个身上？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_95",
+      "block_index": 95,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "在我妈身上。你改日再来吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_96",
+      "block_index": 96,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "呀呸！快快到妈儿娘房中，将钥匙取来开门。快去！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_97",
+      "block_index": 97,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "晓得了，你等一会儿。三郎快来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_98",
+      "block_index": 98,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（张文远上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 2
+    },
+    {
+      "block_id": "b_99",
+      "block_index": 99,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "哎，大姐什么事？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_100",
+      "block_index": 100,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "不好呢，你师父来了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 2
+    },
+    {
+      "block_id": "b_101",
+      "block_index": 101,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "咳呀，这便怎么处？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_102",
+      "block_index": 102,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "不要紧，你在我妈房里躲一会儿。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_103",
+      "block_index": 103,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "快些打发他走啊！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_104",
+      "block_index": 104,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "快些！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_105",
+      "block_index": 105,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "来了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_106",
+      "block_index": 106,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "为何这样慢腾腾的，待我打进去！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_107",
+      "block_index": 107,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（阎惜姣开门，宋江进门，东看西看。）",
+      "performance_tags": [],
+      "char_len": 18,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_108",
+      "block_index": 108,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哎哎哎，宋大爷，你进得院中，东照西望，难道我这院中，有什么歹人不成？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_109",
+      "block_index": 109,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "不是啊。宋大爷往日进得院来，扫地挂画。今日进得院来，地也不扫，画也不挂。来个朋友，像个什么样儿？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 48,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_110",
+      "block_index": 110,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷，我啊不知道你今天要来。我知道你要来呀，地也扫了，画也挂了。我没打算你来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 40,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_111",
+      "block_index": 111,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哦，大姐不打算我来，我倒偏偏地来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_112",
+      "block_index": 112,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（阎惜姣坐下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 8,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_113",
+      "block_index": 113,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎，大姐，这就是你的不是了。宋大爷进得院来，你就该搬个椅儿过来，让你宋大爷坐下，才是你的道理。怎么你自己倒先坐下了。轻慢你宋大爷，怠慢你宋大爷，真是岂有此理！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 79,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_114",
+      "block_index": 114,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷，这边有的是凳子，那边有的是椅子，自己不会坐下，难道叫我搂住你，抱住你？来来来吃点奶奶吧？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_116",
+      "block_index": 116,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎呀呀，这倒不消了。哎呀，是啊。这边有的是凳子，那边有的是椅子，我自己不会坐下，难道叫她搂住我，抱住我，自讨无趣？待我自己坐下。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 64,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_117",
+      "block_index": 117,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（宋江、阎惜姣同坐椅子。）",
+      "performance_tags": [],
+      "char_len": 13,
+      "page_no": 3
+    },
+    {
+      "block_id": "b_118",
+      "block_index": 118,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷你这怎么呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_119",
+      "block_index": 119,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "花钱的老爷们儿就欢喜这个调调儿。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_120",
+      "block_index": 120,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你猜我呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_121",
+      "block_index": 121,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "大姐么，你也喜欢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_122",
+      "block_index": 122,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我就恼得这个调调儿。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_123",
+      "block_index": 123,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "大姐不欢喜这个调调儿，我就免了这个调调儿。大姐你可好？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 27,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_124",
+      "block_index": 124,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我没有病，怎么不好？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_125",
+      "block_index": 125,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我也好。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_126",
+      "block_index": 126,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "谁问你呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_127",
+      "block_index": 127,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我问过大姐，大姐必要问我。我替大姐说了，省得大姐你劳神。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_128",
+      "block_index": 128,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哪里这么些淡话？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_129",
+      "block_index": 129,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "大姐手里拿的什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_130",
+      "block_index": 130,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你的帽子。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_131",
+      "block_index": 131,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "分明是鞋子，怎么是帽子？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_132",
+      "block_index": 132,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你知道么你问？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_133",
+      "block_index": 133,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哪一个穿的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_134",
+      "block_index": 134,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我妈穿的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_135",
+      "block_index": 135,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "妈儿娘偌大年纪，穿什么红绣花鞋？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_136",
+      "block_index": 136,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "今天十四，明天十五，我妈生日，做双花鞋与我妈上寿的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_137",
+      "block_index": 137,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哦，不是大姐提起，我倒忘怀了。明日我礼到人不到。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_138",
+      "block_index": 138,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "是要礼到，人不来不要紧。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_139",
+      "block_index": 139,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "如此，我礼到人不来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_140",
+      "block_index": 140,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你来不来不要紧。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_141",
+      "block_index": 141,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "大姐，闻得你一双巧手，今日要见识见识。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_142",
+      "block_index": 142,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "一双花鞋有什么好看？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_143",
+      "block_index": 143,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "看看也不要紧。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_144",
+      "block_index": 144,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你要看拿去。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_145",
+      "block_index": 145,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "拿来。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_146",
+      "block_index": 146,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "好脏的手！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_147",
+      "block_index": 147,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哦，我的手脏了。时才在衙内，抄写墨卷，未曾洗手，待我洗洗干净。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_148",
+      "block_index": 148,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "拿去！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_149",
+      "block_index": 149,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎，大姐这就是你的不是了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_150",
+      "block_index": 150,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你又挑眼了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_151",
+      "block_index": 151,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "你方才嫌我的手脏，如今你把它丢在地下，难道他就不脏了么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_152",
+      "block_index": 152,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷你不要生气。常言道的好：洗手净指甲，作鞋泥里踏。终久它是要坏的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 35,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_153",
+      "block_index": 153,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "是啊，“洗手净指甲，作鞋泥里踏。”终久它是要坏的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 25,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_154",
+      "block_index": 154,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你往哪里指？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_155",
+      "block_index": 155,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我说这个鞋子。待我来看看。果然做的不错呀，好，拿去罢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 27,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 3
+    },
+    {
+      "block_id": "b_156",
+      "block_index": 156,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你还知道好歹吗？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_157",
+      "block_index": 157,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "为人在世，哪有不知道好歹的道理？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_158",
+      "block_index": 158,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "它是怎么好？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_159",
+      "block_index": 159,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "花儿也好，样儿也好，做的也好，这叫做好好好！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_160",
+      "block_index": 160,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "一点不好没有么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_161",
+      "block_index": 161,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "就有一样。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_162",
+      "block_index": 162,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哪一样？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_163",
+      "block_index": 163,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "颜色不对。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_164",
+      "block_index": 164,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "颜色不对，你就不该来。你拿过来罢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 17,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_165",
+      "block_index": 165,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "宋大爷往日进得院来，你欢天喜地。今日进得院来，面带忧愁，莫非有什么心事不成？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 38,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_166",
+      "block_index": 166,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "没有心事。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_167",
+      "block_index": 167,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "一定有心事。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_168",
+      "block_index": 168,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "慢说没有心事，纵有心事，你也猜不着。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_169",
+      "block_index": 169,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "慢说大姐心事，就是我父母太爷的心事，不猜便罢……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 24,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_170",
+      "block_index": 170,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "要猜呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_171",
+      "block_index": 171,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "猜他个八九不离十。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_172",
+      "block_index": 172,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你不要猜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_173",
+      "block_index": 173,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "一定要猜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_174",
+      "block_index": 174,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你就猜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_175",
+      "block_index": 175,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "大姐听了：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_176",
+      "block_index": 176,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "宋公明打坐在乌龙院，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_177",
+      "block_index": 177,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "猜一猜大姐肺腑情。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_178",
+      "block_index": 178,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "莫不是茶饭不随你的口？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "宋江",
+      "page_no": 4
+    },
+    {
+      "block_id": "b_179",
+      "block_index": 179,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷，你这头一猜……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_180",
+      "block_index": 180,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "猜着了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_181",
+      "block_index": 181,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "猜错了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_182",
+      "block_index": 182,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "怎么猜错呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_183",
+      "block_index": 183,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "想我们平等人家，吃的是鸡鸭鱼肉，还要吃什么龙肝凤目不成？不是的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_184",
+      "block_index": 184,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哦，猜错了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_185",
+      "block_index": 185,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "猜错了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_186",
+      "block_index": 186,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "听了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_187",
+      "block_index": 187,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "莫不是衣裳不遂你的身？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_188",
+      "block_index": 188,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷，你这第二猜……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_189",
+      "block_index": 189,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "猜着了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_190",
+      "block_index": 190,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你又猜错了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_191",
+      "block_index": 191,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "怎么又猜错呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_192",
+      "block_index": 192,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "想我们平等人家，穿的是绫罗绸缎。难道呀穿什么描龙绣凤不成？不是的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 33,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_193",
+      "block_index": 193,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哦？不是的。再猜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_194",
+      "block_index": 194,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "莫不是街坊邻居得罪了你？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_195",
+      "block_index": 195,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "想那街坊是好街坊，邻居是好邻居。慢说我得罪不着他们，就是得罪他们，还要看宋大爷三分金面。不是的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 48,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_196",
+      "block_index": 196,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哦，又不是的。我再来猜。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_197",
+      "block_index": 197,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "莫不是妈儿娘打骂你的身？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_198",
+      "block_index": 198,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷，你越猜越不对了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_199",
+      "block_index": 199,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "怎么越不对了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_200",
+      "block_index": 200,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "想那妈儿娘，她是我的妈，打也打得，骂也骂得。不是的。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_201",
+      "block_index": 201,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "又不是的啊。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_202",
+      "block_index": 202,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "这不是那不是是何意见，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_203",
+      "block_index": 203,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "啊，大姐的心事，往日一猜就猜着了，今日怎么猜不着了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_204",
+      "block_index": 204,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你猜不着，不要猜了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_205",
+      "block_index": 205,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我一定要猜！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_206",
+      "block_index": 206,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（宋江、阎惜姣同做身段。）",
+      "performance_tags": [],
+      "char_len": 13,
+      "page_no": 4
+    },
+    {
+      "block_id": "b_207",
+      "block_index": 207,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "大姐，你过来。我这一猜，一定猜着了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_208",
+      "block_index": 208,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "莫不是思想我宋公明？",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_209",
+      "block_index": 209,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "真有你的！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_210",
+      "block_index": 210,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哦，猜着了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 4
+    },
+    {
+      "block_id": "b_211",
+      "block_index": 211,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "可不是猜着呢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_212",
+      "block_index": 212,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "你是想我？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_213",
+      "block_index": 213,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "可不是想你么！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_214",
+      "block_index": 214,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎呀，我说大姐的心事，果然被我猜着了。请坐请坐。大姐你几时想我？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_215",
+      "block_index": 215,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我前天就想你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_216",
+      "block_index": 216,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "衙前有事。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_217",
+      "block_index": 217,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "昨天想你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_218",
+      "block_index": 218,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "朋友吃酒。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_219",
+      "block_index": 219,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "今天又想你。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_220",
+      "block_index": 220,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "今天想我，我倒偏偏地来了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_221",
+      "block_index": 221,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "今天想得厉害。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_222",
+      "block_index": 222,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "怎么样的厉害？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_223",
+      "block_index": 223,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "清早起来，头也不梳，脚也不裹。前厅跑到后院，后院跑到厨房。左手拿一盆凉水，右手拿住蒜瓣。喝口凉水，咬口蒜瓣……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 55,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_224",
+      "block_index": 224,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "这叫怎么想法？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_225",
+      "block_index": 225,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "这叫做淡想。淡想想断了肝肠！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_226",
+      "block_index": 226,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "啊，大姐，只怕不是想我！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_227",
+      "block_index": 227,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我不想你谁想你？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_228",
+      "block_index": 228,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "大姐你想我？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_229",
+      "block_index": 229,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你妹子想你！你姐姐想你！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_230",
+      "block_index": 230,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "呀呸！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_231",
+      "block_index": 231,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "怪不得大姐人谈论，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_232",
+      "block_index": 232,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "道你的言语不中听。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_233",
+      "block_index": 233,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "话到舌尖留半句，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_234",
+      "block_index": 234,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "说出口来你难为人！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 5
+    },
+    {
+      "block_id": "b_235",
+      "block_index": 235,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "什么难为人？想我们妇道人家，一要走得正，二要走得端，三条大路走中间！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_236",
+      "block_index": 236,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我问你这一？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_237",
+      "block_index": 237,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我一不作贼！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_238",
+      "block_index": 238,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我问你这二？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_239",
+      "block_index": 239,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "不偷人家的！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_240",
+      "block_index": 240,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我问你这三？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_241",
+      "block_index": 241,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "三啊？还有他妈的四呢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_242",
+      "block_index": 242,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎！你就坏在这个三上了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_243",
+      "block_index": 243,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "都道你私通了张……",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_244",
+      "block_index": 244,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "张什么？张什么？张什么！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_245",
+      "block_index": 245,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "说不出口来，难为情。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_246",
+      "block_index": 246,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "不要紧，我替你难为情。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_247",
+      "block_index": 247,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_248",
+      "block_index": 248,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "那张文远！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "二黄摇板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_249",
+      "block_index": 249,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "张文远！张文远！你的心事，我会猜不着！提起那张文远，你看他这个样儿，叫我们花钱的老爷们，好不寒心哪！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 34,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_251",
+      "block_index": 251,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_252",
+      "block_index": 252,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_阎惜姣",
+      "text": "被他猜破肺腑情。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "二黄平板"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_253",
+      "block_index": 253,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哎呀，他怎么会晓得了？这怎么好？有呢，待我去灌灌米汤。哎呀，我说这个宋大爷……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 39,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_254",
+      "block_index": 254,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "呀呸！哪个不叫我宋大爷，要你来叫我宋大爷？宋大爷呀，还宋二爷呢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 32,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_255",
+      "block_index": 255,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷不好，宋先生……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_256",
+      "block_index": 256,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "呀呸！哪个不叫我宋先生，要你来叫我宋先生？真真岂有此理！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_257",
+      "block_index": 257,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哎呀，宋先生……不好，还是宋大爷……，我说宋大爷，我不会吃酒，清早起来，吃了几杯早酒，酒言酒语，得罪你了。我跟你闹着玩的。谁晓得你不经玩，一玩就炸呢！哎呀，我说宋大爷啊！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 69,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_259",
+      "block_index": 259,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哦？你是与我做耍的？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_260",
+      "block_index": 260,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "可不是闹着玩的！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_261",
+      "block_index": 261,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎呀，唬了我一头的冷汗呢！请坐。大姐，从今以后，酒要少饮。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 29,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_262",
+      "block_index": 262,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我戒酒了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_263",
+      "block_index": 263,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "少吃些就是了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_264",
+      "block_index": 264,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我一点也不吃了。宋大爷，你方才说张……张什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_265",
+      "block_index": 265,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "张文远。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 5
+    },
+    {
+      "block_id": "b_266",
+      "block_index": 266,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "张文远是你什么人？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_267",
+      "block_index": 267,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "是我的小徒。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_268",
+      "block_index": 268,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "是你的小徒。白日在街内做什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_269",
+      "block_index": 269,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "抄写墨卷。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_270",
+      "block_index": 270,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "到晚来？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_271",
+      "block_index": 271,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "抵足而眠。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_272",
+      "block_index": 272,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷你这话漏了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_273",
+      "block_index": 273,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "漏了我房东。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_274",
+      "block_index": 274,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "什么“我房东”？你的话头漏了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 15,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_275",
+      "block_index": 275,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "漏了什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_276",
+      "block_index": 276,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我看别人没有私通张文远，我看你私通张文远了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 22,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_277",
+      "block_index": 277,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "世间之上，自有男子私通女子，哪有男子私通男子的道理？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 26,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_278",
+      "block_index": 278,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你没有私通张文远，你猜我呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_279",
+      "block_index": 279,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "大姐么，也不能够！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_280",
+      "block_index": 280,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "那么谁公通张文远？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_281",
+      "block_index": 281,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "是啊，哪一个私通张文远？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_282",
+      "block_index": 282,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "眼前有一人，私通张文远，你不敢惹她！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 18,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_283",
+      "block_index": 283,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哪一个我宋江不敢惹她？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_284",
+      "block_index": 284,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你的姐姐私通张文远！你的妹妹私通张文远！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_285",
+      "block_index": 285,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "呀呸！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_286",
+      "block_index": 286,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "一言怒恼宋公明！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮导板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_287",
+      "block_index": 287,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（宋江、阎惜姣碰椅子。）",
+      "performance_tags": [],
+      "char_len": 12,
+      "page_no": 6
+    },
+    {
+      "block_id": "b_288",
+      "block_index": 288,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "阎大姐！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_289",
+      "block_index": 289,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_290",
+      "block_index": 290,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "阎惜姣！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_291",
+      "block_index": 291,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋公明！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_292",
+      "block_index": 292,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "阎婆惜！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_293",
+      "block_index": 293,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋江！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_294",
+      "block_index": 294,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哈哈哈！我宋江的名字，你倒叫起来了。我把你这个狗淫妇！狗淫妇！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_295",
+      "block_index": 295,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哎呀，我把你这死乌龟！你们看他像不像！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 19,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_296",
+      "block_index": 296,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "呵呵！我宋江花了许多银钱，落了个忘八二字！咳！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 23,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_297",
+      "block_index": 297,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "骂一声阎惜姣无耻的贱人！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮原板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_298",
+      "block_index": 298,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "曾记得在家遭荒旱，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_299",
+      "block_index": 299,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "你一家逃难来到了郓城。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_300",
+      "block_index": 300,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "遭不幸你的父丧了命，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_301",
+      "block_index": 301,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "无银钱买棺木葬尔的天伦。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_302",
+      "block_index": 302,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "尔的母没奈何将你卖，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_303",
+      "block_index": 303,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "卖了那身价葬尔的先人。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_304",
+      "block_index": 304,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "清早起卖到午时后，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_305",
+      "block_index": 305,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "午时卖到夜黄昏。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_306",
+      "block_index": 306,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "大街小巷俱卖尽，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_307",
+      "block_index": 307,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "并无有一人问一声。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_308",
+      "block_index": 308,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "大老爷打罢了退堂鼓，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_309",
+      "block_index": 309,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "衙前来了宋公明。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_310",
+      "block_index": 310,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "三十两银子将你卖，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_311",
+      "block_index": 311,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "买回家来度光阴。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_312",
+      "block_index": 312,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "我为你造下了乌龙院，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_313",
+      "block_index": 313,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "我为你花下了许多银。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_314",
+      "block_index": 314,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "我为你父母堂上难行孝，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_315",
+      "block_index": 315,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你就该天打雷劈！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_316",
+      "block_index": 316,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "呀呸！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_317",
+      "block_index": 317,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "我为你失散了夫妻情。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_318",
+      "block_index": 318,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "怒气不息将你打！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 6
+    },
+    {
+      "block_id": "b_319",
+      "block_index": 319,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你要打谁？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_320",
+      "block_index": 320,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我要打你！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 6
+    },
+    {
+      "block_id": "b_321",
+      "block_index": 321,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我告诉你，太太好吃好穿没见过，好打见过的！我打个样儿与你看看！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 31,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_322",
+      "block_index": 322,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "定要打你！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_323",
+      "block_index": 323,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（宋江、阎惜姣碰膀子。）",
+      "performance_tags": [],
+      "char_len": 12,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_324",
+      "block_index": 324,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "呀吓！踹了我的脚了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_325",
+      "block_index": 325,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "怎么样了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_326",
+      "block_index": 326,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你走开去吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_327",
+      "block_index": 327,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_328",
+      "block_index": 328,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "越思越想越伤心。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_329",
+      "block_index": 329,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "一怒赶出乌龙院！",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_330",
+      "block_index": 330,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我就走！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_331",
+      "block_index": 331,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_阎惜姣",
+      "text": "阎婆惜到处有宾朋。",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_332",
+      "block_index": 332,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "任你跑到天边远，难逃宋江掌握中！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_334",
+      "block_index": 334,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "谅不就！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_335",
+      "block_index": 335,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "谅的就？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_336",
+      "block_index": 336,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哎呀！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 3,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_337",
+      "block_index": 337,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "从今后我不进乌龙院！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 10,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_338",
+      "block_index": 338,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "再来呢？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_339",
+      "block_index": 339,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "情愿对天把誓盟！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮快板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_340",
+      "block_index": 340,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我不信！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_341",
+      "block_index": 341,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "我就对……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_342",
+      "block_index": 342,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我就跪……",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_343",
+      "block_index": 343,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎，大姐我是与你做耍的。你怎么跪下了？来个朋友，看见像什么样儿？你起来吧！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 37,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_344",
+      "block_index": 344,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "我也不是三岁两岁小孩，让你打哭呢，哄乐呢！你与我跪下罢！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 28,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_345",
+      "block_index": 345,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "哎！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 2,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_346",
+      "block_index": 346,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "双膝跪在尘埃地，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_347",
+      "block_index": 347,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": null,
+      "text": "过往神灵听分明：",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 8,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_348",
+      "block_index": 348,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "从今后再进乌龙院，",
+      "performance_tags": [
+        "唱"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "page_no": 7
+    },
+    {
+      "block_id": "b_349",
+      "block_index": 349,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "怎么样？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_350",
+      "block_index": 350,
+      "scene_id": "s_2",
+      "type": "aria",
+      "speaker_id": "c_宋江",
+      "text": "药酒毒死我宋公明！",
+      "performance_tags": [
+        "唱",
+        "念"
+      ],
+      "char_len": 9,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "西皮摇板"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_351",
+      "block_index": 351,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你走出去！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 5,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_352",
+      "block_index": 352,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "嗳，我与她恩爱夫妻，争吵几句，说什么不来？待我转去……啊？这贱人已经将门紧闭。哎！大丈夫做事，提得起，放得下。这烟花之地，来不来，有什么要紧？说不来我就不来了。嗳？说什么不来？想这乌龙院，乃是我银钱所造，阎惜姣是我银钱所买，我宋江不来，是哪个敢来？从今以后，无有风吹草动便罢，若有风吹草动，我就是这一刀结束尔的狗命！正是：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 102,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_354",
+      "block_index": 354,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "当初不听朋友劝，失足上了无底船。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_355",
+      "block_index": 355,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_宋江",
+      "text": "受了许多的腌臜的气。哎！花了许多昧心钱。列位老爷们，你们哪个要来只管来走走，我宋江是不来了，我一定不来了。嗳！我是再也不来了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 63,
+      "speaker_name_raw": "宋江",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_356",
+      "block_index": 356,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（宋江下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 6,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_357",
+      "block_index": 357,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "宋大爷！宋江！哎呀，真走了！待我开开门，看看走呢！三郎快来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 30,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_358",
+      "block_index": 358,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（张文远上。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_359",
+      "block_index": 359,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "我师父可曾走了？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_360",
+      "block_index": 360,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你师父走了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_361",
+      "block_index": 361,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "我也要去了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 6,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_362",
+      "block_index": 362,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你回来！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_363",
+      "block_index": 363,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "作什么？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 4,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_364",
+      "block_index": 364,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你还愿意作长久夫妻，还是愿意作短头夫妻？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 20,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_365",
+      "block_index": 365,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "长头夫妻怎说？短头夫妻怎讲？",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_366",
+      "block_index": 366,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "短头夫妻，你今个去了，不要来了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 16,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_367",
+      "block_index": 367,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "我舍不得大姐。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_368",
+      "block_index": 368,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "你舍不得我，我也舍不得你。闻听人说宋江私通梁山，你在外头访，我在家里访。访出此事，将他送入当官，你我就是长久夫妻了！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 58,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_369",
+      "block_index": 369,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "好，我告辞了。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_370",
+      "block_index": 370,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "回来。我看看有人没人。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 11,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_371",
+      "block_index": 371,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（阎惜姣看。）",
+      "performance_tags": [],
+      "char_len": 7,
+      "page_no": 7
+    },
+    {
+      "block_id": "b_372",
+      "block_index": 372,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "没有人。正是：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_373",
+      "block_index": 373,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "二人定计二人知，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_374",
+      "block_index": 374,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "休要走漏这消息。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_375",
+      "block_index": 375,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "但愿害得宋江死，",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 7
+    },
+    {
+      "block_id": "b_376",
+      "block_index": 376,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "你我夫妻顷刻离。",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 8,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_377",
+      "block_index": 377,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "哎呀，永不离！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 7,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_378",
+      "block_index": 378,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_张文远",
+      "text": "不错，永不离。请吓，请吓！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 13,
+      "speaker_name_raw": "张文远",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_379",
+      "block_index": 379,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（张文远下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_380",
+      "block_index": 380,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "正是：宋江啊，宋江，管叫你：",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 14,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "白"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_381",
+      "block_index": 381,
+      "scene_id": "s_2",
+      "type": "dialogue",
+      "speaker_id": "c_阎惜姣",
+      "text": "明枪容易躲，暗箭最难防！",
+      "performance_tags": [
+        "念"
+      ],
+      "char_len": 12,
+      "speaker_name_raw": "阎惜姣",
+      "performance_cues_raw": [
+        "念"
+      ],
+      "page_no": 8
+    },
+    {
+      "block_id": "b_382",
+      "block_index": 382,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（阎惜姣下。）",
+      "performance_tags": [
+        "做"
+      ],
+      "char_len": 7,
+      "page_no": 8
+    },
+    {
+      "block_id": "b_383",
+      "block_index": 383,
+      "scene_id": "s_2",
+      "type": "stage_direction",
+      "speaker_id": null,
+      "text": "（完）",
+      "performance_tags": [],
+      "char_len": 3,
+      "page_no": 8
+    }
+  ],
+  "cooccurrence_edges_raw": [
+    {
+      "source_id": "c_众人",
+      "target_id": "c_宋江",
+      "weight": 7.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 3,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_众人",
+      "target_id": "c_张文远",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_众人",
+      "target_id": "c_阎惜姣",
+      "weight": 1.0,
+      "relation_types": [
+        "同场"
+      ],
+      "dialogue_count": 0,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_宋江",
+      "target_id": "c_张文远",
+      "weight": 3.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 1,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_宋江",
+      "target_id": "c_阎惜姣",
+      "weight": 369.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 184,
+      "same_scene_count": 1
+    },
+    {
+      "source_id": "c_张文远",
+      "target_id": "c_阎惜姣",
+      "weight": 104.0,
+      "relation_types": [
+        "对话",
+        "同场"
+      ],
+      "dialogue_count": 51,
+      "same_scene_count": 2
+    }
+  ],
+  "tags": {
+    "genre_inferred": "历史剧"
+  }
+}

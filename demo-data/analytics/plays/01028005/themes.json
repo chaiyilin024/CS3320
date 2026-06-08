@@ -1,0 +1,171 @@
+{
+  "script_id": "01028005",
+  "title": "磨房产子",
+  "model": {
+    "method": "nmf",
+    "num_topics_global": 3,
+    "trained_at": "2026-06-04T09:00:54.260131+00:00"
+  },
+  "topics": [
+    {
+      "topic_id": 0,
+      "label": "冲突怒斥",
+      "weight": 0.6008,
+      "keywords": [
+        "不由",
+        "老汉",
+        "婴儿",
+        "贵人",
+        "吵闹",
+        "啼哭",
+        "汲水",
+        "窦老",
+        "性命",
+        "胜诉",
+        "一般",
+        "花园",
+        "不妨",
+        "剪刀",
+        "回家"
+      ],
+      "keyword_weights": [
+        1.4395,
+        1.1992,
+        1.0825,
+        0.4195,
+        0.2123,
+        0.1846,
+        0.17,
+        0.1458,
+        0.1349,
+        0.1342,
+        0.1296,
+        0.108,
+        0.1079,
+        0.1031,
+        0.097
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "其他情节",
+      "weight": 0.3992,
+      "keywords": [
+        "推磨",
+        "贱人",
+        "汲水",
+        "羔子",
+        "井台",
+        "花园",
+        "欢喜",
+        "磨房",
+        "剪刀",
+        "动静",
+        "孩子",
+        "牵连",
+        "刘高",
+        "不妨",
+        "丈夫"
+      ],
+      "keyword_weights": [
+        0.9935,
+        0.8391,
+        0.5068,
+        0.1242,
+        0.1153,
+        0.1072,
+        0.1013,
+        0.0677,
+        0.0616,
+        0.0525,
+        0.0404,
+        0.0385,
+        0.0345,
+        0.0325,
+        0.0322
+      ]
+    }
+  ],
+  "topic_composition": [
+    0.6008,
+    0.3992
+  ],
+  "representative_blocks": [
+    {
+      "topic_id": 0,
+      "block_id": "b_57",
+      "block_index": 57,
+      "text_snippet": "妖魔来到茶蘼架，",
+      "context_snippet": "一个好如捉鬼鹰。  /  » 妖魔来到茶蘼架，  /  一幌身影无形踪。",
+      "speaker_id": "c_刘智远",
+      "speaker_name": "刘智远",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_51",
+      "block_index": 51,
+      "text_snippet": "妖魔一见回头跑，",
+      "context_snippet": "好孽畜，吃我一剑！  /  » 妖魔一见回头跑，  /  后面跟随勇刘高。",
+      "speaker_id": "c_刘智远",
+      "speaker_name": "刘智远",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_73",
+      "block_index": 73,
+      "text_snippet": "刘高马上多欢喜，",
+      "context_snippet": "舞动梨花杆战枪。  /  » 刘高马上多欢喜，  /  离鞍弃蹬解戎装。",
+      "speaker_id": "c_刘智远",
+      "speaker_name": "刘智远",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_225",
+      "block_index": 225,
+      "text_snippet": "怒一怒急将这鳖羔子夺过，",
+      "context_snippet": "本来不善。  /  » 怒一怒急将这鳖羔子夺过，  /  哎吓！",
+      "speaker_id": "c_刘氏",
+      "speaker_name": "刘氏",
+      "score": 1.0
+    }
+  ],
+  "quality": {
+    "score": 0.35,
+    "labeled_weight": 0.0,
+    "fallback_weight": 1.0,
+    "keyword_signal_avg": 1.0,
+    "tier_counts": {
+      "fallback": 2
+    },
+    "method": "nmf",
+    "topic_assessments": [
+      {
+        "topic_id": 0,
+        "label": "冲突怒斥",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.6008,
+        "issues": [
+          "关键词与 theme.json 规则匹配度低"
+        ]
+      },
+      {
+        "topic_id": 1,
+        "label": "其他情节",
+        "tier": "fallback",
+        "label_score": 0,
+        "keyword_signal": 1.0,
+        "weight": 0.3992,
+        "issues": []
+      }
+    ],
+    "issues": [
+      "100% 主题为未识别（其他情节/未知）",
+      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
+    ]
+  }
+}
