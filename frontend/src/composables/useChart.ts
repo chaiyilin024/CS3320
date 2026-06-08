@@ -23,9 +23,19 @@ export function useChart(
     eventsBound = true
   }
 
+  function disposeChart() {
+    chart.value?.dispose()
+    chart.value = null
+    eventsBound = false
+  }
+
   function render() {
     const el = elRef.value
     if (!el || el.clientWidth === 0 || el.clientHeight === 0) return
+
+    const boundEl = chart.value?.getDom?.() as HTMLElement | undefined
+    if (chart.value && boundEl !== el) disposeChart()
+
     if (!chart.value) chart.value = echarts.init(el)
     chart.value.setOption(getOption(), { notMerge: true })
     chart.value.resize()
@@ -35,8 +45,11 @@ export function useChart(
   function scheduleRender() {
     void nextTick(() => {
       render()
-      // 部分布局在首帧后才有尺寸，再补一次
-      requestAnimationFrame(render)
+      // 首帧布局 / v-if 重新挂载后尺寸可能尚未就绪
+      requestAnimationFrame(() => {
+        render()
+        requestAnimationFrame(render)
+      })
     })
   }
 
@@ -45,6 +58,8 @@ export function useChart(
     resizeObserver = null
     if (!el) return
     resizeObserver = new ResizeObserver(() => {
+      const boundEl = chart.value?.getDom?.() as HTMLElement | undefined
+      if (chart.value && boundEl !== el) disposeChart()
       if (!chart.value && el.clientWidth > 0 && el.clientHeight > 0) {
         render()
       } else {
@@ -63,11 +78,16 @@ export function useChart(
   onUnmounted(() => {
     window.removeEventListener('resize', scheduleRender)
     resizeObserver?.disconnect()
-    chart.value?.dispose()
-    chart.value = null
+    disposeChart()
   })
 
   watch(elRef, (el) => {
+    if (!el) {
+      disposeChart()
+    } else {
+      const boundEl = chart.value?.getDom?.() as HTMLElement | undefined
+      if (chart.value && boundEl !== el) disposeChart()
+    }
     observeElement(el)
     if (el) scheduleRender()
   })

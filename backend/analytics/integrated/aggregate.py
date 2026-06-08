@@ -368,6 +368,44 @@ def aggregate_theme_patterns(
     }
 
 
+RHYTHM_RESAMPLE_LEN = 100
+
+
+def _resample_series(values: list[float], n: int = RHYTHM_RESAMPLE_LEN) -> list[float]:
+    """将变长序列线性插值到固定长度，便于跨剧平均。"""
+    if not values:
+        return []
+    m = len(values)
+    if m == 1:
+        return [round(values[0], 4)] * n
+    out: list[float] = []
+    for i in range(n):
+        pos = (i / (n - 1)) * (m - 1) if n > 1 else 0.0
+        lo = int(pos)
+        hi = min(lo + 1, m - 1)
+        frac = pos - lo
+        v = values[lo] * (1.0 - frac) + values[hi] * frac
+        out.append(round(v, 4))
+    return out
+
+
+def _avg_resampled_curves(curves: list[list[float]], n: int = RHYTHM_RESAMPLE_LEN) -> list[dict]:
+    if not curves:
+        return []
+    resampled = [_resample_series(c, n) for c in curves if c]
+    if not resampled:
+        return []
+    return [
+        {
+            "block_index": i,
+            "tension_score": round(
+                statistics.fmean(row[i] for row in resampled), 4
+            ),
+        }
+        for i in range(n)
+    ]
+
+
 def aggregate_narrative_templates(
     plays_dir: Path,
     catalog_idx: dict[str, dict],
@@ -375,6 +413,9 @@ def aggregate_narrative_templates(
     template_plays: dict[str, list[str]] = defaultdict(list)
     template_props: dict[str, list[dict[str, float]]] = defaultdict(list)
     by_genre_props: dict[str, list[dict[str, float]]] = defaultdict(list)
+    by_genre_tension: dict[str, list[list[float]]] = defaultdict(list)
+    all_props: list[dict[str, float]] = []
+    perf_total: Counter[str] = Counter()
 
     for play_dir in sorted(plays_dir.iterdir()):
         if not play_dir.is_dir():
@@ -392,6 +433,15 @@ def aggregate_narrative_templates(
         template_plays[tid].append(sid)
         template_props[tid].append(props)
         by_genre_props[genre].append(props)
+        all_props.append(props)
+
+        for k, v in (narrative.get("performance_mark_distribution") or {}).items():
+            perf_total[str(k)] += int(v)
+
+        rhythm = narrative.get("rhythm_series") or []
+        if rhythm:
+            tensions = [float(p.get("tension_score") or 0.5) for p in rhythm]
+            by_genre_tension[genre].append(tensions)
 
     templates = []
     label_map = {tid: label for tid, label, _ in TEMPLATE_RULES}
@@ -419,15 +469,30 @@ def aggregate_narrative_templates(
             key: round(statistics.fmean(p.get(key, 0.0) for p in props_list), 4)
             for key in keys
         }
-        by_genre.append({
+        entry: dict = {
             "genre": genre,
             "play_count": len(props_list),
             "avg_stage_lengths": avg_stage_lengths,
-        })
+        }
+        avg_curve = _avg_resampled_curves(by_genre_tension.get(genre, []))
+        if avg_curve:
+            entry["avg_rhythm_curve"] = avg_curve
+        by_genre.append(entry)
+
+    corpus_stage_proportions: dict[str, float] = {}
+    if all_props:
+        keys = set().union(*all_props)
+        corpus_stage_proportions = {
+            key: round(statistics.fmean(p.get(key, 0.0) for p in all_props), 4)
+            for key in keys
+        }
 
     return {
         "version": "1.0",
         "generated_at": utc_now_iso(),
+        "total_play_count": len(all_props),
+        "corpus_stage_proportions": corpus_stage_proportions,
+        "performance_distribution": dict(perf_total),
         "templates": templates,
         "by_genre": by_genre,
     }

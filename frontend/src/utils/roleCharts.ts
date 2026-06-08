@@ -124,6 +124,7 @@ export function buildConfidenceBar(chars: Character[]): EChartsOption {
       type: 'bar',
       data: rows.map((c) => ({
         value: Math.round(c.confidence * 100),
+        character_id: c.character_id,
         itemStyle: {
           color: hangdangColor(c.hangdang_final),
           borderRadius: [0, 6, 6, 0],

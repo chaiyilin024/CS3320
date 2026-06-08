@@ -17,6 +17,21 @@
       "type": "array",
       "items": { "$ref": "#/$defs/narrativeTemplate" }
     },
+    "total_play_count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "参与叙事聚合的剧本总数"
+    },
+    "corpus_stage_proportions": {
+      "type": "object",
+      "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 },
+      "description": "全库五阶段平均占比"
+    },
+    "performance_distribution": {
+      "type": "object",
+      "additionalProperties": { "type": "integer", "minimum": 0 },
+      "description": "全库唱念做打表演标记累计"
+    },
     "by_genre": {
       "type": "array",
       "items": {

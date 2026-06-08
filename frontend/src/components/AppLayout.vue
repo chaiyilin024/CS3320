@@ -13,7 +13,6 @@ const nav = [
   { path: '/network', label: '网络' },
   { path: '/theme', label: '主题' },
   { path: '/narrative', label: '叙事' },
-  { path: '/integrated', label: '综合' },
 ]
 </script>
 

@@ -1,44 +1,40 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import ChartCard from '@/components/ChartCard.vue'
+import SectionTabs from '@/components/SectionTabs.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
 import {
-  assessmentForTopic,
-  buildCooccurrenceHeatmap,
-  buildCommonPatternsBar,
-  buildFallbackKeywordBar,
-  matchPlaysForPattern,
-  buildGlobalLabelDist,
-  buildGlobalPlayHeatmap,
-  buildGlobalTierPie,
-  resolveGlobalHeatmapRows,
   buildKeywordBar,
   buildKeywordHeatmap,
-  buildPlayVsGlobalRadar,
   buildSnippetScoreBar,
   buildSpeakerTopicBar,
   buildTopicRose,
   buildTopicSankey,
-  buildTopicTierBar,
   buildTopicTimeline,
   buildTopicWeightBar,
   topicColor,
-  topicTierColor,
-  topicTierLabel,
 } from '@/utils/themeCharts'
 import type { EChartsOption } from 'echarts'
-import type { PlayThemes, ThemePatternsGlobal, ThemeQualityGlobal } from '@/types'
+import type { PlayThemes } from '@/types'
 
 const store = useFilterStore()
 const router = useRouter()
 const themes = ref<PlayThemes | null>(null)
-const selectedPattern = ref<string[] | null>(null)
-const patterns = ref<ThemePatternsGlobal | null>(null)
-const themeQuality = ref<ThemeQualityGlobal | null>(null)
 const loading = ref(true)
+const section = ref('compose')
+
+const sectionTabs = [
+  { id: 'compose', label: '本剧构成' },
+  { id: 'keywords', label: '关键词结构' },
+  { id: 'plot', label: '剧情分布' },
+]
+
+function onSectionChange() {
+  void nextTick(() => refreshCharts())
+}
 
 const roseEl = ref<HTMLElement | null>(null)
 const weightEl = ref<HTMLElement | null>(null)
@@ -48,14 +44,6 @@ const timelineEl = ref<HTMLElement | null>(null)
 const speakerEl = ref<HTMLElement | null>(null)
 const scoreEl = ref<HTMLElement | null>(null)
 const sankeyEl = ref<HTMLElement | null>(null)
-const globalHeatEl = ref<HTMLElement | null>(null)
-const cooccurEl = ref<HTMLElement | null>(null)
-const radarEl = ref<HTMLElement | null>(null)
-const tierEl = ref<HTMLElement | null>(null)
-const globalLabelEl = ref<HTMLElement | null>(null)
-const globalTierEl = ref<HTMLElement | null>(null)
-const fallbackKwEl = ref<HTMLElement | null>(null)
-const patternEl = ref<HTMLElement | null>(null)
 
 const selectedTopic = computed(() => {
   const id = store.selectedTopicIds[0]
@@ -79,26 +67,6 @@ const scoreOpt = computed(() =>
   buildSnippetScoreBar(themes.value?.representative_blocks, themes.value?.topics ?? []),
 )
 const sankeyOpt = computed(() => buildTopicSankey(themes.value?.topics ?? []))
-const globalHeatOpt = computed(() =>
-  buildGlobalPlayHeatmap(patterns.value, store.scriptId),
-)
-const cooccurOpt = computed(() => buildCooccurrenceHeatmap(patterns.value))
-const radarOpt = computed(() =>
-  themes.value ? buildPlayVsGlobalRadar(themes.value, patterns.value) : ({} as EChartsOption),
-)
-const tierOpt = computed(() => buildTopicTierBar(themes.value?.quality))
-const globalLabelOpt = computed(() => buildGlobalLabelDist(themeQuality.value))
-const globalTierOpt = computed(() => buildGlobalTierPie(themeQuality.value))
-const fallbackKwOpt = computed(() => buildFallbackKeywordBar(themeQuality.value))
-const patternOpt = computed(() => buildCommonPatternsBar(patterns.value))
-
-const patternPlays = computed(() => {
-  if (!selectedPattern.value) return []
-  return matchPlaysForPattern(patterns.value, selectedPattern.value)
-})
-
-const qualityScore = computed(() => themes.value?.quality?.score)
-const qualityIssues = computed(() => themes.value?.quality?.issues ?? [])
 
 const roseChart = useChart(roseEl, () => roseOpt.value as EChartsOption, [roseOpt])
 const weightChart = useChart(weightEl, () => weightOpt.value as EChartsOption, [weightOpt])
@@ -108,28 +76,6 @@ const timelineChart = useChart(timelineEl, () => timelineOpt.value as EChartsOpt
 const speakerChart = useChart(speakerEl, () => speakerOpt.value as EChartsOption, [speakerOpt])
 const scoreChart = useChart(scoreEl, () => scoreOpt.value as EChartsOption, [scoreOpt])
 const sankeyChart = useChart(sankeyEl, () => sankeyOpt.value as EChartsOption, [sankeyOpt])
-function onHeatmapClick(params: unknown) {
-  const p = params as { componentType?: string; data?: [number, number, number] }
-  if (p.componentType !== 'series' || !p.data || !patterns.value) return
-  const yi = p.data[1]
-  const rows = resolveGlobalHeatmapRows(patterns.value, store.scriptId)
-  const row = rows[yi]
-  if (row?.script_id) store.setScriptId(row.script_id)
-}
-
-const globalHeatChart = useChart(
-  globalHeatEl,
-  () => globalHeatOpt.value as EChartsOption,
-  [globalHeatOpt],
-  { click: onHeatmapClick },
-)
-const cooccurChart = useChart(cooccurEl, () => cooccurOpt.value as EChartsOption, [cooccurOpt])
-const radarChart = useChart(radarEl, () => radarOpt.value as EChartsOption, [radarOpt])
-const tierChart = useChart(tierEl, () => tierOpt.value as EChartsOption, [tierOpt])
-const globalLabelChart = useChart(globalLabelEl, () => globalLabelOpt.value as EChartsOption, [globalLabelOpt])
-const globalTierChart = useChart(globalTierEl, () => globalTierOpt.value as EChartsOption, [globalTierOpt])
-const fallbackKwChart = useChart(fallbackKwEl, () => fallbackKwOpt.value as EChartsOption, [fallbackKwOpt])
-const patternChart = useChart(patternEl, () => patternOpt.value as EChartsOption, [patternOpt])
 
 function refreshCharts() {
   roseChart.render()
@@ -140,14 +86,6 @@ function refreshCharts() {
   speakerChart.render()
   scoreChart.render()
   sankeyChart.render()
-  globalHeatChart.render()
-  cooccurChart.render()
-  radarChart.render()
-  tierChart.render()
-  globalLabelChart.render()
-  globalTierChart.render()
-  fallbackKwChart.render()
-  patternChart.render()
 }
 
 async function load() {
@@ -155,18 +93,9 @@ async function load() {
   loading.value = true
   try {
     themes.value = await api.playThemes(store.scriptId)
-    try {
-      patterns.value = await api.globalThemes()
-    } catch {
-      patterns.value = null
-    }
-    try {
-      themeQuality.value = await api.globalThemeQuality()
-    } catch {
-      themeQuality.value = null
-    }
   } finally {
     loading.value = false
+    await nextTick()
     refreshCharts()
   }
 }
@@ -177,10 +106,6 @@ watch(() => store.scriptId, load)
 function selectTopic(id: number) {
   store.toggleTopic(id)
   keywordChart.render()
-}
-
-function selectPattern(labels: string[]) {
-  selectedPattern.value = selectedPattern.value?.join('|') === labels.join('|') ? null : labels
 }
 
 function goToNarrativeBlock(blockIndex: number) {
@@ -219,46 +144,11 @@ function goToNarrativeBlock(blockIndex: number) {
           <span class="num">{{ themes.representative_blocks?.length ?? 0 }}</span>
           <span class="lbl">代表片段</span>
         </div>
-        <div class="kpi" :class="{ warn: qualityScore != null && qualityScore < 0.55 }">
-          <span class="num">{{ qualityScore != null ? (qualityScore * 100).toFixed(0) : '—' }}</span>
-          <span class="lbl">主题质量分</span>
-        </div>
-        <div class="kpi">
-          <span class="num">{{ themes.quality ? `${(themes.quality.labeled_weight * 100).toFixed(0)}%` : '—' }}</span>
-          <span class="lbl">已识别占比</span>
-        </div>
       </section>
 
-      <section v-if="qualityIssues.length" class="quality-alert">
-        <strong>质量提示：</strong>{{ qualityIssues.join('；') }}
-      </section>
+      <SectionTabs v-model="section" :tabs="sectionTabs" @change="onSectionChange" />
 
-      <section class="section">
-        <h3 class="section-title">主题质量检查</h3>
-        <p class="section-hint">
-          「未识别」对应标签为「其他情节」等未能匹配 theme.json 规则的主题；可据此判断是否需要扩展主题词典或改进分词。
-        </p>
-        <div class="grid-2">
-          <ChartCard title="本剧主题分层" subtitle="强识别 / 弱识别 / 未识别 · 按权重">
-            <div ref="tierEl" class="chart chart-md" />
-          </ChartCard>
-          <ChartCard
-            title="全库识别分层"
-            :subtitle="`共 ${themeQuality?.summary.play_count ?? 0} 部 · 均分 ${themeQuality ? (themeQuality.summary.avg_score * 100).toFixed(0) : '—'}`"
-          >
-            <div ref="globalTierEl" class="chart chart-md" />
-          </ChartCard>
-          <ChartCard title="全库标签分布" subtitle="「其他情节」为未能自动命名的主题">
-            <div ref="globalLabelEl" class="chart chart-md" />
-          </ChartCard>
-          <ChartCard title="未识别主题高频词" subtitle="出现在 fallback 主题 Top 关键词中的词">
-            <div ref="fallbackKwEl" class="chart chart-md" />
-          </ChartCard>
-        </div>
-      </section>
-
-      <section class="section">
-        <h3 class="section-title">本剧主题构成</h3>
+      <div v-show="section === 'compose'" class="tab-panel section">
         <div class="grid-3">
           <ChartCard title="主题玫瑰图" subtitle="面积 ∝ 主题权重">
             <div ref="roseEl" class="chart chart-md" />
@@ -283,22 +173,14 @@ function goToNarrativeBlock(blockIndex: number) {
             @click="selectTopic(t.topic_id)"
           >
             <span class="tid">T{{ t.topic_id }}</span>
-            <span
-              v-if="assessmentForTopic(themes.quality, t.topic_id)"
-              class="tier-badge"
-              :style="{ color: topicTierColor(assessmentForTopic(themes.quality, t.topic_id)!.tier), borderColor: topicTierColor(assessmentForTopic(themes.quality, t.topic_id)!.tier) }"
-            >
-              {{ topicTierLabel(assessmentForTopic(themes.quality, t.topic_id)!.tier) }}
-            </span>
             <h4>{{ t.label }}</h4>
             <p class="w">{{ (t.weight * 100).toFixed(1) }}%</p>
             <p class="kw">{{ t.keywords.slice(0, 6).join(' · ') }}</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="section">
-        <h3 class="section-title">关键词与语义结构</h3>
+      <div v-show="section === 'keywords'" class="tab-panel section">
         <div class="grid-2">
           <ChartCard title="关键词矩阵" subtitle="各主题 Top8 关键词与权重">
             <div ref="kwHeatEl" class="chart chart-md" />
@@ -307,10 +189,9 @@ function goToNarrativeBlock(blockIndex: number) {
             <div ref="sankeyEl" class="chart chart-md" />
           </ChartCard>
         </div>
-      </section>
+      </div>
 
-      <section class="section">
-        <h3 class="section-title">剧情中的主题分布</h3>
+      <div v-show="section === 'plot'" class="tab-panel section">
         <div class="grid-2">
           <ChartCard title="主题时间线" subtitle="代表片段在正文块中的位置 · 气泡=得分">
             <div ref="timelineEl" class="chart chart-md" />
@@ -322,73 +203,26 @@ function goToNarrativeBlock(blockIndex: number) {
             <div ref="speakerEl" class="chart chart-md" />
           </ChartCard>
         </div>
-      </section>
-
-      <section class="section">
-        <h3 class="section-title">跨剧与全局</h3>
-        <div class="grid-2">
-          <ChartCard
-            title="跨剧主题热力"
-            :subtitle="`点击行切换剧本（全库 ${patterns?.play_topic_matrix.length ?? 0} 部，Top48）`"
-          >
-            <div ref="globalHeatEl" class="chart chart-md" />
-          </ChartCard>
-          <ChartCard title="主题共现" subtitle="全局模型中主题同时出现的频率">
-            <div ref="cooccurEl" class="chart chart-md" />
-          </ChartCard>
-        </div>
-        <ChartCard title="本剧 vs 全库" subtitle="主题向量雷达对比">
-          <div ref="radarEl" class="chart chart-sm" />
+        <ChartCard v-if="themes.representative_blocks?.length" title="代表片段原文" subtitle="各主题最具代表性的台词 · 点击跳转叙事页">
+          <ul class="snippets">
+            <li
+              v-for="(r, i) in themes.representative_blocks.slice(0, 10)"
+              :key="i"
+              :style="{ borderLeftColor: topicColor(r.topic_id) }"
+              class="snippet-click"
+              @click="r.block_index != null && goToNarrativeBlock(r.block_index)"
+            >
+              <span class="meta">
+                T{{ r.topic_id }}
+                <template v-if="r.speaker_name"> · {{ r.speaker_name }}</template>
+                <template v-if="r.block_index != null"> · 块 #{{ r.block_index }}</template>
+                <template v-if="r.score != null"> · {{ (r.score * 100).toFixed(0) }}%</template>
+              </span>
+              {{ r.text_snippet }}
+            </li>
+          </ul>
         </ChartCard>
-        <ChartCard title="主题组合模式" subtitle="频繁主题套餐 · 点击卡片筛选范例剧本">
-          <div ref="patternEl" class="chart chart-sm" />
-        </ChartCard>
-        <div v-if="patterns?.common_patterns?.length" class="pattern-cards">
-          <button
-            v-for="(pat, i) in patterns.common_patterns.slice(0, 8)"
-            :key="i"
-            type="button"
-            class="pattern-card"
-            :class="{ active: selectedPattern?.join('|') === pat.labels.join('|') }"
-            @click="selectPattern(pat.labels)"
-          >
-            <span class="labels">{{ pat.labels.join(' + ') }}</span>
-            <span class="meta">支持度 {{ (pat.support * 100).toFixed(0) }}% · {{ pat.play_count }} 部</span>
-          </button>
-        </div>
-        <div v-if="patternPlays.length" class="pattern-plays">
-          <span class="plays-label">匹配剧本：</span>
-          <button
-            v-for="p in patternPlays"
-            :key="p.script_id"
-            type="button"
-            class="play-chip"
-            @click="store.setScriptId(p.script_id)"
-          >
-            {{ p.title ?? p.script_id }}
-          </button>
-        </div>
-      </section>
-
-      <ChartCard v-if="themes.representative_blocks?.length" title="代表片段原文" subtitle="各主题最具代表性的台词">
-        <ul class="snippets">
-          <li
-            v-for="(r, i) in themes.representative_blocks.slice(0, 10)"
-            :key="i"
-            :style="{ borderLeftColor: topicColor(r.topic_id) }"
-            class="snippet-click"
-            @click="r.block_index != null && goToNarrativeBlock(r.block_index)"
-          >
-            <span class="meta">
-              T{{ r.topic_id }}
-              <template v-if="r.speaker_name"> · {{ r.speaker_name }}</template>
-              <template v-if="r.block_index != null"> · 块 #{{ r.block_index }}</template>
-              <template v-if="r.score != null"> · {{ (r.score * 100).toFixed(0) }}%</template>
-            </span>
-            {{ r.text_snippet }}
-          </li>
-        </ul>
-      </ChartCard>
+      </div>
     </template>
   </div>
 </template>
@@ -413,30 +247,7 @@ function goToNarrativeBlock(blockIndex: number) {
   text-align: center;
 }
 .kpi .num { display: block; font-size: 1.35rem; font-weight: 700; color: var(--accent-red); }
-.kpi.warn .num { color: #bf360c; }
 .kpi .lbl { font-size: 0.75rem; color: var(--text-muted); }
-
-.quality-alert {
-  padding: 0.65rem 0.85rem;
-  background: #fff8e8;
-  border: 1px solid #e8d4a8;
-  border-radius: 8px;
-  font-size: 0.86rem;
-  color: #6d4c00;
-}
-.section-hint {
-  margin: -0.35rem 0 0.65rem;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-.tier-badge {
-  float: right;
-  font-size: 0.65rem;
-  font-weight: 600;
-  padding: 0.1rem 0.35rem;
-  border: 1px solid;
-  border-radius: 4px;
-}
 
 .section-title {
   margin: 0 0 0.65rem;

@@ -8,7 +8,6 @@ const router = createRouter({
     { path: '/network', name: 'network', component: () => import('@/views/NetworkView.vue') },
     { path: '/theme', name: 'theme', component: () => import('@/views/ThemeView.vue') },
     { path: '/narrative', name: 'narrative', component: () => import('@/views/NarrativeView.vue') },
-    { path: '/integrated', name: 'integrated', component: () => import('@/views/IntegratedView.vue') },
   ],
 })
 

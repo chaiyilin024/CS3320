@@ -32,3 +32,51 @@ body {
 a {
   color: var(--accent-red);
 }
+
+.page-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+  padding: 0.35rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  box-shadow: var(--shadow);
+}
+
+.page-tab {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-family: inherit;
+  color: var(--text-muted);
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+
+.page-tab:hover {
+  background: #fff8ee;
+  color: var(--text);
+}
+
+.page-tab.active {
+  background: var(--accent-gold);
+  border-color: #b8921f;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.tab-panel {
+  animation: tab-fade 0.18s ease;
+}
+
+@keyframes tab-fade {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}

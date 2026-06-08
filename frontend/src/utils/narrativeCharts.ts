@@ -12,6 +12,15 @@ export const STAGE_COLORS: Record<string, string> = {
   其他: '#9e9e9e',
 }
 
+export const STAGE_ORDER = ['铺垫', '发展', '冲突', '高潮', '结局', '其他'] as const
+
+const TEMPLATE_COLORS: Record<string, string> = {
+  classic_five_act: '#c9a227',
+  conflict_heavy: '#8b2500',
+  slow_opening: '#1565c0',
+  climax_front: '#bf360c',
+}
+
 export function stageColor(stage: string): string {
   return STAGE_COLORS[stage] ?? '#888'
 }
@@ -317,13 +326,150 @@ export function buildGlobalStageCompare(
         itemStyle: { color: '#8b2500', borderRadius: [4, 4, 0, 0] },
       },
       {
-        name: '全库均值（起承转合型）',
+        name: '起承转合型模板',
         type: 'bar',
         data: stages.map((st) => globalProps[st] ?? 0),
         itemStyle: { color: '#c9a227', borderRadius: [4, 4, 0, 0] },
       },
     ],
   }
+}
+
+function emptyChart(title: string): EChartsOption {
+  return {
+    title: {
+      text: title,
+      left: 'center',
+      top: 'middle',
+      textStyle: { color: '#999', fontSize: 13 },
+    },
+  }
+}
+
+export function buildTemplateDistribution(global: NarrativeTemplatesGlobal | null): EChartsOption {
+  const tpls = global?.templates ?? []
+  if (!tpls.length) return emptyChart('暂无叙事模板数据')
+  const total = tpls.reduce((s, t) => s + t.play_count, 0) || 1
+  const data = tpls.map((t) => ({
+    name: t.label,
+    value: t.play_count,
+    itemStyle: { color: TEMPLATE_COLORS[t.template_id] ?? '#888' },
+  }))
+  return asChartOption({
+    tooltip: {
+      trigger: 'item',
+      formatter: (p: unknown) => {
+        const row = p as { name?: string; value?: number; percent?: number }
+        return `${row.name}<br/>${row.value} 部（${Number(row.percent ?? 0).toFixed(1)}%）`
+      },
+    },
+    legend: { orient: 'vertical', right: 4, top: 'middle', textStyle: { fontSize: 10 } },
+    series: [{
+      type: 'pie',
+      radius: ['42%', '68%'],
+      center: ['40%', '50%'],
+      itemStyle: { borderRadius: 4, borderColor: '#fffcf7', borderWidth: 2 },
+      label: {
+        formatter: (p: unknown) => {
+          const row = p as { name?: string; percent?: number }
+          return `${row.name}\n${Number(row.percent ?? 0).toFixed(1)}%`
+        },
+        fontSize: 10,
+      },
+      data,
+    }],
+    graphic: [{
+      type: 'text',
+      left: '38%',
+      top: '46%',
+      style: {
+        text: `全库\n${total}部`,
+        textAlign: 'center',
+        fill: '#666',
+        fontSize: 11,
+      },
+    }],
+  })
+}
+
+export function buildGenreStageStacked(global: NarrativeTemplatesGlobal | null): EChartsOption {
+  const rows = global?.by_genre ?? []
+  if (!rows.length) return emptyChart('暂无体裁阶段数据')
+  const xLabels = rows.map((g) => `${g.genre}（${g.play_count}）`)
+  const series = STAGE_ORDER.map((stage) => ({
+    name: stage,
+    type: 'bar' as const,
+    stack: 'stage',
+    emphasis: { focus: 'series' as const },
+    itemStyle: { color: stageColor(stage) },
+    data: rows.map((g) => {
+      const props = g.avg_stage_lengths ?? {}
+      const total = STAGE_ORDER.reduce((s, k) => s + (props[k] ?? 0), 0) || 1
+      return +(((props[stage] ?? 0) / total) * 100).toFixed(1)
+    }),
+  })).filter((s) => s.data.some((v) => v > 0))
+
+  return asChartOption({
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: { type: 'shadow' },
+      formatter: (params: unknown) => {
+        const items = params as Array<{ seriesName: string; value: number; axisValue: string }>
+        if (!items.length) return ''
+        const lines = [items[0].axisValue]
+        items.forEach((it) => {
+          if (it.value > 0) lines.push(`${it.seriesName}: ${it.value}%`)
+        })
+        return lines.join('<br/>')
+      },
+    },
+    legend: { type: 'scroll', top: 0, textStyle: { fontSize: 10 } },
+    grid: { left: 48, right: 16, top: 36, bottom: 48 },
+    xAxis: {
+      type: 'category',
+      data: xLabels,
+      axisLabel: { fontSize: 10, rotate: rows.length > 5 ? 18 : 0 },
+    },
+    yAxis: { type: 'value', name: '阶段占比%', max: 100 },
+    series,
+  })
+}
+
+export function buildCorpusStageBar(global: NarrativeTemplatesGlobal | null): EChartsOption {
+  const props = global?.corpus_stage_proportions
+  if (!props || !Object.keys(props).length) return emptyChart('暂无全库阶段均值')
+  const stages = STAGE_ORDER.filter((s) => (props[s] ?? 0) > 0)
+  const n = global?.total_play_count
+  return asChartOption({
+    tooltip: {
+      trigger: 'axis',
+      formatter: (params: unknown) => {
+        const items = params as Array<{ value: number; name: string }>
+        if (!items.length) return ''
+        const pct = (Number(items[0].value) * 100).toFixed(1)
+        return `${items[0].name}<br/>占比 ${pct}%${n ? `<br/>样本 ${n} 部` : ''}`
+      },
+    },
+    grid: { left: 48, right: 16, top: 16, bottom: 28 },
+    xAxis: { type: 'category', data: stages, axisLabel: { fontSize: 10 } },
+    yAxis: { type: 'value', name: '阶段占比', max: 1 },
+    series: [{
+      type: 'bar',
+      data: stages.map((st) => ({
+        value: props[st] ?? 0,
+        itemStyle: { color: stageColor(st), borderRadius: [4, 4, 0, 0] },
+      })),
+      barMaxWidth: 48,
+    }],
+  })
+}
+
+export function buildGlobalPerformancePie(global: NarrativeTemplatesGlobal | null): EChartsOption {
+  const dist = global?.performance_distribution
+  if (!dist || !Object.values(dist).some((v) => v > 0)) {
+    return emptyChart('暂无全库表演数据')
+  }
+  return buildPerformancePie(dist)
 }
 
 export function buildPerformancePie(dist: Record<string, number>): EChartsOption {
@@ -354,44 +500,6 @@ export function buildPerformancePie(dist: Record<string, number>): EChartsOption
 
 export function rangesEqual(a: [number, number] | null, b: [number, number]): boolean {
   return !!a && a[0] === b[0] && a[1] === b[1]
-}
-
-export function buildBlockStrip(
-  narrative: PlayNarrative,
-  selectedRange: [number, number] | null,
-): EChartsOption {
-  const rows = narrative.block_annotations ?? []
-  if (!rows.length) {
-    return { title: { text: '暂无块级条带数据', left: 'center', top: 'middle', textStyle: { color: '#999', fontSize: 13 } } }
-  }
-  const markArea = selectedRange
-    ? {
-        silent: true,
-        itemStyle: { color: 'rgba(201, 162, 39, 0.15)' },
-        data: [[{ xAxis: selectedRange[0] }, { xAxis: selectedRange[1] }]],
-      }
-    : undefined
-  return asChartOption({
-    tooltip: {
-      formatter: (p: unknown) => {
-        const d = (p as { data?: [number, number, string] }).data
-        if (!d) return ''
-        return `块 #${d[0]}<br/>阶段 ${d[2]}`
-      },
-    },
-    grid: { left: 48, right: 16, top: 8, bottom: 28 },
-    xAxis: { type: 'value', name: '正文块', min: 'dataMin', max: 'dataMax' },
-    yAxis: { type: 'category', data: ['阶段'], show: false },
-    series: [{
-      type: 'scatter',
-      symbolSize: 6,
-      data: rows.map((a) => [a.block_index, 0, a.stage ?? '']),
-      itemStyle: {
-        color: (p: unknown) => stageColor((p as { data?: [number, number, string] }).data?.[2] ?? ''),
-      },
-      markArea,
-    }],
-  })
 }
 
 export function buildTemplateStageCompare(

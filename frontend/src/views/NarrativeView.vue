@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import ChartCard from '@/components/ChartCard.vue'
+import SectionTabs from '@/components/SectionTabs.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
 import {
-  buildBlockStrip,
   buildEmotionTimeline,
   buildGenreRhythmOverlay,
   buildGlobalStageCompare,
@@ -39,11 +39,20 @@ const perfPieEl = ref<HTMLElement | null>(null)
 const radarEl = ref<HTMLElement | null>(null)
 const emotionEl = ref<HTMLElement | null>(null)
 const compareEl = ref<HTMLElement | null>(null)
-const stripEl = ref<HTMLElement | null>(null)
 const templateEl = ref<HTMLElement | null>(null)
 const genreRhythmEl = ref<HTMLElement | null>(null)
 const selectedTemplateId = ref('classic_five_act')
 const playGenre = ref<string | null>(null)
+const section = ref('rhythm')
+
+const sectionTabs = [
+  { id: 'rhythm', label: '节奏情感' },
+  { id: 'stage', label: '阶段表演' },
+]
+
+function onSectionChange() {
+  void nextTick(() => refreshCharts())
+}
 
 const selectedRange = computed(() => store.narrativeBlockRange)
 const selectedTopicIds = computed(() => store.selectedTopicIds)
@@ -81,9 +90,6 @@ const compareOpt = computed(() =>
     ? buildGlobalStageCompare(narrative.value, globalNarr.value)
     : ({} as EChartsOption),
 )
-const stripOpt = computed(() =>
-  narrative.value ? buildBlockStrip(narrative.value, selectedRange.value) : ({} as EChartsOption),
-)
 const templateOpt = computed(() =>
   narrative.value
     ? buildTemplateStageCompare(narrative.value, globalNarr.value, selectedTemplateId.value)
@@ -117,7 +123,6 @@ const perfPieChart = useChart(perfPieEl, () => perfPieOpt.value as EChartsOption
 const radarChart = useChart(radarEl, () => radarOpt.value as EChartsOption, [radarOpt, selectedStage])
 const emotionChart = useChart(emotionEl, () => emotionOpt.value as EChartsOption, [emotionOpt, selectedRange])
 const compareChart = useChart(compareEl, () => compareOpt.value as EChartsOption, [compareOpt])
-const stripChart = useChart(stripEl, () => stripOpt.value as EChartsOption, [stripOpt, selectedRange])
 const templateChart = useChart(templateEl, () => templateOpt.value as EChartsOption, [templateOpt, selectedTemplateId])
 const genreRhythmChart = useChart(genreRhythmEl, () => genreRhythmOpt.value as EChartsOption, [genreRhythmOpt])
 
@@ -129,7 +134,6 @@ function refreshCharts() {
   radarChart.render()
   emotionChart.render()
   compareChart.render()
-  stripChart.render()
   templateChart.render()
   genreRhythmChart.render()
 }
@@ -205,6 +209,7 @@ async function load() {
     }
   } finally {
     loading.value = false
+    await nextTick()
     refreshCharts()
   }
 }
@@ -275,16 +280,14 @@ watch(() => store.scriptId, load)
         </ul>
       </section>
 
-      <section class="section">
-        <h3 class="section-title">节奏与情感</h3>
+      <SectionTabs v-model="section" :tabs="sectionTabs" @change="onSectionChange" />
+
+      <div v-show="section === 'rhythm'" class="tab-panel section">
         <ChartCard
           title="叙事节奏曲线"
           :subtitle="selectedRange ? `块 ${selectedRange[0]}–${selectedRange[1]}` : '拖动底部滑块或点击阶段按钮'"
         >
           <div ref="rhythmEl" class="chart chart-tall" />
-        </ChartCard>
-        <ChartCard title="块级阶段条带" subtitle="与节奏图共享横轴 · 颜色=情节阶段">
-          <div ref="stripEl" class="chart chart-sm" />
         </ChartCard>
         <div class="grid-2">
           <ChartCard title="块级情感散点" subtitle="颜色=情感强度 · 选中阶段区间高亮">
@@ -294,10 +297,9 @@ watch(() => store.scriptId, load)
             <div ref="radarEl" class="chart chart-md" />
           </ChartCard>
         </div>
-      </section>
+      </div>
 
-      <section class="section">
-        <h3 class="section-title">阶段与表演</h3>
+      <div v-show="section === 'stage'" class="tab-panel section">
         <div class="grid-3">
           <ChartCard title="阶段篇幅" subtitle="各情节阶段占全文块比例">
             <div ref="stagePieEl" class="chart chart-md" />
@@ -332,7 +334,7 @@ watch(() => store.scriptId, load)
             <div ref="genreRhythmEl" class="chart chart-sm" />
           </ChartCard>
         </div>
-      </section>
+      </div>
     </template>
   </div>
 </template>
@@ -348,6 +350,11 @@ watch(() => store.scriptId, load)
   margin: 0 0 0.65rem;
   font-family: var(--font-serif);
   font-size: 1.05rem;
+}
+.section-hint {
+  margin: -0.35rem 0 0.65rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
 }
 
 .stages {

@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import ChartCard from '@/components/ChartCard.vue'
+import SectionTabs from '@/components/SectionTabs.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
@@ -9,32 +10,37 @@ import {
   buildAdjacencyHeatmap,
   buildCentralityRadar,
   buildCentralityScatter,
-  buildCircularCommunityGraph,
   buildForceGraph,
-  buildGenreCompareBar,
   buildHangdangNodePie,
   buildMainVsSupportPie,
-  buildMetricBoxplot,
   buildMetricsBar,
-  buildPlaysMetricScatter,
   buildRelationTypePie,
   buildWeightHistogram,
   buildWeightedDegreeBar,
 } from '@/utils/networkCharts'
 import { buildStageSubgraph } from '@/utils/stageNetwork'
 import type { EChartsOption } from 'echarts'
-import type { NetworkCompareGlobal, PlayCleaned, PlayNetwork } from '@/types'
+import type { PlayCleaned, PlayNetwork } from '@/types'
 
 const store = useFilterStore()
 const net = ref<PlayNetwork | null>(null)
-const globalNet = ref<NetworkCompareGlobal | null>(null)
 const playText = ref<PlayCleaned | null>(null)
 const loading = ref(true)
-const compareGroup = ref<'by_genre' | 'by_collection'>('by_genre')
-const boxMetric = ref<'density' | 'avg_clustering' | 'avg_degree'>('density')
+const section = ref('topology')
+
+const sectionTabs = [
+  { id: 'topology', label: '关系图' },
+  { id: 'core', label: '核心人物' },
+  { id: 'structure', label: '结构组成' },
+  { id: 'interaction', label: '互动强度' },
+  { id: 'detail', label: '节点明细' },
+]
+
+function onSectionChange() {
+  void nextTick(() => refreshCharts())
+}
 
 const graphEl = ref<HTMLElement | null>(null)
-const circleEl = ref<HTMLElement | null>(null)
 const degreeEl = ref<HTMLElement | null>(null)
 const radarEl = ref<HTMLElement | null>(null)
 const metricsEl = ref<HTMLElement | null>(null)
@@ -44,9 +50,6 @@ const relationEl = ref<HTMLElement | null>(null)
 const weightEl = ref<HTMLElement | null>(null)
 const heatEl = ref<HTMLElement | null>(null)
 const scatterEl = ref<HTMLElement | null>(null)
-const compareEl = ref<HTMLElement | null>(null)
-const boxEl = ref<HTMLElement | null>(null)
-const playsScatterEl = ref<HTMLElement | null>(null)
 
 const selectedIds = computed(() => store.selectedCharacterIds)
 const blockRange = computed(() => store.narrativeBlockRange)
@@ -61,9 +64,6 @@ const graphOpt = computed(() =>
     ? buildForceGraph(net.value, selectedIds.value, graphSubset.value ?? undefined)
     : ({} as EChartsOption),
 )
-const circleOpt = computed(() =>
-  net.value ? buildCircularCommunityGraph(net.value, selectedIds.value) : ({} as EChartsOption),
-)
 const degreeOpt = computed(() => buildWeightedDegreeBar(net.value?.nodes ?? []))
 const radarOpt = computed(() => buildCentralityRadar(net.value?.nodes ?? []))
 const metricsOpt = computed(() =>
@@ -77,22 +77,6 @@ const heatOpt = computed(() =>
   net.value ? buildAdjacencyHeatmap(net.value) : ({} as EChartsOption),
 )
 const scatterOpt = computed(() => buildCentralityScatter(net.value?.nodes ?? []))
-const compareOpt = computed(() =>
-  net.value ? buildGenreCompareBar(net.value, globalNet.value) : ({} as EChartsOption),
-)
-const boxOpt = computed(() => {
-  if (!net.value) return {} as EChartsOption
-  const highlight = compareGroup.value === 'by_genre' ? net.value.genre : undefined
-  const cur = boxMetric.value === 'density'
-    ? net.value.metrics.density
-    : boxMetric.value === 'avg_clustering'
-      ? net.value.metrics.avg_clustering
-      : net.value.metrics.avg_degree
-  return buildMetricBoxplot(globalNet.value, compareGroup.value, boxMetric.value, highlight ?? null, cur ?? null)
-})
-const playsScatterOpt = computed(() =>
-  buildPlaysMetricScatter(globalNet.value, 'density', 'avg_clustering', store.scriptId),
-)
 
 function onGraphClick(params: unknown) {
   const p = params as { dataType?: string; data?: { id?: string } }
@@ -105,7 +89,6 @@ const graphChart = useChart(
   [graphOpt, selectedIds],
   { click: onGraphClick },
 )
-const circleChart = useChart(circleEl, () => circleOpt.value as EChartsOption, [circleOpt, selectedIds])
 const degreeChart = useChart(degreeEl, () => degreeOpt.value as EChartsOption, [degreeOpt])
 const radarChart = useChart(radarEl, () => radarOpt.value as EChartsOption, [radarOpt])
 const metricsChart = useChart(metricsEl, () => metricsOpt.value as EChartsOption, [metricsOpt])
@@ -115,13 +98,9 @@ const relationChart = useChart(relationEl, () => relationOpt.value as EChartsOpt
 const weightChart = useChart(weightEl, () => weightOpt.value as EChartsOption, [weightOpt])
 const heatChart = useChart(heatEl, () => heatOpt.value as EChartsOption, [heatOpt])
 const scatterChart = useChart(scatterEl, () => scatterOpt.value as EChartsOption, [scatterOpt])
-const compareChart = useChart(compareEl, () => compareOpt.value as EChartsOption, [compareOpt])
-const boxChart = useChart(boxEl, () => boxOpt.value as EChartsOption, [boxOpt, compareGroup, boxMetric])
-const playsScatterChart = useChart(playsScatterEl, () => playsScatterOpt.value as EChartsOption, [playsScatterOpt])
 
 function refreshCharts() {
   graphChart.render()
-  circleChart.render()
   degreeChart.render()
   radarChart.render()
   metricsChart.render()
@@ -131,9 +110,6 @@ function refreshCharts() {
   weightChart.render()
   heatChart.render()
   scatterChart.render()
-  compareChart.render()
-  boxChart.render()
-  playsScatterChart.render()
 }
 
 async function load() {
@@ -147,13 +123,9 @@ async function load() {
     } catch {
       playText.value = null
     }
-    try {
-      globalNet.value = await api.globalNetwork()
-    } catch {
-      globalNet.value = null
-    }
   } finally {
     loading.value = false
+    await nextTick()
     refreshCharts()
   }
 }
@@ -186,20 +158,15 @@ watch(blockRange, () => graphChart.render())
         <div class="kpi"><span class="num">{{ net.metrics.component_count ?? 1 }}</span><span class="lbl">连通分量</span></div>
       </section>
 
-      <section class="section">
-        <h3 class="section-title">网络拓扑</h3>
-        <div class="grid-graph">
-          <ChartCard title="力导向关系图" subtitle="红=对话+同场 · 金=对话 · 蓝虚线=同场 · 叙事页选阶段可滤子网">
-            <div ref="graphEl" class="chart chart-tall" />
-          </ChartCard>
-          <ChartCard title="社区环形布局" subtitle="按 community_id 着色 · 观察派系结构">
-            <div ref="circleEl" class="chart chart-tall" />
-          </ChartCard>
-        </div>
-      </section>
+      <SectionTabs v-model="section" :tabs="sectionTabs" @change="onSectionChange" />
 
-      <section class="section">
-        <h3 class="section-title">核心人物与中心性</h3>
+      <div v-show="section === 'topology'" class="tab-panel section">
+        <ChartCard title="力导向关系图" subtitle="红=对话+同场 · 金=对话 · 蓝虚线=同场 · 叙事页选阶段可滤子网">
+          <div ref="graphEl" class="chart chart-tall" />
+        </ChartCard>
+      </div>
+
+      <div v-show="section === 'core'" class="tab-panel section">
         <div class="grid-3">
           <ChartCard title="加权度排名" subtitle="互动最频繁的人物">
             <div ref="degreeEl" class="chart chart-md" />
@@ -211,10 +178,9 @@ watch(blockRange, () => graphChart.render())
             <div ref="scatterEl" class="chart chart-md" />
           </ChartCard>
         </div>
-      </section>
+      </div>
 
-      <section class="section">
-        <h3 class="section-title">结构与组成</h3>
+      <div v-show="section === 'structure'" class="tab-panel section">
         <div class="grid-4">
           <ChartCard title="网络指标" subtitle="密度、聚类、模块度等">
             <div ref="metricsEl" class="chart chart-sm" />
@@ -229,10 +195,9 @@ watch(blockRange, () => graphChart.render())
             <div ref="relationEl" class="chart chart-sm" />
           </ChartCard>
         </div>
-      </section>
+      </div>
 
-      <section class="section">
-        <h3 class="section-title">互动强度</h3>
+      <div v-show="section === 'interaction'" class="tab-panel section">
         <div class="grid-wide">
           <ChartCard title="边权分布" subtitle="关系强度直方图">
             <div ref="weightEl" class="chart chart-md" />
@@ -241,63 +206,39 @@ watch(blockRange, () => graphChart.render())
             <div ref="heatEl" class="chart chart-md" />
           </ChartCard>
         </div>
-        <ChartCard
-          v-if="net.genre"
-          title="同体裁对比"
-          :subtitle="`本剧 vs ${net.genre} 全库均值`"
-        >
-          <div ref="compareEl" class="chart chart-sm" />
+      </div>
+
+      <div v-show="section === 'detail'" class="tab-panel">
+        <ChartCard title="节点明细" subtitle="点击行与力导向图联动高亮">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>姓名</th><th>行当</th><th>度</th><th>加权度</th>
+                <th>介数</th><th>接近</th><th>社区</th><th>主要</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="n in [...net.nodes].sort((a, b) => (b.weighted_degree ?? 0) - (a.weighted_degree ?? 0))"
+                :key="n.id"
+                :class="{ hl: selectedIds.includes(n.id) }"
+                @click="store.toggleCharacter(n.id)"
+              >
+                <td>{{ n.name }}</td>
+                <td>
+                  <span class="tag" :style="{ background: hangdangColor(n.hangdang) }">{{ n.hangdang }}</span>
+                </td>
+                <td>{{ n.degree }}</td>
+                <td>{{ (n.weighted_degree ?? 0).toFixed(1) }}</td>
+                <td>{{ (n.betweenness ?? 0).toFixed(3) }}</td>
+                <td>{{ (n.closeness ?? 0).toFixed(3) }}</td>
+                <td>{{ n.community_id ?? '—' }}</td>
+                <td>{{ n.is_main ? '是' : '—' }}</td>
+              </tr>
+            </tbody>
+          </table>
         </ChartCard>
-      </section>
-
-      <section v-if="globalNet" class="section">
-        <h3 class="section-title">跨剧结构对比</h3>
-        <div class="tab-row">
-          <button type="button" class="tab" :class="{ active: compareGroup === 'by_genre' }" @click="compareGroup = 'by_genre'">按体裁</button>
-          <button type="button" class="tab" :class="{ active: compareGroup === 'by_collection' }" @click="compareGroup = 'by_collection'">按集合</button>
-          <button type="button" class="tab" :class="{ active: boxMetric === 'density' }" @click="boxMetric = 'density'">密度</button>
-          <button type="button" class="tab" :class="{ active: boxMetric === 'avg_clustering' }" @click="boxMetric = 'avg_clustering'">聚类</button>
-          <button type="button" class="tab" :class="{ active: boxMetric === 'avg_degree' }" @click="boxMetric = 'avg_degree'">平均度</button>
-        </div>
-        <div class="grid-2">
-          <ChartCard title="网络指标箱线图" subtitle="各分组全库分布 · 红点=本剧（体裁模式）">
-            <div ref="boxEl" class="chart chart-md" />
-          </ChartCard>
-          <ChartCard title="全库散点" subtitle="密度 × 聚类 · 高亮当前剧本">
-            <div ref="playsScatterEl" class="chart chart-md" />
-          </ChartCard>
-        </div>
-      </section>
-
-      <ChartCard title="节点明细" subtitle="点击行与力导向图联动高亮">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>姓名</th><th>行当</th><th>度</th><th>加权度</th>
-              <th>介数</th><th>接近</th><th>社区</th><th>主要</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="n in [...net.nodes].sort((a, b) => (b.weighted_degree ?? 0) - (a.weighted_degree ?? 0))"
-              :key="n.id"
-              :class="{ hl: selectedIds.includes(n.id) }"
-              @click="store.toggleCharacter(n.id)"
-            >
-              <td>{{ n.name }}</td>
-              <td>
-                <span class="tag" :style="{ background: hangdangColor(n.hangdang) }">{{ n.hangdang }}</span>
-              </td>
-              <td>{{ n.degree }}</td>
-              <td>{{ (n.weighted_degree ?? 0).toFixed(1) }}</td>
-              <td>{{ (n.betweenness ?? 0).toFixed(3) }}</td>
-              <td>{{ (n.closeness ?? 0).toFixed(3) }}</td>
-              <td>{{ n.community_id ?? '—' }}</td>
-              <td>{{ n.is_main ? '是' : '—' }}</td>
-            </tr>
-          </tbody>
-        </table>
-      </ChartCard>
+      </div>
     </template>
   </div>
 </template>
@@ -328,11 +269,6 @@ watch(blockRange, () => graphChart.render())
   margin: 0 0 0.65rem;
   font-family: var(--font-serif);
   font-size: 1.05rem;
-}
-.grid-graph {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 0.85rem;
 }
 .grid-3 {
   display: grid;
@@ -373,7 +309,6 @@ tr.hl, tr:hover { background: #fff8e8; }
 
 @media (max-width: 1100px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .grid-graph { grid-template-columns: 1fr; }
 }
 @media (max-width: 900px) {
   .grid-3, .grid-wide { grid-template-columns: 1fr; }

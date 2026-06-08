@@ -306,6 +306,9 @@ export interface NetworkCompareGlobal {
 }
 
 export interface NarrativeTemplatesGlobal {
+  total_play_count?: number
+  corpus_stage_proportions?: Record<string, number>
+  performance_distribution?: Record<string, number>
   templates: Array<{
     template_id: string
     label: string
@@ -315,6 +318,7 @@ export interface NarrativeTemplatesGlobal {
   by_genre?: Array<{
     genre: string
     play_count: number
+    avg_stage_lengths?: Record<string, number>
     avg_rhythm_curve?: PlayNarrative['rhythm_series']
   }>
 }

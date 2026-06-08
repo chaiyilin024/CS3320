@@ -1,6 +1,7 @@
 import * as echarts from 'echarts/core'
 import {
   BarChart,
+  BoxplotChart,
   GraphChart,
   HeatmapChart,
   LineChart,
@@ -26,6 +27,7 @@ import { CanvasRenderer } from 'echarts/renderers'
 echarts.use([
   PieChart,
   BarChart,
+  BoxplotChart,
   LineChart,
   GraphChart,
   HeatmapChart,

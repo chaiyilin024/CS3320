@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue'
+import { computed, nextTick, onMounted, ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import ChartCard from '@/components/ChartCard.vue'
+import CorpusOverview from '@/components/CorpusOverview.vue'
+import SectionTabs from '@/components/SectionTabs.vue'
 import { api } from '@/api/client'
 import { useChart } from '@/composables/useChart'
 import { useFilterStore } from '@/stores/filter'
@@ -16,6 +18,21 @@ const store = useFilterStore()
 const plays = ref<CatalogPlay[]>([])
 const loading = ref(true)
 const search = ref('')
+const section = ref('distribution')
+const corpusRef = ref<InstanceType<typeof CorpusOverview> | null>(null)
+
+const sectionTabs = [
+  { id: 'distribution', label: '分布概览' },
+  { id: 'scale', label: '规模与质量' },
+  { id: 'corpus', label: '全库分析' },
+]
+
+function onSectionChange() {
+  void nextTick(() => {
+    refreshCharts()
+    if (section.value === 'corpus') corpusRef.value?.refreshCharts()
+  })
+}
 
 const genreEl = ref<HTMLElement | null>(null)
 const collectionEl = ref<HTMLElement | null>(null)
@@ -44,7 +61,6 @@ const tasks = [
   { path: '/network', title: '人物关系网络', desc: '力导向图、网络指标' },
   { path: '/theme', title: '主题分析', desc: '主题构成、关键词、热力图' },
   { path: '/narrative', title: '叙事结构', desc: '情节阶段、节奏曲线' },
-  { path: '/integrated', title: '综合探索', desc: '跨维度关联与洞察' },
 ]
 
 function selectPlay(id: string) {
@@ -294,7 +310,7 @@ onMounted(async () => {
   <div class="dashboard">
     <section class="hero">
       <h2>ChinaVis · 戏韵万象</h2>
-      <p>京剧剧本语料库纵览 · 点击散点或搜索可切换当前分析剧本</p>
+      <p>京剧剧本语料库纵览 · 「全库分析」集中展示跨剧本规律 · 点击散点或搜索可切换当前剧本</p>
     </section>
 
     <div v-if="loading" class="loading">加载目录中…</div>
@@ -353,8 +369,9 @@ onMounted(async () => {
         </div>
       </section>
 
-      <section class="viz-section">
-        <h3 class="section-title">语料库可视化纵览</h3>
+      <SectionTabs v-model="section" :tabs="sectionTabs" @change="onSectionChange" />
+
+      <div v-show="section === 'distribution'" class="tab-panel viz-section">
         <div class="viz-grid">
           <ChartCard title="体裁分布" subtitle="按推断体裁统计剧本数量">
             <div ref="genreEl" class="chart chart-md" />
@@ -365,9 +382,16 @@ onMounted(async () => {
           <ChartCard title="时代背景" subtitle="戏考/标签推断的历史时代">
             <div ref="eraEl" class="chart chart-md" />
           </ChartCard>
-          <ChartCard title="剧本规模全景" subtitle="点击散点选中剧本 · 气泡大小=场次数 · 颜色=体裁">
-            <div ref="scatterEl" class="chart chart-lg" />
-          </ChartCard>
+        </div>
+      </div>
+
+      <div v-show="section === 'scale'" class="tab-panel viz-section">
+        <div class="viz-grid scale-grid">
+          <div class="span-2">
+            <ChartCard title="剧本规模全景" subtitle="点击散点选中剧本 · 气泡大小=场次数 · 颜色=体裁">
+              <div ref="scatterEl" class="chart chart-lg" />
+            </ChartCard>
+          </div>
           <ChartCard title="正文块数分布" subtitle="全库剧本篇幅直方图">
             <div ref="blockEl" class="chart chart-sm" />
           </ChartCard>
@@ -375,7 +399,11 @@ onMounted(async () => {
             <div ref="qualityEl" class="chart chart-sm" />
           </ChartCard>
         </div>
-      </section>
+      </div>
+
+      <div v-show="section === 'corpus'" class="tab-panel viz-section">
+        <CorpusOverview ref="corpusRef" :visible="section === 'corpus'" />
+      </div>
 
       <section class="search-section">
         <label class="search-label" for="play-search">快速定位剧本</label>
@@ -495,6 +523,8 @@ onMounted(async () => {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
+.scale-grid .span-2 { grid-column: 1 / -1; }
+.tab-panel { display: flex; flex-direction: column; gap: 1rem; }
 .chart {
   width: 100%;
   display: block;

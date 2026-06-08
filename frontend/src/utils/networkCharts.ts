@@ -6,10 +6,6 @@ import { asChartOption } from './chartOption'
 type NetNode = PlayNetwork['nodes'][number]
 type NetLink = PlayNetwork['links'][number]
 
-const COMMUNITY_COLORS = [
-  '#8b2500', '#1565c0', '#2e7d32', '#c9a227', '#6a1b9a', '#bf360c', '#00838f', '#5d4037',
-]
-
 function topNodes(nodes: NetNode[], n: number, key: keyof NetNode = 'weighted_degree'): NetNode[] {
   return [...nodes]
     .sort((a, b) => (Number(b[key] ?? b.degree) || 0) - (Number(a[key] ?? a.degree) || 0))
@@ -117,47 +113,6 @@ export function buildForceGraph(
       emphasis: { focus: 'adjacency', lineStyle: { width: 6 } },
     }],
   })
-}
-
-export function buildCircularCommunityGraph(
-  net: PlayNetwork,
-  selectedIds: string[],
-): EChartsOption {
-  const sel = new Set(selectedIds)
-  const communities = [...new Set(net.nodes.map((n) => n.community_id ?? 0))]
-  return {
-    tooltip: { trigger: 'item' },
-    series: [{
-      type: 'graph',
-      layout: 'circular',
-      circular: { rotateLabel: true },
-      roam: true,
-      data: net.nodes.map((node) => {
-        const cid = node.community_id ?? 0
-        const ci = communities.indexOf(cid)
-        return {
-          id: node.id,
-          name: node.name,
-          symbolSize: Math.max(12, 8 + node.degree * 2),
-          itemStyle: {
-            color: COMMUNITY_COLORS[ci % COMMUNITY_COLORS.length],
-            borderWidth: sel.has(node.id) ? 3 : 0,
-            borderColor: '#c9a227',
-          },
-          label: { show: true, fontSize: 10 },
-        }
-      }),
-      links: net.links.map((l) => ({
-        source: l.source,
-        target: l.target,
-        lineStyle: { opacity: 0.25, width: 1 },
-      })),
-      categories: communities.map((c, i) => ({
-        name: `社区 ${c}`,
-        itemStyle: { color: COMMUNITY_COLORS[i % COMMUNITY_COLORS.length] },
-      })),
-    }],
-  }
 }
 
 export function buildWeightedDegreeBar(nodes: NetNode[]): EChartsOption {
