@@ -1,0 +1,238 @@
+{
+  "script_id": "01001009",
+  "title": "硃砂痣",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 0.927,
+      "character_id": "c_金氏",
+      "character_name": "金氏",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "evidence": "金氏 台词与主题「团圆喜庆」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.927,
+      "character_id": "c_江氏",
+      "character_name": "江氏",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "evidence": "江氏 台词与主题「团圆喜庆」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.927,
+      "character_id": "c_媒婆",
+      "character_name": "媒婆",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "evidence": "媒婆 台词与主题「团圆喜庆」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.927,
+      "character_id": "c_家院",
+      "character_name": "家院",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "evidence": "家院 台词与主题「团圆喜庆」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.927,
+      "character_id": "c_丫鬟",
+      "character_name": "丫鬟",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "evidence": "丫鬟 台词与主题「团圆喜庆」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.283,
+      "character_id": "c_韩廷凤",
+      "character_name": "韩廷凤",
+      "topic_id": 2,
+      "topic_label": "才子佳人",
+      "evidence": "韩廷凤 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.283,
+      "character_id": "c_吴惠泉",
+      "character_name": "吴惠泉",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "evidence": "吴惠泉 台词与主题「团圆喜庆」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.283,
+      "character_id": "c_韩遇运",
+      "character_name": "韩遇运",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "evidence": "韩遇运 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.4,
+      "stage": "发展",
+      "edge_density_delta": 0.1333,
+      "evidence": "「发展」阶段人物同场网络密度变化 +0.13"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.5,
+      "stage": "高潮",
+      "edge_density_delta": -0.1667,
+      "evidence": "「高潮」阶段人物同场网络密度变化 -0.17"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.5,
+      "stage": "结局",
+      "edge_density_delta": 0.1667,
+      "evidence": "「结局」阶段人物同场网络密度变化 +0.17"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.727,
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「团圆喜庆」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "小生",
+      "peak_block_index": 60,
+      "evidence": "小生 行当在 block 60 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_韩廷凤",
+      "character_name": "韩廷凤",
+      "evidence": "韩廷凤 为关系网络核心（度=6）"
+    }
+  ],
+  "summary_insights": [
+    "《硃砂痣》共 8 位主要人物、17 条关系边，网络密度 0.61。",
+    "主题构成以「团圆喜庆、公案侠义」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [255, 331]。",
+    "金氏 与主题「团圆喜庆」关联最强（0.927）。",
+    "行当以老生为主（2 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_金氏",
+      "character_name": "金氏",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "strength": 0.927
+    },
+    {
+      "character_id": "c_江氏",
+      "character_name": "江氏",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "strength": 0.927
+    },
+    {
+      "character_id": "c_媒婆",
+      "character_name": "媒婆",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "strength": 0.927
+    },
+    {
+      "character_id": "c_家院",
+      "character_name": "家院",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "strength": 0.927
+    },
+    {
+      "character_id": "c_丫鬟",
+      "character_name": "丫鬟",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "strength": 0.927
+    },
+    {
+      "character_id": "c_韩廷凤",
+      "character_name": "韩廷凤",
+      "topic_id": 2,
+      "topic_label": "才子佳人",
+      "strength": 0.283
+    },
+    {
+      "character_id": "c_吴惠泉",
+      "character_name": "吴惠泉",
+      "topic_id": 0,
+      "topic_label": "团圆喜庆",
+      "strength": 0.283
+    },
+    {
+      "character_id": "c_韩遇运",
+      "character_name": "韩遇运",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "strength": 0.283
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        90
+      ],
+      "edge_density": 0.8667,
+      "node_count": 6,
+      "edge_count": 13
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        91,
+        172
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        173,
+        254
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        255,
+        331
+      ],
+      "edge_density": 0.8333,
+      "node_count": 4,
+      "edge_count": 5
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        332,
+        401
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    }
+  ]
+}

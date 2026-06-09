@@ -2,73 +2,175 @@
   "script_id": "01001005",
   "title": "打鼓骂曹",
   "model": {
-    "method": "nmf",
-    "num_topics_global": 3,
-    "trained_at": "2026-06-04T09:00:32.933859+00:00"
+    "method": "global_keyword",
+    "num_topics_global": 8,
+    "trained_at": "2026-06-09T04:17:10.421887+00:00"
   },
   "topics": [
     {
       "topic_id": 0,
       "label": "冲突怒斥",
-      "weight": 1.0,
+      "weight": 0.8685,
       "keywords": [
-        "鼓吏",
-        "奸贼",
-        "有朝一日",
-        "擂鼓",
-        "畅饮",
-        "降罪",
-        "根苗",
-        "岂肯",
-        "大宴",
-        "群臣",
-        "屈为",
-        "自幼儿",
-        "孔文举",
-        "坐在",
-        "正平"
+        "怒发冲冠",
+        "怒喝",
+        "怒目",
+        "羞恼",
+        "争执",
+        "厉声",
+        "动怒",
+        "拍案",
+        "怒斥",
+        "痛骂",
+        "斥责",
+        "贼子"
       ],
       "keyword_weights": [
-        1.5622,
-        1.3529,
-        0.26,
-        0.2275,
-        0.2098,
-        0.189,
-        0.1687,
-        0.1667,
-        0.1622,
-        0.1622,
-        0.1547,
-        0.1508,
-        0.1379,
-        0.1336,
-        0.1281
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "行军调度",
+      "weight": 0.0789,
+      "keywords": [
+        "人马",
+        "兵马",
+        "大军",
+        "巡营",
+        "扎营",
+        "安营",
+        "拔营",
+        "回营",
+        "操练",
+        "犒赏",
+        "犒劳",
+        "粮草"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 2,
+      "label": "公案侠义",
+      "weight": 0.0526,
+      "keywords": [
+        "劫法场",
+        "替天行道",
+        "冤枉",
+        "冤情",
+        "昭雪",
+        "青天",
+        "锄奸",
+        "义士",
+        "打虎",
+        "除霸",
+        "鸣冤",
+        "断案"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
       ]
     }
   ],
   "topic_composition": [
-    1.0
+    0.8685,
+    0.0789,
+    0.0526
   ],
   "representative_blocks": [
     {
       "topic_id": 0,
-      "block_id": "b_75",
-      "block_index": 75,
-      "text_snippet": "我笑这天地虽阔，却无一人也。",
-      "context_snippet": "为何发笑？  /  » 我笑这天地虽阔，却无一人也。  /  老夫帐下，文能安邦，武能定国，何言无人？",
+      "block_id": "b_97",
+      "block_index": 97,
+      "text_snippet": "张将军休要污秽老夫的宝剑。祢衡，明日老夫大宴群臣，命你当一鼓吏，你可愿当？",
+      "context_snippet": "将军息怒慢开刀。  /  » 张将军休要污秽老夫的宝剑。祢衡，明日老夫大宴群臣，命你当一鼓吏，你可愿当？",
+      "speaker_id": "c_曹操",
+      "speaker_name": "曹操",
+      "score": 1.0
+    },
+    {
+      "topic_id": 0,
+      "block_id": "b_87",
+      "block_index": 87,
+      "text_snippet": "祢某无才，天文地理之书，无一不知；三教九流，无一不晓。上可以致君为尧舜，下可以配德于孔颜。吾乃天下名士，岂肯与奸贼同党。孔文举你不要装痴了。",
+      "context_snippet": "你有此狂言，有何德能？  /  » 祢某无才，天文地理之书，无一不知；三教九流，无一不晓。上可以致君为尧舜，下可以配德于孔颜。吾乃天下名士，岂肯与奸贼同党。孔文举你不要装痴了。  /  自幼窗前习管鲍，",
       "speaker_id": "c_祢衡",
       "speaker_name": "祢衡",
       "score": 1.0
     },
     {
-      "topic_id": 0,
-      "block_id": "b_44",
-      "block_index": 44,
-      "text_snippet": "祢衡先生我请到，见了丞相说根苗。",
-      "context_snippet": "（孔融上。）  /  » 祢衡先生我请到，见了丞相说根苗。",
-      "speaker_id": "c_孔融",
-      "speaker_name": "孔融",
+      "topic_id": 1,
+      "block_id": "b_275",
+      "block_index": 275,
+      "text_snippet": "曹操把话错来讲，无水怎把蛟龙藏？马槽怎养狮和象，犬穴焉能住凤凰？鼓打一通天地响，鼓打二通振朝纲。鼓打三通扫奸党，鼓打四通国泰康。鼓发一阵连声响，",
+      "context_snippet": "» 曹操把话错来讲，无水怎把蛟龙藏？马槽怎养狮和象，犬穴焉能住凤凰？鼓打一通天地响，鼓打二通振朝纲。鼓打三通扫奸党，鼓打四通国泰康。鼓发一阵连声响，",
+      "speaker_id": "c_祢衡",
+      "speaker_name": "祢衡",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_85",
+      "block_index": 85,
+      "text_snippet": "只好击鼓鸣更。曹子孝呼为要钱太守；夏侯惇称为完体将军。余下诸人，尽都是衣架饭囊，酒桶肉袋，碌碌之辈，何足道哉？",
+      "context_snippet": "唔……  /  » 只好击鼓鸣更。曹子孝呼为要钱太守；夏侯惇称为完体将军。余下诸人，尽都是衣架饭囊，酒桶肉袋，碌碌之辈，何足道哉？  /  你有此狂言，有何德能？",
+      "speaker_id": "c_祢衡",
+      "speaker_name": "祢衡",
+      "score": 0.5714
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_228",
+      "block_index": 228,
+      "text_snippet": "青天白日，你在此做梦！",
+      "context_snippet": "» 青天白日，你在此做梦！  /  呀呸！",
+      "speaker_id": "c_二旗牌",
+      "speaker_name": "二旗牌",
+      "score": 1.0
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_114",
+      "block_index": 114,
+      "text_snippet": "安排打虎牢龙套，",
+      "context_snippet": "施一个巧计骂奸曹。  /  » 安排打虎牢龙套，  /  大虫窝内宿一宵。",
+      "speaker_id": "c_祢衡",
+      "speaker_name": "祢衡",
       "score": 1.0
     }
   ],
@@ -78,17 +180,35 @@
     "fallback_weight": 0.0,
     "keyword_signal_avg": 1.0,
     "tier_counts": {
-      "strong": 1
+      "strong": 3
     },
-    "method": "nmf",
+    "method": "global_keyword",
     "topic_assessments": [
       {
         "topic_id": 0,
         "label": "冲突怒斥",
         "tier": "strong",
-        "label_score": 20.0,
+        "label_score": 61.0,
         "keyword_signal": 1.0,
-        "weight": 1.0,
+        "weight": 0.8685,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "行军调度",
+        "tier": "strong",
+        "label_score": 60.0,
+        "keyword_signal": 1.0,
+        "weight": 0.0789,
+        "issues": []
+      },
+      {
+        "topic_id": 2,
+        "label": "公案侠义",
+        "tier": "strong",
+        "label_score": 62.0,
+        "keyword_signal": 1.0,
+        "weight": 0.0526,
         "issues": []
       }
     ],

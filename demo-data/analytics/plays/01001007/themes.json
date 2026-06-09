@@ -2,99 +2,143 @@
   "script_id": "01001007",
   "title": "桑园寄子",
   "model": {
-    "method": "nmf",
-    "num_topics_global": 3,
-    "trained_at": "2026-06-04T09:00:32.922929+00:00"
+    "method": "global_keyword",
+    "num_topics_global": 8,
+    "trained_at": "2026-06-09T04:17:10.421887+00:00"
   },
   "topics": [
     {
       "topic_id": 0,
-      "label": "其他情节",
-      "weight": 1.0,
+      "label": "行军调度",
+      "weight": 0.8,
       "keywords": [
-        "儿吓",
-        "贼兵",
-        "我父",
-        "爹爹吓",
-        "血书",
-        "不到",
-        "兄弟吓",
-        "如何是好",
-        "杀死",
-        "听说",
-        "行走",
-        "侄儿",
-        "逃走",
-        "写下",
-        "哥哥"
+        "人马",
+        "兵马",
+        "大军",
+        "巡营",
+        "扎营",
+        "安营",
+        "拔营",
+        "回营",
+        "操练",
+        "犒赏",
+        "犒劳",
+        "粮草"
       ],
       "keyword_weights": [
-        1.6266,
-        1.4906,
-        0.3183,
-        0.3183,
-        0.1924,
-        0.1852,
-        0.1713,
-        0.1493,
-        0.1457,
-        0.1424,
-        0.1135,
-        0.1008,
-        0.0978,
-        0.0964,
-        0.0874
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "冲突怒斥",
+      "weight": 0.2,
+      "keywords": [
+        "怒发冲冠",
+        "怒喝",
+        "怒目",
+        "羞恼",
+        "争执",
+        "厉声",
+        "动怒",
+        "拍案",
+        "怒斥",
+        "痛骂",
+        "斥责",
+        "贼子"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
       ]
     }
   ],
   "topic_composition": [
-    1.0
+    0.8,
+    0.2
   ],
   "representative_blocks": [
     {
       "topic_id": 0,
-      "block_id": "b_99",
-      "block_index": 99,
-      "text_snippet": "今有黑水国造反，逢州夺州，遇县抢县，看看杀到我庄来了！",
-      "context_snippet": "何事惊慌？  /  » 今有黑水国造反，逢州夺州，遇县抢县，看看杀到我庄来了！  /  不好了！",
+      "block_id": "b_54",
+      "block_index": 54,
+      "text_snippet": "你在世弟兄们一家欢庆，",
+      "context_snippet": "到叫我年迈兄好不伤情！  /  » 你在世弟兄们一家欢庆，  /  共商量做计较家业同兴。",
       "speaker_id": "c_邓伯道",
       "speaker_name": "邓伯道",
       "score": 1.0
     },
     {
       "topic_id": 0,
-      "block_id": "b_87",
-      "block_index": 87,
-      "text_snippet": "今有黑水国造反，逢州夺州，遇县抢县，看看杀到我庄来了！",
-      "context_snippet": "何事惊慌？  /  » 今有黑水国造反，逢州夺州，遇县抢县，看看杀到我庄来了！  /  哎呀，这才是福不双降，祸不单行！儿吓，犹恐你母亲在家悬望，我们快快回去吧！",
-      "speaker_id": "c_二家院",
-      "speaker_name": "二家院",
+      "block_id": "b_32",
+      "block_index": 32,
+      "text_snippet": "今当你爹爹，周年之期，备定祭礼，带领你弟兄二人，去到坟前一祭。邓元、",
+      "context_snippet": "唤儿出来，有何训教？  /  » 今当你爹爹，周年之期，备定祭礼，带领你弟兄二人，去到坟前一祭。邓元、",
+      "speaker_id": "c_邓伯道",
+      "speaker_name": "邓伯道",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_204",
+      "block_index": 204,
+      "text_snippet": "他虽然年纪小聪明可爱，可叹他喘吁吁两腿难抬。",
+      "context_snippet": "你去背他，我不要吓。  /  » 他虽然年纪小聪明可爱，可叹他喘吁吁两腿难抬。",
+      "speaker_id": "c_邓伯道",
+      "speaker_name": "邓伯道",
       "score": 1.0
     }
   ],
   "quality": {
-    "score": 0.35,
-    "labeled_weight": 0.0,
-    "fallback_weight": 1.0,
+    "score": 1.0,
+    "labeled_weight": 1.0,
+    "fallback_weight": 0.0,
     "keyword_signal_avg": 1.0,
     "tier_counts": {
-      "fallback": 1
+      "strong": 2
     },
-    "method": "nmf",
+    "method": "global_keyword",
     "topic_assessments": [
       {
         "topic_id": 0,
-        "label": "其他情节",
-        "tier": "fallback",
-        "label_score": 0,
+        "label": "行军调度",
+        "tier": "strong",
+        "label_score": 60.0,
         "keyword_signal": 1.0,
-        "weight": 1.0,
+        "weight": 0.8,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "冲突怒斥",
+        "tier": "strong",
+        "label_score": 61.0,
+        "keyword_signal": 1.0,
+        "weight": 0.2,
         "issues": []
       }
     ],
-    "issues": [
-      "100% 主题为未识别（其他情节/未知）",
-      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
-    ]
+    "issues": []
   }
 }

@@ -3285,109 +3285,116 @@
       "emotion_score": 0.6333
     },
     {
-      "block_index": 17,
-      "block_id": "b_17",
+      "block_index": 16,
+      "block_id": "b_16",
       "stage": "铺垫",
       "emotion_score": 0.6333,
-      "dominant_topic_id": 0
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 24,
-      "block_id": "b_24",
+      "block_index": 33,
+      "block_id": "b_33",
       "stage": "铺垫",
-      "emotion_score": 0.6333,
-      "dominant_topic_id": 1
+      "emotion_score": 0.4492,
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 34,
-      "block_id": "b_34",
+      "block_index": 38,
+      "block_id": "b_38",
       "stage": "铺垫",
-      "emotion_score": 0.446,
-      "dominant_topic_id": 3
+      "emotion_score": 0.5,
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 37,
-      "block_id": "b_37",
+      "block_index": 41,
+      "block_id": "b_41",
       "stage": "铺垫",
-      "emotion_score": 0.4429,
-      "dominant_topic_id": 0
+      "emotion_score": 0.35,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 44,
+      "block_id": "b_44",
+      "stage": "铺垫",
+      "emotion_score": 0.3417,
+      "dominant_topic_id": 7
     },
     {
       "block_index": 45,
       "block_id": "b_45",
       "stage": "铺垫",
       "emotion_score": 0.3,
-      "dominant_topic_id": 2
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 47,
-      "block_id": "b_47",
-      "stage": "铺垫",
-      "emotion_score": 0.3,
-      "dominant_topic_id": 2
-    },
-    {
-      "block_index": 49,
-      "block_id": "b_49",
-      "stage": "铺垫",
-      "emotion_score": 0.3417,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 52,
-      "block_id": "b_52",
-      "stage": "铺垫",
-      "emotion_score": 0.73,
-      "dominant_topic_id": 0
-    },
-    {
-      "block_index": 55,
-      "block_id": "b_55",
+      "block_index": 54,
+      "block_id": "b_54",
       "stage": "铺垫",
       "emotion_score": 0.6394,
-      "dominant_topic_id": 0
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 56,
+      "block_id": "b_56",
+      "stage": "铺垫",
+      "emotion_score": 0.6333,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 60,
+      "block_id": "b_60",
+      "stage": "铺垫",
+      "emotion_score": 0.6748,
+      "dominant_topic_id": 7
     },
     {
       "block_index": 63,
       "block_id": "b_63",
       "stage": "铺垫",
       "emotion_score": 0.64,
-      "dominant_topic_id": 1
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 65,
-      "block_id": "b_65",
+      "block_index": 67,
+      "block_id": "b_67",
       "stage": "铺垫",
-      "emotion_score": 0.6385,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 69,
-      "block_id": "b_69",
-      "stage": "铺垫",
-      "emotion_score": 0.6714,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 74,
-      "block_id": "b_74",
-      "stage": "铺垫",
-      "emotion_score": 0.6867,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 86,
-      "block_id": "b_86",
-      "stage": "铺垫",
-      "emotion_score": 0.66,
+      "emotion_score": 0.6333,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 92,
-      "block_id": "b_92",
+      "block_index": 71,
+      "block_id": "b_71",
+      "stage": "铺垫",
+      "emotion_score": 0.6867,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 89,
+      "block_id": "b_89",
+      "stage": "铺垫",
+      "emotion_score": 0.6714,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 91,
+      "block_id": "b_91",
+      "stage": "发展",
+      "emotion_score": 0.7,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 94,
+      "block_id": "b_94",
       "stage": "发展",
       "emotion_score": 0.74,
-      "dominant_topic_id": 1
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 97,
+      "block_id": "b_97",
+      "stage": "发展",
+      "emotion_score": 0.58,
+      "dominant_topic_id": 0
     },
     {
       "block_index": 98,
@@ -3404,53 +3411,32 @@
       "dominant_topic_id": 0
     },
     {
-      "block_index": 107,
-      "block_id": "b_107",
-      "stage": "发展",
-      "emotion_score": 0.6786,
-      "dominant_topic_id": 2
-    },
-    {
       "block_index": 109,
       "block_id": "b_109",
       "stage": "发展",
       "emotion_score": 0.6857,
-      "dominant_topic_id": 1
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 113,
-      "block_id": "b_113",
+      "block_index": 114,
+      "block_id": "b_114",
       "stage": "发展",
       "emotion_score": 0.6929,
-      "dominant_topic_id": 0
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 115,
-      "block_id": "b_115",
+      "block_index": 132,
+      "block_id": "b_132",
       "stage": "发展",
-      "emotion_score": 0.7214,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 118,
-      "block_id": "b_118",
-      "stage": "发展",
-      "emotion_score": 0.6812,
-      "dominant_topic_id": 0
-    },
-    {
-      "block_index": 131,
-      "block_id": "b_131",
-      "stage": "发展",
-      "emotion_score": 0.6417,
-      "dominant_topic_id": 0
+      "emotion_score": 0.5914,
+      "dominant_topic_id": 7
     },
     {
       "block_index": 138,
       "block_id": "b_138",
       "stage": "发展",
       "emotion_score": 0.5589,
-      "dominant_topic_id": 2
+      "dominant_topic_id": 0
     },
     {
       "block_index": 143,
@@ -3460,32 +3446,18 @@
       "dominant_topic_id": 0
     },
     {
-      "block_index": 146,
-      "block_id": "b_146",
+      "block_index": 152,
+      "block_id": "b_152",
       "stage": "发展",
-      "emotion_score": 0.65,
-      "dominant_topic_id": 1
+      "emotion_score": 0.6647,
+      "dominant_topic_id": 0
     },
     {
-      "block_index": 153,
-      "block_id": "b_153",
+      "block_index": 160,
+      "block_id": "b_160",
       "stage": "发展",
-      "emotion_score": 0.6604,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 157,
-      "block_id": "b_157",
-      "stage": "发展",
-      "emotion_score": 0.6404,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 159,
-      "block_id": "b_159",
-      "stage": "发展",
-      "emotion_score": 0.6084,
-      "dominant_topic_id": 1
+      "emotion_score": 0.6036,
+      "dominant_topic_id": 0
     },
     {
       "block_index": 170,
@@ -3494,25 +3466,17 @@
       "emotion_score": 0.7741
     },
     {
-      "block_index": 173,
-      "block_id": "b_173",
-      "stage": "冲突",
-      "emotion_score": 0.7098,
-      "dominant_topic_id": 1
+      "block_index": 172,
+      "block_id": "b_172",
+      "stage": "发展",
+      "emotion_score": 0.7286
     },
     {
-      "block_index": 184,
-      "block_id": "b_184",
+      "block_index": 183,
+      "block_id": "b_183",
       "stage": "冲突",
-      "emotion_score": 0.4201,
-      "dominant_topic_id": 3
-    },
-    {
-      "block_index": 187,
-      "block_id": "b_187",
-      "stage": "冲突",
-      "emotion_score": 0.4183,
-      "dominant_topic_id": 2
+      "emotion_score": 0.45,
+      "dominant_topic_id": 0
     },
     {
       "block_index": 190,
@@ -3522,109 +3486,109 @@
       "dominant_topic_id": 0
     },
     {
-      "block_index": 197,
-      "block_id": "b_197",
+      "block_index": 193,
+      "block_id": "b_193",
       "stage": "冲突",
-      "emotion_score": 0.4,
-      "dominant_topic_id": 3
+      "emotion_score": 0.4022,
+      "dominant_topic_id": 0
     },
     {
-      "block_index": 199,
-      "block_id": "b_199",
+      "block_index": 214,
+      "block_id": "b_214",
       "stage": "冲突",
-      "emotion_score": 0.42,
-      "dominant_topic_id": 3
+      "emotion_score": 0.5476,
+      "dominant_topic_id": 0
     },
     {
-      "block_index": 213,
-      "block_id": "b_213",
-      "stage": "冲突",
-      "emotion_score": 0.5508,
-      "dominant_topic_id": 2
-    },
-    {
-      "block_index": 217,
-      "block_id": "b_217",
+      "block_index": 219,
+      "block_id": "b_219",
       "stage": "冲突",
       "emotion_score": 0.7057,
-      "dominant_topic_id": 3
-    },
-    {
-      "block_index": 220,
-      "block_id": "b_220",
-      "stage": "冲突",
-      "emotion_score": 0.7057,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 225,
-      "block_id": "b_225",
-      "stage": "冲突",
-      "emotion_score": 0.2333,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 229,
-      "block_id": "b_229",
+      "block_index": 223,
+      "block_id": "b_223",
       "stage": "冲突",
       "emotion_score": 0.5,
-      "dominant_topic_id": 3
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 231,
-      "block_id": "b_231",
+      "block_index": 228,
+      "block_id": "b_228",
+      "stage": "冲突",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 233,
+      "block_id": "b_233",
+      "stage": "冲突",
+      "emotion_score": 0.5,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 236,
+      "block_id": "b_236",
+      "stage": "冲突",
+      "emotion_score": 0.0333,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 241,
+      "block_id": "b_241",
       "stage": "冲突",
       "emotion_score": 0.5,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 234,
-      "block_id": "b_234",
+      "block_index": 242,
+      "block_id": "b_242",
       "stage": "冲突",
       "emotion_score": 0.5,
-      "dominant_topic_id": 0
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 237,
-      "block_id": "b_237",
-      "stage": "冲突",
-      "emotion_score": 0.1,
-      "dominant_topic_id": 2
-    },
-    {
-      "block_index": 243,
-      "block_id": "b_243",
+      "block_index": 244,
+      "block_id": "b_244",
       "stage": "冲突",
       "emotion_score": 0.38,
-      "dominant_topic_id": 0
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 249,
-      "block_id": "b_249",
+      "block_index": 248,
+      "block_id": "b_248",
       "stage": "冲突",
-      "emotion_score": 0.3788,
-      "dominant_topic_id": 0
+      "emotion_score": 0.3727,
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 251,
-      "block_id": "b_251",
+      "block_index": 250,
+      "block_id": "b_250",
+      "stage": "冲突",
+      "emotion_score": 0.36,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 253,
+      "block_id": "b_253",
       "stage": "冲突",
       "emotion_score": 0.3667,
-      "dominant_topic_id": 0
+      "dominant_topic_id": 7
     },
     {
       "block_index": 254,
       "block_id": "b_254",
       "stage": "冲突",
       "emotion_score": 0.3667,
-      "dominant_topic_id": 0
+      "dominant_topic_id": 7
     },
     {
       "block_index": 256,
       "block_id": "b_256",
       "stage": "高潮",
       "emotion_score": 0.3667,
-      "dominant_topic_id": 1
+      "dominant_topic_id": 7
     },
     {
       "block_index": 265,
@@ -3634,45 +3598,52 @@
       "dominant_topic_id": 0
     },
     {
-      "block_index": 274,
-      "block_id": "b_274",
+      "block_index": 270,
+      "block_id": "b_270",
       "stage": "高潮",
-      "emotion_score": 0.7,
+      "emotion_score": 0.5,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 276,
-      "block_id": "b_276",
+      "block_index": 277,
+      "block_id": "b_277",
       "stage": "高潮",
-      "emotion_score": 0.94,
+      "emotion_score": 0.7333,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 285,
+      "block_id": "b_285",
+      "stage": "高潮",
+      "emotion_score": 0.6583,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 286,
+      "block_id": "b_286",
+      "stage": "高潮",
+      "emotion_score": 0.5971,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 293,
-      "block_id": "b_293",
+      "block_index": 294,
+      "block_id": "b_294",
       "stage": "高潮",
-      "emotion_score": 0.73,
-      "dominant_topic_id": 1
+      "emotion_score": 0.72,
+      "dominant_topic_id": 0
     },
     {
-      "block_index": 295,
-      "block_id": "b_295",
-      "stage": "高潮",
-      "emotion_score": 0.6455,
-      "dominant_topic_id": 1
-    },
-    {
-      "block_index": 300,
-      "block_id": "b_300",
+      "block_index": 297,
+      "block_id": "b_297",
       "stage": "高潮",
       "emotion_score": 0.5867,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 303,
-      "block_id": "b_303",
+      "block_index": 302,
+      "block_id": "b_302",
       "stage": "高潮",
-      "emotion_score": 0.5378,
+      "emotion_score": 0.5,
       "dominant_topic_id": 0
     },
     {
@@ -3683,144 +3654,172 @@
       "dominant_topic_id": 0
     },
     {
-      "block_index": 314,
-      "block_id": "b_314",
+      "block_index": 312,
+      "block_id": "b_312",
       "stage": "高潮",
-      "emotion_score": 0.3923,
-      "dominant_topic_id": 0
+      "emotion_score": 0.4339,
+      "dominant_topic_id": 7
     },
     {
       "block_index": 317,
       "block_id": "b_317",
       "stage": "高潮",
       "emotion_score": 0.4552,
-      "dominant_topic_id": 2
+      "dominant_topic_id": 7
     },
     {
       "block_index": 320,
       "block_id": "b_320",
       "stage": "高潮",
       "emotion_score": 0.4475,
-      "dominant_topic_id": 1
+      "dominant_topic_id": 7
     },
     {
       "block_index": 323,
       "block_id": "b_323",
       "stage": "高潮",
       "emotion_score": 0.5525,
-      "dominant_topic_id": 1
+      "dominant_topic_id": 7
     },
     {
       "block_index": 326,
       "block_id": "b_326",
       "stage": "高潮",
       "emotion_score": 0.681,
-      "dominant_topic_id": 1
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 331,
-      "block_id": "b_331",
+      "block_index": 328,
+      "block_id": "b_328",
       "stage": "高潮",
+      "emotion_score": 0.6714,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 332,
+      "block_id": "b_332",
+      "stage": "结局",
       "emotion_score": 0.7229,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 333,
-      "block_id": "b_333",
+      "block_index": 335,
+      "block_id": "b_335",
       "stage": "结局",
-      "emotion_score": 0.8,
-      "dominant_topic_id": 3
+      "emotion_score": 0.82,
+      "dominant_topic_id": 0
     },
     {
-      "block_index": 336,
-      "block_id": "b_336",
-      "stage": "结局",
-      "emotion_score": 0.78,
-      "dominant_topic_id": 3
-    },
-    {
-      "block_index": 339,
-      "block_id": "b_339",
+      "block_index": 337,
+      "block_id": "b_337",
       "stage": "结局",
       "emotion_score": 0.74,
-      "dominant_topic_id": 2
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 341,
+      "block_id": "b_341",
+      "stage": "结局",
+      "emotion_score": 0.74,
+      "dominant_topic_id": 0
+    },
+    {
+      "block_index": 344,
+      "block_id": "b_344",
+      "stage": "结局",
+      "emotion_score": 0.5933,
+      "dominant_topic_id": 0
     },
     {
       "block_index": 345,
       "block_id": "b_345",
       "stage": "结局",
       "emotion_score": 0.5933,
-      "dominant_topic_id": 3
+      "dominant_topic_id": 7
     },
     {
       "block_index": 350,
       "block_id": "b_350",
       "stage": "结局",
       "emotion_score": 0.4067,
-      "dominant_topic_id": 2
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 352,
-      "block_id": "b_352",
+      "block_index": 354,
+      "block_id": "b_354",
       "stage": "结局",
       "emotion_score": 0.4067,
-      "dominant_topic_id": 2
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 355,
-      "block_id": "b_355",
+      "block_index": 356,
+      "block_id": "b_356",
       "stage": "结局",
-      "emotion_score": 0.4067,
+      "emotion_score": 0.25,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 359,
-      "block_id": "b_359",
+      "block_index": 360,
+      "block_id": "b_360",
       "stage": "结局",
-      "emotion_score": 0.4067,
-      "dominant_topic_id": 3
+      "emotion_score": 0.35,
+      "dominant_topic_id": 0
     },
     {
       "block_index": 362,
       "block_id": "b_362",
       "stage": "结局",
       "emotion_score": 0.3114,
-      "dominant_topic_id": 0
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 364,
-      "block_id": "b_364",
-      "stage": "结局",
-      "emotion_score": 0.3286,
-      "dominant_topic_id": 0
-    },
-    {
-      "block_index": 370,
-      "block_id": "b_370",
+      "block_index": 366,
+      "block_id": "b_366",
       "stage": "结局",
       "emotion_score": 0.3667,
-      "dominant_topic_id": 1
+      "dominant_topic_id": 7
     },
     {
-      "block_index": 375,
-      "block_id": "b_375",
+      "block_index": 374,
+      "block_id": "b_374",
+      "stage": "结局",
+      "emotion_score": 0.4429,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 376,
+      "block_id": "b_376",
       "stage": "结局",
       "emotion_score": 0.5,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 380,
+      "block_id": "b_380",
+      "stage": "结局",
+      "emotion_score": 0.3909,
+      "dominant_topic_id": 7
+    },
+    {
+      "block_index": 383,
+      "block_id": "b_383",
+      "stage": "结局",
+      "emotion_score": 0.4636,
       "dominant_topic_id": 0
     },
     {
-      "block_index": 381,
-      "block_id": "b_381",
+      "block_index": 386,
+      "block_id": "b_386",
       "stage": "结局",
-      "emotion_score": 0.42,
-      "dominant_topic_id": 1
+      "emotion_score": 0.4636,
+      "dominant_topic_id": 0
     },
     {
-      "block_index": 389,
-      "block_id": "b_389",
+      "block_index": 388,
+      "block_id": "b_388",
       "stage": "结局",
-      "emotion_score": 0.4077,
-      "dominant_topic_id": 3
+      "emotion_score": 0.4636,
+      "dominant_topic_id": 0
     },
     {
       "block_index": 391,
@@ -3830,11 +3829,11 @@
       "dominant_topic_id": 0
     },
     {
-      "block_index": 393,
-      "block_id": "b_393",
+      "block_index": 395,
+      "block_id": "b_395",
       "stage": "结局",
-      "emotion_score": 0.4333,
-      "dominant_topic_id": 3
+      "emotion_score": 0.3909,
+      "dominant_topic_id": 0
     }
   ]
 }

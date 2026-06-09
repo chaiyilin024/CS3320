@@ -1,0 +1,176 @@
+{
+  "script_id": "01002006",
+  "title": "探阴山",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_王朝",
+      "character_name": "王朝",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "evidence": "王朝 台词与主题「计策谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_马汉",
+      "character_name": "马汉",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "evidence": "马汉 台词与主题「计策谋略」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.283,
+      "character_id": "c_包拯",
+      "character_name": "包拯",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "evidence": "包拯 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.283,
+      "character_id": "c_油流鬼",
+      "character_name": "油流鬼",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "evidence": "油流鬼 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.283,
+      "character_id": "c_柳金蝉",
+      "character_name": "柳金蝉",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "evidence": "柳金蝉 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "发展",
+      "edge_density_delta": 1.0,
+      "evidence": "「发展」阶段人物同场网络密度变化 +1.00"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.833,
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「计策谋略」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "净",
+      "peak_block_index": 39,
+      "evidence": "净 行当在 block 39 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_油流鬼",
+      "character_name": "油流鬼",
+      "evidence": "油流鬼 为关系网络核心（度=4）"
+    }
+  ],
+  "summary_insights": [
+    "《探阴山》共 5 位主要人物、10 条关系边，网络密度 1.00。",
+    "主题构成以「计策谋略、公案侠义」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [41, 67]。",
+    "王朝 与主题「计策谋略」关联最强（1.0）。",
+    "行当以未知为主（2 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_王朝",
+      "character_name": "王朝",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_马汉",
+      "character_name": "马汉",
+      "topic_id": 0,
+      "topic_label": "计策谋略",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_包拯",
+      "character_name": "包拯",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "strength": 0.283
+    },
+    {
+      "character_id": "c_油流鬼",
+      "character_name": "油流鬼",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "strength": 0.283
+    },
+    {
+      "character_id": "c_柳金蝉",
+      "character_name": "柳金蝉",
+      "topic_id": 1,
+      "topic_label": "公案侠义",
+      "strength": 0.283
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        9,
+        30
+      ],
+      "edge_density": 0.0,
+      "node_count": 1,
+      "edge_count": 0
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        31,
+        36
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        37,
+        40
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        41,
+        67
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        68,
+        122
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    }
+  ]
+}

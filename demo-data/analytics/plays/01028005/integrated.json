@@ -1,0 +1,238 @@
+{
+  "script_id": "01028005",
+  "title": "磨房产子",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 0.621,
+      "character_id": "c_窦有功",
+      "character_name": "窦有功",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "evidence": "窦有功 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.621,
+      "character_id": "c_中军",
+      "character_name": "中军",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "evidence": "中军 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.621,
+      "character_id": "c_送子观音",
+      "character_name": "送子观音",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "evidence": "送子观音 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.621,
+      "character_id": "c_张仙",
+      "character_name": "张仙",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "evidence": "张仙 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.621,
+      "character_id": "c_护法",
+      "character_name": "护法",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "evidence": "护法 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.621,
+      "character_id": "c_二衙役",
+      "character_name": "二衙役",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "evidence": "二衙役 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.283,
+      "character_id": "c_李三娘",
+      "character_name": "李三娘",
+      "topic_id": 1,
+      "topic_label": "团圆喜庆",
+      "evidence": "李三娘 台词与主题「团圆喜庆」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.283,
+      "character_id": "c_刘智远",
+      "character_name": "刘智远",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "evidence": "刘智远 台词与主题「才子佳人」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "结局",
+      "edge_density_delta": -0.381,
+      "evidence": "「结局」阶段人物同场网络密度变化 -0.38"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.421,
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「才子佳人」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "青衣",
+      "peak_block_index": 17,
+      "evidence": "青衣 行当在 block 17 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_刘智远",
+      "character_name": "刘智远",
+      "evidence": "刘智远 为关系网络核心（度=9）"
+    }
+  ],
+  "summary_insights": [
+    "《磨房产子》共 10 位主要人物、28 条关系边，网络密度 0.62。",
+    "主题构成以「才子佳人、团圆喜庆」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [161, 174]。",
+    "窦有功 与主题「才子佳人」关联最强（0.621）。",
+    "行当以老生为主（3 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_窦有功",
+      "character_name": "窦有功",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "strength": 0.621
+    },
+    {
+      "character_id": "c_中军",
+      "character_name": "中军",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "strength": 0.621
+    },
+    {
+      "character_id": "c_送子观音",
+      "character_name": "送子观音",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "strength": 0.621
+    },
+    {
+      "character_id": "c_张仙",
+      "character_name": "张仙",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "strength": 0.621
+    },
+    {
+      "character_id": "c_护法",
+      "character_name": "护法",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "strength": 0.621
+    },
+    {
+      "character_id": "c_二衙役",
+      "character_name": "二衙役",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "strength": 0.621
+    },
+    {
+      "character_id": "c_李三娘",
+      "character_name": "李三娘",
+      "topic_id": 1,
+      "topic_label": "团圆喜庆",
+      "strength": 0.283
+    },
+    {
+      "character_id": "c_刘智远",
+      "character_name": "刘智远",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "strength": 0.283
+    },
+    {
+      "character_id": "c_刘氏",
+      "character_name": "刘氏",
+      "topic_id": 2,
+      "topic_label": "冲突怒斥",
+      "strength": 0.283
+    },
+    {
+      "character_id": "c_妖精",
+      "character_name": "妖精",
+      "topic_id": 0,
+      "topic_label": "才子佳人",
+      "strength": 0.283
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        17,
+        81
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        82,
+        132
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        133,
+        160
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        161,
+        174
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        175,
+        361
+      ],
+      "edge_density": 0.619,
+      "node_count": 7,
+      "edge_count": 13
+    }
+  ]
+}

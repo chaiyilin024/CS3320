@@ -1,0 +1,215 @@
+{
+  "script_id": "01006009",
+  "title": "连环套【三本】",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 0.7,
+      "character_id": "c_窦尔敦",
+      "character_name": "窦尔敦",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "窦尔敦 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.7,
+      "character_id": "c_黄天霸",
+      "character_name": "黄天霸",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "黄天霸 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.7,
+      "character_id": "c_大头目",
+      "character_name": "大头目",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "大头目 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.7,
+      "character_id": "c_报子",
+      "character_name": "报子",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "报子 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.7,
+      "character_id": "c_二头目",
+      "character_name": "二头目",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "二头目 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.7,
+      "character_id": "c_众人",
+      "character_name": "众人",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "众人 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 0.7,
+      "character_id": "c_三头目",
+      "character_name": "三头目",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "evidence": "三头目 台词与主题「公案侠义」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "发展",
+      "edge_density_delta": 0.5714,
+      "evidence": "「发展」阶段人物同场网络密度变化 +0.57"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "冲突",
+      "edge_density_delta": 0.4286,
+      "evidence": "「冲突」阶段人物同场网络密度变化 +0.43"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.5,
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「公案侠义」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "净",
+      "peak_block_index": 68,
+      "evidence": "净 行当在 block 68 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_窦尔敦",
+      "character_name": "窦尔敦",
+      "evidence": "窦尔敦 为关系网络核心（度=5）"
+    }
+  ],
+  "summary_insights": [
+    "《连环套【三本】》共 7 位主要人物、12 条关系边，网络密度 0.57。",
+    "主题构成以「公案侠义、计策谋略」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [118, 169]。",
+    "窦尔敦 与主题「公案侠义」关联最强（0.7）。",
+    "行当以小生为主（2 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_窦尔敦",
+      "character_name": "窦尔敦",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.7
+    },
+    {
+      "character_id": "c_黄天霸",
+      "character_name": "黄天霸",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.7
+    },
+    {
+      "character_id": "c_大头目",
+      "character_name": "大头目",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.7
+    },
+    {
+      "character_id": "c_报子",
+      "character_name": "报子",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.7
+    },
+    {
+      "character_id": "c_二头目",
+      "character_name": "二头目",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.7
+    },
+    {
+      "character_id": "c_众人",
+      "character_name": "众人",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.7
+    },
+    {
+      "character_id": "c_三头目",
+      "character_name": "三头目",
+      "topic_id": 0,
+      "topic_label": "公案侠义",
+      "strength": 0.7
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        2
+      ],
+      "edge_density": 0.0,
+      "node_count": 0,
+      "edge_count": 0
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        17,
+        112
+      ],
+      "edge_density": 0.5714,
+      "node_count": 7,
+      "edge_count": 12
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        113,
+        117
+      ],
+      "edge_density": 1.0,
+      "node_count": 2,
+      "edge_count": 1
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        118,
+        169
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        170,
+        234
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    }
+  ]
+}

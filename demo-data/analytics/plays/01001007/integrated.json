@@ -1,0 +1,222 @@
+{
+  "script_id": "01001007",
+  "title": "桑园寄子",
+  "correlations": [
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_邓伯道",
+      "character_name": "邓伯道",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "evidence": "邓伯道 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_金氏",
+      "character_name": "金氏",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "evidence": "金氏 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_邓元",
+      "character_name": "邓元",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "evidence": "邓元 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_邓方",
+      "character_name": "邓方",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "evidence": "邓方 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_二家院",
+      "character_name": "二家院",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "evidence": "二家院 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_众家丁",
+      "character_name": "众家丁",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "evidence": "众家丁 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "character_theme",
+      "strength": 1.0,
+      "character_id": "c_番王",
+      "character_name": "番王",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "evidence": "番王 台词与主题「行军调度」关键词重合度较高"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.4,
+      "stage": "发展",
+      "edge_density_delta": -0.1333,
+      "evidence": "「发展」阶段人物同场网络密度变化 -0.13"
+    },
+    {
+      "type": "network_stage",
+      "strength": 0.743,
+      "stage": "冲突",
+      "edge_density_delta": -0.2477,
+      "evidence": "「冲突」阶段人物同场网络密度变化 -0.25"
+    },
+    {
+      "type": "network_stage",
+      "strength": 1.0,
+      "stage": "高潮",
+      "edge_density_delta": 0.381,
+      "evidence": "「高潮」阶段人物同场网络密度变化 +0.38"
+    },
+    {
+      "type": "theme_narrative",
+      "strength": 0.8,
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "stage": "冲突",
+      "evidence": "「冲突」段与全剧主导主题「行军调度」相对应"
+    },
+    {
+      "type": "hangdang_narrative",
+      "strength": 0.6,
+      "hangdang": "老生",
+      "peak_block_index": 0,
+      "evidence": "老生 行当在 block 0 附近情感强度较高"
+    },
+    {
+      "type": "character_network",
+      "strength": 0.7,
+      "character_id": "c_邓伯道",
+      "character_name": "邓伯道",
+      "evidence": "邓伯道 为关系网络核心（度=5）"
+    }
+  ],
+  "summary_insights": [
+    "《桑园寄子》共 7 位主要人物、13 条关系边，网络密度 0.62。",
+    "主题构成以「行军调度、冲突怒斥」为主。",
+    "叙事划分为 5 个阶段，高潮位于 block [178, 238]。",
+    "邓伯道 与主题「行军调度」关联最强（1.0）。",
+    "行当以小生为主（3 人）。"
+  ],
+  "character_topic_matrix": [
+    {
+      "character_id": "c_邓伯道",
+      "character_name": "邓伯道",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_金氏",
+      "character_name": "金氏",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_邓元",
+      "character_name": "邓元",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_邓方",
+      "character_name": "邓方",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_二家院",
+      "character_name": "二家院",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_众家丁",
+      "character_name": "众家丁",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "strength": 1.0
+    },
+    {
+      "character_id": "c_番王",
+      "character_name": "番王",
+      "topic_id": 0,
+      "topic_label": "行军调度",
+      "strength": 1.0
+    }
+  ],
+  "stage_network_snapshots": [
+    {
+      "stage": "铺垫",
+      "block_range": [
+        0,
+        67
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    },
+    {
+      "stage": "发展",
+      "block_range": [
+        68,
+        122
+      ],
+      "edge_density": 0.8667,
+      "node_count": 6,
+      "edge_count": 13
+    },
+    {
+      "stage": "冲突",
+      "block_range": [
+        123,
+        177
+      ],
+      "edge_density": 0.619,
+      "node_count": 7,
+      "edge_count": 13
+    },
+    {
+      "stage": "高潮",
+      "block_range": [
+        178,
+        238
+      ],
+      "edge_density": 1.0,
+      "node_count": 3,
+      "edge_count": 3
+    },
+    {
+      "stage": "结局",
+      "block_range": [
+        239,
+        307
+      ],
+      "edge_density": 1.0,
+      "node_count": 4,
+      "edge_count": 6
+    }
+  ]
+}

@@ -2,91 +2,83 @@
   "script_id": "01002006",
   "title": "探阴山",
   "model": {
-    "method": "nmf",
-    "num_topics_global": 3,
-    "trained_at": "2026-06-04T09:00:34.173304+00:00"
+    "method": "global_keyword",
+    "num_topics_global": 8,
+    "trained_at": "2026-06-09T04:17:10.421887+00:00"
   },
   "topics": [
     {
       "topic_id": 0,
-      "label": "神话天命",
-      "weight": 0.7294,
+      "label": "计策谋略",
+      "weight": 0.8333,
       "keywords": [
-        "金蝉",
-        "阴山",
-        "查看",
-        "包大人",
-        "阳间",
-        "名叫",
-        "阎君",
-        "柳氏",
-        "生死簿",
-        "控告",
-        "家住",
-        "改移",
-        "李保",
-        "油流",
-        "望乡台"
+        "锦囊妙计",
+        "空城计",
+        "妙计",
+        "谋略",
+        "计策",
+        "锦囊",
+        "中计",
+        "识破",
+        "巧计",
+        "妙策",
+        "诈降",
+        "空城"
       ],
       "keyword_weights": [
-        1.7582,
-        1.519,
-        0.4474,
-        0.3483,
-        0.2147,
-        0.1751,
-        0.135,
-        0.1229,
-        0.0942,
-        0.0834,
-        0.0655,
-        0.0597,
-        0.059,
-        0.0583,
-        0.057
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
       ]
     },
     {
       "topic_id": 1,
-      "label": "其他情节",
-      "weight": 0.2706,
+      "label": "公案侠义",
+      "weight": 0.1667,
       "keywords": [
-        "油流",
-        "冤鬼",
-        "叫做",
-        "呼唤",
-        "看守",
-        "阴曹",
-        "奇冤",
-        "可怜"
+        "劫法场",
+        "替天行道",
+        "冤枉",
+        "冤情",
+        "昭雪",
+        "青天",
+        "锄奸",
+        "义士",
+        "打虎",
+        "除霸",
+        "鸣冤",
+        "断案"
       ],
       "keyword_weights": [
-        1.3818,
-        0.7278,
-        0.3354,
-        0.1847,
-        0.1289,
-        0.0682,
-        0.0508,
-        0.0195
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
       ]
     }
   ],
   "topic_composition": [
-    0.7294,
-    0.2706
+    0.8333,
+    0.1667
   ],
   "representative_blocks": [
-    {
-      "topic_id": 0,
-      "block_id": "b_99",
-      "block_index": 99,
-      "text_snippet": "包大人查看阴山。有什么冤枉前去申诉。",
-      "context_snippet": "鬼哥唤我何事？  /  » 包大人查看阴山。有什么冤枉前去申诉。  /  有劳了！",
-      "speaker_id": "c_油流鬼",
-      "speaker_name": "油流鬼",
-      "score": 1.0
-    },
     {
       "topic_id": 0,
       "block_id": "b_94",
@@ -98,53 +90,62 @@
       "score": 1.0
     },
     {
-      "topic_id": 1,
-      "block_id": "b_97",
-      "block_index": 97,
-      "text_snippet": "问鬼哥呼唤我请为哪般？",
-      "context_snippet": "（柳金蝉上。）  /  » 问鬼哥呼唤我请为哪般？  /  鬼哥唤我何事？",
-      "speaker_id": "c_柳金蝉",
-      "speaker_name": "柳金蝉",
+      "topic_id": 0,
+      "block_id": "b_90",
+      "block_index": 90,
+      "text_snippet": "带上了柳金蝉老夫判断，",
+      "context_snippet": "方信那油流鬼话不虚传。  /  » 带上了柳金蝉老夫判断，  /  我家判爷厉害！",
+      "speaker_id": "c_包拯",
+      "speaker_name": "包拯",
       "score": 1.0
     },
     {
       "topic_id": 1,
-      "block_id": "b_45",
-      "block_index": 45,
-      "text_snippet": "冤鬼多得很，你问他干什么？",
-      "context_snippet": "唔，你这里也有冤鬼么？  /  » 冤鬼多得很，你问他干什么？  /  哦，老夫就是那龙图阁大学士兼理开封，包拯。",
+      "block_id": "b_99",
+      "block_index": 99,
+      "text_snippet": "包大人查看阴山。有什么冤枉前去申诉。",
+      "context_snippet": "鬼哥唤我何事？  /  » 包大人查看阴山。有什么冤枉前去申诉。  /  有劳了！",
       "speaker_id": "c_油流鬼",
       "speaker_name": "油流鬼",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_93",
+      "block_index": 93,
+      "text_snippet": "谁不知包青天法律森严？",
+      "context_snippet": "唔，  /  » 谁不知包青天法律森严？  /  柳金蝉走动！哈！",
+      "speaker_id": "c_包拯",
+      "speaker_name": "包拯",
       "score": 1.0
     }
   ],
   "quality": {
-    "score": 0.824,
-    "labeled_weight": 0.7294,
-    "fallback_weight": 0.2706,
+    "score": 1.0,
+    "labeled_weight": 1.0,
+    "fallback_weight": 0.0,
     "keyword_signal_avg": 1.0,
     "tier_counts": {
-      "strong": 1,
-      "fallback": 1
+      "strong": 2
     },
-    "method": "nmf",
+    "method": "global_keyword",
     "topic_assessments": [
       {
         "topic_id": 0,
-        "label": "神话天命",
+        "label": "计策谋略",
         "tier": "strong",
-        "label_score": 9.0,
+        "label_score": 62.0,
         "keyword_signal": 1.0,
-        "weight": 0.7294,
+        "weight": 0.8333,
         "issues": []
       },
       {
         "topic_id": 1,
-        "label": "其他情节",
-        "tier": "fallback",
-        "label_score": 0,
+        "label": "公案侠义",
+        "tier": "strong",
+        "label_score": 62.0,
         "keyword_signal": 1.0,
-        "weight": 0.2706,
+        "weight": 0.1667,
         "issues": []
       }
     ],

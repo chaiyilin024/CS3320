@@ -2,73 +2,199 @@
   "script_id": "01001009",
   "title": "硃砂痣",
   "model": {
-    "method": "nmf",
-    "num_topics_global": 4,
-    "trained_at": "2026-06-04T09:00:33.395582+00:00"
+    "method": "global_keyword",
+    "num_topics_global": 8,
+    "trained_at": "2026-06-09T04:17:10.421887+00:00"
   },
   "topics": [
     {
       "topic_id": 0,
-      "label": "家训教子",
-      "weight": 1.0,
+      "label": "团圆喜庆",
+      "weight": 0.7273,
       "keywords": [
-        "亲生",
-        "银子",
-        "孩童",
-        "吴相公",
-        "老妈妈",
-        "娘子",
-        "夫妻",
-        "物件",
-        "妈妈",
-        "不卖",
-        "聘礼",
-        "父母",
-        "丈夫",
-        "教训",
-        "大娘"
+        "夫妻团圆",
+        "母子团圆",
+        "阖家欢乐",
+        "归来团圆",
+        "团圆",
+        "团聚",
+        "重逢",
+        "庆贺",
+        "庆功",
+        "贺喜",
+        "贺寿",
+        "高升"
       ],
       "keyword_weights": [
-        1.5075,
-        1.4756,
-        1.3513,
-        0.5383,
-        0.3783,
-        0.3273,
-        0.2057,
-        0.1619,
-        0.1619,
-        0.1608,
-        0.1592,
-        0.1525,
-        0.1505,
-        0.1482,
-        0.1316
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 1,
+      "label": "公案侠义",
+      "weight": 0.0909,
+      "keywords": [
+        "劫法场",
+        "替天行道",
+        "冤枉",
+        "冤情",
+        "昭雪",
+        "青天",
+        "锄奸",
+        "义士",
+        "打虎",
+        "除霸",
+        "鸣冤",
+        "断案"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 2,
+      "label": "才子佳人",
+      "weight": 0.0909,
+      "keywords": [
+        "私订终身",
+        "后花园",
+        "赠金",
+        "状元",
+        "琴挑",
+        "传柬",
+        "佳人",
+        "良缘",
+        "婚配",
+        "姻缘",
+        "爱慕",
+        "鸳鸯"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 3,
+      "label": "冲突怒斥",
+      "weight": 0.0909,
+      "keywords": [
+        "怒发冲冠",
+        "怒喝",
+        "怒目",
+        "羞恼",
+        "争执",
+        "厉声",
+        "动怒",
+        "拍案",
+        "怒斥",
+        "痛骂",
+        "斥责",
+        "贼子"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
       ]
     }
   ],
   "topic_composition": [
-    1.0
+    0.7273,
+    0.0909,
+    0.0909,
+    0.0909
   ],
   "representative_blocks": [
     {
       "topic_id": 0,
-      "block_id": "b_71",
-      "block_index": 71,
-      "text_snippet": "当面烧化了吧！",
-      "context_snippet": "但凭恩人。  /  » 当面烧化了吧！  /  多谢恩人。",
+      "block_id": "b_60",
+      "block_index": 60,
+      "text_snippet": "你可将这女子送回，聘礼不要，再取银子一百两，送她到家，全她夫妻恩情，以完这女子贞节之名。",
+      "context_snippet": "老爷何事？  /  » 你可将这女子送回，聘礼不要，再取银子一百两，送她到家，全她夫妻恩情，以完这女子贞节之名。",
       "speaker_id": "c_韩廷凤",
       "speaker_name": "韩廷凤",
       "score": 1.0
     },
     {
       "topic_id": 0,
-      "block_id": "b_69",
-      "block_index": 69,
-      "text_snippet": "你这婚书在此。",
-      "context_snippet": "是。  /  » 你这婚书在此。  /  但凭恩人。",
-      "speaker_id": "c_韩廷凤",
-      "speaker_name": "韩廷凤",
+      "block_id": "b_49",
+      "block_index": 49,
+      "text_snippet": "可怜我好夫妻两下离分。",
+      "context_snippet": "我岂肯贪富贵痴心妄想，  /  » 可怜我好夫妻两下离分。  /  大老爷开大恩将奴释放，",
+      "speaker_id": "c_江氏",
+      "speaker_name": "江氏",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_393",
+      "block_index": 393,
+      "text_snippet": "爹爹，青天白日，不是做梦。",
+      "context_snippet": "北地南来西复东，谁知今日巧相逢。父子重把菱花照，只怕相逢在梦中。  /  » 爹爹，青天白日，不是做梦。  /  不是做梦，当真？",
+      "speaker_id": "c_韩遇运",
+      "speaker_name": "韩遇运",
+      "score": 1.0
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_182",
+      "block_index": 182,
+      "text_snippet": "候儿成人大，金榜把名标。",
+      "context_snippet": "» 候儿成人大，金榜把名标。  /  候你成人大，母子两边飘。",
+      "speaker_id": "c_韩遇运",
+      "speaker_name": "韩遇运",
+      "score": 1.0
+    },
+    {
+      "topic_id": 3,
+      "block_id": "b_48",
+      "block_index": 48,
+      "text_snippet": "我岂肯贪富贵痴心妄想，",
+      "context_snippet": "因此上少银钱变卖妻房。  /  » 我岂肯贪富贵痴心妄想，  /  可怜我好夫妻两下离分。",
+      "speaker_id": "c_江氏",
+      "speaker_name": "江氏",
       "score": 1.0
     }
   ],
@@ -78,17 +204,44 @@
     "fallback_weight": 0.0,
     "keyword_signal_avg": 1.0,
     "tier_counts": {
-      "weak": 1
+      "strong": 4
     },
-    "method": "nmf",
+    "method": "global_keyword",
     "topic_assessments": [
       {
         "topic_id": 0,
-        "label": "家训教子",
-        "tier": "weak",
-        "label_score": 5.0,
+        "label": "团圆喜庆",
+        "tier": "strong",
+        "label_score": 64.0,
         "keyword_signal": 1.0,
-        "weight": 1.0,
+        "weight": 0.7273,
+        "issues": []
+      },
+      {
+        "topic_id": 1,
+        "label": "公案侠义",
+        "tier": "strong",
+        "label_score": 62.0,
+        "keyword_signal": 1.0,
+        "weight": 0.0909,
+        "issues": []
+      },
+      {
+        "topic_id": 2,
+        "label": "才子佳人",
+        "tier": "strong",
+        "label_score": 61.0,
+        "keyword_signal": 1.0,
+        "weight": 0.0909,
+        "issues": []
+      },
+      {
+        "topic_id": 3,
+        "label": "冲突怒斥",
+        "tier": "strong",
+        "label_score": 61.0,
+        "keyword_signal": 1.0,
+        "weight": 0.0909,
         "issues": []
       }
     ],

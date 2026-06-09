@@ -2,170 +2,332 @@
   "script_id": "01028005",
   "title": "磨房产子",
   "model": {
-    "method": "nmf",
-    "num_topics_global": 3,
-    "trained_at": "2026-06-04T09:00:54.260131+00:00"
+    "method": "global_keyword",
+    "num_topics_global": 8,
+    "trained_at": "2026-06-09T04:17:10.421887+00:00"
   },
   "topics": [
     {
       "topic_id": 0,
-      "label": "冲突怒斥",
-      "weight": 0.6008,
+      "label": "才子佳人",
+      "weight": 0.421,
       "keywords": [
-        "不由",
-        "老汉",
-        "婴儿",
-        "贵人",
-        "吵闹",
-        "啼哭",
-        "汲水",
-        "窦老",
-        "性命",
-        "胜诉",
-        "一般",
-        "花园",
-        "不妨",
-        "剪刀",
-        "回家"
+        "私订终身",
+        "后花园",
+        "赠金",
+        "状元",
+        "琴挑",
+        "传柬",
+        "佳人",
+        "良缘",
+        "婚配",
+        "姻缘",
+        "爱慕",
+        "鸳鸯"
       ],
       "keyword_weights": [
-        1.4395,
-        1.1992,
-        1.0825,
-        0.4195,
-        0.2123,
-        0.1846,
-        0.17,
-        0.1458,
-        0.1349,
-        0.1342,
-        0.1296,
-        0.108,
-        0.1079,
-        0.1031,
-        0.097
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
       ]
     },
     {
       "topic_id": 1,
-      "label": "其他情节",
-      "weight": 0.3992,
+      "label": "团圆喜庆",
+      "weight": 0.2632,
       "keywords": [
-        "推磨",
-        "贱人",
-        "汲水",
-        "羔子",
-        "井台",
-        "花园",
-        "欢喜",
-        "磨房",
-        "剪刀",
-        "动静",
-        "孩子",
-        "牵连",
-        "刘高",
-        "不妨",
-        "丈夫"
+        "夫妻团圆",
+        "母子团圆",
+        "阖家欢乐",
+        "归来团圆",
+        "团圆",
+        "团聚",
+        "重逢",
+        "庆贺",
+        "庆功",
+        "贺喜",
+        "贺寿",
+        "高升"
       ],
       "keyword_weights": [
-        0.9935,
-        0.8391,
-        0.5068,
-        0.1242,
-        0.1153,
-        0.1072,
-        0.1013,
-        0.0677,
-        0.0616,
-        0.0525,
-        0.0404,
-        0.0385,
-        0.0345,
-        0.0325,
-        0.0322
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 2,
+      "label": "冲突怒斥",
+      "weight": 0.1579,
+      "keywords": [
+        "怒发冲冠",
+        "怒喝",
+        "怒目",
+        "羞恼",
+        "争执",
+        "厉声",
+        "动怒",
+        "拍案",
+        "怒斥",
+        "痛骂",
+        "斥责",
+        "贼子"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 3,
+      "label": "朝堂奏对",
+      "weight": 0.1053,
+      "keywords": [
+        "上殿",
+        "退朝",
+        "上朝",
+        "朝廷",
+        "朝堂",
+        "朝会",
+        "金殿",
+        "丹墀",
+        "上奏",
+        "启奏",
+        "面奏",
+        "见驾"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
+      ]
+    },
+    {
+      "topic_id": 4,
+      "label": "公案侠义",
+      "weight": 0.0526,
+      "keywords": [
+        "劫法场",
+        "替天行道",
+        "冤枉",
+        "冤情",
+        "昭雪",
+        "青天",
+        "锄奸",
+        "义士",
+        "打虎",
+        "除霸",
+        "鸣冤",
+        "断案"
+      ],
+      "keyword_weights": [
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0
       ]
     }
   ],
   "topic_composition": [
-    0.6008,
-    0.3992
+    0.421,
+    0.2632,
+    0.1579,
+    0.1053,
+    0.0526
   ],
   "representative_blocks": [
     {
       "topic_id": 0,
-      "block_id": "b_57",
-      "block_index": 57,
-      "text_snippet": "妖魔来到茶蘼架，",
-      "context_snippet": "一个好如捉鬼鹰。  /  » 妖魔来到茶蘼架，  /  一幌身影无形踪。",
+      "block_id": "b_71",
+      "block_index": 71,
+      "text_snippet": "花园宽敞跑几次，",
+      "context_snippet": "扳鞍上马抖丝缰。  /  » 花园宽敞跑几次，  /  舞动梨花杆战枪。",
       "speaker_id": "c_刘智远",
       "speaker_name": "刘智远",
       "score": 1.0
     },
     {
       "topic_id": 0,
-      "block_id": "b_51",
-      "block_index": 51,
-      "text_snippet": "妖魔一见回头跑，",
-      "context_snippet": "好孽畜，吃我一剑！  /  » 妖魔一见回头跑，  /  后面跟随勇刘高。",
+      "block_id": "b_38",
+      "block_index": 38,
+      "text_snippet": "咱家本非一精灵，多年狐狸变成形。也能呼风并唤雨，也能撒豆与成兵。只因上方朝玉帝，受了天皇旨一封。后花园看守刘高盔和甲，今年今日将宝献。一阵狂风到亭下，只听刘高问一言。",
+      "context_snippet": "（妖精上。）  /  » 咱家本非一精灵，多年狐狸变成形。也能呼风并唤雨，也能撒豆与成兵。只因上方朝玉帝，受了天皇旨一封。后花园看守刘高盔和甲，今年今日将宝献。一阵狂风到亭下，只听刘高问一言。",
+      "speaker_id": "c_妖精",
+      "speaker_name": "妖精",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_87",
+      "block_index": 87,
+      "text_snippet": "三娘闻言珠泪滚，我夫此去要早回程。荣华富贵虽要紧，莫忘夫妻结发情。夫妻说到伤心处，",
+      "context_snippet": "» 三娘闻言珠泪滚，我夫此去要早回程。荣华富贵虽要紧，莫忘夫妻结发情。夫妻说到伤心处，",
+      "speaker_id": "c_李三娘",
+      "speaker_name": "李三娘",
+      "score": 1.0
+    },
+    {
+      "topic_id": 1,
+      "block_id": "b_214",
+      "block_index": 214,
+      "text_snippet": "俺是夫妻，岂有不想？",
+      "context_snippet": "养孩子你这里又想汉子，  /  » 俺是夫妻，岂有不想？  /  他已做別乡鬼无有信音。",
+      "speaker_id": "c_李三娘",
+      "speaker_name": "李三娘",
+      "score": 1.0
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_306",
+      "block_index": 306,
+      "text_snippet": "听此言不由我可恨又可悲。又喜得刘贵人有了后代，叫三娘你只管把心放开。婴儿的性命不能害，",
+      "context_snippet": "因此上吵闹得邻舍不安，  /  » 听此言不由我可恨又可悲。又喜得刘贵人有了后代，叫三娘你只管把心放开。婴儿的性命不能害，",
+      "speaker_id": "c_窦有功",
+      "speaker_name": "窦有功",
+      "score": 1.0
+    },
+    {
+      "topic_id": 2,
+      "block_id": "b_302",
+      "block_index": 302,
+      "text_snippet": "叫人可恨！",
+      "context_snippet": "一见嫂嫂嫉妬生，  /  » 叫人可恨！  /  夺婴儿要将他命来害。",
+      "speaker_id": "c_窦有功",
+      "speaker_name": "窦有功",
+      "score": 1.0
+    },
+    {
+      "topic_id": 3,
+      "block_id": "b_354",
+      "block_index": 354,
+      "text_snippet": "既是如此，受下官一拜。",
+      "context_snippet": "俱好。惟三娘事情繁杂，不可胜诉。日后贵人回家，便知端的。老汉告辞了。  /  » 既是如此，受下官一拜。  /  老汉不敢当的。",
       "speaker_id": "c_刘智远",
       "speaker_name": "刘智远",
       "score": 1.0
     },
     {
-      "topic_id": 1,
-      "block_id": "b_73",
-      "block_index": 73,
-      "text_snippet": "刘高马上多欢喜，",
-      "context_snippet": "舞动梨花杆战枪。  /  » 刘高马上多欢喜，  /  离鞍弃蹬解戎装。",
+      "topic_id": 3,
+      "block_id": "b_342",
+      "block_index": 342,
+      "text_snippet": "下官刘高。顷闻中军，禀称有沙陀村乡亲求见。中军吩咐出去，有请！",
+      "context_snippet": "万事皆由命，半点不由人。  /  » 下官刘高。顷闻中军，禀称有沙陀村乡亲求见。中军吩咐出去，有请！",
       "speaker_id": "c_刘智远",
       "speaker_name": "刘智远",
       "score": 1.0
     },
     {
-      "topic_id": 1,
-      "block_id": "b_225",
-      "block_index": 225,
-      "text_snippet": "怒一怒急将这鳖羔子夺过，",
-      "context_snippet": "本来不善。  /  » 怒一怒急将这鳖羔子夺过，  /  哎吓！",
-      "speaker_id": "c_刘氏",
-      "speaker_name": "刘氏",
+      "topic_id": 4,
+      "block_id": "b_265",
+      "block_index": 265,
+      "text_snippet": "你妻儿遭灾难何日见青天？",
+      "context_snippet": "我丈夫在邠州身得自在，  /  » 你妻儿遭灾难何日见青天？  /  苦吓！",
+      "speaker_id": "c_李三娘",
+      "speaker_name": "李三娘",
       "score": 1.0
     }
   ],
   "quality": {
-    "score": 0.35,
-    "labeled_weight": 0.0,
-    "fallback_weight": 1.0,
+    "score": 1.0,
+    "labeled_weight": 1.0,
+    "fallback_weight": 0.0,
     "keyword_signal_avg": 1.0,
     "tier_counts": {
-      "fallback": 2
+      "strong": 5
     },
-    "method": "nmf",
+    "method": "global_keyword",
     "topic_assessments": [
       {
         "topic_id": 0,
-        "label": "冲突怒斥",
-        "tier": "fallback",
-        "label_score": 0,
+        "label": "才子佳人",
+        "tier": "strong",
+        "label_score": 61.0,
         "keyword_signal": 1.0,
-        "weight": 0.6008,
-        "issues": [
-          "关键词与 theme.json 规则匹配度低"
-        ]
+        "weight": 0.421,
+        "issues": []
       },
       {
         "topic_id": 1,
-        "label": "其他情节",
-        "tier": "fallback",
-        "label_score": 0,
+        "label": "团圆喜庆",
+        "tier": "strong",
+        "label_score": 64.0,
         "keyword_signal": 1.0,
-        "weight": 0.3992,
+        "weight": 0.2632,
+        "issues": []
+      },
+      {
+        "topic_id": 2,
+        "label": "冲突怒斥",
+        "tier": "strong",
+        "label_score": 61.0,
+        "keyword_signal": 1.0,
+        "weight": 0.1579,
+        "issues": []
+      },
+      {
+        "topic_id": 3,
+        "label": "朝堂奏对",
+        "tier": "strong",
+        "label_score": 60.0,
+        "keyword_signal": 1.0,
+        "weight": 0.1053,
+        "issues": []
+      },
+      {
+        "topic_id": 4,
+        "label": "公案侠义",
+        "tier": "strong",
+        "label_score": 62.0,
+        "keyword_signal": 1.0,
+        "weight": 0.0526,
         "issues": []
       }
     ],
-    "issues": [
-      "100% 主题为未识别（其他情节/未知）",
-      "综合质量偏低，建议检查文本分块或扩展 theme.json 规则"
-    ]
+    "issues": []
   }
 }
