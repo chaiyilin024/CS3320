@@ -101,6 +101,34 @@ def build_dynamic_stopwords(play: dict | None) -> frozenset[str]:
     return frozenset(w for w in extra if w)
 
 
+def build_corpus_stopwords(plays: list[dict]) -> frozenset[str]:
+    """全库训练时合并各剧角色名/剧名，避免 NMF 被跨剧人名主导。"""
+    if len(plays) <= 1:
+        return frozenset()
+    merged: set[str] = set()
+    for play in plays:
+        merged.update(build_dynamic_stopwords(play))
+    return frozenset(merged)
+
+
+def build_corpus_stopwords_from_paths(
+    paths: list[Path],
+    load_play_fn,
+    on_progress=None,
+) -> frozenset[str]:
+    """流式读取剧本，仅提取角色名/剧名停用词（不遍历文本块）。"""
+    merged: set[str] = set()
+    n = len(paths)
+    for i, path in enumerate(paths):
+        if on_progress and (i % 200 == 0 or i == n - 1):
+            on_progress(i + 1, n)
+        try:
+            merged.update(build_dynamic_stopwords(load_play_fn(path)))
+        except (OSError, KeyError, ValueError, TypeError):
+            continue
+    return frozenset(merged)
+
+
 def iter_text_blocks(play: dict) -> list[dict]:
     out = []
     for b in play.get("blocks") or []:

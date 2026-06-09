@@ -11,7 +11,13 @@ from backend.analytics.network.build_graph import analyze_play_network
 from backend.analytics.role.infer import analyze_play_role
 from backend.analytics.theme.export import build_play_themes
 from backend.analytics.theme.llm import LlmThemeConfig, build_play_themes_llm
-from backend.analytics.theme.model import model_from_themes, train_theme_model
+from backend.analytics.theme.model import (
+    global_theme_model_path,
+    load_theme_model,
+    model_from_themes,
+    save_theme_model,
+    train_theme_model,
+)
 from backend.analytics.theme.quality import backfill_play_quality
 from backend.analytics.utils.io import load_play, save_json
 from backend.analytics.utils.jieba_env import configure_jieba
@@ -76,11 +82,15 @@ def analyze_play_task(task: dict[str, Any]) -> dict[str, Any]:
         if llm_cfg.get("enabled"):
             theme_model = None
         else:
-            theme_model = train_theme_model(
-                [play],
-                int(cfg.get("num_topics", 8)),
-                int(cfg.get("random_seed", 42)),
-            )
+            global_path = cfg.get("global_theme_model_path")
+            if global_path and Path(global_path).is_file():
+                theme_model = load_theme_model(Path(global_path))
+            else:
+                theme_model = train_theme_model(
+                    [play],
+                    int(cfg.get("num_topics", 8)),
+                    int(cfg.get("random_seed", 42)),
+                )
 
         role = analyze_play_role(play)
         network = analyze_play_network(play, role)
@@ -165,3 +175,41 @@ def theme_quality_task(task: dict[str, Any]) -> dict[str, Any]:
     path = Path(task["path"])
     ok = backfill_play_quality(path)
     return {"ok": ok, "script_id": path.parent.name, "log": path.parent.name if ok else ""}
+
+
+def themes_only_task(task: dict[str, Any]) -> dict[str, Any]:
+    """仅用全局 theme_model 重算 plays/*/themes.json。"""
+    root = Path(task["root"])
+    sid = task["script_id"]
+    cfg = task["cfg"]
+    validate = bool(cfg.get("validate", True))
+    _ensure_jieba(root)
+    play_path = root / cfg["cleaned_rel"] / "plays" / f"{sid}.json"
+    analytics_dir = root / cfg["analytics_rel"]
+    out_dir = analytics_dir / "plays" / sid
+    try:
+        play = load_play(play_path)
+        global_path = cfg.get("global_theme_model_path")
+        if not global_path or not Path(global_path).is_file():
+            return {
+                "ok": False,
+                "script_id": sid,
+                "log": f"  FAIL {sid}: 缺少 global/theme_model.pkl",
+            }
+        theme_model = load_theme_model(Path(global_path))
+        themes = build_play_themes(play, theme_model)
+        save_json(out_dir / "themes.json", themes)
+        warnings: list[str] = []
+        if validate:
+            errs = validate_analytics(themes, SCHEMA_MAP["themes.json"], root)
+            if errs:
+                warnings.append(errs[0])
+        return {
+            "ok": True,
+            "script_id": sid,
+            "title": play.get("title", ""),
+            "warnings": warnings,
+            "log": f"  themes {sid}",
+        }
+    except Exception as exc:
+        return {"ok": False, "script_id": sid, "log": f"  FAIL {sid}: {exc}"}

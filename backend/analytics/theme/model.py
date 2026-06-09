@@ -7,6 +7,8 @@ from pathlib import Path
 
 from .corpus import (
     _metadata_stopwords,
+    build_corpus_stopwords,
+    build_corpus_stopwords_from_paths,
     build_dynamic_stopwords,
     iter_text_blocks,
     play_document,
@@ -15,6 +17,20 @@ from .corpus import (
 
 # 主题标签规则统一从 theme.json 读取，py 中不再硬编码关键词。
 THEME_RULES_FILE = Path(__file__).resolve().parent / "theme.json"
+FALLBACK_LABEL = "其他情节"
+GLOBAL_THEME_MODEL_FILENAME = "theme_model.pkl"
+
+# 全库 NMF 锚定主题（与 theme.json 一致，保证 T0～T7 语义稳定）
+GLOBAL_SEED_LABELS = (
+    "朝堂奏对",
+    "战争征伐",
+    "计策谋略",
+    "行军调度",
+    "公案侠义",
+    "才子佳人",
+    "冲突怒斥",
+    "团圆喜庆",
+)
 
 
 @dataclass(frozen=True)
@@ -93,6 +109,24 @@ def _score_label(rule: LabelRule, word_set: frozenset[str]) -> float:
     return pos + neg
 
 
+def _score_label_fuzzy(rule: LabelRule, words: list[str]) -> tuple[float, list[str]]:
+    """精确命中优先；否则 topic 词与规则词做子串模糊匹配（全库 NMF 常产出短语）。"""
+    word_set = frozenset(words)
+    score = _score_label(rule, word_set)
+    hits = [k for k in rule.keywords if k in word_set]
+    if score > 0 or hits:
+        return score, hits
+    fuzzy: set[str] = set()
+    for w in words[:20]:
+        for k in rule.keywords:
+            if len(k) >= 2 and (k in w or w in k):
+                fuzzy.add(k)
+    if not fuzzy:
+        return 0.0, []
+    fuzzy_score = sum(rule.keywords[k] for k in fuzzy) * 0.6
+    return fuzzy_score, sorted(fuzzy)
+
+
 @dataclass
 class ThemeModel:
     num_topics: int
@@ -105,19 +139,44 @@ class ThemeModel:
     block_keys: list[tuple[str, str, int]] = field(default_factory=list)
     trained_at: str = ""
     _label_cache: dict[int, str] = field(default_factory=dict)
+    corpus_stopwords: frozenset[str] = field(default_factory=frozenset)
+    pinned_labels: dict[int, str] = field(default_factory=dict)
+
+    def _block_extra_stop(self, play: dict) -> frozenset[str]:
+        return build_dynamic_stopwords(play) | self.corpus_stopwords
+
+    def _nmf_block_matrix(self, play: dict):
+        """返回 (blocks, raw_W)。"""
+        import numpy as np
+
+        blocks = iter_text_blocks(play)
+        if not blocks or self._nmf is None or self._vectorizer is None:
+            return [], None
+        extra_stop = self._block_extra_stop(play)
+        docs = [" ".join(tokenize(b["text"], extra_stop)) for b in blocks]
+        X = self._vectorizer.transform(docs)
+        import warnings
+
+        with warnings.catch_warnings():
+            warnings.filterwarnings("ignore", category=RuntimeWarning)
+            W = self._nmf.transform(X)
+        W = np.nan_to_num(W, nan=0.0, posinf=0.0, neginf=0.0)
+        return blocks, W
 
     def transform_blocks(self, play: dict) -> list[tuple[str, int, str, list[float]]]:
         """返回 (block_id, block_index, text, topic_vector)。"""
         blocks = iter_text_blocks(play)
         if not blocks:
             return []
-        extra_stop = build_dynamic_stopwords(play)
-        if self.method == "keyword" and isinstance(self._vectorizer, list):
+        extra_stop = self._block_extra_stop(play)
+        if self.method in ("keyword", "global_keyword") and isinstance(
+            self._vectorizer, list
+        ):
             seeds = self._vectorizer
             out = []
             for b in blocks:
                 words = tokenize(b["text"], extra_stop)
-                vec = [_seed_score(words, seed) for _label, seed in seeds]
+                vec = _topic_seed_scores(words, seeds)
                 s = sum(vec) or 1.0
                 out.append(
                     (b["block_id"], b["block_index"], b["text"], [v / s for v in vec])
@@ -125,18 +184,12 @@ class ThemeModel:
             return out
         if self._nmf is None or self._vectorizer is None:
             return []
-        import warnings
-
-        import numpy as np
-
-        docs = [" ".join(tokenize(b["text"], extra_stop)) for b in blocks]
-        X = self._vectorizer.transform(docs)
-        with warnings.catch_warnings():
-            warnings.filterwarnings("ignore", category=RuntimeWarning)
-            W = self._nmf.transform(X)
+        blocks, W = self._nmf_block_matrix(play)
+        if W is None:
+            return []
         out = []
         for b, vec in zip(blocks, W):
-            row = np.nan_to_num(vec, nan=0.0, posinf=0.0, neginf=0.0)
+            row = vec
             s = row.sum() or 1.0
             out.append(
                 (b["block_id"], b["block_index"], b["text"], (row / s).tolist())
@@ -144,16 +197,39 @@ class ThemeModel:
         return out
 
     def play_composition(self, play: dict) -> list[float]:
+        """单剧主题占比：块级 argmax 计数，避免单一 topic 吸走全部权重。"""
+        k = self.num_topics
+        if self.method == "nmf" and self._nmf is not None:
+            _blocks, W = self._nmf_block_matrix(play)
+            if W is None or len(_blocks) == 0:
+                return [1.0 / k] * k
+            counts = [0.0] * k
+            for vec in W:
+                if len(vec) == 0:
+                    continue
+                best_score = float(max(vec))
+                if best_score <= 0:
+                    continue
+                best = int(max(range(len(vec)), key=lambda i: vec[i]))
+                if 0 <= best < k:
+                    counts[best] += 1.0
+            total = sum(counts) or 1.0
+            return [c / total for c in counts]
         rows = self.transform_blocks(play)
         if not rows:
-            return [1.0 / self.num_topics] * self.num_topics
-        k = self.num_topics
-        sums = [0.0] * k
+            return [1.0 / k] * k
+        counts = [0.0] * k
         for _bid, _bidx, _text, vec in rows:
-            for i, v in enumerate(vec[:k]):
-                sums[i] += v
-        total = sum(sums) or 1.0
-        return [s / total for s in sums]
+            if not vec:
+                continue
+            best_score = max(vec)
+            if best_score <= 0:
+                continue
+            best = int(max(range(len(vec)), key=lambda i: vec[i]))
+            if 0 <= best < k:
+                counts[best] += 1.0
+        total = sum(counts) or 1.0
+        return [c / total for c in counts]
 
     def assign_unique_labels(self) -> None:
         """根据 theme.json 规则给每个主题打标签。
@@ -171,11 +247,9 @@ class ThemeModel:
         topic_hits: dict[int, dict] = {}
         for tid in range(self.num_topics):
             words = [w for w, _ in self.topic_words.get(tid, [])[:20]]
-            word_set = frozenset(words)
             scored: list[tuple[str, float, list[str]]] = []
             for rule in rules:
-                score = _score_label(rule, word_set)
-                hits = [k for k in rule.keywords if k in word_set]
+                score, hits = _score_label_fuzzy(rule, words)
                 scored.append((rule.label, score, hits))
             scored.sort(key=lambda x: -x[1])
             best = scored[0] if scored else ("", 0.0, [])
@@ -193,7 +267,7 @@ class ThemeModel:
             hits = info["best_hits"]
             label = info["best_label"]
             if is_metadata_topic(info["words"]):
-                final[tid] = "其他情节"
+                final[tid] = FALLBACK_LABEL
                 continue
             strong = bool(label) and score >= threshold and (
                 len(hits) >= min_hits or score >= 8.0
@@ -201,10 +275,12 @@ class ThemeModel:
             weak = bool(label) and score >= fb_threshold
             # 不再追加 "·xxx" 区分词：schema 允许多个 topic 同 label，
             # 它们的差异由各自的 keywords 与 representative_blocks 体现。
-            final[tid] = label if (strong or weak) else "其他情节"
+            final[tid] = label if (strong or weak) else FALLBACK_LABEL
         self._label_cache = final
 
     def topic_label(self, topic_id: int) -> str:
+        if topic_id in self.pinned_labels:
+            return self.pinned_labels[topic_id]
         if not self._label_cache:
             self.assign_unique_labels()
         if topic_id in self._label_cache:
@@ -253,19 +329,83 @@ def adaptive_num_topics(plays: list[dict], requested: int) -> int:
     return max(2, requested)
 
 
+def global_theme_model_path(analytics_dir: Path) -> Path:
+    return analytics_dir / "global" / GLOBAL_THEME_MODEL_FILENAME
+
+
+def save_theme_model(model: ThemeModel, path: Path) -> None:
+    import pickle
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("wb") as f:
+        pickle.dump(model, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+
+def load_theme_model(path: Path) -> ThemeModel:
+    import pickle
+
+    with path.open("rb") as f:
+        return pickle.load(f)
+
+
+def canonical_topic_labels(model: ThemeModel) -> list[str]:
+    """全局模型各 topic 的语义标签列；有 pinned 时保持 T0…T(K-1) 顺序。"""
+    if getattr(model, "pinned_labels", None) and len(model.pinned_labels) >= model.num_topics:
+        labels = [model.pinned_labels[i] for i in range(model.num_topics)]
+    else:
+        if not model._label_cache:
+            model.assign_unique_labels()
+        labels = []
+        seen: set[str] = set()
+        for tid in range(model.num_topics):
+            lab = model.topic_label(tid)
+            if lab not in seen:
+                labels.append(lab)
+                seen.add(lab)
+    if FALLBACK_LABEL in labels:
+        labels = [lab for lab in labels if lab != FALLBACK_LABEL] + [FALLBACK_LABEL]
+    return labels
+
+
+def global_topic_label_entries(model: ThemeModel) -> list[dict]:
+    """供 theme_patterns.json 的全局列定义（按语义标签，非 T0/T1 槽位）。"""
+    canonical = canonical_topic_labels(model)
+    label_kw: dict[str, list[str]] = {}
+    for tid in range(model.num_topics):
+        lab = model.topic_label(tid)
+        if lab not in label_kw:
+            words = model.topic_words.get(tid, [])
+            label_kw[lab] = [w for w, _ in words[:10]]
+    return [
+        {"topic_id": i, "label": lab, "keywords": label_kw.get(lab, [])}
+        for i, lab in enumerate(canonical)
+    ]
+
+
 def train_theme_model(
     plays: list[dict],
     num_topics: int = 8,
     random_seed: int = 42,
 ) -> ThemeModel:
+    """训练主题模型。
+
+    - 全库（>10 部）：theme.json 锚定的 keyword 聚类，T0～T7 语义稳定、热力图可区分。
+    - 单剧/小样本：NMF（失败时回退 keyword）。
+    """
     num_topics = adaptive_num_topics(plays, num_topics)
-    try:
-        model = _train_nmf_model(plays, num_topics, random_seed)
-    except ImportError:
-        model = _train_keyword_model(plays, num_topics, random_seed)
-    except (ValueError, FloatingPointError):
-        model = _train_keyword_model(plays, num_topics, random_seed)
-    model.assign_unique_labels()
+    if len(plays) > 10:
+        model = _train_global_keyword_model(plays, num_topics, random_seed)
+    else:
+        try:
+            model = _train_nmf_model(plays, num_topics, random_seed)
+        except ImportError:
+            model = _train_keyword_model(plays, num_topics, random_seed)
+        except (ValueError, FloatingPointError):
+            model = _train_keyword_model(plays, num_topics, random_seed)
+    if not model.pinned_labels:
+        model.assign_unique_labels()
+    elif not model._label_cache:
+        model._label_cache = dict(model.pinned_labels)
     return model
 
 
@@ -285,9 +425,10 @@ def _train_nmf_model(
 
     num_topics = max(2, min(num_topics, len(docs) - 1))
     min_df = 2 if len(docs) >= 30 else 1
+    max_df = 0.82 if len(plays) > 10 else 0.9
 
     vectorizer = TfidfVectorizer(
-        max_df=0.9,
+        max_df=max_df,
         min_df=min_df,
         max_features=5000,
         sublinear_tf=True,
@@ -298,18 +439,29 @@ def _train_nmf_model(
     if X.shape[1] < num_topics:
         return _train_keyword_model(plays, num_topics, random_seed)
 
+    feature_names = list(vectorizer.get_feature_names_out())
+    use_seeded = len(plays) > 10
+    seeds = _global_seed_topics(num_topics) if use_seeded else []
+
     nmf = NMF(
         n_components=num_topics,
         random_state=random_seed,
-        max_iter=300,
-        init="nndsvd",
+        max_iter=400 if use_seeded else 300,
+        init="custom" if use_seeded else "nndsvd",
         solver="cd",
         beta_loss="frobenius",
     )
     with warnings.catch_warnings():
         warnings.filterwarnings("ignore", category=RuntimeWarning)
         try:
-            W = nmf.fit_transform(X)
+            if use_seeded:
+                H_init = _build_h_init(feature_names, seeds, num_topics, random_seed)
+                W_init = np.random.RandomState(random_seed).uniform(
+                    0.05, 0.15, (X.shape[0], num_topics)
+                )
+                W = nmf.fit_transform(X, W=W_init, H=H_init)
+            else:
+                W = nmf.fit_transform(X)
             H = nmf.components_
         except Exception:
             return _train_keyword_model(plays, num_topics, random_seed)
@@ -322,7 +474,11 @@ def _train_nmf_model(
     model.method = "nmf"
     model._vectorizer = vectorizer
     model._nmf = nmf
-    model.feature_names = list(vectorizer.get_feature_names_out())
+    model.feature_names = feature_names
+    if use_seeded:
+        model.corpus_stopwords = build_corpus_stopwords(plays)
+        model.pinned_labels = {i: seeds[i][0] for i in range(min(num_topics, len(seeds)))}
+        model._label_cache = dict(model.pinned_labels)
 
     for tid in range(num_topics):
         row = H[tid]
@@ -351,6 +507,119 @@ def _seed_topics_from_theme_rules() -> list[tuple[str, list[str]]]:
     return out
 
 
+def _global_seed_topics(num_topics: int) -> list[tuple[str, list[str]]]:
+    """全库 NMF 锚定的 K 个主题种子（顺序固定 = T0…T(K-1)）。"""
+    rules, _, _, _ = _load_label_rules()
+    by_label = {r.label: r for r in rules}
+    out: list[tuple[str, list[str]]] = []
+    for lab in GLOBAL_SEED_LABELS:
+        rule = by_label.get(lab)
+        if not rule:
+            continue
+        seeds = sorted(rule.keywords.keys(), key=lambda w: -rule.keywords[w])[:12]
+        if seeds:
+            out.append((lab, seeds))
+        if len(out) >= num_topics:
+            break
+    if len(out) < num_topics:
+        for rule in rules:
+            if rule.label in {x[0] for x in out}:
+                continue
+            seeds = sorted(rule.keywords.keys(), key=lambda w: -rule.keywords[w])[:12]
+            if seeds:
+                out.append((rule.label, seeds))
+            if len(out) >= num_topics:
+                break
+    return out[:num_topics]
+
+
+def _build_h_init(
+    feature_names: list[str],
+    seeds: list[tuple[str, list[str]]],
+    num_topics: int,
+    random_seed: int,
+):
+    import numpy as np
+
+    n_features = len(feature_names)
+    idx = {f: i for i, f in enumerate(feature_names)}
+    H = np.random.RandomState(random_seed).uniform(0.05, 0.12, (num_topics, n_features))
+    for tid, (_label, words) in enumerate(seeds[:num_topics]):
+        for rank, w in enumerate(words):
+            j = idx.get(w)
+            if j is not None:
+                H[tid, j] = 4.0 + (len(words) - rank) * 0.4
+    return H
+
+
+def train_global_theme_model_from_paths(
+    play_paths: list[Path],
+    num_topics: int = 8,
+    random_seed: int = 42,
+    load_play_fn=None,
+    on_progress=None,
+) -> ThemeModel:
+    """全库主题模型（秒级）：theme.json 种子 + 流式收集角色停用词，不扫全库文本块。"""
+    from datetime import datetime, timezone
+
+    if load_play_fn is None:
+        from ..utils.io import load_play as load_play_fn
+
+    print(f"  收集全库角色/剧名停用词（{len(play_paths)} 部）…", flush=True)
+    corpus_stop = build_corpus_stopwords_from_paths(
+        play_paths, load_play_fn, on_progress=on_progress
+    )
+    print(f"  停用词 {len(corpus_stop)} 个，组装 {num_topics} 个主题种子…", flush=True)
+
+    seeds = _global_seed_topics(num_topics)
+    if not seeds:
+        seeds = _seed_topics_from_theme_rules()[:num_topics] or [
+            ("通用主题", ["主公", "将军", "出兵", "回朝"])
+        ]
+
+    model = ThemeModel(num_topics=len(seeds), random_seed=random_seed)
+    model.trained_at = datetime.now(timezone.utc).isoformat()
+    model.method = "global_keyword"
+    model.corpus_stopwords = corpus_stop
+    model.pinned_labels = {i: seeds[i][0] for i in range(len(seeds))}
+    model._label_cache = dict(model.pinned_labels)
+    for tid, (_label, seed_words) in enumerate(seeds):
+        kws = list(seed_words)[:15]
+        model.topic_words[tid] = [
+            (w, float(len(kws) - i)) for i, w in enumerate(kws)
+        ]
+    model._vectorizer = seeds
+    model._nmf = None
+    return model
+
+
+def _train_global_keyword_model(
+    plays: list[dict], num_topics: int, random_seed: int
+) -> ThemeModel:
+    """兼容入口：已有 play 列表时仍走快速路径（仅 metadata，不 tokenize 块）。"""
+    from datetime import datetime, timezone
+
+    seeds = _global_seed_topics(num_topics)
+    if not seeds:
+        seeds = _seed_topics_from_theme_rules()[:num_topics] or [
+            ("通用主题", ["主公", "将军", "出兵", "回朝"])
+        ]
+    model = ThemeModel(num_topics=len(seeds), random_seed=random_seed)
+    model.trained_at = datetime.now(timezone.utc).isoformat()
+    model.method = "global_keyword"
+    model.corpus_stopwords = build_corpus_stopwords(plays)
+    model.pinned_labels = {i: seeds[i][0] for i in range(len(seeds))}
+    model._label_cache = dict(model.pinned_labels)
+    for tid, (_label, seed_words) in enumerate(seeds):
+        kws = list(seed_words)[:15]
+        model.topic_words[tid] = [
+            (w, float(len(kws) - i)) for i, w in enumerate(kws)
+        ]
+    model._vectorizer = seeds
+    model._nmf = None
+    return model
+
+
 def _train_keyword_model(
     plays: list[dict], num_topics: int, random_seed: int
 ) -> ThemeModel:
@@ -361,19 +630,29 @@ def _train_keyword_model(
     model.trained_at = datetime.now(timezone.utc).isoformat()
     model.method = "keyword"
 
-    all_seeds = _seed_topics_from_theme_rules()
-    seeds = all_seeds[:num_topics]
+    if len(plays) > 10:
+        seeds = _global_seed_topics(num_topics)
+        model.corpus_stopwords = build_corpus_stopwords(plays)
+    else:
+        seeds = _seed_topics_from_theme_rules()[:num_topics]
+    if not seeds:
+        seeds = _seed_topics_from_theme_rules()[:num_topics] or [("通用主题", ["主公", "将军"])]
     model.num_topics = len(seeds)
+    if len(plays) > 10:
+        model.pinned_labels = {i: seeds[i][0] for i in range(len(seeds))}
+        model._label_cache = dict(model.pinned_labels)
     corpus_words: Counter[str] = Counter()
     topic_counters: list[Counter[str]] = [Counter() for _ in seeds]
 
     for play in plays:
-        extra_stop = build_dynamic_stopwords(play)
+        extra_stop = build_dynamic_stopwords(play) | model.corpus_stopwords
         for b in iter_text_blocks(play):
             words = tokenize(b["text"], extra_stop)
             corpus_words.update(words)
-            scores = [_seed_score(words, seed) for _label, seed in seeds]
+            scores = _topic_seed_scores(words, seeds)
             tid = max(range(len(scores)), key=lambda i: scores[i])
+            if scores[tid] <= 0:
+                continue
             topic_counters[tid].update(words)
 
     for tid, (_label, seed) in enumerate(seeds):
@@ -387,9 +666,10 @@ def _train_keyword_model(
 
 
 def _collect_docs(plays: list[dict]) -> list[str]:
+    corpus_stop = build_corpus_stopwords(plays)
     docs: list[str] = []
     for play in plays:
-        extra_stop = build_dynamic_stopwords(play)
+        extra_stop = build_dynamic_stopwords(play) | corpus_stop
         blocks = iter_text_blocks(play)
         for b in blocks:
             tok = tokenize(b["text"], extra_stop)
@@ -399,6 +679,23 @@ def _collect_docs(plays: list[dict]) -> list[str]:
             if doc:
                 docs.append(" ".join(tokenize(doc, extra_stop)))
     return docs
+
+
+def _topic_seed_scores(
+    words: list[str], seeds: list[tuple[str, list[str]]]
+) -> list[float]:
+    """按 theme.json 权重为各主题种子打分（global/keyword 模型共用）。"""
+    rules, _, _, _ = _load_label_rules()
+    by_label = {r.label: r for r in rules}
+    scores: list[float] = []
+    for label, seed in seeds:
+        rule = by_label.get(label)
+        if rule:
+            s, _ = _score_label_fuzzy(rule, words)
+            scores.append(s)
+        else:
+            scores.append(_seed_score(words, seed))
+    return scores
 
 
 def _seed_score(words: list[str], seed: list[str]) -> float:

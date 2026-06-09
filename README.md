@@ -44,3 +44,8 @@ python scripts/sync_frontend_data.py
 cd frontend
 npm run dev
 ```
+
+## Github Pages 更新
+```bash
+python scripts/build_demo_data.py && python scripts/copy_demo_to_public.py
+```

@@ -104,15 +104,6 @@ def _assign_template(props: dict[str, float]) -> tuple[str, str]:
     return "classic_five_act", "起承转合型"
 
 
-def _play_weights_vector(themes: dict, k: int) -> list[float]:
-    weights = [0.0] * k
-    for t in themes.get("topics") or []:
-        tid = int(t["topic_id"])
-        if 0 <= tid < k:
-            weights[tid] = float(t.get("weight") or 0.0)
-    return [round(w, 4) for w in weights]
-
-
 def aggregate_role_analysis(
     plays_dir: Path,
     catalog_idx: dict[str, dict],
@@ -276,13 +267,68 @@ def aggregate_network_compare(
     }
 
 
+def _play_label_weights(themes: dict) -> dict[str, float]:
+    """按语义标签汇总单剧主题权重（合并后 topics 已按 label 去重）。"""
+    from ..theme.model import FALLBACK_LABEL
+
+    out: dict[str, float] = {}
+    for t in themes.get("topics") or []:
+        label = str(t.get("label") or FALLBACK_LABEL)
+        out[label] = out.get(label, 0.0) + float(t.get("weight") or 0.0)
+    return out
+
+
+def _weights_for_labels(label_weights: dict[str, float], canonical: list[str]) -> list[float]:
+    return [round(label_weights.get(lab, 0.0), 4) for lab in canonical]
+
+
+def _infer_canonical_from_corpus(
+    plays_dir: Path,
+) -> tuple[list[str], list[dict]]:
+    """无全局模型时，从各剧 themes 按标签频次推断热力图列。"""
+    from ..theme.model import FALLBACK_LABEL
+
+    label_mass: Counter[str] = Counter()
+    keyword_votes: dict[str, Counter[str]] = defaultdict(Counter)
+    for play_dir in sorted(plays_dir.iterdir()):
+        if not play_dir.is_dir():
+            continue
+        themes = _load_json(play_dir / "themes.json")
+        if not themes:
+            continue
+        for t in themes.get("topics") or []:
+            lab = str(t.get("label") or FALLBACK_LABEL)
+            label_mass[lab] += float(t.get("weight") or 0.0)
+            for kw in (t.get("keywords") or [])[:12]:
+                keyword_votes[lab][str(kw)] += 1
+    ordered = [lab for lab, _ in label_mass.most_common() if lab != FALLBACK_LABEL]
+    if FALLBACK_LABEL in label_mass:
+        ordered.append(FALLBACK_LABEL)
+    topic_labels = [
+        {
+            "topic_id": i,
+            "label": lab,
+            "keywords": [w for w, _ in keyword_votes[lab].most_common(10)],
+        }
+        for i, lab in enumerate(ordered)
+    ]
+    return ordered, topic_labels
+
+
 def aggregate_theme_patterns(
     plays_dir: Path,
     catalog_idx: dict[str, dict],
+    theme_model=None,
 ) -> dict:
-    k = 8
-    label_votes: dict[int, Counter[str]] = defaultdict(Counter)
-    keyword_votes: dict[int, Counter[str]] = defaultdict(Counter)
+    from ..theme.model import FALLBACK_LABEL, global_topic_label_entries
+
+    if theme_model is not None:
+        topic_labels = global_topic_label_entries(theme_model)
+        canonical_labels = [e["label"] for e in topic_labels]
+    else:
+        canonical_labels, topic_labels = _infer_canonical_from_corpus(plays_dir)
+
+    label_to_idx = {lab: i for i, lab in enumerate(canonical_labels)}
     play_rows: list[dict] = []
     co_counts: Counter[tuple[int, int]] = Counter()
     pattern_plays: dict[frozenset[str], set[str]] = defaultdict(set)
@@ -297,47 +343,45 @@ def aggregate_theme_patterns(
         n_plays += 1
         sid = themes["script_id"]
         meta = catalog_idx.get(sid, {})
-        model_k = (themes.get("model") or {}).get("num_topics_global")
-        if model_k:
-            k = max(k, int(model_k))
 
-        for t in themes.get("topics") or []:
-            tid = int(t["topic_id"])
-            label_votes[tid][t.get("label", f"T{tid}")] += 1
-            for kw in (t.get("keywords") or [])[:12]:
-                keyword_votes[tid][kw] += 1
+        label_weights = _play_label_weights(themes)
+        for lab, w in label_weights.items():
+            if lab not in label_to_idx and w >= TOPIC_CO_THRESHOLD:
+                label_to_idx[lab] = len(canonical_labels)
+                canonical_labels.append(lab)
+                topic_labels.append({
+                    "topic_id": label_to_idx[lab],
+                    "label": lab,
+                    "keywords": [],
+                })
 
-        weights = _play_weights_vector(themes, k)
         play_rows.append({
             "script_id": sid,
             "title": themes.get("title") or meta.get("title"),
             "collection_id": meta.get("collection_id"),
             "genre": normalize_genre((meta.get("tags") or {}).get("genre_inferred")),
-            "weights": weights,
+            "weights": _weights_for_labels(label_weights, canonical_labels),
         })
 
-        active = [
-            int(t["topic_id"])
+        active_labels = [
+            str(t.get("label") or FALLBACK_LABEL)
             for t in themes.get("topics") or []
             if float(t.get("weight") or 0) >= TOPIC_CO_THRESHOLD
         ]
-        for a, b in combinations(sorted(set(active)), 2):
+        active_indices = sorted({
+            label_to_idx[lab] for lab in active_labels if lab in label_to_idx
+        })
+        for a, b in combinations(active_indices, 2):
             co_counts[(a, b)] += 1
 
-        active_labels = sorted({
-            t.get("label", f"T{t['topic_id']}")
+        pattern_labels = sorted({
+            str(t.get("label") or FALLBACK_LABEL)
             for t in themes.get("topics") or []
             if float(t.get("weight") or 0) >= PATTERN_THRESHOLD
         })
-        for i in range(len(active_labels)):
-            for j in range(i + 1, len(active_labels)):
-                pattern_plays[frozenset({active_labels[i], active_labels[j]})].add(sid)
-
-    topic_labels = []
-    for tid in range(k):
-        label = label_votes[tid].most_common(1)[0][0] if label_votes[tid] else f"主题{tid}"
-        keywords = [w for w, _ in keyword_votes[tid].most_common(10)]
-        topic_labels.append({"topic_id": tid, "label": label, "keywords": keywords})
+        for i in range(len(pattern_labels)):
+            for j in range(i + 1, len(pattern_labels)):
+                pattern_plays[frozenset({pattern_labels[i], pattern_labels[j]})].add(sid)
 
     topic_cooccurrence = [
         {"topic_a": a, "topic_b": b, "count": c}
@@ -509,6 +553,8 @@ def aggregate_theme_quality_report(
 
 def run_global_aggregation(cfg) -> dict[str, dict]:
     """聚合 artifacts/analytics/plays → global/*.json，返回各产出文档。"""
+    from ..theme.model import global_theme_model_path, load_theme_model
+
     plays_dir = cfg.analytics_dir / "plays"
     global_dir = cfg.analytics_dir / "global"
     global_dir.mkdir(parents=True, exist_ok=True)
@@ -516,10 +562,20 @@ def run_global_aggregation(cfg) -> dict[str, dict]:
     catalog = load_catalog(cfg.catalog_path)
     catalog_idx = _catalog_index(catalog)
 
+    theme_model = None
+    model_path = global_theme_model_path(cfg.analytics_dir)
+    if model_path.is_file():
+        try:
+            theme_model = load_theme_model(model_path)
+        except Exception:
+            theme_model = None
+
     outputs = {
         "role_analysis.json": aggregate_role_analysis(plays_dir, catalog_idx),
         "network_compare.json": aggregate_network_compare(plays_dir, catalog_idx),
-        "theme_patterns.json": aggregate_theme_patterns(plays_dir, catalog_idx),
+        "theme_patterns.json": aggregate_theme_patterns(
+            plays_dir, catalog_idx, theme_model=theme_model
+        ),
         "theme_quality.json": aggregate_theme_quality_report(plays_dir, catalog_idx),
         "narrative_templates.json": aggregate_narrative_templates(plays_dir, catalog_idx),
     }

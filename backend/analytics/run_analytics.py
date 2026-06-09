@@ -21,7 +21,12 @@ from backend.analytics.network.build_graph import analyze_play_network
 from backend.analytics.role.infer import analyze_play_role
 from backend.analytics.theme.export import build_play_themes
 from backend.analytics.theme.llm import build_play_themes_llm
-from backend.analytics.theme.model import model_from_themes, train_theme_model
+from backend.analytics.theme.model import (
+    global_theme_model_path,
+    model_from_themes,
+    save_theme_model,
+    train_global_theme_model_from_paths,
+)
 from backend.analytics.utils.io import iter_play_paths, load_play, save_json
 from backend.analytics.utils.jieba_env import configure_jieba
 from backend.analytics.utils.schema import validate_analytics
@@ -29,6 +34,7 @@ from backend.analytics.workers import (
     analyze_play_task,
     integrated_only_task,
     theme_quality_task,
+    themes_only_task,
 )
 from backend.utils.parallel import resolve_workers, run_parallel
 
@@ -96,7 +102,7 @@ def run_play_analytics(
 
 def _analytics_cfg_payload(cfg: AnalyticsConfig, validate: bool) -> dict:
     llm = cfg.llm_theme
-    return {
+    payload = {
         "validate": validate,
         "num_topics": cfg.num_topics,
         "random_seed": cfg.random_seed,
@@ -114,6 +120,71 @@ def _analytics_cfg_payload(cfg: AnalyticsConfig, validate: bool) -> dict:
             "timeout_sec": llm.timeout_sec,
         },
     }
+    model_path = global_theme_model_path(cfg.analytics_dir)
+    if model_path.is_file():
+        payload["global_theme_model_path"] = str(model_path)
+    return payload
+
+
+def _train_global_theme_model(cfg: AnalyticsConfig) -> Path | None:
+    """在全库 cleaned 语料上训练一次全局主题模型（theme.json 锚定），供各 worker 复用。"""
+    if cfg.llm_theme.enabled:
+        return None
+    paths = [path for _sid, path in iter_play_paths(cfg.cleaned_dir)]
+    if not paths:
+        print("WARN: 无可用剧本，跳过全局主题模型训练", file=sys.stderr)
+        return None
+
+    def _prog(done: int, total: int) -> None:
+        if done % 300 == 0 or done == total:
+            print(f"  … 停用词 {done}/{total}", flush=True)
+
+    print(f"全库主题模型训练：{len(paths)} 部剧本，K={cfg.num_topics}…", flush=True)
+    model = train_global_theme_model_from_paths(
+        paths,
+        cfg.num_topics,
+        cfg.random_seed,
+        load_play_fn=load_play,
+        on_progress=_prog,
+    )
+    print(f"  方法: {model.method}", flush=True)
+    out_path = global_theme_model_path(cfg.analytics_dir)
+    save_theme_model(model, out_path)
+    fallback = sum(
+        1 for i in range(model.num_topics) if model.topic_label(i) == "其他情节"
+    )
+    print(f"  全局主题模型 → {out_path.name}（{fallback}/{model.num_topics} 个 fallback）")
+    for tid in range(model.num_topics):
+        words = [w for w, _ in model.topic_words.get(tid, [])[:6]]
+        print(f"    T{tid} {model.topic_label(tid)}: {', '.join(words)}")
+    return out_path
+
+
+def run_themes_only(
+    cfg: AnalyticsConfig,
+    script_ids: list[str],
+    validate: bool,
+    workers: int,
+) -> tuple[int, int]:
+    _train_global_theme_model(cfg)
+    w = resolve_workers(workers)
+    print(f"并行进程数: {w}，重算 themes.json（{len(script_ids)} 剧）…", flush=True)
+    cfg_payload = _analytics_cfg_payload(cfg, validate)
+    tasks = [
+        {"root": str(cfg.root), "script_id": sid, "cfg": cfg_payload}
+        for sid in script_ids
+    ]
+
+    def _progress(done: int, total: int, _result: dict) -> None:
+        if done % 100 == 0 or done == total:
+            print(f"  … 已完成 {done}/{total}", flush=True)
+
+    results = run_parallel(themes_only_task, tasks, workers, progress=_progress)
+    ok = sum(1 for r in results if r.get("ok"))
+    for r in results:
+        if not r.get("ok") and r.get("log"):
+            print(r["log"], file=sys.stderr)
+    return ok, len(script_ids)
 
 
 def _run_plays_parallel(
@@ -257,6 +328,16 @@ def main() -> int:
         help="为已有 themes.json 回填 quality 并聚合 global/theme_quality.json",
     )
     parser.add_argument(
+        "--themes-only",
+        action="store_true",
+        help="用 global/theme_model.pkl 重算全部 plays/*/themes.json 并聚合 global",
+    )
+    parser.add_argument(
+        "--train-global-theme-only",
+        action="store_true",
+        help="仅训练并保存 global/theme_model.pkl，不重跑单剧分析",
+    )
+    parser.add_argument(
         "--workers",
         type=int,
         default=None,
@@ -283,6 +364,27 @@ def main() -> int:
         if code != 0:
             return code
         print("聚合全局主题质量…")
+        return run_global_exports(cfg, validate)
+
+    if args.train_global_theme_only:
+        _train_global_theme_model(cfg)
+        return 0
+
+    if args.themes_only:
+        if args.all:
+            script_ids = [sid for sid, _ in iter_play_paths(cfg.cleaned_dir)]
+        elif args.script_ids:
+            script_ids = args.script_ids
+        else:
+            script_ids = sorted(
+                p.name for p in (cfg.analytics_dir / "plays").iterdir() if p.is_dir()
+            )
+        if not script_ids:
+            print("未找到可重算主题的剧本。", file=sys.stderr)
+            return 1
+        ok, total = run_themes_only(cfg, script_ids, validate, workers)
+        print(f"主题重算完成：{ok}/{total} 剧")
+        print("聚合全局分析…")
         return run_global_exports(cfg, validate)
 
     if args.global_only:
@@ -338,6 +440,8 @@ def main() -> int:
 
     if cfg.llm_theme.enabled:
         print(f"主题分析: LLM 模式（{cfg.llm_theme.model}，K={cfg.llm_theme.num_topics}）")
+    else:
+        _train_global_theme_model(cfg)
 
     ok, total = _run_plays_parallel(valid_ids, cfg, validate, workers)
     print(f"完成：{ok}/{total} 剧 → {cfg.analytics_dir}/plays")
