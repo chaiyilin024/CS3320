@@ -6,7 +6,7 @@ from pathlib import Path
 _CONFIGURED = False
 _CONFIGURED_ROOT: Path | None = None
 
-# 默认用户词典：随项目分发的京剧专有词典
+# Default user dictionary: Peking-opera-specific lexicon shipped with the project
 DEFAULT_USER_DICTS: tuple[Path, ...] = (
     Path(__file__).resolve().parent.parent / "theme" / "dict.txt",
 )
@@ -20,9 +20,11 @@ def configure_jieba(
     root: Path | None = None,
     user_dicts: tuple[Path, ...] | None = None,
 ) -> Path:
-    """将 jieba 词典缓存固定到本仓库 artifacts/cache/jieba/，并加载京剧专有词典。
+    """Pin jieba dict cache to artifacts/cache/jieba/ in this repo and load the opera lexicon.
 
-    user_dicts: 传入额外用户词典文件路径；默认加载 ``DEFAULT_USER_DICTS``。
+    user_dicts: optional extra user-dict paths; defaults to ``DEFAULT_USER_DICTS``.
+
+    Returns the cache file path.
     """
     global _CONFIGURED, _CONFIGURED_ROOT
     root = (root or Path(__file__).resolve().parents[3]).resolve()
@@ -44,7 +46,7 @@ def configure_jieba(
                 _load_userdict_skipping_comments(jieba, path)
             except (OSError, UnicodeDecodeError) as exc:
                 logging.getLogger(__name__).warning(
-                    "加载 jieba 用户词典失败 %s: %s", path, exc
+                    "Failed to load jieba user dict %s: %s", path, exc
                 )
 
     _CONFIGURED = True
@@ -57,7 +59,7 @@ def ensure_jieba(root: Path | None = None) -> None:
 
 
 def _load_userdict_skipping_comments(jieba_mod, path: Path) -> None:
-    """跳过以 ;/# 开头的注释行与空行，再交给 jieba.load_userdict 解析。"""
+    """Skip comment lines starting with ; or # and blank lines, then parse via jieba.load_userdict."""
     import io
 
     buf = io.StringIO()

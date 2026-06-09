@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""将 cleaned + analytics 产物复制到 frontend/public/data（Windows / macOS / Linux）。"""
+"""Copy cleaned + analytics artifacts to frontend/public/data (Windows / macOS / Linux)."""
 from __future__ import annotations
 
 import shutil

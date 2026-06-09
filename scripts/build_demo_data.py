@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""从全库产物裁剪约 10 部示例剧本，生成 demo-data/ 供 GitHub Pages 部署。"""
+"""Trim ~10 sample plays from full artifacts into demo-data/ for GitHub Pages deployment."""
 from __future__ import annotations
 
 import json

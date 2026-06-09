@@ -13,12 +13,12 @@ INVALID_SPEAKER_RE = re.compile(
 )
 VALID_CHARACTER_NAME_RE = re.compile(r"^[\u4e00-\u9fff·]{2,4}$")
 
-# 唱词/舞台说明误识为「人名」的片段
+# Lyric/stage-direction fragments mis-parsed as "character names"
 NAME_FRAGMENT_RE = re.compile(
     r"(言来|听端详|龙套|下场门|套同|排队|两边|催船|引.+同|同抄|同上场|白龙)"
 )
 
-# 非人物名的语气/结构词
+# Non-name mood/structure words
 NOT_A_PERSON = frozenset(
     {
         "正是",
@@ -37,7 +37,7 @@ NOT_A_PERSON = frozenset(
     }
 )
 
-# lyf：敬语类短语，不应作为角色名（如"启禀丞相"）
+# lyf: honorific phrases that must not become character names (e.g. "启禀丞相")
 NON_NAME_PREFIXES = (
     "启禀",
     "参见",
@@ -79,7 +79,7 @@ def is_noise_line(line: str) -> bool:
 
 
 def is_valid_character_name(name: str) -> bool:
-    """合法京剧人物名：2–4 个汉字，非唱词/舞台碎片。"""
+    """Valid Peking opera character name: 2–4 Han characters, not lyric/stage fragments."""
     n = name.strip()
     if not n or n in NOT_A_PERSON:
         return False
@@ -95,7 +95,7 @@ def is_valid_character_name(name: str) -> bool:
         return False
     if n.endswith("同") and n not in {"同人"}:
         return False
-    # 排除敬语类短语（如"启禀丞相"不应作为角色名）
+    # Exclude honorific phrases (e.g. "启禀丞相" must not be a character name)
     if any(n.startswith(prefix) for prefix in NON_NAME_PREFIXES):
         return False
     if not VALID_CHARACTER_NAME_RE.match(n):
@@ -107,14 +107,14 @@ def is_hangdang_word(text: str) -> bool:
     return text.strip() in HANGDANG_WORDS
 
 
-# 戏考 PDF 每页页眉，如：中国京剧戏考 《黄鹤楼》 2
+# Xiqu PDF page header, e.g.: 中国京剧戏考 《黄鹤楼》 2
 PAGE_HEADER_LINE_RE = re.compile(
     r"^中国京剧戏考\s*[《《]([^》》]+)[》》]\s*\d+\s*$"
 )
 PAGE_HEADER_PREFIX_RE = re.compile(
     r"^中国京剧戏考\s*[《《][^》》]+[》》]\s*\d+"
 )
-# 页眉后与剧名粘连，如：1《黄鹤楼》
+# Page number glued to title after header, e.g.: 1《黄鹤楼》
 PAGE_HEADER_TITLE_TAIL_RE = re.compile(r"^《[^》》]{1,20}》\s*\d*")
 
 
@@ -128,7 +128,7 @@ def is_page_header_line(line: str) -> bool:
 
 
 def strip_page_header_prefix(text: str) -> str:
-    """去掉行首页眉；若整行仅为页眉则返回空串。"""
+    """Strip line-leading header; return empty string if the line is header-only."""
     s = text.strip()
     if is_page_header_line(s):
         return ""

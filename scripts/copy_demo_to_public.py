@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""将 demo-data/ 复制到 frontend/public/data（本地开发与 Pages 构建）。"""
+"""Copy demo-data/ to frontend/public/data (local dev and Pages build)."""
 from __future__ import annotations
 
 import shutil

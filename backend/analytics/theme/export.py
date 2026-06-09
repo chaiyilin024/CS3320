@@ -5,7 +5,7 @@ from collections import defaultdict
 from .model import ThemeModel, is_metadata_topic
 from .quality import attach_quality
 
-# 权重低于此值的 topic 视为噪音
+# Topics below this weight are treated as noise
 NOISE_WEIGHT_THRESHOLD = 0.03
 MAX_KEYWORDS = 15
 MAX_REP_BLOCKS_PER_TOPIC = 2
@@ -30,7 +30,7 @@ def build_play_themes(play: dict, model: ThemeModel) -> dict:
             item["keyword_weights"] = kw_weights
         raw_topics.append(item)
 
-    # 过滤低权重与文献噪声 topic，保留至少 2 个以满足 schema
+    # Drop low-weight and bibliographic noise topics; keep at least 2 for schema
     survivors = [
         t
         for t in raw_topics
@@ -50,17 +50,17 @@ def build_play_themes(play: dict, model: ThemeModel) -> dict:
         )[: max(2, len(candidates))]
     kept_ids = {t["topic_id"] for t in survivors}
 
-    # 重归一化保留下来的 topic 权重，保证 topic_composition 和 ≈ 1
+    # Renormalize retained topic weights so topic_composition sums ≈ 1
     kept_comp = [composition[t["topic_id"]] for t in survivors]
     s = sum(kept_comp) or 1.0
     comp = [round(w / s, 4) for w in kept_comp]
     for t, w in zip(survivors, comp):
         t["weight"] = w
 
-    # 同一 label 的 NMF 子主题合并为一条（权重相加、关键词按权重去重取 Top）
+    # Merge NMF subtopics with the same label (sum weights, dedupe keywords by weight, take Top)
     merged_topics, old_to_new = _merge_topics_by_label(survivors)
     comp = [t["weight"] for t in merged_topics]
-    # 修正四舍五入误差，保证 composition 之和为 1
+    # Fix rounding error so composition sums to 1
     drift = 1.0 - sum(comp)
     if merged_topics and abs(drift) > 1e-6:
         merged_topics[0]["weight"] = round(merged_topics[0]["weight"] + drift, 4)
@@ -87,7 +87,7 @@ def build_play_themes(play: dict, model: ThemeModel) -> dict:
 def _merge_topics_by_label(
     topics: list[dict],
 ) -> tuple[list[dict], dict[int, int]]:
-    """按 label 合并 topic；返回 (合并后列表, 原 topic_id → 新 topic_id)。"""
+    """Merge topics by label; return (merged list, old topic_id → new topic_id)."""
     if not topics:
         return [], {}
 
@@ -172,7 +172,7 @@ def _representative_blocks(
 
 
 def _context_snippet(blocks: list[dict], center_index: int, window: int = 1) -> str:
-    """取 center_index ±window 的文本块拼接，去掉舞台说明纯标记。"""
+    """Concatenate text blocks at center_index ± window; strip stage-direction-only markers."""
     if not blocks:
         return ""
     pieces: list[str] = []

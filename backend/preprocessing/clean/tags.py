@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import re
 
-# 京剧题材分类规则（关键词越精准，匹配越稳定）
+# Peking opera genre classification rules (more precise keywords → more stable matching)
 GENRE_RULES: list[tuple[str, list[str]]] = [
-    # 历史正剧（重大历史事件、王朝兴衰、名将名臣）
+    # Historical drama (major events, dynastic rise/fall, famous ministers/generals)
     ("历史剧", [
         "三国", "汉", "唐", "宋", "明", "清", "秦", "隋", "元",
         "始皇", "项羽", "刘邦", "曹操", "刘备", "诸葛亮", "关羽", "张飞",
@@ -12,38 +12,38 @@ GENRE_RULES: list[tuple[str, list[str]]] = [
         "康熙", "乾隆", "雍正", "杨家将", "薛仁贵", "成吉思汗"
     ]),
     
-    # 断案、刑狱、清官题材
+    # Court cases, criminal justice, upright officials
     ("公案剧", [
         "判案", "衙门", "包公", "包拯", "包拯", "展昭", "王朝", "马汉",
         "状告", "升堂", "断案", "冤案", "刑狱", "清官", "海瑞", "狄仁杰"
     ]),
     
-    # 神仙、妖魔、奇幻、天庭地府
+    # Immortals, demons, fantasy, heaven/underworld
     ("神话剧", [
         "天庭", "神仙", "玉帝", "孙悟空", "哪吒", "妖魔", "妖怪",
         "龙王", "观音", "如来", "地府", "阎罗", "八仙", "二郎神", "牛魔王"
     ]),
     
-    # 爱情、婚姻、相思、悲欢离合
+    # Love, marriage, longing, joy and sorrow
     ("爱情剧", [
         "情", "婚", "娶", "嫁", "相思", "恩爱", "离别", "佳人",
         "才子", "洞房", "鸳鸯", "西厢", "牡丹亭", "断桥", "白蛇"
     ]),
     
-    # 家庭伦理、母子、孝悌、婆媳、宗族
+    # Family ethics: mother/son, filial piety, in-laws, clans
     ("家庭剧", [
         "家", "母", "子", "孝", "婆媳", "父子", "兄弟", "亲情",
         "家规", "宗族", "慈母", "孝子", "团圆", "分家"
     ]),
     
-    # 新增：侠义武侠（绿林、侠客、义士、劫富济贫）
+    # Chivalry / martial heroes (outlaws, knights-errant, rob the rich to aid the poor)
     ("侠义剧", [
         "侠", "义", "盗", "劫", "绿林", "好汉", "武松", "林冲", "鲁智深",
         "江湖", "剑客", "刀客", "忠义", "除暴", "安良"
     ]),
 ]
 
-# 京剧朝代/时代背景规则（精准匹配时代）
+# Peking opera dynasty/era background rules (precise era matching)
 ERA_RULES: list[tuple[str, list[str]]] = [
     ("清代", [
         "清朝", "康熙", "乾隆", "雍正", "慈禧", "李鸿章",
@@ -68,7 +68,7 @@ ERA_RULES: list[tuple[str, list[str]]] = [
     ]),
     ("汉代", ["西汉", "东汉", "刘邦", "项羽", "韩信", "张良", "萧何"]),
     ("秦代", ["始皇", "嬴政", "李斯", "蒙恬"]),
-    # 新增：古代/无明确朝代（神话、虚构）
+    # Ancient / no explicit dynasty (myth, fiction)
     ("神话", ["神仙", "天庭", "妖魔", "八仙", "白蛇", "哪吒"])
 ]
 

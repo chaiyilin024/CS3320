@@ -1,4 +1,4 @@
-"""预处理逻辑单元测试（不依赖 PDF）。"""
+"""Preprocessing logic unit tests (no PDF dependency)."""
 from __future__ import annotations
 
 import sys
@@ -70,12 +70,12 @@ def test_aria_continuation_and_board_cue_split():
         source_pdf="01001012_黄鹤楼.pdf",
     )
     blocks = play["blocks"]
-  # 刘备对白不应含西皮原板
+  # Liu Bei dialogue should not contain xipi yuanban
     liu_bai = [b for b in blocks if b.get("speaker_id") == "c_刘备" and b["type"] == "dialogue"]
     assert liu_bai
     assert "西皮原板" not in liu_bai[0]["text"]
     assert "先生，" in liu_bai[0]["text"] or liu_bai[0]["text"].startswith("先生")
-    # 唱词续行继承诸葛亮
+    # Aria continuation lines inherit Zhuge Liang as speaker
     zhuge_aria = [
         b
         for b in blocks

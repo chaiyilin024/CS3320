@@ -1,4 +1,4 @@
-"""LLM 主题模块单元测试（不调用真实 API）。"""
+"""LLM theme module unit tests (no real API calls)."""
 from __future__ import annotations
 
 import sys

@@ -22,7 +22,7 @@ def extract_pdf_pages(pdf_path: Path) -> ExtractResult:
         import pdfplumber
     except ImportError as exc:
         raise ImportError(
-            "请安装 pdfplumber: pip install -r backend/requirements.txt"
+            "Install pdfplumber: pip install -r backend/requirements.txt"
         ) from exc
 
     pages: list[str] = []

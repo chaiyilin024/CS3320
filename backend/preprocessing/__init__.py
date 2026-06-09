@@ -1,4 +1,4 @@
-"""京剧剧本 PDF 预处理流水线。"""
+"""Peking opera script PDF preprocessing pipeline."""
 
 from .clean.pipeline import process_text_to_play
 

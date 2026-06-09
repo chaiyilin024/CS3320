@@ -1,4 +1,4 @@
-"""可选：调用 OpenAI 兼容 API，从 cleaned play 抽样文本生成 themes.json。"""
+"""Optional: call OpenAI-compatible API to generate themes.json from cleaned play text samples."""
 from __future__ import annotations
 
 import json
@@ -68,7 +68,7 @@ class LlmThemeConfig:
 
 
 def sample_play_excerpt(play: dict, cfg: LlmThemeConfig) -> tuple[str, set[str]]:
-    """从 cleaned play 抽取带 block_id 的台词/唱段样本。"""
+    """Sample dialogue/aria blocks with block_id from a cleaned play."""
     lines: list[str] = []
     valid_ids: set[str] = set()
     chars = {c["character_id"]: c["name"] for c in play.get("characters") or []}
@@ -261,7 +261,7 @@ def normalize_llm_themes(
 def _fallback_representative_blocks(
     play: dict, topics: list[dict]
 ) -> list[dict]:
-    """LLM 未给证据块时，用关键词在正文块中粗匹配。"""
+    """When LLM omits evidence blocks, roughly match keywords in body text blocks."""
     reps: list[dict] = []
     blocks = [
         b

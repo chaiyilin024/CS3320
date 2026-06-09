@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""预处理流水线入口。
+"""Preprocessing pipeline entry point.
 
-示例:
+Examples:
   python backend/preprocessing/run_pipeline.py --pdf example/01001012_黄鹤楼.pdf
   python backend/preprocessing/run_pipeline.py --zip data/京剧剧本/01000000.zip --limit 5
   python backend/preprocessing/run_pipeline.py --config configs/pipeline.yaml
@@ -13,7 +13,7 @@ import argparse
 import sys
 from pathlib import Path
 
-# 允许直接运行: python backend/preprocessing/run_pipeline.py
+# Allow direct run: python backend/preprocessing/run_pipeline.py
 _ROOT = Path(__file__).resolve().parents[2]
 if str(_ROOT) not in sys.path:
     sys.path.insert(0, str(_ROOT))
@@ -46,7 +46,7 @@ def _run_sources(
     if not sources:
         return 0
     w = resolve_workers(workers)
-    print(f"并行进程数: {w}，待处理 {len(sources)} 个剧本 → {cfg.output_cleaned}")
+    print(f"Workers: {w}, processing {len(sources)} plays → {cfg.output_cleaned}")
     payload = _cfg_payload(cfg, validate=validate)
     tasks = [
         {"source": source_to_payload(s), "cfg": payload, "collections": collections}
@@ -55,7 +55,7 @@ def _run_sources(
 
     def _progress(done: int, total: int, _result: dict) -> None:
         if done % 100 == 0 or done == total:
-            print(f"  … 已完成 {done}/{total}")
+            print(f"  … done {done}/{total}")
 
     results = run_parallel(preprocess_source_task, tasks, workers, progress=_progress)
     ok = 0
@@ -86,7 +86,7 @@ def run_from_config(cfg: PipelineConfig, *, catalog_only: bool = False, workers:
             schema_version=cfg.schema_version,
             parse_version=cfg.parse_version,
         )
-        print(f"catalog 已更新: {cfg.output_cleaned / 'catalog.json'}")
+        print(f"Catalog updated: {cfg.output_cleaned / 'catalog.json'}")
         return
 
     sources: list[PdfSource] = []
@@ -99,7 +99,7 @@ def run_from_config(cfg: PipelineConfig, *, catalog_only: bool = False, workers:
     for zname in zip_names:
         zip_path = cfg.data_root / zname
         if not zip_path.exists():
-            print(f"跳过不存在的 zip: {zip_path}")
+            print(f"Skipping missing zip: {zip_path}")
             continue
         cid = zip_path.stem
         sources.extend(list_pdfs_in_zip(zip_path, cid))
@@ -134,23 +134,23 @@ def run_from_config(cfg: PipelineConfig, *, catalog_only: bool = False, workers:
             "play_count_total": len(sources),
         },
     )
-    print(f"完成: 成功 {ok}/{len(sources)}, catalog → {cfg.output_cleaned / 'catalog.json'}")
+    print(f"Done: {ok}/{len(sources)} succeeded, catalog → {cfg.output_cleaned / 'catalog.json'}")
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="京剧剧本预处理流水线")
-    parser.add_argument("--config", type=Path, default=None, help="pipeline.yaml 路径")
-    parser.add_argument("--pdf", type=Path, default=None, help="单份 PDF")
-    parser.add_argument("--zip", type=Path, default=None, help="zip 集合路径")
+    parser = argparse.ArgumentParser(description="Peking opera script preprocessing pipeline")
+    parser.add_argument("--config", type=Path, default=None, help="path to pipeline.yaml")
+    parser.add_argument("--pdf", type=Path, default=None, help="single PDF file")
+    parser.add_argument("--zip", type=Path, default=None, help="path to zip collection")
     parser.add_argument("--collection-id", type=str, default="01000000")
-    parser.add_argument("--limit", type=int, default=0, help="限制处理数量")
-    parser.add_argument("--catalog-only", action="store_true", help="仅从已有 plays 重建 catalog")
-    parser.add_argument("--no-validate", action="store_true", help="跳过 jsonschema 校验")
+    parser.add_argument("--limit", type=int, default=0, help="limit number of plays to process")
+    parser.add_argument("--catalog-only", action="store_true", help="rebuild catalog from existing plays only")
+    parser.add_argument("--no-validate", action="store_true", help="skip jsonschema validation")
     parser.add_argument(
         "--workers",
         type=int,
         default=None,
-        help="并行进程数（0=自动 min(CPU,8)，1=串行）",
+        help="parallel worker count (0=auto min(CPU,8), 1=serial)",
     )
     args = parser.parse_args()
 

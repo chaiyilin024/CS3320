@@ -59,7 +59,7 @@ def analyze_play_network(play: dict, role: dict | None = None) -> dict:
             }
         )
 
-    # 归一化边权，方便前端线粗细映射；按 weight 降序排序
+    # Normalize edge weights for frontend line thickness; sort by weight descending
     max_w = max((l["weight"] for l in links_out), default=0.0)
     for l in links_out:
         l["normalized_weight"] = round(l["weight"] / max_w, 4) if max_w > 0 else 0.0
@@ -71,7 +71,7 @@ def analyze_play_network(play: dict, role: dict | None = None) -> dict:
     m = len(edge_list)
     dens = density(n, m)
 
-    # 优先用 networkx；失败时退化为自写实现
+    # Prefer networkx; fall back to hand-rolled implementation on failure
     nx_metrics = _try_networkx_metrics(nodes, edge_list, node_meta)
 
     if nx_metrics is not None:
@@ -95,7 +95,7 @@ def analyze_play_network(play: dict, role: dict | None = None) -> dict:
         modularity = None
         assortativity = None
 
-    # 度：拓扑（邻居数）与加权（边权和）
+    # Degree: topological (neighbor count) and weighted (edge-weight sum)
     topo_degree = {nid: len(adj.get(nid, {})) for nid in nodes}
     avg_degree = sum(topo_degree.values()) / n if n else 0.0
     avg_weighted_degree = sum(weighted_deg.values()) / n if n else 0.0
@@ -137,7 +137,7 @@ def analyze_play_network(play: dict, role: dict | None = None) -> dict:
     if assortativity is not None and math.isfinite(float(assortativity)):
         metrics["assortativity_hangdang"] = round(float(assortativity), 4)
 
-    # 主角子图指标
+    # Protagonist subgraph metrics
     main_ids = {nid for nid, meta in node_meta.items() if meta["is_main"]}
     if len(main_ids) >= 2:
         main_metrics = _subgraph_metrics(main_ids, edge_list, node_meta)
@@ -159,7 +159,7 @@ def _try_networkx_metrics(
     edges: list[tuple[str, str, float]],
     node_meta: dict[str, dict],
 ) -> dict | None:
-    """优先使用 networkx 计算中心性、社区、模块度、同配性。失败返回 None。"""
+    """Prefer networkx for centrality, communities, modularity, assortativity. Returns None on failure."""
     try:
         import networkx as nx
         from networkx.algorithms import community as nx_comm
@@ -171,13 +171,13 @@ def _try_networkx_metrics(
     for nid in nodes:
         G.add_node(nid, **node_meta.get(nid, {}))
     for u, v, w in edges:
-        # 重复边累加权重
+        # Accumulate weight on duplicate edges
         if G.has_edge(u, v):
             G[u][v]["weight"] += w
         else:
             G.add_edge(u, v, weight=w)
 
-    # 给每条边算 distance 仅供加权介数使用
+    # Per-edge distance for weighted betweenness only
     for _u, _v, d in G.edges(data=True):
         d["distance"] = 1.0 / max(float(d.get("weight", 1.0)), 1e-6)
 
@@ -190,7 +190,7 @@ def _try_networkx_metrics(
     except Exception:
         wbetw = dict(betw)
     try:
-        # 标准 (无权) closeness：自然落在 0~1
+        # Standard (unweighted) closeness: naturally in 0~1
         clos = nx.closeness_centrality(G)
     except Exception:
         clos = {n: 0.0 for n in G.nodes}
@@ -202,15 +202,15 @@ def _try_networkx_metrics(
         except Exception:
             eig = {n: 0.0 for n in G.nodes}
     try:
-        avg_clu = nx.average_clustering(G)  # 无权聚类，0~1 直观
+        avg_clu = nx.average_clustering(G)  # unweighted clustering, intuitive 0~1
     except Exception:
         avg_clu = 0.0
     try:
-        avg_wclu = nx.average_clustering(G, weight="weight")  # 带权聚类
+        avg_wclu = nx.average_clustering(G, weight="weight")  # weighted clustering
     except Exception:
         avg_wclu = 0.0
 
-    # 社区检测：过滤掉 weight<=1 的纯同场弱边再算，避免被对峙性 cooccurrence 误并
+    # Community detection: drop weak same-scene edges (weight<=1) to avoid confrontation cooccurrence merges
     try:
         G_for_comm = nx.Graph()
         G_for_comm.add_nodes_from(G.nodes(data=True))
@@ -221,7 +221,7 @@ def _try_networkx_metrics(
                 G_for_comm.add_edge(u, v, weight=w)
                 kept_edges += 1
         if kept_edges == 0:
-            G_for_comm = G  # 退化：所有边都很弱
+            G_for_comm = G  # fallback: all edges are weak
         comms = list(nx_comm.greedy_modularity_communities(G_for_comm, weight="weight"))
         comm_map: dict[str, int] = {}
         for idx, comm in enumerate(comms):
@@ -229,7 +229,7 @@ def _try_networkx_metrics(
                 comm_map[node] = idx
         for nid in nodes:
             comm_map.setdefault(nid, 0)
-        # 模块度按完整图计算（公平指标）
+        # Modularity computed on the full graph (fair metric)
         mod = nx_comm.modularity(G, comms, weight="weight") if comms else None
     except Exception:
         comm_map = {nid: 0 for nid in nodes}
@@ -293,7 +293,7 @@ def _subgraph_metrics(
         else:
             out["avg_clustering"] = 0.0
     except ImportError:
-        # 用自写聚类
+        # Hand-rolled clustering
         adj, _ = build_adjacency(list(keep_ids), sub_edges)
         out["avg_clustering"] = round(
             clustering_coefficient(list(keep_ids), adj) if n > 2 and m else 0.0, 4

@@ -1,4 +1,4 @@
-"""并行工具单元测试。"""
+"""Parallel utilities unit tests."""
 from __future__ import annotations
 
 import sys

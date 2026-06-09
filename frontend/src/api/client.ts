@@ -12,7 +12,7 @@ import type {
   ThemePatternsGlobal,
 } from '@/types'
 
-/** 与 vite base 对齐，GitHub Pages 下为 /CS3320/data */
+/** Aligned with vite base; on GitHub Pages this resolves to /CS3320/data */
 const BASE = `${import.meta.env.BASE_URL}data`.replace(/([^:]\/)\/+/g, '$1').replace(/\/$/, '')
 
 async function getJson<T>(path: string): Promise<T> {

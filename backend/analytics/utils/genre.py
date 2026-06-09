@@ -1,4 +1,4 @@
-"""体裁标签与 schema.genre 对齐。"""
+"""Align genre tags with schema.genre."""
 from __future__ import annotations
 
 SCHEMA_GENRES = frozenset(

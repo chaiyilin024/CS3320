@@ -1,4 +1,4 @@
-"""主题质量评估单元测试。"""
+"""Theme quality evaluation unit tests."""
 from __future__ import annotations
 
 import sys

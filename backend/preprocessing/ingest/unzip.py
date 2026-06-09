@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 def decode_zip_name(name: str) -> str:
-    """修复 zip 内 GBK 中文文件名（cp437 误读）。"""
+    """Fix GBK Chinese filenames inside zip (misread as cp437)."""
     if not name:
         return name
     try:

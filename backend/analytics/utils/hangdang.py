@@ -1,4 +1,4 @@
-"""戏曲考行当别名 → analytics schema 标准行当（definitions.hangdang）。"""
+"""Xiqu catalog hangdang aliases → analytics schema standard hangdang (definitions.hangdang)."""
 from __future__ import annotations
 
 SCHEMA_HANGDANG = frozenset(
@@ -21,9 +21,9 @@ SCHEMA_HANGDANG = frozenset(
 
 SCHEMA_COARSE = frozenset({"生", "旦", "净", "丑", "未知", "其他"})
 
-# 戏考 / 传统标注 → schema 枚举
+# Xiqu catalog / traditional labels → schema enum
 _ALIAS_TO_CANONICAL: dict[str, str] = {
-    # 生
+    # sheng
     "生": "老生",
     "外": "小生",
     "娃娃生": "小生",
@@ -36,13 +36,13 @@ _ALIAS_TO_CANONICAL: dict[str, str] = {
     "长靠武生": "武生",
     "短打武生": "武生",
     "把子生": "武生",
-    # 末 → 归入老生
+    # mo → mapped to laosheng
     "末": "老生",
     "正末": "老生",
     "副末": "老生",
     "冲末": "老生",
     "外末": "老生",
-    # 旦
+    # dan
     "旦": "青衣",
     "正旦": "青衣",
     "青衣": "青衣",
@@ -58,7 +58,7 @@ _ALIAS_TO_CANONICAL: dict[str, str] = {
     "刀马旦": "刀马旦",
     "武旦": "刀马旦",
     "老旦": "老旦",
-    # 净
+    # jing
     "净": "净",
     "正净": "净",
     "副净": "净",
@@ -69,7 +69,7 @@ _ALIAS_TO_CANONICAL: dict[str, str] = {
     "黑净": "净",
     "白净": "净",
     "红净": "净",
-    # 丑
+    # chou
     "丑": "丑",
     "文丑": "丑",
     "武丑": "丑",
@@ -109,7 +109,7 @@ _COARSE_ALIAS: dict[str, str] = {
 
 
 def normalize_hangdang(value: str | None) -> str | None:
-    """将 PDF/戏考标注映射为 schema.hangdang 枚举值。"""
+    """Map PDF/xiqu catalog labels to schema.hangdang enum values."""
     if value is None:
         return None
     s = value.strip()
@@ -123,7 +123,7 @@ def normalize_hangdang(value: str | None) -> str | None:
 
 
 def normalize_coarse(value: str | None, hangdang: str | None = None) -> str:
-    """映射为 schema.hangdangCoarse。"""
+    """Map to schema.hangdangCoarse."""
     if hangdang:
         canon = normalize_hangdang(hangdang) or "未知"
         return _CANONICAL_TO_COARSE.get(canon, "未知")

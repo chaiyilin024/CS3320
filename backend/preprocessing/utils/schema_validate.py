@@ -11,7 +11,7 @@ except ImportError:
 
 
 def _build_schema_store(schemas_dir: Path) -> dict:
-    """加载 schemas/ 下所有文件，供 RefResolver 解析 $ref（含 ../common/...）。"""
+    """Load all files under schemas/ for RefResolver to resolve $ref (incl. ../common/...)."""
     store: dict = {}
     for path in sorted(schemas_dir.rglob("*.schema.json")):
         with path.open(encoding="utf-8") as f:
@@ -28,7 +28,7 @@ def _build_schema_store(schemas_dir: Path) -> dict:
 
 def load_validator(schema_path: Path, root: Path | None = None):
     if Draft7Validator is None or RefResolver is None:
-        raise ImportError("jsonschema 未安装，请 pip install jsonschema 或 --no-validate")
+        raise ImportError("jsonschema not installed; pip install jsonschema or use --no-validate")
 
     root = root or schema_path.resolve().parents[2]
     schemas_dir = root / "schemas"

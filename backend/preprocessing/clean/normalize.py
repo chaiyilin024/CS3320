@@ -7,14 +7,14 @@ from .noise import is_noise_line, is_page_header_line, strip_inline_noise
 PAGE_NOISE_RE = re.compile(
     r"^(第\s*\d+\s*页|\d+|[\-—]\s*\d+\s*[\-—]|共\s*\d+\s*页)$"
 )
-# 下一行以（白）（念）等开头 — 承上对白，不可与上一行合并
+# Next line starts with (白)(念) etc. — continuation dialogue; must not merge with previous line
 PERF_CUE_LINE_START_RE = re.compile(
     r"^[（(](白|念|唱|笑|引子|叫头|垛|板)[）)]\s+"
 )
 
 
 def normalize_full_text(full_text: str) -> list[str]:
-    """全文 → 清洗后的行列表。"""
+    """Full text → list of cleaned lines."""
     text = full_text.replace("\r\n", "\n").replace("\r", "\n")
     lines: list[str] = []
     for raw in text.split("\n"):

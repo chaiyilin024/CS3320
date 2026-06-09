@@ -1,4 +1,4 @@
-"""主题分析质量评估 — 单剧与全库。"""
+"""Theme analysis quality evaluation — per-play and corpus-wide."""
 from __future__ import annotations
 
 from collections import Counter
@@ -7,10 +7,10 @@ from pathlib import Path
 
 from .model import _load_label_rules, _score_label, is_metadata_topic
 
-# 视为「未识别」的标签（前端常显示为未知/其他）
+# Labels treated as "unrecognized" (frontend often shows as unknown/other)
 FALLBACK_LABELS = frozenset({"其他情节", "未知", "其他", "通用主题"})
 
-# 关键词中常见虚词/套话，会降低可解释性
+# Common function words / boilerplate in keywords that reduce interpretability
 WEAK_KEYWORDS = frozenset({
     "正是", "只见", "怎么", "为何", "为何事", "为何来", "为何去",
     "如此", "这般", "那个", "这个", "什么", "不是", "就是", "也是",
@@ -39,7 +39,7 @@ def _is_fallback_label(label: str) -> bool:
 
 
 def _keyword_signal(keywords: list[str]) -> tuple[float, list[str]]:
-    """返回 (0–1 信号强度, 问题列表)。"""
+    """Return (0–1 signal strength, list of issues)."""
     kws = [k.strip() for k in (keywords or []) if k and k.strip()]
     if not kws:
         return 0.0, ["无有效关键词"]
@@ -64,7 +64,7 @@ def _keyword_signal(keywords: list[str]) -> tuple[float, list[str]]:
 
 
 def _label_match_tier(keywords: list[str], assigned_label: str) -> tuple[str, float, list[str]]:
-    """根据 theme.json 规则评估标签命中强度。"""
+    """Score label hit strength against theme.json rules."""
     rules, threshold, min_hits, fb_threshold = _load_label_rules()
     word_set = frozenset(k for k in (keywords or []) if k)
     if not rules or not word_set:
@@ -106,7 +106,7 @@ def _label_match_tier(keywords: list[str], assigned_label: str) -> tuple[str, fl
 
 
 def assess_topic(topic: dict) -> dict:
-    """评估单个主题条目（themes.json 中的 topic 对象）。"""
+    """Evaluate a single topic entry (topic object in themes.json)."""
     label = str(topic.get("label") or "")
     keywords = list(topic.get("keywords") or [])
     weight = float(topic.get("weight") or 0.0)
@@ -132,7 +132,7 @@ def assess_topic(topic: dict) -> dict:
 
 
 def assess_play_themes(themes_doc: dict) -> dict:
-    """评估单剧 themes.json，返回 quality 块。"""
+    """Evaluate a single-play themes.json; return the quality block."""
     topics = themes_doc.get("topics") or []
     assessments = [assess_topic(t) for t in topics]
     if not assessments:
@@ -178,7 +178,7 @@ def assess_play_themes(themes_doc: dict) -> dict:
 
 
 def attach_quality(themes_doc: dict) -> dict:
-    """为 themes 文档附加 quality 字段（原地修改并返回）。"""
+    """Attach quality field to themes document (mutates in place and returns it)."""
     themes_doc["quality"] = assess_play_themes(themes_doc)
     return themes_doc
 
@@ -187,7 +187,7 @@ def aggregate_theme_quality(
     plays_dir: Path,
     catalog_idx: dict[str, dict],
 ) -> dict:
-    """聚合全库主题质量 → global/theme_quality.json。"""
+    """Aggregate corpus-wide theme quality → global/theme_quality.json."""
     tier_totals: Counter[str] = Counter()
     label_counts: Counter[str] = Counter()
     label_weight: Counter[str] = Counter()
@@ -275,7 +275,7 @@ def aggregate_theme_quality(
 
 
 def backfill_play_quality(path: Path) -> bool:
-    """为已有 themes.json 写入 quality 字段。"""
+    """Write quality field into an existing themes.json."""
     import json
 
     try:

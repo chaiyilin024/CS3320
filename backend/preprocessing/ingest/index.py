@@ -25,7 +25,7 @@ def list_single_pdf(
 ) -> PdfSource:
     meta = parse_pdf_filename(pdf_path.name)
     if not meta:
-        raise ValueError(f"无法解析文件名: {pdf_path.name}")
+        raise ValueError(f"Cannot parse filename: {pdf_path.name}")
     if title:
         meta = PdfMeta(
             script_id=meta.script_id,

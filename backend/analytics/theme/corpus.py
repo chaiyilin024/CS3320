@@ -9,7 +9,7 @@ TEXT_BLOCK_TYPES = frozenset({"dialogue", "aria", "recitation"})
 _THIS_DIR = Path(__file__).resolve().parent
 STOPWORDS_FILE = _THIS_DIR / "stopwords.txt"
 
-# 词性白名单：保留实义词，过滤代词/虚词/语气词等
+# POS whitelist: keep content words; filter pronouns, function words, particles, etc.
 POS_WHITELIST = frozenset({
     "n", "nr", "ns", "nt", "nz",
     "v", "vn",
@@ -17,7 +17,7 @@ POS_WHITELIST = frozenset({
     "i", "l",
 })
 
-# 页眉/丛书/分册等文献噪声（与 preprocessing noise.py 对齐）
+# Header/series/volume bibliographic noise (aligned with preprocessing noise.py)
 _METADATA_BLOCK_RE = re.compile(
     r"中国京剧|戏考\s*[《《]|《[^》》]{1,16}》\s*\d{0,3}\s*$|"
     r"^\d{1,3}\s*$|scripts\.xikao",
@@ -30,7 +30,7 @@ _INLINE_HEADER_RE = re.compile(
 
 @lru_cache(maxsize=1)
 def _load_stopwords() -> frozenset[str]:
-    """加载 stopwords.txt；忽略 ; / # 注释行与空行。"""
+    """Load stopwords.txt; ignore ; / # comment lines and blank lines."""
     out: set[str] = set()
     if STOPWORDS_FILE.is_file():
         for line in STOPWORDS_FILE.read_text(encoding="utf-8").splitlines():
@@ -43,7 +43,7 @@ def _load_stopwords() -> frozenset[str]:
 
 @lru_cache(maxsize=1)
 def _metadata_stopwords() -> frozenset[str]:
-    """文献/页眉专用停用词（也写在 stopwords.txt 第 13 节，此处作兜底）。"""
+    """Bibliographic/header stopwords (also in stopwords.txt section 13; fallback here)."""
     base = _load_stopwords()
     extra = {
         "中国京剧", "戏考", "中国", "京剧", "全本", "头本", "前本", "后本",
@@ -54,7 +54,7 @@ def _metadata_stopwords() -> frozenset[str]:
 
 
 def is_metadata_block(text: str) -> bool:
-    """整段是否为页眉/丛书说明，应从主题语料中剔除。"""
+    """Whether the whole segment is header/series boilerplate and should be dropped from theme corpus."""
     s = (text or "").strip()
     if len(s) < 2:
         return True
@@ -66,7 +66,7 @@ def is_metadata_block(text: str) -> bool:
 
 
 def strip_inline_metadata(text: str) -> str:
-    """去掉行内残留的「中国京剧戏考 《剧名》 N」片段。"""
+    """Remove inline remnants like 「中国京剧戏考 《剧名》 N」."""
     s = (text or "").strip()
     s = _INLINE_HEADER_RE.sub("", s)
     s = re.sub(r"\s+", " ", s).strip()
@@ -74,7 +74,7 @@ def strip_inline_metadata(text: str) -> str:
 
 
 def build_dynamic_stopwords(play: dict | None) -> frozenset[str]:
-    """从剧本动态构造停用词：角色名 + 别名 + 剧名 + 丛书名。"""
+    """Build dynamic stopwords from play metadata: character names + aliases + title + series."""
     if not play:
         return frozenset()
     extra: set[str] = set()
@@ -102,7 +102,7 @@ def build_dynamic_stopwords(play: dict | None) -> frozenset[str]:
 
 
 def build_corpus_stopwords(plays: list[dict]) -> frozenset[str]:
-    """全库训练时合并各剧角色名/剧名，避免 NMF 被跨剧人名主导。"""
+    """When training on full corpus, merge per-play character/title names so NMF is not dominated by cross-play names."""
     if len(plays) <= 1:
         return frozenset()
     merged: set[str] = set()
@@ -116,7 +116,7 @@ def build_corpus_stopwords_from_paths(
     load_play_fn,
     on_progress=None,
 ) -> frozenset[str]:
-    """流式读取剧本，仅提取角色名/剧名停用词（不遍历文本块）。"""
+    """Stream-read plays and extract character/title stopwords only (no text-block traversal)."""
     merged: set[str] = set()
     n = len(paths)
     for i, path in enumerate(paths):
@@ -146,9 +146,9 @@ def play_document(play: dict) -> str:
 
 
 def tokenize(text: str, extra_stopwords: frozenset[str] | None = None) -> list[str]:
-    """带词性过滤的分词。
+    """Tokenize with POS filtering.
 
-    dict.txt 仅用于 jieba 分词边界，不绕过停用词。
+    dict.txt is only for jieba word boundaries; it does not bypass stopwords.
     """
     extra = extra_stopwords or frozenset()
     base_stop = _metadata_stopwords()

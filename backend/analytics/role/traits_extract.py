@@ -1,21 +1,21 @@
-"""从 cleaned/plays/{id}.json 的 blocks/scenes 中抽取人物扩展特征。
+"""Extract extended character traits from blocks/scenes in cleaned/plays/{id}.json.
 
-输出写入 role.json 的 characters[].traits_derived，结构对齐 schemas/common
-definitions.schema.json#/$defs/traits（gender / age / identity / personality / performance_cues）。
+Output goes to role.json characters[].traits_derived, aligned with schemas/common
+definitions.schema.json#/$defs/traits (gender / age / identity / personality / performance_cues).
 
-策略：纯规则。所有线索仅来自台词文本与上下文，不引入历史人物姓名先验。
+Strategy: rule-based only. All cues come from line text and context; no historical name priors.
 """
 from __future__ import annotations
 
 from collections import Counter
 from typing import Iterable
 
-# 自称代词 → 性别 / 身份倾向
+# Self-reference pronouns → gender / identity tendency
 SELF_REF_MALE_HIGH = {"孤", "朕", "寡人", "本王", "本帅", "本督", "本将"}
 SELF_REF_FEMALE = {"奴", "妾", "奴家", "哀家", "妾身", "本宫"}
 SELF_REF_HUMBLE = {"俺", "咱", "在下", "末将", "小生", "小弟", "微臣", "为臣", "为兄", "为弟"}
 
-# 第二人称 → 对方身份线索
+# Second-person address → addressee identity cues
 ADDRESS_TO_RULER = {"主公", "王爷", "千岁", "万岁", "圣上", "陛下", "皇上", "大王"}
 ADDRESS_TO_GENERAL = {"将军", "都督", "元帅", "大将军"}
 ADDRESS_TO_ADVISOR = {"先生", "军师", "丞相", "国师", "大夫"}
@@ -24,7 +24,7 @@ ADDRESS_TO_FEMALE = {"夫人", "娘娘", "小姐", "公主", "妃子", "贵妃",
 ADDRESS_TO_ELDER = {"老爷", "老将军", "老大人", "老相国"}
 ADDRESS_TO_YOUTH = {"小将", "小生", "公子", "少爷"}
 
-# 身份关键字
+# Identity keywords
 IDENTITY_KEYWORDS = {
     "君主": ["皇上", "万岁", "孤王", "寡人", "朕", "主公", "圣上"],
     "将领": ["大将军", "元帅", "都督", "将军", "末将", "本帅", "本督"],
@@ -36,11 +36,11 @@ IDENTITY_KEYWORDS = {
     "书生": ["秀才", "举人", "寒儒"],
 }
 
-# 年龄词
+# Age words
 AGE_OLD = {"老将", "老臣", "老朽", "老身", "白发", "苍老", "古稀"}
 AGE_YOUNG = {"小将", "小生", "少年", "少将", "孩儿", "孺子"}
 
-# 性格词
+# Personality words
 PERSONALITY_KEYWORDS = {
     "勇猛": ["勇猛", "厉害", "杀气", "猛虎", "勇冠", "敢死"],
     "智谋": ["妙计", "智谋", "巧计", "谋略", "高见", "妙策"],
@@ -52,7 +52,7 @@ PERSONALITY_KEYWORDS = {
 
 
 def extract_traits(play: dict) -> dict[str, dict]:
-    """返回 {character_id: traits_derived}。"""
+    """Return {character_id: traits_derived}."""
     blocks = play.get("blocks") or []
     chars = play.get("characters") or []
 
@@ -105,10 +105,10 @@ def _group_lines_by_speaker(blocks: Iterable[dict]) -> dict[str, list[str]]:
 def _detect_addressed_terms(
     blocks: list[dict], chars: list[dict]
 ) -> dict[str, Counter[str]]:
-    """根据"上一句的说话人对当前未指明对象使用了称呼"近似抓被称呼词。
+    """Approximate addressed terms when the previous speaker uses a form of address toward an unnamed target.
 
-    简化：对每条 dialogue/aria，若文本中出现某个 ADDRESS_* 词，
-    则把它累计到「同一场内的其他主要角色」（即可能的被称呼者）。
+    Simplified: for each dialogue/aria line containing an ADDRESS_* term,
+    accumulate it toward other main characters in the same scene (likely addressees).
     """
     main_ids = [c["character_id"] for c in chars]
 
@@ -133,7 +133,7 @@ def _detect_addressed_terms(
         hits = [w for w in address_pool if w in text]
         if not hits:
             continue
-        # 同一段对话的下一个/上一个不同 speaker 视为受话人
+        # Treat adjacent different speakers in the same exchange as addressees
         receiver_ids: set[str] = set()
         for j in range(max(0, i - 2), min(len(blocks), i + 3)):
             if j == i:
@@ -166,7 +166,7 @@ def _infer_gender(own_text: str, addr_terms: Counter[str]) -> str:
 
 def _infer_identity(own_text: str, addr_terms: Counter[str]) -> str | None:
     scores: Counter[str] = Counter()
-    # 自称/禀报语境
+    # Self-reference / petition context
     if "父王" in own_text or "参见父王" in own_text:
         scores["公子"] += 2
     if own_text.startswith("启") and any(

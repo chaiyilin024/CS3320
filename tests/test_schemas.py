@@ -1,4 +1,4 @@
-"""校验 JSON Schema 文件本身可被 jsonschema 加载。"""
+"""Verify JSON Schema files can be loaded by jsonschema."""
 from __future__ import annotations
 
 import json
@@ -30,7 +30,7 @@ def test_schema_is_valid_draft7(schema_path: Path):
 
 
 def test_play_schema_references_resolve():
-    """play.schema.json 应能解析子 schema 引用。"""
+    """play.schema.json should resolve sub-schema references."""
     from backend.preprocessing.utils.schema_validate import load_validator
 
     play_path = SCHEMAS / "cleaned" / "play.schema.json"

@@ -1,1 +1,1 @@
-"""京剧剧本分析：行当、网络、主题、叙事、综合关联。"""
+"""Peking opera script analytics: role, network, theme, narrative, integrated correlation."""

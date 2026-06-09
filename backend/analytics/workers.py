@@ -1,4 +1,4 @@
-"""单剧分析 worker — 供进程池调用。"""
+"""Per-play analytics worker — invoked by process pool."""
 from __future__ import annotations
 
 import sys
@@ -67,7 +67,7 @@ def _build_themes(play: dict, cfg: dict, theme_model):
 
 
 def analyze_play_task(task: dict[str, Any]) -> dict[str, Any]:
-    """完整单剧分析并写入 artifacts/analytics/plays/{id}/。"""
+    """Run full single-play analysis and write to artifacts/analytics/plays/{id}/."""
     root = Path(task["root"])
     sid = task["script_id"]
     cfg = task["cfg"]
@@ -178,7 +178,7 @@ def theme_quality_task(task: dict[str, Any]) -> dict[str, Any]:
 
 
 def themes_only_task(task: dict[str, Any]) -> dict[str, Any]:
-    """仅用全局 theme_model 重算 plays/*/themes.json。"""
+    """Recompute plays/*/themes.json using the global theme_model only."""
     root = Path(task["root"])
     sid = task["script_id"]
     cfg = task["cfg"]

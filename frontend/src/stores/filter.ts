@@ -85,7 +85,7 @@ export const useFilterStore = defineStore('filter', () => {
   }
 })
 
-/** 将 scriptId 同步到 URL query */
+/** Sync scriptId to URL query params */
 export function useScriptQuerySync() {
   const store = useFilterStore()
   const route = useRoute()

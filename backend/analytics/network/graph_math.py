@@ -46,7 +46,7 @@ def connected_components(nodes: list[str], adj: dict[str, dict[str, float]]) -> 
 
 
 def betweenness_simple(nodes: list[str], adj: dict[str, dict[str, float]]) -> dict[str, float]:
-    """无权近似介数（节点少时够用）。"""
+    """Unweighted approximate betweenness (sufficient for small graphs)."""
     bc = {n: 0.0 for n in nodes}
     n = len(nodes)
     if n <= 2:

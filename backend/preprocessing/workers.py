@@ -1,4 +1,4 @@
-"""预处理单剧本 worker — 供进程池调用。"""
+"""Preprocessing single-play worker — invoked by process pool."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -27,7 +27,7 @@ def _resolve_pdf_path(source: PdfSource, cache_dir: Path) -> Path:
             cache_dir / source.collection_id,
             decoded_name=source.meta.source_pdf,
         )
-    raise FileNotFoundError(f"无法定位 PDF: {source.meta.source_pdf}")
+    raise FileNotFoundError(f"Cannot locate PDF: {source.meta.source_pdf}")
 
 
 def source_to_payload(source: PdfSource) -> dict[str, Any]:
@@ -60,7 +60,7 @@ def source_from_payload(payload: dict[str, Any]) -> PdfSource:
 
 
 def preprocess_source_task(task: dict[str, Any]) -> dict[str, Any]:
-    """处理单个 PDF 源，写入 play JSON。返回汇总信息供主进程合并 catalog。"""
+    """Process one PDF source and write play JSON. Returns summary for main process catalog merge."""
     source = source_from_payload(task["source"])
     sid = source.meta.script_id
     title = source.meta.title

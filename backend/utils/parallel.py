@@ -1,4 +1,4 @@
-"""批处理并行工具 — CPU 密集型任务使用进程池（非线程）。"""
+"""Batch parallel utilities — process pool for CPU-bound tasks (not threads)."""
 from __future__ import annotations
 
 import os
@@ -12,7 +12,7 @@ DEFAULT_MAX_WORKERS = 8
 
 
 def resolve_workers(workers: int | None = None, *, cap: int = DEFAULT_MAX_WORKERS) -> int:
-    """0 或负数表示自动：min(CPU 核数, cap)。"""
+    """0 or negative means auto: min(CPU count, cap)."""
     if workers is None or workers <= 0:
         cpu = os.cpu_count() or 4
         return max(1, min(cpu, cap))
@@ -27,7 +27,7 @@ def run_parallel(
     cap: int = DEFAULT_MAX_WORKERS,
     progress: Callable[[int, int, R], None] | None = None,
 ) -> list[R]:
-    """对 items 并行 map；workers=1 时退化为串行。"""
+    """Parallel map over items; falls back to serial when workers=1."""
     if not items:
         return []
     n_workers = resolve_workers(workers, cap=cap)

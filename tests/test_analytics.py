@@ -1,4 +1,4 @@
-"""分析流水线单元测试（依赖 cleaned 金样例）。"""
+"""Analytics pipeline unit tests (depends on cleaned golden samples)."""
 from __future__ import annotations
 
 import sys
@@ -46,7 +46,7 @@ def test_analyze_huanghelou():
 
 
 def test_merge_topics_with_same_label():
-    """同一 label 的多个 NMF 子主题应合并为一条。"""
+    """Multiple NMF subtopics with the same label should merge into one entry."""
     from backend.analytics.theme.export import _merge_topics_by_label
 
     merged, mapping = _merge_topics_by_label(
@@ -99,7 +99,7 @@ def test_theme_keywords_not_empty():
 
 
 def test_aggregate_theme_patterns_by_label():
-    """跨剧热力图列应对齐语义标签，而非 T0/T1 槽位。"""
+    """Cross-play heatmap columns should align by semantic label, not T0/T1 slots."""
     from backend.analytics.integrated.aggregate import aggregate_theme_patterns
     from backend.analytics.theme.model import global_topic_label_entries
 

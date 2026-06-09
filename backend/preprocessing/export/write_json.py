@@ -41,18 +41,18 @@ class PlayWriter:
         self.failed: list[dict] = []
 
     def write_play(self, play: dict) -> Path:
-        # 处理 blocks: 将 type=unknown 且 speaker_id=null 的块拼接到上一块
+        # Merge blocks: append type=unknown with speaker_id=null onto the previous block
         blocks = play.get("blocks", [])
         if blocks:
-            # 创建新的 blocks 列表，跳过需要合并的块
+            # Build a new blocks list, skipping blocks slated for merge
             new_blocks = []
             for block in blocks:
-                # 检查是否需要合并到上一块
+                # Check whether this block should merge into the previous one
                 if block.get("type") == "unknown" and block.get("speaker_id") is None:
                     if new_blocks:
-                        # 将当前块的 text 拼接到上一块
+                        # Append this block's text to the previous block
                         new_blocks[-1]["text"] = (new_blocks[-1].get("text", "") + block.get("text", "")).strip()
-                    # 否则直接丢弃（没有上一块可合并）
+                    # else discard (no previous block to merge into)
                 else:
                     new_blocks.append(block)
             play["blocks"] = new_blocks
@@ -94,7 +94,7 @@ class PlayWriter:
         if self.validate:
             errors = validate_catalog(catalog, self.root)
             if errors:
-                raise ValueError(f"catalog 校验失败: {errors[:3]}")
+                raise ValueError(f"catalog validation failed: {errors[:3]}")
 
         path = self.output_dir / "catalog.json"
         with path.open("w", encoding="utf-8") as f:

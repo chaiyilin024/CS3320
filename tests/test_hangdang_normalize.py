@@ -1,4 +1,4 @@
-"""行当归一化单元测试。"""
+"""Hangdang normalization unit tests."""
 from __future__ import annotations
 
 import sys

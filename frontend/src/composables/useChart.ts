@@ -45,7 +45,7 @@ export function useChart(
   function scheduleRender() {
     void nextTick(() => {
       render()
-      // 首帧布局 / v-if 重新挂载后尺寸可能尚未就绪
+      // First frame / after v-if remount, dimensions may not be ready yet
       requestAnimationFrame(() => {
         render()
         requestAnimationFrame(render)

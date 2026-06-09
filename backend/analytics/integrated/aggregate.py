@@ -1,4 +1,4 @@
-"""从单剧分析产物聚合 global/*.json。"""
+"""Aggregate single-play analytics artifacts into global/*.json."""
 from __future__ import annotations
 
 import json
@@ -64,7 +64,7 @@ def _metric_distribution(values: list[float]) -> dict:
 
 
 def _sanitize_metrics(metrics: dict) -> dict:
-    """移除 NaN/Inf，保证输出 JSON 可被浏览器 JSON.parse 解析。"""
+    """Remove NaN/Inf so output JSON is browser JSON.parse-safe."""
     out: dict = {}
     for key, val in metrics.items():
         if isinstance(val, float):
@@ -268,7 +268,7 @@ def aggregate_network_compare(
 
 
 def _play_label_weights(themes: dict) -> dict[str, float]:
-    """按语义标签汇总单剧主题权重（合并后 topics 已按 label 去重）。"""
+    """Sum per-play topic weights by semantic label (topics already deduped by label after merge)."""
     from ..theme.model import FALLBACK_LABEL
 
     out: dict[str, float] = {}
@@ -285,7 +285,7 @@ def _weights_for_labels(label_weights: dict[str, float], canonical: list[str]) -
 def _infer_canonical_from_corpus(
     plays_dir: Path,
 ) -> tuple[list[str], list[dict]]:
-    """无全局模型时，从各剧 themes 按标签频次推断热力图列。"""
+    """Without a global model, infer heatmap columns from per-play theme label frequencies."""
     from ..theme.model import FALLBACK_LABEL
 
     label_mass: Counter[str] = Counter()
@@ -416,7 +416,7 @@ RHYTHM_RESAMPLE_LEN = 100
 
 
 def _resample_series(values: list[float], n: int = RHYTHM_RESAMPLE_LEN) -> list[float]:
-    """将变长序列线性插值到固定长度，便于跨剧平均。"""
+    """Linearly interpolate variable-length sequences to fixed length for cross-play averaging."""
     if not values:
         return []
     m = len(values)
@@ -552,7 +552,7 @@ def aggregate_theme_quality_report(
 
 
 def run_global_aggregation(cfg) -> dict[str, dict]:
-    """聚合 artifacts/analytics/plays → global/*.json，返回各产出文档。"""
+    """Aggregate artifacts/analytics/plays → global/*.json; return each output document."""
     from ..theme.model import global_theme_model_path, load_theme_model
 
     plays_dir = cfg.analytics_dir / "plays"

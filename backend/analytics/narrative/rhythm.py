@@ -1,11 +1,11 @@
-"""任务四：单剧叙事结构分析。
+"""Task 4: single-play narrative structure analysis.
 
-核心思路：
-1. 用 5 维节奏序列（对白密度 / 唱段比 / 动作强度 / 情感 / 紧张度）刻画节奏起伏；
-2. 用基于 tension 平滑曲线的**峰谷变点检测**找 4 个关键边界 → 5 个阶段（铺垫/发展/冲突/高潮/结局）；
-3. 把检测到的变点**对齐到最近的 scene 边界**，让阶段切分尊重原剧场次；
-4. 每个阶段根据自身 dominant 信号生成智能标签（·激战 / ·对峙 / ·唱抒 / ·平缓…）；
-5. 只输出"关键 block 标注"（阶段边界 + 情感极值 + 主题切换），避免 419 块全量写入。
+Approach:
+1. Five-dimensional rhythm series (dialogue density / aria ratio / action intensity / emotion / tension);
+2. Peak-valley changepoint detection on smoothed tension → 4 boundaries → 5 stages (exposition/rising/conflict/climax/ending);
+3. Snap detected changepoints to nearest scene boundaries so stage splits respect original act structure;
+4. Each stage gets smart suffix labels from dominant signals (·激战 / ·对峙 / ·唱抒 / ·平缓…);
+5. Emit only "key block annotations" (stage boundaries + emotional extrema + topic switches), not all 419 blocks.
 """
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ from ..theme.model import ThemeModel
 STAGES = ["铺垫", "发展", "冲突", "高潮", "结局"]
 PERF_KEYS = ("唱", "念", "做", "打", "unknown")
 
-# 扩展情感词典（戏曲常见正/负向词）
+# Extended sentiment lexicon (common positive/negative words in opera)
 POS_WORDS = frozenset(
     "喜 贺 笑 欢 欣 庆 乐 美 好 妙 安 宁 平 善 恩 谢 智 巧 妙策 成 胜 凯 安康 福 寿 吉".split()
 )
@@ -40,7 +40,7 @@ def analyze_play_narrative(
     script_id = play["script_id"]
     title = play.get("title", "")
     raw_blocks = play.get("blocks") or []
-    # 只对正文（非角色表/情节梗概等）做节奏；保留 block_index 关联
+    # Rhythm analysis on body text only (not cast lists / plot summaries); keep block_index linkage
     blocks = [
         b for b in raw_blocks
         if b.get("type") not in ("character_list", "plot_summary", "annotation")
@@ -72,7 +72,7 @@ def analyze_play_narrative(
     }
 
 
-# ───────────────────────── 节奏序列 ─────────────────────────
+# ───────────────────────── Rhythm series ─────────────────────────
 
 
 def _performance_distribution(blocks: list[dict]) -> dict[str, int]:
@@ -131,7 +131,7 @@ def _rhythm_series(blocks: list[dict], window: int) -> list[dict]:
 
 
 def _emotion_score(text: str) -> float:
-    """0~1，0.5 中性，>0.5 偏正面，<0.5 偏负面。"""
+    """0~1; 0.5 neutral, >0.5 positive, <0.5 negative."""
     pos = sum(text.count(w) for w in POS_WORDS)
     neg = sum(text.count(w) for w in NEG_WORDS)
     intens = sum(text.count(w) for w in INTENSIFIERS) * 0.5
@@ -147,7 +147,7 @@ def _tension_score(text: str, action_ratio: float, speaker_div: float) -> float:
     tension_word_hits = sum(text.count(w) for w in TENSION_WORDS)
     tw = min(1.0, tension_word_hits / 5)
     emotion = _emotion_score(text)
-    # 情感偏离 0.5 越远越紧张（剧烈情绪都是张力来源）
+    # Greater deviation from 0.5 emotion → more tension (intense emotion drives suspense)
     emotion_dev = abs(emotion - 0.5) * 2
     return min(
         1.0,
@@ -159,13 +159,13 @@ def _tension_score(text: str, action_ratio: float, speaker_div: float) -> float:
     )
 
 
-# ───────────────────────── 阶段切分 ─────────────────────────
+# ───────────────────────── Stage segmentation ─────────────────────────
 
 
 def _detect_stages(
     blocks: list[dict], rhythm: list[dict], scenes: list[dict]
 ) -> list[dict]:
-    """基于 tension 平滑曲线找 4 个变点，对齐到 scene 边界，输出 5 段。"""
+    """Find 4 changepoints on smoothed tension, snap to scene boundaries, output 5 segments."""
     n = len(blocks)
     if n < 10:
         return [_make_stage("其他", blocks, 0, n - 1)]
@@ -188,13 +188,13 @@ def _detect_stages(
 
 
 def _find_changepoints(smoothed: list[float]) -> list[int]:
-    """返回 5 段的 [start, c1, c2, c3, c4, end+1] 共 6 个 index（局部下标）。
+    """Return 6 indices for 5 segments: [start, c1, c2, c3, c4, end+1] (local subscripts).
 
-    策略：
+    Strategy:
       - climax = argmax(smoothed)
-      - ending = climax 之后 smoothed 跌幅最大的点
-      - dev = [0, climax] 内 smoothed 首次 > median + 0.3·std
-      - conflict = [dev, climax] 内 smoothed 首次 > climax_val * 0.6 + median * 0.4
+      - ending = point after climax with largest smoothed drop
+      - dev = first index in [0, climax] where smoothed > median + 0.3·std
+      - conflict = first index in [dev, climax] where smoothed > climax_val * 0.6 + median * 0.4
     """
     n = len(smoothed)
     climax = _argmax(smoothed)
@@ -202,21 +202,21 @@ def _find_changepoints(smoothed: list[float]) -> list[int]:
     median = _median(smoothed)
     std = _std(smoothed)
 
-    # 发展起点
+    # Rising action start
     dev_thresh = median + 0.30 * std
     dev = _find_first_above(smoothed, 0, climax, dev_thresh)
     if dev is None:
         dev = max(1, climax // 3)
 
-    # 冲突起点
+    # Conflict start
     conf_thresh = climax_val * 0.6 + median * 0.4
     conflict = _find_first_above(smoothed, dev, climax, conf_thresh)
     if conflict is None or conflict <= dev:
         conflict = (dev + climax) // 2
 
-    # 结局起点（climax 之后跌幅最大）
+    # Ending start (largest drop after climax)
     if climax < n - 5:
-        # 找 climax 之后下降最快的位置（差分最小）
+        # After climax, find steepest decline (minimum difference)
         drop_idx = climax + 1
         min_drop = 0.0
         for j in range(climax + 1, n):
@@ -230,7 +230,7 @@ def _find_changepoints(smoothed: list[float]) -> list[int]:
     else:
         ending = climax + 1
 
-    # 高潮起点 = climax 前的 conflict；高潮终点（=结局起点-1）
+    # Climax start = conflict before climax; climax end (= ending start - 1)
     cuts = [0, dev, conflict, climax, ending, n]
     return cuts
 
@@ -238,13 +238,13 @@ def _find_changepoints(smoothed: list[float]) -> list[int]:
 def _snap_to_scenes(
     cuts: list[int], blocks: list[dict], scenes: list[dict], tol: int
 ) -> list[int]:
-    """把内部变点对齐到最近的 scene 边界（如距离 ≤ tol）。
+    """Snap internal changepoints to nearest scene boundary (when distance ≤ tol).
 
-    scenes[].block_range 是原始 block_index；这里要映射为正文 blocks 列表里的下标。
+    scenes[].block_range uses original block_index; map to indices in the body blocks list.
     """
     if not scenes:
         return cuts
-    # 收集 scene 边界（用 block_range 起止）
+    # Collect scene boundaries (block_range start/end)
     scene_bounds_raw: set[int] = set()
     for sc in scenes:
         rng = sc.get("block_range") or []
@@ -252,7 +252,7 @@ def _snap_to_scenes(
             scene_bounds_raw.add(int(rng[0]))
         if len(rng) >= 2:
             scene_bounds_raw.add(int(rng[1]) + 1)
-    # 把 block_index 映射到当前 blocks 列表中的位置
+    # Map block_index to position in current blocks list
     idx_lookup = {b["block_index"]: i for i, b in enumerate(blocks)}
     scene_positions = sorted(
         {idx_lookup[bi] for bi in scene_bounds_raw if bi in idx_lookup}
@@ -270,7 +270,7 @@ def _snap_to_scenes(
 
 
 def _ensure_monotonic(cuts: list[int], n: int) -> list[int]:
-    """保证严格递增且首/尾合法；不满足则退化为均分。"""
+    """Ensure strictly increasing cuts with valid ends; else fall back to equal splits."""
     cuts = list(cuts)
     cuts[0] = 0
     cuts[-1] = n
@@ -280,7 +280,7 @@ def _ensure_monotonic(cuts: list[int], n: int) -> list[int]:
             fallback = True
             break
     if fallback or cuts[1] >= n:
-        # 均分兜底
+        # Equal-split fallback
         return [round(i * n / (len(STAGES))) for i in range(len(STAGES) + 1)]
     return cuts
 
@@ -301,7 +301,7 @@ def _enrich_stage_labels(
     perf_by_stage: list[dict],
     extra_stop: frozenset[str],
 ) -> list[dict]:
-    """根据该段实际节奏特征赋更精细的 label，并生成 summary。"""
+    """Assign finer labels and summaries from each segment's rhythm profile."""
     idx_of = {b["block_index"]: i for i, b in enumerate(blocks)}
     rhythm_by_idx = {r["block_index"]: r for r in rhythm}
     perf_lookup = {p["stage"]: p["distribution"] for p in perf_by_stage}
@@ -317,7 +317,7 @@ def _enrich_stage_labels(
         avg = _average_metrics(seg_rhythm)
         label_suffix = _label_suffix(avg)
         base = st["stage"]
-        # 基础语义标签
+        # Base semantic label
         base_label = {
             "铺垫": "引入",
             "发展": "推进",
@@ -342,7 +342,7 @@ def _enrich_stage_labels(
 
 
 def _label_suffix(metrics: dict) -> str:
-    """根据该段平均节奏返回 ·激战 / ·对峙 / ·唱抒 等后缀。"""
+    """Return suffix like ·激战 / ·对峙 / ·唱抒 from segment average rhythm."""
     if metrics.get("action_intensity", 0) > 0.22:
         return "·激战"
     if metrics.get("aria_ratio", 0) > 0.28:
@@ -363,7 +363,7 @@ def _label_suffix(metrics: dict) -> str:
 def _stage_summary(
     segment: list[dict], perf_dist: dict[str, int], extra_stop: frozenset[str]
 ) -> str:
-    """用关键词 + 唱念做打比例做一句话摘要。"""
+    """One-line summary from keywords + sing/speech/move/combat ratios."""
     words: list[str] = []
     for b in segment[:60]:
         text = b.get("text") or ""
@@ -388,7 +388,7 @@ def _stage_summary(
     return (kw_part + perf_part).strip()
 
 
-# ───────────────────────── 唱念做打按段统计 ─────────────────────────
+# ───────────────────────── Sing/speech/move/combat by stage ─────────────────────────
 
 
 def _perf_by_stage(blocks: list[dict], stages: list[dict]) -> list[dict]:
@@ -408,7 +408,7 @@ def _perf_by_stage(blocks: list[dict], stages: list[dict]) -> list[dict]:
     return out
 
 
-# ───────────────────────── 关键块标注（瘦身版） ─────────────────────────
+# ───────────────────────── Key block annotations (compact) ─────────────────────────
 
 
 def _key_block_annotations(
@@ -419,7 +419,7 @@ def _key_block_annotations(
     theme_model: ThemeModel | None,
     max_total: int = 80,
 ) -> list[dict]:
-    """只输出关键块：阶段边界 + 各段情感极值 + 主题切换点。"""
+    """Emit key blocks only: stage boundaries + per-stage emotional extrema + topic switches."""
     rhythm_by_idx = {r["block_index"]: r for r in rhythm}
     stage_by_idx: dict[int, str] = {}
     for st in stages:
@@ -435,8 +435,8 @@ def _key_block_annotations(
                 if not vec:
                     continue
                 tid = max(range(len(vec)), key=lambda i: vec[i])
-                # 找该 block_id 对应的 block_index
-                # block_id 形式 b_{n}，n 即 block_index
+                # Resolve block_index for this block_id
+                # block_id form b_{n}; n is block_index
                 m = re.match(r"^b_(\d+)$", block_id)
                 if m:
                     topic_by_idx[int(m.group(1))] = tid
@@ -444,11 +444,11 @@ def _key_block_annotations(
             pass
 
     key_indices: set[int] = set()
-    # 1) 阶段边界
+    # 1) Stage boundaries
     for st in stages:
         key_indices.update(st["block_range"])
 
-    # 2) 各段情感极值
+    # 2) Per-stage emotional extrema
     for st in stages:
         lo, hi = st["block_range"]
         seg = [
@@ -463,7 +463,7 @@ def _key_block_annotations(
         tmax = max(seg, key=lambda p: p.get("tension_score", 0.0))
         key_indices.update({emax["block_index"], emin["block_index"], tmax["block_index"]})
 
-    # 3) 主题切换点
+    # 3) Topic switch points
     if topic_by_idx:
         sorted_idx = sorted(topic_by_idx.keys())
         prev = None
@@ -473,10 +473,10 @@ def _key_block_annotations(
                 key_indices.add(bi)
             prev = cur
 
-    # 控制数量上限
+    # Cap total count
     chosen = sorted(key_indices)
     if len(chosen) > max_total:
-        # 等距下采样
+        # Uniform downsampling
         step = len(chosen) / max_total
         chosen = [chosen[int(i * step)] for i in range(max_total)]
 
@@ -498,7 +498,7 @@ def _key_block_annotations(
     return annotations
 
 
-# ───────────────────────── 工具函数 ─────────────────────────
+# ───────────────────────── Utilities ─────────────────────────
 
 
 def _moving_average(xs: list[float], k: int) -> list[float]:

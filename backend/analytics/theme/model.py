@@ -15,12 +15,12 @@ from .corpus import (
     tokenize,
 )
 
-# 主题标签规则统一从 theme.json 读取，py 中不再硬编码关键词。
+# Topic label rules are loaded from theme.json only; no hardcoded keywords in Python.
 THEME_RULES_FILE = Path(__file__).resolve().parent / "theme.json"
 FALLBACK_LABEL = "其他情节"
 GLOBAL_THEME_MODEL_FILENAME = "theme_model.pkl"
 
-# 全库 NMF 锚定主题（与 theme.json 一致，保证 T0～T7 语义稳定）
+# Corpus-wide NMF anchor topics (aligned with theme.json; stable T0–T7 semantics)
 GLOBAL_SEED_LABELS = (
     "朝堂奏对",
     "战争征伐",
@@ -35,10 +35,10 @@ GLOBAL_SEED_LABELS = (
 
 @dataclass(frozen=True)
 class LabelRule:
-    """单个主题标签规则。
+    """Single topic label rule.
 
-    评分：sum(keywords[w] if w in topic_words) + sum(neg_keywords[w] if w in topic_words)
-    （neg_keywords 的 weight 通常为负，命中会减分）
+    Score: sum(keywords[w] if w in topic_words) + sum(neg_keywords[w] if w in topic_words)
+    (neg_keywords weights are usually negative; hits reduce the score)
     """
 
     label: str
@@ -48,7 +48,7 @@ class LabelRule:
 
 @lru_cache(maxsize=1)
 def _load_label_rules() -> tuple[tuple[LabelRule, ...], float, int, float]:
-    """从 theme.json 加载 (规则, hit_threshold, min_keyword_hits, fallback_threshold)。"""
+    """Load (rules, hit_threshold, min_keyword_hits, fallback_threshold) from theme.json."""
     if not THEME_RULES_FILE.is_file():
         return tuple(), 4.0, 2, 1.0
     try:
@@ -88,7 +88,7 @@ def _is_noise_keyword(word: str) -> bool:
 
 
 def is_metadata_topic(keywords: list[str]) -> bool:
-    """判断该 topic 是否为页眉/丛书噪声（应从输出中剔除）。"""
+    """Whether this topic is header/series noise (should be dropped from output)."""
     if not keywords:
         return True
     top = keywords[:8]
@@ -110,7 +110,7 @@ def _score_label(rule: LabelRule, word_set: frozenset[str]) -> float:
 
 
 def _score_label_fuzzy(rule: LabelRule, words: list[str]) -> tuple[float, list[str]]:
-    """精确命中优先；否则 topic 词与规则词做子串模糊匹配（全库 NMF 常产出短语）。"""
+    """Exact match first; else substring fuzzy match between topic words and rule words (corpus NMF often yields phrases)."""
     word_set = frozenset(words)
     score = _score_label(rule, word_set)
     hits = [k for k in rule.keywords if k in word_set]
@@ -146,7 +146,7 @@ class ThemeModel:
         return build_dynamic_stopwords(play) | self.corpus_stopwords
 
     def _nmf_block_matrix(self, play: dict):
-        """返回 (blocks, raw_W)。"""
+        """Return (blocks, raw_W)."""
         import numpy as np
 
         blocks = iter_text_blocks(play)
@@ -164,7 +164,7 @@ class ThemeModel:
         return blocks, W
 
     def transform_blocks(self, play: dict) -> list[tuple[str, int, str, list[float]]]:
-        """返回 (block_id, block_index, text, topic_vector)。"""
+        """Return (block_id, block_index, text, topic_vector)."""
         blocks = iter_text_blocks(play)
         if not blocks:
             return []
@@ -197,7 +197,7 @@ class ThemeModel:
         return out
 
     def play_composition(self, play: dict) -> list[float]:
-        """单剧主题占比：块级 argmax 计数，避免单一 topic 吸走全部权重。"""
+        """Per-play topic proportions: block-level argmax counts to avoid one topic absorbing all weight."""
         k = self.num_topics
         if self.method == "nmf" and self._nmf is not None:
             _blocks, W = self._nmf_block_matrix(play)
@@ -232,15 +232,15 @@ class ThemeModel:
         return [c / total for c in counts]
 
     def assign_unique_labels(self) -> None:
-        """根据 theme.json 规则给每个主题打标签。
+        """Assign each topic a label per theme.json rules.
 
-        优先级：
-          1) score ≥ hit_threshold 且命中 ≥ min_keyword_hits（或单词 score≥8）→ 直接用 best_label
-          2) score ≥ fallback_threshold → 仍用 best_label（最接近的主题，弱命中）
-          3) 都不满足 → 「其他情节」（不再用「词A·词B」拼接，避免毫无意义的标签）
+        Priority:
+          1) score ≥ hit_threshold and hits ≥ min_keyword_hits (or single-word score≥8) → use best_label
+          2) score ≥ fallback_threshold → still use best_label (closest topic, weak hit)
+          3) otherwise → 「其他情节」 (no more 「词A·词B」 glue labels)
 
-        同名解歧：在多 topic 命中同一 label 时，追加命中关键词中的次级词作后缀（来自
-        theme.json 本身，不会出现噪声词）。
+        Disambiguation: when multiple topics hit the same label, append a secondary hit keyword
+        as suffix (from theme.json only, not noise words).
         """
         rules, threshold, min_hits, fb_threshold = _load_label_rules()
 
@@ -273,8 +273,8 @@ class ThemeModel:
                 len(hits) >= min_hits or score >= 8.0
             )
             weak = bool(label) and score >= fb_threshold
-            # 不再追加 "·xxx" 区分词：schema 允许多个 topic 同 label，
-            # 它们的差异由各自的 keywords 与 representative_blocks 体现。
+            # Do not append "·xxx" disambiguators: schema allows multiple topics with the same label;
+            # differences show via keywords and representative_blocks.
             final[tid] = label if (strong or weak) else FALLBACK_LABEL
         self._label_cache = final
 
@@ -301,7 +301,7 @@ class ThemeModel:
 
 
 def model_from_themes(themes_doc: dict) -> ThemeModel:
-    """将 LLM 产出的 themes.json 转为可给叙事模块用的静态主题模型。"""
+    """Convert LLM-produced themes.json into a static theme model for the narrative module."""
     topics = themes_doc.get("topics") or []
     m = ThemeModel(num_topics=len(topics), method="llm")
     m.trained_at = (themes_doc.get("model") or {}).get("trained_at", "")
@@ -317,7 +317,7 @@ def model_from_themes(themes_doc: dict) -> ThemeModel:
 
 
 def adaptive_num_topics(plays: list[dict], requested: int) -> int:
-    """根据语料规模自适应 K：单剧时按 sqrt(text_blocks)/4 缩减。"""
+    """Adapt K to corpus size: for a single play, scale down by sqrt(text_blocks)/4."""
     import math
 
     total_blocks = sum(len(iter_text_blocks(p)) for p in plays)
@@ -349,7 +349,7 @@ def load_theme_model(path: Path) -> ThemeModel:
 
 
 def canonical_topic_labels(model: ThemeModel) -> list[str]:
-    """全局模型各 topic 的语义标签列；有 pinned 时保持 T0…T(K-1) 顺序。"""
+    """Semantic label column for each global-model topic; when pinned, keep T0…T(K-1) order."""
     if getattr(model, "pinned_labels", None) and len(model.pinned_labels) >= model.num_topics:
         labels = [model.pinned_labels[i] for i in range(model.num_topics)]
     else:
@@ -368,7 +368,7 @@ def canonical_topic_labels(model: ThemeModel) -> list[str]:
 
 
 def global_topic_label_entries(model: ThemeModel) -> list[dict]:
-    """供 theme_patterns.json 的全局列定义（按语义标签，非 T0/T1 槽位）。"""
+    """Global column definitions for theme_patterns.json (by semantic label, not T0/T1 slots)."""
     canonical = canonical_topic_labels(model)
     label_kw: dict[str, list[str]] = {}
     for tid in range(model.num_topics):
@@ -387,10 +387,10 @@ def train_theme_model(
     num_topics: int = 8,
     random_seed: int = 42,
 ) -> ThemeModel:
-    """训练主题模型。
+    """Train a topic model.
 
-    - 全库（>10 部）：theme.json 锚定的 keyword 聚类，T0～T7 语义稳定、热力图可区分。
-    - 单剧/小样本：NMF（失败时回退 keyword）。
+    - Full corpus (>10 plays): theme.json-anchored keyword clustering; stable T0–T7 semantics and distinguishable heatmaps.
+    - Single play / small sample: NMF (falls back to keyword on failure).
     """
     num_topics = adaptive_num_topics(plays, num_topics)
     if len(plays) > 10:
@@ -495,7 +495,7 @@ def _train_nmf_model(
 
 
 def _seed_topics_from_theme_rules() -> list[tuple[str, list[str]]]:
-    """从 theme.json 派生 (label, seed_words) — 关键词模型的种子。"""
+    """Derive (label, seed_words) from theme.json — seeds for the keyword model."""
     rules, _, _, _ = _load_label_rules()
     if not rules:
         return [("通用主题", ["主公", "将军", "出兵", "回朝"])]
@@ -508,7 +508,7 @@ def _seed_topics_from_theme_rules() -> list[tuple[str, list[str]]]:
 
 
 def _global_seed_topics(num_topics: int) -> list[tuple[str, list[str]]]:
-    """全库 NMF 锚定的 K 个主题种子（顺序固定 = T0…T(K-1)）。"""
+    """K corpus NMF anchor topic seeds (fixed order = T0…T(K-1))."""
     rules, _, _, _ = _load_label_rules()
     by_label = {r.label: r for r in rules}
     out: list[tuple[str, list[str]]] = []
@@ -559,17 +559,17 @@ def train_global_theme_model_from_paths(
     load_play_fn=None,
     on_progress=None,
 ) -> ThemeModel:
-    """全库主题模型（秒级）：theme.json 种子 + 流式收集角色停用词，不扫全库文本块。"""
+    """Corpus-wide theme model (seconds): theme.json seeds + streaming character stopwords; no full-corpus block scan."""
     from datetime import datetime, timezone
 
     if load_play_fn is None:
         from ..utils.io import load_play as load_play_fn
 
-    print(f"  收集全库角色/剧名停用词（{len(play_paths)} 部）…", flush=True)
+    print(f"  collecting corpus character/title stopwords ({len(play_paths)} plays)…", flush=True)
     corpus_stop = build_corpus_stopwords_from_paths(
         play_paths, load_play_fn, on_progress=on_progress
     )
-    print(f"  停用词 {len(corpus_stop)} 个，组装 {num_topics} 个主题种子…", flush=True)
+    print(f"  {len(corpus_stop)} stopwords, assembling {num_topics} topic seeds…", flush=True)
 
     seeds = _global_seed_topics(num_topics)
     if not seeds:
@@ -596,7 +596,7 @@ def train_global_theme_model_from_paths(
 def _train_global_keyword_model(
     plays: list[dict], num_topics: int, random_seed: int
 ) -> ThemeModel:
-    """兼容入口：已有 play 列表时仍走快速路径（仅 metadata，不 tokenize 块）。"""
+    """Compatibility entry: when a play list exists, still use fast path (metadata only, no block tokenization)."""
     from datetime import datetime, timezone
 
     seeds = _global_seed_topics(num_topics)
@@ -684,7 +684,7 @@ def _collect_docs(plays: list[dict]) -> list[str]:
 def _topic_seed_scores(
     words: list[str], seeds: list[tuple[str, list[str]]]
 ) -> list[float]:
-    """按 theme.json 权重为各主题种子打分（global/keyword 模型共用）。"""
+    """Score topic seeds by theme.json weights (shared by global/keyword models)."""
     rules, _, _, _ = _load_label_rules()
     by_label = {r.label: r for r in rules}
     scores: list[float] = []

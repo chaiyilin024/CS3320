@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""分析流水线入口 — 单剧四任务（行当 / 网络 / 主题 / 叙事）。
+"""Analytics pipeline entry — four tasks per play (role / network / theme / narrative).
 
-批处理结束后可聚合 global/*.json 供前端全库对比图使用。
+After batch processing, aggregate global/*.json for frontend corpus comparison charts.
 """
 from __future__ import annotations
 
@@ -56,14 +56,14 @@ GLOBAL_SCHEMA_MAP = {
 
 
 def _build_themes(play: dict, cfg: AnalyticsConfig, theme_model):
-    """返回 (themes.json 内容, 供叙事使用的 theme_model)。"""
+    """Return (themes.json content, theme_model for narrative module)."""
     if cfg.llm_theme.enabled:
         try:
             themes = build_play_themes_llm(play, cfg.llm_theme)
-            print(f"  主题: LLM ({cfg.llm_theme.model})", file=sys.stderr)
+            print(f"  theme: LLM ({cfg.llm_theme.model})", file=sys.stderr)
             return themes, model_from_themes(themes)
         except Exception as e:
-            print(f"  WARN LLM 主题失败，回退 NMF/keyword: {e}", file=sys.stderr)
+            print(f"  WARN LLM theme failed, falling back to NMF/keyword: {e}", file=sys.stderr)
     themes = build_play_themes(play, theme_model)
     return themes, theme_model
 
@@ -127,19 +127,19 @@ def _analytics_cfg_payload(cfg: AnalyticsConfig, validate: bool) -> dict:
 
 
 def _train_global_theme_model(cfg: AnalyticsConfig) -> Path | None:
-    """在全库 cleaned 语料上训练一次全局主题模型（theme.json 锚定），供各 worker 复用。"""
+    """Train global theme model once on full cleaned corpus (theme.json anchored) for worker reuse."""
     if cfg.llm_theme.enabled:
         return None
     paths = [path for _sid, path in iter_play_paths(cfg.cleaned_dir)]
     if not paths:
-        print("WARN: 无可用剧本，跳过全局主题模型训练", file=sys.stderr)
+        print("WARN: no plays available, skipping global theme model training", file=sys.stderr)
         return None
 
     def _prog(done: int, total: int) -> None:
         if done % 300 == 0 or done == total:
-            print(f"  … 停用词 {done}/{total}", flush=True)
+            print(f"  … stopwords {done}/{total}", flush=True)
 
-    print(f"全库主题模型训练：{len(paths)} 部剧本，K={cfg.num_topics}…", flush=True)
+    print(f"Global theme model training: {len(paths)} plays, K={cfg.num_topics}…", flush=True)
     model = train_global_theme_model_from_paths(
         paths,
         cfg.num_topics,
@@ -147,13 +147,13 @@ def _train_global_theme_model(cfg: AnalyticsConfig) -> Path | None:
         load_play_fn=load_play,
         on_progress=_prog,
     )
-    print(f"  方法: {model.method}", flush=True)
+    print(f"  method: {model.method}", flush=True)
     out_path = global_theme_model_path(cfg.analytics_dir)
     save_theme_model(model, out_path)
     fallback = sum(
         1 for i in range(model.num_topics) if model.topic_label(i) == "其他情节"
     )
-    print(f"  全局主题模型 → {out_path.name}（{fallback}/{model.num_topics} 个 fallback）")
+    print(f"  global theme model → {out_path.name} ({fallback}/{model.num_topics} fallback)")
     for tid in range(model.num_topics):
         words = [w for w, _ in model.topic_words.get(tid, [])[:6]]
         print(f"    T{tid} {model.topic_label(tid)}: {', '.join(words)}")
@@ -168,7 +168,7 @@ def run_themes_only(
 ) -> tuple[int, int]:
     _train_global_theme_model(cfg)
     w = resolve_workers(workers)
-    print(f"并行进程数: {w}，重算 themes.json（{len(script_ids)} 剧）…", flush=True)
+    print(f"Workers: {w}, recomputing themes.json ({len(script_ids)} plays)…", flush=True)
     cfg_payload = _analytics_cfg_payload(cfg, validate)
     tasks = [
         {"root": str(cfg.root), "script_id": sid, "cfg": cfg_payload}
@@ -177,7 +177,7 @@ def run_themes_only(
 
     def _progress(done: int, total: int, _result: dict) -> None:
         if done % 100 == 0 or done == total:
-            print(f"  … 已完成 {done}/{total}", flush=True)
+            print(f"  … done {done}/{total}", flush=True)
 
     results = run_parallel(themes_only_task, tasks, workers, progress=_progress)
     ok = sum(1 for r in results if r.get("ok"))
@@ -194,7 +194,7 @@ def _run_plays_parallel(
     workers: int,
 ) -> tuple[int, int]:
     w = resolve_workers(workers)
-    print(f"并行进程数: {w}，分析 {len(script_ids)} 部剧本…")
+    print(f"Workers: {w}, analyzing {len(script_ids)} plays…")
     cfg_payload = _analytics_cfg_payload(cfg, validate)
     tasks = [
         {"root": str(cfg.root), "script_id": sid, "cfg": cfg_payload}
@@ -203,7 +203,7 @@ def _run_plays_parallel(
 
     def _progress(done: int, total: int, _result: dict) -> None:
         if done % 100 == 0 or done == total:
-            print(f"  … 已完成 {done}/{total}")
+            print(f"  … done {done}/{total}")
 
     results = run_parallel(analyze_play_task, tasks, workers, progress=_progress)
     ok = 0
@@ -223,7 +223,7 @@ def run_integrated_exports(
     workers: int = 1,
 ) -> int:
     w = resolve_workers(workers)
-    print(f"并行进程数: {w}，生成 integrated.json（{len(script_ids)} 剧）…")
+    print(f"Workers: {w}, generating integrated.json ({len(script_ids)} plays)…")
     tasks = [
         {
             "root": str(cfg.root),
@@ -237,26 +237,26 @@ def run_integrated_exports(
 
     def _progress(done: int, total: int, _result: dict) -> None:
         if done % 200 == 0 or done == total:
-            print(f"  … 已完成 {done}/{total}")
+            print(f"  … done {done}/{total}")
 
     results = run_parallel(integrated_only_task, tasks, workers, progress=_progress)
     ok = 0
     for r in results:
         if r.get("log"):
-            if not r.get("ok") and "跳过" not in r["log"]:
+            if not r.get("ok") and "跳过" not in r["log"] and "skip" not in r["log"].lower():
                 print(r["log"], file=sys.stderr)
         for warn in r.get("warnings") or []:
             print(f"  WARN {r.get('script_id')}/integrated.json: {warn}", file=sys.stderr)
         if r.get("ok"):
             ok += 1
-    print(f"综合关联完成：{ok} 剧 → {cfg.analytics_dir}/plays/*/integrated.json")
+    print(f"Integrated correlation done: {ok} plays → {cfg.analytics_dir}/plays/*/integrated.json")
     return 0 if ok else 1
 
 
 def run_theme_quality_backfill(cfg: AnalyticsConfig, workers: int = 1) -> int:
     plays_dir = cfg.analytics_dir / "plays"
     if not plays_dir.is_dir():
-        print("未找到 analytics/plays 目录。", file=sys.stderr)
+        print("analytics/plays directory not found.", file=sys.stderr)
         return 1
     paths = sorted(
         play_dir / "themes.json"
@@ -264,16 +264,16 @@ def run_theme_quality_backfill(cfg: AnalyticsConfig, workers: int = 1) -> int:
         if play_dir.is_dir() and (play_dir / "themes.json").is_file()
     )
     w = resolve_workers(workers)
-    print(f"并行进程数: {w}，回填主题质量 {len(paths)} 剧…")
+    print(f"Workers: {w}, backfilling theme quality for {len(paths)} plays…")
     tasks = [{"path": str(p)} for p in paths]
 
     def _progress(done: int, total: int, _result: dict) -> None:
         if done % 300 == 0 or done == total:
-            print(f"  … 已完成 {done}/{total}")
+            print(f"  … done {done}/{total}")
 
     results = run_parallel(theme_quality_task, tasks, workers, progress=_progress)
     ok = sum(1 for r in results if r.get("ok"))
-    print(f"主题质量回填完成：{ok} 剧 themes.json")
+    print(f"Theme quality backfill done: {ok} plays themes.json")
     return 0 if ok else 1
 
 
@@ -285,63 +285,63 @@ def run_global_exports(cfg: AnalyticsConfig, validate: bool) -> int:
         n = len(doc.get("play_topic_matrix") or doc.get("plays") or doc.get("templates") or [])
         extra = ""
         if name == "role_analysis.json":
-            extra = f", 特征格 {len(doc.get('global_feature_hangdang_matrix', []))}"
+            extra = f", feature cells {len(doc.get('global_feature_hangdang_matrix', []))}"
         elif name == "theme_patterns.json":
-            extra = f", 剧本 {len(doc.get('play_topic_matrix', []))}"
+            extra = f", plays {len(doc.get('play_topic_matrix', []))}"
         elif name == "theme_quality.json":
-            extra = f", 剧本 {len(doc.get('plays', []))}"
+            extra = f", plays {len(doc.get('plays', []))}"
         elif name == "network_compare.json":
-            extra = f", 剧本 {len(doc.get('plays', []))}"
-        print(f"  global/{name}{extra or (', 条目 ' + str(n) if n else '')}")
+            extra = f", plays {len(doc.get('plays', []))}"
+        print(f"  global/{name}{extra or (', entries ' + str(n) if n else '')}")
         if validate:
             errs = validate_analytics(doc, GLOBAL_SCHEMA_MAP[name], cfg.root)
             if errs:
                 print(f"  WARN global/{name}: {errs[0]}", file=sys.stderr)
-    print(f"全局聚合完成 → {global_dir}")
+    print(f"Global aggregation done → {global_dir}")
     return 0
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="京剧剧本单剧分析流水线")
+    parser = argparse.ArgumentParser(description="Peking opera single-play analytics pipeline")
     parser.add_argument("--script-id", action="append", dest="script_ids")
-    parser.add_argument("--all", action="store_true", help="处理 cleaned/plays 下全部剧本")
+    parser.add_argument("--all", action="store_true", help="process all plays under cleaned/plays")
     parser.add_argument("--no-validate", action="store_true")
     parser.add_argument("--num-topics", type=int, default=None)
     parser.add_argument(
         "--theme-llm",
         action="store_true",
-        help="使用大模型 API 生成主题（需 OPENAI_API_KEY）",
+        help="generate themes via LLM API (requires OPENAI_API_KEY)",
     )
     parser.add_argument(
         "--global-only",
         action="store_true",
-        help="仅从已有 plays 分析产物聚合 global/*.json",
+        help="aggregate global/*.json from existing plays analytics only",
     )
     parser.add_argument(
         "--integrated-only",
         action="store_true",
-        help="仅从已有四模块产物生成 plays/*/integrated.json",
+        help="generate plays/*/integrated.json from existing four-module outputs only",
     )
     parser.add_argument(
         "--theme-quality-only",
         action="store_true",
-        help="为已有 themes.json 回填 quality 并聚合 global/theme_quality.json",
+        help="backfill quality on existing themes.json and aggregate global/theme_quality.json",
     )
     parser.add_argument(
         "--themes-only",
         action="store_true",
-        help="用 global/theme_model.pkl 重算全部 plays/*/themes.json 并聚合 global",
+        help="recompute all plays/*/themes.json with global/theme_model.pkl and aggregate global",
     )
     parser.add_argument(
         "--train-global-theme-only",
         action="store_true",
-        help="仅训练并保存 global/theme_model.pkl，不重跑单剧分析",
+        help="train and save global/theme_model.pkl only; do not rerun single-play analysis",
     )
     parser.add_argument(
         "--workers",
         type=int,
         default=None,
-        help="并行进程数（0=自动 min(CPU,8)，1=串行）",
+        help="parallel worker count (0=auto min(CPU,8), 1=serial)",
     )
     args = parser.parse_args()
 
@@ -354,16 +354,16 @@ def main() -> int:
         cfg.llm_theme.enabled = True
         cfg.num_topics = cfg.llm_theme.num_topics
     elif args.theme_llm:
-        print("WARN: --theme-llm 已指定但未设置 OPENAI_API_KEY", file=sys.stderr)
+        print("WARN: --theme-llm specified but OPENAI_API_KEY is not set", file=sys.stderr)
     validate = not args.no_validate
     workers = cfg.workers
 
     if args.theme_quality_only:
-        print("回填单剧主题质量…")
+        print("Backfilling per-play theme quality…")
         code = run_theme_quality_backfill(cfg, workers)
         if code != 0:
             return code
-        print("聚合全局主题质量…")
+        print("Aggregating global theme quality…")
         return run_global_exports(cfg, validate)
 
     if args.train_global_theme_only:
@@ -380,15 +380,15 @@ def main() -> int:
                 p.name for p in (cfg.analytics_dir / "plays").iterdir() if p.is_dir()
             )
         if not script_ids:
-            print("未找到可重算主题的剧本。", file=sys.stderr)
+            print("No plays found for theme recomputation.", file=sys.stderr)
             return 1
         ok, total = run_themes_only(cfg, script_ids, validate, workers)
-        print(f"主题重算完成：{ok}/{total} 剧")
-        print("聚合全局分析…")
+        print(f"Theme recomputation done: {ok}/{total} plays")
+        print("Aggregating global analytics…")
         return run_global_exports(cfg, validate)
 
     if args.global_only:
-        print("聚合全局分析…")
+        print("Aggregating global analytics…")
         return run_global_exports(cfg, validate)
 
     if args.integrated_only:
@@ -400,18 +400,18 @@ def main() -> int:
             plays_dir = cfg.analytics_dir / "plays"
             script_ids = sorted(p.name for p in plays_dir.iterdir() if p.is_dir())
         if not script_ids:
-            print("未找到可生成 integrated 的剧本。", file=sys.stderr)
+            print("No plays found for integrated export.", file=sys.stderr)
             return 1
         return run_integrated_exports(cfg, script_ids, validate, workers)
 
     if cfg.llm_theme.enabled and resolve_workers(workers) > 1:
-        print("WARN: LLM 主题模式使用串行（--workers 1）", file=sys.stderr)
+        print("WARN: LLM theme mode forces serial execution (--workers 1)", file=sys.stderr)
         workers = 1
 
     if resolve_workers(workers) == 1:
         try:
             cache = configure_jieba(cfg.root)
-            print(f"jieba 缓存: {cache}")
+            print(f"jieba cache: {cache}")
         except ImportError:
             pass
 
@@ -423,15 +423,15 @@ def main() -> int:
         script_ids = ["01001012"]
 
     if not script_ids:
-        print("未找到可分析的剧本，请先运行预处理。", file=sys.stderr)
+        print("No plays to analyze; run preprocessing first.", file=sys.stderr)
         return 1
 
-    # 过滤不存在的剧本
+    # Filter out plays whose cleaned JSON does not exist
     valid_ids: list[str] = []
     for sid in script_ids:
         path = cfg.cleaned_dir / "plays" / f"{sid}.json"
         if not path.exists():
-            print(f"跳过 {sid}：{path} 不存在", file=sys.stderr)
+            print(f"Skipping {sid}: {path} does not exist", file=sys.stderr)
             continue
         valid_ids.append(sid)
 
@@ -439,13 +439,13 @@ def main() -> int:
         return 1
 
     if cfg.llm_theme.enabled:
-        print(f"主题分析: LLM 模式（{cfg.llm_theme.model}，K={cfg.llm_theme.num_topics}）")
+        print(f"Theme analysis: LLM mode ({cfg.llm_theme.model}, K={cfg.llm_theme.num_topics})")
     else:
         _train_global_theme_model(cfg)
 
     ok, total = _run_plays_parallel(valid_ids, cfg, validate, workers)
-    print(f"完成：{ok}/{total} 剧 → {cfg.analytics_dir}/plays")
-    print("聚合全局分析…")
+    print(f"Done: {ok}/{total} plays → {cfg.analytics_dir}/plays")
+    print("Aggregating global analytics…")
     run_global_exports(cfg, validate)
     return 0
 

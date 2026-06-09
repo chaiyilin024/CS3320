@@ -18,9 +18,9 @@ CHAR_LIST_HEADER_RE = re.compile(r"^(人物|角色|登场人物?|主要角色)[:
 CAST_SECTION_END_RE = re.compile(r"^(剧情|故事)")
 PLOT_HEADER_RE = re.compile(r"^情节\s*(.*)$")
 ANNOTATION_HEADER_RE = re.compile(r"^注释\s*(.*)$")
-# 京剧行当精细分类 → 粗分类 完整映射表
+# Fine Peking opera hangdang → coarse category (full mapping)
 COARSE_MAP = {
-    # ========== 生行 ==========
+    # ========== sheng ==========
     "生": "生",
     "老生": "生",
     "小生": "生",
@@ -38,7 +38,7 @@ COARSE_MAP = {
     "短打武生": "生",
     "把子生": "生",
 
-    # ========== 旦行 ==========
+    # ========== dan ==========
     "旦": "旦",
     "青衣": "旦",
     "花旦": "旦",
@@ -55,7 +55,7 @@ COARSE_MAP = {
     "奴旦": "旦",
     "疯旦": "旦",
 
-    # ========== 净行 ==========
+    # ========== jing ==========
     "净": "净",
     "正净": "净",
     "副净": "净",
@@ -67,14 +67,14 @@ COARSE_MAP = {
     "白净": "净",
     "红净": "净",
 
-    # ========== 末行 ==========
+    # ========== mo ==========
     "末": "末",
     "正末": "末",
     "副末": "末",
     "冲末": "末",
     "外末": "末",
 
-    # ========== 丑行 ==========
+    # ========== chou ==========
     "丑": "丑",
     "文丑": "丑",
     "武丑": "丑",
@@ -88,23 +88,23 @@ COARSE_MAP = {
     "小丑": "丑"
 }
 
-# 按长度从长到短排序，确保长词优先匹配
+# Sort by length descending so longer terms match first
 _HANGDANG_KEYS = "|".join(sorted(COARSE_MAP.keys(), key=len, reverse=True))
 
 CAST_LINE_RE = re.compile(
     rf"^([\u4e00-\u9fff·]{{2,4}})[：:]\s*({_HANGDANG_KEYS})$")
-# 刘备 （白） 孤，刘备……
+# Liu Bei （白） 孤，刘备……
 ROLE_ACTION_RE = re.compile(
     r"^([\u4e00-\u9fff·]{2,4})\s+[（(]([^）)]+)[）)]\s*(.*)$"
 )
-# （念） 日月重明…… — 承上一人，省略姓名
+# （念） 日月重明…… — continuation from previous speaker, name omitted
 CUE_CONTINUATION_RE = re.compile(r"^[（(]([^）)]+)[）)]\s+(.+)$")
-# （西皮原板） 唱词…… — 板腔标记，开启唱段
+# （西皮原板） 唱词…… — board-cue marker, starts an aria
 BOARD_CUE_RE = re.compile(
     r"^[（(]([^）)]+)[）)]\s*(.*)$"
 )
 BOARD_CUE_LABEL_RE = re.compile(r"西皮|二黄|流水|摇板|散板|垛板|明堂|原板|慢板")
-# 唱词首行（冒号前过长或不像人名）
+# First aria line (prefix before colon too long or not name-like)
 ARIA_COLON_RE = re.compile(r"^([^：:]{2,40})[：:](.*)$")
 
 PERFORMANCE_CUE_MAP = {
@@ -118,7 +118,7 @@ PERFORMANCE_CUE_MAP = {
     "引子": "念",
     "叫头": "念",
 }
-# 括号内为舞台说明而非表演提示（非承上对白）
+# Parentheses contain stage directions, not performance cues (not continuation dialogue)
 STAGE_PAREN_HINTS = (
     "龙套",
     "同上",
@@ -160,7 +160,7 @@ def segment_lines(
     lines: list[str],
     page_boundaries: list[int] | None = None,
 ) -> SegmentResult:
-    """将行列表切分为 RawBlock，并收集人物提示。"""
+    """Split line list into RawBlocks and collect character hints."""
     blocks: list[RawBlock] = []
     hints: dict[str, dict] = {}
     scene_index = 0
@@ -171,7 +171,7 @@ def segment_lines(
     in_aria: bool = False
     last_aria_speaker: str | None = None
     idx = 0
-    # 跟踪是否遇到"根据《戏考》"，用于下一行退出情节梗概模式
+    # Track "根据《戏考》" so the next line exits plot-summary mode
     pending_plot_exit = False
 
     for line_no, line in enumerate(lines):
@@ -220,7 +220,7 @@ def segment_lines(
             continue
 
         if in_plot_summary:
-            # 如果上一行是"根据《戏考》"，则退出情节梗概模式
+            # If previous line was "根据《戏考》", exit plot-summary mode
             if pending_plot_exit:
                 in_plot_summary = False
                 pending_plot_exit = False
@@ -235,13 +235,13 @@ def segment_lines(
                     )
                 )
                 idx += 1
-                # 检查当前行是否包含"根据《戏考》"，标记下一行退出
+                # If line contains "根据《戏考》", flag next line to exit
                 if "根据" in line and "整理" in line:
                     pending_plot_exit = True
                 continue
 
         if in_annotation:
-            # 检查是否是对话行，如果是则退出注释模式并正常处理
+            # Dialogue line: exit annotation mode and process normally
             m_role = ROLE_ACTION_RE.match(line)
             m_dialogue = DIALOGUE_RE.match(line)
             m_cue_cont = CUE_CONTINUATION_RE.match(line)
@@ -605,7 +605,7 @@ def _is_board_cue_label(cue: str) -> bool:
 
 
 def _is_plain_aria_line(line: str) -> bool:
-    """唱段内连续唱词行（无说话人、无板腔标记）。"""
+    """Consecutive aria lyric lines within an aria (no speaker, no board-cue marker)."""
     s = line.strip()
     if not s or len(s) < 4:
         return False
@@ -622,7 +622,7 @@ def _is_plain_aria_line(line: str) -> bool:
 
 
 def _should_treat_as_aria_colon(line: str, prefix: str) -> bool:
-    """仅将「孤王言来听端详：」类唱词领行标为 aria，排除（一名：《…》）舞台说明。"""
+    """Mark only aria lead lines like 「孤王言来听端详：」 as aria; exclude (一名：《…》) stage directions."""
     if is_valid_character_name(prefix):
         return False
     if prefix.startswith(("（", "(")):
@@ -635,7 +635,7 @@ def _should_treat_as_aria_colon(line: str, prefix: str) -> bool:
 
 
 def _is_stage_paren_cue(cue: str) -> bool:
-    """区分（念）对白承上 与 （四龙套引刘备同上）舞台说明。"""
+    """Distinguish (念) continuation dialogue from (四龙套引刘备同上) stage directions."""
     if cue in ("白", "念", "唱", "引子", "叫头", "垛", "板"):
         return False
     if any(k in cue for k in STAGE_PAREN_HINTS):
@@ -712,7 +712,7 @@ def _hint_speaker(hints: dict[str, dict], name: str, tags: list[str]) -> None:
 
 
 def _hint_stage_characters(body: str, hints: dict[str, dict]) -> None:
-    """仅从「引XXX上」类舞台说明提取已登场人物，避免误造「引刘备同」。"""
+    """Extract entered characters only from 「引XXX上」 stage directions; avoid spurious names like 「引刘备同」."""
     for m in re.finditer(r"引([\u4e00-\u9fff·]{2,4})[同上]", body):
         name = m.group(1)
         if is_valid_character_name(name):

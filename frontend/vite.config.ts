@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
-/** GitHub Pages: VITE_BASE_URL=/仓库名/  本地开发默认 / */
+/** GitHub Pages: VITE_BASE_URL=/repo-name/; local dev defaults to / */
 const base = process.env.VITE_BASE_URL || '/'
 
 export default defineConfig({

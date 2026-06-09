@@ -40,7 +40,7 @@ COARSE_MAP = {
     "其他": "其他",
 }
 
-# identity → 可能行当（仅来自台词上下文抽出的 identity，不依赖人物姓名）
+# identity → possible hangdang (from line-context identity only, not character names)
 _IDENTITY_HANGDANG: list[tuple[str, str, float]] = [
     ("君主", "老生", 0.75),
     ("谋士", "老生", 0.70),
@@ -52,7 +52,7 @@ _IDENTITY_HANGDANG: list[tuple[str, str, float]] = [
     ("兵卒", "净", 0.50),
 ]
 
-# 表演线索 → 行当倾向
+# Performance cues → hangdang tendency
 _PERF_HANGDANG: dict[str, tuple[str, float]] = {
     "sing_dominant": ("老生", 0.65),
     "action_dominant": ("武生", 0.65),
@@ -145,10 +145,10 @@ def _performance_profile(blocks: list[dict]) -> dict[str, dict[str, int]]:
 def _infer_hangdang(
     ch: dict, perf: dict[str, int], derived: dict
 ) -> tuple[str | None, float, list[str]]:
-    """综合 traits_derived + 表演侧重 + 行数分箱，得出行当推断。
+    """Infer hangdang from traits_derived + performance emphasis + line-count bucket.
 
-    返回 (hangdang, confidence, top_features)。
-    top_features 是离散化后的 key=value 串，便于做 PMI 聚合。
+    Returns (hangdang, confidence, top_features).
+    top_features are discretized key=value strings for PMI aggregation.
     """
     features: list[str] = []
     traits = ch.get("traits") or {}
@@ -156,7 +156,7 @@ def _infer_hangdang(
     bucket = _line_bucket(line_count)
     features.append(f"line_count_bucket={bucket}")
 
-    # traits_derived 特征
+    # traits_derived features
     if derived.get("gender"):
         features.append(f"gender={derived['gender']}")
     if derived.get("age"):
@@ -166,12 +166,12 @@ def _infer_hangdang(
     for pers in derived.get("personality") or []:
         features.append(f"personality={pers}")
 
-    # 表演线索：把 performance_cues 拆成 multi-hot
+    # Performance cues: expand performance_cues into multi-hot features
     cues = (traits.get("performance_cues") or []) + (derived.get("performance_cues") or [])
     for c in dict.fromkeys(cues):
         features.append(f"cue={c}")
 
-    # 表演侧重比例
+    # Performance emphasis ratios
     sing = perf.get("唱", 0)
     nian = perf.get("念", 0)
     zuo = perf.get("做", 0)
@@ -180,18 +180,18 @@ def _infer_hangdang(
     sing_ratio = sing / total if total else 0.0
     action_ratio = (zuo + da) / total if total else 0.0
 
-    # 1) 已标注：features 已完整，直接返回（不再产生推断分支）
+    # 1) Labeled: features complete; return directly (no inference branch)
     labeled = ch.get("hangdang_labeled")
     if labeled and labeled != "未知":
         return None, 0.95, _truncate(features, 8)
 
-    # 4) 决策树
+    # 4) Decision tree
     gender = derived.get("gender") or "未知"
     age = derived.get("age") or ""
     identity = derived.get("identity") or ""
     personality = derived.get("personality") or []
 
-    # 4a) 女性
+    # 4a) Female
     if gender == "女":
         if age == "老年":
             return "老旦", 0.78, _truncate(features, 6)
@@ -201,11 +201,11 @@ def _infer_hangdang(
             return "青衣", 0.72, _truncate(features, 6)
         return "花旦", 0.65, _truncate(features, 6)
 
-    # 4b) 老年男性
+    # 4b) Elderly male
     if age == "老年" and gender != "女":
         return "老生", 0.72, _truncate(features, 6)
 
-    # 4c) 身份倾向
+    # 4c) Identity tendency
     for ident_key, hd, conf in _IDENTITY_HANGDANG:
         if ident_key == identity:
             features.append(f"matched_identity={ident_key}")
@@ -215,7 +215,7 @@ def _infer_hangdang(
                 adj += 0.05
             if hd == "小生" and age == "少年":
                 adj += 0.08
-            # 将领的细分：唱多→老生，打多→武生，否则武生兜底
+            # General subtypes: more singing → laosheng, more combat → wusheng, else wusheng default
             if ident_key == "将领":
                 if "勇猛" in personality or action_ratio > 0.2:
                     target_hd = "武生"
@@ -226,7 +226,7 @@ def _infer_hangdang(
                     target_hd = "武生"
             return target_hd, min(0.95, conf + adj), _truncate(features, 6)
 
-    # 4d) 表演侧重
+    # 4d) Performance emphasis
     if total > 0:
         if sing_ratio > 0.45 and bucket != "low":
             features.append("sing_dominant")
@@ -237,7 +237,7 @@ def _infer_hangdang(
         if sing_ratio < 0.15 and bucket != "low" and "诙谐" in personality:
             return "丑", 0.6, _truncate(features, 6)
 
-    # 4e) 粗行当兜底（来自 cleaned）
+    # 4e) Coarse hangdang fallback (from cleaned)
     coarse = ch.get("hangdang_coarse")
     if coarse == "净":
         return "净", 0.55, _truncate(features, 6)
@@ -252,7 +252,7 @@ def _infer_hangdang(
             return "老生", 0.5, _truncate(features, 6)
         return "小生", 0.45, _truncate(features, 6)
 
-    # 4f) 仅靠台词体量
+    # 4f) Line volume only
     if bucket == "high":
         return "老生", 0.4, _truncate(features, 6)
     if bucket == "mid":
