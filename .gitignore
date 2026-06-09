@@ -25,4 +25,4 @@ doc/1-I_answerSheet.md
 *.ppt
 *.pptx
 *.cmd
-*.zip
+*.zip.DS_Store
