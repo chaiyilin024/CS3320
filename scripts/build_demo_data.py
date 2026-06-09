@@ -25,7 +25,7 @@ SRC_CLEANED = ROOT / "artifacts" / "cleaned"
 SRC_ANALYTICS = ROOT / "artifacts" / "analytics"
 DEST = ROOT / "demo-data"
 
-PLAY_FILES = ("role.json", "network.json", "themes.json", "narrative.json")
+PLAY_FILES = ("role.json", "network.json", "themes.json", "narrative.json", "integrated.json")
 
 
 def load_play_ids() -> list[str]:

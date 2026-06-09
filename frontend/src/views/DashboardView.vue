@@ -61,6 +61,7 @@ const tasks = [
   { path: '/network', title: '人物关系网络', desc: '力导向图、网络指标' },
   { path: '/theme', title: '主题分析', desc: '主题构成、关键词、热力图' },
   { path: '/narrative', title: '叙事结构', desc: '情节阶段、节奏曲线' },
+  { path: '/integrated', title: '综合探索', desc: '人物×主题、阶段子网、跨维关联' },
 ]
 
 function selectPlay(id: string) {
